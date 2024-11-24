@@ -219,9 +219,8 @@ company_william_cramp = {
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
 			any_scope_state = {
 				OR = {
-					state_region = s:STATE_NEW_JERSEY # This Should be Philly, but due to map issues that won't work
-					state_region = s:STATE_DELAWARE
-					state_region = s:STATE_MARYLAND
+					state_region = s:STATE_NEW_YORK # This Should be Philly, but due to map issues that won't work
+					state_region = s:STATE_PENNSYLVANIA
 				}
 			}
 		}
@@ -230,9 +229,8 @@ company_william_cramp = {
 	possible = {
 		any_scope_state = {
 			OR = {
-				state_region = s:STATE_NEW_JERSEY # This Should be Philly, but due to map issues that won't work
-				state_region = s:STATE_DELAWARE
-				state_region = s:STATE_MARYLAND
+				state_region = s:STATE_NEW_YORK # This Should be Philly, but due to map issues that won't work
+				state_region = s:STATE_PENNSYLVANIA
 			}
 			is_incorporated = yes
 			any_scope_building = {
@@ -275,14 +273,14 @@ company_ford_motor = {
 	attainable = {
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
 			any_scope_state = {
-				state_region = s:STATE_MICHIGAN
+				state_region = s:STATE_OHIO
 			}
 		}
 	}	
 	
 	possible = {
 		any_scope_state = {
-			state_region = s:STATE_MICHIGAN
+			state_region = s:STATE_OHIO
 			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_motor_industry
