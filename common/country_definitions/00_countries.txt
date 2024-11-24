@@ -1,4 +1,4 @@
-# Important note: Only use capital letters and numbers for tags, or else you may get weird bugs in civil wars
+﻿# Important note: Only use capital letters and numbers for tags, or else you may get weird bugs in civil wars
 
 GER = {
 	color = { 147 130 110 }
