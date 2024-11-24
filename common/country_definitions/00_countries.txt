@@ -109,7 +109,7 @@ USA = {
 	tier = empire
 	
 	cultures = { yankee dixie }
-	capital = STATE_PENNSILVANIA
+	capital = STATE_PENNSYLVANIA
 }
 
 CSA = {
