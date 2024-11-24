@@ -20,9 +20,15 @@ The following standards are sorted by significance:
 
 ## Changelog
 
+Please refer to [merge_states.json](merge_states.json) for all the changes in states.
+
+The keys of the json are the state id of the existing states in the mod, and the values are lists of state ids in vanilla game that will be merged into the key state.
+
 <details>
 
-<summary>Merged states</summary>
+<summary>Update history</summary>
+
+- 2024-11-21: Initial release
 
 </details>
 
