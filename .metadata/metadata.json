@@ -1,0 +1,13 @@
+{
+  "name" : "States Merging",
+	"id" : "3371693463",
+  "version" : "0.1",
+  "supported_game_version" : "1.8.*",
+  "short_description" : "Combines multiple states together while keeping the overall pop & buildings unchanged.",
+  "thumbnail": "thumbnail.jpg",
+  "tags" : ["map"],
+  "relationships" : [],
+  "game_custom_data" : {
+    "multiplayer_synchronized" : true
+  }
+}
