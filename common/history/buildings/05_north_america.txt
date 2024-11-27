@@ -5,9 +5,8 @@
                 building = "building_government_administration"
                 add_ownership = {
                     country = {
-                        { country = "c:USA"
-                          levels = 11
-                        }
+                        country = "c:USA"
+                        levels = 11
                     }
                 }
                 reserves = 1
@@ -21,9 +20,8 @@
                 building = "building_construction_sector"
                 add_ownership = {
                     country = {
-                        { country = "c:USA"
-                          levels = 2
-                        }
+                        country = "c:USA"
+                        levels = 2
                     }
                 }
                 reserves = 1
@@ -35,9 +33,8 @@
                 building = "building_university"
                 add_ownership = {
                     country = {
-                        { country = "c:USA"
-                          levels = 3
-                        }
+                        country = "c:USA"
+                        levels = 3
                     }
                 }
                 reserves = 1
@@ -50,11 +47,10 @@
                 building = "building_iron_mine"
                 add_ownership = {
                     building = {
-                        { type = "building_financial_district"
-                          country = "c:USA"
-                          levels = 4
-                          region = "STATE_NEW_YORK"
-                        }
+                        type = "building_financial_district"
+                        country = "c:USA"
+                        levels = 4
+                        region = "STATE_NEW_YORK"
                     }
                 }
                 reserves = 1
@@ -69,16 +65,14 @@
                 building = "building_paper_mills"
                 add_ownership = {
                     building = {
-                        { type = "building_financial_district"
-                          country = "c:USA"
-                          levels = 2
-                          region = "STATE_NEW_YORK"
-                        }
+                        type = "building_financial_district"
+                        country = "c:USA"
+                        levels = 2
+                        region = "STATE_NEW_YORK"
                     }
                     country = {
-                        { country = "c:USA"
-                          levels = 3
-                        }
+                        country = "c:USA"
+                        levels = 3
                     }
                 }
                 reserves = 1
@@ -91,11 +85,10 @@
                 building = "building_textile_mills"
                 add_ownership = {
                     building = {
-                        { type = "building_financial_district"
-                          country = "c:USA"
-                          levels = 5
-                          region = "STATE_NEW_YORK"
-                        }
+                        type = "building_financial_district"
+                        country = "c:USA"
+                        levels = 5
+                        region = "STATE_NEW_YORK"
                     }
                 }
                 reserves = 1
@@ -109,11 +102,10 @@
                 building = "building_furniture_manufacturies"
                 add_ownership = {
                     building = {
-                        { type = "building_financial_district"
-                          country = "c:USA"
-                          levels = 2
-                          region = "STATE_NEW_YORK"
-                        }
+                        type = "building_financial_district"
+                        country = "c:USA"
+                        levels = 2
+                        region = "STATE_NEW_YORK"
                     }
                 }
                 reserves = 1
@@ -127,11 +119,10 @@
                 building = "building_tooling_workshops"
                 add_ownership = {
                     building = {
-                        { type = "building_financial_district"
-                          country = "c:USA"
-                          levels = 5
-                          region = "STATE_NEW_YORK"
-                        }
+                        type = "building_financial_district"
+                        country = "c:USA"
+                        levels = 5
+                        region = "STATE_NEW_YORK"
                     }
                 }
                 reserves = 1
@@ -144,11 +135,10 @@
                 building = "building_logging_camp"
                 add_ownership = {
                     building = {
-                        { type = "building_financial_district"
-                          country = "c:USA"
-                          levels = 4
-                          region = "STATE_NEW_YORK"
-                        }
+                        type = "building_financial_district"
+                        country = "c:USA"
+                        levels = 4
+                        region = "STATE_NEW_YORK"
                     }
                 }
                 reserves = 1
@@ -163,16 +153,14 @@
                 building = "building_wheat_farm"
                 add_ownership = {
                     building = {
-                        { type = "building_wheat_farm"
-                          country = "c:USA"
-                          levels = 2
-                          region = "STATE_NEW_YORK"
-                        }
-                        { type = "building_financial_district"
-                          country = "c:USA"
-                          levels = 1
-                          region = "STATE_NEW_YORK"
-                        }
+                        type = "building_wheat_farm"
+                        country = "c:USA"
+                        levels = 2
+                        region = "STATE_NEW_YORK"
+                        type = "building_financial_district"
+                        country = "c:USA"
+                        levels = 1
+                        region = "STATE_NEW_YORK"
                     }
                 }
                 reserves = 1
@@ -186,16 +174,14 @@
                 building = "building_vineyard_plantation"
                 add_ownership = {
                     building = {
-                        { type = "building_manor_house"
-                          country = "c:USA"
-                          levels = 1
-                          region = "STATE_NEW_YORK"
-                        }
-                        { type = "building_financial_district"
-                          country = "c:USA"
-                          levels = 1
-                          region = "STATE_NEW_YORK"
-                        }
+                        type = "building_manor_house"
+                        country = "c:USA"
+                        levels = 1
+                        region = "STATE_NEW_YORK"
+                        type = "building_financial_district"
+                        country = "c:USA"
+                        levels = 1
+                        region = "STATE_NEW_YORK"
                     }
                 }
                 reserves = 1
@@ -208,11 +194,10 @@
                 building = "building_fishing_wharf"
                 add_ownership = {
                     building = {
-                        { type = "building_fishing_wharf"
-                          country = "c:USA"
-                          levels = 3
-                          region = "STATE_NEW_YORK"
-                        }
+                        type = "building_fishing_wharf"
+                        country = "c:USA"
+                        levels = 3
+                        region = "STATE_NEW_YORK"
                     }
                 }
                 reserves = 1
@@ -225,9 +210,8 @@
                 building = "building_port"
                 add_ownership = {
                     country = {
-                        { country = "c:USA"
-                          levels = 3
-                        }
+                        country = "c:USA"
+                        levels = 3
                     }
                 }
                 reserves = 1
@@ -239,10 +223,9 @@
                 building = "building_shipyards"
                 add_ownership = {
                     company = {
-                        { type = company_william_cramp
-                          country = "c:USA"
-                          levels = 1
-                        }
+                        type = company_william_cramp
+                        country = "c:USA"
+                        levels = 1
                     }
                 }
                 reserves = 1
@@ -254,11 +237,10 @@
                 building = "building_maize_farm"
                 add_ownership = {
                     building = {
-                        { type = "building_maize_farm"
-                          country = "c:USA"
-                          levels = 1
-                          region = "STATE_NEW_YORK"
-                        }
+                        type = "building_maize_farm"
+                        country = "c:USA"
+                        levels = 1
+                        region = "STATE_NEW_YORK"
                     }
                 }
                 reserves = 1
@@ -289,9 +271,8 @@
                 building = "building_port"
                 add_ownership = {
                     country = {
-                        { country = "c:RUS"
-                          levels = 1
-                        }
+                        country = "c:RUS"
+                        levels = 1
                     }
                 }
                 reserves = 1
@@ -309,11 +290,10 @@
                 building = "building_logging_camp"
                 add_ownership = {
                     building = {
-                        { type = "building_logging_camp"
-                          country = "c:ORG"
-                          levels = 1
-                          region = "STATE_OREGON"
-                        }
+                        type = "building_logging_camp"
+                        country = "c:ORG"
+                        levels = 1
+                        region = "STATE_OREGON"
                     }
                 }
                 reserves = 1
@@ -340,9 +320,8 @@
                 building = "building_government_administration"
                 add_ownership = {
                     country = {
-                        { country = "c:USA"
-                          levels = 1
-                        }
+                        country = "c:USA"
+                        levels = 1
                     }
                 }
                 reserves = 1
@@ -356,11 +335,10 @@
                 building = "building_lead_mine"
                 add_ownership = {
                     building = {
-                        { type = "building_financial_district"
-                          country = "c:USA"
-                          levels = 1
-                          region = "STATE_MISSOURI"
-                        }
+                        type = "building_financial_district"
+                        country = "c:USA"
+                        levels = 1
+                        region = "STATE_MISSOURI"
                     }
                 }
                 reserves = 1
@@ -375,16 +353,14 @@
                 building = "building_maize_farm"
                 add_ownership = {
                     building = {
-                        { type = "building_manor_house"
-                          country = "c:USA"
-                          levels = 1
-                          region = "STATE_MISSOURI"
-                        }
-                        { type = "building_maize_farm"
-                          country = "c:USA"
-                          levels = 1
-                          region = "STATE_MISSOURI"
-                        }
+                        type = "building_manor_house"
+                        country = "c:USA"
+                        levels = 1
+                        region = "STATE_MISSOURI"
+                        type = "building_maize_farm"
+                        country = "c:USA"
+                        levels = 1
+                        region = "STATE_MISSOURI"
                     }
                 }
                 reserves = 1
@@ -398,11 +374,10 @@
                 building = "building_livestock_ranch"
                 add_ownership = {
                     building = {
-                        { type = "building_manor_house"
-                          country = "c:USA"
-                          levels = 1
-                          region = "STATE_MISSOURI"
-                        }
+                        type = "building_manor_house"
+                        country = "c:USA"
+                        levels = 1
+                        region = "STATE_MISSOURI"
                     }
                 }
                 reserves = 1
@@ -421,9 +396,8 @@
                 building = "building_government_administration"
                 add_ownership = {
                     country = {
-                        { country = "c:USA"
-                          levels = 3
-                        }
+                        country = "c:USA"
+                        levels = 3
                     }
                 }
                 reserves = 1
@@ -437,9 +411,8 @@
                 building = "building_construction_sector"
                 add_ownership = {
                     country = {
-                        { country = "c:USA"
-                          levels = 1
-                        }
+                        country = "c:USA"
+                        levels = 1
                     }
                 }
                 reserves = 1
@@ -451,11 +424,10 @@
                 building = "building_glassworks"
                 add_ownership = {
                     building = {
-                        { type = "building_financial_district"
-                          country = "c:USA"
-                          levels = 1
-                          region = "STATE_OHIO"
-                        }
+                        type = "building_financial_district"
+                        country = "c:USA"
+                        levels = 1
+                        region = "STATE_OHIO"
                     }
                 }
                 reserves = 1
@@ -469,16 +441,14 @@
                 building = "building_furniture_manufacturies"
                 add_ownership = {
                     building = {
-                        { type = "building_financial_district"
-                          country = "c:USA"
-                          levels = 1
-                          region = "STATE_OHIO"
-                        }
-                        { type = "building_furniture_manufacturies"
-                          country = "c:USA"
-                          levels = 1
-                          region = "STATE_OHIO"
-                        }
+                        type = "building_financial_district"
+                        country = "c:USA"
+                        levels = 1
+                        region = "STATE_OHIO"
+                        type = "building_furniture_manufacturies"
+                        country = "c:USA"
+                        levels = 1
+                        region = "STATE_OHIO"
                     }
                 }
                 reserves = 1
@@ -492,11 +462,10 @@
                 building = "building_chemical_plants"
                 add_ownership = {
                     building = {
-                        { type = "building_financial_district"
-                          country = "c:USA"
-                          levels = 2
-                          region = "STATE_OHIO"
-                        }
+                        type = "building_financial_district"
+                        country = "c:USA"
+                        levels = 2
+                        region = "STATE_OHIO"
                     }
                 }
                 reserves = 1
@@ -508,11 +477,10 @@
                 building = "building_coal_mine"
                 add_ownership = {
                     building = {
-                        { type = "building_financial_district"
-                          country = "c:USA"
-                          levels = 3
-                          region = "STATE_OHIO"
-                        }
+                        type = "building_financial_district"
+                        country = "c:USA"
+                        levels = 3
+                        region = "STATE_OHIO"
                     }
                 }
                 reserves = 1
@@ -527,16 +495,14 @@
                 building = "building_maize_farm"
                 add_ownership = {
                     building = {
-                        { type = "building_maize_farm"
-                          country = "c:USA"
-                          levels = 7
-                          region = "STATE_OHIO"
-                        }
-                        { type = "building_manor_house"
-                          country = "c:USA"
-                          levels = 7
-                          region = "STATE_OHIO"
-                        }
+                        type = "building_maize_farm"
+                        country = "c:USA"
+                        levels = 7
+                        region = "STATE_OHIO"
+                        type = "building_manor_house"
+                        country = "c:USA"
+                        levels = 7
+                        region = "STATE_OHIO"
                     }
                 }
                 reserves = 1
@@ -550,11 +516,10 @@
                 building = "building_vineyard_plantation"
                 add_ownership = {
                     building = {
-                        { type = "building_manor_house"
-                          country = "c:USA"
-                          levels = 3
-                          region = "STATE_OHIO"
-                        }
+                        type = "building_manor_house"
+                        country = "c:USA"
+                        levels = 3
+                        region = "STATE_OHIO"
                     }
                 }
                 reserves = 1
@@ -567,16 +532,14 @@
                 building = "building_livestock_ranch"
                 add_ownership = {
                     building = {
-                        { type = "building_livestock_ranch"
-                          country = "c:USA"
-                          levels = 2
-                          region = "STATE_OHIO"
-                        }
-                        { type = "building_manor_house"
-                          country = "c:USA"
-                          levels = 1
-                          region = "STATE_OHIO"
-                        }
+                        type = "building_livestock_ranch"
+                        country = "c:USA"
+                        levels = 2
+                        region = "STATE_OHIO"
+                        type = "building_manor_house"
+                        country = "c:USA"
+                        levels = 1
+                        region = "STATE_OHIO"
                     }
                 }
                 reserves = 1
@@ -591,16 +554,14 @@
                 building = "building_logging_camp"
                 add_ownership = {
                     building = {
-                        { type = "building_logging_camp"
-                          country = "c:USA"
-                          levels = 1
-                          region = "STATE_OHIO"
-                        }
-                        { type = "building_financial_district"
-                          country = "c:USA"
-                          levels = 2
-                          region = "STATE_OHIO"
-                        }
+                        type = "building_logging_camp"
+                        country = "c:USA"
+                        levels = 1
+                        region = "STATE_OHIO"
+                        type = "building_financial_district"
+                        country = "c:USA"
+                        levels = 2
+                        region = "STATE_OHIO"
                     }
                 }
                 reserves = 1
@@ -615,11 +576,10 @@
                 building = "building_sulfur_mine"
                 add_ownership = {
                     building = {
-                        { type = "building_financial_district"
-                          country = "c:USA"
-                          levels = 4
-                          region = "STATE_OHIO"
-                        }
+                        type = "building_financial_district"
+                        country = "c:USA"
+                        levels = 4
+                        region = "STATE_OHIO"
                     }
                 }
                 reserves = 1
@@ -634,11 +594,10 @@
                 building = "building_lead_mine"
                 add_ownership = {
                     building = {
-                        { type = "building_financial_district"
-                          country = "c:USA"
-                          levels = 2
-                          region = "STATE_OHIO"
-                        }
+                        type = "building_financial_district"
+                        country = "c:USA"
+                        levels = 2
+                        region = "STATE_OHIO"
                     }
                 }
                 reserves = 1
@@ -657,9 +616,8 @@
                 building = "building_government_administration"
                 add_ownership = {
                     country = {
-                        { country = "c:USA"
-                          levels = 10
-                        }
+                        country = "c:USA"
+                        levels = 10
                     }
                 }
                 reserves = 1
@@ -673,9 +631,8 @@
                 building = "building_university"
                 add_ownership = {
                     country = {
-                        { country = "c:USA"
-                          levels = 1
-                        }
+                        country = "c:USA"
+                        levels = 1
                     }
                 }
                 reserves = 1
@@ -688,11 +645,10 @@
                 building = "building_food_industry"
                 add_ownership = {
                     building = {
-                        { type = "building_food_industry"
-                          country = "c:USA"
-                          levels = 5
-                          region = "STATE_FLORIDA"
-                        }
+                        type = "building_food_industry"
+                        country = "c:USA"
+                        levels = 5
+                        region = "STATE_FLORIDA"
                     }
                 }
                 reserves = 1
@@ -707,11 +663,10 @@
                 building = "building_coal_mine"
                 add_ownership = {
                     building = {
-                        { type = "building_financial_district"
-                          country = "c:USA"
-                          levels = 4
-                          region = "STATE_FLORIDA"
-                        }
+                        type = "building_financial_district"
+                        country = "c:USA"
+                        levels = 4
+                        region = "STATE_FLORIDA"
                     }
                 }
                 reserves = 1
@@ -726,16 +681,14 @@
                 building = "building_tobacco_plantation"
                 add_ownership = {
                     building = {
-                        { type = "building_manor_house"
-                          country = "c:USA"
-                          levels = 31
-                          region = "STATE_FLORIDA"
-                        }
-                        { type = "building_tobacco_plantation"
-                          country = "c:USA"
-                          levels = 10
-                          region = "STATE_FLORIDA"
-                        }
+                        type = "building_manor_house"
+                        country = "c:USA"
+                        levels = 31
+                        region = "STATE_FLORIDA"
+                        type = "building_tobacco_plantation"
+                        country = "c:USA"
+                        levels = 10
+                        region = "STATE_FLORIDA"
                     }
                 }
                 reserves = 1
@@ -748,16 +701,14 @@
                 building = "building_maize_farm"
                 add_ownership = {
                     building = {
-                        { type = "building_manor_house"
-                          country = "c:USA"
-                          levels = 18
-                          region = "STATE_FLORIDA"
-                        }
-                        { type = "building_maize_farm"
-                          country = "c:USA"
-                          levels = 21
-                          region = "STATE_FLORIDA"
-                        }
+                        type = "building_manor_house"
+                        country = "c:USA"
+                        levels = 18
+                        region = "STATE_FLORIDA"
+                        type = "building_maize_farm"
+                        country = "c:USA"
+                        levels = 21
+                        region = "STATE_FLORIDA"
                     }
                 }
                 reserves = 1
@@ -771,11 +722,10 @@
                 building = "building_vineyard_plantation"
                 add_ownership = {
                     building = {
-                        { type = "building_manor_house"
-                          country = "c:USA"
-                          levels = 2
-                          region = "STATE_FLORIDA"
-                        }
+                        type = "building_manor_house"
+                        country = "c:USA"
+                        levels = 2
+                        region = "STATE_FLORIDA"
                     }
                 }
                 reserves = 1
@@ -788,16 +738,14 @@
                 building = "building_livestock_ranch"
                 add_ownership = {
                     building = {
-                        { type = "building_manor_house"
-                          country = "c:USA"
-                          levels = 1
-                          region = "STATE_FLORIDA"
-                        }
-                        { type = "building_livestock_ranch"
-                          country = "c:USA"
-                          levels = 2
-                          region = "STATE_FLORIDA"
-                        }
+                        type = "building_manor_house"
+                        country = "c:USA"
+                        levels = 1
+                        region = "STATE_FLORIDA"
+                        type = "building_livestock_ranch"
+                        country = "c:USA"
+                        levels = 2
+                        region = "STATE_FLORIDA"
                     }
                 }
                 reserves = 1
@@ -812,11 +760,10 @@
                 building = "building_cotton_plantation"
                 add_ownership = {
                     building = {
-                        { type = "building_manor_house"
-                          country = "c:USA"
-                          levels = 45
-                          region = "STATE_FLORIDA"
-                        }
+                        type = "building_manor_house"
+                        country = "c:USA"
+                        levels = 45
+                        region = "STATE_FLORIDA"
                     }
                 }
                 reserves = 1
@@ -829,11 +776,10 @@
                 building = "building_sugar_plantation"
                 add_ownership = {
                     building = {
-                        { type = "building_manor_house"
-                          country = "c:USA"
-                          levels = 2
-                          region = "STATE_FLORIDA"
-                        }
+                        type = "building_manor_house"
+                        country = "c:USA"
+                        levels = 2
+                        region = "STATE_FLORIDA"
                     }
                 }
                 reserves = 1
@@ -846,9 +792,8 @@
                 building = "building_port"
                 add_ownership = {
                     country = {
-                        { country = "c:USA"
-                          levels = 4
-                        }
+                        country = "c:USA"
+                        levels = 4
                     }
                 }
                 reserves = 1
@@ -860,11 +805,10 @@
                 building = "building_logging_camp"
                 add_ownership = {
                     building = {
-                        { type = "building_financial_district"
-                          country = "c:USA"
-                          levels = 1
-                          region = "STATE_FLORIDA"
-                        }
+                        type = "building_financial_district"
+                        country = "c:USA"
+                        levels = 1
+                        region = "STATE_FLORIDA"
                     }
                 }
                 reserves = 1
@@ -879,11 +823,10 @@
                 building = "building_dye_plantation"
                 add_ownership = {
                     building = {
-                        { type = "building_manor_house"
-                          country = "c:USA"
-                          levels = 2
-                          region = "STATE_FLORIDA"
-                        }
+                        type = "building_manor_house"
+                        country = "c:USA"
+                        levels = 2
+                        region = "STATE_FLORIDA"
                     }
                 }
                 reserves = 1
@@ -900,9 +843,8 @@
                 building = "building_government_administration"
                 add_ownership = {
                     country = {
-                        { country = "c:USA"
-                          levels = 13
-                        }
+                        country = "c:USA"
+                        levels = 13
                     }
                 }
                 reserves = 1
@@ -916,11 +858,10 @@
                 building = "building_steel_mills"
                 add_ownership = {
                     building = {
-                        { type = "building_financial_district"
-                          country = "c:USA"
-                          levels = 2
-                          region = "STATE_PENNSYLVANIA"
-                        }
+                        type = "building_financial_district"
+                        country = "c:USA"
+                        levels = 2
+                        region = "STATE_PENNSYLVANIA"
                     }
                 }
                 reserves = 1
@@ -933,9 +874,8 @@
                 building = "building_construction_sector"
                 add_ownership = {
                     country = {
-                        { country = "c:USA"
-                          levels = 2
-                        }
+                        country = "c:USA"
+                        levels = 2
                     }
                 }
                 reserves = 1
@@ -947,11 +887,10 @@
                 building = "building_textile_mills"
                 add_ownership = {
                     building = {
-                        { type = "building_textile_mills"
-                          country = "c:USA"
-                          levels = 2
-                          region = "STATE_PENNSYLVANIA"
-                        }
+                        type = "building_textile_mills"
+                        country = "c:USA"
+                        levels = 2
+                        region = "STATE_PENNSYLVANIA"
                     }
                 }
                 reserves = 1
@@ -965,16 +904,14 @@
                 building = "building_furniture_manufacturies"
                 add_ownership = {
                     building = {
-                        { type = "building_furniture_manufacturies"
-                          country = "c:USA"
-                          levels = 2
-                          region = "STATE_PENNSYLVANIA"
-                        }
-                        { type = "building_financial_district"
-                          country = "c:USA"
-                          levels = 2
-                          region = "STATE_PENNSYLVANIA"
-                        }
+                        type = "building_furniture_manufacturies"
+                        country = "c:USA"
+                        levels = 2
+                        region = "STATE_PENNSYLVANIA"
+                        type = "building_financial_district"
+                        country = "c:USA"
+                        levels = 2
+                        region = "STATE_PENNSYLVANIA"
                     }
                 }
                 reserves = 1
@@ -988,9 +925,8 @@
                 building = "building_munition_plants"
                 add_ownership = {
                     country = {
-                        { country = "c:USA"
-                          levels = 1
-                        }
+                        country = "c:USA"
+                        levels = 1
                     }
                 }
                 reserves = 1
@@ -1003,11 +939,10 @@
                 building = "building_glassworks"
                 add_ownership = {
                     building = {
-                        { type = "building_financial_district"
-                          country = "c:USA"
-                          levels = 2
-                          region = "STATE_PENNSYLVANIA"
-                        }
+                        type = "building_financial_district"
+                        country = "c:USA"
+                        levels = 2
+                        region = "STATE_PENNSYLVANIA"
                     }
                 }
                 reserves = 1
@@ -1021,11 +956,10 @@
                 building = "building_coal_mine"
                 add_ownership = {
                     building = {
-                        { type = "building_financial_district"
-                          country = "c:USA"
-                          levels = 7
-                          region = "STATE_PENNSYLVANIA"
-                        }
+                        type = "building_financial_district"
+                        country = "c:USA"
+                        levels = 7
+                        region = "STATE_PENNSYLVANIA"
                     }
                 }
                 reserves = 1
@@ -1040,16 +974,14 @@
                 building = "building_maize_farm"
                 add_ownership = {
                     building = {
-                        { type = "building_maize_farm"
-                          country = "c:USA"
-                          levels = 5
-                          region = "STATE_PENNSYLVANIA"
-                        }
-                        { type = "building_manor_house"
-                          country = "c:USA"
-                          levels = 3
-                          region = "STATE_PENNSYLVANIA"
-                        }
+                        type = "building_maize_farm"
+                        country = "c:USA"
+                        levels = 5
+                        region = "STATE_PENNSYLVANIA"
+                        type = "building_manor_house"
+                        country = "c:USA"
+                        levels = 3
+                        region = "STATE_PENNSYLVANIA"
                     }
                 }
                 reserves = 1
@@ -1063,11 +995,10 @@
                 building = "building_tooling_workshops"
                 add_ownership = {
                     building = {
-                        { type = "building_tooling_workshops"
-                          country = "c:USA"
-                          levels = 2
-                          region = "STATE_PENNSYLVANIA"
-                        }
+                        type = "building_tooling_workshops"
+                        country = "c:USA"
+                        levels = 2
+                        region = "STATE_PENNSYLVANIA"
                     }
                 }
                 reserves = 1
@@ -1080,11 +1011,10 @@
                 building = "building_iron_mine"
                 add_ownership = {
                     building = {
-                        { type = "building_financial_district"
-                          country = "c:USA"
-                          levels = 4
-                          region = "STATE_PENNSYLVANIA"
-                        }
+                        type = "building_financial_district"
+                        country = "c:USA"
+                        levels = 4
+                        region = "STATE_PENNSYLVANIA"
                     }
                 }
                 reserves = 1
@@ -1099,11 +1029,10 @@
                 building = "building_vineyard_plantation"
                 add_ownership = {
                     building = {
-                        { type = "building_manor_house"
-                          country = "c:USA"
-                          levels = 2
-                          region = "STATE_PENNSYLVANIA"
-                        }
+                        type = "building_manor_house"
+                        country = "c:USA"
+                        levels = 2
+                        region = "STATE_PENNSYLVANIA"
                     }
                 }
                 reserves = 1
@@ -1116,16 +1045,14 @@
                 building = "building_livestock_ranch"
                 add_ownership = {
                     building = {
-                        { type = "building_livestock_ranch"
-                          country = "c:USA"
-                          levels = 4
-                          region = "STATE_PENNSYLVANIA"
-                        }
-                        { type = "building_manor_house"
-                          country = "c:USA"
-                          levels = 5
-                          region = "STATE_PENNSYLVANIA"
-                        }
+                        type = "building_livestock_ranch"
+                        country = "c:USA"
+                        levels = 4
+                        region = "STATE_PENNSYLVANIA"
+                        type = "building_manor_house"
+                        country = "c:USA"
+                        levels = 5
+                        region = "STATE_PENNSYLVANIA"
                     }
                 }
                 reserves = 1
@@ -1140,16 +1067,14 @@
                 building = "building_logging_camp"
                 add_ownership = {
                     building = {
-                        { type = "building_logging_camp"
-                          country = "c:USA"
-                          levels = 3
-                          region = "STATE_PENNSYLVANIA"
-                        }
-                        { type = "building_financial_district"
-                          country = "c:USA"
-                          levels = 3
-                          region = "STATE_PENNSYLVANIA"
-                        }
+                        type = "building_logging_camp"
+                        country = "c:USA"
+                        levels = 3
+                        region = "STATE_PENNSYLVANIA"
+                        type = "building_financial_district"
+                        country = "c:USA"
+                        levels = 3
+                        region = "STATE_PENNSYLVANIA"
                     }
                 }
                 reserves = 1
@@ -1164,11 +1089,10 @@
                 building = "building_explosives_factory"
                 add_ownership = {
                     building = {
-                        { type = "building_financial_district"
-                          country = "c:USA"
-                          levels = 1
-                          region = "STATE_PENNSYLVANIA"
-                        }
+                        type = "building_financial_district"
+                        country = "c:USA"
+                        levels = 1
+                        region = "STATE_PENNSYLVANIA"
                     }
                 }
                 reserves = 1
@@ -1180,10 +1104,9 @@
                 building = "building_motor_industry"
                 add_ownership = {
                     company = {
-                        { type = company_william_cramp
-                          country = "c:USA"
-                          levels = 1
-                        }
+                        type = company_william_cramp
+                        country = "c:USA"
+                        levels = 1
                     }
                 }
                 reserves = 1
@@ -1201,16 +1124,14 @@
                 building = "building_arms_industry"
                 add_ownership = {
                     building = {
-                        { type = "building_financial_district"
-                          country = "c:USA"
-                          levels = 2
-                          region = "STATE_PENNSYLVANIA"
-                        }
+                        type = "building_financial_district"
+                        country = "c:USA"
+                        levels = 2
+                        region = "STATE_PENNSYLVANIA"
                     }
                     country = {
-                        { country = "c:USA"
-                          levels = 1
-                        }
+                        country = "c:USA"
+                        levels = 1
                     }
                 }
                 reserves = 1
@@ -1223,11 +1144,10 @@
                 building = "building_tobacco_plantation"
                 add_ownership = {
                     building = {
-                        { type = "building_manor_house"
-                          country = "c:USA"
-                          levels = 8
-                          region = "STATE_PENNSYLVANIA"
-                        }
+                        type = "building_manor_house"
+                        country = "c:USA"
+                        levels = 8
+                        region = "STATE_PENNSYLVANIA"
                     }
                 }
                 reserves = 1
@@ -1240,11 +1160,10 @@
                 building = "building_cotton_plantation"
                 add_ownership = {
                     building = {
-                        { type = "building_manor_house"
-                          country = "c:USA"
-                          levels = 7
-                          region = "STATE_PENNSYLVANIA"
-                        }
+                        type = "building_manor_house"
+                        country = "c:USA"
+                        levels = 7
+                        region = "STATE_PENNSYLVANIA"
                     }
                 }
                 reserves = 1
@@ -1257,11 +1176,10 @@
                 building = "building_shipyards"
                 add_ownership = {
                     building = {
-                        { type = "building_shipyards"
-                          country = "c:USA"
-                          levels = 1
-                          region = "STATE_PENNSYLVANIA"
-                        }
+                        type = "building_shipyards"
+                        country = "c:USA"
+                        levels = 1
+                        region = "STATE_PENNSYLVANIA"
                     }
                 }
                 reserves = 1
@@ -1273,9 +1191,8 @@
                 building = "building_military_shipyards"
                 add_ownership = {
                     country = {
-                        { country = "c:USA"
-                          levels = 1
-                        }
+                        country = "c:USA"
+                        levels = 1
                     }
                 }
                 reserves = 1
@@ -1287,9 +1204,8 @@
                 building = "building_port"
                 add_ownership = {
                     country = {
-                        { country = "c:USA"
-                          levels = 5
-                        }
+                        country = "c:USA"
+                        levels = 5
                     }
                 }
                 reserves = 1
@@ -1301,11 +1217,10 @@
                 building = "building_fishing_wharf"
                 add_ownership = {
                     building = {
-                        { type = "building_fishing_wharf"
-                          country = "c:USA"
-                          levels = 4
-                          region = "STATE_PENNSYLVANIA"
-                        }
+                        type = "building_fishing_wharf"
+                        country = "c:USA"
+                        levels = 4
+                        region = "STATE_PENNSYLVANIA"
                     }
                 }
                 reserves = 1
@@ -1335,9 +1250,8 @@
                 building = "building_government_administration"
                 add_ownership = {
                     country = {
-                        { country = "c:USA"
-                          levels = 5
-                        }
+                        country = "c:USA"
+                        levels = 5
                     }
                 }
                 reserves = 1
@@ -1351,9 +1265,8 @@
                 building = "building_construction_sector"
                 add_ownership = {
                     country = {
-                        { country = "c:USA"
-                          levels = 1
-                        }
+                        country = "c:USA"
+                        levels = 1
                     }
                 }
                 reserves = 1
@@ -1365,9 +1278,8 @@
                 building = "building_university"
                 add_ownership = {
                     country = {
-                        { country = "c:USA"
-                          levels = 2
-                        }
+                        country = "c:USA"
+                        levels = 2
                     }
                 }
                 reserves = 1
@@ -1380,16 +1292,14 @@
                 building = "building_textile_mills"
                 add_ownership = {
                     building = {
-                        { type = "building_textile_mills"
-                          country = "c:USA"
-                          levels = 2
-                          region = "STATE_MASSACHUSETTS"
-                        }
-                        { type = "building_financial_district"
-                          country = "c:USA"
-                          levels = 1
-                          region = "STATE_MASSACHUSETTS"
-                        }
+                        type = "building_textile_mills"
+                        country = "c:USA"
+                        levels = 2
+                        region = "STATE_MASSACHUSETTS"
+                        type = "building_financial_district"
+                        country = "c:USA"
+                        levels = 1
+                        region = "STATE_MASSACHUSETTS"
                     }
                 }
                 reserves = 1
@@ -1403,11 +1313,10 @@
                 building = "building_glassworks"
                 add_ownership = {
                     building = {
-                        { type = "building_financial_district"
-                          country = "c:USA"
-                          levels = 2
-                          region = "STATE_MASSACHUSETTS"
-                        }
+                        type = "building_financial_district"
+                        country = "c:USA"
+                        levels = 2
+                        region = "STATE_MASSACHUSETTS"
                     }
                 }
                 reserves = 1
@@ -1421,10 +1330,9 @@
                 building = "building_shipyards"
                 add_ownership = {
                     company = {
-                        { type = company_william_cramp
-                          country = "c:USA"
-                          levels = 3
-                        }
+                        type = company_william_cramp
+                        country = "c:USA"
+                        levels = 3
                     }
                 }
                 reserves = 1
@@ -1436,11 +1344,10 @@
                 building = "building_fishing_wharf"
                 add_ownership = {
                     building = {
-                        { type = "building_fishing_wharf"
-                          country = "c:USA"
-                          levels = 7
-                          region = "STATE_MASSACHUSETTS"
-                        }
+                        type = "building_fishing_wharf"
+                        country = "c:USA"
+                        levels = 7
+                        region = "STATE_MASSACHUSETTS"
                     }
                 }
                 reserves = 1
@@ -1453,11 +1360,10 @@
                 building = "building_whaling_station"
                 add_ownership = {
                     building = {
-                        { type = "building_financial_district"
-                          country = "c:USA"
-                          levels = 1
-                          region = "STATE_MASSACHUSETTS"
-                        }
+                        type = "building_financial_district"
+                        country = "c:USA"
+                        levels = 1
+                        region = "STATE_MASSACHUSETTS"
                     }
                 }
                 reserves = 1
@@ -1470,16 +1376,14 @@
                 building = "building_wheat_farm"
                 add_ownership = {
                     building = {
-                        { type = "building_wheat_farm"
-                          country = "c:USA"
-                          levels = 1
-                          region = "STATE_MASSACHUSETTS"
-                        }
-                        { type = "building_manor_house"
-                          country = "c:USA"
-                          levels = 1
-                          region = "STATE_MASSACHUSETTS"
-                        }
+                        type = "building_wheat_farm"
+                        country = "c:USA"
+                        levels = 1
+                        region = "STATE_MASSACHUSETTS"
+                        type = "building_manor_house"
+                        country = "c:USA"
+                        levels = 1
+                        region = "STATE_MASSACHUSETTS"
                     }
                 }
                 reserves = 1
@@ -1493,9 +1397,8 @@
                 building = "building_port"
                 add_ownership = {
                     country = {
-                        { country = "c:USA"
-                          levels = 5
-                        }
+                        country = "c:USA"
+                        levels = 5
                     }
                 }
                 reserves = 1
@@ -1507,11 +1410,10 @@
                 building = "building_logging_camp"
                 add_ownership = {
                     building = {
-                        { type = "building_financial_district"
-                          country = "c:USA"
-                          levels = 6
-                          region = "STATE_MASSACHUSETTS"
-                        }
+                        type = "building_financial_district"
+                        country = "c:USA"
+                        levels = 6
+                        region = "STATE_MASSACHUSETTS"
                     }
                 }
                 reserves = 1
@@ -1526,11 +1428,10 @@
                 building = "building_iron_mine"
                 add_ownership = {
                     building = {
-                        { type = "building_financial_district"
-                          country = "c:USA"
-                          levels = 2
-                          region = "STATE_MASSACHUSETTS"
-                        }
+                        type = "building_financial_district"
+                        country = "c:USA"
+                        levels = 2
+                        region = "STATE_MASSACHUSETTS"
                     }
                 }
                 reserves = 1
@@ -1545,11 +1446,10 @@
                 building = "building_livestock_ranch"
                 add_ownership = {
                     building = {
-                        { type = "building_livestock_ranch"
-                          country = "c:USA"
-                          levels = 2
-                          region = "STATE_MASSACHUSETTS"
-                        }
+                        type = "building_livestock_ranch"
+                        country = "c:USA"
+                        levels = 2
+                        region = "STATE_MASSACHUSETTS"
                     }
                 }
                 reserves = 1
@@ -1564,11 +1464,10 @@
                 building = "building_food_industry"
                 add_ownership = {
                     building = {
-                        { type = "building_food_industry"
-                          country = "c:USA"
-                          levels = 2
-                          region = "STATE_MASSACHUSETTS"
-                        }
+                        type = "building_food_industry"
+                        country = "c:USA"
+                        levels = 2
+                        region = "STATE_MASSACHUSETTS"
                     }
                 }
                 reserves = 1
@@ -1583,11 +1482,10 @@
                 building = "building_furniture_manufacturies"
                 add_ownership = {
                     building = {
-                        { type = "building_furniture_manufacturies"
-                          country = "c:USA"
-                          levels = 1
-                          region = "STATE_MASSACHUSETTS"
-                        }
+                        type = "building_furniture_manufacturies"
+                        country = "c:USA"
+                        levels = 1
+                        region = "STATE_MASSACHUSETTS"
                     }
                 }
                 reserves = 1
@@ -1605,9 +1503,8 @@
                 building = "building_government_administration"
                 add_ownership = {
                     country = {
-                        { country = "c:HAW"
-                          levels = 1
-                        }
+                        country = "c:HAW"
+                        levels = 1
                     }
                 }
                 reserves = 1
@@ -1621,11 +1518,10 @@
                 building = "building_sugar_plantation"
                 add_ownership = {
                     building = {
-                        { type = "building_manor_house"
-                          country = "c:HAW"
-                          levels = 1
-                          region = "STATE_HAWAIIAN_ISLANDS"
-                        }
+                        type = "building_manor_house"
+                        country = "c:HAW"
+                        levels = 1
+                        region = "STATE_HAWAIIAN_ISLANDS"
                     }
                 }
                 reserves = 1
@@ -1638,11 +1534,10 @@
                 building = "building_rice_farm"
                 add_ownership = {
                     building = {
-                        { type = "building_manor_house"
-                          country = "c:HAW"
-                          levels = 1
-                          region = "STATE_HAWAIIAN_ISLANDS"
-                        }
+                        type = "building_manor_house"
+                        country = "c:HAW"
+                        levels = 1
+                        region = "STATE_HAWAIIAN_ISLANDS"
                     }
                 }
                 reserves = 1
@@ -1656,11 +1551,10 @@
                 building = "building_banana_plantation"
                 add_ownership = {
                     building = {
-                        { type = "building_manor_house"
-                          country = "c:HAW"
-                          levels = 1
-                          region = "STATE_HAWAIIAN_ISLANDS"
-                        }
+                        type = "building_manor_house"
+                        country = "c:HAW"
+                        levels = 1
+                        region = "STATE_HAWAIIAN_ISLANDS"
                     }
                 }
                 reserves = 1
@@ -1673,11 +1567,10 @@
                 building = "building_logging_camp"
                 add_ownership = {
                     building = {
-                        { type = "building_financial_district"
-                          country = "c:HAW"
-                          levels = 1
-                          region = "STATE_HAWAIIAN_ISLANDS"
-                        }
+                        type = "building_financial_district"
+                        country = "c:HAW"
+                        levels = 1
+                        region = "STATE_HAWAIIAN_ISLANDS"
                     }
                 }
                 reserves = 1
@@ -1692,11 +1585,10 @@
                 building = "building_fishing_wharf"
                 add_ownership = {
                     building = {
-                        { type = "building_fishing_wharf"
-                          country = "c:HAW"
-                          levels = 1
-                          region = "STATE_HAWAIIAN_ISLANDS"
-                        }
+                        type = "building_fishing_wharf"
+                        country = "c:HAW"
+                        levels = 1
+                        region = "STATE_HAWAIIAN_ISLANDS"
                     }
                 }
                 reserves = 1
@@ -1709,9 +1601,8 @@
                 building = "building_port"
                 add_ownership = {
                     country = {
-                        { country = "c:HAW"
-                          levels = 1
-                        }
+                        country = "c:HAW"
+                        levels = 1
                     }
                 }
                 reserves = 1
@@ -1727,11 +1618,10 @@
                 building = "building_logging_camp"
                 add_ownership = {
                     building = {
-                        { type = "building_financial_district"
-                          country = "c:HBC"
-                          levels = 1
-                          region = "STATE_MANITOBA"
-                        }
+                        type = "building_financial_district"
+                        country = "c:HBC"
+                        levels = 1
+                        region = "STATE_MANITOBA"
                     }
                 }
                 reserves = 1
@@ -1748,11 +1638,10 @@
                 building = "building_sulfur_mine"
                 add_ownership = {
                     building = {
-                        { type = "building_financial_district"
-                          country = "c:ONT"
-                          levels = 6
-                          region = "STATE_ONTARIO"
-                        }
+                        type = "building_financial_district"
+                        country = "c:ONT"
+                        levels = 6
+                        region = "STATE_ONTARIO"
                     }
                 }
                 reserves = 1
@@ -1767,11 +1656,10 @@
                 building = "building_wheat_farm"
                 add_ownership = {
                     building = {
-                        { type = "building_manor_house"
-                          country = "c:ONT"
-                          levels = 1
-                          region = "STATE_ONTARIO"
-                        }
+                        type = "building_manor_house"
+                        country = "c:ONT"
+                        levels = 1
+                        region = "STATE_ONTARIO"
                     }
                 }
                 reserves = 1
@@ -1785,11 +1673,10 @@
                 building = "building_vineyard_plantation"
                 add_ownership = {
                     building = {
-                        { type = "building_manor_house"
-                          country = "c:ONT"
-                          levels = 2
-                          region = "STATE_ONTARIO"
-                        }
+                        type = "building_manor_house"
+                        country = "c:ONT"
+                        levels = 2
+                        region = "STATE_ONTARIO"
                     }
                 }
                 reserves = 1
@@ -1802,11 +1689,10 @@
                 building = "building_livestock_ranch"
                 add_ownership = {
                     building = {
-                        { type = "building_livestock_ranch"
-                          country = "c:ONT"
-                          levels = 1
-                          region = "STATE_ONTARIO"
-                        }
+                        type = "building_livestock_ranch"
+                        country = "c:ONT"
+                        levels = 1
+                        region = "STATE_ONTARIO"
                     }
                 }
                 reserves = 1
@@ -1821,11 +1707,10 @@
                 building = "building_tobacco_plantation"
                 add_ownership = {
                     building = {
-                        { type = "building_manor_house"
-                          country = "c:ONT"
-                          levels = 1
-                          region = "STATE_ONTARIO"
-                        }
+                        type = "building_manor_house"
+                        country = "c:ONT"
+                        levels = 1
+                        region = "STATE_ONTARIO"
                     }
                 }
                 reserves = 1
@@ -1838,9 +1723,8 @@
                 building = "building_barracks"
                 add_ownership = {
                     country = {
-                        { country = "c:ONT"
-                          levels = 5
-                        }
+                        country = "c:ONT"
+                        levels = 5
                     }
                 }
                 reserves = 1
@@ -1856,11 +1740,10 @@
                 building = "building_lead_mine"
                 add_ownership = {
                     building = {
-                        { type = "building_financial_district"
-                          country = "c:NBS"
-                          levels = 2
-                          region = "STATE_NEW_BRUNSWICK"
-                        }
+                        type = "building_financial_district"
+                        country = "c:NBS"
+                        levels = 2
+                        region = "STATE_NEW_BRUNSWICK"
                     }
                 }
                 reserves = 1
@@ -1875,11 +1758,10 @@
                 building = "building_logging_camp"
                 add_ownership = {
                     building = {
-                        { type = "building_financial_district"
-                          country = "c:NBS"
-                          levels = 1
-                          region = "STATE_NEW_BRUNSWICK"
-                        }
+                        type = "building_financial_district"
+                        country = "c:NBS"
+                        levels = 1
+                        region = "STATE_NEW_BRUNSWICK"
                     }
                 }
                 reserves = 1
@@ -1894,9 +1776,8 @@
                 building = "building_barracks"
                 add_ownership = {
                     country = {
-                        { country = "c:NBS"
-                          levels = 2
-                        }
+                        country = "c:NBS"
+                        levels = 2
                     }
                 }
                 reserves = 1
@@ -1908,9 +1789,8 @@
                 building = "building_port"
                 add_ownership = {
                     country = {
-                        { country = "c:NBS"
-                          levels = 1
-                        }
+                        country = "c:NBS"
+                        levels = 1
                     }
                 }
                 reserves = 1
@@ -1924,11 +1804,10 @@
                 building = "building_fishing_wharf"
                 add_ownership = {
                     building = {
-                        { type = "building_fishing_wharf"
-                          country = "c:NVS"
-                          levels = 1
-                          region = "STATE_NEW_BRUNSWICK"
-                        }
+                        type = "building_fishing_wharf"
+                        country = "c:NVS"
+                        levels = 1
+                        region = "STATE_NEW_BRUNSWICK"
                     }
                 }
                 reserves = 1
@@ -1941,9 +1820,8 @@
                 building = "building_barracks"
                 add_ownership = {
                     country = {
-                        { country = "c:NVS"
-                          levels = 3
-                        }
+                        country = "c:NVS"
+                        levels = 3
                     }
                 }
                 reserves = 1
@@ -1955,9 +1833,8 @@
                 building = "building_port"
                 add_ownership = {
                     country = {
-                        { country = "c:NVS"
-                          levels = 1
-                        }
+                        country = "c:NVS"
+                        levels = 1
                     }
                 }
                 reserves = 1
@@ -1973,9 +1850,8 @@
                 building = "building_university"
                 add_ownership = {
                     country = {
-                        { country = "c:QUE"
-                          levels = 1
-                        }
+                        country = "c:QUE"
+                        levels = 1
                     }
                 }
                 reserves = 1
@@ -1988,11 +1864,10 @@
                 building = "building_shipyards"
                 add_ownership = {
                     building = {
-                        { type = "building_shipyards"
-                          country = "c:QUE"
-                          levels = 1
-                          region = "STATE_QUEBEC"
-                        }
+                        type = "building_shipyards"
+                        country = "c:QUE"
+                        levels = 1
+                        region = "STATE_QUEBEC"
                     }
                 }
                 reserves = 1
@@ -2004,9 +1879,8 @@
                 building = "building_military_shipyards"
                 add_ownership = {
                     country = {
-                        { country = "c:QUE"
-                          levels = 1
-                        }
+                        country = "c:QUE"
+                        levels = 1
                     }
                 }
                 reserves = 1
@@ -2018,11 +1892,10 @@
                 building = "building_iron_mine"
                 add_ownership = {
                     building = {
-                        { type = "building_financial_district"
-                          country = "c:QUE"
-                          levels = 1
-                          region = "STATE_QUEBEC"
-                        }
+                        type = "building_financial_district"
+                        country = "c:QUE"
+                        levels = 1
+                        region = "STATE_QUEBEC"
                     }
                 }
                 reserves = 1
@@ -2037,11 +1910,10 @@
                 building = "building_logging_camp"
                 add_ownership = {
                     building = {
-                        { type = "building_financial_district"
-                          country = "c:QUE"
-                          levels = 1
-                          region = "STATE_QUEBEC"
-                        }
+                        type = "building_financial_district"
+                        country = "c:QUE"
+                        levels = 1
+                        region = "STATE_QUEBEC"
                     }
                 }
                 reserves = 1
@@ -2056,11 +1928,10 @@
                 building = "building_wheat_farm"
                 add_ownership = {
                     building = {
-                        { type = "building_manor_house"
-                          country = "c:QUE"
-                          levels = 2
-                          region = "STATE_QUEBEC"
-                        }
+                        type = "building_manor_house"
+                        country = "c:QUE"
+                        levels = 2
+                        region = "STATE_QUEBEC"
                     }
                 }
                 reserves = 1
@@ -2074,9 +1945,8 @@
                 building = "building_barracks"
                 add_ownership = {
                     country = {
-                        { country = "c:QUE"
-                          levels = 5
-                        }
+                        country = "c:QUE"
+                        levels = 5
                     }
                 }
                 reserves = 1
@@ -2088,9 +1958,8 @@
                 building = "building_port"
                 add_ownership = {
                     country = {
-                        { country = "c:QUE"
-                          levels = 1
-                        }
+                        country = "c:QUE"
+                        levels = 1
                     }
                 }
                 reserves = 1
@@ -2104,11 +1973,10 @@
                 building = "building_logging_camp"
                 add_ownership = {
                     building = {
-                        { type = "building_financial_district"
-                          country = "c:HBC"
-                          levels = 1
-                          region = "STATE_MANITOBA"
-                        }
+                        type = "building_financial_district"
+                        country = "c:HBC"
+                        levels = 1
+                        region = "STATE_MANITOBA"
                     }
                 }
                 reserves = 1
@@ -2127,11 +1995,10 @@
                 building = "building_fishing_wharf"
                 add_ownership = {
                     building = {
-                        { type = "building_fishing_wharf"
-                          country = "c:GBR"
-                          levels = 2
-                          region = "STATE_NEWFOUNDLAND"
-                        }
+                        type = "building_fishing_wharf"
+                        country = "c:GBR"
+                        levels = 2
+                        region = "STATE_NEWFOUNDLAND"
                     }
                 }
                 reserves = 1
@@ -2148,11 +2015,10 @@
                 building = "building_logging_camp"
                 add_ownership = {
                     building = {
-                        { type = "building_financial_district"
-                          country = "c:HBC"
-                          levels = 1
-                          region = "STATE_MANITOBA"
-                        }
+                        type = "building_financial_district"
+                        country = "c:HBC"
+                        levels = 1
+                        region = "STATE_MANITOBA"
                     }
                 }
                 reserves = 1
@@ -2175,11 +2041,10 @@
                 building = "building_logging_camp"
                 add_ownership = {
                     building = {
-                        { type = "building_financial_district"
-                          country = "c:ORG"
-                          levels = 1
-                          region = "STATE_BRITISH_COLUMBIA"
-                        }
+                        type = "building_financial_district"
+                        country = "c:ORG"
+                        levels = 1
+                        region = "STATE_BRITISH_COLUMBIA"
                     }
                 }
                 reserves = 1
@@ -2194,9 +2059,8 @@
                 building = "building_barracks"
                 add_ownership = {
                     country = {
-                        { country = "c:ORG"
-                          levels = 2
-                        }
+                        country = "c:ORG"
+                        levels = 2
                     }
                 }
                 reserves = 1
@@ -2218,9 +2082,8 @@
                 building = "building_barracks"
                 add_ownership = {
                     country = {
-                        { country = "c:HBC"
-                          levels = 2
-                        }
+                        country = "c:HBC"
+                        levels = 2
                     }
                 }
                 reserves = 1
@@ -2232,11 +2095,10 @@
                 building = "building_logging_camp"
                 add_ownership = {
                     building = {
-                        { type = "building_financial_district"
-                          country = "c:HBC"
-                          levels = 2
-                          region = "STATE_MANITOBA"
-                        }
+                        type = "building_financial_district"
+                        country = "c:HBC"
+                        levels = 2
+                        region = "STATE_MANITOBA"
                     }
                 }
                 reserves = 1
@@ -2269,9 +2131,8 @@
                 building = "building_port"
                 add_ownership = {
                     country = {
-                        { country = "c:GBR"
-                          levels = 1
-                        }
+                        country = "c:GBR"
+                        levels = 1
                     }
                 }
                 reserves = 1
@@ -2287,11 +2148,10 @@
                 building = "building_maize_farm"
                 add_ownership = {
                     building = {
-                        { type = "building_manor_house"
-                          country = "c:TEX"
-                          levels = 1
-                          region = "STATE_TEXAS"
-                        }
+                        type = "building_manor_house"
+                        country = "c:TEX"
+                        levels = 1
+                        region = "STATE_TEXAS"
                     }
                 }
                 reserves = 1
@@ -2305,11 +2165,10 @@
                 building = "building_vineyard_plantation"
                 add_ownership = {
                     building = {
-                        { type = "building_manor_house"
-                          country = "c:TEX"
-                          levels = 1
-                          region = "STATE_TEXAS"
-                        }
+                        type = "building_manor_house"
+                        country = "c:TEX"
+                        levels = 1
+                        region = "STATE_TEXAS"
                     }
                 }
                 reserves = 1
@@ -2328,9 +2187,8 @@
                 building = "building_port"
                 add_ownership = {
                     country = {
-                        { country = "c:USA"
-                          levels = 2
-                        }
+                        country = "c:USA"
+                        levels = 2
                     }
                 }
                 reserves = 1
@@ -2342,11 +2200,10 @@
                 building = "building_sugar_plantation"
                 add_ownership = {
                     building = {
-                        { type = "building_manor_house"
-                          country = "c:USA"
-                          levels = 1
-                          region = "STATE_TEXAS"
-                        }
+                        type = "building_manor_house"
+                        country = "c:USA"
+                        levels = 1
+                        region = "STATE_TEXAS"
                     }
                 }
                 reserves = 1
@@ -2359,11 +2216,10 @@
                 building = "building_cotton_plantation"
                 add_ownership = {
                     building = {
-                        { type = "building_manor_house"
-                          country = "c:USA"
-                          levels = 3
-                          region = "STATE_TEXAS"
-                        }
+                        type = "building_manor_house"
+                        country = "c:USA"
+                        levels = 3
+                        region = "STATE_TEXAS"
                     }
                 }
                 reserves = 1
@@ -2376,11 +2232,10 @@
                 building = "building_livestock_ranch"
                 add_ownership = {
                     building = {
-                        { type = "building_manor_house"
-                          country = "c:USA"
-                          levels = 1
-                          region = "STATE_TEXAS"
-                        }
+                        type = "building_manor_house"
+                        country = "c:USA"
+                        levels = 1
+                        region = "STATE_TEXAS"
                     }
                 }
                 reserves = 1
@@ -2397,11 +2252,10 @@
                 building = "building_cotton_plantation"
                 add_ownership = {
                     building = {
-                        { type = "building_cotton_plantation"
-                          country = "c:SEQ"
-                          levels = 1
-                          region = "STATE_TEXAS"
-                        }
+                        type = "building_cotton_plantation"
+                        country = "c:SEQ"
+                        levels = 1
+                        region = "STATE_TEXAS"
                     }
                 }
                 reserves = 1
@@ -2422,11 +2276,10 @@
                 building = "building_maize_farm"
                 add_ownership = {
                     building = {
-                        { type = "building_manor_house"
-                          country = "c:MEX"
-                          levels = 1
-                          region = "STATE_RIO_GRANDE"
-                        }
+                        type = "building_manor_house"
+                        country = "c:MEX"
+                        levels = 1
+                        region = "STATE_RIO_GRANDE"
                     }
                 }
                 reserves = 1
@@ -2440,11 +2293,10 @@
                 building = "building_logging_camp"
                 add_ownership = {
                     building = {
-                        { type = "building_financial_district"
-                          country = "c:MEX"
-                          levels = 1
-                          region = "STATE_MEXICO"
-                        }
+                        type = "building_financial_district"
+                        country = "c:MEX"
+                        levels = 1
+                        region = "STATE_MEXICO"
                     }
                 }
                 reserves = 1
@@ -2459,11 +2311,10 @@
                 building = "building_fishing_wharf"
                 add_ownership = {
                     building = {
-                        { type = "building_fishing_wharf"
-                          country = "c:MEX"
-                          levels = 1
-                          region = "STATE_RIO_GRANDE"
-                        }
+                        type = "building_fishing_wharf"
+                        country = "c:MEX"
+                        levels = 1
+                        region = "STATE_RIO_GRANDE"
                     }
                 }
                 reserves = 1
@@ -2476,11 +2327,10 @@
                 building = "building_livestock_ranch"
                 add_ownership = {
                     building = {
-                        { type = "building_manor_house"
-                          country = "c:MEX"
-                          levels = 2
-                          region = "STATE_RIO_GRANDE"
-                        }
+                        type = "building_manor_house"
+                        country = "c:MEX"
+                        levels = 2
+                        region = "STATE_RIO_GRANDE"
                     }
                 }
                 reserves = 1
@@ -2499,11 +2349,10 @@
                 building = "building_banana_plantation"
                 add_ownership = {
                     building = {
-                        { type = "building_manor_house"
-                          country = "c:MEX"
-                          levels = 2
-                          region = "STATE_YUCATAN"
-                        }
+                        type = "building_manor_house"
+                        country = "c:MEX"
+                        levels = 2
+                        region = "STATE_YUCATAN"
                     }
                 }
                 reserves = 1
@@ -2516,11 +2365,10 @@
                 building = "building_sugar_plantation"
                 add_ownership = {
                     building = {
-                        { type = "building_manor_house"
-                          country = "c:MEX"
-                          levels = 1
-                          region = "STATE_YUCATAN"
-                        }
+                        type = "building_manor_house"
+                        country = "c:MEX"
+                        levels = 1
+                        region = "STATE_YUCATAN"
                     }
                 }
                 reserves = 1
@@ -2537,11 +2385,10 @@
                 building = "building_dye_plantation"
                 add_ownership = {
                     building = {
-                        { type = "building_manor_house"
-                          country = "c:MEX"
-                          levels = 1
-                          region = "STATE_YUCATAN"
-                        }
+                        type = "building_manor_house"
+                        country = "c:MEX"
+                        levels = 1
+                        region = "STATE_YUCATAN"
                     }
                 }
                 reserves = 1
@@ -2558,9 +2405,8 @@
                 building = "building_government_administration"
                 add_ownership = {
                     country = {
-                        { country = "c:MEX"
-                          levels = 10
-                        }
+                        country = "c:MEX"
+                        levels = 10
                     }
                 }
                 reserves = 1
@@ -2574,9 +2420,8 @@
                 building = "building_construction_sector"
                 add_ownership = {
                     country = {
-                        { country = "c:MEX"
-                          levels = 1
-                        }
+                        country = "c:MEX"
+                        levels = 1
                     }
                 }
                 reserves = 1
@@ -2588,11 +2433,10 @@
                 building = "building_glassworks"
                 add_ownership = {
                     building = {
-                        { type = "building_glassworks"
-                          country = "c:MEX"
-                          levels = 1
-                          region = "STATE_MEXICO"
-                        }
+                        type = "building_glassworks"
+                        country = "c:MEX"
+                        levels = 1
+                        region = "STATE_MEXICO"
                     }
                 }
                 reserves = 1
@@ -2606,11 +2450,10 @@
                 building = "building_textile_mills"
                 add_ownership = {
                     building = {
-                        { type = "building_textile_mills"
-                          country = "c:MEX"
-                          levels = 3
-                          region = "STATE_MEXICO"
-                        }
+                        type = "building_textile_mills"
+                        country = "c:MEX"
+                        levels = 3
+                        region = "STATE_MEXICO"
                     }
                 }
                 reserves = 1
@@ -2624,11 +2467,10 @@
                 building = "building_furniture_manufacturies"
                 add_ownership = {
                     building = {
-                        { type = "building_furniture_manufacturies"
-                          country = "c:MEX"
-                          levels = 2
-                          region = "STATE_MEXICO"
-                        }
+                        type = "building_furniture_manufacturies"
+                        country = "c:MEX"
+                        levels = 2
+                        region = "STATE_MEXICO"
                     }
                 }
                 reserves = 1
@@ -2642,16 +2484,14 @@
                 building = "building_maize_farm"
                 add_ownership = {
                     building = {
-                        { type = "building_manor_house"
-                          country = "c:MEX"
-                          levels = 2
-                          region = "STATE_MEXICO"
-                        }
-                        { type = "building_maize_farm"
-                          country = "c:MEX"
-                          levels = 2
-                          region = "STATE_MEXICO"
-                        }
+                        type = "building_manor_house"
+                        country = "c:MEX"
+                        levels = 2
+                        region = "STATE_MEXICO"
+                        type = "building_maize_farm"
+                        country = "c:MEX"
+                        levels = 2
+                        region = "STATE_MEXICO"
                     }
                 }
                 reserves = 1
@@ -2665,11 +2505,10 @@
                 building = "building_vineyard_plantation"
                 add_ownership = {
                     building = {
-                        { type = "building_manor_house"
-                          country = "c:MEX"
-                          levels = 2
-                          region = "STATE_MEXICO"
-                        }
+                        type = "building_manor_house"
+                        country = "c:MEX"
+                        levels = 2
+                        region = "STATE_MEXICO"
                     }
                 }
                 reserves = 1
@@ -2682,11 +2521,10 @@
                 building = "building_livestock_ranch"
                 add_ownership = {
                     building = {
-                        { type = "building_livestock_ranch"
-                          country = "c:MEX"
-                          levels = 1
-                          region = "STATE_MEXICO"
-                        }
+                        type = "building_livestock_ranch"
+                        country = "c:MEX"
+                        levels = 1
+                        region = "STATE_MEXICO"
                     }
                 }
                 reserves = 1
@@ -2701,11 +2539,10 @@
                 building = "building_tobacco_plantation"
                 add_ownership = {
                     building = {
-                        { type = "building_manor_house"
-                          country = "c:MEX"
-                          levels = 3
-                          region = "STATE_MEXICO"
-                        }
+                        type = "building_manor_house"
+                        country = "c:MEX"
+                        levels = 3
+                        region = "STATE_MEXICO"
                     }
                 }
                 reserves = 1
@@ -2718,11 +2555,10 @@
                 building = "building_dye_plantation"
                 add_ownership = {
                     building = {
-                        { type = "building_manor_house"
-                          country = "c:MEX"
-                          levels = 3
-                          region = "STATE_MEXICO"
-                        }
+                        type = "building_manor_house"
+                        country = "c:MEX"
+                        levels = 3
+                        region = "STATE_MEXICO"
                     }
                 }
                 reserves = 1
@@ -2735,11 +2571,10 @@
                 building = "building_iron_mine"
                 add_ownership = {
                     building = {
-                        { type = "building_financial_district"
-                          country = "c:MEX"
-                          levels = 1
-                          region = "STATE_MEXICO"
-                        }
+                        type = "building_financial_district"
+                        country = "c:MEX"
+                        levels = 1
+                        region = "STATE_MEXICO"
                     }
                 }
                 reserves = 1
@@ -2754,11 +2589,10 @@
                 building = "building_fishing_wharf"
                 add_ownership = {
                     building = {
-                        { type = "building_fishing_wharf"
-                          country = "c:MEX"
-                          levels = 4
-                          region = "STATE_MEXICO"
-                        }
+                        type = "building_fishing_wharf"
+                        country = "c:MEX"
+                        levels = 4
+                        region = "STATE_MEXICO"
                     }
                 }
                 reserves = 1
@@ -2771,9 +2605,8 @@
                 building = "building_port"
                 add_ownership = {
                     country = {
-                        { country = "c:MEX"
-                          levels = 1
-                        }
+                        country = "c:MEX"
+                        levels = 1
                     }
                 }
                 reserves = 1
@@ -2785,11 +2618,10 @@
                 building = "building_food_industry"
                 add_ownership = {
                     building = {
-                        { type = "building_food_industry"
-                          country = "c:MEX"
-                          levels = 1
-                          region = "STATE_MEXICO"
-                        }
+                        type = "building_food_industry"
+                        country = "c:MEX"
+                        levels = 1
+                        region = "STATE_MEXICO"
                     }
                 }
                 reserves = 1
@@ -2804,11 +2636,10 @@
                 building = "building_sugar_plantation"
                 add_ownership = {
                     building = {
-                        { type = "building_manor_house"
-                          country = "c:MEX"
-                          levels = 4
-                          region = "STATE_MEXICO"
-                        }
+                        type = "building_manor_house"
+                        country = "c:MEX"
+                        levels = 4
+                        region = "STATE_MEXICO"
                     }
                 }
                 reserves = 1
@@ -2821,11 +2652,10 @@
                 building = "building_logging_camp"
                 add_ownership = {
                     building = {
-                        { type = "building_financial_district"
-                          country = "c:MEX"
-                          levels = 1
-                          region = "STATE_MEXICO"
-                        }
+                        type = "building_financial_district"
+                        country = "c:MEX"
+                        levels = 1
+                        region = "STATE_MEXICO"
                     }
                 }
                 reserves = 1
@@ -2844,9 +2674,8 @@
                 building = "building_government_administration"
                 add_ownership = {
                     country = {
-                        { country = "c:MEX"
-                          levels = 7
-                        }
+                        country = "c:MEX"
+                        levels = 7
                     }
                 }
                 reserves = 1
@@ -2860,9 +2689,8 @@
                 building = "building_university"
                 add_ownership = {
                     country = {
-                        { country = "c:MEX"
-                          levels = 2
-                        }
+                        country = "c:MEX"
+                        levels = 2
                     }
                 }
                 reserves = 1
@@ -2875,11 +2703,10 @@
                 building = "building_logging_camp"
                 add_ownership = {
                     building = {
-                        { type = "building_financial_district"
-                          country = "c:MEX"
-                          levels = 2
-                          region = "STATE_MEXICO"
-                        }
+                        type = "building_financial_district"
+                        country = "c:MEX"
+                        levels = 2
+                        region = "STATE_MEXICO"
                     }
                 }
                 reserves = 1
@@ -2894,11 +2721,10 @@
                 building = "building_banana_plantation"
                 add_ownership = {
                     building = {
-                        { type = "building_manor_house"
-                          country = "c:MEX"
-                          levels = 1
-                          region = "STATE_JALISCO"
-                        }
+                        type = "building_manor_house"
+                        country = "c:MEX"
+                        levels = 1
+                        region = "STATE_JALISCO"
                     }
                 }
                 reserves = 1
@@ -2911,16 +2737,14 @@
                 building = "building_maize_farm"
                 add_ownership = {
                     building = {
-                        { type = "building_maize_farm"
-                          country = "c:MEX"
-                          levels = 2
-                          region = "STATE_JALISCO"
-                        }
-                        { type = "building_manor_house"
-                          country = "c:MEX"
-                          levels = 1
-                          region = "STATE_JALISCO"
-                        }
+                        type = "building_maize_farm"
+                        country = "c:MEX"
+                        levels = 2
+                        region = "STATE_JALISCO"
+                        type = "building_manor_house"
+                        country = "c:MEX"
+                        levels = 1
+                        region = "STATE_JALISCO"
                     }
                 }
                 reserves = 1
@@ -2934,11 +2758,10 @@
                 building = "building_iron_mine"
                 add_ownership = {
                     building = {
-                        { type = "building_financial_district"
-                          country = "c:MEX"
-                          levels = 1
-                          region = "STATE_JALISCO"
-                        }
+                        type = "building_financial_district"
+                        country = "c:MEX"
+                        levels = 1
+                        region = "STATE_JALISCO"
                     }
                 }
                 reserves = 1
@@ -2953,9 +2776,8 @@
                 building = "building_gold_mine"
                 add_ownership = {
                     country = {
-                        { country = "c:MEX"
-                          levels = 3
-                        }
+                        country = "c:MEX"
+                        levels = 3
                     }
                 }
                 reserves = 1
@@ -2970,11 +2792,10 @@
                 building = "building_vineyard_plantation"
                 add_ownership = {
                     building = {
-                        { type = "building_manor_house"
-                          country = "c:MEX"
-                          levels = 5
-                          region = "STATE_JALISCO"
-                        }
+                        type = "building_manor_house"
+                        country = "c:MEX"
+                        levels = 5
+                        region = "STATE_JALISCO"
                     }
                 }
                 reserves = 1
@@ -2987,11 +2808,10 @@
                 building = "building_tobacco_plantation"
                 add_ownership = {
                     building = {
-                        { type = "building_manor_house"
-                          country = "c:MEX"
-                          levels = 4
-                          region = "STATE_JALISCO"
-                        }
+                        type = "building_manor_house"
+                        country = "c:MEX"
+                        levels = 4
+                        region = "STATE_JALISCO"
                     }
                 }
                 reserves = 1
@@ -3004,11 +2824,10 @@
                 building = "building_dye_plantation"
                 add_ownership = {
                     building = {
-                        { type = "building_manor_house"
-                          country = "c:MEX"
-                          levels = 3
-                          region = "STATE_JALISCO"
-                        }
+                        type = "building_manor_house"
+                        country = "c:MEX"
+                        levels = 3
+                        region = "STATE_JALISCO"
                     }
                 }
                 reserves = 1
@@ -3021,11 +2840,10 @@
                 building = "building_tooling_workshops"
                 add_ownership = {
                     building = {
-                        { type = "building_tooling_workshops"
-                          country = "c:MEX"
-                          levels = 1
-                          region = "STATE_JALISCO"
-                        }
+                        type = "building_tooling_workshops"
+                        country = "c:MEX"
+                        levels = 1
+                        region = "STATE_JALISCO"
                     }
                 }
                 reserves = 1
@@ -3042,11 +2860,10 @@
                 building = "building_livestock_ranch"
                 add_ownership = {
                     building = {
-                        { type = "building_manor_house"
-                          country = "c:MEX"
-                          levels = 1
-                          region = "STATE_BAJA_CALIFORNIA"
-                        }
+                        type = "building_manor_house"
+                        country = "c:MEX"
+                        levels = 1
+                        region = "STATE_BAJA_CALIFORNIA"
                     }
                 }
                 reserves = 1
