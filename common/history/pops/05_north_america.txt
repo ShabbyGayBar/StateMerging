@@ -306,12 +306,12 @@
             }
             create_pop = {
                 culture = afro_american
-                size = 1466201
+                size = 46580
             }
             create_pop = {
                 pop_type = slaves
                 culture = afro_american
-                size = 31183
+                size = 1450804
             }
             create_pop = {
                 culture = muskogean
@@ -369,11 +369,16 @@
             }
             create_pop = {
                 culture = afro_american
-                size = 545434
+                size = 146384
             }
             create_pop = {
                 culture = dixie
                 size = 999773
+            }
+            create_pop = {
+                pop_type = slaves
+                culture = afro_american
+                size = 399050
             }
             create_pop = {
                 culture = dixie
@@ -788,12 +793,12 @@
             }
             create_pop = {
                 culture = afro_american
-                size = 37098
+                size = 21409
             }
             create_pop = {
                 pop_type = slaves
                 culture = afro_american
-                size = 102994
+                size = 118683
             }
             create_pop = {
                 pop_type = slaves
