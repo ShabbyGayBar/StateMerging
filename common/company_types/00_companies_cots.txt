@@ -204,14 +204,14 @@ company_rossi = {
 	attainable = {
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
 			any_scope_state = {
-				state_region = s:STATE_RIO_GRANDE_DO_SUL
+				state_region = s:STATE_URUGUAY
 			}
 		}
 	}
 
 	possible = {
 		any_scope_state = {
-			state_region = s:STATE_RIO_GRANDE_DO_SUL
+			state_region = s:STATE_URUGUAY
 			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_arms_industry
@@ -247,14 +247,14 @@ company_estanifera_llallagua = {
 	attainable = {
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
 			any_scope_state = {
-				state_region = s:STATE_POTOSI
+				state_region = s:STATE_LA_PAZ
 			}
 		}
 	}	
 
 	possible = {
 		any_scope_state = {
-			state_region = s:STATE_POTOSI
+			state_region = s:STATE_LA_PAZ
 			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_lead_mine

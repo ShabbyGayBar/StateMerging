@@ -7,14 +7,8 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_MINAS_GERAIS
-				count = 2
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_RIO_DE_JANEIRO
-				count = 1
+				count = 3
 			}
 
 			combat_unit = {
@@ -43,7 +37,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_SANTA_CATARINA
+				state_region = s:STATE_SAO_PAULO
 				count = 3
 			}
 
@@ -73,7 +67,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_cuirassiers
-				state_region = s:STATE_PARAIBA
+				state_region = s:STATE_PERNAMBUCO
 				count = 1
 			}
 		}
@@ -112,18 +106,12 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_SANTIAGO
-				count = 5
+				count = 7
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_cuirassiers
 				state_region = s:STATE_SANTIAGO
-				count = 2
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_LOS_RIOS
 				count = 2
 			}
 
@@ -161,7 +149,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_TUCUMAN
+				state_region = s:STATE_LA_PAMPA
 				count = 2
 			}
 
@@ -231,25 +219,25 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_RIO_GRANDE_DO_SUL
+				state_region = s:STATE_URUGUAY
 				count = 3
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_cuirassiers
-				state_region = s:STATE_RIO_GRANDE_DO_SUL
+				state_region = s:STATE_URUGUAY
 				count = 1
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_RIO_GRANDE_DO_SUL
+				state_region = s:STATE_URUGUAY
 				count = 1
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_RIO_GRANDE_DO_SUL
+				state_region = s:STATE_URUGUAY
 				count = 4
 			}
 		}
