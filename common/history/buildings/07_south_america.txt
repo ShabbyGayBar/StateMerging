@@ -2075,9 +2075,6 @@
             }
         }
     }
-<<<<<<< HEAD
-    s:STATE_MARANHAO = {
-=======
     s:STATE_PARA = {
         region_state:PRA = {
             create_building = {
@@ -2129,7 +2126,6 @@
                 }
             }
         }
->>>>>>> BrazilSouthAndean
         region_state:BRZ = {
             create_building = {
                 building = "building_logging_camp"
@@ -2172,11 +2168,7 @@
                         type = "building_manor_house"
                         country = "c:BRZ"
                         levels = 1
-<<<<<<< HEAD
-                        region = "STATE_MARANHAO"
-=======
                         region = "STATE_PARA"
->>>>>>> BrazilSouthAndean
                     }
                 }
                 reserves = 1
@@ -2192,57 +2184,6 @@
         region_state:CLM = {
         }
         region_state:PRA = {
-<<<<<<< HEAD
-            create_building = {
-                building = "building_logging_camp"
-                add_ownership = {
-                    building = {
-                        type = "building_financial_district"
-                        country = "c:PRA"
-                        levels = 1
-                        region = "STATE_AMAZONAS"
-                    }
-                }
-                reserves = 1
-                activate_production_methods = {
-                    "pm_simple_forestry"
-                    "pm_no_hardwood"
-                    "pm_no_equipment"
-                    "pm_road_carts"
-                }
-            }
-            create_building = {
-                building = "building_rice_farm"
-                add_ownership = {
-                    building = {
-                        type = "building_manor_house"
-                        country = "c:PRA"
-                        levels = 2
-                        region = "STATE_AMAZONAS"
-                    }
-                }
-                reserves = 1
-                activate_production_methods = {
-                    "pm_simple_farming_building_rice_farm"
-                    "pm_no_secondary"
-                    "pm_tools_disabled"
-                }
-            }
-            create_building = {
-                building = "building_port"
-                add_ownership = {
-                    country = {
-                        country = "c:PRA"
-                        levels = 1
-                    }
-                }
-                reserves = 1
-                activate_production_methods = {
-                    "pm_basic_port"
-                }
-            }
-=======
->>>>>>> BrazilSouthAndean
         }
         region_state:BOL = {
         }
@@ -2341,13 +2282,6 @@
             }
         }
     }
-<<<<<<< HEAD
-    s:STATE_ACRE = {
-        region_state:BOL = {
-        }
-    }
-=======
->>>>>>> BrazilSouthAndean
     s:STATE_SAO_PAULO = {
         region_state:BRZ = {
             create_building = {
