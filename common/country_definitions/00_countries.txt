@@ -109,7 +109,7 @@ USA = {
 	tier = empire
 	
 	cultures = { yankee dixie }
-	capital = STATE_PENNSYLVANIA
+	capital = STATE_VIRGINIA
 }
 
 CSA = {
@@ -120,7 +120,7 @@ CSA = {
 	tier = kingdom
 	
 	cultures = { dixie }
-	capital = STATE_PENNSYLVANIA
+	capital = STATE_VIRGINIA
 }
 
 FSA = {
@@ -153,7 +153,7 @@ LOU = {
 	tier = principality
 	
 	cultures = { cajun afro_antillean }
-	capital = STATE_TEXAS
+	capital = STATE_LOUISIANA
 }
 
 AGJ = {
@@ -1997,7 +1997,7 @@ CHE = {
 	tier = principality
 	
 	cultures = { cherokee }
-	capital = STATE_TEXAS
+	capital = STATE_LOUISIANA
 }
 
 COL = {
@@ -2043,7 +2043,7 @@ DES = {
 	tier = principality
 	
 	cultures = { yankee dixie }
-	capital = STATE_WYOMING
+	capital = STATE_CALIFORNIA
 }
 
 DOM = {
@@ -2538,7 +2538,7 @@ SLK = {
 	tier = principality
 	
 	cultures = { patagonian }
-	capital = STATE_SANTIAGO
+	capital = STATE_ARAUCANIA
 }
 
 TNG = {
@@ -2615,7 +2615,7 @@ SEQ = {
 	tier = principality
 	
 	cultures = { cherokee siouan }
-	capital = STATE_TEXAS
+	capital = STATE_OKLAHOMA
 }
 
 DKT = {
@@ -2626,7 +2626,7 @@ DKT = {
 	tier = principality
 	
 	cultures = { dakota }
-	capital = STATE_OHIO
+	capital = STATE_MINNESOTA
 }
 
 LKT = {
@@ -2637,7 +2637,7 @@ LKT = {
 	tier = principality
 	
 	cultures = { dakota }
-	capital = STATE_WYOMING
+	capital = STATE_SOUTH_DAKOTA
 }
 
 NVJ = {
@@ -2648,7 +2648,7 @@ NVJ = {
 	tier = principality
 	
 	cultures = { navajo }
-	capital = STATE_CALIFORNIA
+	capital = STATE_ARIZONA
 }
 
 ARP = {
@@ -2659,7 +2659,7 @@ ARP = {
 	tier = principality
 	
 	cultures = { siouan }
-	capital = STATE_WYOMING
+	capital = STATE_COLORADO
 }
 
 NZP = {
@@ -2670,7 +2670,7 @@ NZP = {
 	tier = principality
 	
 	cultures = { nez_perce }
-	capital = STATE_OREGON
+	capital = STATE_IDAHO
 }
 
 ABS = {
@@ -2681,7 +2681,7 @@ ABS = {
 	tier = principality
 	
 	cultures = { siouan }
-	capital = STATE_WYOMING
+	capital = STATE_MONTANA
 }
 
 IRC = {
@@ -3049,7 +3049,7 @@ OAX = { # Oaxaca
 	
 	cultures = { zapotec mixtec }
 	
-	capital = STATE_MEXICO
+	capital = STATE_OAXACA
 }
 
 MCO = { # Michoacan
@@ -3109,7 +3109,7 @@ TPI = { # Tupinamba
 	
 	cultures = { tupinamba }
 	
-	capital = STATE_PERNAMBUCO
+	capital = STATE_BAHIA
 }
 
 PUE = { # Pueblo
@@ -3121,7 +3121,7 @@ PUE = { # Pueblo
 	
 	cultures = { pueblo }
 	
-	capital = STATE_TEXAS
+	capital = STATE_NEW_MEXICO
 }
 
 NNV = { # Nunavut
@@ -3145,7 +3145,7 @@ NVL = { # Navajoland
 	
 	cultures = { navajo }
 	
-	capital = STATE_CALIFORNIA
+	capital = STATE_ARIZONA
 }
 
 ATB = { # Athabaska
@@ -3193,7 +3193,7 @@ CTF = { # the Council of Three Fires, Niswa-mishkodewinan
 	
 	cultures = { algonquian }
 	
-	capital = STATE_OHIO
+	capital = STATE_MICHIGAN
 }
 
 SLS = { # Salish
@@ -3205,7 +3205,7 @@ SLS = { # Salish
 
 	cultures = { salish }
 
-	capital = STATE_WYOMING
+	capital = STATE_MONTANA
 }
 
 BNN = { # Bannock
@@ -3217,7 +3217,7 @@ BNN = { # Bannock
 
 	cultures = { paiute }
 
-	capital = STATE_OREGON
+	capital = STATE_IDAHO
 }
 
 MSC = { # Muscogee
@@ -3253,7 +3253,7 @@ UTE = { # Ute
 	
 	tier = principality
 	
-	capital = STATE_WYOMING
+	capital = STATE_CALIFORNIA
 }
 
 PWN = { # Pawnee
@@ -3265,7 +3265,7 @@ PWN = { # Pawnee
 	
 	tier = principality
 	
-	capital = STATE_MISSOURI
+	capital = STATE_KANSAS
 }
 
 APC = { # Apacheria
@@ -4274,7 +4274,7 @@ NCR = {
 	tier = city_state
 	
 	cultures = { dixie }
-	capital = STATE_FLORIDA
+	capital = STATE_VIRGINIA
 }
 
 SCR = {
@@ -4285,7 +4285,7 @@ SCR = {
 	tier = city_state
 	
 	cultures = { dixie }
-	capital = STATE_FLORIDA
+	capital = STATE_VIRGINIA
 }
 
 CLI = {
@@ -4296,7 +4296,7 @@ CLI = {
 	tier = principality
 	
 	cultures = { dixie }
-	capital = STATE_FLORIDA
+	capital = STATE_VIRGINIA
 }
 
 GRG = {
