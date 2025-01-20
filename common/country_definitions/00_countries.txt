@@ -109,7 +109,7 @@ USA = {
 	tier = empire
 	
 	cultures = { yankee dixie }
-	capital = STATE_VIRGINIA
+	capital = STATE_DISTRICT_OF_COLUMBIA
 }
 
 CSA = {
@@ -120,7 +120,7 @@ CSA = {
 	tier = kingdom
 	
 	cultures = { dixie }
-	capital = STATE_VIRGINIA
+	capital = STATE_DISTRICT_OF_COLUMBIA
 }
 
 FSA = {
@@ -4274,7 +4274,7 @@ NCR = {
 	tier = city_state
 	
 	cultures = { dixie }
-	capital = STATE_VIRGINIA
+	capital = STATE_DISTRICT_OF_COLUMBIA
 }
 
 SCR = {
@@ -4285,7 +4285,7 @@ SCR = {
 	tier = city_state
 	
 	cultures = { dixie }
-	capital = STATE_VIRGINIA
+	capital = STATE_DISTRICT_OF_COLUMBIA
 }
 
 CLI = {
@@ -4296,7 +4296,7 @@ CLI = {
 	tier = principality
 	
 	cultures = { dixie }
-	capital = STATE_VIRGINIA
+	capital = STATE_DISTRICT_OF_COLUMBIA
 }
 
 GRG = {

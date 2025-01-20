@@ -66,7 +66,7 @@
             }
         }
     }
-    s:STATE_VIRGINIA = {
+    s:STATE_DISTRICT_OF_COLUMBIA = {
         region_state:USA = {
             create_pop = {
                 culture = dixie
