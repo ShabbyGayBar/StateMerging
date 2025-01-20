@@ -1,4 +1,4 @@
-BUILDINGS = {
+﻿BUILDINGS = {
     s:STATE_LOUISIANA = {
         region_state:USA = {
             create_building = {
@@ -87,6 +87,8 @@ BUILDINGS = {
                         country = "c:USA"
                         levels = 2
                         region = "STATE_LOUISIANA"
+                    }
+                    building = {
                         type = "building_manor_house"
                         country = "c:USA"
                         levels = 2
@@ -208,6 +210,8 @@ BUILDINGS = {
                         country = "c:USA"
                         levels = 5
                         region = "STATE_NEW_YORK"
+                    }
+                    building = {
                         type = "building_textile_mills"
                         country = "c:USA"
                         levels = 2
@@ -229,6 +233,8 @@ BUILDINGS = {
                         country = "c:USA"
                         levels = 4
                         region = "STATE_NEW_YORK"
+                    }
+                    building = {
                         type = "building_furniture_manufacturies"
                         country = "c:USA"
                         levels = 2
@@ -250,6 +256,8 @@ BUILDINGS = {
                         country = "c:USA"
                         levels = 5
                         region = "STATE_NEW_YORK"
+                    }
+                    building = {
                         type = "building_tooling_workshops"
                         country = "c:USA"
                         levels = 2
@@ -270,6 +278,8 @@ BUILDINGS = {
                         country = "c:USA"
                         levels = 7
                         region = "STATE_NEW_YORK"
+                    }
+                    building = {
                         type = "building_logging_camp"
                         country = "c:USA"
                         levels = 2
@@ -292,6 +302,8 @@ BUILDINGS = {
                         country = "c:USA"
                         levels = 2
                         region = "STATE_NEW_YORK"
+                    }
+                    building = {
                         type = "building_financial_district"
                         country = "c:USA"
                         levels = 1
@@ -313,6 +325,8 @@ BUILDINGS = {
                         country = "c:USA"
                         levels = 3
                         region = "STATE_NEW_YORK"
+                    }
+                    building = {
                         type = "building_financial_district"
                         country = "c:USA"
                         levels = 1
@@ -427,6 +441,8 @@ BUILDINGS = {
                         country = "c:USA"
                         levels = 3
                         region = "STATE_NEW_YORK"
+                    }
+                    building = {
                         type = "building_manor_house"
                         country = "c:USA"
                         levels = 1
@@ -448,6 +464,8 @@ BUILDINGS = {
                         country = "c:USA"
                         levels = 3
                         region = "STATE_NEW_YORK"
+                    }
+                    building = {
                         type = "building_manor_house"
                         country = "c:USA"
                         levels = 3
@@ -585,6 +603,8 @@ BUILDINGS = {
                         country = "c:USA"
                         levels = 6
                         region = "STATE_VIRGINIA"
+                    }
+                    building = {
                         type = "building_maize_farm"
                         country = "c:USA"
                         levels = 9
@@ -606,6 +626,8 @@ BUILDINGS = {
                         country = "c:USA"
                         levels = 2
                         region = "STATE_VIRGINIA"
+                    }
+                    building = {
                         type = "building_livestock_ranch"
                         country = "c:USA"
                         levels = 1
@@ -929,6 +951,8 @@ BUILDINGS = {
                         country = "c:USA"
                         levels = 1
                         region = "STATE_OHIO"
+                    }
+                    building = {
                         type = "building_furniture_manufacturies"
                         country = "c:USA"
                         levels = 1
@@ -983,6 +1007,8 @@ BUILDINGS = {
                         country = "c:USA"
                         levels = 6
                         region = "STATE_OHIO"
+                    }
+                    building = {
                         type = "building_manor_house"
                         country = "c:USA"
                         levels = 6
@@ -1020,6 +1046,8 @@ BUILDINGS = {
                         country = "c:USA"
                         levels = 2
                         region = "STATE_OHIO"
+                    }
+                    building = {
                         type = "building_manor_house"
                         country = "c:USA"
                         levels = 1
@@ -1042,6 +1070,8 @@ BUILDINGS = {
                         country = "c:USA"
                         levels = 1
                         region = "STATE_OHIO"
+                    }
+                    building = {
                         type = "building_financial_district"
                         country = "c:USA"
                         levels = 2
@@ -1151,6 +1181,8 @@ BUILDINGS = {
                         country = "c:USA"
                         levels = 18
                         region = "STATE_KENTUCKY"
+                    }
+                    building = {
                         type = "building_tobacco_plantation"
                         country = "c:USA"
                         levels = 10
@@ -1171,6 +1203,8 @@ BUILDINGS = {
                         country = "c:USA"
                         levels = 7
                         region = "STATE_KENTUCKY"
+                    }
+                    building = {
                         type = "building_maize_farm"
                         country = "c:USA"
                         levels = 7
@@ -1208,6 +1242,8 @@ BUILDINGS = {
                         country = "c:USA"
                         levels = 1
                         region = "STATE_KENTUCKY"
+                    }
+                    building = {
                         type = "building_livestock_ranch"
                         country = "c:USA"
                         levels = 1
@@ -1283,6 +1319,8 @@ BUILDINGS = {
                         country = "c:USA"
                         levels = 6
                         region = "STATE_FLORIDA"
+                    }
+                    building = {
                         type = "building_manor_house"
                         country = "c:USA"
                         levels = 5
@@ -1405,6 +1443,8 @@ BUILDINGS = {
                         country = "c:USA"
                         levels = 2
                         region = "STATE_ILLINOIS"
+                    }
+                    building = {
                         type = "building_manor_house"
                         country = "c:USA"
                         levels = 2
@@ -1505,6 +1545,8 @@ BUILDINGS = {
                         country = "c:USA"
                         levels = 2
                         region = "STATE_MASSACHUSETTS"
+                    }
+                    building = {
                         type = "building_financial_district"
                         country = "c:USA"
                         levels = 1
@@ -1589,6 +1631,8 @@ BUILDINGS = {
                         country = "c:USA"
                         levels = 1
                         region = "STATE_MASSACHUSETTS"
+                    }
+                    building = {
                         type = "building_manor_house"
                         country = "c:USA"
                         levels = 1
@@ -2632,6 +2676,8 @@ BUILDINGS = {
                         country = "c:MEX"
                         levels = 2
                         region = "STATE_MEXICO"
+                    }
+                    building = {
                         type = "building_maize_farm"
                         country = "c:MEX"
                         levels = 2
@@ -2885,6 +2931,8 @@ BUILDINGS = {
                         country = "c:MEX"
                         levels = 2
                         region = "STATE_JALISCO"
+                    }
+                    building = {
                         type = "building_manor_house"
                         country = "c:MEX"
                         levels = 1

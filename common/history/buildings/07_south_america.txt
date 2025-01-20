@@ -638,6 +638,8 @@
                         country = "c:CLM"
                         levels = 1
                         region = "STATE_CUNDINAMARCA"
+                    }
+                    building = {
                         type = "building_financial_district"
                         country = "c:CLM"
                         levels = 1
@@ -822,6 +824,8 @@
                         country = "c:BOL"
                         levels = 2
                         region = "STATE_LA_PAZ"
+                    }
+                    building = {
                         type = "building_livestock_ranch"
                         country = "c:BOL"
                         levels = 1
@@ -972,6 +976,8 @@
                         country = "c:NPU"
                         levels = 1
                         region = "STATE_LIMA"
+                    }
+                    building = {
                         type = "building_manor_house"
                         country = "c:NPU"
                         levels = 2
@@ -1120,6 +1126,8 @@
                         country = "c:SPU"
                         levels = 2
                         region = "STATE_LIMA"
+                    }
+                    building = {
                         type = "building_manor_house"
                         country = "c:SPU"
                         levels = 2
@@ -1612,6 +1620,8 @@
                         country = "c:ARG"
                         levels = 2
                         region = "STATE_BUENOS_AIRES"
+                    }
+                    building = {
                         type = "building_livestock_ranch"
                         country = "c:ARG"
                         levels = 1
@@ -1696,6 +1706,8 @@
                         country = "c:ARG"
                         levels = 1
                         region = "STATE_BUENOS_AIRES"
+                    }
+                    building = {
                         type = "building_financial_district"
                         country = "c:ARG"
                         levels = 1
@@ -1932,6 +1944,8 @@
                         country = "c:CHL"
                         levels = 1
                         region = "STATE_SANTIAGO"
+                    }
+                    building = {
                         type = "building_livestock_ranch"
                         country = "c:CHL"
                         levels = 1
@@ -2196,6 +2210,8 @@
                         country = "c:BRZ"
                         levels = 1
                         region = "STATE_AMAZONAS"
+                    }
+                    building = {
                         type = "building_logging_camp"
                         country = "c:BRZ"
                         levels = 1
@@ -2356,6 +2372,8 @@
                         country = "c:BRZ"
                         levels = 1
                         region = "STATE_SAO_PAULO"
+                    }
+                    building = {
                         type = "building_financial_district"
                         country = "c:BRZ"
                         levels = 2
@@ -2412,6 +2430,8 @@
                         country = "c:BRZ"
                         levels = 4
                         region = "STATE_RIO_DE_JANEIRO"
+                    }
+                    building = {
                         type = "building_maize_farm"
                         country = "c:BRZ"
                         levels = 3
@@ -2576,6 +2596,8 @@
                         country = "c:BRZ"
                         levels = 6
                         region = "STATE_RIO_DE_JANEIRO"
+                    }
+                    building = {
                         type = "building_manor_house"
                         country = "c:BRZ"
                         levels = 4
@@ -2597,6 +2619,8 @@
                         country = "c:BRZ"
                         levels = 3
                         region = "STATE_RIO_DE_JANEIRO"
+                    }
+                    building = {
                         type = "building_manor_house"
                         country = "c:BRZ"
                         levels = 1
@@ -2680,6 +2704,8 @@
                         country = "c:BRZ"
                         levels = 2
                         region = "STATE_RIO_DE_JANEIRO"
+                    }
+                    building = {
                         type = "building_financial_district"
                         country = "c:BRZ"
                         levels = 2
@@ -2788,6 +2814,8 @@
                         country = "c:BRZ"
                         levels = 8
                         region = "STATE_PERNAMBUCO"
+                    }
+                    building = {
                         type = "building_manor_house"
                         country = "c:BRZ"
                         levels = 7
@@ -2912,10 +2940,14 @@
                         country = "c:BRZ"
                         levels = 2
                         region = "STATE_PERNAMBUCO"
+                    }
+                    building = {
                         type = "building_financial_district"
                         country = "c:BRZ"
                         levels = 5
                         region = "STATE_RIO_DE_JANEIRO"
+                    }
+                    building = {
                         type = "building_financial_district"
                         country = "c:BRZ"
                         levels = 1
