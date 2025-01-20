@@ -1,4 +1,4 @@
-﻿BUILDINGS = {
+BUILDINGS = {
     s:STATE_LOUISIANA = {
         region_state:USA = {
             create_building = {
@@ -509,6 +509,19 @@
             }
         }
     }
+	if = {
+		limit = {
+			has_american_buildings_dlc_trigger = yes
+		}
+		s:STATE_NEW_YORK={
+			region_state:USA={
+				create_building={
+					building="building_central_park"
+					level=1
+				}
+			}
+		}
+	}
     s:STATE_VIRGINIA = {
         region_state:USA = {
             create_building = {
@@ -789,6 +802,19 @@
             }
         }
     }
+	if = {
+		limit = {
+			has_american_buildings_dlc_trigger = yes
+		}
+		s:STATE_VIRGINIA={
+			region_state:USA={
+				create_building={
+					building="building_capitol_hill"
+					level=1
+				}
+			}
+		}
+	}
     s:STATE_ALASKA = {
         region_state:ALK = {
             create_building = {
