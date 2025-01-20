@@ -109,14 +109,14 @@ company_csfa = {
 	attainable = {
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
 			any_scope_state = {
-				state_region = s:STATE_ANTOFAGASTA
+				state_region = s:STATE_SANTIAGO
 			}
 		}
 	}		
 	
 	possible = {
 		any_scope_state = {
-			state_region = s:STATE_ANTOFAGASTA
+			state_region = s:STATE_SANTIAGO
 			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_sulfur_mine

@@ -2538,7 +2538,7 @@ SLK = {
 	tier = principality
 	
 	cultures = { patagonian }
-	capital = STATE_ARAUCANIA
+	capital = STATE_SANTIAGO
 }
 
 TNG = {
@@ -3109,7 +3109,7 @@ TPI = { # Tupinamba
 	
 	cultures = { tupinamba }
 	
-	capital = STATE_BAHIA
+	capital = STATE_PERNAMBUCO
 }
 
 PUE = { # Pueblo
@@ -3370,7 +3370,7 @@ PNI = {
 	tier = principality
 	
 	cultures = { sulista }
-	capital = STATE_RIO_GRANDE_DO_SUL
+	capital = STATE_URUGUAY
 }
 
 CEY = {
@@ -3598,7 +3598,7 @@ GNI = {
 	tier = principality
 	
 	cultures = { guarani }
-	capital = STATE_ALTO_PARAGUAY
+	capital = STATE_BAJO_PARAGUAY
 }
 
 KUR = {
@@ -4149,7 +4149,7 @@ MNG = {
 	tier = principality
 	
 	cultures = { brazilian }
-	capital = STATE_MINAS_GERAIS
+	capital = STATE_RIO_DE_JANEIRO
 }
 
 BHI = {
@@ -4160,7 +4160,7 @@ BHI = {
 	tier = principality
 	
 	cultures = { nordestino }
-	capital = STATE_BAHIA
+	capital = STATE_PERNAMBUCO
 }
 
 CNW = {

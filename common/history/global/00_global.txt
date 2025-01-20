@@ -458,7 +458,6 @@ GLOBAL = {
 			limit = {
 				NOR = {
 					state_region = s:STATE_BUENOS_AIRES
-					state_region = s:STATE_SANTA_FE
 				}
 			}
 			add_radicals_in_state = {
