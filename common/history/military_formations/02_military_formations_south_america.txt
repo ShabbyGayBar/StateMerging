@@ -31,7 +31,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_BAHIA
+				state_region = s:STATE_PERNAMBUCO
 				count = 2
 			}
 
@@ -85,7 +85,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_BAHIA
+				state_region = s:STATE_PERNAMBUCO
 				count = 3
 			}
 
