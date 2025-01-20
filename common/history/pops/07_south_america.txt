@@ -616,22 +616,6 @@ POPS = {
             }
         }
     }
-    s:STATE_ACRE = {
-        region_state:BOL = {
-            create_pop = {
-                culture = amazonian
-                size = 16100
-            }
-            create_pop = {
-                culture = south_andean
-                size = 160
-            }
-            create_pop = {
-                culture = amazonic
-                size = 90
-            }
-        }
-    }
     s:STATE_AMAZONAS = {
         region_state:CLM = {
             create_pop = {
@@ -646,42 +630,38 @@ POPS = {
         region_state:PRA = {
             create_pop = {
                 culture = amazonian
-                size = 80600
+                size = 36800
             }
             create_pop = {
                 culture = amazonic
-                size = 125622
+                size = 14325
             }
             create_pop = {
                 pop_type = slaves
                 culture = afro_brazilian
-                size = 66677
+                size = 940
             }
             create_pop = {
                 culture = afro_brazilian
-                size = 79622
-            }
-            create_pop = {
-                culture = tupinamba
-                size = 3646
-            }
-            create_pop = {
-                culture = french
-                size = 416
+                size = 1980
             }
         }
         region_state:BOL = {
             create_pop = {
                 culture = amazonian
-                size = 13560
+                size = 29660
+            }
+            create_pop = {
+                culture = south_andean
+                size = 660
+            }
+            create_pop = {
+                culture = amazonic
+                size = 90
             }
             create_pop = {
                 culture = quechua
                 size = 2300
-            }
-            create_pop = {
-                culture = south_andean
-                size = 500
             }
             create_pop = {
                 culture = guarani
@@ -798,7 +778,34 @@ POPS = {
             }
         }
     }
-    s:STATE_MARANHAO = {
+    s:STATE_PARA = {
+        region_state:PRA = {
+            create_pop = {
+                culture = amazonic
+                size = 111297
+            }
+            create_pop = {
+                pop_type = slaves
+                culture = afro_brazilian
+                size = 65737
+            }
+            create_pop = {
+                culture = afro_brazilian
+                size = 77642
+            }
+            create_pop = {
+                culture = amazonian
+                size = 43800
+            }
+            create_pop = {
+                culture = tupinamba
+                size = 3646
+            }
+            create_pop = {
+                culture = french
+                size = 416
+            }
+        }
         region_state:BRZ = {
             create_pop = {
                 culture = amazonic
