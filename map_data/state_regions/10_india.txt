@@ -537,29 +537,6 @@ STATE_BOMBAY = {
 }
 # Burma
 
-STATE_TENASSERIM = {
-    id = 523
-    subsistence_building = "building_subsistence_rice_paddies"
-    provinces = { "x169A4D" "x173AAB" "x1BB979" "x2160CF" "x2231CD" "x289F37" "x31852E" "x3911C1" "x3F4145" "x47B039" "x5070E0" "x59E0CA" "x6D56E2" "x7F8C95" "x8000B0" "x9381F1" "x94B7B9" "x958E99" "x9E6CEE" "x9F6BAC" "xA060D0" "xB36203" "xBE9208" "xC0362D" "xC6D6FB" "xD070DF" "xD0EF60" "xFB4ADA" "xFE3639" }
-    city = "x5070E0"
-    port = "xB36203"
-    farm = "x31852E"
-    mine = "x2160CF"
-    wood = "x47B039"
-    arable_land = 20
-    arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_dye_plantations" "bg_opium_plantations" "bg_tea_plantations" "bg_tobacco_plantations" "bg_sugar_plantations" "bg_banana_plantations" }
-    capped_resources = {
-        bg_logging = 17
-        bg_fishing = 12
-        bg_iron_mining = 5
-    }
-    resource = {
-        type = "bg_rubber"
-        undiscovered_amount = 16
-    }
-    naval_exit_id = 3051
-}
-
 STATE_KACHIN = {
     id = 524
     subsistence_building = "building_subsistence_rice_paddies"
