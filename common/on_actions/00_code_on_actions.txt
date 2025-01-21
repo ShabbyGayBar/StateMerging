@@ -4329,7 +4329,6 @@ on_wargoal_enforced = {
 	        		c:PNI ?= this
 	        		has_variable = ragamuffin_nation_var
 	        		NOT = { has_variable = won_ragamuffin_war_var }
-					owns_entire_state_region = STATE_URUGUAY
 					owns_entire_state_region = STATE_SAO_PAULO
 				}
         	}
