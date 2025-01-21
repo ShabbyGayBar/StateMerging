@@ -525,7 +525,9 @@ owned_central_asia_region_states = {
 }
 
 owned_great_plains_region_states = {
-	owns_entire_state_region = STATE_WYOMING
+	owns_entire_state_region = STATE_COLORADO
+	owns_entire_state_region = STATE_KANSAS
+	owns_entire_state_region = STATE_TEXAS
 }
 
 owned_pacific_coast_region_states = {
@@ -1052,6 +1054,12 @@ has_radical_leftist_economy = {
 	}
 }
 
+any_secession_ongoing = {
+	any_political_movement = {
+		is_secessionist = yes
+	}
+}
+
 any_revolution_ongoing = {
 	any_political_movement = {
 		is_revolutionary = yes
@@ -1213,6 +1221,33 @@ revolution_progress_high = {
 	any_civil_war = {
 		civil_war_progress >= 0.67
 		is_civil_war_type = revolution
+	}
+}
+
+secession_progress_low = {
+	any_civil_war = {
+		civil_war_progress >= 0
+		NOT = {
+			civil_war_progress >= 0.34
+		}
+		is_civil_war_type = secession
+	}
+}
+
+secession_progress_medium = {
+	any_civil_war = {
+		civil_war_progress >= 0.34
+		NOT = {
+			civil_war_progress >= 0.67
+		}
+		is_civil_war_type = secession
+	}
+}
+
+secession_progress_high = {
+	any_civil_war = {
+		civil_war_progress >= 0.67
+		is_civil_war_type = secession
 	}
 }
 
