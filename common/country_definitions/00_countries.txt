@@ -1714,7 +1714,7 @@ ACE = {
 	
 	tier = principality
 	
-	capital = STATE_ACEH
+	capital = STATE_NORTH_SUMATRA
 	cultures = { sumatran }
 	is_named_from_capital = yes
 }
@@ -1727,7 +1727,7 @@ BAL = {
 	tier = principality
 	
 	cultures = { balinese moluccan }
-	capital = STATE_SUNDA_ISLANDS
+	capital = STATE_MOLUCCAS
 }
 
 BHU = {
@@ -1760,7 +1760,7 @@ BRU = {
 	tier = principality
 	
 	cultures = { bornean }
-	capital = STATE_NORTH_BORNEO
+	capital = STATE_WEST_BORNEO
 }
 
 BUR = {
