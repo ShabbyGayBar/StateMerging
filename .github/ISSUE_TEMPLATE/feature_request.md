@@ -7,7 +7,10 @@ assignees: ''
 
 ---
 
-**Is your feature request related to a problem? Please describe.**
+**What is your ideal state merging plan?**
+Provide your merge_states.json file or the map of states you want to merge (available on https://www.mapchart.net/victoria-3.html) here.
+
+**If you aren't here for a state merging plan, ss your feature request related to a problem? Please describe.**
 A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
 
 **Describe the solution you'd like**
