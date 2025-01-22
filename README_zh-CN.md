@@ -1,6 +1,8 @@
 # 维多利亚3省份合并
 
-![Steam Views](https://img.shields.io/steam/views/3371693463?style=flat&logo=steam&label=steam)
+![Steam Subscriptions](https://img.shields.io/steam/subscriptions/3371693463?logo=steam&link=https%3A%2F%2Fsteamcommunity.com%2Fsharedfiles%2Ffiledetails%2F%3Fid%3D3371693463)
+
+![Steam Downloads](https://img.shields.io/steam/downloads/3371693463?logo=steam&link=https%3A%2F%2Fsteamcommunity.com%2Fsharedfiles%2Ffiledetails%2F%3Fid%3D3371693463)
 
 一个省份合并 Mod，合并了部分地区。
 
@@ -11,6 +13,12 @@
 被合并的州的代码会消失，可能会导致部分日志和事件无法触发或完成，如有此 BUG 请在 Issues 中提出。 
 
 另外，buff 是按被合并的州的数量给的，但是因为有些州实在太小了，我认为它们本来就不应该算一个州，所以给 buff 时没有计入。
+
+## 安装方法
+
+- 在 [Steam 创意工坊](https://steamcommunity.com/sharedfiles/filedetails/?id=3371693463) 订阅本 Mod。
+或者
+- 下载 Mod 的 zip 文件并解压到维多利亚3的 Mod 文件夹中（通常位于 `Documents\Pardox Interactive\Victoria 3\mod`）。
 
 ## 合并标准：
 
@@ -26,6 +34,23 @@
   - 文化本土特质相同的省份更有倾向被合并。
 
 - **美观度**
+
+## 提交反馈
+
+### BUG 反馈
+
+请在 Issues 中使用 bug report 模板报告您遇到的任何错误。
+
+### 功能请求
+
+如果您对省份合并有其他想法，您可以修改 [merge_states.json](merge_states.json) 文件（下文简称为 "json"），或在 [mapchart](https://www.mapchart.net/victoria-3.html) 上绘制您想要合并的省份地图（下文简称为 "地图"）。
+
+有多种方式可以提出关于省份合并计划的建议，以下方式按推荐程度排序：
+
+- 在 Issues 中提交 feature request。在问题中，您可以提供 json 文件或地图。
+- 在我的 [paradox 论坛帖子](https://forum.paradoxplaza.com/forum/threads/brainstorm-tell-us-about-your-ideal-state-merging-plan.1726629/) 上发布您绘制的地图。
+- 在我的 [贴吧帖子](https://tieba.baidu.com/p/9433803383?) 上发布您绘制的地图。
+- 在 Steam 创意工坊页面上留言。
 
 ## 改动说明
 

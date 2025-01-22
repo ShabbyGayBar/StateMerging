@@ -1,6 +1,9 @@
 # Victoria 3 States Merging Mod
 
-![Steam Views](https://img.shields.io/steam/views/3371693463?style=flat&logo=steam&label=steam)
+![Steam Subscriptions](https://img.shields.io/steam/subscriptions/3371693463?logo=steam&link=https%3A%2F%2Fsteamcommunity.com%2Fsharedfiles%2Ffiledetails%2F%3Fid%3D3371693463)
+
+![Steam Downloads](https://img.shields.io/steam/downloads/3371693463?logo=steam&link=https%3A%2F%2Fsteamcommunity.com%2Fsharedfiles%2Ffiledetails%2F%3Fid%3D3371693463)
+
 
 [简体中文](README_zh-CN.md)
 
@@ -13,6 +16,12 @@ Speaking of buffs, they were given according to how many vanilla states they mer
 Merged states WILL LOSE THEIR CITY & BUILDING MODELS.
 
 Merged states WILL LOSE THEIR STATE ID, which may cause problems with certain journal entries and such. please report issues when you encounter them.
+
+## How to install
+
+- Subscribe to the mod on [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3371693463).
+or
+- Download the mod zip file and extract it to your Victoria 3 mod folder (typically located at `Documents\Paradox Interactive\Victoria 3\mod`).
 
 ## Which states will be merged
 
@@ -28,6 +37,23 @@ The following criteria are sorted by significance:
   - States with similar cultural homelands are more likely to be merged.
 
 - **Aesthetics**
+
+## Feedback
+
+### Bug Reports
+
+Please report any bugs you encounter in the Issues tab using the bug report template.
+
+### Feature Requests
+
+If you have other ideas for state merging, you could modify the [merge_states.json](merge_states.json) file ("json" for short), or draw a map of the states you want to merge on [mapchart](https://www.mapchart.net/victoria-3.html) ("map" for short).
+
+There are multiple ways to give suggestions on the state merging plan, the following ways are sorted by recommendation:
+
+- Submit an issue in the Issues tab with the feature request template. In the issue, you could provide either the json file or the map.
+- Post the map you draw on my [paradox forum post](https://forum.paradoxplaza.com/forum/threads/brainstorm-tell-us-about-your-ideal-state-merging-plan.1726629/) .
+- Post the map you draw on my [tieba post](https://tieba.baidu.com/p/9433803383?) .
+- Leave a comment on the Steam Workshop page.
 
 ## Changelog
 
