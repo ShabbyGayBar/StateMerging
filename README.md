@@ -90,7 +90,7 @@ Incompatible with anything that modifies
 
 ## Acknowledgments
 
-Special thanks to user [思考的肺结核](https://steamcommunity.com/profiles/76561198104682926) who wrote the [original version](https://steamcommunity.com/sharedfiles/filedetails/?id=3254683348) of this mod.
+Special thanks to user [思考的肾结核](https://steamcommunity.com/profiles/76561198104682926) who wrote the [original version](https://steamcommunity.com/sharedfiles/filedetails/?id=3254683348) of this mod.
 
 ## License
 
