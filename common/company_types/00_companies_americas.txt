@@ -155,7 +155,7 @@ company_caribbean_petroleum = {
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
 			any_scope_state = {
 				OR = {
-					state_region = s:STATE_ZULIA
+					state_region = s:STATE_MIRANDA
 					state_region = s:STATE_MIRANDA
 				}
 			}
@@ -165,7 +165,7 @@ company_caribbean_petroleum = {
 	possible = {
 		any_scope_state = {
 			OR = {
-				state_region = s:STATE_ZULIA
+				state_region = s:STATE_MIRANDA
 				state_region = s:STATE_MIRANDA
 			}
 			is_incorporated = yes

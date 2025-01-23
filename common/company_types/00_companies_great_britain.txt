@@ -164,7 +164,7 @@ company_gwr = {
 	
 	possible = {
 		any_scope_state = {
-			state_region = s:STATE_WEST_COUNTRY
+			state_region = s:STATE_HOME_COUNTIES
 			is_incorporated = yes
 			has_building = building_railway
 		}
@@ -174,7 +174,7 @@ company_gwr = {
 			has_building = building_railway
 		}
 		any_scope_state = {
-			state_region = s:STATE_WALES
+			state_region = s:STATE_MIDLANDS
 			is_incorporated = yes
 			has_building = building_railway
 		}

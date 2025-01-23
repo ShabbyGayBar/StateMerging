@@ -103,14 +103,14 @@ company_branobel = {
 	attainable = {
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
 			any_scope_state = {
-				state_region = s:STATE_AZERBAIJAN
+				state_region = s:STATE_GREATER_CAUCASUS
 			}
 		}
 	}		
 	
 	possible = { 
 		any_scope_state = {
-			state_region = s:STATE_AZERBAIJAN
+			state_region = s:STATE_GREATER_CAUCASUS
 			any_scope_building = {
 				is_building_type = building_oil_rig
 				level >= 5

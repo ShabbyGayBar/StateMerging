@@ -195,14 +195,14 @@ company_saint_etienne = {
 	attainable = {
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
 			any_scope_state = {
-				state_region = s:STATE_RHONE
+				state_region = s:STATE_PROVENCE
 			}
 		}
 	}			
 	
 	possible = { 
 		any_scope_state = {
-			state_region = s:STATE_RHONE
+			state_region = s:STATE_PROVENCE
 			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_arms_industry
@@ -291,14 +291,14 @@ company_mines_anzin = {
 	attainable = {
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
 			any_scope_state = {
-				state_region = s:STATE_FRENCH_LOW_COUNTRIES
+				state_region = s:STATE_FLANDERS
 			}
 		}
 	}			
 	
 	possible = { 
 		any_scope_state = {
-			state_region = s:STATE_FRENCH_LOW_COUNTRIES
+			state_region = s:STATE_FLANDERS
 			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_coal_mine

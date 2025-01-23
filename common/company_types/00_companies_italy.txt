@@ -113,14 +113,14 @@ company_ricordi = {
 	attainable = {
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
 			any_scope_state = {
-				state_region = s:STATE_LOMBARDY
+				state_region = s:STATE_VENETIA
 			}
 		}
 	}		
 	
 	possible = { 
 		any_scope_state = {
-			state_region = s:STATE_LOMBARDY
+			state_region = s:STATE_VENETIA
 			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_arts_academy
