@@ -732,7 +732,7 @@
             }
             create_pop = {
                 culture = han
-                religion = catholic # nanfaren
+                religion = catholic
                 size = 8000
             }
             create_pop = {

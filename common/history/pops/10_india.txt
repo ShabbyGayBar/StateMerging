@@ -1,5 +1,4 @@
-﻿
-POPS = {
+﻿POPS = {
     s:STATE_BIHAR = {
         region_state:BIC = {
             create_pop = {
@@ -74,7 +73,7 @@ POPS = {
                 size = 901
             }
             create_pop = {
-                culture = british # including Irish
+                culture = british
                 size = 12292
                 pop_type = bureaucrats
             }
@@ -93,11 +92,11 @@ POPS = {
             create_pop = {
                 culture = bengali
                 religion = hindu
-                size = 143012 
+                size = 143012
             }
             create_pop = {
                 culture = bengali
-                size = 79012 
+                size = 79012
             }
             create_pop = {
                 pop_type = slaves
@@ -144,7 +143,7 @@ POPS = {
                 size = 770400
             }
             create_pop = {
-                culture = british # including Irish
+                culture = british
                 size = 2191
                 pop_type = bureaucrats
             }
@@ -180,7 +179,7 @@ POPS = {
                 size = 70120
             }
             create_pop = {
-                culture = british # including Irish
+                culture = british
                 size = 420
                 pop_type = bureaucrats
             }
@@ -223,13 +222,13 @@ POPS = {
         }
         region_state:MGH = {
             create_pop = {
-                culture = naga # Khasi
+                culture = naga
                 size = 62201
             }
         }
         region_state:TIP = {
             create_pop = {
-                culture = lushai # Tipperah
+                culture = lushai
                 size = 45102
             }
         }
@@ -288,7 +287,7 @@ POPS = {
             }
             create_pop = {
                 culture = hindustani
-                religion = hindu # jains
+                religion = hindu
                 size = 16764
             }
         }
@@ -320,7 +319,7 @@ POPS = {
             }
             create_pop = {
                 culture = hindustani
-                religion = hindu # jains
+                religion = hindu
                 size = 5794
             }
         }
@@ -424,7 +423,7 @@ POPS = {
             }
             create_pop = {
                 culture = gujarati
-                religion = hindu # janinism
+                religion = hindu
                 size = 36010
             }
             create_pop = {
@@ -470,7 +469,7 @@ POPS = {
             }
             create_pop = {
                 culture = gujarati
-                religion = hindu # janinism
+                religion = hindu
                 size = 14001
             }
             create_pop = {
@@ -516,7 +515,7 @@ POPS = {
             }
             create_pop = {
                 culture = gujarati
-                religion = hindu # janinism
+                religion = hindu
                 size = 5511
             }
         }
@@ -533,7 +532,7 @@ POPS = {
             }
             create_pop = {
                 culture = gujarati
-                religion = hindu # janinism
+                religion = hindu
                 size = 6102
             }
             create_pop = {
@@ -563,7 +562,7 @@ POPS = {
             }
             create_pop = {
                 culture = gujarati
-                religion = hindu # janinism
+                religion = hindu
                 size = 2439
             }
             create_pop = {
@@ -593,7 +592,7 @@ POPS = {
             }
             create_pop = {
                 culture = gujarati
-                religion = hindu # janinism
+                religion = hindu
                 size = 7340
             }
         }
@@ -610,7 +609,7 @@ POPS = {
             }
             create_pop = {
                 culture = gujarati
-                religion = hindu # janinism
+                religion = hindu
                 size = 4484
             }
             create_pop = {
@@ -631,12 +630,12 @@ POPS = {
             }
             create_pop = {
                 culture = gujarati
-                religion = hindu # janinism
+                religion = hindu
                 size = 40102
             }
             create_pop = {
                 culture = persian
-                religion = animist # parsis
+                religion = animist
                 size = 5120
             }
             create_pop = {
@@ -674,7 +673,7 @@ POPS = {
                 size = 6010
             }
             create_pop = {
-                culture = pashtun  # pathan
+                culture = pashtun
                 religion = sunni
                 size = 9120
             }
@@ -841,7 +840,7 @@ POPS = {
         }
         region_state:CHT = {
             create_pop = {
-                culture = kho # and Shina
+                culture = kho
                 size = 30210
             }
             create_pop = {
@@ -1380,7 +1379,7 @@ POPS = {
             }
             create_pop = {
                 culture = lacustrine_bantu
-                size =700
+                size = 700
             }
             create_pop = {
                 culture = tamil
@@ -1406,7 +1405,7 @@ POPS = {
             }
             create_pop = {
                 culture = sinhala
-                size =36200
+                size = 36200
             }
             create_pop = {
                 culture = sinhala
@@ -1662,12 +1661,12 @@ POPS = {
                 size = 3347340
             }
             create_pop = {
-                culture = kannada 
-                religion = hindu # jainism
+                culture = kannada
+                religion = hindu
                 size = 19030
             }
             create_pop = {
-                culture = kannada 
+                culture = kannada
                 religion = protestant
                 size = 11418
             }
@@ -1693,11 +1692,11 @@ POPS = {
         }
         region_state:BIC = {
             create_pop = {
-                culture = kannada # tulu
+                culture = kannada
                 size = 184548
             }
             create_pop = {
-                culture = kannada # tulu
+                culture = kannada
                 religion = sunni
                 size = 20102
             }
@@ -2072,7 +2071,7 @@ POPS = {
             }
             create_pop = {
                 culture = persian
-                religion = animist # parsis
+                religion = animist
                 size = 8910
             }
         }
@@ -2230,11 +2229,11 @@ POPS = {
                 size = 44221
             }
         }
-    }        
+    }
     s:STATE_AGRA = {
         region_state:BIC = {
             create_pop = {
-                culture = hindustani    
+                culture = hindustani
                 size = 17962075
             }
             create_pop = {
@@ -2254,7 +2253,7 @@ POPS = {
             }
             create_pop = {
                 culture = panjabi
-                religion = sikh    
+                religion = sikh
                 size = 1612
             }
             create_pop = {
@@ -2336,7 +2335,7 @@ POPS = {
             }
             create_pop = {
                 culture = panjabi
-                religion = hindu # jains
+                religion = hindu
                 size = 5389
             }
         }
@@ -2395,7 +2394,7 @@ POPS = {
             }
             create_pop = {
                 culture = panjabi
-                religion = hindu # jains
+                religion = hindu
                 size = 4917
             }
         }
@@ -2427,7 +2426,7 @@ POPS = {
             }
             create_pop = {
                 culture = pahari
-                religion = hindu # jains
+                religion = hindu
                 size = 229
             }
         }

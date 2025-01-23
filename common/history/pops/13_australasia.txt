@@ -3,32 +3,17 @@
         region_state:NSW = {
             create_pop = {
                 culture = aborigine
-                size = 63200
+                size = 153518
             }
             create_pop = {
                 culture = australian
-                size = 101384
+                size = 130060
             }
             create_pop = {
                 culture = irish
                 size = 16080
             }
         }
-    }
-    s:STATE_VICTORIA = {
-        region_state:NSW = {
-            create_pop = {
-                culture = aborigine
-                size = 31118
-            }
-            create_pop = {
-                culture = australian
-                size = 24676
-            }
-        }
-    }
-
-    s:STATE_TASMANIA = {
         region_state:TAS = {
             create_pop = {
                 culture = aborigine
@@ -37,47 +22,6 @@
             create_pop = {
                 culture = australian
                 size = 41200
-            }
-        }
-    }
-    s:STATE_QUEENSLAND = {
-        region_state:NSW = {
-            create_pop = {
-                culture = aborigine
-                size = 59200
-            }
-            create_pop = {
-                culture = australian
-                size = 4000
-            }
-        }
-    }
-    s:STATE_SOUTH_AUSTRALIA = {
-        region_state:SAS = {
-            create_pop = {
-                culture = australian
-                size = 10500
-            }        
-            create_pop = {
-                culture = aborigine
-                size = 18000
-            }
-        }
-        region_state:KAU = {
-            create_pop = {
-                culture = australian
-                size = 300
-            }        
-            create_pop = {
-                culture = aborigine
-                size = 51000
-            }
-        }
-        region_state:WTI = {
-            create_pop = {
-                culture = aborigine
-                #size = 4000 # historical increased for gameplay
-                size = 12500
             }
         }
     }
@@ -101,30 +45,39 @@
         region_state:WTI = {
             create_pop = {
                 culture = aborigine
-                #size = 4044 # historical increased for gameplay
-                size = 12500
+                size = 37500
             }
         }
         region_state:MRN = {
             create_pop = {
                 culture = aborigine
-                #size = 2000 # historical increased for gameplay
                 size = 10000
             }
         }
-    }
-    s:STATE_NORTHERN_TERRITORY = {
+        region_state:SAS = {
+            create_pop = {
+                culture = australian
+                size = 10500
+            }
+            create_pop = {
+                culture = aborigine
+                size = 18000
+            }
+        }
+        region_state:KAU = {
+            create_pop = {
+                culture = australian
+                size = 300
+            }
+            create_pop = {
+                culture = aborigine
+                size = 51000
+            }
+        }
         region_state:NSW = {
             create_pop = {
                 culture = aborigine
                 size = 29000
-            }
-        }
-        region_state:WTI = {
-            create_pop = {
-                culture = aborigine
-                #size = 2804 #historical increased for gameplay
-                size = 12500
             }
         }
     }
@@ -153,19 +106,11 @@
         region_state:NTO = {
             create_pop = {
                 culture = maori
-                size = 32000
+                size = 44000
             }
-        }
-    }
-    s:STATE_SOUTH_ISLAND = {
-        region_state:NTO = {
             create_pop = {
                 culture = australian
                 size = 428
-            }
-            create_pop = {
-                culture = maori
-                size = 12000
             }
         }
         region_state:NTU = {

@@ -468,7 +468,6 @@
             }
         }
     }
-    # If anyone has better numbers for ethnic makeup and overall population figures, hmu
     s:STATE_OUTER_HAUSALAND = {
         region_state:HAU = {
             create_pop = {
@@ -550,7 +549,7 @@
                 pop_type = slaves
                 culture = fulbe
                 size = 6450
-            }        
+            }
         }
         region_state:BOR = {
             create_pop = {
@@ -1304,7 +1303,7 @@
                 size = 24000
             }
             create_pop = {
-                culture = kikuyu 
+                culture = kikuyu
                 size = 77040
                 pop_type = slaves
             }
@@ -1346,7 +1345,7 @@
                 size = 4360
             }
             create_pop = {
-                culture = kikuyu 
+                culture = kikuyu
                 size = 6694
                 pop_type = slaves
             }
@@ -1805,7 +1804,7 @@
             create_pop = {
                 culture = portuguese
                 size = 3996
-            }        
+            }
         }
         region_state:MRV = {
             create_pop = {
@@ -1923,7 +1922,7 @@
                 culture = equatorial_bantu
                 religion = sunni
                 size = 100400
-            }    
+            }
             create_pop = {
                 culture = fulbe
                 size = 12000
@@ -1932,7 +1931,7 @@
                 pop_type = slaves
                 culture = equatorial_bantu
                 size = 10020
-            }    
+            }
         }
     }
     s:STATE_SOUTH_CAMEROON = {

@@ -1,6 +1,4 @@
-﻿# REGARDING BRAZIL: There are several varying estimates for Brazil's population overall in the 1830s. There's no good censuses for 1836 specifically, and provincial censuses are all over the place in terms of quality and distance in time from 1836. Everything will be drawn from estimates of estimates and probably have some issues with accuracy. I can do nothing but apologize, and encourage students of history to go forth and write a book I can steal data from in the future.
-
-POPS = {
+﻿POPS = {
     s:STATE_ECUADOR = {
         region_state:ECU = {
             create_pop = {
@@ -75,69 +73,29 @@ POPS = {
             }
         }
     }
-    s:STATE_ZULIA = {
-        region_state:VNZ = {
-            create_pop = {
-                culture = north_andean
-                size = 325608
-            }
-            create_pop = {
-                culture = cariban
-                religion = catholic
-                size = 4004
-            }
-            create_pop = {
-                culture = afro_caribeno
-                size = 72200
-            }
-            create_pop = {
-                pop_type = slaves
-                culture = afro_caribeno
-                size = 25300
-            }
-            create_pop = {
-                culture = guajiro
-                size = 4004
-            }
-        }
-    }
     s:STATE_MIRANDA = {
         region_state:VNZ = {
             create_pop = {
                 culture = north_andean
-                size = 266908
+                size = 736908
             }
             create_pop = {
                 culture = cariban
                 religion = catholic
-                size = 8004
+                size = 12008
             }
             create_pop = {
                 culture = afro_caribeno
-                size = 60208
+                size = 132408
             }
             create_pop = {
                 pop_type = slaves
                 culture = afro_caribeno
-                size = 24004
-            }
-        }
-    }
-    s:STATE_BOLIVAR = {
-        region_state:VNZ = {
-            create_pop = {
-                culture = north_andean
-                size = 144392
+                size = 75074
             }
             create_pop = {
-                pop_type = slaves
-                culture = afro_caribeno
-                size = 21140
-            }
-            create_pop = {
-                pop_type = slaves
-                culture = afro_caribeno
-                size = 4630
+                culture = guajiro
+                size = 4004
             }
             create_pop = {
                 culture = amazonian
@@ -145,72 +103,29 @@ POPS = {
             }
         }
     }
-    s:STATE_ANTIOQUIA = {
-        region_state:CLM = {
-            create_pop = {
-                culture = north_andean
-                size = 269804
-            }
-            create_pop = {
-                culture = guajiro
-                size = 12000
-            }
-            create_pop = {
-                culture = afro_caribeno
-                size = 162004
-            }
-            create_pop = {
-                pop_type = slaves
-                culture = afro_caribeno
-                size = 62000
-            }
-            create_pop = {
-                culture = muisca
-                religion = catholic
-                size = 32004
-            }
-        }
-    }
-    s:STATE_GUAVIARE = {
-        region_state:CLM = {
-            create_pop = {
-                culture = amazonian
-                size = 88000
-            }
-            create_pop = {
-                culture = afro_caribeno
-                size = 9996
-            }
-            create_pop = {
-                pop_type = slaves
-                culture = afro_caribeno
-                size = 2400
-            }
-            create_pop = {
-                culture = north_andean
-                size = 27996
-            }
-        }
-    }
     s:STATE_CUNDINAMARCA = {
         region_state:CLM = {
             create_pop = {
                 culture = north_andean
-                size = 463396
+                size = 733200
             }
             create_pop = {
                 culture = afro_caribeno
-                size = 17000
+                size = 179004
             }
             create_pop = {
                 pop_type = slaves
                 culture = afro_caribeno
-                size = 3000
+                size = 65000
             }
             create_pop = {
                 culture = muisca
                 religion = catholic
-                size = 44204
+                size = 76208
+            }
+            create_pop = {
+                culture = guajiro
+                size = 12000
             }
         }
     }
@@ -218,7 +133,7 @@ POPS = {
         region_state:CLM = {
             create_pop = {
                 culture = north_andean
-                size = 164400
+                size = 192396
             }
             create_pop = {
                 culture = muisca
@@ -230,12 +145,16 @@ POPS = {
             }
             create_pop = {
                 culture = afro_caribeno
-                size = 32000
+                size = 41996
             }
             create_pop = {
                 pop_type = slaves
                 culture = afro_caribeno
-                size = 8000
+                size = 10400
+            }
+            create_pop = {
+                culture = amazonian
+                size = 88000
             }
         }
     }
