@@ -28,18 +28,18 @@
 			filter = {
 				OR = {
 					state_region = s:STATE_MOSCOW
-					state_region = s:STATE_YAROSLAVL
-					state_region = s:STATE_NIZHNY_NOVGOROD
-					state_region = s:STATE_CHUVASHIA
+					state_region = s:STATE_MOSCOW
+					state_region = s:STATE_MOSCOW
 					state_region = s:STATE_KAZAN
-					state_region = s:STATE_UFA
-					state_region = s:STATE_CHELYABINSK
+					state_region = s:STATE_KAZAN
+					state_region = s:STATE_KAZAN
 					state_region = s:STATE_URAL
-					state_region = s:STATE_TOBOLSK
+					state_region = s:STATE_URAL
+					state_region = s:STATE_URAL
 					state_region = s:STATE_TOMSK
-					state_region = s:STATE_KRASNOYARSK
-					state_region = s:STATE_IRKUTSK
-					state_region = s:STATE_BURYATIA
+					state_region = s:STATE_TOMSK
+					state_region = s:STATE_TRANS_BAIKAL
+					state_region = s:STATE_TRANS_BAIKAL
 					state_region = s:STATE_TRANS_BAIKAL
 				}
 			}
@@ -59,7 +59,7 @@
 			}
 			AND = {
 				any_scope_state = {
-					state_region = s:STATE_AMUR
+					state_region = s:STATE_OUTER_MANCHURIA
 					has_building = building_railway
 				}
 				any_scope_state = {
@@ -88,23 +88,31 @@ je_trans_continental_railway = {
 		NOT = { has_global_variable = trans_continental_done }
 		owns_entire_state_region = STATE_NEW_YORK
 		any_scope_state = {
-			state_region = s:STATE_MISSOURI
+			state_region = s:STATE_KANSAS
 		}
 	}
 
 	possible = {
 		has_technology_researched = railways
-		owns_entire_state_region = STATE_MISSOURI
+		owns_entire_state_region = STATE_KANSAS
 		owns_entire_state_region = STATE_CALIFORNIA
 	}
 
 	complete = {
 		any_scope_state = {
-			state_region = s:STATE_MISSOURI
+			state_region = s:STATE_KANSAS
 			has_building = building_railway
 		}
 		any_scope_state = {
-			state_region = s:STATE_WYOMING
+			state_region = s:STATE_COLORADO
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_CALIFORNIA
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_CALIFORNIA
 			has_building = building_railway
 		}
 		any_scope_state = {

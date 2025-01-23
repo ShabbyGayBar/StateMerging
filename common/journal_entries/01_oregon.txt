@@ -26,7 +26,7 @@
 				text = oregon_tt
 				has_global_variable = oregon_trail_mapped
 			}
-			owns_entire_state_region = STATE_WYOMING
+			owns_entire_state_region = STATE_COLORADO
 		}
 	}
 
@@ -38,7 +38,7 @@
 					text = oregon_tt
 					has_global_variable = oregon_trail_mapped
 				}
-				owns_entire_state_region = STATE_WYOMING
+				owns_entire_state_region = STATE_COLORADO
 				c:GBR = {
 					relations:ROOT >= relations_threshold:cordial
 				}

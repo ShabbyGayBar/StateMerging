@@ -113,7 +113,9 @@ je_expanding_paraguay = {
         owns_entire_state_region = STATE_BUENOS_AIRES
         OR = {
             country_or_subject_owns_entire_state_region = STATE_URUGUAY
+            country_or_subject_owns_entire_state_region = STATE_BUENOS_AIRES
             country_or_subject_owns_entire_state_region = STATE_SAO_PAULO
+            country_or_subject_owns_entire_state_region = STATE_URUGUAY
         }
     }
 
@@ -348,7 +350,9 @@ je_paraguayan_war = {
             has_state_in_state_region = STATE_BUENOS_AIRES
             OR = {
                 country_or_subject_owns_entire_state_region = STATE_URUGUAY
+                country_or_subject_owns_entire_state_region = STATE_BUENOS_AIRES
                 country_or_subject_owns_entire_state_region = STATE_SAO_PAULO
+                country_or_subject_owns_entire_state_region = STATE_URUGUAY
             }
         }
     }
@@ -375,7 +379,9 @@ je_paraguayan_war = {
                         OR = {
                             state_region = s:STATE_BUENOS_AIRES
                             state_region = s:STATE_URUGUAY
+                            state_region = s:STATE_BUENOS_AIRES
                             state_region = s:STATE_SAO_PAULO
+                            state_region = s:STATE_URUGUAY
                         }
                     }
                     root = {
