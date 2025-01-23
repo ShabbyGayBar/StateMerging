@@ -33,6 +33,32 @@ oregon.2 = {
 						}
 					}
 				}
+				save_scope_as = washington_scope
+			}
+		}
+		s:STATE_OREGON = {
+			random_scope_state = {
+				limit = {
+					owner = {
+						OR = {
+							c:GBR = THIS
+							is_subject_of = c:GBR
+						}
+					}
+				}
+				save_scope_as = idaho_scope
+			}
+		}
+		s:STATE_OREGON = {
+			random_scope_state = {
+				limit = {
+					owner = {
+						OR = {
+							c:GBR = THIS
+							is_subject_of = c:GBR
+						}
+					}
+				}
 				save_scope_as = oregon_scope
 			}
 		}
@@ -55,6 +81,34 @@ oregon.2 = {
 			}
 		}
 		show_as_tooltip = {
+			s:STATE_OREGON = {
+				random_scope_state = {
+					limit = {
+						exists = c:GBR
+						owner = {
+							OR = {
+								c:GBR = THIS
+								is_subject_of = c:GBR
+							}
+						}
+					}
+					set_state_owner = c:USA
+				}
+			}
+			s:STATE_OREGON = {
+				random_scope_state = {
+					limit = {
+						exists = c:GBR
+						owner = {
+							OR = {
+								c:GBR = THIS
+								is_subject_of = c:GBR
+							}
+						}
+					}
+					set_state_owner = c:USA
+				}
+			}
 			s:STATE_OREGON = {
 				random_scope_state = {
 					limit = {
@@ -147,6 +201,34 @@ oregon.3 = {
 						}
 					}
 				}
+				save_scope_as = washington_scope
+			}
+		}
+		s:STATE_OREGON = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						OR = {
+							c:GBR = THIS
+							is_subject_of = c:GBR
+						}
+					}
+				}
+				save_scope_as = idaho_scope
+			}
+		}
+		s:STATE_OREGON = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						OR = {
+							c:GBR = THIS
+							is_subject_of = c:GBR
+						}
+					}
+				}
 				save_scope_as = oregon_scope
 			}
 		}
@@ -186,6 +268,36 @@ oregon.3 = {
 				}
 			}
 		}
+		s:STATE_OREGON = {
+			add_homeland = cu:yankee
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						OR = {
+							c:GBR = THIS
+							is_subject_of = c:GBR
+						}
+					}
+				}
+				set_state_owner = c:USA
+			}
+		}
+		s:STATE_OREGON = {
+			add_homeland = cu:yankee
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						OR = {
+							c:GBR = THIS
+							is_subject_of = c:GBR
+						}
+					}
+				}
+				set_state_owner = c:USA
+			}
+		}
 	}
 }
 
@@ -221,6 +333,14 @@ oregon.4 = {
 		name = oregon.4.a
 		add_journal_entry = {
 			type = je_conquer_oregon
+		}
+		s:STATE_OREGON = {
+			add_claim = ROOT
+			add_homeland = cu:yankee
+		}
+		s:STATE_OREGON = {
+			add_claim = ROOT
+			add_homeland = cu:yankee
 		}
 		s:STATE_OREGON = {
 			add_claim = ROOT

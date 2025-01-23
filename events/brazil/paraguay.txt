@@ -992,7 +992,9 @@ paraguay.11 = {
 						OR = {
 							state_region = s:STATE_BUENOS_AIRES
 				            state_region = s:STATE_URUGUAY
+				            state_region = s:STATE_BUENOS_AIRES
 				            state_region = s:STATE_SAO_PAULO
+				            state_region = s:STATE_URUGUAY
 						}
 					}
 				}
@@ -1021,7 +1023,9 @@ paraguay.11 = {
 							OR = {
 								state_region = s:STATE_BUENOS_AIRES
 					            state_region = s:STATE_URUGUAY
+					            state_region = s:STATE_BUENOS_AIRES
 					            state_region = s:STATE_SAO_PAULO
+					            state_region = s:STATE_URUGUAY
 							}
 						}
 					}

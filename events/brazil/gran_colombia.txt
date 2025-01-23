@@ -665,9 +665,54 @@ la_plata.2 = {
 				s:STATE_SANTIAGO = {
 					is_homeland = cu:south_andean
 				}
+				s:STATE_SANTIAGO = {
+					is_homeland = cu:south_andean
+				}
+				s:STATE_SANTIAGO = {
+					is_homeland = cu:south_andean
+				}
+				s:STATE_SANTIAGO = {
+					is_homeland = cu:south_andean
+				}
 			}
 		}
 		add_primary_culture = cu:south_andean
+		if = {
+			limit = {
+				NOT = {
+					any_scope_state = {
+						state_region = s:STATE_SANTIAGO
+					}
+				}
+			}
+			s:STATE_SANTIAGO = {
+				add_claim = ROOT
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					any_scope_state = {
+						state_region = s:STATE_SANTIAGO
+					}
+				}
+			}
+			s:STATE_SANTIAGO = {
+				add_claim = ROOT
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					any_scope_state = {
+						state_region = s:STATE_SANTIAGO
+					}
+				}
+			}
+			s:STATE_SANTIAGO = {
+				add_claim = ROOT
+			}
+		}
 		if = {
 			limit = {
 				NOT = {
@@ -689,6 +734,9 @@ la_plata.2 = {
 				any_scope_state = {
 					state_region = {
 						OR = {
+							this = s:STATE_SANTIAGO
+							this = s:STATE_SANTIAGO
+							this = s:STATE_SANTIAGO
 							this = s:STATE_SANTIAGO
 						}
 					}

@@ -505,7 +505,12 @@ coffee_with_milk.6 = {
 			limit = {
 				OR = {
 					state_region = s:STATE_PERNAMBUCO
+					state_region = s:STATE_PERNAMBUCO
+					state_region = s:STATE_PERNAMBUCO
+					state_region = s:STATE_PERNAMBUCO
+					state_region = s:STATE_PAUAI
 					state_region = s:STATE_PARA
+					state_region = s:STATE_PERNAMBUCO
 				}
 			}
 			save_scope_as = northeast_state

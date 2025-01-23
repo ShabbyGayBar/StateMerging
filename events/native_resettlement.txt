@@ -12,7 +12,7 @@ native_resettlement.1 = {
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
-	placement = s:STATE_GEORGIA.region_state:USA
+	placement = s:STATE_FLORIDA.region_state:USA
 
 	title = native_resettlement.1.t
 	desc = native_resettlement.1.d
@@ -541,14 +541,14 @@ native_resettlement.7 = {
 		if = {
 			limit = {
 				c:SEQ ?= { is_subject_of = c:USA }
-				exists = s:STATE_OKLAHOMA.region_state:SEQ
+				exists = s:STATE_TEXAS.region_state:SEQ
 			}
 			s:STATE_FLORIDA.region_state:USA ?= {
 				every_scope_pop = {
 					limit = {
 						culture = cu:muskogean
 					}
-					move_pop = s:STATE_OKLAHOMA.region_state:SEQ
+					move_pop = s:STATE_TEXAS.region_state:SEQ
 				}
 			}
 		}
