@@ -584,20 +584,20 @@
                     building = {
                         type = "building_manor_house"
                         country = "c:NET"
-                        levels = 18
+                        levels = 20
                         region = "STATE_HOLLAND"
                     }
                     building = {
                         type = "building_manor_house"
                         country = "c:NET"
-                        levels = 4
-                        region = "STATE_FRIESLAND"
+                        levels = 2
+                        region = "STATE_HOLLAND"
                     }
                     building = {
                         type = "building_manor_house"
                         country = "c:NET"
                         levels = 3
-                        region = "STATE_GELRE"
+                        region = "STATE_HOLLAND"
                     }
                 }
                 reserves = 1
@@ -626,7 +626,7 @@
                         type = "building_manor_house"
                         country = "c:NET"
                         levels = 2
-                        region = "STATE_FRIESLAND"
+                        region = "STATE_HOLLAND"
                     }
                 }
                 reserves = 1
@@ -679,26 +679,20 @@
                     building = {
                         type = "building_manor_house"
                         country = "c:NET"
-                        levels = 8
+                        levels = 9
                         region = "STATE_HOLLAND"
                     }
                     building = {
                         type = "building_manor_house"
                         country = "c:NET"
                         levels = 1
-                        region = "STATE_FRIESLAND"
+                        region = "STATE_HOLLAND"
                     }
                     building = {
                         type = "building_manor_house"
                         country = "c:DEI"
                         levels = 4
                         region = "STATE_WEST_JAVA"
-                    }
-                    building = {
-                        type = "building_manor_house"
-                        country = "c:NET"
-                        levels = 1
-                        region = "STATE_GELRE"
                     }
                 }
                 reserves = 1

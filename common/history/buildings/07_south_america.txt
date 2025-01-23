@@ -175,73 +175,6 @@
             }
         }
     }
-    s:STATE_ZULIA = {
-        region_state:VNZ = {
-            create_building = {
-                building = "building_government_administration"
-                add_ownership = {
-                    country = {
-                        country = "c:VNZ"
-                        levels = 1
-                    }
-                }
-                reserves = 1
-                activate_production_methods = {
-                    "pm_simple_organization"
-                    "pm_religious_bureaucrats"
-                    "pm_professional_bureaucrats"
-                }
-            }
-            create_building = {
-                building = "building_coffee_plantation"
-                add_ownership = {
-                    building = {
-                        type = "building_manor_house"
-                        country = "c:VNZ"
-                        levels = 1
-                        region = "STATE_ZULIA"
-                    }
-                }
-                reserves = 1
-                activate_production_methods = {
-                    "default_building_coffee_plantation"
-                    "pm_road_carts"
-                }
-            }
-            create_building = {
-                building = "building_banana_plantation"
-                add_ownership = {
-                    building = {
-                        type = "building_manor_house"
-                        country = "c:VNZ"
-                        levels = 1
-                        region = "STATE_ZULIA"
-                    }
-                }
-                reserves = 1
-                activate_production_methods = {
-                    "default_building_banana_plantation"
-                    "pm_road_carts"
-                }
-            }
-            create_building = {
-                building = "building_sugar_plantation"
-                add_ownership = {
-                    building = {
-                        type = "building_manor_house"
-                        country = "c:VNZ"
-                        levels = 2
-                        region = "STATE_ZULIA"
-                    }
-                }
-                reserves = 1
-                activate_production_methods = {
-                    "default_building_sugar_plantation"
-                    "pm_road_carts"
-                }
-            }
-        }
-    }
     s:STATE_MIRANDA = {
         region_state:VNZ = {
             create_building = {
@@ -265,7 +198,7 @@
                 add_ownership = {
                     country = {
                         country = "c:VNZ"
-                        levels = 2
+                        levels = 3
                     }
                 }
                 reserves = 1
@@ -281,7 +214,7 @@
                     building = {
                         type = "building_maize_farm"
                         country = "c:VNZ"
-                        levels = 2
+                        levels = 3
                         region = "STATE_MIRANDA"
                     }
                 }
@@ -298,7 +231,7 @@
                     building = {
                         type = "building_manor_house"
                         country = "c:VNZ"
-                        levels = 2
+                        levels = 5
                         region = "STATE_MIRANDA"
                     }
                 }
@@ -321,10 +254,38 @@
                     "pm_basic_port"
                 }
             }
-        }
-    }
-    s:STATE_BOLIVAR = {
-        region_state:VNZ = {
+            create_building = {
+                building = "building_coffee_plantation"
+                add_ownership = {
+                    building = {
+                        type = "building_manor_house"
+                        country = "c:VNZ"
+                        levels = 1
+                        region = "STATE_MIRANDA"
+                    }
+                }
+                reserves = 1
+                activate_production_methods = {
+                    "default_building_coffee_plantation"
+                    "pm_road_carts"
+                }
+            }
+            create_building = {
+                building = "building_banana_plantation"
+                add_ownership = {
+                    building = {
+                        type = "building_manor_house"
+                        country = "c:VNZ"
+                        levels = 1
+                        region = "STATE_MIRANDA"
+                    }
+                }
+                reserves = 1
+                activate_production_methods = {
+                    "default_building_banana_plantation"
+                    "pm_road_carts"
+                }
+            }
             create_building = {
                 building = "building_livestock_ranch"
                 add_ownership = {
@@ -332,7 +293,7 @@
                         type = "building_manor_house"
                         country = "c:VNZ"
                         levels = 1
-                        region = "STATE_BOLIVAR"
+                        region = "STATE_MIRANDA"
                     }
                 }
                 reserves = 1
@@ -341,191 +302,6 @@
                     "pm_simple_ranch"
                     "pm_standard_fences"
                     "pm_unrefrigerated"
-                }
-            }
-            create_building = {
-                building = "building_maize_farm"
-                add_ownership = {
-                    building = {
-                        type = "building_maize_farm"
-                        country = "c:VNZ"
-                        levels = 1
-                        region = "STATE_BOLIVAR"
-                    }
-                }
-                reserves = 1
-                activate_production_methods = {
-                    "pm_simple_farming"
-                    "pm_no_secondary"
-                    "pm_tools_disabled"
-                }
-            }
-            create_building = {
-                building = "building_sugar_plantation"
-                add_ownership = {
-                    building = {
-                        type = "building_manor_house"
-                        country = "c:VNZ"
-                        levels = 1
-                        region = "STATE_BOLIVAR"
-                    }
-                }
-                reserves = 1
-                activate_production_methods = {
-                    "default_building_sugar_plantation"
-                    "pm_road_carts"
-                }
-            }
-        }
-    }
-    s:STATE_ANTIOQUIA = {
-        region_state:CLM = {
-            create_building = {
-                building = "building_government_administration"
-                add_ownership = {
-                    country = {
-                        country = "c:CLM"
-                        levels = 2
-                    }
-                }
-                reserves = 1
-                activate_production_methods = {
-                    "pm_simple_organization"
-                    "pm_religious_bureaucrats"
-                    "pm_professional_bureaucrats"
-                }
-            }
-            create_building = {
-                building = "building_fishing_wharf"
-                add_ownership = {
-                    building = {
-                        type = "building_fishing_wharf"
-                        country = "c:CLM"
-                        levels = 1
-                        region = "STATE_ANTIOQUIA"
-                    }
-                }
-                reserves = 1
-                activate_production_methods = {
-                    "pm_simple_fishing"
-                    "pm_unrefrigerated"
-                }
-            }
-            create_building = {
-                building = "building_tobacco_plantation"
-                add_ownership = {
-                    building = {
-                        type = "building_manor_house"
-                        country = "c:CLM"
-                        levels = 2
-                        region = "STATE_ANTIOQUIA"
-                    }
-                }
-                reserves = 1
-                activate_production_methods = {
-                    "default_building_tobacco_plantation"
-                    "pm_road_carts"
-                }
-            }
-            create_building = {
-                building = "building_sugar_plantation"
-                add_ownership = {
-                    building = {
-                        type = "building_manor_house"
-                        country = "c:CLM"
-                        levels = 1
-                        region = "STATE_ANTIOQUIA"
-                    }
-                }
-                reserves = 1
-                activate_production_methods = {
-                    "default_building_sugar_plantation"
-                    "pm_road_carts"
-                }
-            }
-            create_building = {
-                building = "building_port"
-                add_ownership = {
-                    country = {
-                        country = "c:CLM"
-                        levels = 1
-                    }
-                }
-                reserves = 1
-                activate_production_methods = {
-                    "pm_basic_port"
-                }
-            }
-        }
-    }
-    s:STATE_GUAVIARE = {
-        region_state:CLM = {
-            create_building = {
-                building = "building_government_administration"
-                add_ownership = {
-                    country = {
-                        country = "c:CLM"
-                        levels = 1
-                    }
-                }
-                reserves = 1
-                activate_production_methods = {
-                    "pm_simple_organization"
-                    "pm_professional_bureaucrats"
-                    "pm_religious_bureaucrats"
-                }
-            }
-            create_building = {
-                building = "building_rice_farm"
-                add_ownership = {
-                    building = {
-                        type = "building_rice_farm"
-                        country = "c:CLM"
-                        levels = 1
-                        region = "STATE_GUAVIARE"
-                    }
-                }
-                reserves = 1
-                activate_production_methods = {
-                    "pm_simple_farming_building_rice_farm"
-                    "pm_no_secondary"
-                    "pm_tools_disabled"
-                }
-            }
-            create_building = {
-                building = "building_livestock_ranch"
-                add_ownership = {
-                    building = {
-                        type = "building_livestock_ranch"
-                        country = "c:CLM"
-                        levels = 1
-                        region = "STATE_GUAVIARE"
-                    }
-                }
-                reserves = 1
-                activate_production_methods = {
-                    "pm_open_air_stockyards"
-                    "pm_simple_ranch"
-                    "pm_standard_fences"
-                    "pm_unrefrigerated"
-                }
-            }
-            create_building = {
-                building = "building_logging_camp"
-                add_ownership = {
-                    building = {
-                        type = "building_financial_district"
-                        country = "c:CLM"
-                        levels = 1
-                        region = "STATE_GUAVIARE"
-                    }
-                }
-                reserves = 1
-                activate_production_methods = {
-                    "pm_simple_forestry"
-                    "pm_hardwood"
-                    "pm_no_equipment"
-                    "pm_road_carts"
                 }
             }
         }
@@ -537,7 +313,7 @@
                 add_ownership = {
                     country = {
                         country = "c:CLM"
-                        levels = 2
+                        levels = 4
                     }
                 }
                 reserves = 1
@@ -570,7 +346,7 @@
                     building = {
                         type = "building_manor_house"
                         country = "c:CLM"
-                        levels = 1
+                        levels = 2
                         region = "STATE_CUNDINAMARCA"
                     }
                 }
@@ -654,6 +430,51 @@
                     "pm_road_carts"
                 }
             }
+            create_building = {
+                building = "building_fishing_wharf"
+                add_ownership = {
+                    building = {
+                        type = "building_fishing_wharf"
+                        country = "c:CLM"
+                        levels = 1
+                        region = "STATE_CUNDINAMARCA"
+                    }
+                }
+                reserves = 1
+                activate_production_methods = {
+                    "pm_simple_fishing"
+                    "pm_unrefrigerated"
+                }
+            }
+            create_building = {
+                building = "building_tobacco_plantation"
+                add_ownership = {
+                    building = {
+                        type = "building_manor_house"
+                        country = "c:CLM"
+                        levels = 2
+                        region = "STATE_CUNDINAMARCA"
+                    }
+                }
+                reserves = 1
+                activate_production_methods = {
+                    "default_building_tobacco_plantation"
+                    "pm_road_carts"
+                }
+            }
+            create_building = {
+                building = "building_port"
+                add_ownership = {
+                    country = {
+                        country = "c:CLM"
+                        levels = 1
+                    }
+                }
+                reserves = 1
+                activate_production_methods = {
+                    "pm_basic_port"
+                }
+            }
         }
     }
     s:STATE_CAUCA = {
@@ -705,6 +526,74 @@
                     "pm_simple_farming"
                     "pm_no_secondary"
                     "pm_tools_disabled"
+                }
+            }
+            create_building = {
+                building = "building_government_administration"
+                add_ownership = {
+                    country = {
+                        country = "c:CLM"
+                        levels = 1
+                    }
+                }
+                reserves = 1
+                activate_production_methods = {
+                    "pm_simple_organization"
+                    "pm_professional_bureaucrats"
+                    "pm_religious_bureaucrats"
+                }
+            }
+            create_building = {
+                building = "building_rice_farm"
+                add_ownership = {
+                    building = {
+                        type = "building_rice_farm"
+                        country = "c:CLM"
+                        levels = 1
+                        region = "STATE_CAUCA"
+                    }
+                }
+                reserves = 1
+                activate_production_methods = {
+                    "pm_simple_farming_building_rice_farm"
+                    "pm_no_secondary"
+                    "pm_tools_disabled"
+                }
+            }
+            create_building = {
+                building = "building_livestock_ranch"
+                add_ownership = {
+                    building = {
+                        type = "building_livestock_ranch"
+                        country = "c:CLM"
+                        levels = 1
+                        region = "STATE_CAUCA"
+                    }
+                }
+                reserves = 1
+                activate_production_methods = {
+                    "pm_open_air_stockyards"
+                    "pm_simple_ranch"
+                    "pm_standard_fences"
+                    "pm_unrefrigerated"
+                }
+            }
+            create_building = {
+                building = "building_logging_camp"
+                add_ownership = {
+                    building = {
+                        type = "building_financial_district"
+                        country = "c:CLM"
+                        levels = 1
+                        region = "STATE_CAUCA"
+                    }
+                }
+                reserves = 1
+                activate_production_methods = {
+                    "pm_simple_forestry"
+                    "pm_hardwood"
+                    "pm_no_equipment"
+                    "pm_road_carts"
                 }
             }
         }
