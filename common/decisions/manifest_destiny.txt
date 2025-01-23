@@ -1,4 +1,4 @@
-﻿manifest_destiny = {
+manifest_destiny = {
 
 	is_shown = {
 		exists = c:USA
@@ -63,7 +63,7 @@
 			if = {
 				limit = {
 					any_scope_state = {
-						 NOT = {
+						NOT = {
 							owner = ROOT
 						}
 					}
