@@ -8,37 +8,37 @@
 			# II. Armee-Korps
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_POMERANIA
+				state_region = s:STATE_BRANDENBURG
 				count = 9
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_cuirassiers
-				state_region = s:STATE_POMERANIA
+				state_region = s:STATE_BRANDENBURG
 				count = 1
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_dragoons
-				state_region = s:STATE_POMERANIA
+				state_region = s:STATE_BRANDENBURG
 				count = 1
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_lancers
-				state_region = s:STATE_POMERANIA
+				state_region = s:STATE_BRANDENBURG
 				count = 1
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_POMERANIA
+				state_region = s:STATE_BRANDENBURG
 				count = 1
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_POMERANIA
+				state_region = s:STATE_BRANDENBURG
 				count = 1
 			}
 
@@ -151,31 +151,31 @@
 			# V. Armee-Korps
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_POSEN
+				state_region = s:STATE_WEST_PRUSSIA
 				count = 9
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_cuirassiers
-				state_region = s:STATE_POSEN
+				state_region = s:STATE_WEST_PRUSSIA
 				count = 1
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_POSEN
+				state_region = s:STATE_WEST_PRUSSIA
 				count = 2
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_lancers
-				state_region = s:STATE_POSEN
+				state_region = s:STATE_WEST_PRUSSIA
 				count = 1
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_POSEN
+				state_region = s:STATE_WEST_PRUSSIA
 				count = 1
 			}
 
@@ -276,25 +276,25 @@
 			# VII. Armee-Korps
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_WESTPHALIA
+				state_region = s:STATE_RHINELAND
 				count = 9
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_RUHR
+				state_region = s:STATE_RHINELAND
 				count = 2
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_lancers
-				state_region = s:STATE_RUHR
+				state_region = s:STATE_RHINELAND
 				count = 2
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_RUHR
+				state_region = s:STATE_RHINELAND
 				count = 1
 			}
 			save_scope_as = main_Armee
@@ -339,19 +339,19 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_lancers
-				state_region = s:STATE_RUHR
+				state_region = s:STATE_RHINELAND
 				count = 1
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_dragoons
-				state_region = s:STATE_RUHR
+				state_region = s:STATE_RHINELAND
 				count = 1
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_RUHR
+				state_region = s:STATE_RHINELAND
 				count = 1
 			}
 			save_scope_as = Elbe_Armee
@@ -382,7 +382,7 @@
 
 			combat_unit = { # Technically had no warships at game start, but the Prussian Maritime Enterprise operated some armed merchantmen
 				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_POMERANIA
+				state_region = s:STATE_BRANDENBURG
 				count = 1
 			}
 		}	
@@ -417,13 +417,13 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_lancers
-				state_region = s:STATE_MORAVIA
+				state_region = s:STATE_BOHEMIA
 				count = 10
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_STYRIA
+				state_region = s:STATE_AUSTRIA
 				count = 10
 			}
 			save_scope_as = i_korps
@@ -455,7 +455,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_TRANSDANUBIA
+				state_region = s:STATE_CENTRAL_HUNGARY
 				count = 20
 			}
 
@@ -467,13 +467,13 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_BEKES
+				state_region = s:STATE_BANAT
 				count = 10
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_SOUTHERN_TRANSYLVANIA
+				state_region = s:STATE_NORTHERN_TRANSYLVANIA
 				count = 5
 			}
 
@@ -491,7 +491,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_EAST_SLOVAKIA
+				state_region = s:STATE_WEST_SLOVAKIA
 				count = 5
 			}
 
@@ -551,7 +551,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_LOMBARDY
+				state_region = s:STATE_VENETIA
 				count = 15
 			}
 
@@ -666,13 +666,13 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_FRENCH_LOW_COUNTRIES
+				state_region = s:STATE_FLANDERS
 				count = 20
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_RHONE
+				state_region = s:STATE_PROVENCE
 				count = 15
 			}
 
@@ -684,7 +684,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_ORLEANS
+				state_region = s:STATE_ILE_DE_FRANCE
 				count = 5
 			}
 		}
@@ -696,19 +696,19 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_AUVERGNE_LIMOUSIN
+				state_region = s:STATE_AQUITAINE
 				count = 25
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_LANGUEDOC
+				state_region = s:STATE_PROVENCE
 				count = 15
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_lancers
-				state_region = s:STATE_GUYENNE
+				state_region = s:STATE_AQUITAINE
 				count = 15
 			}
 
@@ -739,7 +739,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_ALSACE_LORRAINE
+				state_region = s:STATE_BADEN
 				count = 15
 			}
 
@@ -751,13 +751,13 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_lancers
-				state_region = s:STATE_CHAMPAGNE
+				state_region = s:STATE_BURGUNDY
 				count = 5
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_FRANCHE_COMTE
+				state_region = s:STATE_BURGUNDY
 				count = 10
 			}
 			save_scope_as = thirdcorpfra
@@ -787,19 +787,19 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_LORRAINE
+				state_region = s:STATE_BURGUNDY
 				count = 15
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_NORMANDY
+				state_region = s:STATE_ILE_DE_FRANCE
 				count = 10
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_lancers
-				state_region = s:STATE_CHAMPAGNE
+				state_region = s:STATE_BURGUNDY
 				count = 5
 			}
 
@@ -830,7 +830,7 @@
 		
 			combat_unit = {
 				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_FRENCH_LOW_COUNTRIES
+				state_region = s:STATE_FLANDERS
 				count = 7
 			}
 
@@ -842,19 +842,19 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_NORMANDY
+				state_region = s:STATE_ILE_DE_FRANCE
 				count = 2
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_POITOU
+				state_region = s:STATE_BRITTANY
 				count = 3
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_FRENCH_LOW_COUNTRIES
+				state_region = s:STATE_FLANDERS
 				count = 11
 			}
 
@@ -866,13 +866,13 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_NORMANDY
+				state_region = s:STATE_ILE_DE_FRANCE
 				count = 6
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_POITOU
+				state_region = s:STATE_BRITTANY
 				count = 5
 			}
 		}
@@ -890,7 +890,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_LANGUEDOC
+				state_region = s:STATE_PROVENCE
 				count = 4
 			}
 
@@ -908,7 +908,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_LANGUEDOC
+				state_region = s:STATE_PROVENCE
 				count = 3
 			}
 
@@ -956,25 +956,25 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_EAST_ANGLIA
+				state_region = s:STATE_HOME_COUNTIES
 				count = 2
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_WEST_COUNTRY
+				state_region = s:STATE_HOME_COUNTIES
 				count = 2
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_WALES
+				state_region = s:STATE_MIDLANDS
 				count = 1
 			}
 			
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_LANCASHIRE
+				state_region = s:STATE_YORKSHIRE
 				count = 1
 			}
 			
@@ -986,7 +986,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_WEST_COUNTRY
+				state_region = s:STATE_HOME_COUNTIES
 				count = 2
 			}
 
@@ -998,13 +998,13 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_lancers
-				state_region = s:STATE_LANCASHIRE
+				state_region = s:STATE_YORKSHIRE
 				count = 2
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_LANCASHIRE
+				state_region = s:STATE_YORKSHIRE
 				count = 3
 			}
 
@@ -1028,7 +1028,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_ULSTER
+				state_region = s:STATE_LEINSTER
 				count = 5
 			}
 
@@ -1040,25 +1040,25 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_HIGHLANDS
+				state_region = s:STATE_LOWLANDS
 				count = 5
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_dragoons
-				state_region = s:STATE_MUNSTER
+				state_region = s:STATE_LEINSTER
 				count = 3
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_dragoons
-				state_region = s:STATE_CONNAUGHT
+				state_region = s:STATE_LEINSTER
 				count = 3
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_CONNAUGHT
+				state_region = s:STATE_LEINSTER
 				count = 1
 			}
 			save_scope_as = home_army_army
@@ -1081,7 +1081,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_EAST_ANGLIA
+				state_region = s:STATE_HOME_COUNTIES
 				count = 5
 			}
 
@@ -1115,13 +1115,13 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_WALES
+				state_region = s:STATE_MIDLANDS
 				count = 10
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_LANCASHIRE
+				state_region = s:STATE_YORKSHIRE
 				count = 9
 			}
 
@@ -1133,13 +1133,13 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_ULSTER
+				state_region = s:STATE_LEINSTER
 				count = 6
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_ULSTER
+				state_region = s:STATE_LEINSTER
 				count = 1
 			}
 			save_scope_as = west_indies_army
@@ -1161,7 +1161,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_LANCASHIRE
+				state_region = s:STATE_YORKSHIRE
 				count = 5
 			}
 
@@ -1179,7 +1179,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_HIGHLANDS
+				state_region = s:STATE_LOWLANDS
 				count = 5
 			}
 
@@ -1237,19 +1237,19 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_WEST_COUNTRY
+				state_region = s:STATE_HOME_COUNTIES
 				count = 30
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_LANCASHIRE
+				state_region = s:STATE_YORKSHIRE
 				count = 40
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_ULSTER
+				state_region = s:STATE_LEINSTER
 				count = 9
 			}
 			combat_unit = {
@@ -1266,7 +1266,7 @@
 		
 			combat_unit = {
 				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_EAST_ANGLIA
+				state_region = s:STATE_HOME_COUNTIES
 				count = 19
 			}
 
@@ -1290,7 +1290,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_MALTA
+				state_region = s:STATE_SICILY
 				count = 4
 			}
 
@@ -1337,7 +1337,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_BERMUDA
+				state_region = s:STATE_WEST_INDIES
 				count = 2
 			}
 
@@ -1349,7 +1349,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_JAMAICA
+				state_region = s:STATE_WEST_INDIES
 				count = 2
 			}
 
@@ -1390,13 +1390,13 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_MUNSTER
+				state_region = s:STATE_LEINSTER
 				count = 1
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_MUNSTER
+				state_region = s:STATE_LEINSTER
 				count = 1
 			}
 			save_scope_as = india_china_fleet
@@ -1441,7 +1441,7 @@
 
 			combat_unit = { # L.-Gds. Lithuania Regiment
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_KAUNAS
+				state_region = s:STATE_VILNIUS
 				count = 1
 			}
 
@@ -1485,13 +1485,13 @@
 
 			combat_unit = { #  His Imperial Highness the Grand Duke Michael Pavlovich’s L.-Gds. Lancer Regiment, His Highness the Tsesarevich Constantine Pavlovich’s L.-Gds. Lancer Regiment
 				type = unit_type:combat_unit_type_lancers
-				state_region = s:STATE_NOVGOROD
+				state_region = s:STATE_INGRIA
 				count = 2
 			}
 
 			combat_unit = { # L.-Gds. Hussar Regiment and L.-Gds. Cossack Regiment, L.-Gds. Grodno Hussar Regiment and the Ataman Cossack Regiment of His Imperial Highness the Heir and Tsesarevich
 				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_NOVGOROD
+				state_region = s:STATE_INGRIA
 				count = 4
 			}
 			save_scope_as = gvardeyskiy_korpus_army
@@ -1525,7 +1525,7 @@
 
 			combat_unit = { #  Field Marshal Prince Kutuzov of Smolensk’s and Velikie-Luki Jägers
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_SMOLENSK
+				state_region = s:STATE_MOSCOW
 				count = 4
 			}
 
@@ -1549,12 +1549,12 @@
 			# 1st Artillery Division
 			combat_unit = { # 1st, 2nd, and 3rd Field Artillery Brigades
 				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_SMOLENSK
+				state_region = s:STATE_MOSCOW
 				count = 3
 			}
 			combat_unit = { # 1st Horse-Artillery Brigade
 				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_SMOLENSK
+				state_region = s:STATE_MOSCOW
 				count = 1
 			}
 
@@ -1572,7 +1572,7 @@
 
 			combat_unit = { # 1st Horse-Artillery Division
 				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_ROSTOV
+				state_region = s:STATE_ASTRAKHAN
 				count = 1
 			}
 
@@ -1584,13 +1584,13 @@
 
 			combat_unit = { # Apsheron Infantry
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_AZERBAIJAN
+				state_region = s:STATE_GREATER_CAUCASUS
 				count = 1
 			}
 
 			combat_unit = { # Field Marshal the Prince of Warsaw, Graf Paskevich of Erivan’s Infantry
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_ARMENIA
+				state_region = s:STATE_GREATER_CAUCASUS
 				count = 1
 			}
 
@@ -1602,7 +1602,7 @@
 
 			combat_unit = { # Mussulman Irregular Horse Regiment, Caucasian Mountaineer Irregular Horse Regiment
 				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_ARMENIA
+				state_region = s:STATE_GREATER_CAUCASUS
 				count = 2
 			}
 
@@ -1616,7 +1616,7 @@
 			# Caucasian (Cossack) Line
 			combat_unit = { # Terek, Kizlyar, and Grebensk Line Cossack regiments
 				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_DAGESTAN
+				state_region = s:STATE_KUBAN
 				count = 3
 			}
 			combat_unit = { # 1st and 2nd Little-Russian Cossack Regiments
@@ -1633,19 +1633,19 @@
 
 			combat_unit = { # Belozersk, Vologda Infantry
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_TVER
+				state_region = s:STATE_MOSCOW
 				count = 2
 			}
 
 			combat_unit = { # Schlüsselburg and Ladoga Jägers
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_NOVGOROD
+				state_region = s:STATE_INGRIA
 				count = 2
 			}
 
 			combat_unit = { # Olonets Infantry
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_EAST_KARELIA
+				state_region = s:STATE_ARKHANGELSK
 				count = 1
 			}
 
@@ -1657,7 +1657,7 @@
 
 			combat_unit = { # Kostroma and Galich Jägers
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_GALICH
+				state_region = s:STATE_PERM
 				count = 2
 			}
 
@@ -1688,25 +1688,25 @@
 			# 2nd Artillery Division
 			combat_unit = { # 4th, 5th, and 6th Field Artillery Brigades
 				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_SMOLENSK
+				state_region = s:STATE_MOSCOW
 				count = 3
 			}
 			combat_unit = { # 2nd Horse-Artillery Brigade
 				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_SMOLENSK
+				state_region = s:STATE_MOSCOW
 				count = 1
 			}
 
 			# 2nd Reserve Cavalry Corps
 			combat_unit = { # Order and Starodub Cuirassier Regiments, Prince Albert of Prussia’s and Her Imperial Highness the Grand Duchess Helen Pavlovna’s Cuirassier Regments
 				type = unit_type:combat_unit_type_cuirassiers
-				state_region = s:STATE_ORYOL
+				state_region = s:STATE_KURSK
 				count = 3
 			}
 
 			combat_unit = { # 2nd Horse-Artillery Division
 				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_ROSTOV
+				state_region = s:STATE_ASTRAKHAN
 				count = 1
 			}
 			save_scope_as = ii_pekhotniy_korpus
@@ -1728,7 +1728,7 @@
 
 			combat_unit = { # Field Marshal the Duke of Wellington’s and Mogilev Infantry, Vitebsk and Polotsk Jägers
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_MOGILEV
+				state_region = s:STATE_MINSK
 				count = 4
 			}
 
@@ -1746,7 +1746,7 @@
 
 			combat_unit = { # Bryansk Jägers
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_ORYOL
+				state_region = s:STATE_KURSK
 				count = 1
 			}
 
@@ -1758,19 +1758,19 @@
 			}
 			combat_unit = { # Lithuania and Volhynia Lancer Regiments.
 				type = unit_type:combat_unit_type_lancers
-				state_region = s:STATE_KAUNAS
+				state_region = s:STATE_VILNIUS
 				count = 2
 			}
 
 			# 3rd Artillery Division
 			combat_unit = { # 7th, 8th, and 9th Field Artillery Brigades
 				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_SMOLENSK
+				state_region = s:STATE_MOSCOW
 				count = 3
 			}
 			combat_unit = { # 3rd Horse-Artillery Brigade
 				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_SMOLENSK
+				state_region = s:STATE_MOSCOW
 				count = 1
 			}
 
@@ -1783,7 +1783,7 @@
 
 			combat_unit = { # 3rd Horse-Artillery Division
 				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_ROSTOV
+				state_region = s:STATE_ASTRAKHAN
 				count = 1
 			}
 			save_scope_as = iii_pekhotniy_korpus
@@ -1811,7 +1811,7 @@
 
 			combat_unit = { # Tobolsk Infantry
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_TOBOLSK
+				state_region = s:STATE_URAL
 				count = 1
 			}
 
@@ -1829,7 +1829,7 @@
 
 			combat_unit = { # Selenginsk Infantry
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_IRKUTSK
+				state_region = s:STATE_TRANS_BAIKAL
 				count = 1
 			}
 
@@ -1847,7 +1847,7 @@
 
 			combat_unit = { # Kamchatka Infantry
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_KAMCHATKA
+				state_region = s:STATE_OKHOTSK
 				count = 1
 			}
 
@@ -1859,7 +1859,7 @@
 
 			combat_unit = { # Ukraine and Odessa Jägers
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_CHERSON
+				state_region = s:STATE_KIEV
 				count = 2
 			}
 
@@ -1871,7 +1871,7 @@
 			}
 			combat_unit = { # Voznesensk and Olviopol Lancer Regiments.
 				type = unit_type:combat_unit_type_lancers
-				state_region = s:STATE_CHERSON
+				state_region = s:STATE_KIEV
 				count = 2
 			}
 
@@ -1918,7 +1918,7 @@
 
 			combat_unit = { # Lithuania and Vilna Jägers
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_KAUNAS
+				state_region = s:STATE_VILNIUS
 				count = 2
 			}
 
@@ -1942,13 +1942,13 @@
 
 			combat_unit = { # Modlin and Praga Infantry
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_MAZOVIA
+				state_region = s:STATE_GREATER_POLAND
 				count = 2
 			}
 
 			combat_unit = { # Lublin and Zamosc Jägers
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_LESSER_POLAND
+				state_region = s:STATE_GREATER_POLAND
 				count = 2
 			}
 
@@ -1960,26 +1960,26 @@
 			}
 			combat_unit = { # Bug and Odessa Lancer Regiments
 				type = unit_type:combat_unit_type_lancers
-				state_region = s:STATE_CHERSON
+				state_region = s:STATE_KIEV
 				count = 2
 			}
 
 			# 5th Artillery Division
 			combat_unit = { # 13th, 14th, and 15th Field Artillery Brigades
 				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_TARTARIA
+				state_region = s:STATE_KAZAN
 				count = 3
 			}
 			combat_unit = { # 5th Horse-Artillery Brigade
 				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_TARTARIA
+				state_region = s:STATE_KAZAN
 				count = 1
 			}
 
 			# 2nd Reserve Cavalry Corps
 			combat_unit = { # Ukraine and Novo-Arkhangelsk Lancer Regiments, Novo-Mirgorod and Yelisavetgrad Lancer Regiments
 				type = unit_type:combat_unit_type_lancers
-				state_region = s:STATE_CHERSON
+				state_region = s:STATE_KIEV
 				count = 4
 			}
 			save_scope_as = v_pekhotniy_korpus
@@ -2007,7 +2007,7 @@
 
 			combat_unit = { # Samogitia Grenadiers and Field Marshal Prince Barclay de Tolly’s Carabiniers
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_KAUNAS
+				state_region = s:STATE_VILNIUS
 				count = 2
 			}
 
@@ -2069,7 +2069,7 @@
 			# 2nd Reserve Cavalry Corps
 			combat_unit = { # Order and Starodub Cuirassier Regiments, Prince Albert of Prussia’s and Her Imperial Highness the Grand Duchess Helen Pavlovna’s Cuirassier Regments
 				type = unit_type:combat_unit_type_cuirassiers
-				state_region = s:STATE_ORYOL
+				state_region = s:STATE_KURSK
 				count = 1
 			}
 
@@ -2105,13 +2105,13 @@
 #			# Don Cossacks
 #			combat_unit = {
 #				type = unit_type:combat_unit_type_hussars
-#				state_region = s:STATE_TARTARIA
+#				state_region = s:STATE_KAZAN
 #				count = 10
 #			}
 #			# Don Cossacks
 #			combat_unit = {
 #				type = unit_type:combat_unit_type_hussars
-#				state_region = s:STATE_ROSTOV
+#				state_region = s:STATE_ASTRAKHAN
 #				count = 8
 #			}
 #			# Siberian Cossack Line
@@ -2135,7 +2135,7 @@
 #			# Don Cossacks
 #			combat_unit = {
 #				type = unit_type:combat_unit_type_hussars
-#				state_region = s:STATE_ROSTOV
+#				state_region = s:STATE_ASTRAKHAN
 #				count = 13
 #			}
 #		}
@@ -2189,43 +2189,43 @@
 		
 			combat_unit = {
 				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_CHERSON
+				state_region = s:STATE_KIEV
 				count = 6
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_ROSTOV
+				state_region = s:STATE_ASTRAKHAN
 				count = 1
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_CRIMEA
+				state_region = s:STATE_KHARKOV
 				count = 5
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_CHERSON
+				state_region = s:STATE_KIEV
 				count = 7
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_CRIMEA
+				state_region = s:STATE_KHARKOV
 				count = 7
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_ROSTOV
+				state_region = s:STATE_ASTRAKHAN
 				count = 4
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_TAURIDA
+				state_region = s:STATE_KHARKOV
 				count = 1
 			}
 			save_scope_as = rus_black_sea_fleet
@@ -2268,7 +2268,7 @@
 
 			combat_unit = { # 
 				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_NORTH_CAUCASUS
+				state_region = s:STATE_KUBAN
 				count = 3
 			}
 			
@@ -2305,13 +2305,13 @@
 
 			combat_unit = { # 
 				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_NORTH_CAUCASUS
+				state_region = s:STATE_KUBAN
 				count = 1
 			}
 			
 			combat_unit = { # 
 				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_NORTH_CAUCASUS
+				state_region = s:STATE_KUBAN
 				count = 3
 			}
 		}
@@ -2323,13 +2323,13 @@
 
 			combat_unit = { # 
 				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_NORTH_CAUCASUS
+				state_region = s:STATE_KUBAN
 				count = 1
 			}
 			
 			combat_unit = { # 
 				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_DAGESTAN
+				state_region = s:STATE_KUBAN
 				count = 5
 			}
 		}
@@ -2369,25 +2369,25 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_WURTTEMBERG
+				state_region = s:STATE_BADEN
 				count = 8
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_lancers
-				state_region = s:STATE_WURTTEMBERG
+				state_region = s:STATE_BADEN
 				count = 2
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_dragoons
-				state_region = s:STATE_WURTTEMBERG
+				state_region = s:STATE_BADEN
 				count = 2
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_WURTTEMBERG
+				state_region = s:STATE_BADEN
 				count = 2
 			}
 		}
@@ -2481,31 +2481,31 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_FRANCONIA
+				state_region = s:STATE_BAVARIA
 				count = 8
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry # Jägers
-				state_region = s:STATE_FRANCONIA
+				state_region = s:STATE_BAVARIA
 				count = 1
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_FRANCONIA
+				state_region = s:STATE_BAVARIA
 				count = 2
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_lancers
-				state_region = s:STATE_FRANCONIA
+				state_region = s:STATE_BAVARIA
 				count = 2
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_FRANCONIA
+				state_region = s:STATE_BAVARIA
 				count = 1
 			}
 		}
@@ -2519,19 +2519,19 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_HESSE
+				state_region = s:STATE_RHINELAND
 				count = 4
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_HESSE
+				state_region = s:STATE_RHINELAND
 				count = 1
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_HESSE
+				state_region = s:STATE_RHINELAND
 				count = 1
 			}
 		}
@@ -2545,19 +2545,19 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_HESSE
+				state_region = s:STATE_RHINELAND
 				count = 3
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_lancers
-				state_region = s:STATE_HESSE
+				state_region = s:STATE_RHINELAND
 				count = 1
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_HESSE
+				state_region = s:STATE_RHINELAND
 				count = 1
 			}
 		}
@@ -2571,13 +2571,13 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_HESSE
+				state_region = s:STATE_RHINELAND
 				count = 2
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_HESSE
+				state_region = s:STATE_RHINELAND
 				count = 1
 			}
 		}
@@ -2597,7 +2597,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_ELBE
+				state_region = s:STATE_HANNOVER
 				count = 2
 			}
 
@@ -2621,7 +2621,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_lancers
-				state_region = s:STATE_ELBE
+				state_region = s:STATE_HANNOVER
 				count = 2
 			}
 
@@ -2659,19 +2659,19 @@
 
 			combat_unit = { # Großherzoglich Mecklenburgisches (Garde)Grenadier-Regiment,
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_MECKLENBURG
+				state_region = s:STATE_BRANDENBURG
 				count = 3
 			}
 
 			combat_unit = { # 1. Großherzoglich Mecklenburgisches Dragoner-Regiment, 2. Großherzoglich Mecklenburgisches Dragoner-Regiment
 				type = unit_type:combat_unit_type_dragoons
-				state_region = s:STATE_MECKLENBURG
+				state_region = s:STATE_BRANDENBURG
 				count = 2
 			}
 
 			combat_unit = { # Großherzoglich Mecklenburgisches Feldartillerie-Regiment
 				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_MECKLENBURG
+				state_region = s:STATE_BRANDENBURG
 				count = 1
 			}
 		}
@@ -2705,7 +2705,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_ELBE
+				state_region = s:STATE_HANNOVER
 				count = 1
 			}
 		}
@@ -2719,7 +2719,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_ELBE
+				state_region = s:STATE_HANNOVER
 				count = 1
 			}
 		}
@@ -2747,7 +2747,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_HESSE
+				state_region = s:STATE_RHINELAND
 				count = 1
 			}
 		}
@@ -2761,7 +2761,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_HESSE
+				state_region = s:STATE_RHINELAND
 				count = 1
 			}
 		}
@@ -2775,13 +2775,13 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_WALLONIA
+				state_region = s:STATE_FLANDERS
 				count = 1
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_WALLONIA
+				state_region = s:STATE_FLANDERS
 				count = 2
 			}
 		}
@@ -2801,25 +2801,25 @@
 
 			combat_unit = { # Bohusläns regemente, Jönköpings regemente, Värmlands regemente, Västgöta regemente, Västgöta-Dals regemente, Älvsborgs regemente, Göta livgarde, Skaraborgs regemente
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_GOTALAND
+				state_region = s:STATE_SVEALAND
 				count = 6 # Reduced from 8 for balance reasons
 			}
 
 			combat_unit = { # Kalmar regemente, Norra skånska infanteriregementet, Södra skånska infanteriregementet,
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_SCANIA
+				state_region = s:STATE_SVEALAND
 				count = 3
 			}
 
 			combat_unit = { # Hälsinge regemente, Jämtlands fältjägarregemente, Västerbottens regemente
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_NORRLAND
+				state_region = s:STATE_SVEALAND
 				count = 2 # Reduced from 3 for balance reasons
 			}
 
 			combat_unit = { # Gotlands nationalbeväring
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_GOTLAND
+				state_region = s:STATE_SVEALAND
 				count = 1
 			}
 
@@ -2843,25 +2843,25 @@
 
 			combat_unit = { # Skånska dragonregementet
 				type = unit_type:combat_unit_type_dragoons
-				state_region = s:STATE_SCANIA
+				state_region = s:STATE_SVEALAND
 				count = 1
 			}
 
 			combat_unit = { # Skånska husarregementet
 				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_SCANIA
+				state_region = s:STATE_SVEALAND
 				count = 1
 			}
 
 			combat_unit = { # Smålands husarregemente
 				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_GOTALAND
+				state_region = s:STATE_SVEALAND
 				count = 1
 			}
 
 			combat_unit = { # Göta artillerregemente
 				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_GOTALAND
+				state_region = s:STATE_SVEALAND
 				count = 1
 			}
 
@@ -2897,13 +2897,13 @@
 			
 			combat_unit = { # Gustaf den Store, Manligheten, Prins Oscar
 				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_SCANIA
+				state_region = s:STATE_SVEALAND
 				count = 3
 			}
 
 			combat_unit = { # Skandinavien, Wasa
 				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_GOTALAND
+				state_region = s:STATE_SVEALAND
 				count = 2
 			}
 
@@ -2915,13 +2915,13 @@
 
 			combat_unit = { # Galathea, Josephine
 				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_SCANIA
+				state_region = s:STATE_SVEALAND
 				count = 2
 			}
 
 			combat_unit = { # Af Chapman
 				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_GOTALAND
+				state_region = s:STATE_SVEALAND
 				count = 1
 			}
 		}
@@ -2941,7 +2941,7 @@
 
 			combat_unit = { # 1. Jyske Infanteriregiment, 2. Jyske Infanteriregiment, 3. Jyske Infanteriregiment, Prins Christian Frederiks Regiment (til Fods)
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_JUTLAND
+				state_region = s:STATE_ZEALAND
 				count = 4
 			}
 
@@ -2965,13 +2965,13 @@
 
 			combat_unit = { # Prins Frederik Ferdinands lette Dragoner
 				type = unit_type:combat_unit_type_dragoons
-				state_region = s:STATE_JUTLAND
+				state_region = s:STATE_ZEALAND
 				count = 1
 			}
 
 			combat_unit = { # Jyske Kyrasseregiment
 				type = unit_type:combat_unit_type_cuirassiers
-				state_region = s:STATE_JUTLAND
+				state_region = s:STATE_ZEALAND
 				count = 1
 			}
 
@@ -3002,7 +3002,7 @@
 
 			combat_unit = { # Phœnix
 				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_JUTLAND
+				state_region = s:STATE_ZEALAND
 				count = 1
 			}
 
@@ -3014,7 +3014,7 @@
 
 			combat_unit = { # Nymphen, Fylla
 				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_JUTLAND
+				state_region = s:STATE_ZEALAND
 				count = 2
 			}
 		}
@@ -3080,13 +3080,13 @@
 
 			combat_unit = { # 3. Trondhjemske brigade
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_NORTHERN_NORWAY
+				state_region = s:STATE_EASTERN_NORWAY
 				count = 1
 			}
 
 			combat_unit = { # 4. Bergenhusiske brigade, 5. Kristiansandske brigade
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_WESTERN_NORWAY
+				state_region = s:STATE_EASTERN_NORWAY
 				count = 2
 			}
 
@@ -3124,7 +3124,7 @@
 
 			combat_unit = { # Viborg and Petrovsk Infantry
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_WEST_KARELIA
+				state_region = s:STATE_UUSIMAA
 				count = 2
 			}
 
@@ -3173,7 +3173,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_PELOPONNESE
+				state_region = s:STATE_ATTICA
 				count = 2
 			}
 
@@ -3197,7 +3197,7 @@
 
 			combat_unit = { # Corvette Prinkips Maximilianos (ex Psara)
 				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_WEST_AEGEAN_ISLANDS
+				state_region = s:STATE_ATTICA
 				count = 1
 			}
 		}
@@ -3257,13 +3257,13 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_MOLDAVIA
+				state_region = s:STATE_WALLACHIA
 				count = 2
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_MOLDAVIA
+				state_region = s:STATE_WALLACHIA
 				count = 1
 			}
 		}
@@ -3277,7 +3277,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_CAMPANIA
+				state_region = s:STATE_LAZIO
 				count = 4
 			}
 
@@ -3289,13 +3289,13 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_APULIA
+				state_region = s:STATE_ABRUZZO
 				count = 2
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_CALABRIA
+				state_region = s:STATE_LAZIO
 				count = 3
 			}
 
@@ -3307,7 +3307,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_dragoons
-				state_region = s:STATE_CAMPANIA
+				state_region = s:STATE_LAZIO
 				count = 2
 			}
 			combat_unit = {
@@ -3318,7 +3318,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_CAMPANIA
+				state_region = s:STATE_LAZIO
 				count = 1
 			}
 		}
@@ -3330,13 +3330,13 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_CAMPANIA
+				state_region = s:STATE_LAZIO
 				count = 8
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_CAMPANIA
+				state_region = s:STATE_LAZIO
 				count = 2
 			}
 		}
@@ -3348,13 +3348,13 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_CAMPANIA
+				state_region = s:STATE_LAZIO
 				count = 2
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_CAMPANIA
+				state_region = s:STATE_LAZIO
 				count = 4
 			}
 
@@ -3366,7 +3366,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_APULIA
+				state_region = s:STATE_ABRUZZO
 				count = 1
 			}
 		}
@@ -3386,7 +3386,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_SAVOY
+				state_region = s:STATE_PROVENCE
 				count = 1
 			}
 
@@ -3434,7 +3434,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_dragoons
-				state_region = s:STATE_SAVOY
+				state_region = s:STATE_PROVENCE
 				count = 1
 			}
 
@@ -3490,13 +3490,13 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_UMBRIA
+				state_region = s:STATE_ABRUZZO
 				count = 1
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_ROMAGNA
+				state_region = s:STATE_VENETIA
 				count = 1
 			}
 
@@ -3508,7 +3508,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_dragoons
-				state_region = s:STATE_ROMAGNA
+				state_region = s:STATE_VENETIA
 				count = 1
 			}
 
@@ -3540,25 +3540,25 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_TUSCANY
+				state_region = s:STATE_PIEDMONT
 				count = 5
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_dragoons
-				state_region = s:STATE_TUSCANY
+				state_region = s:STATE_PIEDMONT
 				count = 1
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_lancers
-				state_region = s:STATE_TUSCANY
+				state_region = s:STATE_PIEDMONT
 				count = 1
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_TUSCANY
+				state_region = s:STATE_PIEDMONT
 				count = 1
 			}
 		}
@@ -3570,7 +3570,7 @@
 
 			combat_unit = { # Nothing the size of a frigate
 				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_TUSCANY
+				state_region = s:STATE_PIEDMONT
 				count = 1
 			}
 		}
@@ -3584,7 +3584,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_EMILIA
+				state_region = s:STATE_PIEDMONT
 				count = 1
 			}
 		}
@@ -3598,13 +3598,13 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_EMILIA
+				state_region = s:STATE_PIEDMONT
 				count = 3
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_dragoons
-				state_region = s:STATE_EMILIA
+				state_region = s:STATE_PIEDMONT
 				count = 1
 			}
 		}
@@ -3618,13 +3618,13 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_EMILIA
+				state_region = s:STATE_PIEDMONT
 				count = 2
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_dragoons
-				state_region = s:STATE_EMILIA
+				state_region = s:STATE_PIEDMONT
 				count = 1
 			}
 		}
@@ -3644,25 +3644,25 @@
 
 			combat_unit = { # 5-7 Regiment Infanterie
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_FRIESLAND
+				state_region = s:STATE_HOLLAND
 				count = 3
 			}
 
 			combat_unit = { # 8-10 Regiment Infanterie
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_GELRE
+				state_region = s:STATE_HOLLAND
 				count = 3
 			}
 
 			combat_unit = { # 1-2 Regiment Lichte Dragonders
 				type = unit_type:combat_unit_type_dragoons
-				state_region = s:STATE_FRIESLAND
+				state_region = s:STATE_HOLLAND
 				count = 2
 			}
 
 			combat_unit = { # 3-4 Regiment Lichte Dragonders
 				type = unit_type:combat_unit_type_dragoons
-				state_region = s:STATE_GELRE
+				state_region = s:STATE_HOLLAND
 				count = 2
 			}
 
@@ -3697,7 +3697,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_FRIESLAND
+				state_region = s:STATE_HOLLAND
 				count = 1
 			}
 
@@ -3709,7 +3709,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_FRIESLAND
+				state_region = s:STATE_HOLLAND
 				count = 5
 			}
 		}
@@ -3735,7 +3735,7 @@
 
 			combat_unit = { # 1-3 régiment de chasseurs à pied, 1-6 régiment de ligne
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_WALLONIA
+				state_region = s:STATE_FLANDERS
 				count = 9
 			}
 
@@ -3753,19 +3753,19 @@
 
 			combat_unit = { # 1er régiment de cuirassiers
 				type = unit_type:combat_unit_type_cuirassiers
-				state_region = s:STATE_WALLONIA
+				state_region = s:STATE_FLANDERS
 				count = 1
 			}
 
 			combat_unit = { # 1 Régiment de Guides
 				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_WALLONIA
+				state_region = s:STATE_FLANDERS
 				count = 1
 			}
 
 			combat_unit = { # 1-2 Régiment de Lanciers
 				type = unit_type:combat_unit_type_lancers
-				state_region = s:STATE_WALLONIA
+				state_region = s:STATE_FLANDERS
 				count = 2
 			}
 
@@ -3794,13 +3794,13 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_BEIRA
+				state_region = s:STATE_ESTREMADURA
 				count = 3
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_ALENTEJO
+				state_region = s:STATE_ESTREMADURA
 				count = 2
 			}
 
@@ -3812,7 +3812,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_dragoons
-				state_region = s:STATE_BEIRA
+				state_region = s:STATE_ESTREMADURA
 				count = 2
 			}
 				
@@ -3842,13 +3842,13 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_dragoons
-				state_region = s:STATE_ALENTEJO
+				state_region = s:STATE_ESTREMADURA
 				count = 1
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_BEIRA
+				state_region = s:STATE_ESTREMADURA
 				count = 1
 			}
 		}
@@ -3872,19 +3872,19 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_BEIRA
+				state_region = s:STATE_ESTREMADURA
 				count = 1
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_BEIRA
+				state_region = s:STATE_ESTREMADURA
 				count = 1
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_ALENTEJO
+				state_region = s:STATE_ESTREMADURA
 				count = 1
 			}
 
@@ -3910,19 +3910,19 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_CASTILE
+				state_region = s:STATE_TOLEDO
 				count = 4
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_CASTILE
+				state_region = s:STATE_TOLEDO
 				count = 1
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_dragoons
-				state_region = s:STATE_CASTILE
+				state_region = s:STATE_TOLEDO
 				count = 1
 			}
 
@@ -3934,7 +3934,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_cuirassiers
-				state_region = s:STATE_BADAJOZ
+				state_region = s:STATE_ANDALUSIA
 				count = 1
 			}
 		}
@@ -3958,31 +3958,31 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_GRANADA
+				state_region = s:STATE_ANDALUSIA
 				count = 3
 			}
 
 			combat_unit = { # Fijo de Ceuta
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_AL_RIF
+				state_region = s:STATE_FEZ
 				count = 1
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_VALENCIA
+				state_region = s:STATE_CATALONIA
 				count = 4
 			}
 
 			combat_unit = { # Húsares de la Princesa
 				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_CASTILE
+				state_region = s:STATE_TOLEDO
 				count = 1
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_VALENCIA
+				state_region = s:STATE_CATALONIA
 				count = 2
 			}
 
@@ -3994,13 +3994,13 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_dragoons
-				state_region = s:STATE_CASTILE
+				state_region = s:STATE_TOLEDO
 				count = 1
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_dragoons
-				state_region = s:STATE_BADAJOZ
+				state_region = s:STATE_ANDALUSIA
 				count = 3
 			}
 
@@ -4036,7 +4036,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_ARAGON
+				state_region = s:STATE_CATALONIA
 				count = 2
 			}
 
@@ -4054,13 +4054,13 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_VALENCIA
+				state_region = s:STATE_CATALONIA
 				count = 1
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_GRANADA
+				state_region = s:STATE_ANDALUSIA
 				count = 2
 			}
 		}
@@ -4096,13 +4096,13 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_VALENCIA
+				state_region = s:STATE_CATALONIA
 				count = 2
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_BALEARES
+				state_region = s:STATE_CATALONIA
 				count = 1
 			}
 		}
@@ -4126,7 +4126,7 @@
 
 			combat_unit = { # Courland Lancer Regiment
 				type = unit_type:combat_unit_type_lancers
-				state_region = s:STATE_COURLAND
+				state_region = s:STATE_RIGA
 				count = 1
 			}
 			combat_unit = { # Narva Jägers

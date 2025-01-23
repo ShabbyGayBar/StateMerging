@@ -566,19 +566,19 @@
 
 			combat_unit = { # Native Troops
 				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_EAST_JAVA
+				state_region = s:STATE_WEST_JAVA
 				count = 6
 			}
 
 			combat_unit = { # Native Troops
 				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_CENTRAL_JAVA
+				state_region = s:STATE_WEST_JAVA
 				count = 4
 			}
 
 			combat_unit = { # Native Troops
 				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_SOUTH_SUMATRA
+				state_region = s:STATE_NORTH_SUMATRA
 				count = 2
 			}
 		}
@@ -589,7 +589,7 @@
 			name = Koloniale_Marine
 			combat_unit = { # Nothing the size of a frigate
 				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_EAST_JAVA
+				state_region = s:STATE_WEST_JAVA
 				count = 1
 			}
 		}
@@ -614,12 +614,12 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_KACHIN
+				state_region = s:STATE_SHAN_STATES
 				count = 8
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_cuirassiers
-				state_region = s:STATE_KACHIN
+				state_region = s:STATE_SHAN_STATES
 				count = 2
 			}
 			combat_unit = {

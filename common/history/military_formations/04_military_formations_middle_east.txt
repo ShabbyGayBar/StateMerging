@@ -13,7 +13,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_WESTERN_THRACE
+				state_region = s:STATE_MACEDONIA
 				count = 10
 			}
 
@@ -25,7 +25,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_NORTHERN_THRACE
+				state_region = s:STATE_BULGARIA
 				count = 5
 			}
 			save_scope_as = hassa_ordusu
@@ -62,13 +62,13 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_THESSALIA
+				state_region = s:STATE_MACEDONIA
 				count = 15
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_SOUTHERN_SERBIA
+				state_region = s:STATE_NORTHERN_SERBIA
 				count = 10
 			}
 
@@ -80,7 +80,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_ANKARA
+				state_region = s:STATE_ADANA
 				count = 10
 			}
 
@@ -138,7 +138,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_ANKARA
+				state_region = s:STATE_ADANA
 				count = 2
 			}
 		}
@@ -150,43 +150,43 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_DIYARBAKIR
+				state_region = s:STATE_ADANA
 				count = 10
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_ERZURUM
+				state_region = s:STATE_TRABZON
 				count = 5
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_KARS
+				state_region = s:STATE_GREATER_CAUCASUS
 				count = 5
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_HUDAVENDIGAR
+				state_region = s:STATE_EASTERN_THRACE
 				count = 15
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_AYDIN
+				state_region = s:STATE_EASTERN_THRACE
 				count = 10
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_KONYA
+				state_region = s:STATE_ADANA
 				count = 5
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_KASTAMONU
+				state_region = s:STATE_TRABZON
 				count = 3
 			}
 		}
@@ -198,7 +198,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_HUDAVENDIGAR
+				state_region = s:STATE_EASTERN_THRACE
 				count = 6
 			}
 
@@ -210,7 +210,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_AYDIN
+				state_region = s:STATE_EASTERN_THRACE
 				count = 1
 			}
 
@@ -222,13 +222,13 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_HUDAVENDIGAR
+				state_region = s:STATE_EASTERN_THRACE
 				count = 4
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_AYDIN
+				state_region = s:STATE_EASTERN_THRACE
 				count = 2
 			}
 
@@ -284,13 +284,13 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_FARS
+				state_region = s:STATE_LURISTAN
 				count = 3
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_TABRIZ
+				state_region = s:STATE_IRAKAJEMI
 				count = 8
 			}
 
@@ -308,37 +308,37 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_ISFAHAN
+				state_region = s:STATE_LARISTAN
 				count = 3
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_MAZANDARAN
+				state_region = s:STATE_IRAKAJEMI
 				count = 5
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_KHORASAN
+				state_region = s:STATE_LARISTAN
 				count = 1
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_KHORASAN
+				state_region = s:STATE_LARISTAN
 				count = 4
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_KERMAN
+				state_region = s:STATE_LARISTAN
 				count = 5
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_KHORASAN
+				state_region = s:STATE_LARISTAN
 				count = 1
 			}
 		}
@@ -407,13 +407,13 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_KANDAHAR
+				state_region = s:STATE_KABUL
 				count = 14
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_KANDAHAR
+				state_region = s:STATE_KABUL
 				count = 2
 			}
 		}
@@ -426,13 +426,13 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_BALKH
+				state_region = s:STATE_HERAT
 				count = 4
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_BALKH
+				state_region = s:STATE_HERAT
 				count = 1
 			}
 		}
@@ -445,13 +445,13 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_BALKH
+				state_region = s:STATE_HERAT
 				count = 7
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_BALKH
+				state_region = s:STATE_HERAT
 				count = 2
 			}
 		}
@@ -500,7 +500,7 @@
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_SISTAN
+				state_region = s:STATE_LARISTAN
 				count = 1
 			}
 		}
@@ -513,12 +513,12 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_KHUZESTAN
+				state_region = s:STATE_LURISTAN
 				count = 4
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_KHUZESTAN
+				state_region = s:STATE_LURISTAN
 				count = 1
 			}
 		}

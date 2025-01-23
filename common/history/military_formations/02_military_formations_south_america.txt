@@ -8,7 +8,13 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_RIO_DE_JANEIRO
-				count = 3
+				count = 2
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_RIO_DE_JANEIRO
+				count = 1
 			}
 
 			combat_unit = {
@@ -106,11 +112,17 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_SANTIAGO
-				count = 7
+				count = 5
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_cuirassiers
+				state_region = s:STATE_SANTIAGO
+				count = 2
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_SANTIAGO
 				count = 2
 			}
@@ -289,7 +301,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_ANTIOQUIA
+				state_region = s:STATE_CUNDINAMARCA
 				count = 2
 			}
 
@@ -307,7 +319,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_ANTIOQUIA
+				state_region = s:STATE_CUNDINAMARCA
 				count = 4
 			}
 		}
@@ -321,7 +333,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_ZULIA
+				state_region = s:STATE_MIRANDA
 				count = 3
 			}
 
@@ -333,13 +345,13 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_BOLIVAR
+				state_region = s:STATE_MIRANDA
 				count = 1
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_cuirassiers
-				state_region = s:STATE_ZULIA
+				state_region = s:STATE_MIRANDA
 				count = 2
 			}
 		}
