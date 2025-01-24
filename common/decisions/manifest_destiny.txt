@@ -1,4 +1,4 @@
-manifest_destiny = {
+﻿manifest_destiny = {
 
 	is_shown = {
 		exists = c:USA
