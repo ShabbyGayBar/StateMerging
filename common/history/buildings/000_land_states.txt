@@ -1,4 +1,4 @@
-BUILDINGS = {
+﻿BUILDINGS = {
 	if = {
 		limit = {
 			has_american_buildings_dlc_trigger = yes

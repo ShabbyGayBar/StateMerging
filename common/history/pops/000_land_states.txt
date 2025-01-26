@@ -1,4 +1,4 @@
-POPS = {
+﻿POPS = {
     s:STATE_SVEALAND = {
         region_state:SWE = {
             create_pop = {
