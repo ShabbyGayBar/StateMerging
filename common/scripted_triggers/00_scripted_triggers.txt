@@ -1,4 +1,4 @@
-﻿#	Example:
+#	Example:
 # 
 #	example_trigger = {
 #		x = 100
@@ -632,19 +632,19 @@ european_colonies_north_africa = {
 		owns_entire_state_region = STATE_MAURITANIA
 		owns_entire_state_region = STATE_WEST_SAHARA
 		owns_entire_state_region = STATE_SAHARA
-		owns_entire_state_region = STATE_SAHARA
-		owns_entire_state_region = STATE_LIBYA
-		owns_entire_state_region = STATE_LIBYA
+		owns_entire_state_region = STATE_EAST_SAHARA
+		owns_entire_state_region = STATE_TRIPOLI
+		owns_entire_state_region = STATE_LIBYAN_DESERT
 		owns_entire_state_region = STATE_LIBYA
 		owns_entire_state_region = STATE_TUNISIA
 		owns_entire_state_region = STATE_CONSTANTINE
-		owns_entire_state_region = STATE_FEZ
+		owns_entire_state_region = STATE_INNER_MOROCCO
 		owns_entire_state_region = STATE_ORAN
 		owns_entire_state_region = STATE_ALGIERS
+		owns_entire_state_region = STATE_AL_RIF
+		owns_entire_state_region = STATE_INNER_MOROCCO
 		owns_entire_state_region = STATE_FEZ
-		owns_entire_state_region = STATE_FEZ
-		owns_entire_state_region = STATE_FEZ
-		owns_entire_state_region = STATE_FEZ
+		owns_entire_state_region = STATE_MARRAKECH
 	}
 }
 
@@ -685,9 +685,9 @@ european_colonies_nile_basin = {
 		owns_entire_state_region = STATE_ERITREA
 		owns_entire_state_region = STATE_DONGOLA
 		owns_entire_state_region = STATE_UPPER_EGYPT
-		owns_entire_state_region = STATE_UPPER_EGYPT
-		owns_entire_state_region = STATE_UPPER_EGYPT
-		owns_entire_state_region = STATE_LOWER_EGYPT
+		owns_entire_state_region = STATE_EGYPTIAN_DESERT
+		owns_entire_state_region = STATE_MIDDLE_EGYPT
+		owns_entire_state_region = STATE_MATRUH
 		owns_entire_state_region = STATE_LOWER_EGYPT
 		owns_entire_state_region = STATE_SINAI
 	}

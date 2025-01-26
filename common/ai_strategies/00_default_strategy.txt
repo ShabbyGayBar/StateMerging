@@ -1294,7 +1294,7 @@ ai_strategy_default = {
 							state_region = s:STATE_CONSTANTINE
 							state_region = s:STATE_ORAN
 							state_region = s:STATE_SAHARA
-							state_region = s:STATE_SAHARA
+							state_region = s:STATE_EAST_SAHARA
 						}
 					}
 				}
@@ -2270,7 +2270,7 @@ ai_strategy_default = {
 							OR = {
 								owns_entire_state_region = STATE_SINAI
 								owns_entire_state_region = STATE_UPPER_EGYPT
-								owns_entire_state_region = STATE_UPPER_EGYPT
+								owns_entire_state_region = STATE_MIDDLE_EGYPT
 								owns_entire_state_region = STATE_LOWER_EGYPT
 							}
 						}
@@ -2965,7 +2965,7 @@ ai_strategy_default = {
 						has_state_in_state_region = STATE_CONSTANTINE
 						has_state_in_state_region = STATE_ORAN
 						has_state_in_state_region = STATE_SAHARA
-						has_state_in_state_region = STATE_SAHARA
+						has_state_in_state_region = STATE_EAST_SAHARA
 					}
 				}
 			}

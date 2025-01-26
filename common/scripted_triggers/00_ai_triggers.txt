@@ -1,4 +1,4 @@
-﻿lenient_ai_behavior_trigger = {
+lenient_ai_behavior_trigger = {
 	has_game_rule = lenient_ai_behavior
 	scope:target_country = { is_player = yes }
 }
@@ -249,7 +249,7 @@ has_je_conquest_reason = {
 						state_region = s:STATE_CONSTANTINE
 						state_region = s:STATE_ORAN
 						state_region = s:STATE_SAHARA
-						state_region = s:STATE_SAHARA
+						state_region = s:STATE_EAST_SAHARA
 					}
 				}
 			}
