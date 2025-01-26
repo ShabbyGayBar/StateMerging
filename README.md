@@ -1,7 +1,6 @@
 # Victoria 3 States Merging Mod
 
 ![Steam Subscriptions](https://img.shields.io/steam/subscriptions/3371693463?logo=steam&link=https%3A%2F%2Fsteamcommunity.com%2Fsharedfiles%2Ffiledetails%2F%3Fid%3D3371693463)
-
 ![Steam Downloads](https://img.shields.io/steam/downloads/3371693463?logo=steam&link=https%3A%2F%2Fsteamcommunity.com%2Fsharedfiles%2Ffiledetails%2F%3Fid%3D3371693463)
 
 
@@ -38,6 +37,12 @@ The following criteria are sorted by significance:
 
 - **Aesthetics**
 
+### Currently Merged States
+![Currently Merged States](Merge_States_current.png)
+
+### Future Plan
+![Future Plan](Merge_States_objective.png)
+
 ## Feedback
 
 ### Bug Reports
@@ -73,18 +78,22 @@ Incompatible with anything that modifies
 
 <summary>Other modified files that doesn't affect gameplay as much</summary>
 
-- game\common\ai_strategies\00_default_strategy.txt
-- game\common\buildings\11_private_infrastructure.txt
-- game\common\company_types\
-- game\common\country_definitions\00_countries.txt
-- game\common\customizable_localization\02_events.txt
-- game\common\decisions\manifest_destiny.txt
-- game\common\history\global\00_global.txt
-- game\common\history\military_formations\
-- game\common\journal_entries\
-- game\common\scripted_triggers\00_scripted_triggers.txt
-- game\events\native_resettlement.txt
-- game\events\oregon_events.txt
+- game\common\ai_strategies
+- game\common\character_templates
+- game\common\company_types
+- game\common\country_definitions
+- game\common\country_formation
+- game\common\decisions
+- game\common\dynamic_country_names
+- game\common\flag_definitions
+- game\common\history\global
+- game\common\journal_entries
+- game\common\on_actions
+- game\common\scripted_buttons
+- game\common\scripted_effects
+- game\common\scripted_triggers
+- game\events
+- game\localization
 
 </details>
 

@@ -1,7 +1,6 @@
 # 维多利亚3省份合并
 
 ![Steam Subscriptions](https://img.shields.io/steam/subscriptions/3371693463?logo=steam&link=https%3A%2F%2Fsteamcommunity.com%2Fsharedfiles%2Ffiledetails%2F%3Fid%3D3371693463)
-
 ![Steam Downloads](https://img.shields.io/steam/downloads/3371693463?logo=steam&link=https%3A%2F%2Fsteamcommunity.com%2Fsharedfiles%2Ffiledetails%2F%3Fid%3D3371693463)
 
 一个省份合并 Mod，合并了部分地区。
@@ -34,6 +33,12 @@
   - 文化本土特质相同的省份更有倾向被合并。
 
 - **美观度**
+
+### 当前已经合并的省份
+![Currently Merged States](Merge_States_current.png)
+
+### 未来将要合并的省份
+![Future Plan](Merge_States_objective.png)
 
 ## 提交反馈
 
@@ -72,18 +77,22 @@
 
 <summary>其他对游戏进程影响较小的文件的改动</summary>
 
-- game\common\ai_strategies\00_default_strategy.txt
-- game\common\buildings\11_private_infrastructure.txt
-- game\common\company_types\
-- game\common\country_definitions\00_countries.txt
-- game\common\customizable_localization\02_events.txt
-- game\common\decisions\manifest_destiny.txt
-- game\common\history\global\00_global.txt
-- game\common\history\military_formations\
-- game\common\journal_entries\
-- game\common\scripted_triggers\00_scripted_triggers.txt
-- game\events\native_resettlement.txt
-- game\events\oregon_events.txt
+- game\common\ai_strategies
+- game\common\character_templates
+- game\common\company_types
+- game\common\country_definitions
+- game\common\country_formation
+- game\common\decisions
+- game\common\dynamic_country_names
+- game\common\flag_definitions
+- game\common\history\global
+- game\common\journal_entries
+- game\common\on_actions
+- game\common\scripted_buttons
+- game\common\scripted_effects
+- game\common\scripted_triggers
+- game\events
+- game\localization
 
 </details>
 
