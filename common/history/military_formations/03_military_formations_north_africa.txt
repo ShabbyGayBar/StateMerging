@@ -13,7 +13,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_DONGOLA
+				state_region = s:STATE_BLUE_NILE
 				count = 10
 			}
 
@@ -37,7 +37,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_KORDOFAN
+				state_region = s:STATE_BLUE_NILE
 				count = 5
 			}
 		}
@@ -175,7 +175,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_ORAN
+				state_region = s:STATE_ALGIERS
 				count = 5
 			}
 
@@ -199,7 +199,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_ORAN
+				state_region = s:STATE_ALGIERS
 				count = 6
 			}
 

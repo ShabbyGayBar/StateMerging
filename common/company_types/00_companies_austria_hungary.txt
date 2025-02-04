@@ -160,8 +160,8 @@ company_galician_carpathian_oil = {
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
 			any_scope_state = {
 				OR = {
-					state_region = s:STATE_WEST_GALICIA
-					state_region = s:STATE_WEST_GALICIA
+					state_region = s:STATE_EAST_GALICIA
+					state_region = s:STATE_GREATER_POLAND
 				}
 			}
 		}
@@ -170,8 +170,8 @@ company_galician_carpathian_oil = {
 	possible = {
 		any_scope_state = {
 			OR = {
-				state_region = s:STATE_WEST_GALICIA
-				state_region = s:STATE_WEST_GALICIA
+				state_region = s:STATE_EAST_GALICIA
+				state_region = s:STATE_GREATER_POLAND
 			}
 			is_incorporated = yes
 			any_scope_building = {

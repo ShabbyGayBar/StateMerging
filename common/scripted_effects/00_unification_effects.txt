@@ -16,7 +16,7 @@
 				state_region = s:STATE_VENETIA
 				state_region = s:STATE_LAZIO
 				state_region = s:STATE_VENETIA
-				state_region = s:STATE_ISTRIA
+				state_region = s:STATE_CROATIA
 			}
 		}
 		

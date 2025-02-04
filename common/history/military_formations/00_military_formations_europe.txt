@@ -467,7 +467,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_BANAT
+				state_region = s:STATE_NORTHERN_TRANSYLVANIA
 				count = 10
 			}
 
@@ -497,7 +497,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_DELVIDEK
+				state_region = s:STATE_NORTHERN_SERBIA
 				count = 5
 			}
 			save_scope_as = ii_korps
@@ -600,19 +600,19 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_DALMATIA
+				state_region = s:STATE_CROATIA
 				count = 5
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_lancers
-				state_region = s:STATE_SLAVONIA
+				state_region = s:STATE_CROATIA
 				count = 5
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_SLOVENIA
+				state_region = s:STATE_CROATIA
 				count = 5
 			}
 			save_scope_as = iiii_korps
@@ -652,7 +652,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_ISTRIA
+				state_region = s:STATE_CROATIA
 				count = 1
 			}
 		}
@@ -1447,7 +1447,7 @@
 
 			combat_unit = { # His Majesty the King of Prussia’s Grenadier Regiment, L.-Gds. Volhynia Regiment
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_VOLHYNIA
+				state_region = s:STATE_EAST_GALICIA
 				count = 2
 			}
 
@@ -1924,7 +1924,7 @@
 
 			combat_unit = { # Volhynia Infantry
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_VOLHYNIA
+				state_region = s:STATE_EAST_GALICIA
 				count = 1
 			}
 

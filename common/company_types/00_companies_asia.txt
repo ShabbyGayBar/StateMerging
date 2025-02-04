@@ -152,14 +152,14 @@ company_allatini_mills = {
 	attainable = {
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
 			any_scope_state = {
-				state_region = s:STATE_MACEDONIA
+				state_region = s:STATE_ATTICA
 			}
 		}
 	}		
 	
 	possible = {
 		any_scope_state = {
-			state_region = s:STATE_MACEDONIA
+			state_region = s:STATE_ATTICA
 			is_incorporated = yes
 			any_scope_building = {
 				OR = {

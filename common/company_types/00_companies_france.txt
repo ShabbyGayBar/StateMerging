@@ -17,14 +17,14 @@ company_societe_mokta_el_hadid = {
 	attainable = {
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
 			any_scope_state = {
-				state_region = s:STATE_CONSTANTINE
+				state_region = s:STATE_ALGIERS
 			}
 		}
 	}		
 	
 	possible = { 
 		any_scope_state = {
-			state_region = s:STATE_CONSTANTINE
+			state_region = s:STATE_ALGIERS
 			any_scope_building = {
 				is_building_type = building_iron_mine
 				level >= 3

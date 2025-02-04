@@ -735,7 +735,7 @@ TRE = {
 	tier = principality
 	
 	cultures = { north_italian }
-	capital = STATE_ISTRIA
+	capital = STATE_CROATIA
 }
 
 TUS = {
@@ -781,7 +781,7 @@ KRA = {
 
 	tier = city_state
 	
-	capital = STATE_WEST_GALICIA
+	capital = STATE_GREATER_POLAND
 	cultures = { polish }
 }
 
@@ -860,7 +860,7 @@ GAL = {
 	tier = principality
 	
 	cultures = { ukrainian polish }
-	capital = STATE_WEST_GALICIA
+	capital = STATE_EAST_GALICIA
 }
 
 SLV = {
@@ -939,7 +939,7 @@ BOS = {
 	tier = principality
 	
 	cultures = { bosniak }
-	capital = STATE_BOSNIA	
+	capital = STATE_CROATIA	
 	is_named_from_capital = yes
 }
 
@@ -1033,7 +1033,7 @@ MON = {
 	tier = principality
 	
 	cultures = { serb }
-	capital = STATE_MONTENEGRO
+	capital = STATE_NORTHERN_SERBIA
 	is_named_from_capital = yes
 }
 
@@ -1069,7 +1069,7 @@ SLO = {
 	tier = principality
 	
 	cultures = { slovene }
-	capital = STATE_SLOVENIA
+	capital = STATE_CROATIA
 	is_named_from_capital = yes
 }
 
@@ -1930,7 +1930,7 @@ MGL = {
 	tier = kingdom
 	
 	cultures = { mongol }
-	capital = STATE_URGA
+	capital = STATE_ULIASTAI
 }
 
 XIN = {
@@ -2459,7 +2459,7 @@ PLC = {
 	tier = empire
 	
 	cultures = { polish lithuanian }
-	capital = STATE_WEST_GALICIA
+	capital = STATE_GREATER_POLAND
 }
 
 GCO = {

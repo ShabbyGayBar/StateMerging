@@ -33,22 +33,22 @@ greece.1 = {
 		if = {
 			limit = {
 				NOR = {
-					has_claim = s:STATE_MACEDONIA
-					owns_entire_state_region = STATE_MACEDONIA 
+					has_claim = s:STATE_ATTICA
+					owns_entire_state_region = STATE_ATTICA 
 				}
 			}
-			s:STATE_MACEDONIA = {
+			s:STATE_ATTICA = {
 				add_claim = ROOT
 			}
 		}
 		if = {
 			limit = {
 				NOR = { 
-					owns_entire_state_region = STATE_MACEDONIA
-					has_claim = s:STATE_MACEDONIA
+					owns_entire_state_region = STATE_ATTICA
+					has_claim = s:STATE_ATTICA
 				}
 			}
-			s:STATE_MACEDONIA = {
+			s:STATE_ATTICA = {
 				add_claim = ROOT
 			}
 		}
@@ -81,8 +81,8 @@ greece.1 = {
 			exists = c:TUR
 			c:TUR = {
 				OR = {
-					owns_entire_state_region = STATE_MACEDONIA
-					owns_entire_state_region = STATE_MACEDONIA
+					owns_entire_state_region = STATE_ATTICA
+					owns_entire_state_region = STATE_ATTICA
 					owns_entire_state_region = STATE_EASTERN_THRACE
 					owns_entire_state_region = STATE_CRETE
 				}

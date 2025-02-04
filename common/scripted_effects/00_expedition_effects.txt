@@ -21,7 +21,7 @@
 		}
 		random_state = {
 			limit = {
-				state_region = s:STATE_BENIN
+				state_region = s:STATE_NIGER_DELTA
 			}
 			save_scope_as = current_expedition_location
 		}
@@ -35,7 +35,7 @@
 		}
 		random_state = {
 			limit = {
-				state_region = s:STATE_HAUSALAND
+				state_region = s:STATE_YORUBA_STATES
 			}
 			save_scope_as = current_expedition_location
 		}
@@ -49,7 +49,7 @@
 		}
 		random_state = {
 			limit = {
-				state_region = s:STATE_OUTER_HAUSALAND
+				state_region = s:STATE_NIGER
 			}
 			save_scope_as = current_expedition_location
 		}
@@ -63,7 +63,7 @@
 		}
 		random_state = {
 			limit = {
-				state_region = s:STATE_TIMBUKTU
+				state_region = s:STATE_EASTERN_MALI
 			}
 			save_scope_as = current_expedition_location
 		}
@@ -91,7 +91,7 @@
 		}
 		random_state = {
 			limit = {
-				state_region = s:STATE_WESTERN_MALI
+				state_region = s:STATE_EASTERN_MALI
 			}
 			save_scope_as = current_expedition_location
 		}
@@ -105,7 +105,7 @@
 		}
 		random_state = {
 			limit = {
-				state_region = s:STATE_GUINEA
+				state_region = s:STATE_SENEGAL
 			}
 			save_scope_as = current_expedition_location
 		}
@@ -197,7 +197,7 @@ central_africa_location_effect = {
 		}
 		random_state = {
 			limit = {
-				state_region = s:STATE_LINDI
+				state_region = s:STATE_ZANZIBAR
 			}
 			save_scope_as = current_expedition_location
 		}
@@ -211,7 +211,7 @@ central_africa_location_effect = {
 		}
 		random_state = {
 			limit = {
-				state_region = s:STATE_LINDI
+				state_region = s:STATE_ZANZIBAR
 			}
 			save_scope_as = current_expedition_location
 		}
@@ -225,7 +225,7 @@ central_africa_location_effect = {
 		}
 		random_state = {
 			limit = {
-				state_region = s:STATE_TANGANYIKA
+				state_region = s:STATE_ZANZIBAR
 			}
 			save_scope_as = current_expedition_location
 		}
@@ -239,7 +239,7 @@ central_africa_location_effect = {
 		}
 		random_state = {
 			limit = {
-				state_region = s:STATE_TANGANYIKA
+				state_region = s:STATE_ZANZIBAR
 			}
 			save_scope_as = current_expedition_location
 		}
@@ -253,7 +253,7 @@ central_africa_location_effect = {
 		}
 		random_state = {
 			limit = {
-				state_region = s:STATE_TANGANYIKA
+				state_region = s:STATE_ZANZIBAR
 			}
 			save_scope_as = current_expedition_location
 		}
@@ -267,7 +267,7 @@ central_africa_location_effect = {
 		}
 		random_state = {
 			limit = {
-				state_region = s:STATE_UGANDA
+				state_region = s:STATE_KENYA
 			}
 			save_scope_as = current_expedition_location
 		}
@@ -320,7 +320,7 @@ congo_river_expedition_location = {
 		}
 		random_state = {
 			limit = {
-				state_region = s:STATE_EQUATEUR
+				state_region = s:STATE_CONGO_ORIENTALE
 			}
 			save_scope_as = current_expedition_location
 		}
@@ -334,7 +334,7 @@ congo_river_expedition_location = {
 		}
 		random_state = {
 			limit = {
-				state_region = s:STATE_EQUATEUR
+				state_region = s:STATE_CONGO_ORIENTALE
 			}
 			save_scope_as = current_expedition_location
 		}
@@ -377,7 +377,7 @@ congo_river_expedition_location = {
 		}
 		random_state = {
 			limit = {
-				state_region = s:STATE_KATANGA
+				state_region = s:STATE_BAS_CONGO
 			}
 			save_scope_as = current_expedition_location
 		}
@@ -391,7 +391,7 @@ congo_river_expedition_location = {
 		}
 		random_state = {
 			limit = {
-				state_region = s:STATE_KATANGA
+				state_region = s:STATE_BAS_CONGO
 			}
 			save_scope_as = current_expedition_location
 		}

@@ -683,8 +683,8 @@ company_mozambique_company = {
 		any_scope_state = {
 			OR = {
 				state_region = s:STATE_MOCAMBIQUE
-				state_region = s:STATE_ZAMBEZIA
-				state_region = s:STATE_LOURENCO_MARQUES
+				state_region = s:STATE_MOCAMBIQUE
+				state_region = s:STATE_MOCAMBIQUE
 			}
 			any_scope_building = {
 				OR = {

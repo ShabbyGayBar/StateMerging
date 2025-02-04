@@ -1145,7 +1145,7 @@ ai_strategy_default = {
 							state_region = s:STATE_SHAN_STATES
 							state_region = s:STATE_PEGU
 							state_region = s:STATE_PASHTUNISTAN
-							state_region = s:STATE_QUETTA
+							state_region = s:STATE_PASHTUNISTAN
 						}
 					}
 				}
@@ -1181,8 +1181,8 @@ ai_strategy_default = {
 					has_journal_entry = je_age_of_princes
 					scope:target_state = {
 						OR = {
-							state_region = s:STATE_AMHARA
-							state_region = s:STATE_GONDER
+							state_region = s:STATE_OROMIA
+							state_region = s:STATE_OROMIA
 						}
 					}
 				}
@@ -1291,10 +1291,10 @@ ai_strategy_default = {
 					scope:target_state = {
 						OR = {
 							state_region = s:STATE_ALGIERS
-							state_region = s:STATE_CONSTANTINE
-							state_region = s:STATE_ORAN
+							state_region = s:STATE_ALGIERS
+							state_region = s:STATE_ALGIERS
 							state_region = s:STATE_SAHARA
-							state_region = s:STATE_EAST_SAHARA
+							state_region = s:STATE_SAHARA
 						}
 					}
 				}
@@ -1414,14 +1414,14 @@ ai_strategy_default = {
 					has_technology_researched = malaria_prevention
 					OR = {
 						has_state_in_state_region = STATE_MOCAMBIQUE
-						has_state_in_state_region = STATE_ZAMBEZIA
-						has_state_in_state_region = STATE_LOURENCO_MARQUES
+						has_state_in_state_region = STATE_MOCAMBIQUE
+						has_state_in_state_region = STATE_MOCAMBIQUE
 					}
 					scope:target_state = {
 						OR = {
 							state_region = s:STATE_MOCAMBIQUE
-							state_region = s:STATE_ZAMBEZIA
-							state_region = s:STATE_LOURENCO_MARQUES
+							state_region = s:STATE_MOCAMBIQUE
+							state_region = s:STATE_MOCAMBIQUE
 						}
 					}
 				}
@@ -2270,7 +2270,7 @@ ai_strategy_default = {
 							OR = {
 								owns_entire_state_region = STATE_SINAI
 								owns_entire_state_region = STATE_UPPER_EGYPT
-								owns_entire_state_region = STATE_MIDDLE_EGYPT
+								owns_entire_state_region = STATE_UPPER_EGYPT
 								owns_entire_state_region = STATE_LOWER_EGYPT
 							}
 						}
@@ -2675,7 +2675,7 @@ ai_strategy_default = {
 							state_region = s:STATE_SHAN_STATES
 							state_region = s:STATE_PEGU
 							state_region = s:STATE_PASHTUNISTAN
-							state_region = s:STATE_QUETTA
+							state_region = s:STATE_PASHTUNISTAN
 						}
 					}
 				}
@@ -2704,7 +2704,7 @@ ai_strategy_default = {
 							state_region = s:STATE_SHAN_STATES
 							state_region = s:STATE_PEGU
 							state_region = s:STATE_PASHTUNISTAN
-							state_region = s:STATE_QUETTA
+							state_region = s:STATE_PASHTUNISTAN
 						}
 					}
 				}
@@ -2854,16 +2854,16 @@ ai_strategy_default = {
 					any_scope_state = {
 						OR = {
 							state_region = s:STATE_MOCAMBIQUE
-							state_region = s:STATE_ZAMBEZIA
-							state_region = s:STATE_LOURENCO_MARQUES
+							state_region = s:STATE_MOCAMBIQUE
+							state_region = s:STATE_MOCAMBIQUE
 						}
 					}
 					any_subject_or_below = {
 						capital = {
 							OR = {
 								state_region = s:STATE_MOCAMBIQUE
-								state_region = s:STATE_ZAMBEZIA
-								state_region = s:STATE_LOURENCO_MARQUES
+								state_region = s:STATE_MOCAMBIQUE
+								state_region = s:STATE_MOCAMBIQUE
 							}
 						}
 					}
@@ -2872,8 +2872,8 @@ ai_strategy_default = {
 					is_country_type = unrecognized
 					any_scope_state = {
 						state_region = s:STATE_MOCAMBIQUE
-						state_region = s:STATE_ZAMBEZIA
-						state_region = s:STATE_LOURENCO_MARQUES
+						state_region = s:STATE_MOCAMBIQUE
+						state_region = s:STATE_MOCAMBIQUE
 					}
 				}
 			}
@@ -2962,10 +2962,10 @@ ai_strategy_default = {
 				scope:target_country = {
 					OR = {
 						has_state_in_state_region = STATE_ALGIERS
-						has_state_in_state_region = STATE_CONSTANTINE
-						has_state_in_state_region = STATE_ORAN
+						has_state_in_state_region = STATE_ALGIERS
+						has_state_in_state_region = STATE_ALGIERS
 						has_state_in_state_region = STATE_SAHARA
-						has_state_in_state_region = STATE_EAST_SAHARA
+						has_state_in_state_region = STATE_SAHARA
 					}
 				}
 			}
@@ -5329,16 +5329,16 @@ ai_strategy_default = {
 							any_scope_state = {
 								OR = {
 									state_region = s:STATE_MOCAMBIQUE
-									state_region = s:STATE_ZAMBEZIA
-									state_region = s:STATE_LOURENCO_MARQUES
+									state_region = s:STATE_MOCAMBIQUE
+									state_region = s:STATE_MOCAMBIQUE
 								}
 							}
 							any_subject_or_below = {
 								capital = {
 									OR = {
 										state_region = s:STATE_MOCAMBIQUE
-										state_region = s:STATE_ZAMBEZIA
-										state_region = s:STATE_LOURENCO_MARQUES
+										state_region = s:STATE_MOCAMBIQUE
+										state_region = s:STATE_MOCAMBIQUE
 									}
 								}
 							}
@@ -5347,8 +5347,8 @@ ai_strategy_default = {
 							is_country_type = unrecognized
 							any_scope_state = {
 								state_region = s:STATE_MOCAMBIQUE
-								state_region = s:STATE_ZAMBEZIA
-								state_region = s:STATE_LOURENCO_MARQUES
+								state_region = s:STATE_MOCAMBIQUE
+								state_region = s:STATE_MOCAMBIQUE
 							}
 						}
 					}
@@ -6071,7 +6071,7 @@ ai_strategy_default = {
 								state_region = s:STATE_SHAN_STATES
 								state_region = s:STATE_PEGU
 								state_region = s:STATE_PASHTUNISTAN
-								state_region = s:STATE_QUETTA
+								state_region = s:STATE_PASHTUNISTAN
 							}
 						}
 					}
