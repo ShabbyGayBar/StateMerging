@@ -1,0 +1,57 @@
+﻿# Strategic Regions in Africa
+
+region_nile_basin = {
+	graphical_culture = "arabic"
+	capital_province = x50D060
+	map_color = { 0.5 0 0 }
+	states = {   STATE_UPPER_EGYPT STATE_LOWER_EGYPT STATE_SINAI    STATE_EQUATORIA STATE_BLUE_NILE  }
+}
+
+region_ethiopia = {
+	graphical_culture = "arabic"
+	capital_province = x91C70C
+	map_color = { 0.33 0.5 0.66 }
+	states = { STATE_ERITREA   STATE_OROMIA STATE_SOMALILAND }
+}
+
+region_north_africa = {
+	graphical_culture = "arabic"
+	capital_province = xE6014A
+	map_color = { 0.7 1 0.1 }
+	states = {  STATE_SAHARA   STATE_FEZ    STATE_ALGIERS  STATE_TUNISIA STATE_LIBYA   }
+}
+
+region_senegal = {
+	graphical_culture = "african"
+	capital_province = x186409
+	map_color = { 72 208 203 }
+	states = {  STATE_SENEGAL     STATE_IVORY_COAST    STATE_EASTERN_MALI STATE_MAURITANIA   }
+}
+
+region_niger = {
+	graphical_culture = "african"
+	capital_province = xCBCB87
+	map_color = { 0.66 0.25 0.33 }
+	states = { STATE_NIGERIA STATE_NIGER_DELTA STATE_YORUBA_STATES       STATE_DAHOMEY STATE_NIGER STATE_CHAD   }
+}
+
+region_congo = {
+	graphical_culture = "african"
+	capital_province = xE9DE6C
+	map_color = { 0 0.5 0 }
+	states = { STATE_BAS_CONGO STATE_CONGO   STATE_CONGO_ORIENTALE  STATE_NORTH_ANGOLA   STATE_ZAMBIA  STATE_SOUTH_CAMEROON  }
+}
+
+region_southern_africa = {
+	graphical_culture = "african"
+	capital_province = x41C0F0
+	map_color = { 0.761 0.134 0.735 }
+	states = { STATE_NAMAQUALAND STATE_BOTSWANA  STATE_CAPE_COLONY   STATE_TRANSVAAL      }
+}
+
+region_zanj = {
+	graphical_culture = "african"
+	capital_province = x3A7D3F
+	map_color = { 0.978 0.123 0.1 }
+	states = { STATE_ZANZIBAR  STATE_MOCAMBIQUE   STATE_NORTH_MADAGASCAR STATE_INDIAN_OCEAN_TERRITORY   STATE_KENYA   }
+}
