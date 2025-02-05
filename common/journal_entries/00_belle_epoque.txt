@@ -85,11 +85,11 @@
 			limit = {
 				c:USA ?= this
 				owns_entire_state_region = STATE_NEW_YORK
-				s:STATE_NEW_YORK = {
+				s:STATE_PENNSLYVANIA = {
 					any_scope_state = { average_sol >= 15 }
 				}
 			}
-			s:STATE_NEW_YORK = {
+			s:STATE_PENNSLYVANIA = {
 				save_scope_as = belle_epoque_state
 			}
 		}

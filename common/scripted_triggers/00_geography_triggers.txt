@@ -277,7 +277,14 @@ is_vulnerable_to_droughts = {
 		any_scope_state = {
 			OR = {
 				state_region = s:STATE_CALIFORNIA
+				state_region = s:STATE_CALIFORNIA
+				state_region = s:STATE_CALIFORNIA
+				state_region = s:STATE_CALIFORNIA
 				state_region = s:STATE_LOWLANDS
+				state_region = s:STATE_LOWLANDS
+				state_region = s:STATE_LEINSTER
+				state_region = s:STATE_LEINSTER
+				state_region = s:STATE_LEINSTER
 				state_region = s:STATE_LEINSTER
 			}
 		}

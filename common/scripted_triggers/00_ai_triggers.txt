@@ -1,4 +1,4 @@
-lenient_ai_behavior_trigger = {
+﻿lenient_ai_behavior_trigger = {
 	has_game_rule = lenient_ai_behavior
 	scope:target_country = { is_player = yes }
 }

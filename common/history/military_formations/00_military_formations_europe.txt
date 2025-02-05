@@ -3964,7 +3964,7 @@
 
 			combat_unit = { # Fijo de Ceuta
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_FEZ
+				state_region = s:STATE_AL_RIF
 				count = 1
 			}
 

@@ -210,6 +210,7 @@ company_william_cramp = {
 				OR = {
 					state_region = s:STATE_NEW_YORK # This Should be Philly, but due to map issues that won't work
 					state_region = s:STATE_DISTRICT_OF_COLUMBIA
+					state_region = s:STATE_DISTRICT_OF_COLUMBIA
 				}
 			}
 		}
@@ -219,6 +220,7 @@ company_william_cramp = {
 		any_scope_state = {
 			OR = {
 				state_region = s:STATE_NEW_YORK # This Should be Philly, but due to map issues that won't work
+				state_region = s:STATE_DISTRICT_OF_COLUMBIA
 				state_region = s:STATE_DISTRICT_OF_COLUMBIA
 			}
 			is_incorporated = yes

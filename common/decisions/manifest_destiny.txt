@@ -15,6 +15,10 @@
 		if = {
 			limit = {
 				owns_entire_state_region = STATE_CALIFORNIA
+				owns_entire_state_region = STATE_CALIFORNIA
+				owns_entire_state_region = STATE_CALIFORNIA
+				owns_entire_state_region = STATE_CALIFORNIA
+				owns_entire_state_region = STATE_TEXAS
 				owns_entire_state_region = STATE_TEXAS
 			}
 			trigger_event = { id = manifest_destiny.1 }
@@ -27,6 +31,11 @@
 		if = {
 			limit = {
 				owns_entire_state_region = STATE_COLORADO
+				owns_entire_state_region = STATE_COLORADO
+				owns_entire_state_region = STATE_COLORADO
+				owns_entire_state_region = STATE_KANSAS
+				owns_entire_state_region = STATE_KANSAS
+				owns_entire_state_region = STATE_KANSAS
 				owns_entire_state_region = STATE_KANSAS
 			}
 			trigger_event = { id = manifest_destiny.2 }
@@ -63,6 +72,66 @@
 			if = {
 				limit = {
 					any_scope_state = {
+						 NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_CALIFORNIA = {  
+			if = {
+				limit = {
+					any_scope_state = {
+						NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_CALIFORNIA = { 
+			if = {
+				limit = {
+					any_scope_state = {
+						NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_CALIFORNIA = { 
+			if = {
+				limit = {
+					any_scope_state = {
+						NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_TEXAS = { 
+			if = {
+				limit = {
+					any_scope_state = {
+						NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_TEXAS = { 
+			if = {
+				limit = {
+					any_scope_state = {
 						NOT = {
 							owner = ROOT
 						}
@@ -72,6 +141,66 @@
 			}
 		}
 		s:STATE_COLORADO = { 
+			if = {
+				limit = {
+					any_scope_state = {
+						NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_COLORADO = {  
+			if = {
+				limit = {
+					any_scope_state = {
+						NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_COLORADO = { 
+			if = {
+				limit = {
+					any_scope_state = {
+						NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_KANSAS = { 
+			if = {
+				limit = {
+					any_scope_state = {
+						NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_KANSAS = { 
+			if = {
+				limit = {
+					any_scope_state = {
+						NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_KANSAS = { 
 			if = {
 				limit = {
 					any_scope_state = {

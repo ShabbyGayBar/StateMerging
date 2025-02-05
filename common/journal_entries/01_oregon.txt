@@ -17,6 +17,26 @@
 				}
 			}
 		}
+		s:STATE_OREGON = {
+			any_scope_state = {
+				owner = {
+					OR = {
+						c:GBR = THIS
+						is_subject_of = c:GBR
+					}
+				}
+			}
+		}
+		s:STATE_OREGON = {
+			any_scope_state = {
+				owner = {
+					OR = {
+						c:GBR = THIS
+						is_subject_of = c:GBR
+					}
+				}
+			}
+		}
 	}
 
 	possible = { 
@@ -26,6 +46,7 @@
 				text = oregon_tt
 				has_global_variable = oregon_trail_mapped
 			}
+			owns_entire_state_region = STATE_COLORADO
 			owns_entire_state_region = STATE_COLORADO
 		}
 	}
@@ -39,11 +60,14 @@
 					has_global_variable = oregon_trail_mapped
 				}
 				owns_entire_state_region = STATE_COLORADO
+				owns_entire_state_region = STATE_COLORADO
 				c:GBR = {
 					relations:ROOT >= relations_threshold:cordial
 				}
 			}
 			AND = {
+				owns_entire_state_region = STATE_OREGON
+				owns_entire_state_region = STATE_OREGON
 				owns_entire_state_region = STATE_OREGON
 			}
 		}
@@ -62,10 +86,36 @@
 						}
 					}
 				}
+				s:STATE_OREGON = {
+					any_scope_state = {
+						owner = {
+							OR = {
+								c:GBR = THIS
+								is_subject_of = c:GBR
+							}
+						}
+					}
+				}
+				s:STATE_OREGON = {
+					any_scope_state = {
+						owner = {
+							OR = {
+								c:GBR = THIS
+								is_subject_of = c:GBR
+							}
+						}
+					}
+				}
 			}
 			c:GBR = { trigger_event = { id = oregon.2 } }
 		}
 		else = {
+			s:STATE_OREGON = {
+				add_homeland = cu:yankee
+			}
+			s:STATE_OREGON = {
+				add_homeland = cu:yankee
+			}
 			s:STATE_OREGON = {
 				add_homeland = cu:yankee
 			}
@@ -86,6 +136,8 @@ je_conquer_oregon = {
 
 	complete = {
 		c:USA = {
+			owns_entire_state_region = STATE_OREGON
+			owns_entire_state_region = STATE_OREGON
 			owns_entire_state_region = STATE_OREGON
 		}
 	}
