@@ -8,6 +8,8 @@
 
 Pretty self-explanatory mod name. This mod combines multiple states in the game Victoria 3 together while keeping the overall pop & buildings unchanged.
 
+You can also check out the [Victoria 3 States Merging Automation Script & Tutorial](https://github.com/ShabbyGayBar/StateMerger) and create your own state merging mod!
+
 Barracks & naval base cap as well as taxation which were reduced due to less number of states will be compensated (partially) by granting state buffs.
 
 Speaking of buffs, they were given according to how many vanilla states they merged, except several ultra-minor states that don't deserve being a state at all (no offense).
