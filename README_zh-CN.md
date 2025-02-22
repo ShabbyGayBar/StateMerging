@@ -35,10 +35,10 @@
 - **美观度**
 
 ### 当前已经合并的省份
-![Currently Merged States](Merge_States_current.png)
+![Currently Merged States](figures/Merge_States_current.png)
 
 ### 未来将要合并的省份
-![Future Plan](Merge_States_objective.png)
+![Future Plan](figures/Merge_States_objective.png)
 
 ## 提交反馈
 
