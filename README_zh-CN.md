@@ -3,6 +3,11 @@
 ![Steam Subscriptions](https://img.shields.io/steam/subscriptions/3371693463?logo=steam&link=https%3A%2F%2Fsteamcommunity.com%2Fsharedfiles%2Ffiledetails%2F%3Fid%3D3371693463)
 ![Steam Downloads](https://img.shields.io/steam/downloads/3371693463?logo=steam&link=https%3A%2F%2Fsteamcommunity.com%2Fsharedfiles%2Ffiledetails%2F%3Fid%3D3371693463)
 
+- 如果您希望只合并少数某些州，您可以选择使用本 Mod 的保守版：
+  - [Github](https://github.com/ShabbyGayBar/StateMergingMinimal), 或
+  - [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3432100126).
+- 如果您希望制作自己的省份合并 Mod，您可以使用[省份合并自动化脚本及教程](https://github.com/ShabbyGayBar/StateMerger).
+
 一个省份合并 Mod，合并了部分地区。
 
 建筑、人口等数据都保留原样。但是因为合并了各个州，所以整体陆军、海军、征税等加成在州上的数值上限都减少了，所以通过加 buff 的方式弥补了一部分回来。

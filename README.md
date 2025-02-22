@@ -6,6 +6,11 @@
 
 [简体中文](README_zh-CN.md)
 
+- If you prefer to merge less states, please check out the minimal version of this mod on:
+  - [Github](https://github.com/ShabbyGayBar/StateMergingMinimal), or
+  - [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3432100126).
+- If you prefer to make your own states merging mod, please check out the [State Merger](https://github.com/ShabbyGayBar/StateMerger).
+
 Pretty self-explanatory mod name. This mod combines multiple states in the game Victoria 3 together while keeping the overall pop & buildings unchanged.
 
 Barracks & naval base cap as well as taxation which were reduced due to less number of states will be compensated (partially) by granting state buffs.
@@ -38,10 +43,10 @@ The following criteria are sorted by significance:
 - **Aesthetics**
 
 ### Currently Merged States
-![Currently Merged States](Merge_States_current.png)
+![Currently Merged States](figures/Merge_States_current.png)
 
 ### Future Plan
-![Future Plan](Merge_States_objective.png)
+![Future Plan](figures/Merge_States_objective.png)
 
 ## Feedback
 
