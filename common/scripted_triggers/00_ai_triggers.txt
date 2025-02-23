@@ -174,8 +174,8 @@ has_je_conquest_reason = {
 			$TARGET$ = {
 				any_scope_state = {
 					OR = {
-						state_region = s:STATE_AMHARA
-						state_region = s:STATE_GONDER
+						state_region = s:STATE_OROMIA
+						state_region = s:STATE_OROMIA
 					}
 				}
 			}
@@ -188,10 +188,10 @@ has_je_conquest_reason = {
 					OR = {
 						state_region = s:STATE_CALIFORNIA
 						state_region = s:STATE_CALIFORNIA
-						state_region = s:STATE_CALIFORNIA
-						state_region = s:STATE_COLORADO
-						state_region = s:STATE_CALIFORNIA
-						state_region = s:STATE_TEXAS
+						state_region = s:STATE_UTAH
+						state_region = s:STATE_UTAH
+						state_region = s:STATE_ARIZONA
+						state_region = s:STATE_ARIZONA
 						state_region = s:STATE_TEXAS
 					}
 				}
@@ -227,7 +227,7 @@ has_je_conquest_reason = {
 				any_scope_state = {
 					OR = {
 						state_region = s:STATE_KUBAN
-						state_region = s:STATE_KUBAN
+						state_region = s:STATE_DAGESTAN
 					}
 				}
 			}

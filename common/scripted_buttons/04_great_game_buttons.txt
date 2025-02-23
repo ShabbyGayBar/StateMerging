@@ -285,7 +285,7 @@ je_consolidate_afghanistan_durand_line = {
 					region = sr:region_bombay
 					region = sr:region_himalayas
 					state_region = s:STATE_PASHTUNISTAN
-					state_region = s:STATE_QUETTA
+					state_region = s:STATE_PASHTUNISTAN
 					state_region = s:STATE_BALUCHISTAN
 				}
 				any_neighbouring_state = {
@@ -312,7 +312,7 @@ je_consolidate_afghanistan_durand_line = {
 		}
 		NOT = {
 			country_or_subject_owns_entire_state_region = STATE_PASHTUNISTAN
-			country_or_subject_owns_entire_state_region = STATE_QUETTA
+			country_or_subject_owns_entire_state_region = STATE_PASHTUNISTAN
 			country_or_subject_owns_entire_state_region = STATE_BALUCHISTAN
 		}
 	}
@@ -358,7 +358,7 @@ je_consolidate_afghanistan_durand_line = {
 								region = sr:region_bombay
 								region = sr:region_himalayas
 								state_region = s:STATE_PASHTUNISTAN
-								state_region = s:STATE_QUETTA
+								state_region = s:STATE_PASHTUNISTAN
 								state_region = s:STATE_BALUCHISTAN
 							}
 							any_neighbouring_state = {
@@ -391,7 +391,7 @@ je_consolidate_afghanistan_durand_line = {
 							region = sr:region_bombay
 							region = sr:region_himalayas
 							state_region = s:STATE_PASHTUNISTAN
-							state_region = s:STATE_QUETTA
+							state_region = s:STATE_PASHTUNISTAN
 							state_region = s:STATE_BALUCHISTAN
 						}
 					}
@@ -407,7 +407,7 @@ je_consolidate_afghanistan_durand_line = {
 							region = sr:region_bombay
 							region = sr:region_himalayas
 							state_region = s:STATE_PASHTUNISTAN
-							state_region = s:STATE_QUETTA
+							state_region = s:STATE_PASHTUNISTAN
 							state_region = s:STATE_BALUCHISTAN
 						}
 					}
@@ -439,11 +439,11 @@ je_consolidate_afghanistan_durand_line = {
 				OR = {
 					scope:afghan_partition_proxy ?= {
 						any_scope_state = {
-							state_region = s:STATE_QUETTA
+							state_region = s:STATE_PASHTUNISTAN
 						}
 					}
 					any_scope_state = {
-						state_region = s:STATE_QUETTA
+						state_region = s:STATE_PASHTUNISTAN
 					}
 				}
 			}
@@ -506,7 +506,7 @@ je_consolidate_afghanistan_indus_line = {
 					region = sr:region_bombay
 					region = sr:region_himalayas
 					state_region = s:STATE_PASHTUNISTAN
-					state_region = s:STATE_QUETTA
+					state_region = s:STATE_PASHTUNISTAN
 					state_region = s:STATE_BALUCHISTAN
 				}
 				any_neighbouring_state = {
@@ -524,7 +524,7 @@ je_consolidate_afghanistan_indus_line = {
 						region = sr:region_bombay
 						region = sr:region_himalayas
 						state_region = s:STATE_PASHTUNISTAN
-						state_region = s:STATE_QUETTA
+						state_region = s:STATE_PASHTUNISTAN
 						state_region = s:STATE_BALUCHISTAN
 					}
 					any_neighbouring_state = {
@@ -537,7 +537,7 @@ je_consolidate_afghanistan_indus_line = {
 			any_scope_state = {
 				OR = {
 					state_region = s:STATE_PASHTUNISTAN
-					state_region = s:STATE_QUETTA
+					state_region = s:STATE_PASHTUNISTAN
 					state_region = s:STATE_BALUCHISTAN
 				}
 			}
@@ -548,7 +548,7 @@ je_consolidate_afghanistan_indus_line = {
 				any_scope_state = {
 					OR = {
 						state_region = s:STATE_PASHTUNISTAN
-						state_region = s:STATE_QUETTA
+						state_region = s:STATE_PASHTUNISTAN
 						state_region = s:STATE_BALUCHISTAN
 					}
 				}
@@ -612,7 +612,7 @@ je_consolidate_afghanistan_indus_line = {
 								region = sr:region_bombay
 								region = sr:region_himalayas
 								state_region = s:STATE_PASHTUNISTAN
-								state_region = s:STATE_QUETTA
+								state_region = s:STATE_PASHTUNISTAN
 								state_region = s:STATE_BALUCHISTAN
 							}
 							any_neighbouring_state = {
@@ -735,7 +735,7 @@ je_consolidate_afghanistan_indus_line = {
 			trigger = {
 				c:AFG = {
 					any_scope_state = {
-						state_region = s:STATE_QUETTA
+						state_region = s:STATE_PASHTUNISTAN
 					}
 				}
 			}
@@ -833,7 +833,7 @@ je_consolidate_afghanistan_southeast_status_quo = {
 					region = sr:region_bombay
 					region = sr:region_himalayas
 					state_region = s:STATE_PASHTUNISTAN
-					state_region = s:STATE_QUETTA
+					state_region = s:STATE_PASHTUNISTAN
 					state_region = s:STATE_BALUCHISTAN
 				}
 				any_neighbouring_state = {
@@ -851,7 +851,7 @@ je_consolidate_afghanistan_southeast_status_quo = {
 						region = sr:region_bombay
 						region = sr:region_himalayas
 						state_region = s:STATE_PASHTUNISTAN
-						state_region = s:STATE_QUETTA
+						state_region = s:STATE_PASHTUNISTAN
 						state_region = s:STATE_BALUCHISTAN
 					}
 					any_neighbouring_state = {
@@ -1589,7 +1589,7 @@ je_consolidate_afghanistan_approve_of_treaty = {
 								region = sr:region_bombay
 								region = sr:region_himalayas
 								state_region = s:STATE_PASHTUNISTAN
-								state_region = s:STATE_QUETTA
+								state_region = s:STATE_PASHTUNISTAN
 								state_region = s:STATE_BALUCHISTAN
 							}
 						}
@@ -1606,7 +1606,7 @@ je_consolidate_afghanistan_approve_of_treaty = {
 							}
 							NOR = {
 								state_region = s:STATE_PASHTUNISTAN
-								state_region = s:STATE_QUETTA
+								state_region = s:STATE_PASHTUNISTAN
 								state_region = s:STATE_BALUCHISTAN
 							}
 						}
@@ -1622,7 +1622,7 @@ je_consolidate_afghanistan_approve_of_treaty = {
 								region = sr:region_bombay
 								region = sr:region_himalayas
 								state_region = s:STATE_PASHTUNISTAN
-								state_region = s:STATE_QUETTA
+								state_region = s:STATE_PASHTUNISTAN
 								state_region = s:STATE_BALUCHISTAN
 							}
 						}
@@ -1639,7 +1639,7 @@ je_consolidate_afghanistan_approve_of_treaty = {
 							}
 							NOR = {
 								state_region = s:STATE_PASHTUNISTAN
-								state_region = s:STATE_QUETTA
+								state_region = s:STATE_PASHTUNISTAN
 								state_region = s:STATE_BALUCHISTAN
 							}
 						}
@@ -1871,7 +1871,7 @@ je_consolidate_afghanistan_approve_of_treaty = {
 								region = sr:region_bombay
 								region = sr:region_himalayas
 								state_region = s:STATE_PASHTUNISTAN
-								state_region = s:STATE_QUETTA
+								state_region = s:STATE_PASHTUNISTAN
 								state_region = s:STATE_BALUCHISTAN
 							}
 						}
@@ -1888,7 +1888,7 @@ je_consolidate_afghanistan_approve_of_treaty = {
 							}
 							NOR = {
 								state_region = s:STATE_PASHTUNISTAN
-								state_region = s:STATE_QUETTA
+								state_region = s:STATE_PASHTUNISTAN
 								state_region = s:STATE_BALUCHISTAN
 							}
 						}
@@ -1904,7 +1904,7 @@ je_consolidate_afghanistan_approve_of_treaty = {
 								region = sr:region_bombay
 								region = sr:region_himalayas
 								state_region = s:STATE_PASHTUNISTAN
-								state_region = s:STATE_QUETTA
+								state_region = s:STATE_PASHTUNISTAN
 								state_region = s:STATE_BALUCHISTAN
 							}
 						}
@@ -1921,7 +1921,7 @@ je_consolidate_afghanistan_approve_of_treaty = {
 							}
 							NOR = {
 								state_region = s:STATE_PASHTUNISTAN
-								state_region = s:STATE_QUETTA
+								state_region = s:STATE_PASHTUNISTAN
 								state_region = s:STATE_BALUCHISTAN
 							}
 						}

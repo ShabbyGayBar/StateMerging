@@ -1458,17 +1458,17 @@ formation.21 = {
 		trigger = {
 			NOT = {
 				any_scope_state = {
-					state_region = s:STATE_KENTUCKY
+					state_region = s:STATE_TENNESSEE
 				}
 			}
 		}
-		s:STATE_KENTUCKY = {
+		s:STATE_TENNESSEE = {
 			add_claim = ROOT
 		}
 		every_country = {
 			limit = {
 				any_scope_state = {
-					state_region = s:STATE_KENTUCKY
+					state_region = s:STATE_TENNESSEE
 				}
 			}
 			ROOT = {

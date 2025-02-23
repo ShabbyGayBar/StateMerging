@@ -109,14 +109,14 @@ company_csfa = {
 	attainable = {
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
 			any_scope_state = {
-				state_region = s:STATE_SANTIAGO
+				state_region = s:STATE_ANTOFAGASTA
 			}
 		}
 	}		
 	
 	possible = {
 		any_scope_state = {
-			state_region = s:STATE_SANTIAGO
+			state_region = s:STATE_ANTOFAGASTA
 			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_sulfur_mine
@@ -349,14 +349,14 @@ company_peruvian_amazon = {
 	attainable = {
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
 			any_scope_state = {
-				state_region = s:STATE_PASTAZA
+				state_region = s:STATE_AMAZONAS
 			}
 		}
 	}		
 	
 	possible = {
 		any_scope_state = {
-			state_region = s:STATE_PASTAZA
+			state_region = s:STATE_AMAZONAS
 			any_scope_building = {
 				is_building_type = building_rubber_plantation
 				level >= 3

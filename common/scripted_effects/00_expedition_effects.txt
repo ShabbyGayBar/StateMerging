@@ -130,7 +130,7 @@ west_america_expedition_location = {
 		}
 		random_state = {
 			limit = {
-				state_region = s:STATE_COLORADO
+				state_region = s:STATE_UTAH
 			}
 			save_scope_as = current_expedition_location
 		}
@@ -153,7 +153,7 @@ west_america_expedition_location = {
 	else = {
 		random_state = {
 			limit = {
-				state_region = s:STATE_CALIFORNIA
+				state_region = s:STATE_UTAH
 			}
 			save_scope_as = current_expedition_location
 		}

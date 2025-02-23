@@ -66,7 +66,7 @@ gran_colombia.1 = {
 				add_claim = ROOT
 			}
 		}
-		s:STATE_PASTAZA = {
+		s:STATE_AMAZONAS = {
 			add_claim = ROOT
 		}
 		add_modifier = {
@@ -662,7 +662,7 @@ la_plata.2 = {
 		name = la_plata.2.b
 		trigger = {
 			OR = {
-				s:STATE_SANTIAGO = {
+				s:STATE_ANTOFAGASTA = {
 					is_homeland = cu:south_andean
 				}
 				s:STATE_SANTIAGO = {
@@ -671,7 +671,7 @@ la_plata.2 = {
 				s:STATE_SANTIAGO = {
 					is_homeland = cu:south_andean
 				}
-				s:STATE_SANTIAGO = {
+				s:STATE_ARAUCANIA = {
 					is_homeland = cu:south_andean
 				}
 			}
@@ -681,11 +681,11 @@ la_plata.2 = {
 			limit = {
 				NOT = {
 					any_scope_state = {
-						state_region = s:STATE_SANTIAGO
+						state_region = s:STATE_ANTOFAGASTA
 					}
 				}
 			}
-			s:STATE_SANTIAGO = {
+			s:STATE_ANTOFAGASTA = {
 				add_claim = ROOT
 			}
 		}
@@ -717,11 +717,11 @@ la_plata.2 = {
 			limit = {
 				NOT = {
 					any_scope_state = {
-						state_region = s:STATE_SANTIAGO
+						state_region = s:STATE_ARAUCANIA
 					}
 				}
 			}
-			s:STATE_SANTIAGO = {
+			s:STATE_ARAUCANIA = {
 				add_claim = ROOT
 			}
 		}
@@ -734,10 +734,10 @@ la_plata.2 = {
 				any_scope_state = {
 					state_region = {
 						OR = {
+							this = s:STATE_ANTOFAGASTA
 							this = s:STATE_SANTIAGO
 							this = s:STATE_SANTIAGO
-							this = s:STATE_SANTIAGO
-							this = s:STATE_SANTIAGO
+							this = s:STATE_ARAUCANIA
 						}
 					}
 				}

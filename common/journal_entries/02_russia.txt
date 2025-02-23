@@ -16,7 +16,7 @@
         has_technology_researched = nationalism
         NAND = {
             owns_entire_state_region = STATE_OUTER_MANCHURIA 
-            owns_entire_state_region = STATE_SYRDARYA 
+            owns_entire_state_region = STATE_SEMIRECHE 
             owns_entire_state_region = STATE_TOMSK
             owns_entire_state_region = STATE_KIRGHIZIA  
         }
@@ -31,10 +31,10 @@
         s:STATE_OUTER_MANCHURIA = {
             add_claim = c:RUS
         }
-        s:STATE_SYRDARYA = {
+        s:STATE_SEMIRECHE = {
             add_claim = c:RUS
         }
-        s:STATE_TOMSK = {
+        s:STATE_TUVA = {
             add_claim = c:RUS
         }
         s:STATE_KIRGHIZIA = {
@@ -44,8 +44,8 @@
     complete = {
         owns_entire_state_region = STATE_OUTER_MANCHURIA
         owns_entire_state_region = STATE_OUTER_MANCHURIA 
-        owns_entire_state_region = STATE_SYRDARYA 
-        owns_entire_state_region = STATE_TOMSK
+        owns_entire_state_region = STATE_SEMIRECHE 
+        owns_entire_state_region = STATE_TUVA
         OR = {
             owns_entire_state_region = STATE_KIRGHIZIA
             any_country = {
@@ -88,8 +88,8 @@ je_caucasian_war = {
             limit = {
                 OR = {
                     state_region = s:STATE_KUBAN
-                    state_region = s:STATE_KUBAN
-                    state_region = s:STATE_KUBAN
+                    state_region = s:STATE_DAGESTAN
+                    state_region = s:STATE_DAGESTAN
                 }
             }
             add_modifier = caucasus_war_attacker
@@ -156,24 +156,24 @@ je_caucasian_war = {
 				is_split_state = no
 			}
 		}
-		s:STATE_KUBAN = {
+		s:STATE_DAGESTAN = {
 			trigger_if = {
 				limit = {
-					NOT = { root = { has_state_in_state_region = STATE_KUBAN } }
+					NOT = { root = { has_state_in_state_region = STATE_DAGESTAN } }
 				}
-				root = { has_state_in_state_region = STATE_KUBAN }
+				root = { has_state_in_state_region = STATE_DAGESTAN }
 			}
 			region_state:RUS ?= {
 				turmoil <= 0.25
 				is_split_state = no
 			}
 		}
-		s:STATE_KUBAN = {
+		s:STATE_DAGESTAN = {
 			trigger_if = {
 				limit = {
-					NOT = { root = { has_state_in_state_region = STATE_KUBAN } }
+					NOT = { root = { has_state_in_state_region = STATE_DAGESTAN } }
 				}
-				root = { has_state_in_state_region = STATE_KUBAN }
+				root = { has_state_in_state_region = STATE_DAGESTAN }
 			}
 			region_state:RUS ?= {
 				turmoil <= 0.25
@@ -207,13 +207,13 @@ je_caucasian_war = {
             text = caucasus_lost_tt
             NOT = {
                 any_scope_state = {
-                    state_region = s:STATE_KUBAN
+                    state_region = s:STATE_DAGESTAN
                 }
                 any_scope_state = {
                     state_region = s:STATE_KUBAN
                 }
                 any_scope_state = {
-                    state_region = s:STATE_KUBAN
+                    state_region = s:STATE_DAGESTAN
                 }
             }
         }
@@ -228,8 +228,8 @@ je_caucasian_war = {
                 limit = {
                     OR = {
                         state_region = s:STATE_KUBAN
-                        state_region = s:STATE_KUBAN
-                        state_region = s:STATE_KUBAN
+                        state_region = s:STATE_DAGESTAN
+                        state_region = s:STATE_DAGESTAN
                     }
                 }
                 remove_modifier = caucasus_war_attacker
@@ -576,10 +576,10 @@ je_caucasian_war_imamate = {
         c:RUS = {
             save_scope_as = russia_scope
         }
-        s:STATE_KUBAN = {
+        s:STATE_DAGESTAN = {
             save_scope_as = north_caucasus_scope
         }
-        s:STATE_KUBAN = {
+        s:STATE_DAGESTAN = {
             save_scope_as = dagestan_scope
         }
     }
@@ -634,7 +634,7 @@ je_caucasian_war_imamate = {
             c:RUS ?= {
                 NOT = {
                     any_scope_state = {
-                        state_region = s:STATE_KUBAN
+                        state_region = s:STATE_DAGESTAN
                     }
                 }
             }
@@ -644,7 +644,7 @@ je_caucasian_war_imamate = {
             c:RUS ?= {
                 NOT = {
                     any_scope_state = {
-                        state_region = s:STATE_KUBAN
+                        state_region = s:STATE_DAGESTAN
                     }
                 }
             }
@@ -898,26 +898,26 @@ je_conquest_of_central_asia = {
         THIS = c:RUS
         is_subject = no
         any_scope_state = {
-            state_region = s:STATE_AKMOLINSK
+            state_region = s:STATE_URALSK
         }
         any_scope_state = {
-            state_region = s:STATE_SYRDARYA
+            state_region = s:STATE_AKMOLINSK
         }
+        owns_entire_state_region = STATE_URALSK
         owns_entire_state_region = STATE_AKMOLINSK
-        owns_entire_state_region = STATE_AKMOLINSK
-        owns_entire_state_region = STATE_SYRDARYA
+        owns_entire_state_region = STATE_SEMIRECHE
     }
     possible = {
         has_technology_researched = civilizing_mission
         any_scope_state = {
-            state_region = s:STATE_AKMOLINSK
+            state_region = s:STATE_URALSK
         }
         any_scope_state = {
-            state_region = s:STATE_SYRDARYA
+            state_region = s:STATE_AKMOLINSK
         }
+        owns_entire_state_region = STATE_URALSK
         owns_entire_state_region = STATE_AKMOLINSK
-        owns_entire_state_region = STATE_AKMOLINSK
-        owns_entire_state_region = STATE_SYRDARYA
+        owns_entire_state_region = STATE_SEMIRECHE
     }
     immediate = {
         trigger_event = { id = russian_central_asia.1 } # Central Asia initialisation
@@ -935,7 +935,7 @@ je_conquest_of_central_asia = {
                 limit = {
                     OR = {
                         state_region = s:STATE_KHIVA
-                        state_region = s:STATE_SYRDARYA
+                        state_region = s:STATE_AKMOLINSK
                         state_region = s:STATE_UZBEKIA
                         state_region = s:STATE_KIRGHIZIA
                         state_region = s:STATE_KHIVA
@@ -950,7 +950,7 @@ je_conquest_of_central_asia = {
         }
     }
     complete = {
-        country_or_subject_owns_entire_state_region = STATE_SYRDARYA
+        country_or_subject_owns_entire_state_region = STATE_AKMOLINSK
         country_or_subject_owns_entire_state_region = STATE_UZBEKIA
         country_or_subject_owns_entire_state_region = STATE_KIRGHIZIA
         country_or_subject_owns_entire_state_region = STATE_KHIVA # Chorasmia

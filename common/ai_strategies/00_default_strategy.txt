@@ -706,10 +706,10 @@ ai_strategy_default = {
 					OR = {
 						has_state_in_state_region = STATE_CALIFORNIA
 						has_state_in_state_region = STATE_CALIFORNIA
-						has_state_in_state_region = STATE_CALIFORNIA
-						has_state_in_state_region = STATE_COLORADO
-						has_state_in_state_region = STATE_CALIFORNIA
-						has_state_in_state_region = STATE_TEXAS
+						has_state_in_state_region = STATE_UTAH
+						has_state_in_state_region = STATE_UTAH
+						has_state_in_state_region = STATE_ARIZONA
+						has_state_in_state_region = STATE_ARIZONA
 						has_state_in_state_region = STATE_TEXAS
 						has_state_in_state_region = STATE_KANSAS
 						has_state_in_state_region = STATE_TEXAS # if they somehow lose it
@@ -1145,7 +1145,7 @@ ai_strategy_default = {
 							state_region = s:STATE_SHAN_STATES
 							state_region = s:STATE_PEGU
 							state_region = s:STATE_PASHTUNISTAN
-							state_region = s:STATE_QUETTA
+							state_region = s:STATE_PASHTUNISTAN
 						}
 					}
 				}
@@ -1156,7 +1156,7 @@ ai_strategy_default = {
 				limit = {
 					has_journal_entry = je_expanding_paraguay
 					scope:target_country = {
-						has_state_in_state_region = STATE_BUENOS_AIRES
+						has_state_in_state_region = STATE_SANTA_FE
 					}
 				}
 				add = 50
@@ -1167,9 +1167,9 @@ ai_strategy_default = {
 					has_journal_entry = je_expanding_paraguay
 					scope:target_country = {
 						OR = {
-							has_state_in_state_region = STATE_BUENOS_AIRES
+							has_state_in_state_region = STATE_SANTA_FE
 							has_state_in_state_region = STATE_SAO_PAULO
-							has_state_in_state_region = STATE_URUGUAY
+							has_state_in_state_region = STATE_RIO_GRANDE_DO_SUL
 						}
 					}
 				}
@@ -1181,8 +1181,8 @@ ai_strategy_default = {
 					has_journal_entry = je_age_of_princes
 					scope:target_state = {
 						OR = {
-							state_region = s:STATE_AMHARA
-							state_region = s:STATE_GONDER
+							state_region = s:STATE_OROMIA
+							state_region = s:STATE_OROMIA
 						}
 					}
 				}
@@ -1224,15 +1224,15 @@ ai_strategy_default = {
 					limit = {
 						scope:target_state = {
 							OR = {
-								state_region = s:STATE_COLORADO
-								state_region = s:STATE_CALIFORNIA
+								state_region = s:STATE_UTAH
+								state_region = s:STATE_UTAH
 								state_region = s:STATE_TEXAS
 								state_region = s:STATE_KANSAS
 								state_region = s:STATE_TEXAS
-								state_region = s:STATE_CALIFORNIA						
+								state_region = s:STATE_ARIZONA						
 								state_region = s:STATE_CALIFORNIA
 								state_region = s:STATE_CALIFORNIA
-								state_region = s:STATE_TEXAS								
+								state_region = s:STATE_ARIZONA								
 							}
 						}					
 					}
@@ -1275,7 +1275,7 @@ ai_strategy_default = {
 					scope:target_state = {
 						OR = {
 							state_region = s:STATE_OUTER_MANCHURIA
-							state_region = s:STATE_SYRDARYA
+							state_region = s:STATE_SEMIRECHE
 							state_region = s:STATE_TOMSK
 							state_region = s:STATE_KIRGHIZIA
 							state_region = s:STATE_OUTER_MANCHURIA
@@ -2270,7 +2270,7 @@ ai_strategy_default = {
 							OR = {
 								owns_entire_state_region = STATE_SINAI
 								owns_entire_state_region = STATE_UPPER_EGYPT
-								owns_entire_state_region = STATE_MIDDLE_EGYPT
+								owns_entire_state_region = STATE_UPPER_EGYPT
 								owns_entire_state_region = STATE_LOWER_EGYPT
 							}
 						}
@@ -2288,10 +2288,10 @@ ai_strategy_default = {
 					OR = {
 						has_state_in_state_region = STATE_CALIFORNIA
 						has_state_in_state_region = STATE_CALIFORNIA
-						has_state_in_state_region = STATE_CALIFORNIA
-						has_state_in_state_region = STATE_COLORADO
-						has_state_in_state_region = STATE_CALIFORNIA
-						has_state_in_state_region = STATE_TEXAS
+						has_state_in_state_region = STATE_UTAH
+						has_state_in_state_region = STATE_UTAH
+						has_state_in_state_region = STATE_ARIZONA
+						has_state_in_state_region = STATE_ARIZONA
 						has_state_in_state_region = STATE_TEXAS
 						has_state_in_state_region = STATE_KANSAS
 						has_state_in_state_region = STATE_TEXAS # if they somehow lose it
@@ -2464,9 +2464,9 @@ ai_strategy_default = {
                 scope:target_country = {
                     any_scope_state = {
                         OR = {
-                            state_region = s:STATE_BUENOS_AIRES
+                            state_region = s:STATE_SANTA_FE
                             state_region = s:STATE_SAO_PAULO
-                            state_region = s:STATE_URUGUAY
+                            state_region = s:STATE_RIO_GRANDE_DO_SUL
                         }
                     }
                 }
@@ -2597,10 +2597,10 @@ ai_strategy_default = {
 						OR = {
 							state_region = s:STATE_CALIFORNIA
 							state_region = s:STATE_CALIFORNIA
-							state_region = s:STATE_CALIFORNIA
-							state_region = s:STATE_COLORADO
-							state_region = s:STATE_CALIFORNIA
-							state_region = s:STATE_TEXAS
+							state_region = s:STATE_UTAH
+							state_region = s:STATE_UTAH
+							state_region = s:STATE_ARIZONA
+							state_region = s:STATE_ARIZONA
 							state_region = s:STATE_TEXAS
 							state_region = s:STATE_KANSAS
 							state_region = s:STATE_TEXAS # if they somehow lose it	
@@ -2675,7 +2675,7 @@ ai_strategy_default = {
 							state_region = s:STATE_SHAN_STATES
 							state_region = s:STATE_PEGU
 							state_region = s:STATE_PASHTUNISTAN
-							state_region = s:STATE_QUETTA
+							state_region = s:STATE_PASHTUNISTAN
 						}
 					}
 				}
@@ -2704,7 +2704,7 @@ ai_strategy_default = {
 							state_region = s:STATE_SHAN_STATES
 							state_region = s:STATE_PEGU
 							state_region = s:STATE_PASHTUNISTAN
-							state_region = s:STATE_QUETTA
+							state_region = s:STATE_PASHTUNISTAN
 						}
 					}
 				}
@@ -2720,7 +2720,7 @@ ai_strategy_default = {
 					any_scope_state = {
 						OR = {
 							state_region = s:STATE_KUBAN
-							state_region = s:STATE_KUBAN
+							state_region = s:STATE_DAGESTAN
 						}
 					}
 				}
@@ -2736,7 +2736,7 @@ ai_strategy_default = {
 					any_scope_state = {
 						OR = {
 							state_region = s:STATE_OUTER_MANCHURIA
-							state_region = s:STATE_SYRDARYA
+							state_region = s:STATE_SEMIRECHE
 							state_region = s:STATE_TOMSK
 							state_region = s:STATE_KIRGHIZIA
 							state_region = s:STATE_OUTER_MANCHURIA
@@ -2774,8 +2774,8 @@ ai_strategy_default = {
 				scope:target_country = {
 					any_scope_state = {
 						OR = {
-							state_region = s:STATE_AKMOLINSK
-							state_region = s:STATE_SYRDARYA
+							state_region = s:STATE_URALSK
+							state_region = s:STATE_SEMIRECHE
 							state_region = s:STATE_AKMOLINSK
 						}
 					}
@@ -2988,8 +2988,8 @@ ai_strategy_default = {
 					}
 					OR = {
 						has_state_in_state_region = STATE_KUBAN
-						has_state_in_state_region = STATE_KUBAN
-						has_state_in_state_region = STATE_KUBAN
+						has_state_in_state_region = STATE_DAGESTAN
+						has_state_in_state_region = STATE_DAGESTAN
 					}
 				}
 				NOT = {
@@ -3036,9 +3036,9 @@ ai_strategy_default = {
                 has_journal_entry = je_expanding_paraguay
                 scope:target_country = {
 					OR = {
-						has_state_in_state_region = STATE_BUENOS_AIRES
+						has_state_in_state_region = STATE_SANTA_FE
 						has_state_in_state_region = STATE_SAO_PAULO
-						has_state_in_state_region = STATE_URUGUAY
+						has_state_in_state_region = STATE_RIO_GRANDE_DO_SUL
 					}
                 }
             }
@@ -6071,7 +6071,7 @@ ai_strategy_default = {
 								state_region = s:STATE_SHAN_STATES
 								state_region = s:STATE_PEGU
 								state_region = s:STATE_PASHTUNISTAN
-								state_region = s:STATE_QUETTA
+								state_region = s:STATE_PASHTUNISTAN
 							}
 						}
 					}

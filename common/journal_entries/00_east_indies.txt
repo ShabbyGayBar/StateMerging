@@ -11,7 +11,7 @@
 					state_region = s:STATE_HILL_PUNJAB
 					state_region = s:STATE_SINDH
 					state_region = s:STATE_PASHTUNISTAN
-					state_region = s:STATE_QUETTA
+					state_region = s:STATE_PASHTUNISTAN
 					state_region = s:STATE_KASHMIR
 					state_region = s:STATE_BALUCHISTAN
 					state_region = s:STATE_MANDALAY

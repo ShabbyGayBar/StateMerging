@@ -142,14 +142,14 @@ company_west_ural_petroleum = {
 	attainable = {
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
 			any_scope_state = {
-				state_region = s:STATE_AKMOLINSK
+				state_region = s:STATE_URALSK
 			}
 		}
 	}
 
 	possible = {
 		any_scope_state = {
-			state_region = s:STATE_AKMOLINSK
+			state_region = s:STATE_URALSK
 			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_oil_rig
@@ -271,14 +271,14 @@ company_sherkate_eslamiya = {
 	attainable = {
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
 			any_scope_state = {
-				state_region = s:STATE_LARISTAN
+				state_region = s:STATE_ISFAHAN
 			}
 		}
 	}
 
 	possible = {
 		any_scope_state = {
-			state_region = s:STATE_LARISTAN
+			state_region = s:STATE_ISFAHAN
 			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_textile_mills
@@ -403,14 +403,14 @@ company_kirgizian_mining_company= {
 	attainable = {
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
 			any_scope_state = {
-				state_region = s:STATE_SYRDARYA
+				state_region = s:STATE_SEMIRECHE
 			}
 		}
 	}
 
 	possible = {
 		any_scope_state = {
-			state_region = s:STATE_SYRDARYA
+			state_region = s:STATE_SEMIRECHE
 			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_coal_mine
@@ -772,7 +772,7 @@ company_anglo_persian_oil = {
 	attainable = {
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
 			any_scope_state = {
-				state_region = s:STATE_LURISTAN
+				state_region = s:STATE_KHUZESTAN
 			}
 		}
 	}
@@ -785,7 +785,7 @@ company_anglo_persian_oil = {
 			}
 		}
 		any_scope_state = {
-			state_region = s:STATE_LURISTAN
+			state_region = s:STATE_KHUZESTAN
 			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_oil_rig
@@ -824,7 +824,7 @@ company_national_iranian_oil = {
 	attainable = {
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
 			any_scope_state = {
-				state_region = s:STATE_LURISTAN
+				state_region = s:STATE_KHUZESTAN
 			}
 		}
 	}
@@ -837,7 +837,7 @@ company_national_iranian_oil = {
 			}
 		}
 		any_scope_state = {
-			state_region = s:STATE_LURISTAN
+			state_region = s:STATE_KHUZESTAN
 			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_oil_rig

@@ -226,7 +226,7 @@ is_jungle_hills = {
 		region = sr:region_indochina
 		region = sr:region_indonesia
 		region = sr:region_south_china
-		this = s:STATE_KANSAI
+		this = s:STATE_KYUSHU
 	}
 }
 
@@ -278,8 +278,8 @@ is_vulnerable_to_droughts = {
 			OR = {
 				state_region = s:STATE_CALIFORNIA
 				state_region = s:STATE_CALIFORNIA
-				state_region = s:STATE_CALIFORNIA
-				state_region = s:STATE_CALIFORNIA
+				state_region = s:STATE_ARIZONA
+				state_region = s:STATE_UTAH
 				state_region = s:STATE_LOWLANDS
 				state_region = s:STATE_LOWLANDS
 				state_region = s:STATE_LEINSTER

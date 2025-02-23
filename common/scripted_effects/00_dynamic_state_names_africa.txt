@@ -63,7 +63,7 @@ assign_state_name_region_southern_africa = {
     if = {
         limit = {
             state_region = {
-                s:STATE_ZULULAND ?= this
+                s:STATE_TRANSVAAL ?= this
             }
         }
         STATE_ZULULAND_state_name_assign = yes

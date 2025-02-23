@@ -28,7 +28,7 @@ peru_bolivia_events.1 = {
 				any_subject_or_below = {
 					has_variable = pbc_member
 					any_scope_state = {
-						state_region = s:STATE_LIMA
+						state_region = s:STATE_ICA
 					}
 				}
 			}
@@ -36,12 +36,12 @@ peru_bolivia_events.1 = {
 				limit = {
 					has_variable = pbc_member
 					any_scope_state = {
-						state_region = s:STATE_LIMA
+						state_region = s:STATE_ICA
 					}					
 				}
 				random_scope_state = {
 					limit = {
-						state_region = s:STATE_LIMA
+						state_region = s:STATE_ICA
 					}
 					save_scope_as = arequipa_state	
 				}
@@ -50,12 +50,12 @@ peru_bolivia_events.1 = {
 		else_if = {
 			limit = {
 				any_scope_state = {
-					state_region = s:STATE_LIMA
+					state_region = s:STATE_ICA
 				}
 			}
 			random_scope_state = {
 				limit = {
-					state_region = s:STATE_LIMA
+					state_region = s:STATE_ICA
 				}
 				save_scope_as = arequipa_state	
 			}

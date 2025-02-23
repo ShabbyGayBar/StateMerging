@@ -7,9 +7,9 @@
 	complete = {
 		owns_entire_state_region = STATE_CALIFORNIA
 		owns_entire_state_region = STATE_CALIFORNIA
-		owns_entire_state_region = STATE_CALIFORNIA
-		owns_entire_state_region = STATE_CALIFORNIA
-		owns_entire_state_region = STATE_TEXAS
+		owns_entire_state_region = STATE_UTAH
+		owns_entire_state_region = STATE_ARIZONA
+		owns_entire_state_region = STATE_ARIZONA
 		owns_entire_state_region = STATE_TEXAS
 	}
 
@@ -28,11 +28,11 @@ je_manifest_destiny_frontier_wars = {
 	
 	# note that if you change this, also update the decision
 	complete = {
-		owns_entire_state_region = STATE_COLORADO
-		owns_entire_state_region = STATE_COLORADO
-		owns_entire_state_region = STATE_COLORADO
-		owns_entire_state_region = STATE_KANSAS
-		owns_entire_state_region = STATE_KANSAS
+		owns_entire_state_region = STATE_WYOMING
+		owns_entire_state_region = STATE_WYOMING
+		owns_entire_state_region = STATE_UTAH
+		owns_entire_state_region = STATE_SOUTH_DAKOTA
+		owns_entire_state_region = STATE_SOUTH_DAKOTA
 		owns_entire_state_region = STATE_KANSAS
 		owns_entire_state_region = STATE_KANSAS
 	}

@@ -16,7 +16,7 @@
 				state_region = s:STATE_VENETIA
 				state_region = s:STATE_LAZIO
 				state_region = s:STATE_VENETIA
-				state_region = s:STATE_ISTRIA
+				state_region = s:STATE_CROATIA
 			}
 		}
 		
@@ -33,9 +33,9 @@ give_claims_on_germany = {
 				state_region = s:STATE_BADEN
 				state_region = s:STATE_BAVARIA
 				state_region = s:STATE_BAVARIA
+				state_region = s:STATE_WESTPHALIA
 				state_region = s:STATE_HANNOVER
-				state_region = s:STATE_HANNOVER
-				state_region = s:STATE_RHINELAND
+				state_region = s:STATE_WESTPHALIA
 				state_region = s:STATE_SAXONY
 				state_region = s:STATE_RHINELAND
 				state_region = s:STATE_RHINELAND
@@ -43,7 +43,7 @@ give_claims_on_germany = {
 				state_region = s:STATE_SCHLESWIG_HOLSTEIN
 				state_region = s:STATE_HANNOVER
 				state_region = s:STATE_SAXONY
-				state_region = s:STATE_RHINELAND
+				state_region = s:STATE_WESTPHALIA
 				state_region = s:STATE_BRANDENBURG
 				state_region = s:STATE_SILESIA
 				state_region = s:STATE_BRANDENBURG

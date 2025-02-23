@@ -259,7 +259,7 @@ persian_baluchistan_button = {
 		OR = {
 			any_scope_state = {
 				OR = {
-					state_region = s:STATE_LARISTAN
+					state_region = s:STATE_KHORASAN
 					state_region = s:STATE_IRAKAJEMI
 					state_region = s:STATE_HERAT
 				}

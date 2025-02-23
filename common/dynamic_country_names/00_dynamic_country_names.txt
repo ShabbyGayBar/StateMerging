@@ -918,7 +918,7 @@ AZB = { # Azerbaijan
 		trigger = {
 			coa_def_independent_trigger = yes
 			coa_def_communist_flag_trigger = yes
-			owns_entire_state_region = STATE_GREATER_CAUCASUS
+			owns_entire_state_region = STATE_AZERBAIJAN
 		}
 	}
 

@@ -176,7 +176,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_SUZHOU
+				state_region = s:STATE_NANJING
 				count = 10
 			}
 
@@ -221,7 +221,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_SUZHOU
+				state_region = s:STATE_NANJING
 				count = 10
 			}
 			combat_unit = {
@@ -335,7 +335,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_JIANGSU
+				state_region = s:STATE_NANJING
 				count = 20
 			}
 
@@ -353,7 +353,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_NORTHERN_ANHUI
+				state_region = s:STATE_SOUTHERN_ANHUI
 				count = 15
 			}
 
@@ -425,7 +425,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_WESTERN_HUBEI
+				state_region = s:STATE_EASTERN_HUBEI
 				count = 20
 			}
 
@@ -437,7 +437,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_JIANGSU
+				state_region = s:STATE_NANJING
 				count = 5
 			}
 		}

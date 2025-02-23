@@ -204,14 +204,14 @@ company_rossi = {
 	attainable = {
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
 			any_scope_state = {
-				state_region = s:STATE_URUGUAY
+				state_region = s:STATE_RIO_GRANDE_DO_SUL
 			}
 		}
 	}
 
 	possible = {
 		any_scope_state = {
-			state_region = s:STATE_URUGUAY
+			state_region = s:STATE_RIO_GRANDE_DO_SUL
 			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_arms_industry
@@ -413,14 +413,14 @@ company_cordoba_railway = {
 	attainable = {
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
 			any_scope_state = {
-				state_region = s:STATE_LA_PAMPA
+				state_region = s:STATE_BUENOS_AIRES
 			}
 		}
 	}		
 
 	possible = {
 		any_scope_state = {
-			state_region = s:STATE_LA_PAMPA
+			state_region = s:STATE_BUENOS_AIRES
 			is_incorporated = yes
 			has_building = building_railway
 		}

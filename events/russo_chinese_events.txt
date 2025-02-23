@@ -136,13 +136,13 @@ russo_chinese.2 = {
 		}
 		random_state = {
 			limit = {
-				state_region = s:STATE_TOMSK
+				state_region = s:STATE_TUVA
 			}
 			save_scope_as = tomsk_scope
 		}
 		random_state = {
 			limit = {
-				state_region = s:STATE_SYRDARYA
+				state_region = s:STATE_SEMIRECHE
 			}
 			save_scope_as = ili_scope
 		}
@@ -154,11 +154,11 @@ russo_chinese.2 = {
 				}
 				OR = {
 					any_scope_state = {
-						state_region = s:STATE_TOMSK
+						state_region = s:STATE_TUVA
 						is_capital = no
 					}
 					any_scope_state = {
-						state_region = s:STATE_SYRDARYA
+						state_region = s:STATE_SEMIRECHE
 						is_capital = no
 					}
 					any_scope_state = {
@@ -198,14 +198,14 @@ russo_chinese.2 = {
 		}
 		random_state = {
 			limit = {
-				state_region = s:STATE_TOMSK
+				state_region = s:STATE_TUVA
 				owner = scope:china_scope
 			}
 			set_state_owner = c:RUS
 		}
 		random_state = {
 			limit = {
-				state_region = s:STATE_SYRDARYA
+				state_region = s:STATE_SEMIRECHE
 				owner = scope:china_scope
 			}
 			set_state_owner = c:RUS
@@ -234,14 +234,14 @@ russo_chinese.2 = {
 		}
 		random_state = {
 			limit = {
-				state_region = s:STATE_TOMSK
+				state_region = s:STATE_TUVA
 				owner = scope:china_scope
 			}
 			set_state_owner = c:RUS
 		}
 		random_state = {
 			limit = {
-				state_region = s:STATE_SYRDARYA
+				state_region = s:STATE_SEMIRECHE
 				owner = scope:china_scope
 			}
 			set_state_owner = c:RUS
@@ -278,14 +278,14 @@ russo_chinese.2 = {
 		}
 		random_state = {
 			limit = {
-				state_region = s:STATE_TOMSK
+				state_region = s:STATE_TUVA
 				owner = scope:china_scope
 			}
 			set_state_owner = c:RUS
 		}
 		random_state = {
 			limit = {
-				state_region = s:STATE_SYRDARYA
+				state_region = s:STATE_SEMIRECHE
 				owner = scope:china_scope
 			}
 			set_state_owner = c:RUS

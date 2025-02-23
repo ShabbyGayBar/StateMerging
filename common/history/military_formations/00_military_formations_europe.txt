@@ -276,7 +276,7 @@
 			# VII. Armee-Korps
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_RHINELAND
+				state_region = s:STATE_WESTPHALIA
 				count = 9
 			}
 
@@ -467,7 +467,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_BANAT
+				state_region = s:STATE_NORTHERN_TRANSYLVANIA
 				count = 10
 			}
 
@@ -497,7 +497,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_DELVIDEK
+				state_region = s:STATE_NORTHERN_SERBIA
 				count = 5
 			}
 			save_scope_as = ii_korps
@@ -600,19 +600,19 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_DALMATIA
+				state_region = s:STATE_CROATIA
 				count = 5
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_lancers
-				state_region = s:STATE_SLAVONIA
+				state_region = s:STATE_CROATIA
 				count = 5
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_SLOVENIA
+				state_region = s:STATE_CROATIA
 				count = 5
 			}
 			save_scope_as = iiii_korps
@@ -652,7 +652,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_ISTRIA
+				state_region = s:STATE_CROATIA
 				count = 1
 			}
 		}
@@ -1447,7 +1447,7 @@
 
 			combat_unit = { # His Majesty the King of Prussia’s Grenadier Regiment, L.-Gds. Volhynia Regiment
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_VOLHYNIA
+				state_region = s:STATE_EAST_GALICIA
 				count = 2
 			}
 
@@ -1572,7 +1572,7 @@
 
 			combat_unit = { # 1st Horse-Artillery Division
 				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_ASTRAKHAN
+				state_region = s:STATE_KURSK
 				count = 1
 			}
 
@@ -1584,13 +1584,13 @@
 
 			combat_unit = { # Apsheron Infantry
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_GREATER_CAUCASUS
+				state_region = s:STATE_AZERBAIJAN
 				count = 1
 			}
 
 			combat_unit = { # Field Marshal the Prince of Warsaw, Graf Paskevich of Erivan’s Infantry
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_GREATER_CAUCASUS
+				state_region = s:STATE_AZERBAIJAN
 				count = 1
 			}
 
@@ -1602,7 +1602,7 @@
 
 			combat_unit = { # Mussulman Irregular Horse Regiment, Caucasian Mountaineer Irregular Horse Regiment
 				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_GREATER_CAUCASUS
+				state_region = s:STATE_AZERBAIJAN
 				count = 2
 			}
 
@@ -1616,7 +1616,7 @@
 			# Caucasian (Cossack) Line
 			combat_unit = { # Terek, Kizlyar, and Grebensk Line Cossack regiments
 				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_KUBAN
+				state_region = s:STATE_DAGESTAN
 				count = 3
 			}
 			combat_unit = { # 1st and 2nd Little-Russian Cossack Regiments
@@ -1657,7 +1657,7 @@
 
 			combat_unit = { # Kostroma and Galich Jägers
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_PERM
+				state_region = s:STATE_VYATKA
 				count = 2
 			}
 
@@ -1700,13 +1700,13 @@
 			# 2nd Reserve Cavalry Corps
 			combat_unit = { # Order and Starodub Cuirassier Regiments, Prince Albert of Prussia’s and Her Imperial Highness the Grand Duchess Helen Pavlovna’s Cuirassier Regments
 				type = unit_type:combat_unit_type_cuirassiers
-				state_region = s:STATE_KURSK
+				state_region = s:STATE_ORYOL
 				count = 3
 			}
 
 			combat_unit = { # 2nd Horse-Artillery Division
 				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_ASTRAKHAN
+				state_region = s:STATE_KURSK
 				count = 1
 			}
 			save_scope_as = ii_pekhotniy_korpus
@@ -1746,7 +1746,7 @@
 
 			combat_unit = { # Bryansk Jägers
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_KURSK
+				state_region = s:STATE_ORYOL
 				count = 1
 			}
 
@@ -1783,7 +1783,7 @@
 
 			combat_unit = { # 3rd Horse-Artillery Division
 				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_ASTRAKHAN
+				state_region = s:STATE_KURSK
 				count = 1
 			}
 			save_scope_as = iii_pekhotniy_korpus
@@ -1811,7 +1811,7 @@
 
 			combat_unit = { # Tobolsk Infantry
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_URAL
+				state_region = s:STATE_TOMSK
 				count = 1
 			}
 
@@ -1829,7 +1829,7 @@
 
 			combat_unit = { # Selenginsk Infantry
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_TRANS_BAIKAL
+				state_region = s:STATE_IRKUTSK
 				count = 1
 			}
 
@@ -1924,7 +1924,7 @@
 
 			combat_unit = { # Volhynia Infantry
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_VOLHYNIA
+				state_region = s:STATE_EAST_GALICIA
 				count = 1
 			}
 
@@ -1948,7 +1948,7 @@
 
 			combat_unit = { # Lublin and Zamosc Jägers
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_GREATER_POLAND
+				state_region = s:STATE_WEST_GALICIA
 				count = 2
 			}
 
@@ -2069,7 +2069,7 @@
 			# 2nd Reserve Cavalry Corps
 			combat_unit = { # Order and Starodub Cuirassier Regiments, Prince Albert of Prussia’s and Her Imperial Highness the Grand Duchess Helen Pavlovna’s Cuirassier Regments
 				type = unit_type:combat_unit_type_cuirassiers
-				state_region = s:STATE_KURSK
+				state_region = s:STATE_ORYOL
 				count = 1
 			}
 
@@ -2111,7 +2111,7 @@
 #			# Don Cossacks
 #			combat_unit = {
 #				type = unit_type:combat_unit_type_hussars
-#				state_region = s:STATE_ASTRAKHAN
+#				state_region = s:STATE_KURSK
 #				count = 8
 #			}
 #			# Siberian Cossack Line
@@ -2135,7 +2135,7 @@
 #			# Don Cossacks
 #			combat_unit = {
 #				type = unit_type:combat_unit_type_hussars
-#				state_region = s:STATE_ASTRAKHAN
+#				state_region = s:STATE_KURSK
 #				count = 13
 #			}
 #		}
@@ -2195,13 +2195,13 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_ASTRAKHAN
+				state_region = s:STATE_KURSK
 				count = 1
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_KHARKOV
+				state_region = s:STATE_CRIMEA
 				count = 5
 			}
 
@@ -2213,19 +2213,19 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_KHARKOV
+				state_region = s:STATE_CRIMEA
 				count = 7
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_ASTRAKHAN
+				state_region = s:STATE_KURSK
 				count = 4
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_KHARKOV
+				state_region = s:STATE_CRIMEA
 				count = 1
 			}
 			save_scope_as = rus_black_sea_fleet
@@ -2268,7 +2268,7 @@
 
 			combat_unit = { # 
 				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_KUBAN
+				state_region = s:STATE_DAGESTAN
 				count = 3
 			}
 			
@@ -2305,13 +2305,13 @@
 
 			combat_unit = { # 
 				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_KUBAN
+				state_region = s:STATE_DAGESTAN
 				count = 1
 			}
 			
 			combat_unit = { # 
 				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_KUBAN
+				state_region = s:STATE_DAGESTAN
 				count = 3
 			}
 		}
@@ -2323,13 +2323,13 @@
 
 			combat_unit = { # 
 				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_KUBAN
+				state_region = s:STATE_DAGESTAN
 				count = 1
 			}
 			
 			combat_unit = { # 
 				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_KUBAN
+				state_region = s:STATE_DAGESTAN
 				count = 5
 			}
 		}
@@ -2519,19 +2519,19 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_RHINELAND
+				state_region = s:STATE_WESTPHALIA
 				count = 4
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_RHINELAND
+				state_region = s:STATE_WESTPHALIA
 				count = 1
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_RHINELAND
+				state_region = s:STATE_WESTPHALIA
 				count = 1
 			}
 		}
@@ -2545,19 +2545,19 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_RHINELAND
+				state_region = s:STATE_WESTPHALIA
 				count = 3
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_lancers
-				state_region = s:STATE_RHINELAND
+				state_region = s:STATE_WESTPHALIA
 				count = 1
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_RHINELAND
+				state_region = s:STATE_WESTPHALIA
 				count = 1
 			}
 		}
@@ -2571,13 +2571,13 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_RHINELAND
+				state_region = s:STATE_WESTPHALIA
 				count = 2
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_RHINELAND
+				state_region = s:STATE_WESTPHALIA
 				count = 1
 			}
 		}
@@ -2747,7 +2747,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_RHINELAND
+				state_region = s:STATE_WESTPHALIA
 				count = 1
 			}
 		}
@@ -2761,7 +2761,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_RHINELAND
+				state_region = s:STATE_WESTPHALIA
 				count = 1
 			}
 		}
@@ -3964,7 +3964,7 @@
 
 			combat_unit = { # Fijo de Ceuta
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_AL_RIF
+				state_region = s:STATE_FEZ
 				count = 1
 			}
 
