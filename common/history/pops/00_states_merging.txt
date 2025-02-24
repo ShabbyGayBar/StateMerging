@@ -14223,7 +14223,7 @@
             }
         }
     }
-    s:STATE_LAOS = {
+    s:STATE_CAMBODIA = {
         region_state:LUA = {
             create_pop = {
                 culture = lao

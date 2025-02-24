@@ -33932,7 +33932,7 @@
             }
         }
     }
-    s:STATE_LAOS = {
+    s:STATE_CAMBODIA = {
         region_state:LUA = {
             create_building = {
                 building = "building_opium_plantation"
@@ -33941,7 +33941,7 @@
                         type = "building_manor_house"
                         country = "c:LUA"
                         levels = 2
-                        region = "STATE_LAOS"
+                        region = "STATE_CAMBODIA"
                     }
                 }
                 reserves = 1
@@ -33972,7 +33972,7 @@
                         type = "building_manor_house"
                         country = "c:SIA"
                         levels = 1
-                        region = "STATE_LAOS"
+                        region = "STATE_CAMBODIA"
                     }
                 }
                 reserves = 1
@@ -34001,7 +34001,7 @@
                         type = "building_manor_house"
                         country = "c:SIA"
                         levels = 1
-                        region = "STATE_LAOS"
+                        region = "STATE_CAMBODIA"
                     }
                 }
                 reserves = 1
@@ -34038,7 +34038,7 @@
                         type = "building_manor_house"
                         country = "c:CAM"
                         levels = 1
-                        region = "STATE_LAOS"
+                        region = "STATE_CAMBODIA"
                     }
                 }
                 reserves = 1
@@ -34055,7 +34055,7 @@
                         type = "building_manor_house"
                         country = "c:CAM"
                         levels = 1
-                        region = "STATE_LAOS"
+                        region = "STATE_CAMBODIA"
                     }
                 }
                 reserves = 1

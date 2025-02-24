@@ -1782,7 +1782,7 @@ CAM = {
 	tier = kingdom
 	
 	cultures = { khmer }
-	capital = STATE_LAOS
+	capital = STATE_CAMBODIA
 }
 
 CHI = {
@@ -1840,7 +1840,7 @@ LAO = {
 	tier = kingdom
 	
 	cultures = { lao }
-	capital = STATE_LAOS
+	capital = STATE_CAMBODIA
 	is_named_from_capital = yes
 }
 
@@ -1852,7 +1852,7 @@ LUA = {
 	tier = principality
 	
 	cultures = { lao }
-	capital = STATE_LAOS
+	capital = STATE_CAMBODIA
 	
 }
 
@@ -1864,7 +1864,7 @@ CHP = {
 	tier = principality
 	
 	cultures = { lao }
-	capital = STATE_LAOS
+	capital = STATE_CAMBODIA
 }
 
 VIE = {
@@ -1875,7 +1875,7 @@ VIE = {
 	tier = principality
 	
 	cultures = { lao }
-	capital = STATE_LAOS
+	capital = STATE_CAMBODIA
 }
 
 JOH = {
@@ -2955,7 +2955,7 @@ KHM = { # Khmu
 	
 	cultures = { khmu }
 	
-	capital = STATE_LAOS
+	capital = STATE_CAMBODIA
 }
 
 KHN = { # Kachin

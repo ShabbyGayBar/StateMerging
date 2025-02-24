@@ -500,7 +500,7 @@ KOR = {
 }
 
 LAO = {
-	states = { STATE_LAOS }
+	states = { STATE_CAMBODIA }
 	
 	required_num_states = 1
 
@@ -508,7 +508,7 @@ LAO = {
 }
 
 VIE = {
-	states = { STATE_LAOS }
+	states = { STATE_CAMBODIA }
 	
 	ai_will_do = { always = no }
 }
@@ -2053,7 +2053,7 @@ KRN = {
 
 KHM = {
 	states = {
-		STATE_LAOS
+		STATE_CAMBODIA
 	}
 	ai_will_do = { always = no }
 }
