@@ -21,32 +21,33 @@ Merged states WILL LOSE THEIR CITY & BUILDING MODELS.
 
 Merged states WILL LOSE THEIR STATE ID, which may cause problems with certain journal entries and such. please report issues when you encounter them.
 
+## Currently Merged States
+![Currently Merged States](figures/Merge_States_current.png)
+
+Please refer to [merge_states.json](merge_states.json) for all the changes in states.
+
+The keys of the json are the state id of the existing states in the mod, and the values are lists of state ids in vanilla game that will be merged into the key state.
+
 ## How to install
 
 - Subscribe to the mod on [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3371693463).
 or
-- Download the mod zip file and extract it to your Victoria 3 mod folder (typically located at `Documents\Paradox Interactive\Victoria 3\mod`).
+- Download the mod zip file from the [release page](https://github.com/ShabbyGayBar/StateMerging/releases) and extract it to your Victoria 3 mod folder (typically located at `Documents\Paradox Interactive\Victoria 3\mod`).
 
 ## Which states will be merged
 
 The following criteria are sorted by significance:
 
 - **Province Numbers**: 
-  - Any state with provinces less than 10 shall be merged.
-  - States with 10-20 provinces will be considered for merging.
-  - States with <5 provinces won't be counted as a state when giving buffs.
+  - Any state with provinces less than 8 shall be merged.
+  - States with 8-20 provinces will be considered for merging.
+  - States with <4 provinces won't be counted as a state when giving buffs.
 
-- **Historical & cultural ties**
-  - States that belong to different nations today will not be merged unless the above conditions are met.
-  - States with similar cultural homelands are more likely to be merged.
+- **Historical & geographical ties**
+  - States with similar cultural homelands and state traits are more likely to be merged.
+  - States that belong to different nations today are less likely to be merged.
 
 - **Aesthetics**
-
-### Currently Merged States
-![Currently Merged States](figures/Merge_States_current.png)
-
-### Future Plan
-![Future Plan](figures/Merge_States_objective.png)
 
 ## Feedback
 
@@ -64,12 +65,6 @@ There are multiple ways to give suggestions on the state merging plan, the follo
 - Post the map you draw on my [paradox forum post](https://forum.paradoxplaza.com/forum/threads/brainstorm-tell-us-about-your-ideal-state-merging-plan.1726629/) .
 - Post the map you draw on my [tieba post](https://tieba.baidu.com/p/9433803383?) .
 - Leave a comment on the Steam Workshop page.
-
-## Changelog
-
-Please refer to [merge_states.json](merge_states.json) for all the changes in states.
-
-The keys of the json are the state id of the existing states in the mod, and the values are lists of state ids in vanilla game that will be merged into the key state.
 
 ## Compatability
 
@@ -98,7 +93,7 @@ Incompatible with anything that modifies
 - game\common\scripted_effects
 - game\common\scripted_triggers
 - game\events
-- game\localization
+- game\localization\LANGUANGE\map
 
 </details>
 

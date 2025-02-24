@@ -18,6 +18,13 @@
 
 另外，buff 是按被合并的州的数量给的，但是因为有些州实在太小了，我认为它们本来就不应该算一个州，所以给 buff 时没有计入。
 
+## 当前已经合并的省份
+![Currently Merged States](figures/Merge_States_current.png)
+
+所有对省份的改动请参照 [merge_states.json](merge_states.json)。
+
+其中，每个键代表了 Mod 中存在的省份代码，对应的值代表了要合并到这个省份的原版省份代码。
+
 ## 安装方法
 
 - 在 [Steam 创意工坊](https://steamcommunity.com/sharedfiles/filedetails/?id=3371693463) 订阅本 Mod。
@@ -29,21 +36,15 @@
 以下标准按照重要性排序：
 
 - **地块数目**
-  - 任何地块数目小于 10 的州都会被合并。
-  - 地块数目在 10-20 之间的州，如果没有后面因素的支撑，大概率会被合并。
-  - 地块数目小于 5 的州被合并时不会被计入 buff。
+  - 任何地块数目小于 8 的州都会被合并。
+  - 地块数目在 8-20 之间的州，如果没有后面因素的支撑，大概率会被合并。
+  - 地块数目小于 4 的州被合并时不会被计入 buff。
 
-- **历史渊源和文化**
-  - 今天分属不同国家的省份不会被合并，除非满足上面提到的条件。
-  - 文化本土特质相同的省份更有倾向被合并。
+- **历史渊源和地理特质**
+  - 文化本土和省份特质相同的省份更有倾向被合并。
+  - 今天分属不同国家的省份被合并的可能性更小。
 
 - **美观度**
-
-### 当前已经合并的省份
-![Currently Merged States](figures/Merge_States_current.png)
-
-### 未来将要合并的省份
-![Future Plan](figures/Merge_States_objective.png)
 
 ## 提交反馈
 
@@ -61,12 +62,6 @@
 - 在我的 [paradox 论坛帖子](https://forum.paradoxplaza.com/forum/threads/brainstorm-tell-us-about-your-ideal-state-merging-plan.1726629/) 上发布您绘制的地图。
 - 在我的 [贴吧帖子](https://tieba.baidu.com/p/9433803383?) 上发布您绘制的地图。
 - 在 Steam 创意工坊页面上留言。
-
-## 改动说明
-
-所有对省份的改动请参照 [merge_states.json](merge_states.json)。
-
-其中，每个键代表了 Mod 中存在的省份代码，对应的值代表了要合并到这个省份的原版省份代码。
 
 ## 兼容性：
 
@@ -97,7 +92,7 @@
 - game\common\scripted_effects
 - game\common\scripted_triggers
 - game\events
-- game\localization
+- game\localization\LANGUANGE\map
 
 </details>
 
