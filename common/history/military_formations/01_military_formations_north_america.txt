@@ -7,13 +7,13 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_KENTUCKY
+				state_region = s:STATE_TENNESSEE
 				count = 1
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_DISTRICT_OF_COLUMBIA
+				state_region = s:STATE_NORTH_CAROLINA
 				count = 1
 			}
 		}
@@ -37,7 +37,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_KENTUCKY
+				state_region = s:STATE_TENNESSEE
 				count = 1
 			}
 
@@ -55,7 +55,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_DISTRICT_OF_COLUMBIA
+				state_region = s:STATE_NORTH_CAROLINA
 				count = 1
 			}
 
@@ -88,7 +88,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_FLORIDA
+				state_region = s:STATE_MISSISSIPPI
 				count = 1
 			}
 
@@ -130,13 +130,13 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_DISTRICT_OF_COLUMBIA
+				state_region = s:STATE_NORTH_CAROLINA
 				count = 1
 			}
 
 			combat_unit = { # Ahistorical
 				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_DISTRICT_OF_COLUMBIA
+				state_region = s:STATE_NORTH_CAROLINA
 				count = 2
 			}
 
@@ -274,13 +274,13 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_MEXICO
+				state_region = s:STATE_YUCATAN
 				count = 1
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_MEXICO
+				state_region = s:STATE_JALISCO
 				count = 1
 			}
 			save_scope_as = operaciones_army
@@ -323,19 +323,19 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_MEXICO
-				count = 1
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_JALISCO
 				count = 1
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_hussars
+				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_MEXICO
+				count = 1
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_hussars
+				state_region = s:STATE_JALISCO
 				count = 1
 			}
 		}
@@ -347,7 +347,7 @@
 
 			combat_unit = { # Libertad
 				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_MEXICO
+				state_region = s:STATE_YUCATAN
 				count = 1
 			}
 		}

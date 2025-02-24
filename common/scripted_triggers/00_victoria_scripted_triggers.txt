@@ -531,7 +531,7 @@ country_is_in_india = {
 		capital.region = sr:region_bengal
 		capital.region = sr:region_bombay
 		capital.region = sr:region_madras
-		capital.state_region = s:STATE_QUETTA
+		capital.state_region = s:STATE_PASHTUNISTAN
 		capital.state_region = s:STATE_PASHTUNISTAN
 		capital.state_region = s:STATE_KASHMIR
 	}

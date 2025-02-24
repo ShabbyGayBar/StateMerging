@@ -86,7 +86,7 @@ je_sick_man_syria = {
 		s:STATE_UPPER_EGYPT = {
 			add_claim = ROOT
 		}
-		s:STATE_MIDDLE_EGYPT = {
+		s:STATE_UPPER_EGYPT = {
 			add_claim = ROOT
 		}
 		s:STATE_LOWER_EGYPT = {
@@ -104,7 +104,7 @@ je_sick_man_syria = {
 					AND = {
 						owns_entire_state_region = STATE_SINAI
 						owns_entire_state_region = STATE_UPPER_EGYPT
-						owns_entire_state_region = STATE_MIDDLE_EGYPT
+						owns_entire_state_region = STATE_UPPER_EGYPT
 						owns_entire_state_region = STATE_LOWER_EGYPT
 					}
 				}
@@ -159,7 +159,7 @@ je_sick_man_egypt = {
 			AND = {
 				owns_entire_state_region = STATE_SINAI
 				owns_entire_state_region = STATE_UPPER_EGYPT
-				owns_entire_state_region = STATE_MIDDLE_EGYPT
+				owns_entire_state_region = STATE_UPPER_EGYPT
 				owns_entire_state_region = STATE_LOWER_EGYPT
 			}
 		}

@@ -264,14 +264,14 @@ company_ford_motor = {
 	attainable = {
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
 			any_scope_state = {
-				state_region = s:STATE_OHIO
+				state_region = s:STATE_MICHIGAN
 			}
 		}
 	}	
 	
 	possible = {
 		any_scope_state = {
-			state_region = s:STATE_OHIO
+			state_region = s:STATE_MICHIGAN
 			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_motor_industry

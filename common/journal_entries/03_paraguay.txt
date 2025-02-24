@@ -110,12 +110,12 @@ je_expanding_paraguay = {
     }
 
     complete = {
-        owns_entire_state_region = STATE_BUENOS_AIRES
+        owns_entire_state_region = STATE_SANTA_FE
         OR = {
-            country_or_subject_owns_entire_state_region = STATE_URUGUAY
-            country_or_subject_owns_entire_state_region = STATE_BUENOS_AIRES
+            country_or_subject_owns_entire_state_region = STATE_SANTA_FE
+            country_or_subject_owns_entire_state_region = STATE_SANTA_FE
             country_or_subject_owns_entire_state_region = STATE_SAO_PAULO
-            country_or_subject_owns_entire_state_region = STATE_URUGUAY
+            country_or_subject_owns_entire_state_region = STATE_RIO_GRANDE_DO_SUL
         }
     }
 
@@ -318,9 +318,9 @@ je_paraguayan_war = {
                 }
                 c:PRG = {
                     NOT = {
-                        has_state_in_state_region = STATE_AMAZONAS
-                        has_state_in_state_region = STATE_BUENOS_AIRES
-                        has_state_in_state_region = STATE_LA_PAMPA
+                        has_state_in_state_region = STATE_MATO_GROSSO
+                        has_state_in_state_region = STATE_SANTA_FE
+                        has_state_in_state_region = STATE_CHACO
                     }
                 }
             }
@@ -347,12 +347,12 @@ je_paraguayan_war = {
             has_variable = recently_lost_war
         }
         c:PRG ?= {
-            has_state_in_state_region = STATE_BUENOS_AIRES
+            has_state_in_state_region = STATE_SANTA_FE
             OR = {
-                country_or_subject_owns_entire_state_region = STATE_URUGUAY
-                country_or_subject_owns_entire_state_region = STATE_BUENOS_AIRES
+                country_or_subject_owns_entire_state_region = STATE_SANTA_FE
+                country_or_subject_owns_entire_state_region = STATE_SANTA_FE
                 country_or_subject_owns_entire_state_region = STATE_SAO_PAULO
-                country_or_subject_owns_entire_state_region = STATE_URUGUAY
+                country_or_subject_owns_entire_state_region = STATE_RIO_GRANDE_DO_SUL
             }
         }
     }
@@ -377,11 +377,11 @@ je_paraguayan_war = {
                 target = {
                     any_scope_state = {
                         OR = {
-                            state_region = s:STATE_BUENOS_AIRES
-                            state_region = s:STATE_URUGUAY
-                            state_region = s:STATE_BUENOS_AIRES
+                            state_region = s:STATE_SANTA_FE
+                            state_region = s:STATE_SANTA_FE
+                            state_region = s:STATE_SANTA_FE
                             state_region = s:STATE_SAO_PAULO
-                            state_region = s:STATE_URUGUAY
+                            state_region = s:STATE_RIO_GRANDE_DO_SUL
                         }
                     }
                     root = {

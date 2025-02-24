@@ -1273,7 +1273,7 @@ meiji.9 = {
 # Shi-gakkō
 meiji.10 = {
 	type = country_event
-	placement = s:STATE_KANSAI.region_state:JAP
+	placement = s:STATE_KYUSHU.region_state:JAP
 	title = meiji.10.t
 	desc = meiji.10.d
 	flavor = meiji.10.f
@@ -1290,8 +1290,8 @@ meiji.10 = {
 
 	trigger = {
 		NOT = { has_variable = shi_gakko_event }
-		exists = s:STATE_KANSAI.region_state:JAP
-		s:STATE_KANSAI.region_state:JAP = {
+		exists = s:STATE_KYUSHU.region_state:JAP
+		s:STATE_KYUSHU.region_state:JAP = {
 			has_building = building_barracks
 		}
 		ig:ig_armed_forces = {
@@ -1301,7 +1301,7 @@ meiji.10 = {
 
 	immediate = {
 		set_variable = shi_gakko_event
-		s:STATE_KANSAI.region_state:JAP = {
+		s:STATE_KYUSHU.region_state:JAP = {
 			save_scope_as = kyushu_state
 		}
 		ig:ig_armed_forces = {
@@ -1311,7 +1311,7 @@ meiji.10 = {
 
 	option = {
 		name = meiji.10.a
-		s:STATE_KANSAI.region_state:JAP = {
+		s:STATE_KYUSHU.region_state:JAP = {
 			add_modifier = {
 				name = shi_gakko
 				months = normal_modifier_time

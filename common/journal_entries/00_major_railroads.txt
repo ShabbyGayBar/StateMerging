@@ -28,17 +28,17 @@
 			filter = {
 				OR = {
 					state_region = s:STATE_MOSCOW
-					state_region = s:STATE_MOSCOW
-					state_region = s:STATE_MOSCOW
+					state_region = s:STATE_YAROSLAVL
+					state_region = s:STATE_YAROSLAVL
 					state_region = s:STATE_KAZAN
 					state_region = s:STATE_KAZAN
-					state_region = s:STATE_KAZAN
-					state_region = s:STATE_URAL
+					state_region = s:STATE_PERM
 					state_region = s:STATE_URAL
 					state_region = s:STATE_URAL
 					state_region = s:STATE_TOMSK
 					state_region = s:STATE_TOMSK
-					state_region = s:STATE_TRANS_BAIKAL
+					state_region = s:STATE_IRKUTSK
+					state_region = s:STATE_IRKUTSK
 					state_region = s:STATE_TRANS_BAIKAL
 					state_region = s:STATE_TRANS_BAIKAL
 				}
@@ -104,11 +104,11 @@ je_trans_continental_railway = {
 			has_building = building_railway
 		}
 		any_scope_state = {
-			state_region = s:STATE_COLORADO
+			state_region = s:STATE_WYOMING
 			has_building = building_railway
 		}
 		any_scope_state = {
-			state_region = s:STATE_CALIFORNIA
+			state_region = s:STATE_UTAH
 			has_building = building_railway
 		}
 		any_scope_state = {

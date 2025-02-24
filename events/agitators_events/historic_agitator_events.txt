@@ -1226,7 +1226,7 @@ historical_agitators.13 = { #Dabrowski
 		has_dlc_feature = voice_of_the_people_content
 		empty_agitator_slots >= 1
 		any_scope_state = {
-			state_region = s:STATE_VOLHYNIA
+			state_region = s:STATE_EAST_GALICIA
 		}
 		game_date > 1862.1.1
 		game_date < 1896.1.1
@@ -1250,7 +1250,7 @@ historical_agitators.13 = { #Dabrowski
 		set_global_variable = dabrowski_spawn
 		random_scope_state = {
 			limit = {
-				state_region = s:STATE_VOLHYNIA
+				state_region = s:STATE_EAST_GALICIA
 			}
 			save_scope_as = dabrowski_state
 		}
@@ -1409,7 +1409,7 @@ historical_agitators.15 = { #Luxemburg
 		has_dlc_feature = voice_of_the_people_content
 		empty_agitator_slots >= 1
 		any_scope_state = {
-			state_region = s:STATE_GREATER_POLAND
+			state_region = s:STATE_WEST_GALICIA
 		}
 		game_date > 1889.1.1
 		has_technology_researched = socialism
@@ -1433,7 +1433,7 @@ historical_agitators.15 = { #Luxemburg
 		set_global_variable = luxemburg_spawn
 		random_scope_state = {
 			limit = {
-				state_region = s:STATE_GREATER_POLAND
+				state_region = s:STATE_WEST_GALICIA
 			}
 			save_scope_as = poland_scope
 		}

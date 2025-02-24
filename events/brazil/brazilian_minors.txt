@@ -25,11 +25,11 @@ brazilian_minors.1 = {
 		create_country = {
 			tag = CTR
 			origin = c:BIC
-			state = s:STATE_SAO_PAULO.region_state:PNI
+			state = s:STATE_RIO_GRANDE_DO_SUL.region_state:PNI
 		}
 		random_state = {
 			limit = {
-				state_region = s:STATE_SAO_PAULO
+				state_region = s:STATE_RIO_GRANDE_DO_SUL
 			}
 			save_scope_as = santa_catarina_state_scope
 		}
@@ -393,13 +393,13 @@ brazilian_minors.3 = {
 	immediate = {
 		random_scope_state = {
 			limit = {
-				state_region = s:STATE_URUGUAY
+				state_region = s:STATE_RIO_GRANDE_DO_SUL
 			}
 			save_scope_as = rio_grande_state_scope
 		}
 		random_scope_state = {
 			limit = {
-				state_region = s:STATE_SAO_PAULO
+				state_region = s:STATE_RIO_GRANDE_DO_SUL
 			}
 			save_scope_as = santa_catarina_state_scope
 		}

@@ -43,7 +43,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_SAO_PAULO
+				state_region = s:STATE_RIO_GRANDE_DO_SUL
 				count = 3
 			}
 
@@ -161,7 +161,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_LA_PAMPA
+				state_region = s:STATE_RIO_NEGRO
 				count = 2
 			}
 
@@ -231,25 +231,25 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_URUGUAY
+				state_region = s:STATE_RIO_GRANDE_DO_SUL
 				count = 3
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_cuirassiers
-				state_region = s:STATE_URUGUAY
+				state_region = s:STATE_RIO_GRANDE_DO_SUL
 				count = 1
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_URUGUAY
+				state_region = s:STATE_RIO_GRANDE_DO_SUL
 				count = 1
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_URUGUAY
+				state_region = s:STATE_RIO_GRANDE_DO_SUL
 				count = 4
 			}
 		}
@@ -365,13 +365,13 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_URUGUAY
+				state_region = s:STATE_SANTA_FE
 				count = 3
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_cuirassiers
-				state_region = s:STATE_URUGUAY
+				state_region = s:STATE_SANTA_FE
 				count = 1
 			}
 		}

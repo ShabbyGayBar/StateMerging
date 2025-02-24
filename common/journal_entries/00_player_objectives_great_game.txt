@@ -647,10 +647,10 @@ je_codify_chinese_border = {
         s:STATE_OUTER_MANCHURIA = {
             save_scope_as = primorye_scope
         }
-        s:STATE_SYRDARYA = {
+        s:STATE_SEMIRECHE = {
             save_scope_as = jetisy_scope
         }
-        s:STATE_TOMSK = {
+        s:STATE_TUVA = {
             save_scope_as = altai_scope
         }
     }
@@ -658,8 +658,8 @@ je_codify_chinese_border = {
 	complete = {
         owns_entire_state_region = STATE_OUTER_MANCHURIA
         owns_entire_state_region = STATE_OUTER_MANCHURIA
-        owns_entire_state_region = STATE_SYRDARYA
-        owns_entire_state_region = STATE_TOMSK
+        owns_entire_state_region = STATE_SEMIRECHE
+        owns_entire_state_region = STATE_TUVA
         NOT = {
             custom_tooltip = {
                 text = china_doesnt_have_claim_tt
@@ -670,8 +670,8 @@ je_codify_chinese_border = {
                     OR = {
                         has_claim = s:STATE_OUTER_MANCHURIA
                         has_claim = s:STATE_OUTER_MANCHURIA
-                        has_claim = s:STATE_SYRDARYA
-                        has_claim = s:STATE_TOMSK
+                        has_claim = s:STATE_SEMIRECHE
+                        has_claim = s:STATE_TUVA
                     }
                 }
             }
@@ -704,9 +704,9 @@ je_consolidate_central_asia = {
             filter = {
                 OR = {
                     state_region = s:STATE_AKMOLINSK
-                    state_region = s:STATE_AKMOLINSK
-                    state_region = s:STATE_AKMOLINSK
-                    state_region = s:STATE_SYRDARYA
+                    state_region = s:STATE_URALSK
+                    state_region = s:STATE_URALSK
+                    state_region = s:STATE_SEMIRECHE
                     state_region = s:STATE_FERGANA
                     state_region = s:STATE_UZBEKIA
                     state_region = s:STATE_KHIVA
@@ -1469,15 +1469,15 @@ je_secure_influence_over_persia = {
 			}
 		}
 		country_or_subject_owns_entire_state_region = STATE_IRAKAJEMI
-		country_or_subject_owns_entire_state_region = STATE_IRAKAJEMI
+		country_or_subject_owns_entire_state_region = STATE_TABRIZ
 		country_or_subject_owns_entire_state_region = STATE_LARISTAN
 		OR = {
 			any_scope_state = {
-				state_region = s:STATE_LURISTAN
+				state_region = s:STATE_KHUZESTAN
 			}
 			any_subject_or_below = {
 				any_scope_state = {
-					state_region = s:STATE_LURISTAN
+					state_region = s:STATE_KHUZESTAN
 				}
 			}
 		}
@@ -1646,7 +1646,7 @@ je_consolidate_persia = {
 
 	complete = {
 		any_scope_state = {
-			state_region = s:STATE_LURISTAN
+			state_region = s:STATE_KHUZESTAN
 			is_split_state = no
 			is_incorporated = yes
 		}

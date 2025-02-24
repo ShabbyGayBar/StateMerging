@@ -224,7 +224,7 @@ PEU_francisco_xavier_de_luna_pizarro = { # Francisco Xavier de Luna Pizarro Pach
 				country_has_primary_culture = cu:peruvian
 			}
 			any_scope_state = {
-				state_region = s:STATE_LIMA
+				state_region = s:STATE_ICA
 				is_incorporated = yes
 			}
 			has_dlc_feature = rp1_content
@@ -373,7 +373,7 @@ PEU_domingo_elias = { # Domingo Elías Carbajo
 				country_has_primary_culture = cu:peruvian
 			}
 			any_scope_state = {
-				state_region = s:STATE_LIMA
+				state_region = s:STATE_ICA
 				is_incorporated = yes
 			}
 			has_dlc_feature = rp1_content
@@ -486,7 +486,7 @@ PEU_nicolas_de_pierola = { # José Nicolás Baltazar Fernández de Piérola y Vi
 				country_has_primary_culture = cu:peruvian
 			}
 			any_scope_state = {
-				state_region = s:STATE_LIMA
+				state_region = s:STATE_ICA
 				is_incorporated = yes
 			}
 			has_dlc_feature = rp1_content
@@ -673,7 +673,7 @@ PEU_guillermo_billinghurst = { # Guillermo Enrique Billinghurst Angulo
 				country_has_primary_culture = cu:peruvian
 			}
 			any_scope_state = {
-				state_region = s:STATE_LIMA
+				state_region = s:STATE_ANTOFAGASTA
 				is_incorporated = yes
 			}
 			has_dlc_feature = rp1_content
@@ -748,7 +748,7 @@ PEU_emilio_lisson = { # Emilio Lisson
 				country_has_primary_culture = cu:peruvian
 			}
 			any_scope_state = {
-				state_region = s:STATE_LIMA
+				state_region = s:STATE_ICA
 				is_incorporated = yes
 			}
 			has_dlc_feature = rp1_content
@@ -788,7 +788,7 @@ PEU_ramon_castilla = { # Ramón Castilla y Marquesado
 				country_has_primary_culture = cu:peruvian
 			}
 			any_scope_state = {
-				state_region = s:STATE_LIMA
+				state_region = s:STATE_ANTOFAGASTA
 				is_incorporated = yes
 			}
 			NOR = { # Anti-Confederation
@@ -941,7 +941,7 @@ PEU_antonio_gutierrez_de_la_fuente = { # Antonio Gutiérrez de la Fuente
 				country_has_primary_culture = cu:peruvian
 			}
 			any_scope_state = {
-				state_region = s:STATE_LIMA
+				state_region = s:STATE_ANTOFAGASTA
 				is_incorporated = yes
 			}
 			has_dlc_feature = rp1_content
@@ -977,7 +977,7 @@ PEU_jose_rufino_echenique = { # José Rufino Pompeyo Echenique Benavente
 				country_has_primary_culture = cu:peruvian
 			}
 			any_scope_state = {
-				state_region = s:STATE_LIMA
+				state_region = s:STATE_ICA
 				is_incorporated = yes
 			}
 			has_dlc_feature = rp1_content
@@ -1013,7 +1013,7 @@ PEU_miguel_de_san_roman = { # Miguel de San Román y Meza
 				country_has_primary_culture = cu:peruvian
 			}
 			any_scope_state = {
-				state_region = s:STATE_LIMA
+				state_region = s:STATE_ICA
 				is_incorporated = yes
 			}
 			has_dlc_feature = rp1_content
@@ -1084,7 +1084,7 @@ PEU_andres_avelino_caceres = { # Andrés Avelino Cáceres Dorregaray
 				country_has_primary_culture = cu:peruvian
 			}
 			any_scope_state = {
-				state_region = s:STATE_LIMA
+				state_region = s:STATE_ICA
 				is_incorporated = yes
 			}
 			has_dlc_feature = rp1_content

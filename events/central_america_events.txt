@@ -90,23 +90,23 @@ central_america.2 = {
 			}
 			c:GUA = { save_scope_as = scope_GAU }
 			#if = {
-			#	limit = { exists = s:STATE_YUCATAN.region_state:UCA }
-			#	s:STATE_YUCATAN.region_state:UCA = { set_state_owner = c:GUA }
+			#	limit = { exists = s:STATE_JALISCO.region_state:UCA }
+			#	s:STATE_JALISCO.region_state:UCA = { set_state_owner = c:GUA }
 			#}
 		}
 		# Los Altos, greatest of all central american nations
 		if = {
 			limit = {
 				NOT = { exists = c:ALT }
-				exists = s:STATE_YUCATAN.region_state:UCA
-				s:STATE_YUCATAN.region_state:UCA = {
+				exists = s:STATE_JALISCO.region_state:UCA
+				s:STATE_JALISCO.region_state:UCA = {
 					is_capital = no
 				}
 			}
 			create_country = {
 				tag = ALT
 				origin = this
-				state = s:STATE_YUCATAN.region_state:UCA
+				state = s:STATE_JALISCO.region_state:UCA
 				on_created = {
 					set_variable = ca_secession_country
 				}
@@ -231,7 +231,7 @@ central_america.2 = {
 			limit = {
 				NOT = { exists = c:ALT }
 				capital = {
-					state_region = s:STATE_YUCATAN
+					state_region = s:STATE_JALISCO
 				}
 			}
 			change_tag = ALT

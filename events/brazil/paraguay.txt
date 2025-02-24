@@ -990,11 +990,11 @@ paraguay.11 = {
 				target = {
 					any_scope_state = {
 						OR = {
-							state_region = s:STATE_BUENOS_AIRES
-				            state_region = s:STATE_URUGUAY
-				            state_region = s:STATE_BUENOS_AIRES
+							state_region = s:STATE_SANTA_FE
+				            state_region = s:STATE_SANTA_FE
+				            state_region = s:STATE_SANTA_FE
 				            state_region = s:STATE_SAO_PAULO
-				            state_region = s:STATE_URUGUAY
+				            state_region = s:STATE_RIO_GRANDE_DO_SUL
 						}
 					}
 				}
@@ -1021,11 +1021,11 @@ paraguay.11 = {
 					target = {
 						any_scope_state = {
 							OR = {
-								state_region = s:STATE_BUENOS_AIRES
-					            state_region = s:STATE_URUGUAY
-					            state_region = s:STATE_BUENOS_AIRES
+								state_region = s:STATE_SANTA_FE
+					            state_region = s:STATE_SANTA_FE
+					            state_region = s:STATE_SANTA_FE
 					            state_region = s:STATE_SAO_PAULO
-					            state_region = s:STATE_URUGUAY
+					            state_region = s:STATE_RIO_GRANDE_DO_SUL
 							}
 						}
 					}
@@ -1083,7 +1083,7 @@ paraguay.12 = {
 		name = paraguay.12.a
 		default_option = yes
 		add_journal_entry = { type = je_expanding_paraguay }
-		s:STATE_BUENOS_AIRES = { 
+		s:STATE_SANTA_FE = { 
 			if = {
 				limit = {
 					any_scope_state = {

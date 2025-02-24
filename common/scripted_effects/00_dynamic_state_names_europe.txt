@@ -12,7 +12,7 @@ assign_state_name_region_dnieper  = {
 	if = {
         limit = {
             state_region = {
-                s:STATE_VOLHYNIA ?= this
+                s:STATE_EAST_GALICIA ?= this
             }
         }
         STATE_VOLHYNIA_state_name_assign = yes
@@ -36,7 +36,7 @@ assign_state_name_region_dnieper  = {
 	if = {
         limit = {
             state_region = {
-                s:STATE_KHARKOV ?= this
+                s:STATE_CRIMEA ?= this
             }
         }
         STATE_TAURIDA_state_name_assign = yes
@@ -44,7 +44,7 @@ assign_state_name_region_dnieper  = {
 	if = {
         limit = {
             state_region = {
-                s:STATE_KHARKOV ?= this
+                s:STATE_CRIMEA ?= this
             }
         }
         STATE_CRIMEA_state_name_assign = yes
@@ -52,7 +52,7 @@ assign_state_name_region_dnieper  = {
 	if = {
         limit = {
             state_region = {
-                s:STATE_KIEV ?= this
+                s:STATE_KHARKOV ?= this
             }
         }
         STATE_CHERNIHIV_state_name_assign = yes
@@ -116,7 +116,7 @@ assign_state_name_region_poland  = {
 	if = {
         limit = {
             state_region = {
-                s:STATE_GREATER_POLAND ?= this
+                s:STATE_WEST_GALICIA ?= this
             }
         }
         STATE_LESSER_POLAND_state_name_assign = yes
@@ -140,7 +140,7 @@ assign_state_name_region_poland  = {
 	if = {
         limit = {
             state_region = {
-                s:STATE_WEST_GALICIA ?= this
+                s:STATE_EAST_GALICIA ?= this
             }
         }
         STATE_EAST_GALICIA_state_name_assign = yes
@@ -248,7 +248,7 @@ assign_state_name_region_balkans  = {
 	if = {
         limit = {
             state_region = {
-                s:STATE_SLOVENIA ?= this
+                s:STATE_CROATIA ?= this
             }
         }
         STATE_SLOVENIA_state_name_assign = yes
@@ -264,7 +264,7 @@ assign_state_name_region_balkans  = {
 	if = {
         limit = {
             state_region = {
-                s:STATE_SLAVONIA ?= this
+                s:STATE_CROATIA ?= this
             }
         }
         STATE_SLAVONIA_state_name_assign = yes
@@ -272,7 +272,7 @@ assign_state_name_region_balkans  = {
 	if = {
         limit = {
             state_region = {
-                s:STATE_BOSNIA ?= this
+                s:STATE_CROATIA ?= this
             }
         }
         STATE_BOSNIA_state_name_assign = yes
@@ -280,7 +280,7 @@ assign_state_name_region_balkans  = {
 	if = {
         limit = {
             state_region = {
-                s:STATE_DALMATIA ?= this
+                s:STATE_CROATIA ?= this
             }
         }
         STATE_DALMATIA_state_name_assign = yes
@@ -288,7 +288,7 @@ assign_state_name_region_balkans  = {
 	if = {
         limit = {
             state_region = {
-                s:STATE_MONTENEGRO ?= this
+                s:STATE_NORTHERN_SERBIA ?= this
             }
         }
         STATE_MONTENEGRO_state_name_assign = yes
@@ -312,7 +312,7 @@ assign_state_name_region_balkans  = {
 	if = {
         limit = {
             state_region = {
-                s:STATE_MACEDONIA ?= this
+                s:STATE_ATTICA ?= this
             }
         }
         STATE_THESSALIA_state_name_assign = yes
@@ -320,7 +320,7 @@ assign_state_name_region_balkans  = {
 	if = {
         limit = {
             state_region = {
-                s:STATE_MACEDONIA ?= this
+                s:STATE_ATTICA ?= this
             }
         }
         STATE_MACEDONIA_state_name_assign = yes
@@ -328,7 +328,7 @@ assign_state_name_region_balkans  = {
 	if = {
         limit = {
             state_region = {
-                s:STATE_MACEDONIA ?= this
+                s:STATE_ATTICA ?= this
             }
         }
         STATE_WESTERN_THRACE_state_name_assign = yes
@@ -380,7 +380,7 @@ assign_state_name_region_italy  = {
 	if = {
         limit = {
             state_region = {
-                s:STATE_ISTRIA ?= this
+                s:STATE_CROATIA ?= this
             }
         }
         STATE_ISTRIA_state_name_assign = yes
@@ -456,7 +456,7 @@ assign_state_name_region_rhine  = { # region_rhine
     else_if = {
         limit = {
             state_region = {
-                s:STATE_RHINELAND ?= this
+                s:STATE_WESTPHALIA ?= this
             }
         }
         STATE_WESTPHALIA_state_name_assign = yes
@@ -485,7 +485,7 @@ assign_state_name_region_north_germany  = { # region_north_germany
     if = {
         limit = {
             state_region = {
-                s:STATE_RHINELAND ?= this
+                s:STATE_WESTPHALIA ?= this
             }
         }
         STATE_HESSE_state_name_assign = yes
@@ -501,7 +501,7 @@ assign_state_name_region_north_germany  = { # region_north_germany
     else_if = {
         limit = {
             state_region = {
-                s:STATE_HANNOVER ?= this
+                s:STATE_WESTPHALIA ?= this
             }
         }
         STATE_BRUNSWICK_state_name_assign = yes

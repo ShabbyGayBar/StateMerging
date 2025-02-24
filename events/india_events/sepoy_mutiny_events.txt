@@ -181,7 +181,7 @@ sepoy_mutiny_events.2 = {
 						capital.region = sr:region_punjab
 						capital.region = sr:region_central_india
 						capital.state_region = s:STATE_PASHTUNISTAN
-						capital.state_region = s:STATE_QUETTA
+						capital.state_region = s:STATE_PASHTUNISTAN
 					}				
 				}
 			}
@@ -197,7 +197,7 @@ sepoy_mutiny_events.2 = {
 							capital.region = sr:region_punjab
 							capital.region = sr:region_central_india
 							capital.state_region = s:STATE_PASHTUNISTAN
-							capital.state_region = s:STATE_QUETTA
+							capital.state_region = s:STATE_PASHTUNISTAN
 						}
 					}
 					make_independent = yes
@@ -218,7 +218,7 @@ sepoy_mutiny_events.2 = {
 						region = sr:region_madras
 						region = sr:region_himalayas
 						state_region = s:STATE_PASHTUNISTAN
-						state_region = s:STATE_QUETTA
+						state_region = s:STATE_PASHTUNISTAN
 					}
 				}
 			}
@@ -537,7 +537,7 @@ sepoy_mutiny_events.2 = {
 						region = sr:region_madras
 						region = sr:region_himalayas
 						state_region = s:STATE_PASHTUNISTAN
-						state_region = s:STATE_QUETTA
+						state_region = s:STATE_PASHTUNISTAN
 					}
 					any_neighbouring_state = {
 						owner = {
@@ -551,7 +551,7 @@ sepoy_mutiny_events.2 = {
 								capital.region = sr:region_punjab
 								capital.region = sr:region_central_india
 								capital.state_region = s:STATE_PASHTUNISTAN
-								capital.state_region = s:STATE_QUETTA
+								capital.state_region = s:STATE_PASHTUNISTAN
 							}				
 						}
 					}
@@ -569,7 +569,7 @@ sepoy_mutiny_events.2 = {
 						capital.region = sr:region_punjab
 						capital.region = sr:region_central_india
 						capital.state_region = s:STATE_PASHTUNISTAN
-						capital.state_region = s:STATE_QUETTA
+						capital.state_region = s:STATE_PASHTUNISTAN
 					}
 				}
 				save_scope_as = prince_scope
@@ -584,7 +584,7 @@ sepoy_mutiny_events.2 = {
 								region = sr:region_madras
 								region = sr:region_himalayas
 								state_region = s:STATE_PASHTUNISTAN
-								state_region = s:STATE_QUETTA
+								state_region = s:STATE_PASHTUNISTAN
 							}
 							any_neighbouring_state = {
 								scope:prince_scope ?= owner
@@ -637,7 +637,7 @@ sepoy_mutiny_events.2 = {
 						capital.region = sr:region_punjab
 						capital.region = sr:region_central_india
 						capital.state_region = s:STATE_PASHTUNISTAN
-						capital.state_region = s:STATE_QUETTA
+						capital.state_region = s:STATE_PASHTUNISTAN
 					}				
 				}
 			}
@@ -652,7 +652,7 @@ sepoy_mutiny_events.2 = {
 							capital.region = sr:region_punjab
 							capital.region = sr:region_central_india
 							capital.state_region = s:STATE_PASHTUNISTAN
-							capital.state_region = s:STATE_QUETTA
+							capital.state_region = s:STATE_PASHTUNISTAN
 						}
 					}
 					make_independent = yes
@@ -672,7 +672,7 @@ sepoy_mutiny_events.2 = {
 						region = sr:region_madras
 						region = sr:region_himalayas
 						state_region = s:STATE_PASHTUNISTAN
-						state_region = s:STATE_QUETTA
+						state_region = s:STATE_PASHTUNISTAN
 					}
 				}
 			}
@@ -990,7 +990,7 @@ sepoy_mutiny_events.2 = {
 						region = sr:region_madras
 						region = sr:region_himalayas
 						state_region = s:STATE_PASHTUNISTAN
-						state_region = s:STATE_QUETTA
+						state_region = s:STATE_PASHTUNISTAN
 					}
 					any_neighbouring_state = {
 						owner = {
@@ -1003,7 +1003,7 @@ sepoy_mutiny_events.2 = {
 								capital.region = sr:region_punjab
 								capital.region = sr:region_central_india
 								capital.state_region = s:STATE_PASHTUNISTAN
-								capital.state_region = s:STATE_QUETTA
+								capital.state_region = s:STATE_PASHTUNISTAN
 							}				
 						}
 					}
@@ -1020,7 +1020,7 @@ sepoy_mutiny_events.2 = {
 						capital.region = sr:region_punjab
 						capital.region = sr:region_central_india
 						capital.state_region = s:STATE_PASHTUNISTAN
-						capital.state_region = s:STATE_QUETTA
+						capital.state_region = s:STATE_PASHTUNISTAN
 					}
 				}
 				save_scope_as = prince_scope
@@ -1034,7 +1034,7 @@ sepoy_mutiny_events.2 = {
 								region = sr:region_madras
 								region = sr:region_himalayas
 								state_region = s:STATE_PASHTUNISTAN
-								state_region = s:STATE_QUETTA
+								state_region = s:STATE_PASHTUNISTAN
 							}
 							any_neighbouring_state = {
 								scope:prince_scope ?= owner
@@ -1081,7 +1081,7 @@ sepoy_mutiny_events.2 = {
 						capital.region = sr:region_punjab
 						capital.region = sr:region_central_india
 						capital.state_region = s:STATE_PASHTUNISTAN
-						capital.state_region = s:STATE_QUETTA
+						capital.state_region = s:STATE_PASHTUNISTAN
 					}				
 				}
 			}
@@ -1096,7 +1096,7 @@ sepoy_mutiny_events.2 = {
 							capital.region = sr:region_punjab
 							capital.region = sr:region_central_india
 							capital.state_region = s:STATE_PASHTUNISTAN
-							capital.state_region = s:STATE_QUETTA
+							capital.state_region = s:STATE_PASHTUNISTAN
 						}
 					}
 					make_independent = yes
@@ -1116,7 +1116,7 @@ sepoy_mutiny_events.2 = {
 						region = sr:region_bengal
 						region = sr:region_himalayas
 						state_region = s:STATE_PASHTUNISTAN
-						state_region = s:STATE_QUETTA
+						state_region = s:STATE_PASHTUNISTAN
 					}
 				}
 			}
@@ -1389,7 +1389,7 @@ sepoy_mutiny_events.2 = {
 						region = sr:region_bengal
 						region = sr:region_himalayas
 						state_region = s:STATE_PASHTUNISTAN
-						state_region = s:STATE_QUETTA
+						state_region = s:STATE_PASHTUNISTAN
 					}
 					any_neighbouring_state = {
 						owner = {
@@ -1402,7 +1402,7 @@ sepoy_mutiny_events.2 = {
 								capital.region = sr:region_punjab
 								capital.region = sr:region_central_india
 								capital.state_region = s:STATE_PASHTUNISTAN
-								capital.state_region = s:STATE_QUETTA
+								capital.state_region = s:STATE_PASHTUNISTAN
 							}				
 						}
 					}
@@ -1419,7 +1419,7 @@ sepoy_mutiny_events.2 = {
 						capital.region = sr:region_punjab
 						capital.region = sr:region_central_india
 						capital.state_region = s:STATE_PASHTUNISTAN
-						capital.state_region = s:STATE_QUETTA
+						capital.state_region = s:STATE_PASHTUNISTAN
 					}
 				}
 				save_scope_as = prince_scope
@@ -1433,7 +1433,7 @@ sepoy_mutiny_events.2 = {
 								region = sr:region_bengal
 								region = sr:region_himalayas
 								state_region = s:STATE_PASHTUNISTAN
-								state_region = s:STATE_QUETTA
+								state_region = s:STATE_PASHTUNISTAN
 							}
 							any_neighbouring_state = {
 								scope:prince_scope ?= owner
@@ -1480,7 +1480,7 @@ sepoy_mutiny_events.2 = {
 						capital.region = sr:region_punjab
 						capital.region = sr:region_central_india
 						capital.state_region = s:STATE_PASHTUNISTAN
-						capital.state_region = s:STATE_QUETTA
+						capital.state_region = s:STATE_PASHTUNISTAN
 					}				
 				}
 			}
@@ -1495,7 +1495,7 @@ sepoy_mutiny_events.2 = {
 							capital.region = sr:region_punjab
 							capital.region = sr:region_central_india
 							capital.state_region = s:STATE_PASHTUNISTAN
-							capital.state_region = s:STATE_QUETTA
+							capital.state_region = s:STATE_PASHTUNISTAN
 						}
 					}
 					make_independent = yes
@@ -1515,7 +1515,7 @@ sepoy_mutiny_events.2 = {
 						region = sr:region_bengal
 						region = sr:region_himalayas
 						state_region = s:STATE_PASHTUNISTAN
-						state_region = s:STATE_QUETTA
+						state_region = s:STATE_PASHTUNISTAN
 					}
 				}
 			}
@@ -1788,7 +1788,7 @@ sepoy_mutiny_events.2 = {
 						region = sr:region_bengal
 						region = sr:region_himalayas
 						state_region = s:STATE_PASHTUNISTAN
-						state_region = s:STATE_QUETTA
+						state_region = s:STATE_PASHTUNISTAN
 					}
 					any_neighbouring_state = {
 						owner = {
@@ -1801,7 +1801,7 @@ sepoy_mutiny_events.2 = {
 								capital.region = sr:region_punjab
 								capital.region = sr:region_central_india
 								capital.state_region = s:STATE_PASHTUNISTAN
-								capital.state_region = s:STATE_QUETTA
+								capital.state_region = s:STATE_PASHTUNISTAN
 							}				
 						}
 					}
@@ -1818,7 +1818,7 @@ sepoy_mutiny_events.2 = {
 						capital.region = sr:region_punjab
 						capital.region = sr:region_central_india
 						capital.state_region = s:STATE_PASHTUNISTAN
-						capital.state_region = s:STATE_QUETTA
+						capital.state_region = s:STATE_PASHTUNISTAN
 					}
 				}
 				save_scope_as = prince_scope
@@ -1832,7 +1832,7 @@ sepoy_mutiny_events.2 = {
 								region = sr:region_bengal
 								region = sr:region_himalayas
 								state_region = s:STATE_PASHTUNISTAN
-								state_region = s:STATE_QUETTA
+								state_region = s:STATE_PASHTUNISTAN
 							}
 							any_neighbouring_state = {
 								scope:prince_scope ?= owner

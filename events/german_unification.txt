@@ -393,7 +393,7 @@ immediate = {
 		limit = {
 			has_global_variable = bismarck_variable
 		}
-		s:STATE_KANSAS = {
+		s:STATE_SOUTH_DAKOTA = {
 			random_scope_state = {
 		        set_hub_name = {
 		            type = city

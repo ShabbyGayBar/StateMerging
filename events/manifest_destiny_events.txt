@@ -31,13 +31,13 @@ manifest_destiny.1 = {
 		s:STATE_CALIFORNIA = { 
 			add_homeland = cu:yankee
 		}
-		s:STATE_CALIFORNIA = { 
+		s:STATE_UTAH = { 
 			add_homeland = cu:yankee
 		}
-		s:STATE_CALIFORNIA = { 
+		s:STATE_ARIZONA = { 
 			add_homeland = cu:dixie
 		}
-		s:STATE_TEXAS = { 
+		s:STATE_ARIZONA = { 
 			add_homeland = cu:dixie
 		}
 	}
@@ -81,19 +81,19 @@ manifest_destiny.2 = {
 		s:STATE_TEXAS = { 
 			add_homeland = cu:dixie
 		}
-		s:STATE_COLORADO = { 
+		s:STATE_WYOMING = { 
 			add_homeland = cu:yankee
 		}
-		s:STATE_COLORADO = { 
+		s:STATE_WYOMING = { 
 			add_homeland = cu:yankee
 		}
-		s:STATE_COLORADO = { 
+		s:STATE_UTAH = { 
 			add_homeland = cu:yankee
 		}
-		s:STATE_KANSAS = { 
+		s:STATE_SOUTH_DAKOTA = { 
 			add_homeland = cu:yankee
 		}
-		s:STATE_KANSAS = { 
+		s:STATE_SOUTH_DAKOTA = { 
 			add_homeland = cu:yankee
 		}
 		s:STATE_KANSAS = { 

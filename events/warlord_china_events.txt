@@ -323,7 +323,7 @@ warlord_china_events.100 = { #Split china up into warlord states
 					warlord_setup_effect = yes
 					random_state = {
 						limit = {
-							state_region = s:STATE_URGA
+							state_region = s:STATE_ULIASTAI
 							c:CHI ?= owner
 						}
 						set_state_owner = c:MGL
@@ -334,11 +334,11 @@ warlord_china_events.100 = { #Split china up into warlord states
 		}
 
 		if = {
-			limit = { exists = s:STATE_TOMSK.region_state:CHI }
+			limit = { exists = s:STATE_TUVA.region_state:CHI }
 			create_country = {
 				tag = TUV
 				origin = this
-				state = s:STATE_TOMSK.region_state:CHI
+				state = s:STATE_TUVA.region_state:CHI
 
 				on_created = {
 					warlord_setup_effect = yes
@@ -348,11 +348,11 @@ warlord_china_events.100 = { #Split china up into warlord states
 		}
 
 		if = {
-			limit = { exists = s:STATE_TOMSK.region_state:CHI }
+			limit = { exists = s:STATE_TUVA.region_state:CHI }
 			create_country = {
 				tag = ALI
 				origin = this
-				state = s:STATE_TOMSK.region_state:CHI
+				state = s:STATE_TUVA.region_state:CHI
 
 				on_created = {
 					warlord_setup_effect = yes
