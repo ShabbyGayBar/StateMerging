@@ -33632,6 +33632,153 @@
             }
         }
     }
+    s:STATE_CAMBODIA = {
+        region_state:SIA = {
+            create_building = {
+                building = "building_tea_plantation"
+                add_ownership = {
+                    building = {
+                        type = "building_manor_house"
+                        country = "c:SIA"
+                        levels = 1
+                        region = "STATE_CAMBODIA"
+                    }
+                }
+                reserves = 1
+                activate_production_methods = {
+                    "default_building_tea_plantation"
+                    "pm_road_carts"
+                }
+            }
+            create_building = {
+                building = "building_barracks"
+                add_ownership = {
+                    country = {
+                        country = "c:SIA"
+                        levels = 10
+                    }
+                }
+                reserves = 1
+                activate_production_methods = {
+                    "pm_no_organization"
+                }
+            }
+            create_building = {
+                building = "building_angkor_wat"
+                level = 1
+            }
+            create_building = {
+                building = "building_opium_plantation"
+                add_ownership = {
+                    building = {
+                        type = "building_manor_house"
+                        country = "c:SIA"
+                        levels = 1
+                        region = "STATE_CAMBODIA"
+                    }
+                }
+                reserves = 1
+                activate_production_methods = {
+                    "default_building_opium_plantation"
+                    "pm_road_carts"
+                }
+            }
+        }
+        region_state:CAM = {
+            create_building = {
+                building = "building_rice_farm"
+                add_ownership = {
+                    building = {
+                        type = "building_manor_house"
+                        country = "c:CAM"
+                        levels = 1
+                        region = "STATE_CAMBODIA"
+                    }
+                }
+                reserves = 1
+                activate_production_methods = {
+                    "pm_simple_farming_building_rice_farm"
+                    "pm_no_secondary"
+                    "pm_tools_disabled"
+                }
+            }
+            create_building = {
+                building = "building_tea_plantation"
+                add_ownership = {
+                    building = {
+                        type = "building_manor_house"
+                        country = "c:CAM"
+                        levels = 1
+                        region = "STATE_CAMBODIA"
+                    }
+                }
+                reserves = 1
+                activate_production_methods = {
+                    "default_building_tea_plantation"
+                    "pm_road_carts"
+                }
+            }
+            create_building = {
+                building = "building_barracks"
+                add_ownership = {
+                    country = {
+                        country = "c:CAM"
+                        levels = 15
+                    }
+                }
+                reserves = 1
+                activate_production_methods = {
+                    "pm_no_organization"
+                }
+            }
+        }
+        region_state:LUA = {
+            create_building = {
+                building = "building_opium_plantation"
+                add_ownership = {
+                    building = {
+                        type = "building_manor_house"
+                        country = "c:LUA"
+                        levels = 2
+                        region = "STATE_CAMBODIA"
+                    }
+                }
+                reserves = 1
+                activate_production_methods = {
+                    "default_building_opium_plantation"
+                    "pm_road_carts"
+                }
+            }
+            create_building = {
+                building = "building_barracks"
+                add_ownership = {
+                    country = {
+                        country = "c:LUA"
+                        levels = 8
+                    }
+                }
+                reserves = 1
+                activate_production_methods = {
+                    "pm_no_organization"
+                }
+            }
+        }
+        region_state:CHP = {
+            create_building = {
+                building = "building_barracks"
+                add_ownership = {
+                    country = {
+                        country = "c:CHP"
+                        levels = 3
+                    }
+                }
+                reserves = 1
+                activate_production_methods = {
+                    "pm_no_organization"
+                }
+            }
+        }
+    }
     s:STATE_BANGKOK = {
         region_state:SIA = {
             create_building = {
@@ -33928,153 +34075,6 @@
                 reserves = 1
                 activate_production_methods = {
                     "pm_anchorage"
-                }
-            }
-        }
-    }
-    s:STATE_CAMBODIA = {
-        region_state:LUA = {
-            create_building = {
-                building = "building_opium_plantation"
-                add_ownership = {
-                    building = {
-                        type = "building_manor_house"
-                        country = "c:LUA"
-                        levels = 2
-                        region = "STATE_CAMBODIA"
-                    }
-                }
-                reserves = 1
-                activate_production_methods = {
-                    "default_building_opium_plantation"
-                    "pm_road_carts"
-                }
-            }
-            create_building = {
-                building = "building_barracks"
-                add_ownership = {
-                    country = {
-                        country = "c:LUA"
-                        levels = 8
-                    }
-                }
-                reserves = 1
-                activate_production_methods = {
-                    "pm_no_organization"
-                }
-            }
-        }
-        region_state:SIA = {
-            create_building = {
-                building = "building_opium_plantation"
-                add_ownership = {
-                    building = {
-                        type = "building_manor_house"
-                        country = "c:SIA"
-                        levels = 1
-                        region = "STATE_CAMBODIA"
-                    }
-                }
-                reserves = 1
-                activate_production_methods = {
-                    "default_building_opium_plantation"
-                    "pm_road_carts"
-                }
-            }
-            create_building = {
-                building = "building_barracks"
-                add_ownership = {
-                    country = {
-                        country = "c:SIA"
-                        levels = 10
-                    }
-                }
-                reserves = 1
-                activate_production_methods = {
-                    "pm_no_organization"
-                }
-            }
-            create_building = {
-                building = "building_tea_plantation"
-                add_ownership = {
-                    building = {
-                        type = "building_manor_house"
-                        country = "c:SIA"
-                        levels = 1
-                        region = "STATE_CAMBODIA"
-                    }
-                }
-                reserves = 1
-                activate_production_methods = {
-                    "default_building_tea_plantation"
-                    "pm_road_carts"
-                }
-            }
-            create_building = {
-                building = "building_angkor_wat"
-                level = 1
-            }
-        }
-        region_state:CHP = {
-            create_building = {
-                building = "building_barracks"
-                add_ownership = {
-                    country = {
-                        country = "c:CHP"
-                        levels = 3
-                    }
-                }
-                reserves = 1
-                activate_production_methods = {
-                    "pm_no_organization"
-                }
-            }
-        }
-        region_state:CAM = {
-            create_building = {
-                building = "building_rice_farm"
-                add_ownership = {
-                    building = {
-                        type = "building_manor_house"
-                        country = "c:CAM"
-                        levels = 1
-                        region = "STATE_CAMBODIA"
-                    }
-                }
-                reserves = 1
-                activate_production_methods = {
-                    "pm_simple_farming_building_rice_farm"
-                    "pm_no_secondary"
-                    "pm_tools_disabled"
-                }
-            }
-            create_building = {
-                building = "building_tea_plantation"
-                add_ownership = {
-                    building = {
-                        type = "building_manor_house"
-                        country = "c:CAM"
-                        levels = 1
-                        region = "STATE_CAMBODIA"
-                    }
-                }
-                reserves = 1
-                activate_production_methods = {
-                    "default_building_tea_plantation"
-                    "pm_road_carts"
-                }
-            }
-            create_building = {
-                building = "building_barracks"
-                add_ownership = {
-                    country = {
-                        country = "c:CAM"
-                        levels = 15
-                    }
-                }
-                reserves = 1
-                activate_production_methods = {
-                    "pm_no_organization"
                 }
             }
         }
