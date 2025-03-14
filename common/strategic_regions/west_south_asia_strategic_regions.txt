@@ -1,0 +1,76 @@
+﻿# Strategic Regions in West and South Asia
+
+region_anatolia = {
+	graphical_culture = "arabic"
+	capital_province = x66B13B
+	map_color = { 0.25 0.75 0.25 }
+	states = { STATE_EASTERN_THRACE    STATE_ANKARA STATE_ADANA  STATE_CYPRUS  STATE_TRABZON  STATE_ERZURUM }
+}
+
+region_arabic = {
+	graphical_culture = "arabic"
+	map_color = { 0.1 0.7 0.1 }
+	states = { STATE_OMAN  STATE_YEMEN STATE_HEDJAZ  STATE_NEJD  STATE_PALESTINE  STATE_SYRIA   STATE_BAGHDAD   }
+}
+
+region_persia = {
+	graphical_culture = "arabic"
+	map_color = { 119 105 225 }
+	states = { STATE_KHORASAN STATE_ISFAHAN  STATE_IRAKAJEMI STATE_LARISTAN   STATE_KHUZESTAN STATE_TABRIZ     STATE_KABUL STATE_PASHTUNISTAN     STATE_HERAT   }
+}
+
+region_central_asia = {
+	graphical_culture = "arabic"
+	capital_province = x8ABC27
+	map_color = { 0.24 0.65 0.34 }
+	states = { STATE_UZBEKIA STATE_KHIVA STATE_TAJIKISTAN STATE_KIRGHIZIA  STATE_SEMIRECHE STATE_AKMOLINSK   STATE_FERGANA  STATE_DZUNGARIA STATE_TIANSHAN STATE_URALSK  }
+}
+
+region_caucasus = {
+	# European graphical culture
+	capital_province = xFB38B0
+	map_color = { 1 0.1 0.2 }
+	states = {  STATE_AZERBAIJAN STATE_DAGESTAN STATE_KUBAN  STATE_GREATER_CAUCASUS  STATE_ASTRAKHAN     }
+}
+
+region_madras = {
+	graphical_culture = "arabic"
+	capital_province = x07104c
+	map_color = { 0.607 0.843 0.337 }
+	states = { STATE_CEYLON STATE_CIRCARS STATE_MYSORE STATE_TRAVANCORE STATE_MADRAS STATE_HYDERABAD STATE_KURNOOL }
+}
+
+region_bengal = {
+	graphical_culture = "arabic"
+	capital_province = x0A2277
+	map_color = { 255 182 193 }
+	states = { STATE_BIHAR STATE_EAST_BENGAL STATE_WEST_BENGAL STATE_ASSAM STATE_ORISSA }
+}
+
+region_bombay = {
+	graphical_culture = "arabic"
+	capital_province = xB0D0E0
+	map_color = { 121 41 123 }
+	states = { STATE_BOMBAY STATE_GUJARAT STATE_SINDH STATE_BALUCHISTAN }
+}
+
+region_punjab = {
+	graphical_culture = "arabic"
+	capital_province = xA6DAD0
+	map_color = { 222 202 23 }
+	states = { STATE_PUNJAB STATE_HILL_PUNJAB STATE_DELHI STATE_RAJPUTANA }
+}
+
+region_himalayas = {
+	graphical_culture = "asian"
+	capital_province = x06698A
+	map_color = { 177 207 205 }
+	states = { STATE_HIMALAYAS STATE_LHASA STATE_NGARI STATE_KASHMIR STATE_QINGHAI STATE_EASTERN_HIMALAYAS }
+}
+
+region_central_india = {
+	graphical_culture = "arabic"
+	capital_province = x13E50E
+	map_color = { 0.392 0.863 1 }
+	states = { STATE_CENTRAL_PROVINCES STATE_AWADH STATE_MALWA STATE_AGRA STATE_BUNDELKHAND }
+}

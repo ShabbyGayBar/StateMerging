@@ -1,0 +1,61 @@
+﻿# Strategic Regions in Eastern Asia
+
+region_indochina = {
+	graphical_culture = "asian"
+	capital_province = x5C3070
+	map_color = { 0.9 0.1 0.1 }
+	states = { STATE_CAMBODIA  STATE_TONKIN     STATE_MALAYA  STATE_BANGKOK  STATE_SHAN_STATES STATE_MANDALAY STATE_PEGU STATE_ARAKAN }
+}
+
+region_indonesia = {
+	graphical_culture = "asian"
+	capital_province = x6ED39E
+	map_color = { 0.204 0.651 0.308 }
+	states = { STATE_NORTH_SUMATRA   STATE_WEST_JAVA    STATE_MOLUCCAS  STATE_WEST_BORNEO    STATE_LUZON  STATE_WESTERN_NEW_GUINEA  }
+}
+
+region_south_china = {
+	graphical_culture = "asian"
+	capital_province = x2BDE7B
+	map_color = { 0.8 0.8 0.9 }
+	states = { STATE_GUIZHOU STATE_CHONGQING STATE_SICHUAN STATE_SOUTHERN_ANHUI STATE_SHAOZHOU STATE_GUANGDONG STATE_FUJIAN STATE_FORMOSA STATE_GUANGXI STATE_ZHEJIANG  STATE_NANJING STATE_HUNAN STATE_JIANGXI STATE_YUNNAN STATE_EASTERN_HUBEI  } 
+}
+
+region_north_china = {
+	graphical_culture = "asian"
+	capital_province = x90D001
+	map_color = { 1 1 0 }
+	states = { STATE_SHANDONG STATE_BEIJING STATE_ZHILI STATE_HENAN  STATE_SHANXI  STATE_ULIASTAI  STATE_HINGGAN STATE_ALXA STATE_NINGXIA STATE_GANSU STATE_XIAN }
+}
+
+region_manchuria = {
+	graphical_culture = "asian"
+	capital_province = x21D001
+	map_color = { 0.7 0.7 0.3 }
+	states = { STATE_SOUTHERN_MANCHURIA STATE_NORTHERN_MANCHURIA STATE_SHENGJING STATE_OUTER_MANCHURIA STATE_SEOUL   STATE_PYONGYANG   }
+}
+
+region_japan = {
+	graphical_culture = "asian"
+	capital_province = xB050C0
+	map_color = { 0.1 0.7 0.7 }
+	states = { STATE_HOKKAIDO  STATE_KANTO  STATE_KANSAI STATE_KYUSHU   STATE_SAKHALIN  }
+}
+
+region_west_siberia = {
+	capital_province = x0C0895
+	map_color = { 0.68 1 0.32 }
+	states = {   STATE_TOMSK  STATE_TUVA STATE_SURGUT   }
+}
+
+region_east_siberia = {
+	capital_province = xF9D594
+	map_color = { 0.204 0.251 0.808 }
+	states = { STATE_YAKUTSK STATE_TRANS_BAIKAL   STATE_OKHOTSK STATE_IRKUTSK   }
+}
+
+region_oceania = {
+	capital_province = x10DF50
+	map_color = { 0.2 0.4 0.7 }
+	states = { STATE_NEW_SOUTH_WALES    STATE_WESTERN_AUSTRALIA  STATE_NORTH_ISLAND  STATE_HAWAIIAN_ISLANDS  STATE_WEST_MICRONESIA          }
+}

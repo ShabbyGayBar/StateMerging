@@ -1,0 +1,29 @@
+﻿# Strategic Regions in South America
+
+region_brazil = {
+	graphical_culture = "latin"
+	capital_province = x7600E6
+	map_color = { 0.222 1 0.362 }
+	states = {  STATE_SAO_PAULO STATE_RIO_DE_JANEIRO  STATE_RIO_GRANDE_DO_SUL STATE_MATO_GROSSO   STATE_PERNAMBUCO        STATE_PARA STATE_AMAZONAS }
+}
+
+region_andes = {
+	graphical_culture = "latin"
+	capital_province = x40E12A
+	map_color = { 0 1 0 }
+	states = { STATE_LIMA STATE_ICA    STATE_LA_PAZ STATE_ECUADOR    STATE_ANTOFAGASTA   }
+}
+
+region_la_plata = {
+	graphical_culture = "latin"
+	capital_province = x708090
+	map_color = { 0 0.8 0.4 }
+	states = { STATE_RIO_NEGRO  STATE_SANTA_FE   STATE_CHACO STATE_BUENOS_AIRES  STATE_BAJO_PARAGUAY STATE_SOUTH_ATLANTIC_ISLANDS  STATE_ARAUCANIA STATE_PATAGONIA STATE_SANTIAGO }
+}
+
+region_gran_colombia = {
+	graphical_culture = "latin"
+	capital_province = xA00111
+	map_color = { 0.4 0.3 0.2 }
+	states = {  STATE_GUAYANA STATE_MIRANDA    STATE_CAUCA STATE_CUNDINAMARCA }
+}
