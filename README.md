@@ -28,6 +28,11 @@ Please refer to [merge_states.json](merge_states.json) for all the changes in st
 
 The keys of the json are the state id of the existing states in the mod, and the values are lists of state ids in vanilla game that will be merged into the key state.
 
+## Future Plans
+![Future Plans](figures/Merge_States_objective.png)
+
+This is only a rough plan, and the actual implementation may vary.
+
 ## How to install
 
 - Subscribe to the mod on [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3371693463).
