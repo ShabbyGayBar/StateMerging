@@ -115,12 +115,12 @@
 					c:TPG ?= this
 					c:CHI ?= this
 				}
-				owns_entire_state_region = STATE_NANJING
-				s:STATE_NANJING = {
+				owns_entire_state_region = STATE_SUZHOU
+				s:STATE_SUZHOU = {
 					any_scope_state = { average_sol >= 15 }
 				}
 			}
-			s:STATE_NANJING = {
+			s:STATE_SUZHOU = {
 				save_scope_as = belle_epoque_state
 			}
 		}

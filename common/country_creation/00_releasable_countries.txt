@@ -500,7 +500,7 @@ KOR = {
 }
 
 LAO = {
-	states = { STATE_CAMBODIA }
+	states = { STATE_LAOS }
 	
 	required_num_states = 1
 
@@ -508,7 +508,7 @@ LAO = {
 }
 
 VIE = {
-	states = { STATE_CAMBODIA }
+	states = { STATE_LAOS }
 	
 	ai_will_do = { always = no }
 }
@@ -2046,21 +2046,21 @@ HTH = {
 
 KRN = {
 	states = {
-		STATE_MALAYA
+		STATE_TENASSERIM
 	}
 	ai_will_do = { always = no }
 }
 
 KHM = {
 	states = {
-		STATE_CAMBODIA
+		STATE_LAOS
 	}
 	ai_will_do = { always = no }
 }
 
 KHN = {
 	states = {
-		STATE_SHAN_STATES
+		STATE_KACHIN
 	}
 	ai_will_do = { always = no }
 }
@@ -2118,7 +2118,7 @@ HNA = {
 AHU = {
 	states = {
 		STATE_SOUTHERN_ANHUI
-		STATE_SOUTHERN_ANHUI
+		STATE_NORTHERN_ANHUI
 	}
 	ai_will_do = { always = no }
 }

@@ -1840,7 +1840,7 @@ LAO = {
 	tier = kingdom
 	
 	cultures = { lao }
-	capital = STATE_CAMBODIA
+	capital = STATE_LAOS
 	is_named_from_capital = yes
 }
 
@@ -1852,7 +1852,7 @@ LUA = {
 	tier = principality
 	
 	cultures = { lao }
-	capital = STATE_CAMBODIA
+	capital = STATE_LAOS
 	
 }
 
@@ -1864,7 +1864,7 @@ CHP = {
 	tier = principality
 	
 	cultures = { lao }
-	capital = STATE_CAMBODIA
+	capital = STATE_LAOS
 }
 
 VIE = {
@@ -1875,7 +1875,7 @@ VIE = {
 	tier = principality
 	
 	cultures = { lao }
-	capital = STATE_CAMBODIA
+	capital = STATE_LAOS
 }
 
 JOH = {
@@ -2955,7 +2955,7 @@ KHM = { # Khmu
 	
 	cultures = { khmu }
 	
-	capital = STATE_CAMBODIA
+	capital = STATE_LAOS
 }
 
 KHN = { # Kachin
@@ -2967,7 +2967,7 @@ KHN = { # Kachin
 	
 	cultures = { kachin }
 	
-	capital = STATE_SHAN_STATES
+	capital = STATE_KACHIN
 }
 
 AIN = { # Ainu Mosir

@@ -291,7 +291,7 @@ sepoy_mutiny_events.2 = {
 				if = {
 					limit = {
 						any_scope_state = {
-							state_region = s:STATE_MALAYA
+							state_region = s:STATE_TENASSERIM
 						}
 					}
 					if = {
@@ -302,7 +302,7 @@ sepoy_mutiny_events.2 = {
 								}
 							}
 						}
-						s:STATE_MALAYA.region_state:BIC = {
+						s:STATE_TENASSERIM.region_state:BIC = {
 							set_state_owner = c:BUR
 						}		
 					}
@@ -310,11 +310,11 @@ sepoy_mutiny_events.2 = {
 						limit = {
 							c:SIA ?= {
 								any_scope_state = {
-									state_region = s:STATE_MALAYA
+									state_region = s:STATE_TENASSERIM
 								}
 							}
 						}
-						s:STATE_MALAYA.region_state:BIC = {
+						s:STATE_TENASSERIM.region_state:BIC = {
 							set_state_owner = c:SIA
 						}	
 					}
@@ -327,7 +327,7 @@ sepoy_mutiny_events.2 = {
 						create_country = {  
 							tag = KRN
 							origin = root
-							state = s:STATE_MALAYA.region_state:BIC
+							state = s:STATE_TENASSERIM.region_state:BIC
 							on_created = {
 								activate_law = law_type:law_monarchy
 								activate_law = law_type:law_oligarchy						
@@ -745,7 +745,7 @@ sepoy_mutiny_events.2 = {
 				if = {
 					limit = {
 						any_scope_state = {
-							state_region = s:STATE_MALAYA
+							state_region = s:STATE_TENASSERIM
 						}
 					}
 					if = {
@@ -756,7 +756,7 @@ sepoy_mutiny_events.2 = {
 								}
 							}
 						}
-						s:STATE_MALAYA.region_state:BIC = {
+						s:STATE_TENASSERIM.region_state:BIC = {
 							set_state_owner = c:BUR
 						}		
 					}
@@ -764,11 +764,11 @@ sepoy_mutiny_events.2 = {
 						limit = {
 							c:SIA ?= {
 								any_scope_state = {
-									state_region = s:STATE_MALAYA
+									state_region = s:STATE_TENASSERIM
 								}
 							}
 						}
-						s:STATE_MALAYA.region_state:BIC = {
+						s:STATE_TENASSERIM.region_state:BIC = {
 							set_state_owner = c:SIA
 						}	
 					}
@@ -781,7 +781,7 @@ sepoy_mutiny_events.2 = {
 						create_country = {  
 							tag = KRN
 							origin = root
-							state = s:STATE_MALAYA.region_state:BIC
+							state = s:STATE_TENASSERIM.region_state:BIC
 							on_created = {
 								activate_law = law_type:law_monarchy
 								activate_law = law_type:law_oligarchy						
@@ -1170,7 +1170,7 @@ sepoy_mutiny_events.2 = {
 				if = {
 					limit = {
 						any_scope_state = {
-							state_region = s:STATE_MALAYA
+							state_region = s:STATE_TENASSERIM
 						}
 					}
 					if = {
@@ -1181,7 +1181,7 @@ sepoy_mutiny_events.2 = {
 								}
 							}
 						}
-						s:STATE_MALAYA.region_state:BIC = {
+						s:STATE_TENASSERIM.region_state:BIC = {
 							set_state_owner = c:BUR
 						}		
 					}
@@ -1189,11 +1189,11 @@ sepoy_mutiny_events.2 = {
 						limit = {
 							c:SIA ?= {
 								any_scope_state = {
-									state_region = s:STATE_MALAYA
+									state_region = s:STATE_TENASSERIM
 								}
 							}
 						}
-						s:STATE_MALAYA.region_state:BIC = {
+						s:STATE_TENASSERIM.region_state:BIC = {
 							set_state_owner = c:SIA
 						}	
 					}
@@ -1206,7 +1206,7 @@ sepoy_mutiny_events.2 = {
 						create_country = {  
 							tag = KRN
 							origin = root
-							state = s:STATE_MALAYA.region_state:BIC
+							state = s:STATE_TENASSERIM.region_state:BIC
 							on_created = {
 								activate_law = law_type:law_monarchy
 								activate_law = law_type:law_oligarchy						
@@ -1573,7 +1573,7 @@ sepoy_mutiny_events.2 = {
 				if = {
 					limit = {
 						any_scope_state = {
-							state_region = s:STATE_MALAYA
+							state_region = s:STATE_TENASSERIM
 						}
 					}
 					if = {
@@ -1584,7 +1584,7 @@ sepoy_mutiny_events.2 = {
 								}
 							}
 						}
-						s:STATE_MALAYA.region_state:BIC = {
+						s:STATE_TENASSERIM.region_state:BIC = {
 							set_state_owner = c:BUR
 						}		
 					}
@@ -1592,11 +1592,11 @@ sepoy_mutiny_events.2 = {
 						limit = {
 							c:SIA ?= {
 								any_scope_state = {
-									state_region = s:STATE_MALAYA
+									state_region = s:STATE_TENASSERIM
 								}
 							}
 						}
-						s:STATE_MALAYA.region_state:BIC = {
+						s:STATE_TENASSERIM.region_state:BIC = {
 							set_state_owner = c:SIA
 						}	
 					}
@@ -1609,7 +1609,7 @@ sepoy_mutiny_events.2 = {
 						create_country = {  
 							tag = KRN
 							origin = root
-							state = s:STATE_MALAYA.region_state:BIC
+							state = s:STATE_TENASSERIM.region_state:BIC
 							on_created = {
 								activate_law = law_type:law_monarchy
 								activate_law = law_type:law_oligarchy						

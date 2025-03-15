@@ -15,7 +15,7 @@
 					state_region = s:STATE_KASHMIR
 					state_region = s:STATE_BALUCHISTAN
 					state_region = s:STATE_MANDALAY
-					state_region = s:STATE_SHAN_STATES
+					state_region = s:STATE_KACHIN
 					state_region = s:STATE_SHAN_STATES
 					state_region = s:STATE_PEGU
 				}

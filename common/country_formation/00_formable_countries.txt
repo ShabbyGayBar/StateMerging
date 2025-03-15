@@ -88,7 +88,7 @@ SWE = {
 
 LAO = {
 	states = {
-		STATE_CAMBODIA
+		STATE_LAOS
 	}
 
 	required_states_fraction = 1.0

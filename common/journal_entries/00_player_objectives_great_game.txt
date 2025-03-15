@@ -962,7 +962,7 @@ je_consolidate_british_india = {
 		s:STATE_MANDALAY = {
 			save_scope_as = burma_state_scope
 		}
-		s:STATE_SHAN_STATES = {
+		s:STATE_KACHIN = {
 			save_scope_as = kachin_state_scope
 		}
 		s:STATE_PEGU = {
@@ -1023,7 +1023,7 @@ je_consolidate_british_india = {
 			}
 			NOT = {
 				any_state = {
-					state_region = s:STATE_SHAN_STATES
+					state_region = s:STATE_KACHIN
 					NOR = {
 						owner = ROOT
 						owner = {

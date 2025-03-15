@@ -48,7 +48,7 @@ GLOBAL = {
 						region = sr:region_punjab
 						region = sr:region_himalayas
 						state_region = s:STATE_MANDALAY
-						state_region = s:STATE_SHAN_STATES
+						state_region = s:STATE_KACHIN
 						state_region = s:STATE_SHAN_STATES
 						state_region = s:STATE_PEGU
 					}
