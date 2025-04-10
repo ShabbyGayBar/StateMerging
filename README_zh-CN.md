@@ -36,7 +36,7 @@
 或者
 - 下载 Mod 的 zip 文件并解压到维多利亚3的 Mod 文件夹中（通常位于 `Documents\Pardox Interactive\Victoria 3\mod`）。
 
-## 合并标准：
+## 合并标准
 
 以下标准按照重要性排序：
 
@@ -68,7 +68,7 @@
 - 在我的 [贴吧帖子](https://tieba.baidu.com/p/9433803383?) 上发布您绘制的地图。
 - 在 Steam 创意工坊页面上留言。
 
-## 兼容性：
+## 兼容性
 
 跟任何修改了
 - game\common\history\buildings\
