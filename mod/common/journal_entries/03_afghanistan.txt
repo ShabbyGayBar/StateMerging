@@ -369,7 +369,7 @@
 			}
 		}
 	}
-	
+
 	possible = {
 		custom_tooltip = {
 			text = afghanistan_exists_tt
@@ -471,13 +471,13 @@
 	complete = {
 		trigger_if = {
 			limit = {
-				exists = scope:gp_scope								
+				exists = scope:gp_scope
 			}
 			custom_tooltip = {
 				text = first_gp_approves_tt
 				scope:gp_scope ?= {
 					has_variable = afghanistan_delimitation_treaty_approved
-				}	
+				}
 			}
 		}
 		trigger_if = {
@@ -807,11 +807,24 @@
 				}
 			}
 			scope:rival_gp_scope ?= {
-				create_diplomatic_pact = {
-					country = c:AFG
-					type = bankroll
+				create_treaty = {
+					first_country = scope:rival_gp_scope
+					second_country = c:AFG
+
+					is_draft = no
+					binding_period = { years = 2 }
+
+					articles_to_create = {
+						{
+							article = money_transfer
+							source_country = scope:rival_gp_scope
+							target_country = c:AFG
+							inputs = {
+								{ quantity = 1000 }
+							}
+						}
+					}
 				}
-				set_variable = { name = forced_bankroll_time value = c:AFG months = 24 }
 			}
 		}
 		if = {
@@ -1087,11 +1100,24 @@
 					has_variable = proposed_compensation_for_afghanistan
 				}
 			}
-			create_diplomatic_pact = {
-				country = c:AFG
-				type = bankroll
+			create_treaty = {
+				first_country = root
+				second_country = c:AFG
+
+				is_draft = no
+				binding_period = { years = 2 }
+
+				articles_to_create = {
+					{
+						article = money_transfer
+						source_country = root
+						target_country = c:AFG
+						inputs = {
+							{ quantity = 1000 }
+						}
+					}
+				}
 			}
-			set_variable = { name = forced_bankroll_time value = c:AFG months = 24 }
 		}
 		set_global_variable = afghan_borders_solidified
 		hidden_effect = {
@@ -1794,7 +1820,7 @@
 				}
 			}
 		}
-		
+
 		hidden_effect = {
 			clear_afghanistan_variables = yes
 		}
@@ -1828,10 +1854,20 @@ je_unify_afghanistan = {
 			c:AFG ?= this
 		}
 	}
-	
-	on_complete = {
 
+	on_complete = {
+		show_as_tooltip = {
+			trigger_event = { id = gg_afghanistan.4 }
+		}
 	}
-		
+
+    event_outcome_completed_desc = {
+        first_valid = {
+            triggered_desc = {
+                desc = event_effects_gg_afghanistan.4_tt
+            }
+        }
+    }
+
 	weight = 1000
 }

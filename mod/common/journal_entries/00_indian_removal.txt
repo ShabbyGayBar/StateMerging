@@ -1,14 +1,14 @@
 ﻿je_indian_removal = {
 	icon = "gfx/interface/icons/event_icons/event_skull.dds"
 
-	group = je_group_historical_content
-	
+	group = je_group_usa_manifest_destiny
+
 	on_monthly_pulse = {
 		random_events = {
-			10 = 0 
-			1 = native_resettlement.2 # john ross
-			1 = native_resettlement.3 # Preparing for resettlement
-			1 = native_resettlement.4 # Trail of Tears
+			20 = 0
+			2 = native_resettlement.2 # john ross. Fires once because very specific.
+			2 = native_resettlement.3 # Preparing for resettlement, repeats.
+			1 = native_resettlement.4 # Trail of Tears, requires native_resettlement.3 to have fired at least once.
 		}
 	}
 
@@ -28,7 +28,7 @@
 			}
 		}
 	}
-	
+
 	on_complete = {
 		custom_tooltip = {
 			text = indian_removal_end
@@ -47,7 +47,7 @@
 			}
 		}
 	}
-	
+
 	invalid = {
 		OR = {
 			NOT = { owns_entire_state_region = STATE_FLORIDA }
@@ -60,10 +60,10 @@
 			}
 		}
 	}
-	
+
 	weight = 200
-	
+
 	should_be_pinned_by_default = yes
-	
+
 	transferable = no
 }

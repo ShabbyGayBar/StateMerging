@@ -34,7 +34,7 @@ greece.1 = {
 			limit = {
 				NOR = {
 					has_claim = s:STATE_ATTICA
-					owns_entire_state_region = STATE_ATTICA 
+					owns_entire_state_region = STATE_ATTICA
 				}
 			}
 			s:STATE_ATTICA = {
@@ -43,7 +43,7 @@ greece.1 = {
 		}
 		if = {
 			limit = {
-				NOR = { 
+				NOR = {
 					owns_entire_state_region = STATE_ATTICA
 					has_claim = s:STATE_ATTICA
 				}
@@ -54,7 +54,7 @@ greece.1 = {
 		}
 		if = {
 			limit = {
-				NOR = { 
+				NOR = {
 					owns_entire_state_region = STATE_EASTERN_THRACE
 					has_claim = s:STATE_EASTERN_THRACE
 				}
@@ -65,7 +65,7 @@ greece.1 = {
 		}
 		if = {
 			limit = {
-				NOR = { 
+				NOR = {
 					owns_entire_state_region = STATE_CRETE
 					has_claim = s:STATE_CRETE
 				}
@@ -190,7 +190,7 @@ greece.2 = {
 		default_option = yes
 		add_modifier = {
 			name = greek_nationalism
-			months = long_modifier_time
+			days = long_modifier_time
 		}
 	}
 	option = {

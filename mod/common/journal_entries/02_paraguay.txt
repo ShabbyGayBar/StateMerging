@@ -269,13 +269,13 @@ je_expanding_paraguay = {
                 s:STATE_BAJO_PARAGUAY.region_state:PRG = {
                     add_modifier = {
                         name = thus_unto_tyrants_modifier
-                        months = long_modifier_time
+                        days = long_modifier_time
                     }
                 }
             }
             add_modifier = {
                 name = a_broken_land_modifier
-                months = long_modifier_time
+                days = long_modifier_time
             }
         }
     }
@@ -329,15 +329,15 @@ je_paraguayan_war = {
                     text = je_paraguayan_war_tt_1
                     has_variable = recently_won_war
                 }
-                NOT = { 
-                    c:PRG = { 
-                        is_country_alive = yes 
-                    } 
+                NOT = {
+                    c:PRG = {
+                        is_country_alive = yes
+                    }
                 }
             }
         }
     }
-    
+
     fail = {
         custom_tooltip = {
             text = je_paraguayan_war_tt_2
