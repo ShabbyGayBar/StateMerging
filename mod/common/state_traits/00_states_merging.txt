@@ -94,7 +94,6 @@ state_trait_two_coast_integration= {
 	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
 	
 	modifier = {
-		state_building_port_max_level_add = 10 # 州港口数量上限
 		state_building_naval_base_max_level_add = 20 # 州海军基地数量上限
 	}
 }
@@ -104,7 +103,6 @@ state_trait_three_coast_integration= {
 	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
 	
 	modifier = {
-		state_building_port_max_level_add = 20 # 州港口数量上限
 		state_building_naval_base_max_level_add = 40 # 州海军基地数量上限
 	}
 }
@@ -114,7 +112,6 @@ state_trait_four_coast_integration= {
 	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
 	
 	modifier = {
-		state_building_port_max_level_add = 30 # 州港口数量上限
 		state_building_naval_base_max_level_add = 60 # 州海军基地数量上限
 	}
 }
@@ -124,7 +121,6 @@ state_trait_five_coast_integration= {
 	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
 	
 	modifier = {
-		state_building_port_max_level_add = 40 # 州港口数量上限
 		state_building_naval_base_max_level_add = 80 # 州海军基地数量上限
 	}
 }
@@ -134,7 +130,6 @@ state_trait_six_coast_integration= {
 	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
 	
 	modifier = {
-		state_building_port_max_level_add = 50 # 州港口数量上限
 		state_building_naval_base_max_level_add = 100 # 州海军基地数量上限
 	}
 }
