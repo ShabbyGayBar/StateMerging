@@ -158,6 +158,93 @@ ai_strategy_default = {
 			}
 		}
 
+		### Schleswig War
+		if = {
+			limit = {
+				NOR = {
+					country_has_primary_culture = cu:north_german
+					country_has_primary_culture = cu:south_german
+				}
+				OR = {
+					AND = {
+						scope:country = {
+							is_oppressor_of_schleswig_holstein = yes
+						}
+						scope:enemy_country = {
+							has_journal_entry = je_schleswig_holstein_question
+						}
+					}
+					AND = {
+						scope:enemy_country = {
+							is_oppressor_of_schleswig_holstein = yes
+						}
+						scope:country = {
+							has_journal_entry = je_schleswig_holstein_question
+						}
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					NOR = {
+						any_scope_treaty = {
+							binds = scope:country
+							any_scope_article = {
+								has_type = alliance
+							}
+						}
+						AND = {
+							NOT = { exists = scope:is_initiator }
+							OR = {
+								any_scope_treaty = {
+									binds = scope:country
+									any_scope_article = {
+										has_type = defensive_pact
+									}
+								}
+								any_scope_treaty = {
+									binds = scope:country
+									any_scope_article = {
+										has_type = guarantee_independence
+									}
+								}
+							}
+						}
+					}
+
+					scope:enemy_country = {
+						NOR = {
+							play_participant_has_war_goal_of_type_against = {
+								type = conquer_state
+								target = scope:country
+							}
+							play_participant_has_war_goal_of_type_against = {
+								type = make_protectorate
+								target = scope:country
+							}
+							play_participant_has_war_goal_of_type_against = {
+								type = liberate_country
+								target = scope:country
+							}
+							play_participant_has_war_goal_of_type_against = {
+								type = take_treaty_port
+								target = scope:country
+							}
+							play_participant_has_war_goal_of_type_against = {
+								type = enforce_treaty_article
+								target = scope:country
+							}
+						}
+					}
+				}
+				add = {
+					value = -100
+					desc = "je_schleswig_holstein_question"
+				}
+			}
+		}
+
 		### Ottomans vs Egypt - Great Powers pick sides
 		if = {
 			limit = {
@@ -548,7 +635,6 @@ ai_strategy_default = {
 			limit = {
 				has_journal_entry = je_sick_man_main
 			}
-
 			add = 50
 		}
 	}
@@ -666,6 +752,18 @@ ai_strategy_default = {
 				}
 				any_country = {
 					is_diplomatic_play_enemy_of = c:RSM
+				}
+			}
+			add = 50
+		}
+
+		# Good luck Denmark
+		if = {
+			limit = {
+				c:DEN ?=this
+				scope:diplomatic_play.target = { c:DEN ?= this }
+				scope:diplomatic_play.initiator = {
+					has_journal_entry = je_schleswig_holstein_question
 				}
 			}
 			add = 50
@@ -1559,7 +1657,7 @@ ai_strategy_default = {
 								owner = ROOT
 							}
 						}
-					}			
+					}
 				}
 			}
 			add = 40
@@ -1669,7 +1767,7 @@ ai_strategy_default = {
 		if = {
 			limit = {
 				# Because the target state in a treaty article is not actually the treaty port state, we need to check the entire state region
-				scope:target_state = { 
+				scope:target_state = {
 					NOT = {
 						state_region = {
 							any_scope_state = {
@@ -1683,12 +1781,12 @@ ai_strategy_default = {
 					}
 				}
 			}
-			
+
 			if = {
 				limit = { has_treaty_port_in_market = scope:target_country.market }
 				multiply = 0.25
 			}
-			
+
 			# Don't want treaty ports on countries in our market
 			if = {
 				limit = {
@@ -1696,7 +1794,7 @@ ai_strategy_default = {
 				}
 				multiply = 0.0
 			}
-			
+
 			# Not worth doing against very small markets
 			if = {
 				limit = {
@@ -1705,7 +1803,7 @@ ai_strategy_default = {
 					}
 				}
 				multiply = 0
-			}		
+			}
 
 			if = {
 				limit = {
@@ -1714,19 +1812,20 @@ ai_strategy_default = {
 							binds = root
 							any_scope_article = {
 								has_type = trade_privilege
+								source_country = scope:target_country
 							}
 						}
 					}
 				}
 				multiply = 0.25
-			}			
+			}
 
 			if = {
 				limit = {
 					can_reach_target_state = no
 				}
 				multiply = 0
-			}			
+			}
 		}
 
 		min = 0
@@ -2331,7 +2430,7 @@ ai_strategy_default = {
 			limit = {
 				has_journal_entry = je_greek_nationalism
 				scope:target_country = {
-					any_state = {
+					any_scope_state = {
 						state_region = { is_homeland = cu:greek }
 						has_claim_by = root
 					}
@@ -2560,7 +2659,7 @@ ai_strategy_default = {
 			limit = {
 				has_journal_entry = je_greek_nationalism
 				scope:target_country = {
-					any_state = {
+					any_scope_state = {
 						state_region = { is_homeland = cu:greek }
 						has_claim_by = root
 					}
@@ -2577,7 +2676,7 @@ ai_strategy_default = {
 					is_oppressor_of_schleswig_holstein = yes
 				}
 			}
-			add = 10
+			add = 5
 		}
 
 		if = { #Carving up China
@@ -2642,7 +2741,7 @@ ai_strategy_default = {
 				has_variable = haiti_stops_paying_france_aggressor
 				scope:target_country = {
 					has_variable = haiti_stops_paying_france_target
-					any_state = {
+					any_scope_state = {
 						has_claim_by = root
 					}
 				}
@@ -5904,6 +6003,7 @@ ai_strategy_default = {
 							binds = scope:target_country
 							any_scope_article = {
 								has_type = trade_privilege
+								source_country = scope:target_country
 							}
 						}
 					}
@@ -6464,17 +6564,16 @@ ai_strategy_default = {
 						max = 100
 					}
 				}
-			}
-
-			if = {
-				limit = {
-					scope:target_country = {
-						num_states > 1
+				if = {
+					limit = {
+						scope:target_country = {
+							num_states > 1
+						}
 					}
-				}
-				add = {
-					value = scope:target_country.num_states
-					multiply = 10
+					add = {
+						value = scope:target_country.num_states
+						multiply = 10
+					}
 				}
 			}
 
@@ -6610,6 +6709,16 @@ ai_strategy_default = {
 					}
 					add = 25
 				}
+			}
+
+			if = {
+				limit = {
+					wants_to_solve_schleswig_holstein = yes
+					exists = c:HOL
+					scope:target_country = { this = c:HOL }
+					can_reach_target_country = yes
+				}
+				add = 150
 			}
 
 			if = {
