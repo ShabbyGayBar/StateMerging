@@ -508,7 +508,7 @@ coffee_with_milk.6 = {
 					state_region = s:STATE_PERNAMBUCO
 					state_region = s:STATE_PERNAMBUCO
 					state_region = s:STATE_PERNAMBUCO
-					state_region = s:STATE_PAUAI
+					state_region = s:STATE_PERNAMBUCO
 					state_region = s:STATE_PARA
 					state_region = s:STATE_PERNAMBUCO
 				}

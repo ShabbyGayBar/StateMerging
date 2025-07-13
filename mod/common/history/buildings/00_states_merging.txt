@@ -624,7 +624,7 @@
                 add_ownership = {
                     country = {
                         country = "c:NOR"
-                        levels = 2
+                        levels = 3
                     }
                 }
                 reserves = 1
@@ -712,7 +712,7 @@
                     building = {
                         type = "building_financial_district"
                         country = "c:GBR"
-                        levels = 18
+                        levels = 25
                         region = "STATE_HOME_COUNTIES"
                     }
                 }
@@ -3158,6 +3158,21 @@
                 }
             }
             create_building = {
+                building = "building_trade_center"
+                add_ownership = {
+                    building = {
+                        type = "building_financial_district"
+                        country = "c:FRA"
+                        levels = 1
+                        region = "STATE_ILE_DE_FRANCE"
+                    }
+                }
+                reserves = 1
+                activate_production_methods = {
+                    "pm_trade_center_trade_quantity_normal"
+                }
+            }
+            create_building = {
                 building = "building_furniture_manufacturies"
                 add_ownership = {
                     building = {
@@ -3244,7 +3259,7 @@
                     building = {
                         type = "building_financial_district"
                         country = "c:FRA"
-                        levels = 2
+                        levels = 1
                         region = "STATE_ILE_DE_FRANCE"
                     }
                 }
@@ -3382,7 +3397,7 @@
                 reserves = 1
                 activate_production_methods = {
                     "pm_dye_workshops"
-                    "pm_craftsman_sewing"
+                    "pm_no_luxury_clothes"
                     "pm_traditional_looms"
                 }
             }
@@ -6553,7 +6568,7 @@
                 reserves = 1
                 activate_production_methods = {
                     "pm_dye_workshops"
-                    "pm_craftsman_sewing"
+                    "pm_no_luxury_clothes"
                     "pm_traditional_looms"
                 }
             }
@@ -25715,7 +25730,7 @@
                 add_ownership = {
                     country = {
                         country = "c:BRZ"
-                        levels = 3
+                        levels = 4
                     }
                 }
                 reserves = 1
@@ -29204,7 +29219,7 @@
                 add_ownership = {
                     country = {
                         country = "c:NEP"
-                        levels = 15
+                        levels = 35
                     }
                 }
                 reserves = 1
@@ -31728,6 +31743,21 @@
                 }
             }
         }
+        region_state:GBR = {
+            create_building = {
+                building = "building_port"
+                add_ownership = {
+                    country = {
+                        country = "c:GBR"
+                        levels = 1
+                    }
+                }
+                reserves = 1
+                activate_production_methods = {
+                    "pm_anchorage"
+                }
+            }
+        }
     }
     s:STATE_INDIAN_OCEAN_TERRITORY = {
         region_state:FRA = {
@@ -33923,7 +33953,7 @@
                     building = {
                         type = "building_trade_center"
                         country = "c:CHI"
-                        levels = 25
+                        levels = 40
                         region = "STATE_GUANGDONG"
                     }
                 }
@@ -34018,7 +34048,7 @@
                 add_ownership = {
                     country = {
                         country = "c:CHI"
-                        levels = 1
+                        levels = 3
                     }
                 }
                 reserves = 1
@@ -34044,7 +34074,7 @@
                 add_ownership = {
                     country = {
                         country = "c:CHI"
-                        levels = 3
+                        levels = 15
                     }
                 }
                 reserves = 1
@@ -39615,7 +39645,7 @@
                 add_ownership = {
                     country = {
                         country = "c:RUS"
-                        levels = 3
+                        levels = 4
                     }
                 }
                 reserves = 1
