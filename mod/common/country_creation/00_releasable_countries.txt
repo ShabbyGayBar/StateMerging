@@ -13,7 +13,7 @@
 AUS = {
 	use_culture_states = yes
 
-	required_num_states = 2
+	required_num_states = 1
 
 	ai_will_do = { always = no }
 }
@@ -21,7 +21,7 @@ AUS = {
 IRE = {
 	use_culture_states = yes
 
-	required_num_states = 2
+	required_num_states = 1
 
 	ai_will_do = { always = no }
 }
@@ -136,7 +136,7 @@ SWE = {
 		STATE_SVEALAND
 	}
 
-	required_num_states = 2
+	required_num_states = 1
 
 	ai_will_do = { always = no }
 }
@@ -150,7 +150,7 @@ FIN = {
 		STATE_UUSIMAA
 	}
 
-	required_num_states = 2
+	required_num_states = 1
 
 	ai_will_do = { always = no }
 }
@@ -158,7 +158,7 @@ FIN = {
 NOR = {
 	use_culture_states = yes
 
-	required_num_states = 2
+	required_num_states = 1
 
 	ai_will_do = { always = no }
 }
@@ -166,7 +166,7 @@ NOR = {
 DEN = {
 	use_culture_states = yes
 
-	required_num_states = 2
+	required_num_states = 1
 
 	ai_will_do = { always = no }
 }
@@ -221,7 +221,7 @@ AGJ = {
 		STATE_PERNAMBUCO
 	}
 
-	required_num_states = 2
+	required_num_states = 1
 
 	ai_will_do = { always = no }
 }
@@ -321,7 +321,7 @@ JAN = {
 POL = {
 	use_culture_states = yes
 
-	required_num_states = 3
+	required_num_states = 2
 
 	ai_will_do = { always = no }
 }
@@ -351,7 +351,7 @@ HUN = {
 ROM = {
 	use_culture_states = yes
 
-	required_num_states = 3
+	required_num_states = 2
 
 	ai_will_do = { always = no }
 }
@@ -368,7 +368,7 @@ CRO = {
 		STATE_CROATIA
 		STATE_CROATIA
 	}
-	required_num_states = 2
+	required_num_states = 1
 
 	ai_will_do = { always = no }
 }
@@ -395,7 +395,7 @@ LOM = {
 BYE = {
 	use_culture_states = yes
 
-	required_num_states = 2
+	required_num_states = 1
 
 	ai_will_do = { always = no }
 }
@@ -460,7 +460,7 @@ PRU = {
 JAP = {
 	use_culture_states = yes
 
-	required_num_states = 3
+	required_num_states = 2
 
 	ai_will_do = { always = no }
 }
@@ -570,7 +570,7 @@ WIN = {
 		STATE_WEST_INDIES
 	}
 
-	required_num_states = 2
+	required_num_states = 1
 
 	ai_will_do = { always = no }
 }
@@ -584,7 +584,7 @@ MAY = {
 CAT = {
 	use_culture_states = yes
 
-	required_num_states = 2
+	required_num_states = 1
 
 	ai_will_do = { always = no }
 }
@@ -687,7 +687,7 @@ PHI = {
 		STATE_LUZON
 		STATE_LUZON
 	}
-	required_num_states = 2
+	required_num_states = 1
 	ai_will_do = { always = no }
 }
 
@@ -911,7 +911,7 @@ SMI = {
 GBR = {
 	use_culture_states = yes
 
-	required_num_states = 6
+	required_num_states = 4
 
 	ai_will_do = { always = no }
 }
@@ -1190,7 +1190,7 @@ ALD = {
 YUG = {
 	use_culture_states = yes
 
-	required_num_states = 3
+	required_num_states = 2
 
 	possible = {
 		has_technology_researched = pan-nationalism
@@ -1215,7 +1215,7 @@ CLM = {
 		STATE_CAUCA
 	}
 
-	required_num_states = 3
+	required_num_states = 2
 
 	ai_will_do = { always = no }
 }
@@ -1239,7 +1239,7 @@ DZG = {
 EGY = {
 	use_culture_states = yes
 
-	required_num_states = 3
+	required_num_states = 2
 
 	ai_will_do = { always = no }
 }
@@ -1248,7 +1248,7 @@ CZH = {
 
 	ai_will_do = { always = no }
 
-	required_num_states = 3
+	required_num_states = 2
 
 	possible = {
 		has_technology_researched = pan-nationalism
@@ -1412,7 +1412,7 @@ USA = {
 BEL = {
 	use_culture_states = yes
 
-	required_num_states = 2
+	required_num_states = 1
 
 	ai_will_do = { always = no }
 }
@@ -1598,7 +1598,7 @@ AFG = {
 		STATE_KABUL
 		STATE_HERAT
 	}
-	required_num_states = 4
+	required_num_states = 2
 	ai_will_do = { always = no }
 
 	possible = {
@@ -2336,7 +2336,7 @@ CAU = {
 		STATE_AZERBAIJAN
 	}
 
-	required_num_states = 3
+	required_num_states = 2
 
 	ai_will_do = { always = no }
 
@@ -2353,7 +2353,7 @@ MOR = {
 		STATE_FEZ
 	}
 
-	required_num_states = 3
+	required_num_states = 1
 
 	ai_will_do = { always = no }
 }
@@ -2455,7 +2455,7 @@ RHE = {
 		STATE_RHINELAND
 	}
 
-	required_num_states = 2
+	required_num_states = 1
 
 	ai_will_do = { always = no }
 }
