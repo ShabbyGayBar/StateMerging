@@ -268,7 +268,7 @@ has_je_conquest_reason = {
 						state_region = s:STATE_CONSTANTINE
 						state_region = s:STATE_ORAN
 						state_region = s:STATE_SAHARA
-						state_region = s:STATE_EAST_SAHARA
+						state_region = s:STATE_SAHARA
 					}
 				}
 			}

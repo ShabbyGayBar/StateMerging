@@ -39,7 +39,7 @@ region_japan = {
 	graphical_culture = "asian"
 	capital_province = xB050C0
 	map_color = { 0.1 0.7 0.7 }
-	states = { STATE_HOKKAIDO  STATE_KANTO  STATE_KANSAI STATE_KYUSHU   STATE_SAKHALIN  }
+	states = { STATE_HOKKAIDO  STATE_KANTO  STATE_KANSAI STATE_KYUSHU STATE_CHUGOKU  STATE_SAKHALIN  }
 }
 
 region_west_siberia = {
@@ -57,5 +57,5 @@ region_east_siberia = {
 region_oceania = {
 	capital_province = x10DF50
 	map_color = { 0.2 0.4 0.7 }
-	states = { STATE_NEW_SOUTH_WALES    STATE_WESTERN_AUSTRALIA  STATE_NORTH_ISLAND  STATE_HAWAIIAN_ISLANDS  STATE_WEST_MICRONESIA          }
+	states = { STATE_NEW_SOUTH_WALES    STATE_WESTERN_AUSTRALIA  STATE_NORTH_ISLAND  STATE_HAWAIIAN_ISLANDS  STATE_WEST_MICRONESIA STATE_SOLOMON_ISLANDS STATE_FIJI        }
 }

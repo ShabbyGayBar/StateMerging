@@ -2553,7 +2553,7 @@ TNG = {
 	tier = principality
 
 	cultures = { polynesian }
-	capital = STATE_WEST_MICRONESIA
+	capital = STATE_FIJI
 }
 
 WIN = {
@@ -2707,7 +2707,7 @@ JAM = {
 	tier = principality
 
 	cultures = { afro_caribbean }
-	capital = STATE_WEST_INDIES
+	capital = STATE_CUBA
 }
 
 BAH = {

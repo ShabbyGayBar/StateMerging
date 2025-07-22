@@ -16,7 +16,7 @@ assign_state_name_region_niger = {
     if = {
         limit = {
             state_region = {
-                s:STATE_NORTH_CAMEROON ?= this
+                s:STATE_SOUTH_CAMEROON ?= this
             }
         }
         STATE_NORTH_CAMEROON_state_name_assign = yes
