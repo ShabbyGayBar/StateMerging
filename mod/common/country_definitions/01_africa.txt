@@ -76,7 +76,7 @@ LIB = {
 	tier = principality
 
 	cultures = { afro_american }
-	capital = STATE_LIBERIA
+	capital = STATE_SIERRA_LEONE
 	is_named_from_capital = yes
 }
 
@@ -1077,7 +1077,7 @@ MOS = {
 	tier = principality
 
 	cultures = { mossi }
-	capital = STATE_VOLTA
+	capital = STATE_DAHOMEY
 }
 
 KRT = {
@@ -1222,7 +1222,7 @@ EWE = {
 	tier = principality
 
 	cultures = { ewe }
-	capital = STATE_TOGO
+	capital = STATE_GHANA
 }
 
 IBO = {
@@ -1303,7 +1303,7 @@ BSS = { # Bassa
 	tier = principality
 
 	cultures = { bassa }
-	capital = STATE_LIBERIA
+	capital = STATE_SIERRA_LEONE
 }
 
 TIR = { # Tiris

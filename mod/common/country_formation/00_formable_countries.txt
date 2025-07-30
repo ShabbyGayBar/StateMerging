@@ -439,7 +439,7 @@ MAL = {
 		STATE_SENEGAL
 		STATE_GUINEA
 		STATE_SENEGAL
-		STATE_VOLTA
+		STATE_DAHOMEY
 	}
 
 	required_states_fraction = 0.5

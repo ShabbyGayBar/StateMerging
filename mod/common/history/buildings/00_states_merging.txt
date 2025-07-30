@@ -15909,14 +15909,6 @@
                 }
             }
         }
-    }
-    s:STATE_VOLTA = {
-        region_state:MOS = {
-        }
-        region_state:KNG = {
-        }
-    }
-    s:STATE_LIBERIA = {
         region_state:LIB = {
             create_building = {
                 building = "building_millet_farm"
@@ -15925,7 +15917,7 @@
                         type = "building_manor_house"
                         country = "c:LIB"
                         levels = 1
-                        region = "STATE_LIBERIA"
+                        region = "STATE_SIERRA_LEONE"
                     }
                 }
                 reserves = 1
@@ -15942,7 +15934,7 @@
                         type = "building_manor_house"
                         country = "c:LIB"
                         levels = 2
-                        region = "STATE_LIBERIA"
+                        region = "STATE_SIERRA_LEONE"
                     }
                 }
                 reserves = 1
@@ -16412,7 +16404,7 @@
                 add_ownership = {
                     country = {
                         country = "c:ASH"
-                        levels = 20
+                        levels = 35
                     }
                 }
                 reserves = 1
@@ -16421,8 +16413,6 @@
                 }
             }
         }
-    }
-    s:STATE_TOGO = {
         region_state:DEN = {
             create_building = {
                 building = "building_dye_plantation"
@@ -16431,7 +16421,7 @@
                         type = "building_dye_plantation"
                         country = "c:DEN"
                         levels = 1
-                        region = "STATE_TOGO"
+                        region = "STATE_GHANA"
                     }
                 }
                 reserves = 1
@@ -16451,21 +16441,6 @@
                 reserves = 1
                 activate_production_methods = {
                     "pm_anchorage"
-                }
-            }
-        }
-        region_state:ASH = {
-            create_building = {
-                building = "building_barracks"
-                add_ownership = {
-                    country = {
-                        country = "c:ASH"
-                        levels = 15
-                    }
-                }
-                reserves = 1
-                activate_production_methods = {
-                    "pm_no_organization"
                 }
             }
         }
@@ -16552,6 +16527,10 @@
                     "pm_no_organization"
                 }
             }
+        }
+        region_state:MOS = {
+        }
+        region_state:KNG = {
         }
     }
     s:STATE_LINDI = {

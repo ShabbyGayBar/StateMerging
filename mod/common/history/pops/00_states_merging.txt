@@ -3402,60 +3402,6 @@
                 size = 135000
             }
         }
-    }
-    s:STATE_VOLTA = {
-        region_state:MOS = {
-            create_pop = {
-                culture = mossi
-                size = 828400
-            }
-            create_pop = {
-                culture = mande
-                religion = animist
-                size = 170000
-            }
-            create_pop = {
-                culture = fulbe
-                size = 88000
-            }
-            create_pop = {
-                culture = mande
-                size = 242396
-            }
-            create_pop = {
-                culture = bambara
-                size = 80400
-            }
-            create_pop = {
-                pop_type = slaves
-                culture = mande
-                religion = animist
-                size = 18000
-            }
-        }
-        region_state:KNG = {
-            create_pop = {
-                culture = dyula
-                size = 19996
-            }
-            create_pop = {
-                culture = mande
-                size = 44000
-            }
-            create_pop = {
-                culture = mande
-                religion = animist
-                size = 33000
-            }
-            create_pop = {
-                pop_type = slaves
-                culture = mande
-                religion = animist
-                size = 15000
-            }
-        }
-    }
-    s:STATE_LIBERIA = {
         region_state:LIB = {
             create_pop = {
                 culture = kru
@@ -3787,7 +3733,7 @@
         region_state:ASH = {
             create_pop = {
                 culture = akan
-                size = 436308
+                size = 884308
             }
             create_pop = {
                 culture = mossi
@@ -3795,38 +3741,12 @@
             }
             create_pop = {
                 culture = ewe
-                size = 88996
+                size = 108996
             }
             create_pop = {
                 pop_type = slaves
                 culture = ewe
                 size = 15000
-            }
-        }
-    }
-    s:STATE_TOGO = {
-        region_state:DEN = {
-            create_pop = {
-                culture = akan
-                size = 116308
-            }
-            create_pop = {
-                culture = ewe
-                size = 115996
-            }
-            create_pop = {
-                culture = mossi
-                size = 47996
-            }
-        }
-        region_state:ASH = {
-            create_pop = {
-                culture = ewe
-                size = 20000
-            }
-            create_pop = {
-                culture = akan
-                size = 448000
             }
             create_pop = {
                 culture = fulbe
@@ -3840,6 +3760,20 @@
                 pop_type = slaves
                 culture = fon
                 size = 64004
+            }
+        }
+        region_state:DEN = {
+            create_pop = {
+                culture = akan
+                size = 116308
+            }
+            create_pop = {
+                culture = ewe
+                size = 115996
+            }
+            create_pop = {
+                culture = mossi
+                size = 47996
             }
         }
         region_state:EWE = {
@@ -3896,6 +3830,56 @@
                 pop_type = slaves
                 culture = fulbe
                 size = 7000
+            }
+        }
+        region_state:MOS = {
+            create_pop = {
+                culture = mossi
+                size = 828400
+            }
+            create_pop = {
+                culture = mande
+                religion = animist
+                size = 170000
+            }
+            create_pop = {
+                culture = fulbe
+                size = 88000
+            }
+            create_pop = {
+                culture = mande
+                size = 242396
+            }
+            create_pop = {
+                culture = bambara
+                size = 80400
+            }
+            create_pop = {
+                pop_type = slaves
+                culture = mande
+                religion = animist
+                size = 18000
+            }
+        }
+        region_state:KNG = {
+            create_pop = {
+                culture = dyula
+                size = 19996
+            }
+            create_pop = {
+                culture = mande
+                size = 44000
+            }
+            create_pop = {
+                culture = mande
+                religion = animist
+                size = 33000
+            }
+            create_pop = {
+                pop_type = slaves
+                culture = mande
+                religion = animist
+                size = 15000
             }
         }
     }

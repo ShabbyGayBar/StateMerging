@@ -2384,7 +2384,7 @@ ETH = {
 
 LIB = {
 	states = {
-		STATE_LIBERIA
+		STATE_SIERRA_LEONE
 	}
 	ai_will_do = { always = no }
 }
