@@ -1032,13 +1032,7 @@
                     building = {
                         type = "building_financial_district"
                         country = "c:GBR"
-                        levels = 2
-                        region = "STATE_HOME_COUNTIES"
-                    }
-                    building = {
-                        type = "building_financial_district"
-                        country = "c:GBR"
-                        levels = 4
+                        levels = 6
                         region = "STATE_HOME_COUNTIES"
                     }
                 }
@@ -7267,13 +7261,7 @@
                     building = {
                         type = "building_furniture_manufacturies"
                         country = "c:BAV"
-                        levels = 2
-                        region = "STATE_BAVARIA"
-                    }
-                    building = {
-                        type = "building_furniture_manufacturies"
-                        country = "c:BAV"
-                        levels = 1
+                        levels = 3
                         region = "STATE_BAVARIA"
                     }
                 }
@@ -8965,13 +8953,7 @@
                     building = {
                         type = "building_tooling_workshops"
                         country = "c:SIC"
-                        levels = 2
-                        region = "STATE_LAZIO"
-                    }
-                    building = {
-                        type = "building_tooling_workshops"
-                        country = "c:SIC"
-                        levels = 1
+                        levels = 3
                         region = "STATE_LAZIO"
                     }
                 }
@@ -12662,6 +12644,7 @@
                         region = "STATE_GREATER_POLAND"
                     }
                 }
+                reserves = 0
                 activate_production_methods = {
                     "pm_saw_mills"
                     "pm_hardwood"
@@ -37719,19 +37702,7 @@
                     building = {
                         type = "building_manor_house"
                         country = "c:NET"
-                        levels = 20
-                        region = "STATE_HOLLAND"
-                    }
-                    building = {
-                        type = "building_manor_house"
-                        country = "c:NET"
-                        levels = 2
-                        region = "STATE_HOLLAND"
-                    }
-                    building = {
-                        type = "building_manor_house"
-                        country = "c:NET"
-                        levels = 3
+                        levels = 25
                         region = "STATE_HOLLAND"
                     }
                 }
@@ -37754,13 +37725,7 @@
                     building = {
                         type = "building_manor_house"
                         country = "c:NET"
-                        levels = 13
-                        region = "STATE_HOLLAND"
-                    }
-                    building = {
-                        type = "building_manor_house"
-                        country = "c:NET"
-                        levels = 2
+                        levels = 15
                         region = "STATE_HOLLAND"
                     }
                 }
@@ -37814,13 +37779,7 @@
                     building = {
                         type = "building_manor_house"
                         country = "c:NET"
-                        levels = 9
-                        region = "STATE_HOLLAND"
-                    }
-                    building = {
-                        type = "building_manor_house"
-                        country = "c:NET"
-                        levels = 1
+                        levels = 10
                         region = "STATE_HOLLAND"
                     }
                     building = {
