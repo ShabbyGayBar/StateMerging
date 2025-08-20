@@ -687,6 +687,19 @@
     }
     s:STATE_GREENLAND = {
         region_state:DEN = {
+            create_building = {
+                building = "building_port"
+                add_ownership = {
+                    country = {
+                        country = "c:DEN"
+                        levels = 1
+                    }
+                }
+                reserves = 1
+                activate_production_methods = {
+                    "pm_anchorage"
+                }
+            }
         }
     }
     s:STATE_HOME_COUNTIES = {
@@ -1032,13 +1045,7 @@
                     building = {
                         type = "building_financial_district"
                         country = "c:GBR"
-                        levels = 2
-                        region = "STATE_HOME_COUNTIES"
-                    }
-                    building = {
-                        type = "building_financial_district"
-                        country = "c:GBR"
-                        levels = 4
+                        levels = 6
                         region = "STATE_HOME_COUNTIES"
                     }
                 }
@@ -7267,13 +7274,7 @@
                     building = {
                         type = "building_furniture_manufacturies"
                         country = "c:BAV"
-                        levels = 2
-                        region = "STATE_BAVARIA"
-                    }
-                    building = {
-                        type = "building_furniture_manufacturies"
-                        country = "c:BAV"
-                        levels = 1
+                        levels = 3
                         region = "STATE_BAVARIA"
                     }
                 }
@@ -8965,13 +8966,7 @@
                     building = {
                         type = "building_tooling_workshops"
                         country = "c:SIC"
-                        levels = 2
-                        region = "STATE_LAZIO"
-                    }
-                    building = {
-                        type = "building_tooling_workshops"
-                        country = "c:SIC"
-                        levels = 1
+                        levels = 3
                         region = "STATE_LAZIO"
                     }
                 }
@@ -12662,6 +12657,7 @@
                         region = "STATE_GREATER_POLAND"
                     }
                 }
+                reserves = 0
                 activate_production_methods = {
                     "pm_saw_mills"
                     "pm_hardwood"
@@ -14622,6 +14618,21 @@
     s:STATE_ALGIERS = {
         region_state:MAS = {
             create_building = {
+                building = "building_government_administration"
+                add_ownership = {
+                    country = {
+                        country = "c:MAS"
+                        levels = 1
+                    }
+                }
+                reserves = 1
+                activate_production_methods = {
+                    "pm_simple_organization"
+                    "pm_religious_bureaucrats"
+                    "pm_professional_bureaucrats"
+                }
+            }
+            create_building = {
                 building = "building_fishing_wharf"
                 add_ownership = {
                     building = {
@@ -14661,24 +14672,6 @@
                 reserves = 1
                 activate_production_methods = {
                     "pm_basic_port"
-                }
-            }
-            create_building = {
-                building = "building_lead_mine"
-                add_ownership = {
-                    building = {
-                        type = "building_lead_mine"
-                        country = "c:MAS"
-                        levels = 1
-                        region = "STATE_ALGIERS"
-                    }
-                }
-                reserves = 1
-                activate_production_methods = {
-                    "pm_picks_and_shovels_building_lead_mine"
-                    "pm_no_explosives"
-                    "pm_no_steam_automation"
-                    "pm_road_carts"
                 }
             }
             create_building = {
@@ -15047,6 +15040,21 @@
     s:STATE_ORAN = {
         region_state:MAS = {
             create_building = {
+                building = "building_government_administration"
+                add_ownership = {
+                    country = {
+                        country = "c:MAS"
+                        levels = 3
+                    }
+                }
+                reserves = 1
+                activate_production_methods = {
+                    "pm_simple_organization"
+                    "pm_religious_bureaucrats"
+                    "pm_professional_bureaucrats"
+                }
+            }
+            create_building = {
                 building = "building_wheat_farm"
                 add_ownership = {
                     building = {
@@ -15095,21 +15103,6 @@
                     "pm_simple_ranch"
                     "pm_standard_fences"
                     "pm_unrefrigerated"
-                }
-            }
-            create_building = {
-                building = "building_government_administration"
-                add_ownership = {
-                    country = {
-                        country = "c:MAS"
-                        levels = 1
-                    }
-                }
-                reserves = 1
-                activate_production_methods = {
-                    "pm_simple_organization"
-                    "pm_religious_bureaucrats"
-                    "pm_professional_bureaucrats"
                 }
             }
         }
@@ -16013,7 +16006,7 @@
                 add_ownership = {
                     country = {
                         country = "c:SOK"
-                        levels = 2
+                        levels = 5
                     }
                 }
                 reserves = 1
@@ -16029,7 +16022,7 @@
                     building = {
                         type = "building_textile_mills"
                         country = "c:SOK"
-                        levels = 2
+                        levels = 1
                         region = "STATE_YORUBA_STATES"
                     }
                 }
@@ -21461,13 +21454,13 @@
                     building = {
                         type = "building_trade_center"
                         country = "c:MEX"
-                        levels = 2
+                        levels = 3
                         region = "STATE_YUCATAN"
                     }
                 }
                 reserves = 1
                 activate_production_methods = {
-                    "pm_trade_center_trade_quantity_normal"
+                    "pm_trade_center_trade_quantity_limited"
                 }
             }
             create_building = {
@@ -21541,12 +21534,12 @@
                 add_ownership = {
                     country = {
                         country = "c:MEX"
-                        levels = 10
+                        levels = 7
                     }
                 }
                 reserves = 1
                 activate_production_methods = {
-                    "pm_simple_organization"
+                    "pm_horizontal_drawer_cabinets"
                     "pm_professional_bureaucrats"
                     "pm_religious_bureaucrats"
                 }
@@ -21763,12 +21756,12 @@
                 add_ownership = {
                     country = {
                         country = "c:MEX"
-                        levels = 7
+                        levels = 4
                     }
                 }
                 reserves = 1
                 activate_production_methods = {
-                    "pm_simple_organization"
+                    "pm_horizontal_drawer_cabinets"
                     "pm_professional_bureaucrats"
                     "pm_religious_bureaucrats"
                 }
@@ -21836,24 +21829,6 @@
                     "pm_simple_farming"
                     "pm_no_secondary"
                     "pm_tools_disabled"
-                }
-            }
-            create_building = {
-                building = "building_iron_mine"
-                add_ownership = {
-                    building = {
-                        type = "building_financial_district"
-                        country = "c:MEX"
-                        levels = 1
-                        region = "STATE_JALISCO"
-                    }
-                }
-                reserves = 1
-                activate_production_methods = {
-                    "pm_picks_and_shovels_building_iron_mine"
-                    "pm_no_explosives"
-                    "pm_no_steam_automation"
-                    "pm_road_carts"
                 }
             }
             create_building = {
@@ -24367,12 +24342,12 @@
                 add_ownership = {
                     country = {
                         country = "c:ARG"
-                        levels = 4
+                        levels = 3
                     }
                 }
                 reserves = 1
                 activate_production_methods = {
-                    "pm_simple_organization"
+                    "pm_horizontal_drawer_cabinets"
                     "pm_religious_bureaucrats"
                     "pm_professional_bureaucrats"
                 }
@@ -26947,7 +26922,7 @@
                 add_ownership = {
                     country = {
                         country = "c:PER"
-                        levels = 1
+                        levels = 2
                     }
                 }
                 reserves = 1
@@ -27081,6 +27056,21 @@
         }
         region_state:PER = {
             create_building = {
+                building = "building_government_administration"
+                add_ownership = {
+                    country = {
+                        country = "c:PER"
+                        levels = 2
+                    }
+                }
+                reserves = 1
+                activate_production_methods = {
+                    "pm_simple_organization"
+                    "pm_religious_bureaucrats"
+                    "pm_professional_bureaucrats"
+                }
+            }
+            create_building = {
                 building = "building_wheat_farm"
                 add_ownership = {
                     building = {
@@ -27170,7 +27160,7 @@
                 add_ownership = {
                     country = {
                         country = "c:PER"
-                        levels = 2
+                        levels = 4
                     }
                 }
                 reserves = 1
@@ -27267,7 +27257,7 @@
                 activate_production_methods = {
                     "pm_handsewn_clothes"
                     "pm_traditional_looms"
-                    "pm_craftsman_sewing"
+                    "pm_no_luxury_clothes"
                 }
             }
             create_building = {
@@ -27275,7 +27265,7 @@
                 add_ownership = {
                     country = {
                         country = "c:PER"
-                        levels = 3
+                        levels = 8
                     }
                 }
                 reserves = 1
@@ -27413,7 +27403,7 @@
                 add_ownership = {
                     country = {
                         country = "c:PER"
-                        levels = 3
+                        levels = 6
                     }
                 }
                 reserves = 1
@@ -32283,6 +32273,21 @@
                 add_ownership = {
                     country = {
                         country = "c:FRA"
+                        levels = 1
+                    }
+                }
+                reserves = 1
+                activate_production_methods = {
+                    "pm_anchorage"
+                }
+            }
+        }
+        region_state:DEN = {
+            create_building = {
+                building = "building_port"
+                add_ownership = {
+                    country = {
+                        country = "c:DEN"
                         levels = 1
                     }
                 }
@@ -37796,19 +37801,7 @@
                     building = {
                         type = "building_manor_house"
                         country = "c:NET"
-                        levels = 20
-                        region = "STATE_HOLLAND"
-                    }
-                    building = {
-                        type = "building_manor_house"
-                        country = "c:NET"
-                        levels = 2
-                        region = "STATE_HOLLAND"
-                    }
-                    building = {
-                        type = "building_manor_house"
-                        country = "c:NET"
-                        levels = 3
+                        levels = 25
                         region = "STATE_HOLLAND"
                     }
                 }
@@ -37831,13 +37824,7 @@
                     building = {
                         type = "building_manor_house"
                         country = "c:NET"
-                        levels = 13
-                        region = "STATE_HOLLAND"
-                    }
-                    building = {
-                        type = "building_manor_house"
-                        country = "c:NET"
-                        levels = 2
+                        levels = 15
                         region = "STATE_HOLLAND"
                     }
                 }
@@ -37891,13 +37878,7 @@
                     building = {
                         type = "building_manor_house"
                         country = "c:NET"
-                        levels = 9
-                        region = "STATE_HOLLAND"
-                    }
-                    building = {
-                        type = "building_manor_house"
-                        country = "c:NET"
-                        levels = 1
+                        levels = 10
                         region = "STATE_HOLLAND"
                     }
                     building = {

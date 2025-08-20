@@ -1352,7 +1352,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_WEST_INDIES
+				state_region = s:STATE_CUBA
 				count = 2
 			}
 
