@@ -162,7 +162,6 @@
         }
 
         add_homeland = cu:north_italian
-        add_homeland = cu:south_german
     }
     s:STATE_INGRIA = {
         create_state = {
@@ -5089,7 +5088,6 @@
         add_homeland = cu:croat
         add_homeland = cu:serb
         add_homeland = cu:bosniak
-        add_homeland = cu:south_german
         add_homeland = cu:slovene
         add_homeland = cu:north_italian
     }
