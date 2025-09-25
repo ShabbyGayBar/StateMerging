@@ -31,7 +31,7 @@ region_occitania = {
 }
 
 region_rhine = {
-	capital_province = x6E4891
+	capital_province = x904020
 	map_color = { 91 205 60 }
 	states = { STATE_FLANDERS STATE_HOLLAND    STATE_RHINELAND   STATE_WESTPHALIA  }
 }
@@ -109,7 +109,7 @@ region_finland = {
 }
 
 region_arctic_russia = {
-	capital_province = x1CE50A
+	capital_province = xCF8844
 	map_color = { 220 250 220 }
 	states = {  STATE_ARKHANGELSK  }
 }
