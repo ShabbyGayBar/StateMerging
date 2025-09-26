@@ -782,6 +782,24 @@ je_tur_raided = {
 			ID = mon_state_formation.14
 			popup = yes
 		}
+		hidden_effect = { # Clear Montenegrin raiding if that hasn't happened already
+			if = {
+				limit = {
+					NOT = {
+						has_global_variable = montenegro_defeat_var
+					}
+				}
+				sr:region_balkans = {
+					every_scope_state = {
+						limit = {
+							has_modifier = raid_target
+						}
+						remove_modifier = raid_target
+					}
+				}
+				set_global_variable = montenegro_defeat_var
+			}
+		}
 	}
 
 	event_outcome_completed_desc = {

@@ -94,7 +94,7 @@ GLOBAL = {
 	c:TUR ?= { # Historically had no foreign debt prior to 1854
 		add_treasury = {
 			value = gold_reserves_limit
-			multiply = -0.5
+			multiply = -0.4
 		}
 	}
 
