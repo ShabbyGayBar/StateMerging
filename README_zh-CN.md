@@ -5,7 +5,8 @@
 
 - 如果您希望只合并少数某些州，您可以选择使用本 Mod 的保守版：
   - [Github](https://github.com/ShabbyGayBar/StateMergingMinimal), 或
-  - [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3432100126).
+  - [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3432100126), 或
+  - [Paradox Mods](https://mods.paradoxplaza.com/mods/113894/Any).
 - 如果您希望制作自己的省份合并 Mod，您可以使用[省份合并自动化脚本及教程](https://github.com/ShabbyGayBar/StateMerger).
 
 一个省份合并 Mod，合并了部分地区。
