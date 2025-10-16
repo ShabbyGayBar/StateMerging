@@ -10647,7 +10647,7 @@
                     building = {
                         type = "building_financial_district"
                         country = "c:POR"
-                        levels = 1
+                        levels = 10
                         region = "STATE_ESTREMADURA"
                     }
                 }
@@ -19212,6 +19212,19 @@
                 }
             }
             create_building = {
+                building = "building_port"
+                add_ownership = {
+                    country = {
+                        country = "c:USA"
+                        levels = 6
+                    }
+                }
+                reserves = 1
+                activate_production_methods = {
+                    "pm_basic_port"
+                }
+            }
+            create_building = {
                 building = "building_white_house"
                 level = 1
             }
@@ -19358,19 +19371,6 @@
                 reserves = 1
                 activate_production_methods = {
                     "pm_military_shipbuilding_wooden"
-                }
-            }
-            create_building = {
-                building = "building_port"
-                add_ownership = {
-                    country = {
-                        country = "c:USA"
-                        levels = 5
-                    }
-                }
-                reserves = 1
-                activate_production_methods = {
-                    "pm_basic_port"
                 }
             }
             create_building = {
@@ -19789,6 +19789,20 @@
                 activate_production_methods = {
                     "pm_unrefrigerated"
                     "pm_fishing_trawlers"
+                }
+            }
+            create_building = {
+                building = "building_artillery_foundries"
+                add_ownership = {
+                    country = {
+                        country = "c:USA"
+                        levels = 1
+                    }
+                }
+                reserves = 1
+                activate_production_methods = {
+                    "pm_cannons"
+                    "pm_automation_disabled"
                 }
             }
             create_building = {
@@ -27009,6 +27023,19 @@
                 reserves = 1
                 activate_production_methods = {
                     "pm_anchorage"
+                }
+            }
+            create_building = {
+                building = "building_trade_center"
+                add_ownership = {
+                    country = {
+                        country = "c:LAH"
+                        levels = 2
+                    }
+                }
+                reserves = 1
+                activate_production_methods = {
+                    "pm_trade_center_trade_quantity_limited"
                 }
             }
         }
@@ -36748,7 +36775,7 @@
         }
         region_state:JAP = {
             create_building = {
-                building = "building_rice_farm"
+                building = "building_wheat_farm"
                 add_ownership = {
                     building = {
                         type = "building_manor_house"
@@ -36759,7 +36786,7 @@
                 }
                 reserves = 1
                 activate_production_methods = {
-                    "pm_simple_farming_building_rice_farm"
+                    "pm_simple_farming"
                     "pm_no_secondary"
                     "pm_tools_disabled"
                 }

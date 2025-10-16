@@ -264,20 +264,22 @@
 	invalid = { #This is normally ended by deal with Russia, but there is also an odd edgecase where c:TUR no longer borders c:MON
 		OR = {
 			has_variable = mon_stop_raiding_deal #normal way to end JE
-			NOR = { #if any of these assumptions false, JE is invalid. 
+			NOR = {
 				exists = c:TUR
 				exists = c:MON
 				c:MON = this #can't become Yugoslavia or Serbia
+			}
+			NOT = {
 				any_neighbouring_state = { # Turkey must be neighbor, unless it's fighting a civil war. 
-	               OR = {
-	                  c:TUR ?= owner
-	                  AND = {
-	                     exists = owner.civil_war_origin_country
-	                     c:TUR ?= owner.civil_war_origin_country
-	                  }
-	               }
-	            }
-	        }
+					OR = {
+						c:TUR ?= owner
+						AND = {
+							exists = owner.civil_war_origin_country
+							c:TUR ?= owner.civil_war_origin_country
+						}
+					}
+				}
+			}
 		}
 	}
 

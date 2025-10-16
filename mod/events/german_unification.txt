@@ -270,6 +270,8 @@ german_unification.3 = {
 
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 
+	cooldown = { days = never_fire_again_modifier_time }
+
 	duration = 3
 
 	trigger = {

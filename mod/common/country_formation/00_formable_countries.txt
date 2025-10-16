@@ -295,9 +295,14 @@ FSA = {
 }
 
 CZH = {
-	use_culture_states = yes
+	STATES = {
+		STATE_BOHEMIA
+		STATE_BOHEMIA
+		STATE_SLOVAKIA
+		STATE_SLOVAKIA
+	}
 
-	required_states_fraction = 1
+	required_states_fraction = 0.75
 
 	ai_will_do = { always = yes }
 

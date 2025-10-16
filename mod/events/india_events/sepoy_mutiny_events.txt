@@ -1910,7 +1910,12 @@ sepoy_mutiny_events.3 = {
 				has_variable = sepoy_mutiny_revolter_var
 			}
 		}
-		play_as = c:MUG
+		if = {
+			limit = {
+				is_player = yes
+			}
+			play_as = c:MUG
+		}
 		custom_tooltip = {
 			text = sepoy_mutiny_events.3.tt_1
 			sepoy_mutiny_run_all_effects = yes
@@ -1924,7 +1929,12 @@ sepoy_mutiny_events.3 = {
 				has_variable = sepoy_mutiny_revolter_var
 			}
 		}
-		play_as = c:SAT
+		if = {
+			limit = {
+				is_player = yes
+			}
+			play_as = c:SAT
+		}
 		custom_tooltip = {
 			text = sepoy_mutiny_events.3.tt_1
 			sepoy_mutiny_run_all_effects = yes
@@ -1938,7 +1948,12 @@ sepoy_mutiny_events.3 = {
 				has_variable = sepoy_mutiny_revolter_var
 			}
 		}
-		play_as = c:BGL
+		if = {
+			limit = {
+				is_player = yes
+			}
+			play_as = c:BGL
+		}
 		custom_tooltip = {
 			text = sepoy_mutiny_events.3.tt_1
 			sepoy_mutiny_run_all_effects = yes
@@ -1952,7 +1967,12 @@ sepoy_mutiny_events.3 = {
 				has_variable = sepoy_mutiny_revolter_var
 			}
 		}
-		play_as = c:PAN
+		if = {
+			limit = {
+				is_player = yes
+			}
+			play_as = c:PAN
+		}
 		custom_tooltip = {
 			text = sepoy_mutiny_events.3.tt_1
 			sepoy_mutiny_run_all_effects = yes
@@ -1966,7 +1986,12 @@ sepoy_mutiny_events.3 = {
 				has_variable = sepoy_mutiny_revolter_var
 			}
 		}
-		play_as = c:KNO
+		if = {
+			limit = {
+				is_player = yes
+			}
+			play_as = c:KNO
+		}
 		custom_tooltip = {
 			text = sepoy_mutiny_events.3.tt_1
 			sepoy_mutiny_run_all_effects = yes

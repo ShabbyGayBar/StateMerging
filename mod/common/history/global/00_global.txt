@@ -658,7 +658,7 @@ GLOBAL = {
 				}
 			}
 			add_radicals_in_state = {
-                value = large_radicals
+                value = 0.15
                 culture = cu:north_italian
             }
 		}

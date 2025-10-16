@@ -10,9 +10,18 @@ harsh_ai_behavior_trigger = {
 
 ai_strongly_desires_target_state = {
 	OR = {
-		has_secret_goal = { # AI wants to conquer the state owner
-			who = scope:target_state.owner
-			secret_goal = conquer
+		AND = {
+			has_secret_goal = { # AI wants to conquer the state owner
+				who = scope:target_state.owner
+				secret_goal = conquer
+			}
+			OR = {
+				has_strategic_land_adjacency = scope:target_state # Will limit its ambitions to land borders
+				AND = {
+					scope:target_state.region ?= capital.region # Will try to annex states in its capital region regardless of whether they border it or not
+					can_reach_target_state = yes
+				}
+			}
 		}
 		scope:target_state = { has_claim_by = root } # AI always wants claims
 	}
@@ -38,7 +47,13 @@ ai_desires_target_state = {
 				has_strategy = ai_strategy_world_revolution
 				has_strategy = ai_strategy_territorial_expansion
 			}
-			has_strategic_adjacency = scope:target_state
+			OR = {
+				has_strategic_land_adjacency = scope:target_state # Will limit its ambitions to land borders
+				AND = {
+					scope:target_state.region ?= capital.region # Will try to annex states in its capital region regardless of whether they border it or not
+					can_reach_target_state = yes
+				}
+			}
 		}
 		AND = { # Colonialist AI wants colonies
 			OR = {
@@ -46,7 +61,7 @@ ai_desires_target_state = {
 				has_strategy = ai_strategy_colonial_expansion
 			}
 			scope:target_state.owner = { is_country_type = unrecognized }
-			can_reach_target_state = yes
+			can_reach_target_state = yes  # Willing to go overseas to acquire territories
 		}
 		AND = { # AI wants nearby states if gifted them by overlord
 			has_strategic_adjacency = scope:target_state

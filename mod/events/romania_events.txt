@@ -123,6 +123,10 @@ romania.2 = {
 					}
 					is_subject = no
 	            }
+				NOR = {
+					c:AUS ?= this
+					c:KUK ?= this
+				}
         	}
         	save_scope_as = romania_lesser_partner
         	set_variable = {
@@ -334,10 +338,12 @@ romania.4 = {
 				OR = {
     				has_variable = ROM_united_principality
     				AND = {
+						country_has_primary_culture = cu:romanian
     					is_subject = yes
     					top_overlord ?= {
     						has_variable = ROM_united_principality
     					}
+						is_country_type = recognized # No colonial administrations
     				}
     			}
         	}

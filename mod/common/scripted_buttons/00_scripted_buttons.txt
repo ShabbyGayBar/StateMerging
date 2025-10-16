@@ -1005,6 +1005,10 @@ je_unite_the_principalities_button = {
 					}
 					is_subject = no
 	            }
+				NOR = {
+					c:AUS ?= this
+					c:KUK ?= this
+				}
 	        }
         }
 	}

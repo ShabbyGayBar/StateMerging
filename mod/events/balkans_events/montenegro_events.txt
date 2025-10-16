@@ -1161,7 +1161,7 @@ mon_state_formation.7 = {
 	cooldown = { days = normal_modifier_time }
 
 	trigger = {
-		THIS ?= c:MON
+		c:MON ?= this
 		has_variable = danilo_dresses_like_a_prince
 		ruler ?= {
 			has_template = mon_danilo_petrovic_njegos
@@ -1576,7 +1576,7 @@ type = country_event
 
 	trigger = {
 		game_date >= 1860.08.13
-		THIS ?= c:MON
+		c:MON ?= this
 		ruler ?= {
 			has_template = mon_danilo_petrovic_njegos
 			NOR = {
@@ -1605,7 +1605,7 @@ type = country_event
 			save_scope_as = danilo
 			set_character_busy_and_immortal = yes
 		}
-		heir = {
+		heir ?= {
 			save_scope_as = nikola
 			set_character_busy_and_immortal = yes
 		}
@@ -1698,7 +1698,7 @@ type = country_event
 	cooldown = { days = normal_modifier_time }
 
 	trigger = { #Triggered by law_enactment
-		THIS ?= c:MON
+		c:MON ?= this
 		NOT = {
 			has_variable = mon_state_formation_11_fired
 		}
@@ -2318,7 +2318,7 @@ mon_state_formation.17 = {
 			limit = {
 				exists = heir
 			}
-			heir = {
+			heir ?= {
 				if = {
 					limit = {
 						is_immortal = yes

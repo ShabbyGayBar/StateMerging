@@ -1656,3 +1656,22 @@ country_is_in_german_confederation = {
 		state_is_in_german_confederation = yes
 	}
 }
+
+is_citizenship_law = {
+	OR = {
+		type ?= law_type:law_subjecthood
+		type ?= law_type:law_ethnostate
+		type ?= law_type:law_national_supremacy
+		type ?= law_type:law_racial_segregation
+		type ?= law_type:law_cultural_exclusion
+		type ?= law_type:law_multicultural
+	}
+}
+
+country_is_islamic = {
+    OR = {
+        country_has_state_religion = rel:sunni
+        country_has_state_religion = rel:shiite
+        country_has_state_religion = rel:ibadi
+    }
+}

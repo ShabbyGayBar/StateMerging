@@ -604,6 +604,32 @@ austria_federation.1 = { # Popovici Proposal
 		default_option = yes
 		ai_chance = {
 			base = 20
+			modifier = {
+				trigger = { # Franz Josef will not agree to this
+					ruler ?= {
+						has_template = aus_franz_josef_I_habsburg_template
+					}
+				}
+				add = -20
+			}
+			modifier = {
+				trigger = {
+					ruler ?= {
+						is_interest_group_type = ig_armed_forces
+					}
+				}
+				add = 50
+			}
+			modifier = {
+				trigger = {
+					ruler ?= {
+						NOT = {
+							culture = cu:south_german
+						}
+					}
+				}
+				add = 100
+			}
 		}
 		add_modifier = {
 			name = modifier_endorse_popovici_proposal
@@ -642,6 +668,14 @@ austria_federation.1 = { # Popovici Proposal
 		name = austria_federation.1.b
 		ai_chance = {
 			base = 20
+			modifier = {
+				trigger = {
+					ruler ?= {
+						has_template = aus_franz_josef_I_habsburg_template
+					}
+				}
+				add = 100
+			}
 		}
 		custom_tooltip = {
 			text = shelve_proposal_for_now_tt

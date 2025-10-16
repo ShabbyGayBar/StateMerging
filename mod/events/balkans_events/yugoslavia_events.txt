@@ -91,28 +91,6 @@ yugoslavia.1 = {
 				}
 			}
 		}
-		custom_tooltip = {
-			text = je_yug_gain_claim_tt
-			every_state = {
-				limit = {
-					NOR = {
-						owner = ROOT
-						has_claim_by = ROOT
-					}
-					state_region = {
-						OR = {
-							is_homeland = cu:croat
-							is_homeland = cu:serb
-							is_homeland = cu:slovene
-							is_homeland = cu:bosniak
-						}
-					}
-				}
-				state_region = {
-					add_claim = ROOT
-				}
-			}
-		}
 		add_modifier = {
 			name = seeking_yugoslavia
 			days = moderately_long_modifier_time

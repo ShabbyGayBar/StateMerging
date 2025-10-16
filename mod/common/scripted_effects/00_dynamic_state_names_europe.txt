@@ -521,6 +521,26 @@ assign_state_name_region_italy  = {
         }
         STATE_ISTRIA_state_name_assign = yes
     }
+    if = {
+        limit = {
+            state_region = {
+                s:STATE_PIEDMONT ?= this
+            }
+        }
+        STATE_PIEDMONT_state_name_assign = yes
+    }
+}
+
+## Occitania Region
+assign_state_name_region_occitania  = {
+    if = {
+        limit = {
+            state_region = {
+                s:STATE_PROVENCE ?= this
+            }
+        }
+        STATE_SAVOY_state_name_assign = yes
+    }
 }
 
 ## Rhine
@@ -757,6 +777,14 @@ assign_state_name_region_south_germany  = { # region_south_germany
             }
         }
         STATE_TYROL_state_name_assign = yes
+    }
+    else_if = {
+        limit = {
+            state_region = {
+                s:STATE_VENETIA ?= this
+            }
+        }
+        STATE_SOUTH_TYROL_state_name_assign = yes
     }
     else_if = {
         limit = {
@@ -4593,6 +4621,156 @@ STATE_ISTRIA_state_name_assign = {
 	}
 }
 
+#Savoy
+STATE_SAVOY_state_name_assign = {
+    if = { # French
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_francophone
+                }
+            }
+        }
+
+        set_state_name = STATE_SAVOY_french
+
+        set_hub_name = {
+            type = city
+            name = HUB_NAME_STATE_SAVOY_city_french
+        }
+
+        set_hub_name = {
+            type = farm
+            name = HUB_NAME_STATE_SAVOY_farm_french
+        }
+
+        set_hub_name = {
+            type = wood
+            name = HUB_NAME_STATE_SAVOY_wood_french
+        }
+
+        set_hub_name = {
+            type = mine
+            name = HUB_NAME_STATE_SAVOY_mine_french
+        }
+    }
+    if = { # Italian
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_italian
+                }
+            }
+        }
+
+        set_state_name = STATE_SAVOY_italian
+
+        set_hub_name = {
+            type = city
+            name = HUB_NAME_STATE_SAVOY_city_italian
+        }
+
+        set_hub_name = {
+            type = farm
+            name = HUB_NAME_STATE_SAVOY_farm_italian
+        }
+
+        set_hub_name = {
+            type = wood
+            name = HUB_NAME_STATE_SAVOY_wood_italian
+        }
+
+        set_hub_name = {
+            type = mine
+            name = HUB_NAME_STATE_SAVOY_mine_italian
+        }
+    }
+    else = { # By putting an else at the end that resets the names we ensure that the names are switched back to their defaults if anyone else takes the states
+        reset_state_name = yes
+        reset_hub_names = yes
+    }
+}
+
+#Piedmont
+STATE_PIEDMONT_state_name_assign = {
+    if = { # French
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_francophone
+                }
+            }
+        }
+
+        set_state_name = STATE_PIEDMONT_french
+
+        set_hub_name = {
+            type = city
+            name = HUB_NAME_STATE_PIEDMONT_city_french
+        }
+
+        set_hub_name = {
+            type = farm
+            name = HUB_NAME_STATE_PIEDMONT_farm_french
+        }
+
+        set_hub_name = {
+            type = wood
+            name = HUB_NAME_STATE_PIEDMONT_wood_french
+        }
+
+        set_hub_name = {
+            type = mine
+            name = HUB_NAME_STATE_PIEDMONT_mine_french
+        }
+
+        set_hub_name = {
+            type = port
+            name = HUB_NAME_STATE_PIEDMONT_port_french
+        }
+    }
+    if = { # Italian
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_italian
+                }
+            }
+        }
+
+        set_state_name = STATE_PIEDMONT_italian
+
+        set_hub_name = {
+            type = city
+            name = HUB_NAME_STATE_PIEDMONT_city_italian
+        }
+
+        set_hub_name = {
+            type = farm
+            name = HUB_NAME_STATE_PIEDMONT_farm_italian
+        }
+
+        set_hub_name = {
+            type = wood
+            name = HUB_NAME_STATE_PIEDMONT_wood_italian
+        }
+
+        set_hub_name = {
+            type = mine
+            name = HUB_NAME_STATE_PIEDMONT_mine_italian
+        }
+
+        set_hub_name = {
+            type = port
+            name = HUB_NAME_STATE_PIEDMONT_port_italian
+        }
+    }
+    else = { # By putting an else at the end that resets the names we ensure that the names are switched back to their defaults if anyone else takes the states
+        reset_state_name = yes
+        reset_hub_names = yes
+    }
+}
+
 ## Rhine
 STATE_FLANDERS_state_name_assign = {
 	if = {
@@ -4606,19 +4784,8 @@ STATE_FLANDERS_state_name_assign = {
 		}
 
         set_state_name = STATE_FLANDERS_french
+        set_hub_names = french
 
-        set_hub_name = {
-            type = city
-            name = HUB_NAME_STATE_FLANDERS_city_french
-        }
-        set_hub_name = {
-            type = farm
-            name = HUB_NAME_STATE_FLANDERS_farm_french
-        }
-        set_hub_name = {
-            type = wood
-            name = HUB_NAME_STATE_FLANDERS_wood_french
-        }
 	}
     if = {
         limit = {
@@ -4628,22 +4795,10 @@ STATE_FLANDERS_state_name_assign = {
                 }
             }
         }
-        set_hub_name = {
-            type = city
-            name = HUB_NAME_STATE_FLANDERS_city_german
-        }
-        set_hub_name = {
-            type = port
-            name = HUB_NAME_STATE_FLANDERS_port_german
-        }
-        set_hub_name = {
-            type = farm
-            name = HUB_NAME_STATE_FLANDERS_farm_german
-        }
-        set_hub_name = {
-            type = wood
-            name = HUB_NAME_STATE_FLANDERS_wood_german
-        }
+
+        set_state_name = STATE_FLANDERS_german
+        set_hub_names = german
+
     }
 	else = { # switch back to defaults
 		reset_state_name = yes
@@ -4663,11 +4818,8 @@ STATE_WALLONIA_state_name_assign = {
 		}
 
         set_state_name = STATE_WALLONIA_french
+        set_hub_names = french
 
-        set_hub_name = {
-            type = city
-            name = HUB_NAME_STATE_WALLONIA_city_french
-        }
 	}
     else_if = {
         limit = {
@@ -4678,23 +4830,8 @@ STATE_WALLONIA_state_name_assign = {
         }
 
         set_state_name = STATE_WALLONIA_german
+        set_hub_names = german
 
-        set_hub_name = {
-            type = city
-            name = HUB_NAME_STATE_WALLONIA_city_german
-        }
-        set_hub_name = {
-            type = mine
-            name = HUB_NAME_STATE_WALLONIA_mine_german
-        }
-        set_hub_name = {
-            type = farm
-            name = HUB_NAME_STATE_WALLONIA_farm_german
-        }
-        set_hub_name = {
-            type = wood
-            name = HUB_NAME_STATE_WALLONIA_wood_german
-        }
     }
 	else = { # switch back to defaults
 		reset_state_name = yes
@@ -4714,16 +4851,8 @@ STATE_GELRE_state_name_assign = {
 		}
 
         set_state_name = STATE_GELRE_french
+        set_hub_names = french
 
-        set_hub_name = {
-            type = mine
-            name = HUB_NAME_STATE_GELRE_mine_french
-        }
-
-        set_hub_name = {
-            type = farm
-            name = HUB_NAME_STATE_GELRE_farm_french
-        }
 	}
     if = {
         limit = {
@@ -4733,14 +4862,10 @@ STATE_GELRE_state_name_assign = {
                 }
             }
         }
-        set_hub_name = {
-            type = farm
-            name = HUB_NAME_STATE_GELRE_farm_german
-        }
-        set_hub_name = {
-            type = wood
-            name = HUB_NAME_STATE_GELRE_wood_german
-        }
+
+        set_state_name = STATE_GELRE_german
+        set_hub_names = german
+
     }
 	else = { # switch back to defaults
 		reset_state_name = yes
@@ -4760,11 +4885,8 @@ STATE_FRIESLAND_state_name_assign = {
 		}
 
         set_state_name = STATE_FRIESLAND_french
+        set_hub_names = french
 
-        set_hub_name = {
-            type = city
-            name = HUB_NAME_STATE_FRIESLAND_city_french
-        }
 	}
     if = {
         limit = {
@@ -4797,11 +4919,8 @@ STATE_HOLLAND_state_name_assign = {
 		}
 
         set_state_name = STATE_HOLLAND_french
+        set_hub_names = french
 
-        set_hub_name = {
-            type = wood
-            name = HUB_NAME_STATE_HOLLAND_wood_french
-        }
 	}
 	else = { # switch back to defaults
 		reset_state_name = yes
@@ -4820,10 +4939,6 @@ STATE_ALSACE_LORRAINE_state_name_assign = {
 
         set_state_name = STATE_ALSACE_LORRAINE_french
 
-        set_hub_name = {
-            type = city
-            name = HUB_NAME_STATE_ALSACE_LORRAINE_city_french
-        }
 	}
 	else_if = {
 		limit = {
@@ -4880,11 +4995,8 @@ STATE_SCHLESWIG_HOLSTEIN_state_name_assign = {
 		}
 
         set_state_name = STATE_SCHLESWIG_HOLSTEIN_french
+        set_hub_names = french
 
-        set_hub_name = {
-            type = farm
-            name = HUB_NAME_STATE_SCHLESWIG_HOLSTEIN_farm_french
-        }
 	}
 	else = { # switch back to defaults
 		reset_state_name = yes
@@ -4904,11 +5016,8 @@ STATE_MECKLENBURG_state_name_assign = {
 		}
 
         set_state_name = STATE_MECKLENBURG_french
+        set_hub_names = french
 
-        set_hub_name = {
-            type = farm
-            name = HUB_NAME_STATE_MECKLENBURG_farm_french
-        }
 	}
 	else = { # switch back to defaults
 		reset_state_name = yes
@@ -4928,12 +5037,19 @@ STATE_POMERANIA_state_name_assign = {
 		}
 
         set_state_name = STATE_POMERANIA_french
+        set_hub_names = french
 
-        set_hub_name = {
-            type = farm
-            name = HUB_NAME_STATE_POMERANIA_farm_french
-        }
 	}
+    if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_germanophone
+                }
+            }
+        }
+        set_state_name = STATE_POMERANIA_german
+    }
 	else = { # switch back to defaults
 		reset_state_name = yes
 		reset_hub_names = yes
@@ -4971,12 +5087,19 @@ STATE_SAXONY_state_name_assign = {
 		}
 
         set_state_name = STATE_SAXONY_french
+        set_hub_names = french
 
-        set_hub_name = {
-            type = city
-            name = HUB_NAME_STATE_SAXONY_city_french
-        }
 	}
+    if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_germanophone
+                }
+            }
+        }
+        set_state_name = STATE_SAXONY_german
+    }
 	else = { # switch back to defaults
 		reset_state_name = yes
 		reset_hub_names = yes
@@ -4995,19 +5118,8 @@ STATE_FRANCONIA_state_name_assign = {
 		}
 
         set_state_name = STATE_FRANCONIA_french
+        set_hub_names = french
 
-        set_hub_name = {
-            type = city
-            name = HUB_NAME_STATE_FRANCONIA_city
-        }
-        set_hub_name = {
-            type = farm
-            name = HUB_NAME_STATE_FRANCONIA_farm_french
-        }
-        set_hub_name = {
-            type = wood
-            name = HUB_NAME_STATE_FRANCONIA_wood_french
-        }
 	}
     if = {
         limit = {
@@ -5017,10 +5129,9 @@ STATE_FRANCONIA_state_name_assign = {
                 }
             }
         }
-        set_hub_name = {
-            type = city
-            name = HUB_NAME_STATE_FRANCONIA_city_german
-        }
+        set_state_name = STATE_FRANCONIA_german
+        set_hub_names = german
+
     }
 	else = { # switch back to defaults
 		reset_state_name = yes
@@ -5040,15 +5151,8 @@ STATE_BOHEMIA_state_name_assign = {
 		}
 
         set_state_name = STATE_BOHEMIA_french
+        set_hub_names = french
 
-        set_hub_name = {
-            type = city
-            name = HUB_NAME_STATE_BOHEMIA_city_french
-        }
-        set_hub_name = {
-            type = wood
-            name = HUB_NAME_STATE_BOHEMIA_wood_french
-        }
 	}
     else_if = { # German
         limit = {
@@ -5130,11 +5234,8 @@ STATE_MORAVIA_state_name_assign = {
 		}
 
         set_state_name = STATE_MORAVIA_french
+        set_hub_names = french
 
-        set_hub_name = {
-            type = city
-            name = HUB_NAME_STATE_MORAVIA_city_french
-        }
 	}
     else_if = { # German
         limit = {
@@ -5216,19 +5317,8 @@ STATE_BAVARIA_state_name_assign = {
 		}
 
         set_state_name = STATE_BAVARIA_french
+        set_hub_names = french
 
-        set_hub_name = {
-            type = city
-            name = HUB_NAME_STATE_BAVARIA_city_french
-        }
-        set_hub_name = {
-            type = farm
-            name = HUB_NAME_STATE_BAVARIA_farm_french
-        }
-        set_hub_name = {
-            type = wood
-            name = HUB_NAME_STATE_BAVARIA_wood_french
-        }
 	}
     if = {
         limit = {
@@ -5238,6 +5328,9 @@ STATE_BAVARIA_state_name_assign = {
                 }
             }
         }
+
+        set_state_name = STATE_BAVARIA_german
+
         set_hub_name = {
             type = city
             name = HUB_NAME_STATE_BAVARIA_city_german
@@ -5261,11 +5354,8 @@ STATE_STYRIA_state_name_assign = {
 		}
 
         set_state_name = STATE_STYRIA_french
+        set_hub_names = french
 
-        set_hub_name = {
-            type = city
-            name = HUB_NAME_STATE_STYRIA_city_french
-        }
 	}
 	else = { # switch back to defaults
 		reset_state_name = yes
@@ -5285,12 +5375,16 @@ STATE_TYROL_state_name_assign = {
 		}
 
         set_state_name = STATE_TYROL_french
+        set_hub_names = french
 
-        set_hub_name = {
-            type = farm
-            name = HUB_NAME_STATE_TYROL_farm_french
-        }
 	}
+	else = { # switch back to defaults
+		reset_state_name = yes
+		reset_hub_names = yes
+	}
+}
+
+STATE_SOUTH_TYROL_state_name_assign = {
     if = {
         limit = {
             owner = {
@@ -5299,15 +5393,17 @@ STATE_TYROL_state_name_assign = {
                 }
             }
         }
+
+        set_state_name = STATE_SOUTH_TYROL_german
         set_hub_name = {
             type = farm
             name = HUB_NAME_STATE_SOUTH_TYROL_farm_german
         }
     }
-	else = { # switch back to defaults
-		reset_state_name = yes
-		reset_hub_names = yes
-	}
+    else = { # switch back to defaults
+        reset_state_name = yes
+        reset_hub_names = yes
+    }
 }
 
 STATE_WURTTEMBERG_state_name_assign = {
@@ -5322,15 +5418,8 @@ STATE_WURTTEMBERG_state_name_assign = {
 		}
 
         set_state_name = STATE_WURTTEMBERG_french
+        set_hub_names = french
 
-        set_hub_name = {
-            type = city
-            name = HUB_NAME_STATE_WURTTEMBERG_city_french
-        }
-        set_hub_name = {
-            type = wood
-            name = HUB_NAME_STATE_WURTTEMBERG_wood_french
-        }
 	}
 	else = { # switch back to defaults
 		reset_state_name = yes
@@ -5350,19 +5439,8 @@ STATE_AUSTRIA_state_name_assign = {
 		}
 
 		set_state_name = STATE_AUSTRIA_french
+        set_hub_names = french
 
-        set_hub_name = {
-            type = city
-            name = HUB_NAME_STATE_AUSTRIA_city_french
-        }
-        set_hub_name = {
-            type = farm
-            name = HUB_NAME_STATE_AUSTRIA_farm_french
-        }
-        set_hub_name = {
-            type = wood
-            name = HUB_NAME_STATE_AUSTRIA_wood_french
-        }
 	}
     if = {
         limit = {
@@ -5394,18 +5472,7 @@ STATE_BADEN_state_name_assign = {
 			}
 		}
 
-        set_hub_name = {
-            type = city
-            name = HUB_NAME_STATE_BADEN_city_french
-        }
-        set_hub_name = {
-            type = mine
-            name = HUB_NAME_STATE_BADEN_mine_french
-        }
-        set_hub_name = {
-            type = farm
-            name = HUB_NAME_STATE_BADEN_farm_french
-        }
+        set_hub_names = french
 	}
 	else = { # switch back to defaults
 		reset_state_name = yes
@@ -5524,20 +5591,19 @@ STATE_RHINELAND_state_name_assign = {
 		}
 
         set_state_name = STATE_RHINELAND_french
+        set_hub_names = french
 
-        set_hub_name = {
-            type = city
-            name = HUB_NAME_STATE_RHINELAND_city_french
-        }
-        set_hub_name = {
-            type = mine
-            name = HUB_NAME_STATE_RHINELAND_mine_french
-        }
-        set_hub_name = {
-            type = wood
-            name = HUB_NAME_STATE_RHINELAND_wood_french
-        }
 	}
+    if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_germanophone
+                }
+            }
+        }
+        set_state_name = STATE_RHINELAND_german
+    }
 	else = { # switch back to defaults
 		reset_state_name = yes
 		reset_hub_names = yes
@@ -5587,10 +5653,8 @@ STATE_ANHALT_state_name_assign = {
 			}
 		}
 
-        set_hub_name = {
-            type = city
-            name = HUB_NAME_STATE_ANHALT_city_french
-        }
+        set_hub_names = french
+
 	}
 	else = { # switch back to defaults
 		reset_state_name = yes
@@ -5609,14 +5673,8 @@ STATE_ELBE_state_name_assign = {
 			}
 		}
 
-        set_hub_name = {
-            type = city
-            name = HUB_NAME_STATE_ELBE_city_french
-        }
-        set_hub_name = {
-            type = farm
-            name = HUB_NAME_STATE_ELBE_farm_french
-        }
+        set_hub_names = french
+
 	}
 	else = { # switch back to defaults
 		reset_state_name = yes
@@ -5636,11 +5694,8 @@ STATE_HANNOVER_state_name_assign = {
 		}
 
         set_state_name = STATE_HANNOVER_french
+        set_hub_names = french
 
-        set_hub_name = {
-            type = city
-            name = HUB_NAME_STATE_HANNOVER_city_french
-        }
 	}
     if = {
         limit = {
@@ -5650,6 +5705,9 @@ STATE_HANNOVER_state_name_assign = {
                 }
             }
         }
+
+        set_state_name = STATE_HANNOVER_german
+
         set_hub_name = {
             type = city
             name = HUB_NAME_STATE_HANNOVER_city_german
@@ -5673,19 +5731,8 @@ STATE_BRUNSWICK_state_name_assign = {
 		}
 
         set_state_name = STATE_BRUNSWICK_french
+        set_hub_names = french
 
-        set_hub_name = {
-            type = city
-            name = HUB_NAME_STATE_BRUNSWICK_city_french
-        }
-        set_hub_name = {
-            type = wood
-            name = HUB_NAME_STATE_BRUNSWICK_wood_french
-        }
-	}
-	else = { # switch back to defaults
-		reset_state_name = yes
-		reset_hub_names = yes
 	}
     if = {
         limit = {
@@ -5695,10 +5742,15 @@ STATE_BRUNSWICK_state_name_assign = {
                 }
             }
         }
+        set_state_name = STATE_BRUNSWICK_german
         set_hub_name = {
             type = city
             name = HUB_NAME_STATE_BRUNSWICK_city_german
         }
+    }
+    else = { # switch back to defaults
+        reset_state_name = yes
+        reset_hub_names = yes
     }
 }
 
@@ -5714,16 +5766,19 @@ STATE_WESTPHALIA_state_name_assign = {
 		}
 
         set_state_name = STATE_WESTPHALIA_french
+        set_hub_names = french
 
-        set_hub_name = {
-            type = city
-            name = HUB_NAME_STATE_WESTPHALIA_city_french
-        }
-        set_hub_name = {
-            type = farm
-            name = HUB_NAME_STATE_WESTPHALIA_farm_french
-        }
 	}
+    if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_germanophone
+                }
+            }
+        }
+        set_state_name = STATE_WESTPHALIA_german
+    }
 	else = { # switch back to defaults
 		reset_state_name = yes
 		reset_hub_names = yes
@@ -5742,19 +5797,8 @@ STATE_NORTH_RHINE_state_name_assign = {
 		}
 
         set_state_name = STATE_NORTH_RHINE_french
+        set_hub_names = french
 
-        set_hub_name = {
-            type = city
-            name = HUB_NAME_STATE_NORTH_RHINE_city_french
-        }
-        set_hub_name = {
-            type = mine
-            name = HUB_NAME_STATE_NORTH_RHINE_mine_french
-        }
-        set_hub_name = {
-            type = wood
-            name = HUB_NAME_STATE_NORTH_RHINE_wood_french
-        }
 	}
     if = {
         limit = {
@@ -5764,6 +5808,8 @@ STATE_NORTH_RHINE_state_name_assign = {
                 }
             }
         }
+        set_state_name = STATE_NORTH_RHINE_german
+
         set_hub_name = {
             type = city
             name = HUB_NAME_STATE_NORTH_RHINE_city_german
@@ -5786,10 +5832,8 @@ STATE_RUHR_state_name_assign = {
 			}
 		}
 
-        set_hub_name = {
-            type = city
-            name = HUB_NAME_STATE_RUHR_city_french
-        }
+        set_hub_names = french
+
     }
 	else = { # switch back to defaults
 		reset_state_name = yes
@@ -5820,11 +5864,8 @@ STATE_CATALONIA_state_name_assign = {
 		}
 
         set_state_name = STATE_CATALONIA_catalan
+        set_hub_names = catalan
 
-        set_hub_name = {
-            type = farm
-            name = HUB_NAME_STATE_CATALONIA_farm_catalan
-        }
 	}
 	else = { # switch back to defaults
 		reset_state_name = yes
@@ -5842,23 +5883,8 @@ STATE_NAVARRA_state_name_assign = {
 		}
 
         set_state_name = STATE_NAVARRA_basque
+        set_hub_names = basque
 
-        set_hub_name = {
-            type = city
-            name = HUB_NAME_STATE_NAVARRA_city_basque
-        }
-        set_hub_name = {
-            type = port
-            name = HUB_NAME_STATE_NAVARRA_port_basque
-        }
-        set_hub_name = {
-            type = farm
-            name = HUB_NAME_STATE_NAVARRA_farm_basque
-        }
-        set_hub_name = {
-            type = wood
-            name = HUB_NAME_STATE_NAVARRA_wood_basque
-        }
 	}
 	else = { # switch back to defaults
 		reset_state_name = yes

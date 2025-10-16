@@ -75,7 +75,9 @@
 	}
 
 	on_complete = {
-		remove_modifier = modifier_young_hungary_movement
+		scope:journal_entry = {
+			remove_modifier = modifier_young_hungary_movement
+		}
 	}
 
 	fail = {
@@ -128,7 +130,7 @@
 			text = je_matter_of_hungary_on_fail_lose_control
 		}
 	}
-
+	
 	event_outcome_failed_desc = {
 		first_valid = {
 			triggered_desc = {
@@ -283,7 +285,7 @@ je_austrian_neo_absolutism = {
 		}
 		trigger_event = { id = austria_events.1 popup = yes }
 	}
-
+	
 	event_outcome_completed_desc = {
 		first_valid = {
 			triggered_desc = {
@@ -316,7 +318,7 @@ je_austrian_neo_absolutism = {
 			}
 		}
 	}
-
+	
 	event_outcome_failed_desc = {
 		first_valid = {
 			triggered_desc = {

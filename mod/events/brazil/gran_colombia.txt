@@ -406,6 +406,15 @@ andean_federation.2 = {
 			}
 			add_primary_culture = cu:north_andean
 		}
+		if = {
+			limit = {
+				was_formed_from = PLT
+				NOT = {
+					country_has_primary_culture = cu:platinean
+				}
+			}
+			add_primary_culture = cu:platinean
+		}
 		add_modifier = {
 			name = modifier_andean_federation_prestige
 			days = normal_modifier_time
@@ -443,6 +452,15 @@ andean_federation.2 = {
 				}
 			}
 			add_primary_culture = cu:north_andean
+		}
+		if = {
+			limit = {
+				was_formed_from = PLT
+				NOT = {
+					country_has_primary_culture = cu:platinean
+				}
+			}
+			add_primary_culture = cu:platinean
 		}
 		add_modifier = {
 			name = modifier_andean_federation_military

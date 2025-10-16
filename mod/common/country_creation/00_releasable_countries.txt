@@ -1487,7 +1487,7 @@ SCH = {
 }
 
 LUX = {
-	provinces = { x5180A0 }
+	provinces = { x5180A0 xD001A0}
 	ai_will_do = { always = no }
 }
 

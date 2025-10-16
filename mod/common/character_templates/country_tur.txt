@@ -171,7 +171,7 @@ tur_abdulaziz_osmanoglu_template = {
 	last_name = Osmanoglu
 	historical = yes
 	culture = cu:turkish
-	ruler = yes
+	heir = yes
 	female = no
 	dna = dna_sultan_abdulaziz
 	ideology = ideology_traditionalist
@@ -191,7 +191,7 @@ tur_murad_v_osmanoglu_template = {
 	last_name = Osmanoglu
 	historical = yes
 	culture = cu:turkish
-	ruler = yes
+	heir = yes
 	female = no
 	birth_date = 1840.9.21
 	interest_group = ig_intelligentsia
@@ -215,7 +215,7 @@ tur_abdulhamid_ii_osmanoglu_template = {
 	ideology = ideology_authoritarian
 	interest_group = ig_landowners
 	birth_date = 1842.9.21
-	ruler = yes
+	heir = yes
 	traits = {
 		pious
 		persistent
@@ -232,7 +232,7 @@ tur_reshad_osmanoglu_template = {
 	ideology = ideology_royalist
 	interest_group = ig_landowners
 	birth_date = 1844.11.2
-	ruler = yes
+	heir = yes
 	traits = {
 		reserved
 	}
@@ -247,7 +247,7 @@ tur_vahideddin_osmanoglu_template = {
 	ideology = ideology_traditionalist
 	interest_group = ig_landowners
 	birth_date = 1861.1.14
-	ruler = yes
+	heir = yes
 	traits = {
 		pious
 	}

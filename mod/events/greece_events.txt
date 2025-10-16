@@ -145,6 +145,7 @@ greece.1 = {
 		}
 		custom_tooltip = {
 			text = not_embrace_megali_idea_tt
+			set_variable = no_megali_idea_var # triggers a trigger_if in je_greek_nationalism `complete`
 		}
 	}
 }

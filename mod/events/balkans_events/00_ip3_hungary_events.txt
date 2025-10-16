@@ -132,7 +132,6 @@ hungary_events.2 = { # Serbian Revolt
 		}
 	}
 
-
 	immediate = {
 		c:HUN ?= {
 			save_scope_as = hungary_country_scope
@@ -864,6 +863,10 @@ hungary_events.5 = { # Transylvania Ratifies Union
 		c:HUN = {
 			save_scope_as = hungary_country_scope
 		}
+	}
+
+	cancellation_trigger = {
+		has_variable = hungarian_ultimatum_sent_var
 	}
 
 	option = {
@@ -1685,6 +1688,10 @@ hungary_events.8 = { # Romanian revolt
  		}
  	}
 
+	cancellation_trigger = {
+		has_variable = hungarian_ultimatum_sent_var
+	}
+
  	option = {
  		name = hungary_events.9.a
  		default_option = yes
@@ -1803,7 +1810,7 @@ hungary_events.11 = { # Franz Joseph Revolkes April Laws
 		NOT = { is_diplomatic_play_ally_of = c:HUN }
 		c:HUN ?= {
 			is_subject_of = root
-			OR = {
+			AND = {
 				has_variable = hungarian_revolution_twelve_points_var
 				has_variable = hungarian_revolution_annex_transylvania_button_var
 			}
@@ -1820,6 +1827,10 @@ hungary_events.11 = { # Franz Joseph Revolkes April Laws
 		c:HUN = {
 			save_scope_as = hungary_country_scope
 		}
+	}
+
+	cancellation_trigger = {
+		has_variable = hungarian_ultimatum_sent_var
 	}
 
 	cooldown = { days = long_modifier_time }

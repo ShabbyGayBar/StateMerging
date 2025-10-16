@@ -160,11 +160,13 @@ coa_def_independent_trigger = {
 }
 
 coa_def_subject_trigger = {
+	NOT = { has_game_rule = no_subject_flags }
 	exists = scope:actor
 	scope:actor ?= { is_subject = yes }
 }
 
 coa_def_lesser_subject_trigger = {
+	NOT = { has_game_rule = no_subject_flags }
 	OR = {
 		NOT = { exists = scope:actor }
 		AND = {
