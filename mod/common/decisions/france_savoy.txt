@@ -77,7 +77,7 @@ sell_savoy = {
 
 	possible = {
 		has_technology_researched = nationalism
-		c:FRA = {
+		c:FRA ?= {
 			is_at_war = no
 			owns_entire_state_region = STATE_PROVENCE
 			is_subject = no
@@ -89,7 +89,7 @@ sell_savoy = {
 	when_taken = {
 		set_global_variable = fra_annexed_savoy
 		set_global_variable = fra_savoy_sardinia
-		c:FRA = {
+		c:FRA ?= {
 			set_owes_obligation_to = {
 				country = ROOT
 				setting = yes
@@ -116,7 +116,7 @@ sell_savoy = {
 				}
 			}
 		}
-		c:FRA = { trigger_event = { id = natural_borders.3 popup = yes } }
+		c:FRA ?= { trigger_event = { id = natural_borders.3 popup = yes } }
 		show_as_tooltip = {
 			s:STATE_PROVENCE = {
 				remove_homeland = cu:north_italian
@@ -128,7 +128,7 @@ sell_savoy = {
 		value = 0
 		if = {
 			limit = {
-				c:FRA = {
+				c:FRA ?= {
 					relations:root >= relations_threshold:amicable
 				}
 				OR = {
@@ -159,7 +159,7 @@ france_annex_luxembourg = {
 		NOT = { has_global_variable = fra_annexed_lux }
 		is_subject = no
 		exists = c:LUX
-		c:LUX = {
+		c:LUX ?= {
 			is_player = no
 			is_subject = yes
 			top_overlord = {
@@ -174,7 +174,7 @@ france_annex_luxembourg = {
 		has_technology_researched = nationalism
 		owns_entire_state_region = STATE_BADEN
 		taking_loans = no
-		c:LUX = {
+		c:LUX ?= {
 			top_overlord = {
 				is_subject = no
 				relations:root >= relations_threshold:amicable

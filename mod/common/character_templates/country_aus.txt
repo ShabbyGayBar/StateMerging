@@ -347,13 +347,13 @@ aus_admiral_tegetthoff = {
             OR = {
                 AND = {
                     exists = c:AUS
-                    this = c:AUS
+                    c:AUS ?= THIS
                 }
                 AND = {
                     NOT = { exists = c:AUS }
                     exists = c:GER
-                    this = c:GER
-                    c:GER = { owns_entire_state_region = STATE_AUSTRIA }
+                    c:GER ?= THIS
+                    c:GER ?= { owns_entire_state_region = STATE_AUSTRIA }
                 }
             }
         }
@@ -385,16 +385,16 @@ aus_admiral_archduke_friedrich = {
             OR = {
                 AND = {
                     exists = c:AUS
-                    this = c:AUS
-                    c:AUS = { has_law_or_variant = law_type:law_monarchy }
+                    c:AUS ?= THIS
+                    c:AUS ?= { has_law = law_type:law_monarchy }
                 }
                 AND = {
                     NOT = { exists = c:AUS }
                     exists = c:GER
-                    this = c:GER
-                    c:GER = {
+                    c:GER ?= THIS
+                    c:GER ?= {
                         owns_entire_state_region = STATE_AUSTRIA
-                        has_law_or_variant = law_type:law_monarchy
+                        has_law = law_type:law_monarchy
                     }
                 }
             }
@@ -424,13 +424,13 @@ aus_general_von_windisch_gratz = {
             OR = {
                 AND = {
                     exists = c:AUS
-                    this = c:AUS
+                    c:AUS ?= THIS
                 }
                 AND = {
                     NOT = { exists = c:AUS }
                     exists = c:GER
-                    this = c:GER
-                    c:GER = { owns_entire_state_region = STATE_AUSTRIA }
+                    c:GER ?= THIS
+                    c:GER ?= { owns_entire_state_region = STATE_AUSTRIA }
                 }
             }
         }
@@ -461,13 +461,13 @@ aus_general_von_hotzendorf = {
             OR = {
                 AND = {
                     exists = c:AUS
-                    this = c:AUS
+                    c:AUS ?= THIS
                 }
                 AND = {
                     NOT = { exists = c:AUS }
                     exists = c:GER
-                    this = c:GER
-                    c:GER = { owns_entire_state_region = STATE_AUSTRIA }
+                    c:GER ?= THIS
+                    c:GER ?= { owns_entire_state_region = STATE_AUSTRIA }
                 }
             }
         }
@@ -499,19 +499,19 @@ aus_general_boroevic = {
             OR = {
                 AND = {
                     exists = c:AUS
-                    this = c:AUS
-                    c:AUS = { owns_entire_state_region = STATE_CROATIA }
+                    c:AUS ?= THIS
+                    c:AUS ?= { owns_entire_state_region = STATE_CROATIA }
                 }
                 AND = {
                     exists = c:CRO
-                    this = c:CRO
-                    c:CRO = { owns_entire_state_region = STATE_CROATIA }
+                    c:CRO ?= THIS
+                    c:CRO ?= { owns_entire_state_region = STATE_CROATIA }
                 }
                 AND = {
                     NOT = { exists = c:AUS }
                     exists = c:GER
-                    this = c:GER
-                    c:GER = { owns_entire_state_region = STATE_CROATIA }
+                    c:GER ?= THIS
+                    c:GER ?= { owns_entire_state_region = STATE_CROATIA }
                 }
             }
         }
@@ -543,13 +543,13 @@ aus_general_von_benedek = {
             OR = {
                 AND = {
                     exists = c:AUS
-                    this = c:AUS
+                    c:AUS ?= THIS
                 }
                 AND = {
                     NOT = { exists = c:AUS }
                     exists = c:GER
-                    this = c:GER
-                    c:GER = { owns_entire_state_region = STATE_AUSTRIA }
+                    c:GER ?= THIS
+                    c:GER ?= { owns_entire_state_region = STATE_AUSTRIA }
                 }
             }
         }
@@ -576,8 +576,8 @@ aus_general_von_habsburg_lothringen = {
     commander_usage = {
         country_trigger = {
             exists = c:AUS
-            this = c:AUS
-            c:AUS = { has_law_or_variant = law_type:law_monarchy }
+            c:AUS ?= THIS
+            c:AUS ?= { has_law = law_type:law_monarchy }
         }
         role = general
         earliest_usage_date = 1836.1.1

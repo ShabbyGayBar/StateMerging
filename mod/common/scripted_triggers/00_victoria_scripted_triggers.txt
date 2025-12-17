@@ -34,7 +34,7 @@
 ig_desires_laws_for_petition = {
 	any_interest_group = {
 		is_in_government = yes
-		is_marginal = no
+		ig_counts_as_marginal = no
 		any_preferred_law = {
 			law_is_valid_for_ig_petition = yes
 		}
@@ -66,13 +66,13 @@ law_is_valid_for_ig_petition = {
 
 ruler_is_bonapartist = {
 	ruler ?= {
-		has_variable = bonapartist_leader
+		has_variable = house_bonaparte
 	}
 }
 
 ruler_is_orleanist = {
 	ruler ?= {
-		has_variable = orleanist_leader
+		has_variable = house_orleans
 	}
 }
 
@@ -623,7 +623,7 @@ meiji_completion_trigger = {
 		}
 		OR = {
 			government_legitimacy >= 50
-			ig:ig_landowners ?= { is_marginal = yes }
+			ig:ig_landowners ?= { ig_counts_as_marginal = yes }
 		}
 		has_insurrectionary_interest_groups = no
 		is_at_war = no
@@ -980,6 +980,38 @@ ideology_corporatist_leader_valid_trigger = {
 
 ideology_modernizer_leader_valid_trigger = {
 
+}
+
+ideology_regenerator_leader_valid_trigger = {
+
+}
+
+ideology_ilustrado_leader_valid_trigger = {
+	AND = {
+		c:PHI ?= owner
+		OR = {
+			is_interest_group_type = ig_intelligentsia
+			is_interest_group_type = ig_petty_bourgeoisie
+		}
+	}
+}
+
+ideology_carlist_valid_trigger = {
+	OR = {
+		is_interest_group_type = ig_devout
+		is_interest_group_type = ig_rural_folk
+		is_interest_group_type = ig_armed_forces
+		is_interest_group_type = ig_landowners
+	}
+}
+
+ideology_miguelist_valid_trigger = {
+	OR = {
+		is_interest_group_type = ig_devout
+		is_interest_group_type = ig_rural_folk
+		is_interest_group_type = ig_armed_forces
+		is_interest_group_type = ig_landowners
+	}
 }
 
 ideology_humanitarian_royalist_valid_trigger = {

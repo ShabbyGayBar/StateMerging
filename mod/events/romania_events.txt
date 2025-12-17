@@ -155,9 +155,9 @@ romania.2 = {
 
 		if = {
 			limit = {
-				has_law_or_variant = law_type:law_monarchy
+				has_law = law_type:law_monarchy
 				scope:romania_lesser_partner = {
-					has_law_or_variant = law_type:law_monarchy
+					has_law = law_type:law_monarchy
 				}
 			}
 			custom_tooltip = {
@@ -247,11 +247,11 @@ romania.3 = {
         if = {
         	limit = {
 	        	exists = c:TRS
-	        	c:TRS = {
+	        	c:TRS ?= {
 	        		is_subject_of = ROOT
 	        	}
 	        }
-	        c:TRS = {
+	        c:TRS ?= {
 	        	save_scope_as = transylvania_union_partner
 	        }
         }
@@ -272,7 +272,7 @@ romania.3 = {
 		if = {
 			limit = {
 				exists = c:TRS
-				c:TRS = {
+				c:TRS ?= {
 					is_subject_of = ROOT
 					is_player = no
 				}

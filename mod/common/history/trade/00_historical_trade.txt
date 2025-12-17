@@ -62,6 +62,13 @@
             }
         }
     }
+    s:STATE_WESTERN_CUBA={
+        region_state:CUB={
+            sg:sugar = {
+                add_exports = 80
+            }
+        }
+    }
     s:STATE_INGRIA={
         region_state:RUS={
             sg:sugar = {
@@ -85,6 +92,13 @@
             }
         }
     }
+    s:STATE_WEST_PRUSSIA={
+        region_state:PRU={
+            sg:artillery = {
+                add_exports = 5
+            }
+        }
+    }
     s:STATE_PROVENCE={
         region_state:FRA={
             sg:luxury_clothes = {
@@ -103,6 +117,16 @@
         region_state:SIC={
             sg:silk = {
                 add_exports = 6
+            }
+        }
+    }
+    s:STATE_OLD_CASTILE={
+        region_state:SPC={
+            sg:hardwood = {
+                add_imports = 5
+            }
+            sg:artillery = {
+                add_imports = 5
             }
         }
     }

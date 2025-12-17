@@ -93,9 +93,9 @@ serbia.2 = {
 	option = {
 		name = serbia.2.a
 		capital = {
-			add_loyalists_in_state = { 
-				value = small_radicals 
-				culture = cu:serb 
+			add_loyalists_in_state = {
+				value = small_radicals
+				culture = cu:serb
 			}
 		}
 	}
@@ -822,7 +822,7 @@ serbian_throne.11 = {
 	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
 
 	immediate = {
-		
+
 	}
 
 	option = {
@@ -944,7 +944,7 @@ serbian_throne.13 = {
 		has_variable = ongoing_campaign
 		any_interest_group = {
 			is_in_government = no
-			is_marginal = no
+			ig_counts_as_marginal = no
 			count > 1
 		}
 	}
@@ -957,14 +957,14 @@ serbian_throne.13 = {
 		random_interest_group = {
 			limit = {
 				is_in_government = no
-				is_marginal = no
+				ig_counts_as_marginal = no
 			}
 			save_scope_as = campaign_ig_1
 		}
 		random_interest_group = {
 			limit = {
 				is_in_government = no
-				is_marginal = no
+				ig_counts_as_marginal = no
 				NOT = {
 					this = scope:campaign_ig_1
 				}
@@ -974,7 +974,7 @@ serbian_throne.13 = {
 		random_interest_group = {
 			limit = {
 				is_in_government = no
-				is_marginal = no
+				ig_counts_as_marginal = no
 				nor = {
 					this = scope:campaign_ig_1
 					this = scope:campaign_ig_2
@@ -1007,7 +1007,7 @@ serbian_throne.13 = {
 			has_variable = ongoing_campaign
 			any_interest_group = {
 				is_in_government = no
-				is_marginal = no
+				ig_counts_as_marginal = no
 				count > 1
 			}
 		}
@@ -1027,7 +1027,7 @@ serbian_throne.13 = {
 			has_variable = ongoing_campaign
 			any_interest_group = {
 				is_in_government = no
-				is_marginal = no
+				ig_counts_as_marginal = no
 				count > 2
 			}
 		}

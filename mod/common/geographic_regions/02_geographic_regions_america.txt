@@ -1,0 +1,196 @@
+﻿geographic_region_north_america = {
+	short_key = "north_america"
+
+	strategic_regions = {
+		sr:region_canada
+		sr:region_new_england
+		sr:region_pacific_coast
+		sr:region_great_plains
+		sr:region_the_midwest
+		sr:region_dixie
+	}
+}
+
+geographic_region_central_america = {
+	short_key = "central_america"
+
+	strategic_regions = {
+		sr:region_mexico
+		sr:region_central_america
+		sr:region_caribbean
+	}
+}
+
+geographic_region_south_america = {
+	short_key = "south_america"
+
+	strategic_regions = {
+		sr:region_brazil
+		sr:region_la_plata
+		sr:region_andes
+		sr:region_gran_colombia
+	}
+}
+
+geographic_region_americas = {
+	short_key = "americas"
+
+	strategic_regions = {
+		#geographic_region_north_america
+		sr:region_canada
+		sr:region_new_england
+		sr:region_pacific_coast
+		sr:region_great_plains
+		sr:region_the_midwest
+		sr:region_dixie
+
+		#geographic_region_central_america
+		sr:region_mexico
+		sr:region_central_america
+		sr:region_caribbean
+
+		#geographic_region_south_america
+		sr:region_brazil
+		sr:region_la_plata
+		sr:region_andes
+		sr:region_gran_colombia
+	}
+}
+
+geographic_region_peru = {
+	short_key = "peru"
+
+	state_regions = {
+		STATE_AMAZONAS
+		STATE_LIMA
+		STATE_LIMA
+		STATE_ICA
+		STATE_ICA
+		STATE_ANTOFAGASTA
+	}
+}
+
+geographic_region_bolivia = {
+	short_key = "bolivia"
+
+	state_regions = {
+		STATE_LA_PAZ
+		STATE_LA_PAZ
+		STATE_LA_PAZ
+		STATE_CHACO
+		STATE_AMAZONAS
+		STATE_ANTOFAGASTA
+	}
+}
+
+# Spanish New World Georegions
+
+geographic_region_colonial_new_spain = {
+	short_key = "colonial_new_spain"
+
+	strategic_regions = {
+	 	# Mexico
+		sr:region_mexico
+	}
+
+	state_regions = {
+		STATE_BAJA_CALIFORNIA
+		# Central America
+		STATE_YUCATAN
+		STATE_JALISCO
+		STATE_GUATEMALA
+		STATE_NICARAGUA
+		STATE_SAN_SALVADOR
+		STATE_HONDURAS
+		STATE_COSTA_RICA
+		# USA
+		STATE_CALIFORNIA
+		STATE_ARIZONA
+		STATE_UTAH
+		STATE_ARIZONA
+		STATE_TEXAS
+		STATE_UTAH
+		STATE_CALIFORNIA
+	}
+}
+
+geographic_region_colonial_new_grenada = {
+	short_key = "colonial_new_grenada"
+
+	strategic_regions = {
+	 	# Mexico
+		sr:region_gran_colombia
+	}
+
+	state_regions = {
+		# Central America Region
+		STATE_PANAMA
+		# Andes Region
+		STATE_ECUADOR
+		STATE_AMAZONAS
+	}
+}
+
+geographic_region_colonial_peru = {
+	short_key = "colonial_peru"
+
+	state_regions = {
+		# Andes Region
+		STATE_LIMA
+		STATE_LIMA
+		STATE_AMAZONAS
+		STATE_ICA
+		STATE_ICA
+		STATE_ANTOFAGASTA
+		# Chile
+		STATE_SANTIAGO
+		STATE_SANTIAGO
+	}
+}
+
+geographic_region_colonial_la_plata = {
+	short_key = "colonial_la_plata"
+
+	state_regions = {
+		# La Plata Region
+		STATE_BUENOS_AIRES
+		STATE_SANTA_FE
+		STATE_SANTA_FE
+		STATE_CHACO
+		STATE_BAJO_PARAGUAY
+		STATE_BAJO_PARAGUAY
+		STATE_BUENOS_AIRES
+		STATE_RIO_NEGRO
+		STATE_RIO_NEGRO
+		STATE_PATAGONIA
+		STATE_ARAUCANIA
+		STATE_SOUTH_ATLANTIC_ISLANDS
+		# Andes Region
+		STATE_LA_PAZ
+		STATE_CHACO
+		STATE_ANTOFAGASTA
+		STATE_LA_PAZ
+		STATE_LA_PAZ
+		# Brazil Region
+		STATE_SANTA_FE
+		STATE_RIO_GRANDE_DO_SUL
+	}
+}
+
+geographic_region_andean_federation = {
+	short_key = "andean_federation"
+
+	strategic_regions = {
+		sr:region_andes
+		sr:region_gran_colombia
+		sr:region_la_plata
+	}
+}
+
+geographic_region_brazil = {
+	short_key = "brazil"
+
+	strategic_regions = {
+		sr:region_brazil
+	}
+}

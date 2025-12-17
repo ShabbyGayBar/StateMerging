@@ -249,7 +249,7 @@ SCN = {
 }
 
 NAV = {
-	states = { STATE_GALICIA }
+	states = { STATE_OLD_CASTILE }
 
 	ai_will_do = { always = no }
 }
@@ -569,6 +569,14 @@ DOM = {
 	ai_will_do = { always = no }
 }
 
+ATL = {
+	states = { STATE_WESTERN_CUBA STATE_WESTERN_CUBA STATE_WESTERN_CUBA STATE_WEST_INDIES STATE_HAITI }
+
+	required_num_states = 4
+
+	ai_will_do = { always = no }
+}
+
 WIN = {
 	STATES = {
 		STATE_WEST_INDIES
@@ -663,7 +671,11 @@ BRE = {
 }
 
 CUB = {
-	states = { STATE_CUBA }
+	states = {
+		STATE_WESTERN_CUBA
+		STATE_WESTERN_CUBA
+		STATE_WESTERN_CUBA
+	}
 
 	ai_will_do = { always = no }
 }
@@ -721,18 +733,17 @@ AIN = {
 
 ANL = {
 	states = {
-		STATE_ANDALUSIA
-		STATE_ANDALUSIA
-		STATE_ANDALUSIA
+		STATE_LOWER_ANDALUSIA
+		STATE_LOWER_ANDALUSIA
 	}
 	ai_will_do = { always = no }
 }
 
 CAS = {
 	states = {
-		STATE_GALICIA
-		STATE_TOLEDO
-		STATE_TOLEDO
+		STATE_OLD_CASTILE
+		STATE_OLD_CASTILE
+		STATE_LOWER_ANDALUSIA
 	}
 
 	ai_will_do = { always = no }
@@ -2427,7 +2438,7 @@ DFR = {
 
 ASH = {
 	states = {
-		STATE_GHANA
+		STATE_GOLD_COAST
 	}
 	ai_will_do = { always = no }
 }
@@ -2938,6 +2949,32 @@ BNT = {
 	ai_will_do = { always = no }
 }
 
+ARN = {
+	states = {
+		STATE_CATALONIA
+	}
+
+	ai_will_do = { always = no }
+}
+
+LEO = {
+	states = {
+		STATE_GALICIA
+		STATE_GALICIA
+		STATE_GALICIA
+	}
+
+	ai_will_do = { always = no }
+}
+
+ASU = {
+	states = {
+		STATE_GALICIA
+	}
+
+	ai_will_do = { always = no }
+}
+
 TRH = { # Turkestan
 	states = {
 		STATE_FERGANA
@@ -2955,4 +2992,40 @@ TRH = { # Turkestan
 	ai_will_do = { always = no }
 
 	required_num_states = 5
+}
+
+FZN = {
+	states = {
+		STATE_LIBYA
+	}
+
+	ai_will_do = { always = no }
+
+	required_num_states = 1
+}
+
+CYR = {
+	states = {
+		STATE_LIBYA
+	}
+
+	ai_will_do = { always = no }
+
+	required_num_states = 1
+}
+
+LBY = {
+	states = {
+		STATE_LIBYA
+		STATE_LIBYA
+		STATE_LIBYA
+	}
+
+	possible = {
+		has_technology_researched = nationalism
+	}
+
+	ai_will_do = { always = no }
+
+	required_num_states = 3
 }

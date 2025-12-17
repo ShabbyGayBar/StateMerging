@@ -15,7 +15,7 @@ region_north_sea_coast = {
 region_iberia = {
 	capital_province = xD060C0
 	map_color = { 186 113 22 }
-	states = { STATE_CATALONIA     STATE_GALICIA   STATE_ANDALUSIA   STATE_TOLEDO   STATE_ESTREMADURA   STATE_AZORES  }
+	states = { STATE_CATALONIA STATE_OLD_CASTILE    STATE_GALICIA   STATE_LOWER_ANDALUSIA      STATE_ESTREMADURA   STATE_AZORES     }
 }
 
 region_france = {
@@ -31,7 +31,7 @@ region_occitania = {
 }
 
 region_rhine = {
-	capital_province = x904020
+	capital_province = x6E4891
 	map_color = { 91 205 60 }
 	states = { STATE_FLANDERS STATE_HOLLAND    STATE_RHINELAND   STATE_WESTPHALIA  }
 }
@@ -109,7 +109,7 @@ region_finland = {
 }
 
 region_arctic_russia = {
-	capital_province = xCF8844
+	capital_province = x1CE50A
 	map_color = { 220 250 220 }
 	states = {  STATE_ARKHANGELSK  }
 }

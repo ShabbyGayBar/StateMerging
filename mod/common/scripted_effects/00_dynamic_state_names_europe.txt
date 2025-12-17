@@ -840,10 +840,170 @@ assign_state_name_region_iberia = { # region_iberia
     else_if = {
         limit = {
             state_region = {
+                s:STATE_OLD_CASTILE ?= this
+            }
+        }
+        STATE_OLD_CASTILE_state_name_assign = yes
+    }
+    else_if = {
+        limit = {
+            state_region = {
                 s:STATE_GALICIA ?= this
             }
         }
-        STATE_NAVARRA_state_name_assign = yes
+        STATE_LEON_state_name_assign = yes
+    }
+    else_if = {
+        limit = {
+            state_region = {
+                s:STATE_GALICIA ?= this
+            }
+        }
+        STATE_GALICIA_state_name_assign = yes
+    }
+    else_if = {
+        limit = {
+            state_region = {
+                s:STATE_GALICIA ?= this
+            }
+        }
+        STATE_ASTURIAS_state_name_assign = yes
+    }
+    else_if = {
+        limit = {
+            state_region = {
+                s:STATE_CATALONIA ?= this
+            }
+        }
+        STATE_ARAGON_state_name_assign = yes
+    }
+    else_if = {
+        limit = {
+            state_region = {
+                s:STATE_OLD_CASTILE ?= this
+            }
+        }
+        STATE_NEW_CASTILE_state_name_assign = yes
+    }
+    else_if = {
+        limit = {
+            state_region = {
+                s:STATE_CATALONIA ?= this
+            }
+        }
+        STATE_VALENCIA_state_name_assign = yes
+    }
+    else_if = {
+        limit = {
+            state_region = {
+                s:STATE_GALICIA ?= this
+            }
+        }
+        STATE_EXTREMADURA_state_name_assign = yes
+    }
+    else_if = {
+        limit = {
+            state_region = {
+                s:STATE_LOWER_ANDALUSIA ?= this
+            }
+        }
+        STATE_UPPER_ANDALUSIA_state_name_assign = yes
+    }
+    else_if = {
+        limit = {
+            state_region = {
+                s:STATE_LOWER_ANDALUSIA ?= this
+            }
+        }
+        STATE_LOWER_ANDALUSIA_state_name_assign = yes
+    }
+    else_if = {
+        limit = {
+            state_region = {
+                s:STATE_LOWER_ANDALUSIA ?= this
+            }
+        }
+        STATE_MURCIA_state_name_assign = yes
+    }
+    else_if = {
+        limit = {
+            state_region = {
+                s:STATE_CATALONIA ?= this
+            }
+        }
+        STATE_BALEARIC_ISLANDS_state_name_assign = yes
+    }
+    else_if = {
+        limit = {
+            state_region = {
+                s:STATE_OLD_CASTILE ?= this
+            }
+        }
+        STATE_BASQUE_COUNTRY_state_name_assign = yes
+    }
+    else_if = {
+        limit = {
+            state_region = {
+                s:STATE_ESTREMADURA ?= this
+            }
+        }
+        STATE_ENTRE_DOURO_E_MINHO_state_name_assign = yes
+    }
+    else_if = {
+        limit = {
+            state_region = {
+                s:STATE_ESTREMADURA ?= this
+            }
+        }
+        STATE_BEIRA_state_name_assign = yes
+    }
+    else_if = {
+        limit = {
+            state_region = {
+                s:STATE_ESTREMADURA ?= this
+            }
+        }
+        STATE_ESTREMADURA_state_name_assign = yes
+    }
+    else_if = {
+        limit = {
+            state_region = {
+                s:STATE_ESTREMADURA ?= this
+            }
+        }
+        STATE_ALENTEJO_state_name_assign = yes
+    }
+    else_if = {
+        limit = {
+            state_region = {
+                s:STATE_AZORES ?= this
+            }
+        }
+        STATE_CANARY_ISLANDS_state_name_assign = yes
+    }
+    else_if = {
+        limit = {
+            state_region = {
+                s:STATE_AZORES ?= this
+            }
+        }
+        STATE_MADEIRA_state_name_assign = yes
+    }
+    else_if = {
+        limit = {
+            state_region = {
+                s:STATE_AZORES ?= this
+            }
+        }
+        STATE_AZORES_state_name_assign = yes
+    }
+    else_if = {
+        limit = {
+            state_region = {
+                s:STATE_AZORES ?= this
+            }
+        }
+        STATE_CAPE_VERDE_state_name_assign = yes
     }
 }
 
@@ -5039,7 +5199,7 @@ STATE_POMERANIA_state_name_assign = {
         set_state_name = STATE_POMERANIA_french
         set_hub_names = french
 
-	}
+        }
     if = {
         limit = {
             owner = {
@@ -5049,7 +5209,7 @@ STATE_POMERANIA_state_name_assign = {
             }
         }
         set_state_name = STATE_POMERANIA_german
-    }
+	}
 	else = { # switch back to defaults
 		reset_state_name = yes
 		reset_hub_names = yes
@@ -5089,7 +5249,7 @@ STATE_SAXONY_state_name_assign = {
         set_state_name = STATE_SAXONY_french
         set_hub_names = french
 
-	}
+        }
     if = {
         limit = {
             owner = {
@@ -5099,7 +5259,7 @@ STATE_SAXONY_state_name_assign = {
             }
         }
         set_state_name = STATE_SAXONY_german
-    }
+	}
 	else = { # switch back to defaults
 		reset_state_name = yes
 		reset_hub_names = yes
@@ -5377,7 +5537,7 @@ STATE_TYROL_state_name_assign = {
         set_state_name = STATE_TYROL_french
         set_hub_names = french
 
-	}
+        }
 	else = { # switch back to defaults
 		reset_state_name = yes
 		reset_hub_names = yes
@@ -5400,10 +5560,10 @@ STATE_SOUTH_TYROL_state_name_assign = {
             name = HUB_NAME_STATE_SOUTH_TYROL_farm_german
         }
     }
-    else = { # switch back to defaults
-        reset_state_name = yes
-        reset_hub_names = yes
-    }
+	else = { # switch back to defaults
+		reset_state_name = yes
+		reset_hub_names = yes
+	}
 }
 
 STATE_WURTTEMBERG_state_name_assign = {
@@ -5593,15 +5753,15 @@ STATE_RHINELAND_state_name_assign = {
         set_state_name = STATE_RHINELAND_french
         set_hub_names = french
 
-	}
+        }
     if = {
         limit = {
             owner = {
                 any_primary_culture = {
                     has_discrimination_trait = language_germanophone
-                }
-            }
         }
+        }
+	}
         set_state_name = STATE_RHINELAND_german
     }
 	else = { # switch back to defaults
@@ -5768,14 +5928,14 @@ STATE_WESTPHALIA_state_name_assign = {
         set_state_name = STATE_WESTPHALIA_french
         set_hub_names = french
 
-	}
+        }
     if = {
         limit = {
             owner = {
                 any_primary_culture = {
                     has_discrimination_trait = language_germanophone
-                }
-            }
+        }
+	}
         }
         set_state_name = STATE_WESTPHALIA_german
     }
@@ -5841,56 +6001,912 @@ STATE_RUHR_state_name_assign = {
 	}
 }
 
+### Iberia Region
+
 STATE_CATALONIA_state_name_assign = {
-	if = {
-		limit = {
-			owner = {
-				any_primary_culture = {
-					cu:french ?= this
-				}
-				NOT = { c:HRE ?= this }
-			}
-		}
-
+    if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_francophone
+                }
+            }
+        }
         set_state_name = STATE_CATALONIA_french
-		set_hub_names = french
-	}
-	else_if = {
-		limit = {
-			owner = {
-				country_has_primary_culture = cu:catalan
-				NOT = { country_has_primary_culture = cu:spanish }
-			}
-		}
-
+        set_hub_names = french
+    }
+    else_if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    cu:catalan ?= this
+                }
+            }
+        }
         set_state_name = STATE_CATALONIA_catalan
         set_hub_names = catalan
+    }
+    else_if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_hispanophone
+                }
+            }
+        }
+        set_state_name = STATE_CATALONIA_spanish
+        set_hub_names = spanish
+    }
+    else_if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_germanophone
+                }
+            }
+        }
+        set_state_name = STATE_CATALONIA_german
+        set_hub_names = german 
+    }
+    else_if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_esperanto
+                }
+            }
+        }
+        set_state_name = STATE_CATALONIA_esperanto
+        set_hub_names = esperanto
+    }
+    else = {
+        reset_state_name = yes
+        reset_hub_names = yes
+    }
+}
 
-	}
-	else = { # switch back to defaults
-		reset_state_name = yes
-		reset_hub_names = yes
+STATE_OLD_CASTILE_state_name_assign = {
+    if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_hispanophone
+                }
+            }
+        }
+        set_state_name = STATE_OLD_CASTILE_spanish
+        set_hub_names = spanish
+    }
+    else_if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_germanophone
+                }
+            }
+        }
+        set_state_name = STATE_OLD_CASTILE_german
+        set_hub_names = german
+    }
+    else_if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_esperanto
+                }
+            }
+        }
+        set_state_name = STATE_OLD_CASTILE_esperanto
+        set_hub_names = esperanto
+    }
+    else = {
+        reset_state_name = yes
+        reset_hub_names = yes
 	}
 }
 
-STATE_NAVARRA_state_name_assign = {
-	if = {
-		limit = {
-			owner = {
-				country_has_primary_culture = cu:basque
-				NOT = { country_has_primary_culture = cu:spanish }
-			}
-		}
+STATE_LEON_state_name_assign = {
+    if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_asturleonese
+                }
+            }
+        }
+        set_state_name = STATE_LEON_asturleonese
+        set_hub_names = asturleonese
+    }
+    else_if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_hispanophone
+                }
+            }
+        }
+        set_state_name = STATE_LEON_spanish
+        set_hub_names = spanish
+    }
+    else_if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_esperanto
+                }
+            }
+        }
+        set_state_name = STATE_LEON_esperanto
+        set_hub_names = esperanto
+    }
+    else = {
+        reset_state_name = yes
+        reset_hub_names = yes
+    }
+}
 
-        set_state_name = STATE_NAVARRA_basque
+STATE_GALICIA_state_name_assign = {
+    if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    cu:galician ?= this
+                }
+            }
+        }
+        set_state_name = STATE_GALICIA_galician
+        set_hub_names = galician
+    }
+    else_if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_lusophone
+                }
+            }
+        }
+        set_state_name = STATE_GALICIA_portuguese
+        set_hub_names = portuguese
+    }
+    else_if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_hispanophone
+                }
+            }
+        }
+        set_state_name = STATE_GALICIA_spanish
+        set_hub_names = spanish
+    }
+    else_if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_germanophone
+                }
+            }
+        }
+        set_state_name = STATE_GALICIA_german
+        set_hub_names = german  
+    }
+    else_if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_esperanto
+                }
+            }
+        }
+        set_state_name = STATE_GALICIA_esperanto
+        set_hub_names = esperanto
+    }
+    else = {
+        reset_state_name = yes
+        reset_hub_names = yes
+    }
+}
+
+STATE_ASTURIAS_state_name_assign = {
+    if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_asturleonese
+                }
+            }
+        }
+        set_state_name = STATE_ASTURIAS_asturleonese
+        set_hub_names = asturleonese
+    }
+    else_if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_hispanophone
+                }
+            }
+        }
+        set_state_name = STATE_ASTURIAS_spanish
+        set_hub_names = spanish
+    }
+    else_if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_germanophone
+                }
+            }
+        }
+        set_state_name = STATE_ASTURIAS_german
+        set_hub_names = german
+    }
+    else_if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_esperanto
+                }
+            }
+        }
+        set_state_name = STATE_ASTURIAS_esperanto
+        set_hub_names = esperanto
+    }
+    else = {
+        reset_state_name = yes
+        reset_hub_names = yes
+    }
+}
+
+STATE_ARAGON_state_name_assign = {
+    if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_aragonese
+                }
+            }
+        }
+        set_state_name = STATE_ARAGON_aragonese
+        set_hub_names = aragonese
+    }
+    else_if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_hispanophone
+                }
+            }
+        }
+        set_state_name = STATE_ARAGON_spanish
+        set_hub_names = spanish
+    }
+    else_if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_esperanto
+                }
+            }
+        }
+        set_state_name = STATE_ARAGON_esperanto
+        set_hub_names = esperanto
+    }
+    else = {
+        reset_state_name = yes
+        reset_hub_names = yes
+    }
+}
+
+STATE_VALENCIA_state_name_assign = {
+    if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    cu:catalan ?= this
+                }
+            }
+        }
+        set_state_name = STATE_VALENCIA_catalan
+        set_hub_names = catalan
+    }
+    else_if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_hispanophone
+                }
+            }
+        }
+        set_state_name = STATE_VALENCIA_spanish
+        set_hub_names = spanish
+    }
+    else_if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_esperanto
+                }
+            }
+        }
+        set_state_name = STATE_VALENCIA_esperanto
+        set_hub_names = esperanto
+    }
+    else = {
+        reset_state_name = yes
+        reset_hub_names = yes
+    }
+}
+
+STATE_NEW_CASTILE_state_name_assign = {
+    if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_hispanophone
+                }
+            }
+        }
+        set_state_name = STATE_NEW_CASTILE_spanish
+        set_hub_names = spanish
+    }
+    else_if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_germanophone
+                }
+            }
+        }
+        set_state_name = STATE_NEW_CASTILE_german
+        set_hub_names = german
+    }
+    else_if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_esperanto
+                }
+            }
+        }
+        set_state_name = STATE_NEW_CASTILE_esperanto
+        set_hub_names = esperanto
+    }
+    else = {
+        reset_state_name = yes
+        reset_hub_names = yes
+    }
+}
+
+STATE_EXTREMADURA_state_name_assign = {
+    if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_asturleonese
+                }
+            }
+        }
+        set_state_name = STATE_EXTREMADURA_asturleonese
+        set_hub_names = asturleonese
+    }
+    if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_hispanophone
+                }
+            }
+        }
+        set_state_name = STATE_EXTREMADURA_spanish
+        set_hub_names = spanish
+    }
+    else_if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_esperanto
+                }
+            }
+        }
+        set_state_name = STATE_EXTREMADURA_esperanto
+        set_hub_names = esperanto
+    }
+    else = {
+        reset_state_name = yes
+        reset_hub_names = yes
+    }
+}
+
+STATE_UPPER_ANDALUSIA_state_name_assign = {
+    if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_hispanophone
+                }
+            }
+        }
+        set_state_name = STATE_UPPER_ANDALUSIA_spanish
+        set_hub_names = spanish
+    }
+    else_if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_germanophone
+                }
+            }
+        }
+        set_state_name = STATE_UPPER_ANDALUSIA_german
+        set_hub_names = german
+    }
+    else_if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_esperanto
+                }
+            }
+        }
+        set_state_name = STATE_UPPER_ANDALUSIA_esperanto
+        set_hub_names = esperanto
+    }
+    else = {
+        reset_state_name = yes
+        reset_hub_names = yes
+    }
+}
+
+STATE_LOWER_ANDALUSIA_state_name_assign = {
+    if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_hispanophone
+                }
+            }
+        }
+        set_state_name = STATE_LOWER_ANDALUSIA_spanish
+        set_hub_names = spanish
+    }
+    else_if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_germanophone
+                }
+            }
+        }
+        set_state_name = STATE_LOWER_ANDALUSIA_german
+        set_hub_names = german
+    }
+    else_if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_esperanto
+                }
+            }
+        }
+        set_state_name = STATE_LOWER_ANDALUSIA_esperanto
+        set_hub_names = esperanto
+    }
+    else = {
+        reset_state_name = yes
+        reset_hub_names = yes
+    }
+}
+
+STATE_MURCIA_state_name_assign = {
+    if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_hispanophone
+                }
+            }
+        }
+        set_state_name = STATE_MURCIA_spanish
+        set_hub_names = spanish
+    }
+    else_if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_esperanto
+                }
+            }
+        }
+        set_state_name = STATE_MURCIA_esperanto
+        set_hub_names = esperanto
+    }
+    else = {
+        reset_state_name = yes
+        reset_hub_names = yes
+    }
+}
+
+STATE_BALEARIC_ISLANDS_state_name_assign = {
+    if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    cu:catalan ?= this
+                }
+            }
+        }
+        set_state_name = STATE_BALEARIC_ISLANDS_catalan
+        set_hub_names = catalan
+    }
+    else_if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_hispanophone
+                }
+            }
+        }
+        set_state_name = STATE_BALEARIC_ISLANDS_spanish
+        set_hub_names = spanish
+    }
+    else_if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_germanophone
+                }
+            }
+        }
+        set_state_name = STATE_BALEARIC_ISLANDS_german
+        set_hub_names = german
+    }
+    else_if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_esperanto
+                }
+            }
+        }
+        set_state_name = STATE_BALEARIC_ISLANDS_esperanto
+        set_hub_names = esperanto
+    }
+    else = {
+        reset_state_name = yes
+        reset_hub_names = yes
+    }
+}
+
+STATE_BASQUE_COUNTRY_state_name_assign = {
+    if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_basque
+                }
+            }
+        }
+        set_state_name = STATE_BASQUE_COUNTRY_basque
         set_hub_names = basque
-
-	}
-	else = { # switch back to defaults
-		reset_state_name = yes
-		reset_hub_names = yes
-	}
+    }
+    else_if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_hispanophone
+                }
+            }
+        }
+        set_state_name = STATE_BASQUE_COUNTRY_spanish
+        set_hub_names = spanish
+    }
+    else_if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_germanophone
+                }
+            }
+        }
+        set_state_name = STATE_BASQUE_COUNTRY_german
+        set_hub_names = german
+    }
+    else_if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_esperanto
+                }
+            }
+        }
+        set_state_name = STATE_BASQUE_COUNTRY_esperanto
+        set_hub_names = esperanto
+    }
+    else = {
+        reset_state_name = yes
+        reset_hub_names = yes
+    }
 }
+
+STATE_ENTRE_DOURO_E_MINHO_state_name_assign = {
+    if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_lusophone
+                }
+            }
+        }
+        set_state_name = STATE_ENTRE_DOURO_E_MINHO_portuguese
+        set_hub_names = portuguese
+    }
+    else_if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_esperanto
+                }
+            }
+        }
+        set_state_name = STATE_ENTRE_DOURO_E_MINHO_esperanto
+        set_hub_names = esperanto
+    }
+    else = {
+        reset_state_name = yes
+        reset_hub_names = yes
+    }
+}
+
+STATE_BEIRA_state_name_assign = {
+    if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_lusophone
+                }
+            }
+        }
+        set_state_name = STATE_BEIRA_portuguese
+        set_hub_names = portuguese
+    }
+    else_if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_esperanto
+                }
+            }
+        }
+        set_state_name = STATE_BEIRA_esperanto
+        set_hub_names = esperanto
+    }
+    else = {
+        reset_state_name = yes
+        reset_hub_names = yes
+    }
+}
+
+STATE_ESTREMADURA_state_name_assign = {
+    if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_lusophone
+                }
+            }
+        }
+        set_state_name = STATE_ESTREMADURA_portuguese
+        set_hub_names = portuguese
+    }
+    else_if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_esperanto
+                }
+            }
+        }
+        set_state_name = STATE_ESTREMADURA_esperanto
+        set_hub_names = esperanto
+    }
+    else = {
+        reset_state_name = yes
+        reset_hub_names = yes
+    }
+}
+
+STATE_ALENTEJO_state_name_assign = {
+    if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_lusophone
+                }
+            }
+        }
+        set_state_name = STATE_ALENTEJO_portuguese
+        set_hub_names = portuguese
+    }
+    else_if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_esperanto
+                }
+            }
+        }
+        set_state_name = STATE_ALENTEJO_esperanto
+        set_hub_names = esperanto
+    }
+    else = {
+        reset_state_name = yes
+        reset_hub_names = yes
+    }
+}
+
+STATE_CANARY_ISLANDS_state_name_assign = {
+    if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_hispanophone
+                }
+            }
+        }
+        set_state_name = STATE_CANARY_ISLANDS_spanish
+        set_hub_names = spanish
+    }
+    else_if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_germanophone
+                }
+            }
+        }
+        set_state_name = STATE_CANARY_ISLANDS_german
+        set_hub_names = german
+    }
+    else_if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_esperanto
+                }
+            }
+        }
+        set_state_name = STATE_CANARY_ISLANDS_esperanto
+        set_hub_names = esperanto
+    }
+    else = {
+        reset_state_name = yes
+        reset_hub_names = yes
+    }
+}
+
+STATE_MADEIRA_state_name_assign = {
+    if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_lusophone
+                }
+            }
+        }
+        set_state_name = STATE_MADEIRA_portuguese
+        set_hub_names = portuguese
+    }
+    else_if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_esperanto
+                }
+            }
+        }
+        set_state_name = STATE_MADEIRA_esperanto
+        set_hub_names = esperanto
+    }
+    else = {
+        reset_state_name = yes
+        reset_hub_names = yes
+    }
+}
+
+STATE_AZORES_state_name_assign = {
+    if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_lusophone
+                }
+            }
+        }
+        set_state_name = STATE_AZORES_portuguese
+        set_hub_names = portuguese
+    }
+    else_if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_germanophone
+                }
+            }
+        }
+        set_state_name = STATE_AZORES_german
+        set_hub_names = german
+    }
+    else_if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_esperanto
+                }
+            }
+        }
+        set_state_name = STATE_AZORES_esperanto
+        set_hub_names = esperanto
+    }
+    else = {
+        reset_state_name = yes
+        reset_hub_names = yes
+    }
+}
+
+
+STATE_CAPE_VERDE_state_name_assign = {
+    if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_lusophone
+                }
+            }
+        }
+        set_state_name = STATE_CAPE_VERDE_portuguese
+        set_hub_names = portuguese
+    }
+    else_if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_hispanophone
+                }
+            }
+        }
+        set_state_name = STATE_CAPE_VERDE_spanish
+        set_hub_names = spanish
+    }
+    else_if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_germanophone
+                }
+            }
+        }
+        set_state_name = STATE_CAPE_VERDE_german
+        set_hub_names = german
+    }
+    else_if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_esperanto
+                }
+            }
+        }
+        set_state_name = STATE_CAPE_VERDE_esperanto
+        set_hub_names = esperanto
+    }
+    else = {
+        reset_state_name = yes
+        reset_hub_names = yes
+    }
+}
+
+###
 
 STATE_ULSTER_state_name_assign = {
 	if = {

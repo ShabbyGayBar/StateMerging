@@ -516,6 +516,8 @@ release_hungarian_states = { # I would dearly like to make these a single script
 					country_has_primary_culture = scope:relevant_culture_scope
 				}
 				order_by = country_rank
+				position = 0
+				check_range_bounds = no
 				save_temporary_scope_as = hungary_scope
 			}
 			custom_tooltip = {
@@ -591,6 +593,8 @@ release_croat_states = {
 					country_has_primary_culture = scope:relevant_culture_scope
 				}
 				order_by = country_rank
+				position = 0
+				check_range_bounds = no
 				save_temporary_scope_as = croatia_scope
 			}
 			custom_tooltip = {
@@ -675,6 +679,8 @@ release_north_italian_states = {
 					country_has_primary_culture = scope:relevant_culture_scope
 				}
 				order_by = country_rank
+				position = 0
+				check_range_bounds = no
 				save_temporary_scope_as = lombardy_scope
 			}
 			custom_tooltip = {
@@ -772,6 +778,8 @@ release_polish_states = {
 					country_has_primary_culture = scope:relevant_culture_scope
 				}
 				order_by = country_rank
+				position = 0
+				check_range_bounds = no
 				save_temporary_scope_as = galicia_scope
 			}
 			custom_tooltip = {
@@ -1156,11 +1164,32 @@ generate_3_noble_name = {
 	}
 }
 
+generate_1_common_female_name = {
+	create_character = {
+		is_general = yes
+		female = yes
+		culture = $CULTURE_1$
+		on_created = {
+			set_variable = name_a_char
+			place_character_in_void = 3
+		}
+	}
+	random_character_in_void = {
+		limit = {
+			has_variable = name_a_char
+		}
+		save_scope_as = name_a_scope
+	}
+}
+
 clear_generated_names = {
 	hidden_effect = {
 		if = {
 			limit = {
 				exists = scope:name_a_scope
+				scope:name_a_scope ?= {
+					is_character_alive = yes
+				}
 			}
 			scope:name_a_scope = {
 				kill_character = {
@@ -1171,6 +1200,9 @@ clear_generated_names = {
 		if = {
 			limit = {
 				exists = scope:name_b_scope
+				scope:name_b_scope ?= {
+					is_character_alive = yes
+				}
 			}
 			scope:name_b_scope = {
 				kill_character = {
@@ -1181,6 +1213,9 @@ clear_generated_names = {
 		if = {
 			limit = {
 				exists = scope:name_c_scope
+				scope:name_c_scope ?= {
+					is_character_alive = yes
+				}
 			}
 			scope:name_c_scope = {
 				kill_character = {
@@ -1379,7 +1414,7 @@ ser_generate_obrenovic_ruler = {
 		limit = {
 			game_date >= 1876.8.14
 		}
-		create_character = { 
+		create_character = {
 			template = SER_alexander_obrenovic
 			on_created = {
 				set_character_as_ruler = yes
@@ -1390,7 +1425,7 @@ ser_generate_obrenovic_ruler = {
 		limit = {
 			game_date >= 1854.8.22
 		}
-		create_character = { 
+		create_character = {
 			template = SER_milan_iv_obrenovic
 			on_created = {
 				set_character_as_ruler = yes
@@ -1398,7 +1433,7 @@ ser_generate_obrenovic_ruler = {
 		}
 	}
 	else = {
-		create_character = { 
+		create_character = {
 			template = SER_mihailo_obrenovic
 			on_created = {
 				set_character_as_ruler = yes
@@ -1412,7 +1447,7 @@ ser_generate_karadordevic_ruler = {
 		limit = {
 			game_date >= 1923.9.6
 		}
-		create_character = { 
+		create_character = {
 			template = SER_petar_ii_karadordevic
 			on_created = {
 				set_character_as_ruler = yes
@@ -1423,7 +1458,7 @@ ser_generate_karadordevic_ruler = {
 		limit = {
 			game_date >= 1888.12.16
 		}
-		create_character = { 
+		create_character = {
 			template = SER_alexander_i_karadordevic
 			on_created = {
 				set_character_as_ruler = yes
@@ -1434,7 +1469,7 @@ ser_generate_karadordevic_ruler = {
 		limit = {
 			game_date >= 1887.9.8
 		}
-		create_character = { 
+		create_character = {
 			template = SER_george_karadordevic
 			on_created = {
 				set_character_as_ruler = yes
@@ -1445,7 +1480,7 @@ ser_generate_karadordevic_ruler = {
 		limit = {
 			game_date >= 1844.8.14
 		}
-		create_character = { 
+		create_character = {
 			template = SER_petar_i_karadordevic
 			on_created = {
 				set_character_as_ruler = yes
@@ -1453,7 +1488,7 @@ ser_generate_karadordevic_ruler = {
 		}
 	}
 	else = {
-		create_character = { 
+		create_character = {
 			template = SER_alexandar_karadordevic
 			on_created = {
 				set_character_as_ruler = yes
@@ -1541,448 +1576,5 @@ grunderzeit_variable_cleanup = {
 			has_variable = grunderzeit_quarterly_count_3
 		}
 		remove_variable = grunderzeit_quarterly_count_3
-	}
-}
-
-clear_geheime_staatskonferenz = {
-	if = {
-		limit = {
-			has_modifier = modifier_geheime_staatskonferenz
-		}
-		remove_modifier = modifier_geheime_staatskonferenz
-	}
-	if = {
-		limit = {
-			has_modifier = modifier_geheime_staatskonferenz_kolowrat
-		}
-		remove_modifier = modifier_geheime_staatskonferenz_kolowrat
-	}
-	if = {
-		limit = {
-			has_modifier = modifier_geheime_staatskonferenz_metternich
-		}
-		remove_modifier = modifier_geheime_staatskonferenz_metternich
-	}
-}
-
-russia_ruler_succession_chain_effect = {
-	if = {
-		limit = {
-			has_template = RUS_alexander_ii
-		}
-		owner ?= {
-			trigger_event = { id = russia_monarchy.1 popup = yes }
-		}
-	}
-	else_if = {
-		limit = {
-			has_template = RUS_tsarevich_nicholas_alexandrovich
-		}
-		owner ?= {
-			trigger_event = { id = russia_monarchy.3 popup = yes }
-		}
-	}
-	else_if = {
-		limit = {
-			has_template = RUS_alexander_iii
-		}
-		owner ?= {
-			trigger_event = { id = russia_monarchy.4 popup = yes }
-		}
-	}
-	else_if = {
-		limit = {
-			has_template = RUS_nicholas_ii
-		}
-		owner ?= {
-			trigger_event = { id = russia_monarchy.5 popup = yes }
-		}
-	}
-	else_if = {
-		limit = {
-			has_template = RUS_alexei_ii
-		}
-		owner ?= {
-			trigger_event = { id = russia_monarchy.9 popup = yes }
-		}
-	}
-	else_if = {
-		limit = {
-			has_template = RUS_michael_ii
-		}
-		owner ?= {
-			trigger_event = { id = russia_monarchy.10 popup = yes }
-		}
-	}
-	else_if = {
-		limit = {
-			has_template = RUS_george_i
-		}
-		owner ?= {
-			trigger_event = { id = russia_monarchy.11 popup = yes }
-		}
-	}
-}
-
-sweden_ruler_succession_chain_effect = {
-	if = {
-		limit = {
-			has_template = swe_oscar_bernadotte_template
-		}
-		owner ?= {
-			trigger_event = { id = sweden_monarchy.1 popup = yes }
-		}
-	}
-}
-
-austria_ruler_succession_chain_effect = {
-	if = {
-		limit = {
-			has_template = aus_franz_josef_I_habsburg_template
-			game_date < 1858.8.21
-		}
-		owner ?= {
-			create_character = {
-				template = aus_maximilian_I_habsburg_template
-			}
-		}
-	}
-	# Rudolf is spawned by event
-	else_if = {
-		limit = {
-			OR = {
-				has_template = aus_franz_josef_I_habsburg_template
-				has_template = aus_maximilian_I_habsburg_template
-			}
-			game_date > 1863.12.18
-		}
-		owner ?= {
-			create_character = {
-				template = aus_franz_ferdinand
-			}
-		}
-	}
-	else_if = {
-		limit = {
-			has_template = aus_franz_ferdinand
-			game_date >= 1887.8.18
-		}
-		owner ?= {
-			create_character = {
-				template = aus_karl_I_habsburg
-			}
-		}
-	}
-}
-
-serbia_ruler_succession_chain_effect = {
-	### Obrenovics
-	if = { # Once Milan succeeds to the Serbian throne, create Mihailo
-		limit = {
-			has_template = SER_milan_obrenovic
-		}
-		owner ?= {
-			create_character = {
-				template = SER_mihailo_obrenovic
-			}
-		}
-	}
-	else_if = { # Once Mihailo succeeds to the Serbian throne, fire his coronation event
-		limit = {
-			has_template = SER_mihailo_obrenovic
-		}
-		owner ?= {
-			trigger_event = { id = serbia.2 popup = yes }
-			if = { # And spawn Milan IV as his heir
-				limit = {
-					game_date >= 1854.8.22
-				}
-				create_character = {
-					template = SER_milan_iv_obrenovic
-				}
-			}
-		}
-	}
-	else_if = { # Once Milan IV succeeds to the Serbian throne, make Alexander his heir if applicable
-		limit = {
-			has_template = SER_milan_iv_obrenovic
-			game_date >= 1876.8.14
-		}
-		owner ?= {
-			create_character = {
-				template = SER_alexander_obrenovic
-			}
-		}
-	}
-
-	### Karadordevics
-	if = { # Once Alexander succeeds to the Serbian throne, make Petar his heir if applicable
-		limit = {
-			has_template = SER_alexandar_karadordevic
-			game_date >= 1844.8.14
-		}
-		owner ?= {
-			create_character = {
-				template = SER_petar_i_karadordevic
-			}
-		}
-	}
-	else_if = { # Once Petar succeeds to the Serbian throne, make George his heir if applicable
-		limit = {
-			has_template = SER_petar_i_karadordevic
-			game_date >= 1887.9.8
-		}
-		owner ?= {
-			create_character = {
-				template = SER_george_karadordevic
-			}
-		}
-	}
-	else_if = { # If George succeeds to the Serbian throne, make Alexander his heir if applicable
-		limit = {
-			has_template = SER_george_karadordevic
-			game_date >= 1888.12.16
-		}
-		owner ?= {
-			create_character = {
-				template = SER_alexander_i_karadordevic
-			}
-		}
-	}
-	else_if = { # Once Alexander succeeds to the Serbian throne, make Petar II his heir if applicable
-		limit = {
-			has_template = SER_alexander_i_karadordevic
-			game_date >= 1923.9.6
-		}
-		owner ?= {
-			create_character = {
-				template = SER_petar_ii_karadordevic
-			}
-		}
-	}
-}
-
-ottoman_ruler_succession_chain_effect = {
-	if = {
-		limit = {
-			has_template = tur_abdulmecid_osmanoglu_template
-			game_date > 1842.2.8
-			game_date < 1876.5.30
-		}
-		owner ?= {
-			create_character = {
-				template = tur_abdulaziz_osmanoglu_template
-			}
-		}
-	}
-	else_if = {
-		limit = {
-			has_template = tur_abdulaziz_osmanoglu_template
-			game_date > 1840.9.21
-			game_date < 1876.8.31
-		}
-		owner ?= {
-			create_character = {
-				template = tur_murad_v_osmanoglu_template
-			}
-		}
-	}
-	else_if = {
-		limit = {
-			has_template = tur_murad_v_osmanoglu_template
-			game_date > 1842.9.21
-			game_date < 1909.4.27
-		}
-		owner ?= {
-			create_character = {
-				template = tur_abdulhamid_ii_osmanoglu_template
-			}
-		}
-	}
-	else_if = {
-		limit = {
-			has_template = tur_abdulhamid_ii_osmanoglu_template
-			game_date > 1844.11.2
-			game_date < 1918.6.3
-		}
-		owner ?= {
-			create_character = {
-				template = tur_reshad_osmanoglu_template
-			}
-		}
-	}
-	else_if = {
-		limit = {
-			has_template = tur_reshad_osmanoglu_template
-			game_date > 1861.1.14
-			game_date < 1922.11.1
-		}
-		owner ?= {
-			create_character = {
-				template = tur_vahideddin_osmanoglu_template
-			}
-		}
-	}
-}
-
-french_ruler_succession_chain_effect = {
-	### Orleanists
-	if = {
-		limit = {
-			has_template = FRA_ferdinand_philippe
-			game_date > 1838.8.24
-			game_date < 1894.1.1
-		}
-		owner ?= {
-			create_character = {
-				template = FRA_philippe_de_orleans_of_paris
-			}
-		}
-	}
-	else_if = {
-		limit = {
-			has_template = FRA_philippe_de_orleans_of_paris
-			game_date > 1869.2.6
-			game_date < 1926.1.1
-		}
-		owner ?= {
-			create_character = {
-				template = FRA_philippe_de_orleans_of_orleans
-			}
-		}
-	}
-	else_if = {
-		limit = {
-			has_template = FRA_philippe_de_orleans_of_orleans
-			game_date > 1874.9.4
-			game_date < 1940.1.1
-		}
-		owner ?= {
-			create_character = {
-				template = FRA_jean_de_orleans
-			}
-		}
-	}
-	else_if = {
-		limit = {
-			has_template = FRA_jean_de_orleans
-			game_date > 1908.7.5
-			game_date < 1999.1.1
-		}
-		owner ?= {
-			create_character = {
-				template = FRA_henri_de_orleans
-			}
-		}
-	}
-
-	### Legitimists
-	if = {
-		limit = {
-			has_template = FRA_louis_antoine_de_bourbon
-			game_date < 1883.1.1
-		}
-		owner ?= {
-			create_character = {
-				template = FRA_henri_de_bourbon
-			}
-		}
-	}
-	else_if = {
-		limit = {
-			has_template = FRA_henri_de_bourbon
-			game_date > 1887.1.1
-		}
-		owner ?= {
-			create_character = {
-				template = FRA_jean_de_bourbon
-			}
-		}
-	}
-	else_if = {
-		limit = {
-			has_template = FRA_jean_de_bourbon
-			game_date > 1848.3.30
-			game_date < 1909.1.1
-		}
-		owner ?= {
-			create_character = {
-				template = FRA_carlos_de_bourbon
-			}
-		}
-	}
-	else_if = {
-		limit = {
-			has_template = FRA_carlos_de_bourbon
-			game_date > 1870.6.27
-			game_date < 1931.10.2
-		}
-		owner ?= {
-			create_character = {
-				template = FRA_jacques_de_bourbon
-			}
-		}
-	}
-	else_if = {
-		limit = {
-			has_template = FRA_jacques_de_bourbon
-			game_date > 1849.9.12
-			game_date < 1936.1.1
-		}
-		owner ?= {
-			create_character = {
-				template = FRA_alfonso_carlos_de_bourbon
-			}
-		}
-	}
-	else_if = {
-		limit = {
-			OR = {
-				has_template = FRA_jacques_de_bourbon
-				has_template = FRA_alfonso_carlos_de_bourbon
-			}
-			game_date > 1886.5.17
-			game_date < 1941.1.1
-		}
-		owner ?= {
-			create_character = {
-				template = FRA_alfonso_de_bourbon
-			}
-		}
-	}
-
-	### Bonapartists
-	if = {
-		limit = {
-			has_template = fra_napoleon_iii_character_template
-			game_date > 1856.3.16
-		}
-		owner ?= {
-			create_character = {
-				template = FRA_napoleon_eugene_louis_bonaparte
-			}
-		}
-	}
-	else_if = {
-		limit = {
-			has_template = FRA_napoleon_eugene_louis_bonaparte
-			game_date > 1862.7.18
-		}
-		owner ?= {
-			create_character = {
-				template = FRA_victor_bonaparte
-			}
-		}
-	}
-	else_if = {
-		limit = {
-			has_template = FRA_victor_bonaparte
-			game_date > 1914.1.23
-		}
-		owner ?= {
-			create_character = {
-				template = FRA_louis_bonaparte
-			}
-		}
 	}
 }

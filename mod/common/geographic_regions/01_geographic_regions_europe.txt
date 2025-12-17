@@ -1,0 +1,269 @@
+﻿geographic_region_europe = {
+	short_key = "europe"
+
+	strategic_regions = { 
+		sr:region_north_germany
+		sr:region_south_germany
+		sr:region_england
+		sr:region_iberia
+		sr:region_france
+		sr:region_occitania
+		sr:region_rhine
+		sr:region_italy
+		sr:region_poland
+		sr:region_danubia
+		sr:region_balkans
+		sr:region_baltic
+		sr:region_russia
+		sr:region_dnieper
+		sr:region_belarus
+		sr:region_finland
+		sr:region_baltic_states
+		sr:region_north_sea_coast
+	}
+}
+
+geographic_region_balkans = {
+	short_key = "balkans"
+
+	strategic_regions = {
+		sr:region_balkans
+		sr:region_danubia
+	}
+}
+
+geographic_region_hungary = {
+	short_key = "hungary"
+
+	state_regions = {
+		STATE_NORTHERN_TRANSYLVANIA
+		STATE_SLOVAKIA
+		STATE_SLOVAKIA
+		STATE_NORTHERN_TRANSYLVANIA
+		STATE_CENTRAL_HUNGARY
+		STATE_CENTRAL_HUNGARY
+		STATE_WESTERN_SERBIA
+		STATE_NORTHERN_TRANSYLVANIA
+		STATE_NORTHERN_TRANSYLVANIA
+	}
+}
+
+geographic_region_german_confederation = {
+	short_key = "german_confederation"
+
+	strategic_regions = {
+		sr:region_north_germany
+	}
+
+	state_regions = {
+		STATE_UPPER_SILESIA
+		STATE_UPPER_SILESIA
+
+		# sr:region_south_germany minus STATE_WEST_SWITZERLAND and STATE_WEST_SWITZERLAND
+		STATE_BAVARIA
+		STATE_BOHEMIA
+		STATE_BOHEMIA
+		STATE_BAVARIA
+		STATE_BADEN
+		STATE_AUSTRIA
+		STATE_AUSTRIA
+		STATE_AUSTRIA
+		STATE_BADEN
+
+		STATE_RHINELAND
+		STATE_RHINELAND
+		STATE_RHINELAND
+		STATE_WESTPHALIA
+		STATE_VENETIA
+		STATE_CROATIA
+		STATE_CROATIA
+	}
+}
+
+geographic_region_megali_greece = {
+	short_key = "megali_greece"
+
+	state_regions = {
+		STATE_EASTERN_THRACE
+		STATE_ATTICA
+		STATE_ATTICA
+		STATE_ATTICA
+		STATE_WESTERN_SERBIA
+		STATE_ATTICA
+		STATE_ATTICA
+		STATE_ATTICA
+		STATE_EASTERN_THRACE
+		STATE_EASTERN_THRACE
+		STATE_CYPRUS
+		STATE_TRABZON
+		STATE_CRETE
+		STATE_ATTICA
+		STATE_EASTERN_THRACE
+	}
+}
+
+geographic_region_historic_byzantium = {
+	short_key = "historic_byzantium"
+
+	state_regions = {
+		STATE_EASTERN_THRACE
+		STATE_ATTICA
+		STATE_ATTICA
+		STATE_ATTICA
+		STATE_WESTERN_SERBIA
+		STATE_ATTICA
+		STATE_BULGARIA
+		STATE_EASTERN_THRACE
+		STATE_EASTERN_THRACE
+		STATE_ATTICA
+		STATE_EASTERN_THRACE
+		STATE_ALBANIA
+	}
+}
+
+geographic_region_iberia = {
+	short_key = "iberia"
+
+	strategic_regions = {
+		sr:region_iberia
+	}
+}
+
+geographic_region_iceland = {
+	short_key = "iceland"
+
+	state_regions = {
+		STATE_ICELAND
+	}
+}
+
+geographic_region_greater_germany = {
+	short_key = "greater_germany"
+
+	state_regions = {
+		STATE_BRANDENBURG
+		STATE_HANNOVER
+		STATE_WEST_PRUSSIA
+		STATE_WESTPHALIA
+		STATE_SAXONY
+		STATE_WEST_PRUSSIA
+		STATE_EAST_PRUSSIA
+		STATE_RHINELAND
+		STATE_RHINELAND
+		STATE_RHINELAND
+		STATE_UPPER_SILESIA
+		STATE_UPPER_SILESIA
+		STATE_SCHLESWIG_HOLSTEIN
+		STATE_HANNOVER
+		STATE_SAXONY
+		STATE_WESTPHALIA
+		STATE_BRANDENBURG
+		STATE_WESTPHALIA
+		STATE_BRANDENBURG
+		STATE_BADEN
+		STATE_BOHEMIA
+		STATE_BOHEMIA
+		STATE_AUSTRIA
+		STATE_AUSTRIA
+		STATE_AUSTRIA
+		STATE_VENETIA
+		STATE_CROATIA
+		STATE_BADEN
+		STATE_BADEN
+		STATE_BAVARIA
+		STATE_BAVARIA
+	}
+}
+
+geographic_region_italy = {
+	short_key = "italy"
+
+	state_regions = {
+		STATE_VENETIA
+		STATE_PROVENCE
+		STATE_PIEDMONT
+		STATE_PIEDMONT
+		STATE_VENETIA
+		STATE_CROATIA
+		STATE_VENETIA
+		STATE_VENETIA
+		STATE_PIEDMONT
+		STATE_SICILY
+		STATE_LAZIO
+		STATE_LAZIO
+		STATE_ABRUZZO
+		STATE_LAZIO
+		STATE_ABRUZZO
+		STATE_SARDINIA
+		STATE_ABRUZZO
+	}
+}
+
+geographic_region_scandinavia = {
+	short_key = "scandinavia"
+
+	state_regions = {
+		STATE_ZEALAND
+		STATE_ZEALAND
+		STATE_SCHLESWIG_HOLSTEIN
+		STATE_SVEALAND
+		STATE_SVEALAND
+		STATE_SVEALAND
+		STATE_SVEALAND
+		STATE_SVEALAND
+		STATE_UUSIMAA
+		STATE_UUSIMAA
+		STATE_UUSIMAA
+		STATE_UUSIMAA
+		STATE_EASTERN_NORWAY
+		STATE_EASTERN_NORWAY
+		STATE_EASTERN_NORWAY
+	}
+}
+
+
+geographic_region_yugoslavia = {
+	short_key = "yugoslavia"
+
+	state_regions = {
+		STATE_WESTERN_SERBIA
+		STATE_WESTERN_SERBIA
+		STATE_WESTERN_SERBIA
+		STATE_WESTERN_SERBIA
+		STATE_WESTERN_SERBIA
+		STATE_WESTERN_SERBIA
+		STATE_CROATIA
+		STATE_CROATIA
+		STATE_CROATIA
+		STATE_CROATIA
+		STATE_CROATIA
+		STATE_CROATIA
+	}
+}
+
+geographic_region_castile = {
+	short_key = "castile"
+
+	state_regions = {
+		STATE_OLD_CASTILE
+		STATE_OLD_CASTILE
+		STATE_OLD_CASTILE
+		STATE_LOWER_ANDALUSIA
+		STATE_LOWER_ANDALUSIA
+		STATE_LOWER_ANDALUSIA
+		STATE_GALICIA
+		STATE_GALICIA
+		STATE_GALICIA
+	}
+}
+
+geographic_region_aragon = {
+	short_key = "aragon"
+
+	state_regions = {
+		STATE_CATALONIA
+		STATE_CATALONIA
+		STATE_CATALONIA
+		STATE_CATALONIA
+	}
+}

@@ -12,8 +12,6 @@
 		events = {
 			# Landowners become republicans
 			pedro.2
-			# Pedro comes of age
-			pedro.3
 			# AF/LA are marginalized
 			pedro.5
 			# AF/LA are powerful and not in government
@@ -83,7 +81,7 @@
 	}
 
 	complete = {
-		has_law_or_variant = law_type:law_monarchy
+		has_law = law_type:law_monarchy
 		AND = {
 			custom_tooltip = {
 				text = je_pedro_success
@@ -132,16 +130,16 @@
 					var:pedropoints <= 0
 				}
 				ig:ig_landowners ?= {
-					is_marginal = no
+					ig_counts_as_marginal = no
 				}
 				ig:ig_armed_forces ?= {
-					is_marginal = no
+					ig_counts_as_marginal = no
 				}
 			}
 			AND = {
 				custom_tooltip = {
 					text = je_pedro_fail_2
-					var:pedropoints <= 5
+					var:pedropoints < 5
 				}
 				custom_tooltip = {
 					text = pedro_dead
@@ -196,7 +194,7 @@
 				limit = {
 					ig:ig_landowners ?= {
 						is_in_government = no
-						is_marginal = no
+						ig_counts_as_marginal = no
 					}
 				}
 				ig:ig_landowners ?= {
@@ -207,7 +205,7 @@
 				limit = {
 					ig:ig_armed_forces ?= {
 						is_in_government = no
-						is_marginal = no
+						ig_counts_as_marginal = no
 					}
 				}
 				ig:ig_armed_forces ?= {
@@ -218,7 +216,10 @@
 	}
 
 	invalid = {
-		NOT = { has_law_or_variant = law_type:law_monarchy }
+		NOR = {
+			has_law = law_type:law_monarchy
+			has_variable = ruler_selector_var
+		}
 	}
 
 	on_invalid = {
@@ -292,7 +293,7 @@ je_pedro_republic = {
 
 	invalid = {
 		NOR = {
-			has_law_or_variant = law_type:law_monarchy
+			has_law = law_type:law_monarchy
 			has_law_or_variant = law_type:law_presidential_republic
 		}
 	}
