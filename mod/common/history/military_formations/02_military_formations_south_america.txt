@@ -1,4 +1,4 @@
-﻿MILITARY_FORMATIONS = {
+MILITARY_FORMATIONS = {
 	c:BRZ ?= {
 		create_military_formation = {
 			type = army
@@ -360,7 +360,7 @@
 	c:URU ?= {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_brazil
+			hq_region = sr:region_la_plata
 			name = Ejrcito_Nacional
 
 			combat_unit = {

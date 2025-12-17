@@ -1,4 +1,4 @@
-﻿MILITARY_FORMATIONS = {
+MILITARY_FORMATIONS = {
 	c:PRU ?= {
 		create_military_formation = {
 			type = army
@@ -1469,7 +1469,7 @@
 
 		create_military_formation = {
 			type = fleet
-			hq_region = sr:region_new_england
+			hq_region = sr:region_caribbean
 			name = North_America_and_West_Indies_Station
 
 			combat_unit = {
@@ -2657,7 +2657,7 @@
 	c:HEK ?= {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_north_germany
+			hq_region = sr:region_rhine
 			name = Kurfrstlich_Hessische_Armee
 
 			combat_unit = {
@@ -2683,7 +2683,7 @@
 	c:HES ?= {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_north_germany
+			hq_region = sr:region_rhine
 			name = Groherzoglich_Hessische_Armee
 
 			combat_unit = {
@@ -2709,7 +2709,7 @@
 	c:NAS ?= {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_north_germany
+			hq_region = sr:region_rhine
 			name = Herzoglich_Nassauische_Armee
 
 			combat_unit = {
@@ -2885,7 +2885,7 @@
 	c:FRM ?= {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_north_germany
+			hq_region = sr:region_rhine
 			name = Linienbataillon_Frankfurt
 
 			combat_unit = {
@@ -2899,7 +2899,7 @@
 	c:WLD ?= {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_north_germany
+			hq_region = sr:region_rhine
 			name = Waldecksches_Bataillon
 
 			combat_unit = {
