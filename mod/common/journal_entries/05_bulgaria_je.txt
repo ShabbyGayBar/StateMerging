@@ -123,11 +123,11 @@
 				limit = {
 					NOT = {
 						any_scope_state = {
-							state_region = s:STATE_ATTICA
+							state_region = s:STATE_MACEDONIA
 						}
 					}
 				}
-				s:STATE_ATTICA = {
+				s:STATE_MACEDONIA = {
 					add_claim = root
 				}
 			}

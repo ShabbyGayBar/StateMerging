@@ -42,7 +42,7 @@ ETH = {
 	tier = empire
 
 	cultures = { amhara oromo tigray }
-	capital = STATE_OROMIA
+	capital = STATE_GONDER
 }
 
 MAD = {
@@ -99,7 +99,7 @@ NAL = {
 	tier = principality
 
 	cultures = { boer }
-	capital = STATE_TRANSVAAL
+	capital = STATE_ZULULAND
 }
 
 ORA = {
@@ -110,7 +110,7 @@ ORA = {
 	tier = principality
 
 	cultures = { boer }
-	capital = STATE_TRANSVAAL
+	capital = STATE_VRYSTAAT
 	is_named_from_capital = yes
 }
 
@@ -192,7 +192,7 @@ ZUL = {
 	tier = kingdom
 
 	cultures = { zulu }
-	capital = STATE_TRANSVAAL
+	capital = STATE_ZULULAND
 	is_named_from_capital = yes
 }
 
@@ -348,7 +348,7 @@ PHL = {
 	tier = principality
 
 	cultures = { griqua }
-	capital = STATE_TRANSVAAL
+	capital = STATE_VRYSTAAT
 }
 
 KZM = {
@@ -559,7 +559,7 @@ BST = {
 	tier = principality
 
 	cultures = { sotho }
-	capital = STATE_TRANSVAAL
+	capital = STATE_ZULULAND
 }
 
 TKE = {
@@ -790,7 +790,7 @@ DFR = {
 	tier = principality
 
 	cultures = { fur bedouin }
-	capital = STATE_EQUATORIA
+	capital = STATE_DARFUR
 }
 
 ISQ = {
@@ -889,7 +889,7 @@ AWS = {
 	tier = principality
 
 	cultures = { afar }
-	capital = STATE_OROMIA
+	capital = STATE_GONDER
 }
 
 SHW = {
@@ -923,7 +923,7 @@ BRN = {
 
 	cultures = { oromo }
 	religion = sunni
-	capital = STATE_OROMIA
+	capital = STATE_AMHARA
 }
 
 KFA = {
@@ -934,7 +934,7 @@ KFA = {
 
 	cultures = { sidama oromo }
 	religion = oriental_orthodox
-	capital = STATE_OROMIA
+	capital = STATE_AMHARA
 }
 
 SDM = {
@@ -945,7 +945,7 @@ SDM = {
 
 	cultures = { sidama }
 	religion = oriental_orthodox
-	capital = STATE_OROMIA
+	capital = STATE_AMHARA
 }
 
 WLG = {
@@ -955,7 +955,7 @@ WLG = {
 	tier = principality
 
 	cultures = { oromo }
-	capital = STATE_OROMIA
+	capital = STATE_AMHARA
 }
 
 TGR = {
@@ -965,7 +965,7 @@ TGR = {
 	tier = principality
 
 	cultures =  { tigray amhara }
-	capital = STATE_OROMIA
+	capital = STATE_AMHARA
 }
 
 GJM = {
@@ -975,7 +975,7 @@ GJM = {
 	tier = principality
 
 	cultures = { amhara }
-	capital = STATE_OROMIA
+	capital = STATE_AMHARA
 }
 
 WLO = {
@@ -985,7 +985,7 @@ WLO = {
 	tier = principality
 
 	cultures = { amhara }
-	capital = STATE_OROMIA
+	capital = STATE_AMHARA
 }
 
 BGM = {
@@ -995,7 +995,7 @@ BGM = {
 	tier = principality
 
 	cultures = { amhara oromo tigray }
-	capital = STATE_OROMIA
+	capital = STATE_AMHARA
 }
 
 BOR = {
@@ -1439,7 +1439,7 @@ BJA = { # Beja
 	tier = principality
 
 	cultures = { beja }
-	capital = STATE_BLUE_NILE
+	capital = STATE_DONGOLA
 }
 
 NBA = { # Nuba
@@ -1781,7 +1781,7 @@ QWR = { # Qwara, sometimes spelled 'Quara' in literature, or even 'Quoara' if yo
 	tier = principality
 
 	cultures = { amhara }
-	capital = STATE_OROMIA
+	capital = STATE_GONDER
 }
 
 TGI = { # Tungi
@@ -1803,7 +1803,7 @@ WLT = {
 
 	cultures = { sidama }
 	religion = oriental_orthodox
-	capital = STATE_OROMIA
+	capital = STATE_AMHARA
 }
 
 HDY = {
@@ -1814,7 +1814,7 @@ HDY = {
 
 	cultures = { oromo }
 	religion = sunni
-	capital = STATE_OROMIA
+	capital = STATE_AMHARA
 }
 
 ARS = {
@@ -1836,7 +1836,7 @@ ANU = { # Anuak
 
 	cultures = { luo }
 	religion = animist
-	capital = STATE_OROMIA
+	capital = STATE_AMHARA
 }
 
 OMO = { # Omo
@@ -1847,7 +1847,7 @@ OMO = { # Omo
 
 	cultures = { sidama }
 	religion = animist
-	capital = STATE_OROMIA
+	capital = STATE_AMHARA
 }
 
 # Swaziland/Eswatini

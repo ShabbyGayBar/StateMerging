@@ -423,7 +423,7 @@ historical_agitators.5 = { #John Brown
 		game_date < 1870.1.1
 		OR = {
 			active_law:lawgroup_slavery ?= {
-				has_amendment = amendment_american_fugitive_slaves_act
+				has_amendment = amendment_type:amendment_american_fugitive_slaves_act
 			}
 			has_variable = USA_wilmot_proviso
 			has_variable = bleeding_kansas_happened
@@ -767,16 +767,10 @@ historical_agitators.8 = { #Napoleon III
 	immediate = {
 		create_character = {
 			template = fra_napoleon_iii_character_template
-			on_created = {
-				set_variable = {
-					name = house_bonaparte
-				}
-				set_variable = napoleon_iii_var
-			}
 		}
 		random_scope_character = {
 			limit = {
-				has_variable = napoleon_iii_var
+				has_template = fra_napoleon_iii_character_template
 			}
 			save_scope_as = historic_agitator_scope
 		}

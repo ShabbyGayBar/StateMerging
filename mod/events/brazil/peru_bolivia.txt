@@ -953,7 +953,18 @@ peru_bolivia_events.9 = {
 				is_in_geographic_region = geographic_region_bolivia
 			}
 		}
-		change_tag = BOL
+		if = {
+			limit = {
+				exists = c:BOL
+			}
+			play_as = c:BOL
+			c:BOL ?= {
+				annex = ROOT
+			}
+		}
+		else = {
+			change_tag = BOL
+		}
 	}
 	option = {
 		name = peru_bolivia_events.9.b
@@ -963,6 +974,17 @@ peru_bolivia_events.9 = {
 				is_in_geographic_region = geographic_region_peru
 			}
 		}
-		change_tag = PEU
+		if = {
+			limit = {
+				exists = c:PEU
+			}
+			play_as = c:PEU
+			c:PEU ?= {
+				annex = ROOT
+			}
+		}
+		else = {
+			change_tag = PEU
+		}
 	}
 }

@@ -448,7 +448,7 @@ india_nationalism_events.4 = { # Gandhi in Sooth Efrika
 		c:SAF ?= this
 		any_scope_state = {
 			OR = {
-				state_region = s:STATE_TRANSVAAL
+				state_region = s:STATE_ZULULAND
 				state_region = s:STATE_CAPE_COLONY
 			}
 			any_scope_pop = {
@@ -475,10 +475,10 @@ india_nationalism_events.4 = { # Gandhi in Sooth Efrika
 		if = {
 			limit = {
 				any_scope_state = {
-					state_region = s:STATE_TRANSVAAL
+					state_region = s:STATE_ZULULAND
 				}
 			}
-			s:STATE_TRANSVAAL.region_state:SAF ?= {
+			s:STATE_ZULULAND.region_state:SAF ?= {
 				save_scope_as = gandhi_state
 			}
 		}

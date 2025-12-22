@@ -21,6 +21,9 @@ spa_maria_cristina_template = { # Maria Cristina Ferdinanda di Borbone of the Tw
         romantic
 		basic_political_operator
     }
+    on_created = {
+		set_variable = house_bourbon
+    }
 }
 
 spa_isabel_de_borbon_template = { # Isabel II, María Isabel Luisa de Borbón y Borbón-Dos Sicilias
@@ -37,6 +40,9 @@ spa_isabel_de_borbon_template = { # Isabel II, María Isabel Luisa de Borbón y 
     traits = {
         trait_child
     }
+    on_created = {
+		set_variable = house_bourbon
+    }
 }
 
 spa_amadeo_i_de_savoy_template = { # Amedeo Ferdinando Maria di Savoia, Duke of Aosta
@@ -51,6 +57,9 @@ spa_amadeo_i_de_savoy_template = { # Amedeo Ferdinando Maria di Savoia, Duke of 
     ideology = ideology_reformer
     traits = {
         reserved
+    }
+    on_created = {
+		set_variable = house_savoy
     }
 }
 
@@ -68,6 +77,9 @@ spa_luisa_fernanda_de_borbon_template = { # María Luisa Fernanda de Borbón y B
         reserved
         aesthete
     }
+    on_created = {
+		set_variable = house_bourbon
+    }
 }
 
 spa_isabel_francisca_de_borbon_template = { # María Isabel Francisca de Asís Cristina Francisca de Paula Dominga de Borbón y Borbón, Countess of Girgenti
@@ -83,6 +95,9 @@ spa_isabel_francisca_de_borbon_template = { # María Isabel Francisca de Asís C
     traits = {
         charismatic
         basic_diplomat
+    }
+    on_created = {
+		set_variable = house_bourbon
     }
 }
 
@@ -100,6 +115,9 @@ spa_alfonso_xii_de_borbon_template = { # Alfonso Francisco de Asís Fernando Pí
         charismatic
         cautious
     }
+    on_created = {
+		set_variable = house_bourbon
+    }
 }
 
 spa_alfonso_xiii_de_borbon_template = { # Alfonso León Fernando María Santiago Isidro Pascual Antón de Borbón y de Habsburgo-Lorena
@@ -115,6 +133,9 @@ spa_alfonso_xiii_de_borbon_template = { # Alfonso León Fernando María Santiago
     traits = {
         imperious
         reckless
+    }
+    on_created = {
+		set_variable = house_bourbon
     }
 }
 
@@ -170,6 +191,9 @@ SPA_baldomero_espartero = {
         resupply_commander
         experienced_political_operator # Exceptional amongst Spanish commanders, as he ensured his soldiers actually got paid.
 	}
+    on_created = {
+        set_variable = house_espartero
+    }
 }
 
 SPA_pedro_inguanzo_rivero = {

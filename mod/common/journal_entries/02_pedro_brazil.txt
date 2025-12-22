@@ -96,6 +96,11 @@
 				}
 			}
 		}
+		hidden_trigger = {
+			NOT = {
+				has_variable = kingdom_var
+			}
+		}
 	}
 
 	on_complete = {
@@ -139,7 +144,7 @@
 			AND = {
 				custom_tooltip = {
 					text = je_pedro_fail_2
-					var:pedropoints < 5
+					var:pedropoints <= 5
 				}
 				custom_tooltip = {
 					text = pedro_dead
@@ -149,6 +154,11 @@
 						}
 					}
 				}
+			}
+		}
+		hidden_trigger = {
+			NOT = {
+				has_variable = kingdom_var
 			}
 		}
 	}
@@ -216,9 +226,12 @@
 	}
 
 	invalid = {
-		NOR = {
-			has_law = law_type:law_monarchy
-			has_variable = ruler_selector_var
+		OR = {
+			NOR = {
+				has_law = law_type:law_monarchy
+				has_variable = ruler_selector_var
+			}
+			has_variable = kingdom_var
 		}
 	}
 

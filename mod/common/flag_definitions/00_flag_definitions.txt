@@ -2897,18 +2897,6 @@ CUB = { # Cuba
 		priority = 30
 		trigger = {
 			coa_def_spanish_ensign_trigger = yes
-			c:CUB ?= {
-				NOT = {
-					is_subject_type = subject_type_colony
-				}
-			}
-		}
-	}
-	flag_definition = {
-		coa = CUB_spa_burgundy
-		priority = 30
-		trigger = {
-			coa_def_spanish_ensign_trigger = yes
 		}
 	}
 	flag_definition = {
@@ -7815,7 +7803,7 @@ ORA = {
 		trigger = {
 			scope:actor ?= {
 				is_country_type = unrecognized
-				NOT = { owns_entire_state_region = STATE_TRANSVAAL }
+				NOT = { owns_entire_state_region = STATE_VRYSTAAT }
 			}
 		}
 	}
@@ -8251,6 +8239,10 @@ PHI = { # Philippines
 		subject_canton = PHI_war
 		priority = 2
 		trigger = {
+			OR = {
+				coa_def_independent_trigger = yes
+				coa_def_independence_war_trigger = yes
+			}
 			coa_def_war_trigger = yes
 		}
 	}
@@ -11963,6 +11955,10 @@ MSN = { # Massina
 
 PCO = {
 	flag_definition = {
+		coa = PCO
+		priority = 1
+	}
+	flag_definition = {
 		coa = PCO_spa_burgundy
 		priority = 30
 		trigger = {
@@ -11973,28 +11969,28 @@ PCO = {
 
 SC1 = { # New Spain
 	flag_definition = {
-		coa = PCO_spa_burgundy # Cross of Burgundy
+		coa = SC1 # Cross of Burgundy with Mexican coat of arms
 		priority = 1
 	}
 }
 
 SC2 = { # New Grenada
 	flag_definition = {
-		coa = PCO_spa_burgundy # Cross of Burgundy
+		coa = SC2 # Cross of Burgundy with Colombian coat of arms
 		priority = 1
 	}
 }
 
 SC3 = { # Peru
 	flag_definition = {
-		coa = PCO_spa_burgundy # Cross of Burgundy
+		coa = SC3 # Cross of Burgundy with Absolute Monarchy Peru CoA
 		priority = 1
 	}
 }
 
 SC4 = { # River Plate
 	flag_definition = {
-		coa = PCO_spa_burgundy # Cross of Burgundy
+		coa = SC4 # Cross of Burgundy with Argentine tricolor vertically slapped on
 		priority = 1
 	}
 }

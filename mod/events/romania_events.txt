@@ -329,7 +329,7 @@ romania.4 = {
 	immediate = {
         random_scope_state = {
         	limit = {
-				state_region = s:STATE_WALLACHIA
+				state_region = s:STATE_MOLDAVIA
         	}
         	save_scope_as = south_bessarabia_cession
         }
@@ -359,7 +359,7 @@ romania.4 = {
 			base = 100
 		}
 
-		s:STATE_WALLACHIA = {
+		s:STATE_MOLDAVIA = {
 			set_owner_of_provinces = {
 				country = scope:romanian_bessarabia_receiver
 				provinces = { xB0E0A0 x6BF7B8 x712161 }

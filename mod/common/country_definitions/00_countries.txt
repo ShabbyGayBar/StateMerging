@@ -281,7 +281,7 @@ SCN = {
 	tier = principality
 
 	cultures = { swedish }
-	capital = STATE_SVEALAND
+	capital = STATE_SCANIA
 	is_named_from_capital = yes
 }
 
@@ -1048,7 +1048,7 @@ MOL = {
 	tier = principality
 
 	cultures = { romanian }
-	capital = STATE_WALLACHIA
+	capital = STATE_MOLDAVIA
 	is_named_from_capital = yes
 }
 
@@ -1060,7 +1060,7 @@ MON = {
 	tier = principality
 
 	cultures = { serb }
-	capital = STATE_WESTERN_SERBIA
+	capital = STATE_MONTENEGRO
 	is_named_from_capital = yes
 }
 
@@ -1833,7 +1833,7 @@ DAI = {
 	religion = confucian
 
 	cultures = { vietnamese }
-	capital = STATE_TONKIN
+	capital = STATE_ANNAM
 }
 
 JAV = {
@@ -1935,7 +1935,7 @@ CMI = {
 	tier = principality
 
 	cultures = { thai shan }
-	capital = STATE_BANGKOK
+	capital = STATE_CHIANG_MAI
 }
 
 TIB = {
@@ -1957,7 +1957,7 @@ MGL = {
 	tier = kingdom
 
 	cultures = { mongol }
-	capital = STATE_ULIASTAI
+	capital = STATE_URGA
 }
 
 XIN = {
@@ -2588,7 +2588,7 @@ TNG = {
 	tier = principality
 
 	cultures = { polynesian }
-	capital = STATE_WEST_MICRONESIA
+	capital = STATE_FIJI
 }
 
 WIN = {
@@ -5075,7 +5075,7 @@ DGR = {
 	tier = principality
 
 	cultures = { champa }
-	capital = STATE_TONKIN
+	capital = STATE_ANNAM
 }
 
 SCT = {

@@ -254,7 +254,7 @@ carlist_war.2 = {
 # The Basque Fueros
 carlist_war.3 = {
     type = country_event
-    placement = ROOT
+    placement = scope:basque_country_scope
 
 	cooldown = { days = never_fire_again_modifier_time }
 
@@ -280,11 +280,19 @@ carlist_war.3 = {
 		any_scope_state = {
 			state_region = s:STATE_OLD_CASTILE
 		}
+		has_law = law_type:law_monarchy
+		has_law = law_type:law_subjecthood
 	}
 
 	immediate = {
 		ruler ?= {
 			save_scope_as = don_carlos_scope
+		}
+		random_scope_State = {
+			limit = {
+				state_region = s:STATE_OLD_CASTILE
+			}
+			save_scope_as = basque_country_scope
 		}
 	}
 
@@ -292,16 +300,21 @@ carlist_war.3 = {
 		name = carlist_war.3.a
 		default_option = yes
 
-		custom_tooltip = {
-			text = two_spains_fueros_conservative_drift_tt
+		if = {
+			limit = {
+				has_journal_entry = je_the_two_spains
+			}
+			custom_tooltip = {
+				text = two_spains_fueros_conservative_drift_tt
 
-			je:je_the_two_spains ?= {
-				add_progress = {
-					value = {
-						add = two_spains_fueros_conservative_drift
-						multiply = -1
+				je:je_the_two_spains ?= {
+					add_progress = {
+						value = {
+							add = two_spains_fueros_conservative_drift
+							multiply = -1
+						}
+						name = je_two_spains_progress_bar
 					}
-					name = je_two_spains_progress_bar
 				}
 			}
 		}
@@ -311,12 +324,14 @@ carlist_war.3 = {
 				sponsor = PREV.ig:ig_rural_folk
 			}
 		}
-		random_scope_state = {
-			limit = {
-				state_region = s:STATE_OLD_CASTILE
-			}
-			add_modifier = {
-				name = spc_state_fueros_restored
+		show_as_tooltip = {
+			random_scope_state = {
+				limit = {
+					state_region = s:STATE_OLD_CASTILE
+				}
+				add_modifier = {
+					name = spc_state_fueros_restored
+				}
 			}
 		}
 		add_loyalists = {
@@ -481,7 +496,7 @@ carlist_war.4 = {
 		}
 		add_radicals = {
 			religion = rel:catholic
-			value = 0.2
+			value = 0.15
 		}
 		c:PAP ?= {
 			create_diplomatic_catalyst = {
@@ -534,16 +549,16 @@ carlist_war.5 = {
 		name = carlist_war.5.a
 		default_option = yes
 
-		add_modifier = {
-			name = spc_secure_port
-			days = long_modifier_time
-		}
 		random_scope_state = {
 			limit = {
 				state_region = s:STATE_OLD_CASTILE
 			}
+			add_modifier = {
+				name = spc_secure_port
+				days = long_modifier_time
+			}
 			kill_population_percent_in_state = {
-				percent = 0.02
+				percent = 0.01
 			}
 			add_radicals_in_state = {
 				value = 0.05
@@ -570,7 +585,7 @@ carlist_war.5 = {
 # Taking the fight to Andalusia
 carlist_war.6 = {
     type = country_event
-    placement = ROOT
+    placement = scope:upper_andalusia_scope
 
 	cooldown = { days = never_fire_again_modifier_time }
 
@@ -583,7 +598,7 @@ carlist_war.6 = {
 	dlc = dlc016
 
     event_image = {
-		video = "europenorthamerica_before_the_battle"
+		video = "unspecific_vandalized_storefront"
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
@@ -593,9 +608,34 @@ carlist_war.6 = {
     trigger = {
 		has_dlc_feature = ip4_content
 		c:SPC ?= this
+		c:SPA ?= {
+			any_scope_state = {
+				OR = {
+					state_region = s:STATE_LOWER_ANDALUSIA
+					state_region = s:STATE_LOWER_ANDALUSIA
+				}
+			}
+		}
 	}
 
-	immediate = {}
+	immediate = {
+		s:STATE_LOWER_ANDALUSIA = {
+			random_scope_state = {
+				limit = {
+					owner = c:SPA
+				}
+				save_scope_as = upper_andalusia_scope
+			}
+		}
+		s:STATE_LOWER_ANDALUSIA = {
+			random_scope_state = {
+				limit = {
+					owner = c:SPA
+				}
+				save_scope_as = lower_andalusia_scope
+			}
+		}
+	}
 
 	option = { # More bandits
 		name = carlist_war.6.a
@@ -604,30 +644,35 @@ carlist_war.6 = {
 		add_modifier = {
 			name = spa_carlist_terror_expenses
 			days = short_modifier_time
-			multiplier = money_amount_multiplier_small
+			multiplier = money_amount_multiplier_medium
 		}
 		s:STATE_LOWER_ANDALUSIA.region_state:SPA ?= {
 			add_modifier = {
 				name = spa_carlist_terror
 				days = normal_modifier_time
 			}
+			add_devastation = carlist_war_carlist_terror_devastation
 		}
 		s:STATE_LOWER_ANDALUSIA.region_state:SPA ?= {
 			add_modifier = {
 				name = spa_carlist_terror
 				days = normal_modifier_time
 			}
+			add_devastation = carlist_war_carlist_terror_devastation
+		}
+		c:SPA ?= {
+			post_notification = carlist_war_carlist_terror
 		}
 
 		ai_chance = {
-			base = 0
+			base = 3
 		}
 	}
 	option = { # This is not worth it
 		name = carlist_war.6.b
 
 		ai_chance = {
-			base = 1
+			base = 7
 		}
 	}
 

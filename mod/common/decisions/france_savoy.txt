@@ -6,43 +6,47 @@
 		NOT = { has_global_variable = fra_annexed_savoy }
 		is_subject = no
 		NOT = { owns_entire_state_region = STATE_PROVENCE }
-		any_country = {
-			NOT = { THIS = ROOT }
-			any_scope_state = {
-				state_region = s:STATE_PROVENCE
-				is_split_state = no
-				is_capital = no
+		sr:region_italy = {
+			any_country = {
+				NOT = { THIS = ROOT }
+				any_scope_state = {
+					state_region = s:STATE_PROVENCE
+					is_split_state = no
+					is_capital = no
+				}
+				is_player = no
 			}
-			is_player = no
 		}
 	}
 
 	possible = {
 		has_technology_researched = nationalism
-		any_country = {
-			custom_tooltip = {
-				text = at_peace_nocontext_tt
-				is_at_war = no
-			}
-			any_scope_state = {
-				state_region = s:STATE_PROVENCE
-				is_split_state = no
-				is_capital = no
-			}
-			custom_tooltip = {
-				text = relations_amicable_nocontext_tt
-				relations:root >= relations_threshold:amicable
-			}
-			is_revolutionary = no
-			OR = {
-				is_subject = no
-				is_subject_of = ROOT
-			}
-			trigger_if = {
-				limit = {
-					is_subject = no
+		sr:region_italy = {
+			any_scope_country = {
+				custom_tooltip = {
+					text = at_peace_nocontext_tt
+					is_at_war = no
 				}
-				owes_obligation_to = ROOT
+				any_scope_state = {
+					state_region = s:STATE_PROVENCE
+					is_split_state = no
+					is_capital = no
+				}
+				custom_tooltip = {
+					text = relations_amicable_nocontext_tt
+					relations:root >= relations_threshold:amicable
+				}
+				is_revolutionary = no
+				OR = {
+					is_subject = no
+					is_subject_of = ROOT
+				}
+				trigger_if = {
+					limit = {
+						is_subject = no
+					}
+					owes_obligation_to = ROOT
+				}
 			}
 		}
 	}
@@ -77,6 +81,7 @@ sell_savoy = {
 
 	possible = {
 		has_technology_researched = nationalism
+		is_at_war = no
 		c:FRA ?= {
 			is_at_war = no
 			owns_entire_state_region = STATE_PROVENCE

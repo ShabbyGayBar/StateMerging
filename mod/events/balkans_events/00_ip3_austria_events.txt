@@ -320,14 +320,14 @@ austria_events.3 = { # Crisis on the Danube
 		if = {
 			limit = {
 				any_scope_state = {
-					state_region = s:STATE_WESTERN_SERBIA
+					state_region = s:STATE_MONTENEGRO
 				}
 			}
 			custom_tooltip = {
 				text = austria_danube_serb_revolt
 				random_scope_state = {
 					limit = {
-						state_region = s:STATE_WESTERN_SERBIA
+						state_region = s:STATE_MONTENEGRO
 					}
 					save_scope_as = montenegro_state_scope
 				}
@@ -346,7 +346,7 @@ austria_events.3 = { # Crisis on the Danube
 				else = {
 					random_scope_state = {
 						limit = {
-							state_region = s:STATE_WESTERN_SERBIA
+							state_region = s:STATE_MONTENEGRO
 						}
 						set_state_owner = c:MON
 					}
@@ -359,7 +359,7 @@ austria_events.3 = { # Crisis on the Danube
 					OR = {
 						state_region = s:STATE_WEST_GALICIA
 						state_region = s:STATE_EAST_GALICIA
-						state_region = s:STATE_WALLACHIA
+						state_region = s:STATE_MOLDAVIA
 					}
 				}
 			}
@@ -370,7 +370,7 @@ austria_events.3 = { # Crisis on the Danube
 						OR = {
 							state_region = s:STATE_WEST_GALICIA
 							state_region = s:STATE_EAST_GALICIA
-							state_region = s:STATE_WALLACHIA
+							state_region = s:STATE_MOLDAVIA
 						}
 					}
 					save_scope_as = polish_state_scope
@@ -392,7 +392,7 @@ austria_events.3 = { # Crisis on the Danube
 						OR = {
 							state_region = s:STATE_WEST_GALICIA
 							state_region = s:STATE_EAST_GALICIA
-							state_region = s:STATE_WALLACHIA
+							state_region = s:STATE_MOLDAVIA
 						}
 					}
 					set_state_owner = c:GAL
@@ -832,7 +832,7 @@ austria_events.4 = { #
 						}
 					}
 				}
-				s:STATE_WESTERN_SERBIA = {
+				s:STATE_MONTENEGRO = {
 					set_owner_of_provinces = {
 						country = c:HUN
 						provinces = { x90A0E0 }

@@ -201,7 +201,7 @@ hungary_events.2 = { # Serbian Revolt
 						}
 						STATE_DELVIDEK_state_name_assign = yes
 					}
-					s:STATE_NORTHERN_TRANSYLVANIA = {
+					s:STATE_BANAT = {
 						add_claim = c:BNT
 					}
 					c:AUS ?= {
@@ -263,14 +263,14 @@ hungary_events.2 = { # Serbian Revolt
 				limit = {
 					c:HUN ?= {
 						any_scope_state = {
-							state_region = s:STATE_NORTHERN_TRANSYLVANIA
+							state_region = s:STATE_BANAT
 						}
 					}
 				}
 				add_war_goal = {
 					holder = c:BNT
 					type = conquer_state
-					target_state = s:STATE_NORTHERN_TRANSYLVANIA.region_state:HUN
+					target_state = s:STATE_BANAT.region_state:HUN
 				}
 			}
 		}
@@ -327,14 +327,14 @@ hungary_events.2 = { # Serbian Revolt
 				limit = {
 					c:HUN ?= {
 						any_scope_state = {
-							state_region = s:STATE_NORTHERN_TRANSYLVANIA
+							state_region = s:STATE_BANAT
 						}
 					}
 				}
 				add_war_goal = {
 					holder = c:BNT
 					type = conquer_state
-					target_state = s:STATE_NORTHERN_TRANSYLVANIA.region_state:HUN
+					target_state = s:STATE_BANAT.region_state:HUN
 				}
 			}
 		}
@@ -398,14 +398,14 @@ hungary_events.2 = { # Serbian Revolt
 					limit = {
 						c:HUN ?= {
 							any_scope_state = {
-								state_region = s:STATE_NORTHERN_TRANSYLVANIA
+								state_region = s:STATE_BANAT
 							}
 						}
 					}
 					add_war_goal = {
 						holder = c:BNT
 						type = conquer_state
-						target_state = s:STATE_NORTHERN_TRANSYLVANIA.region_state:HUN
+						target_state = s:STATE_BANAT.region_state:HUN
 					}
 				}
 			}

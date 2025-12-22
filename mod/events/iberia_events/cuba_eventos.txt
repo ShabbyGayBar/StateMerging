@@ -227,7 +227,7 @@ cuba_independencia.4 = {
 			scope:cuba_buyer = {
 				set_variable = {
 					name = cubas_last_gdp
-					value = c:CUB.gdp
+					value = scope:cuba.gdp
 				}
 			}
 		}
@@ -428,7 +428,7 @@ cuba_independencia.6 = {
 			play_as = scope:cuba_buyer
 
 			scope:cuba_buyer = {
-				annex = c:CUB
+				annex = scope:cuba
 			}
 		}
 		else_if = {
@@ -443,10 +443,17 @@ cuba_independencia.6 = {
 			}
 			if = {
 				limit = {
-					NOT = { is_subject_type = subject_type_protectorate }
+					NOT = { is_subject_type = subject_type_dominion }
 				}
-				change_subject_type = subject_type_protectorate
+				change_subject_type = subject_type_dominion
 			}
+		}
+		else_if = {
+			limit = {
+				exists = c:ATL
+				c:ATL = { was_formed_from = CUB }
+			}
+			annex = c:ATL
 		}
 		else = {
 			scope:cuba_buyer = {
@@ -487,9 +494,9 @@ cuba_independencia.6 = {
 		hidden_effect = {
 			if = {
 				limit = {
-					NOT = { is_subject_type = subject_type_protectorate }
+					NOT = { is_subject_type = subject_type_dominion }
 				}
-				change_subject_type = subject_type_protectorate
+				change_subject_type = subject_type_dominion
 			}
 		}
 	}

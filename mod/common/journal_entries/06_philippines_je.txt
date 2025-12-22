@@ -35,10 +35,6 @@
 
     complete = {
         gdp >= 2000000
-        average_sol_for_culture = {
-            target = cu:filipino_mestizo
-            value >= 20
-        }
         OR = {
             country_has_building_group_levels = {
                 type = bg_plantations

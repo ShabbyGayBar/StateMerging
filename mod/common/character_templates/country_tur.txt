@@ -296,7 +296,6 @@ tur_midhat_pasha = { # Midhat Pasha, Grand Vizier 1876-1877
 	last_name = "Midhat"
 	historical = yes
 	culture = cu:turkish
-	religion = rel:sunni
 	female = no
 	religion = rel:sunni
 	ideology = ideology_liberal_leader

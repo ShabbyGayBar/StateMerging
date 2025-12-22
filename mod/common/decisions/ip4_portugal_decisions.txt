@@ -238,14 +238,6 @@ decision_reorganize_iberian_crowns = {
 					tag = SPA
 					state = scope:castile_scope
 					on_created = {
-						if = {
-							limit = {
-								NOT = {
-									has_law = law_type:law_monarchy
-								}
-							}
-							activate_law = law_type:law_monarchy
-						}
 					}
 				}
 				every_state_in_castile = {
@@ -374,14 +366,6 @@ decision_restore_kingdom_of_brazil = {
 					tag = BRZ
 					state = scope:rio_scope
 					on_created = {
-						if = {
-							limit = {
-								NOT = {
-									has_law = law_type:law_monarchy
-								}
-							}
-							activate_law = law_type:law_monarchy
-						}
 						set_variable = kingdom_var
 					}
 				}

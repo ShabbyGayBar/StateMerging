@@ -131,8 +131,8 @@ LIT = {
 SWE = {
 	states = {
 		STATE_SVEALAND
-		STATE_SVEALAND
-		STATE_SVEALAND
+		STATE_SCANIA
+		STATE_SCANIA
 		STATE_SVEALAND
 	}
 
@@ -239,7 +239,7 @@ CHE = {
 }
 
 SCN = {
-	states = { STATE_SVEALAND }
+	states = { STATE_SCANIA }
 
 	ai_will_do = { always = no }
 
@@ -335,7 +335,7 @@ UKR = {
 }
 
 GAL = {
-	states = { STATE_EAST_GALICIA STATE_WEST_GALICIA STATE_WALLACHIA }
+	states = { STATE_EAST_GALICIA STATE_WEST_GALICIA STATE_MOLDAVIA }
 
 	required_num_states = 2
 
@@ -519,7 +519,7 @@ VIE = {
 }
 
 CMI = {
-	states = { STATE_BANGKOK }
+	states = { STATE_CHIANG_MAI }
 
 	ai_will_do = { always = no }
 }
@@ -533,7 +533,7 @@ TIB = {
 MGL = {
 	states = {
 		STATE_ULIASTAI
-		STATE_ULIASTAI
+		STATE_URGA
 	}
 
 	ai_will_do = { always = no }
@@ -1188,8 +1188,8 @@ LEB = {
 SUD = {
 	states = {
 		STATE_BLUE_NILE
-		STATE_BLUE_NILE
-		STATE_BLUE_NILE
+		STATE_KORDOFAN
+		STATE_DONGOLA
 	}
 	ai_will_do = { always = no }
 }
@@ -1214,10 +1214,10 @@ YUG = {
 	states = {
 		STATE_WESTERN_SERBIA
 		STATE_WESTERN_SERBIA
+		STATE_MONTENEGRO
+		STATE_MONTENEGRO
 		STATE_WESTERN_SERBIA
-		STATE_WESTERN_SERBIA
-		STATE_WESTERN_SERBIA
-		STATE_WESTERN_SERBIA
+		STATE_MONTENEGRO
 		STATE_CROATIA
 		STATE_CROATIA
 		STATE_CROATIA
@@ -1603,14 +1603,14 @@ ION = {
 
 MOL = {
 	states = {
-		STATE_WALLACHIA
+		STATE_MOLDAVIA
 	}
 	ai_will_do = { always = no }
 }
 
 MON = {
 	states = {
-		STATE_WESTERN_SERBIA
+		STATE_MONTENEGRO
 	}
 	ai_will_do = { always = no }
 }
@@ -1619,8 +1619,8 @@ SER = {
 	states = {
 		STATE_WESTERN_SERBIA
 		STATE_WESTERN_SERBIA
-		STATE_WESTERN_SERBIA
-		STATE_WESTERN_SERBIA
+		STATE_MONTENEGRO
+		STATE_MONTENEGRO
 	}
 	ai_will_do = { always = no }
 }
@@ -1979,6 +1979,7 @@ PEU = {
 		STATE_ICA
 		STATE_ICA
 		STATE_ANTOFAGASTA
+		STATE_AMAZONAS
 	}
 	ai_will_do = { always = no }
 }
@@ -2431,7 +2432,7 @@ LIB = {
 
 DFR = {
 	states = {
-		STATE_EQUATORIA
+		STATE_DARFUR
 	}
 	ai_will_do = { always = no }
 }
@@ -2943,7 +2944,7 @@ ALK = {
 BNT = {
 	states = {
 		STATE_WESTERN_SERBIA
-		STATE_NORTHERN_TRANSYLVANIA
+		STATE_BANAT
 	}
 
 	ai_will_do = { always = no }

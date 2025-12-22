@@ -265,7 +265,7 @@ assign_state_name_region_indochina = {
     if = {
         limit = {
             state_region = {
-                s:STATE_TONKIN ?= this
+                s:STATE_ANNAM ?= this
             }
         }
         STATE_ANNAM_state_name_assign = yes
@@ -273,7 +273,7 @@ assign_state_name_region_indochina = {
     if = {
         limit = {
             state_region = {
-                s:STATE_TONKIN ?= this
+                s:STATE_MEKONG ?= this
             }
         }
         STATE_MEKONG_state_name_assign = yes

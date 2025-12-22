@@ -28,6 +28,12 @@ meiji.1 = {
 			name = meiji_var
 			value = 0
 		}
+		if = {
+			limit = {
+				has_gov_regency = yes
+			}
+			remove_regency_modifier = yes
+		}
 		ig:ig_landowners ?= {
 			save_scope_as = shogunate_ig
 			leader = {

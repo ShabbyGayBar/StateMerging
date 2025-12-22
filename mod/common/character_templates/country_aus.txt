@@ -1266,7 +1266,7 @@ AUS_leopold_kunschak = { # Leopold Kunschak, politician
     birth_date = 1871.11.11
     ig_leader = yes
     interest_group = ig_rural_folk
-    ideology = ideology_conservative
+    ideology = ideology_royalist
     traits = {
         tactful
         cautious

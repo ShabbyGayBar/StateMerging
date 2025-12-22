@@ -9,7 +9,7 @@
 		has_technology_researched = colonization
 		OR = {
 			c:SPA ?= this
-			was_formed_from = SPA
+			c:IBE ?= this
 		}
 	}
 

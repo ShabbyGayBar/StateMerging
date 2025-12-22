@@ -17,6 +17,9 @@ POR_maria_ii_de_braganca = {
 	traits = {
 		persistent
 	}
+    on_created = {
+        set_variable = house_braganca
+    }
 }
 
 POR_pedro_v_de_braganca_template = {
@@ -34,6 +37,9 @@ POR_pedro_v_de_braganca_template = {
 		meticulous
 		ambitious
 	}
+    on_created = {
+        set_variable = house_braganca
+    }
 }
 
 POR_luis_i_de_braganca_template = {
@@ -51,6 +57,9 @@ POR_luis_i_de_braganca_template = {
 		aesthete
 		romantic
 	}
+    on_created = {
+        set_variable = house_braganca
+    }
 }
 
 POR_carlos_i_de_braganca_template = {
@@ -68,6 +77,9 @@ POR_carlos_i_de_braganca_template = {
 		reckless
 		innovative
 	}
+    on_created = {
+        set_variable = house_braganca
+    }
 }
 
 POR_manuel_ii_de_braganca_template = {
@@ -84,6 +96,9 @@ POR_manuel_ii_de_braganca_template = {
 	traits = {
 		cautious
 	}
+    on_created = {
+        set_variable = house_braganca
+    }
 }
 
 # Miguelist Line
@@ -101,6 +116,9 @@ POR_miguel_i_de_braganca_template = {
 		ambitious
 		persistent
 	}
+    on_created = {
+        set_variable = house_braganca
+    }
 }
 
 POR_maria_das_neves_de_braganca_template = {
@@ -117,6 +135,9 @@ POR_maria_das_neves_de_braganca_template = {
 	traits = {
 		ambitious
 	}
+    on_created = {
+        set_variable = house_braganca
+    }
 }
 
 POR_miguel_januario_de_braganca_template = {
@@ -132,6 +153,9 @@ POR_miguel_januario_de_braganca_template = {
 	traits = {
 		persistent
 	}
+    on_created = {
+        set_variable = house_braganca
+    }
 }
 
 POR_miguel_maximiliano_de_braganca_template = {
@@ -148,6 +172,9 @@ POR_miguel_maximiliano_de_braganca_template = {
 		inept # Entire life was a series of hilarious Ls
 		expensive_tastes
 	}
+    on_created = {
+        set_variable = house_braganca
+    }
 }
 
 POR_duarte_nuno_de_braganca_template = {
@@ -163,6 +190,9 @@ POR_duarte_nuno_de_braganca_template = {
 	traits = {
 		basic_political_operator
 	}
+    on_created = {
+        set_variable = house_braganca
+    }
 }
 
 ### Peripheral Bragancas for Spain
@@ -181,6 +211,9 @@ POR_ana_de_jesus_maria_de_braganca_template = {
 		romantic
 		reserved
 	}
+    on_created = {
+        set_variable = house_braganca
+    }
 }
 
 POR_fernando_de_saxe_coburg_gotha_template = {
@@ -195,6 +228,9 @@ POR_fernando_de_saxe_coburg_gotha_template = {
 	traits = {
 		aesthete
 	}
+    on_created = {
+        set_variable = house_braganca
+    }
 }
 
 POR_afonso_de_braganca_template = {
@@ -211,6 +247,9 @@ POR_afonso_de_braganca_template = {
 		brave
 		popular_commander
 	}
+    on_created = {
+        set_variable = house_braganca
+    }
 }
 
 ### Interest Group Leaders ###
@@ -840,7 +879,6 @@ POR_henry_burnay = { # Henry (Henrique) Burnay, 1. Conde de Burnay
     traits = {
         experienced_entrepreneur
         meticulous
-        plutocratic
     }
     interest_group_leader_usage = {
         country_trigger = {

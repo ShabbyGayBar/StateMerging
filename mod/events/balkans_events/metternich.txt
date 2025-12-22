@@ -207,7 +207,7 @@ metternich.3 = { # Metternich Staatskonferenz Reform
 
 	trigger = {
 		active_law:lawgroup_distribution_of_power ?= { # Autocracy
-			has_amendment = amendment_geheime_staatskonferenz
+			has_amendment = amendment_type:amendment_geheime_staatskonferenz
 		}
 		any_scope_character = {
 			has_template = aus_klemens_von_metternich
@@ -256,7 +256,6 @@ metternich.3 = { # Metternich Staatskonferenz Reform
 			add_amendment = {
 				type = amendment_geheime_staatskonferenz_metternich
 				sponsor = PREV.ig:ig_landowners
-				cooldown = 120
 			}
 		}
 		random_scope_state = {
@@ -290,7 +289,6 @@ metternich.3 = { # Metternich Staatskonferenz Reform
 			add_amendment = {
 				type = amendment_geheime_staatskonferenz_kolowrat
 				sponsor = PREV.ig:ig_intelligentsia
-				cooldown = 120
 			}
 		}
 	}

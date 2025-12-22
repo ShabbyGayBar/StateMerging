@@ -758,6 +758,7 @@ coffee_with_milk.8 = {
 		NOT = {
 			has_variable = governors_policy_decision
 		}
+		country_has_voting_franchise = yes
 	}
 
 	immediate = {

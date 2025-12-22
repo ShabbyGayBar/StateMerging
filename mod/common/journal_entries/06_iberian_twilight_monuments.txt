@@ -157,15 +157,22 @@ je_sagrada_familia = {
 
     invalid = {
         OR = {
-            custom_tooltip = {
-                text = rejected_sagrada_familia_project_tt
-                has_variable = rejected_sagrada_familia_project
-            }
-            custom_tooltip = {
-                text = does_not_have_state_catalonia_tt
+            has_variable = rejected_sagrada_familia_project
+            AND = {
                 NOT = {
-                    any_scope_state = {
-                        state_region = s:STATE_CATALONIA
+                    s:STATE_CATALONIA = {
+                        any_scope_state = {
+                            owner = root
+                        }
+                    }
+                }
+                NOT = {
+                    s:STATE_CATALONIA = {
+                        any_scope_state = {
+                            owner = {
+                               is_diplomatic_play_enemy_of = root
+                            }
+                        }
                     }
                 }
             }
@@ -280,15 +287,22 @@ je_pena_palace = {
 
     invalid = {
         OR = {
-            custom_tooltip = {
-                text = rejected_pena_palace_project_tt
-                has_variable = rejected_pena_palace_project
-            }
-            custom_tooltip = {
-                text = does_not_have_state_estremadura_tt
+            has_variable = rejected_pena_palace_project
+            AND = {
                 NOT = {
-                    any_scope_state = {
-                        state_region = s:STATE_ESTREMADURA
+                    s:STATE_ESTREMADURA = {
+                        any_scope_state = {
+                            owner = root
+                        }
+                    }
+                }
+                NOT = {
+                    s:STATE_ESTREMADURA = {
+                        any_scope_state = {
+                            owner = {
+                               is_diplomatic_play_enemy_of = root
+                            }
+                        }
                     }
                 }
             }
@@ -393,15 +407,22 @@ je_gran_teatro = {
 
     invalid = {
         OR = {
-            custom_tooltip = {
-                text = rejected_gran_teatro_project_tt
-                has_variable = rejected_gran_teatro_project
-            }
-            custom_tooltip = {
-                text = does_not_have_state_western_cuba_tt
+            has_variable = rejected_gran_teatro_project
+            AND = {
                 NOT = {
-                    any_scope_state = {
-                        state_region = s:STATE_WESTERN_CUBA
+                    s:STATE_WESTERN_CUBA = {
+                        any_scope_state = {
+                            owner = root
+                        }
+                    }
+                }
+                NOT = {
+                    s:STATE_WESTERN_CUBA = {
+                        any_scope_state = {
+                            owner = {
+                               is_diplomatic_play_enemy_of = root
+                            }
+                        }
                     }
                 }
             }
@@ -510,15 +531,22 @@ je_atocha_railway = {
 
     invalid = {
         OR = {
-            custom_tooltip = {
-                text = rejected_atocha_railway_project_tt
-                has_variable = rejected_atocha_railway_project
-            }
-            custom_tooltip = {
-                text = does_not_have_state_new_castile_tt
+            has_variable = rejected_atocha_railway_project
+            AND = {
                 NOT = {
-                    any_scope_state = {
-                        state_region = s:STATE_OLD_CASTILE
+                    s:STATE_OLD_CASTILE = {
+                        any_scope_state = {
+                            owner = root
+                        }
+                    }
+                }
+                NOT = {
+                    s:STATE_OLD_CASTILE = {
+                        any_scope_state = {
+                            owner = {
+                               is_diplomatic_play_enemy_of = root
+                            }
+                        }
                     }
                 }
             }
@@ -631,15 +659,22 @@ je_manila_cathedral = {
     invalid = {
         OR = {
             has_law_or_variant = law_type:law_state_atheism
-            custom_tooltip = {
-                text = rejected_manila_cathedral_project_tt
-                has_variable = rejected_manila_cathedral_project
-            }
-            custom_tooltip = {
-                text = does_not_have_state_luzon_tt
+            has_variable = rejected_manila_cathedral_project
+            AND = {
                 NOT = {
-                    any_scope_state = {
-                        state_region = s:STATE_LUZON
+                    s:STATE_LUZON = {
+                        any_scope_state = {
+                            owner = root
+                        }
+                    }
+                }
+                NOT = {
+                    s:STATE_LUZON = {
+                        any_scope_state = {
+                            owner = {
+                               is_diplomatic_play_enemy_of = root
+                            }
+                        }
                     }
                 }
             }

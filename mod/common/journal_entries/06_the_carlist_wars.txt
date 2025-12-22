@@ -53,6 +53,10 @@
 		}
 	}
 
+	immediate_all_involved = {
+		set_variable = coup_immunity
+	}
+
 	status_desc = {
 		first_valid = {
 			triggered_desc = {
@@ -138,6 +142,7 @@
 			remove_modifier = spa_carlist_terror_expenses
 			remove_modifier = captured_royal_arsenals
 			set_immune_to_revolutions = no
+			remove_variable = coup_immunity
 
 			if = {
 				limit = {
@@ -172,7 +177,36 @@
 					}
 				}
 				every_scope_state = {
+					limit = {
+						has_modifier = spc_raided_grain_storages
+					}
 					remove_modifier = spc_raided_grain_storages
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+						has_modifier = pyrenean_smuggling
+					}
+				}
+				every_scope_state = {
+					limit = {
+						has_modifier = pyrenean_smuggling
+					}
+					remove_modifier = pyrenean_smuggling
+				}
+			}
+			if = {
+				limit = {
+					any_scope_state = {
+						has_modifier = ad_hoc_manufacturing_negative
+					}
+				}
+				every_scope_state = {
+					limit = {
+						has_modifier = ad_hoc_manufacturing_negative
+					}
+					remove_modifier = ad_hoc_manufacturing_negative
 				}
 			}
 		}

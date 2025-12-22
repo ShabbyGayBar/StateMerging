@@ -13,7 +13,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_BLUE_NILE
+				state_region = s:STATE_DONGOLA
 				count = 10
 			}
 
@@ -37,7 +37,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_BLUE_NILE
+				state_region = s:STATE_KORDOFAN
 				count = 5
 			}
 		}

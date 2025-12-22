@@ -202,7 +202,7 @@ montenegrin_raiding.2 = {
 			pop_type = soldiers
 			percent = 0.08
 		}
-		s:STATE_WESTERN_SERBIA = {
+		s:STATE_MONTENEGRO = {
 			add_devastation = 35
 		}
 		destroy_barracks = yes
@@ -292,7 +292,7 @@ mon_state_formation.1 = {
 						}
 					}
 
-					s:STATE_WESTERN_SERBIA = {
+					s:STATE_MONTENEGRO = {
 						region_state:TUR?={
 							add_radicals_in_state = {
 								value = -1
@@ -308,7 +308,7 @@ mon_state_formation.1 = {
 						}
 					}
 
-					s:STATE_WESTERN_SERBIA = {
+					s:STATE_MONTENEGRO = {
 						region_state:AUS?={
 							add_radicals_in_state = {
 								value = -1
@@ -317,7 +317,7 @@ mon_state_formation.1 = {
 					}
 				}
 			}
-			s:STATE_WESTERN_SERBIA = {
+			s:STATE_MONTENEGRO = {
 				set_owner_of_provinces = {
 					country = ROOT
 					provinces = { xA12F82 xF5F6C2 }
@@ -407,7 +407,7 @@ mon_state_formation.1 = {
 						}
 					}
 
-					s:STATE_WESTERN_SERBIA = {
+					s:STATE_MONTENEGRO = {
 						region_state:TUR?={
 							add_radicals_in_state = {
 								value = -1
@@ -423,7 +423,7 @@ mon_state_formation.1 = {
 						}
 					}
 
-					s:STATE_WESTERN_SERBIA = {
+					s:STATE_MONTENEGRO = {
 						region_state:AUS?={
 							add_radicals_in_state = {
 								value = -1
@@ -432,7 +432,7 @@ mon_state_formation.1 = {
 					}
 				}
 			}
-			s:STATE_WESTERN_SERBIA = {
+			s:STATE_MONTENEGRO = {
 				set_owner_of_provinces = {
 					country = ROOT
 					provinces = { xA12F82 xF5F6C2 }
@@ -2120,7 +2120,7 @@ mon_state_formation.16 = {
 		name = mon_state_formation.16.b
 		trigger = {
 			exists = c:AUS
-			s:STATE_WESTERN_SERBIA = {
+			s:STATE_MONTENEGRO = {
 				any_scope_state = {
 					owner = c:AUS
 				}
@@ -2186,7 +2186,7 @@ mon_state_formation.17 = {
 		c:AUS ?= {
 			save_scope_as = austria
 		}
-		s:STATE_WESTERN_SERBIA = {
+		s:STATE_MONTENEGRO = {
 			save_scope_as = state
 		}
 		ruler ?= { #Prepare to kill ruler if possible, keep him alive until the execution. Take him back from holidays.
@@ -2259,7 +2259,7 @@ mon_state_formation.17 = {
 				c:TUR ?= {
 					is_player = no
 				}
-				s:STATE_WESTERN_SERBIA = {
+				s:STATE_MONTENEGRO = {
 					any_scope_state = {
 						owner = c:TUR
 					}
@@ -2269,7 +2269,7 @@ mon_state_formation.17 = {
 				text = mon_get_back_land
 			}
 			transfer_state = {
-				STATE = s:STATE_WESTERN_SERBIA
+				STATE = s:STATE_MONTENEGRO
 				GIVER = c:TUR
 				TAKER = root
 			}

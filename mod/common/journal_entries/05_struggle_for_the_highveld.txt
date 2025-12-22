@@ -159,16 +159,16 @@
 				s:STATE_CAPE_COLONY = { add_claim = root }
 			}
 			if = {
-				limit = { NOT = { owns_entire_state_region = STATE_TRANSVAAL } }
-				s:STATE_TRANSVAAL = { add_claim = root }
+				limit = { NOT = { owns_entire_state_region = STATE_VRYSTAAT } }
+				s:STATE_VRYSTAAT = { add_claim = root }
 			}
 			if = {
 				limit = { NOT = { owns_entire_state_region = STATE_TRANSVAAL } }
 				s:STATE_TRANSVAAL = { add_claim = root }
 			}
 			if = {
-				limit = { NOT = { owns_entire_state_region = STATE_TRANSVAAL } }
-				s:STATE_TRANSVAAL = { add_claim = root }
+				limit = { NOT = { owns_entire_state_region = STATE_ZULULAND } }
+				s:STATE_ZULULAND = { add_claim = root }
 			}
 		}
 		trigger_event = { id = struggle_for_the_highveld.6 }
@@ -255,16 +255,16 @@
 				s:STATE_CAPE_COLONY = { remove_claim = root }
 			}
 			if = {
-				limit = { root = { has_claim = s:STATE_TRANSVAAL } }
-				s:STATE_TRANSVAAL = { remove_claim = root }
+				limit = { root = { has_claim = s:STATE_VRYSTAAT } }
+				s:STATE_VRYSTAAT = { remove_claim = root }
 			}
 			if = {
 				limit = { root = { has_claim = s:STATE_TRANSVAAL } }
 				s:STATE_TRANSVAAL = { remove_claim = root }
 			}
 			if = {
-				limit = { root = { has_claim = s:STATE_TRANSVAAL } }
-				s:STATE_TRANSVAAL = { remove_claim = root }
+				limit = { root = { has_claim = s:STATE_ZULULAND } }
+				s:STATE_ZULULAND = { remove_claim = root }
 			}
 		}
 		trigger_event = { id = struggle_for_the_highveld.7 }

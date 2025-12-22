@@ -7,13 +7,17 @@
         OR = {
             c:SPA ?= this
             c:SPC ?= this
+			was_formed_from = SPA
         }
         has_dlc_feature = ip4_content
     }
 
     is_shown_when_inactive = {
         has_dlc_feature = ip4_content
-        c:SPA ?= this
+        OR = {
+            c:SPA ?= this
+			was_formed_from = SPA
+        }
     }
 
     scripted_button = je_spa_economic_regeneration_reduce_economic_objectives_button

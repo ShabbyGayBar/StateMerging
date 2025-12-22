@@ -158,6 +158,24 @@
 				add_claim = ROOT
 			}
 		}
+		hidden_effect = {
+			if = {
+				limit = {
+					has_modifier = lands_of_anarchy_harka_mod
+				}
+				remove_modifier = lands_of_anarchy_harka_mod
+			}
+			if = {
+				limit = {
+					ruler ?= {
+						has_modifier = lands_of_anarchy_harka_popularity_mod
+					}
+				}
+				ruler ?= {
+					remove_modifier = lands_of_anarchy_harka_popularity_mod
+				}
+			}
+		}
 		trigger_event = lands_of_anarchy.2
 	}
 
@@ -180,6 +198,24 @@
 
 	on_fail = {
 		trigger_event = lands_of_anarchy.3
+		hidden_effect = {
+			if = {
+				limit = {
+					has_modifier = lands_of_anarchy_harka_mod
+				}
+				remove_modifier = lands_of_anarchy_harka_mod
+			}
+			if = {
+				limit = {
+					ruler ?= {
+						has_modifier = lands_of_anarchy_harka_popularity_mod
+					}
+				}
+				ruler ?= {
+					remove_modifier = lands_of_anarchy_harka_popularity_mod
+				}
+			}
+		}
 	}
 
 	invalid = {
@@ -205,6 +241,24 @@
 			name = lands_of_anarchy_failed_nation_mod
 			days = long_modifier_time
 		}
+		hidden_effect = {
+			if = {
+				limit = {
+					has_modifier = lands_of_anarchy_harka_mod
+				}
+				remove_modifier = lands_of_anarchy_harka_mod
+			}
+			if = {
+				limit = {
+					ruler ?= {
+						has_modifier = lands_of_anarchy_harka_popularity_mod
+					}
+				}
+				ruler ?= {
+					remove_modifier = lands_of_anarchy_harka_popularity_mod
+				}
+			}
+		}
 	}
 
 	timeout = 9125
@@ -213,6 +267,24 @@
 		add_modifier = {
 			name = lands_of_anarchy_failed_nation_mod
 			days = long_modifier_time
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					has_modifier = lands_of_anarchy_harka_mod
+				}
+				remove_modifier = lands_of_anarchy_harka_mod
+			}
+			if = {
+				limit = {
+					ruler ?= {
+						has_modifier = lands_of_anarchy_harka_popularity_mod
+					}
+				}
+				ruler ?= {
+					remove_modifier = lands_of_anarchy_harka_popularity_mod
+				}
+			}
 		}
 	}
 }

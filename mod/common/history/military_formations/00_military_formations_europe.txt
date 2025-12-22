@@ -1,4 +1,4 @@
-MILITARY_FORMATIONS = {
+﻿MILITARY_FORMATIONS = {
 	c:PRU ?= {
 		create_military_formation = {
 			type = army
@@ -562,7 +562,7 @@ MILITARY_FORMATIONS = {
 			}
 			combat_unit = { # IR 22, IR 41
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_WALLACHIA
+				state_region = s:STATE_MOLDAVIA
 				count = 4
 			}
 
@@ -683,7 +683,7 @@ MILITARY_FORMATIONS = {
 			}
 			combat_unit = { # IR 61
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_NORTHERN_TRANSYLVANIA
+				state_region = s:STATE_BANAT
 				count = 2
 			}
 
@@ -691,7 +691,7 @@ MILITARY_FORMATIONS = {
 
 			combat_unit = { # 12. Deutsch-Banater, 13. Wallachisch-Illirisch
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_NORTHERN_TRANSYLVANIA
+				state_region = s:STATE_BANAT
 				count = 4
 			}
 
@@ -1469,7 +1469,7 @@ MILITARY_FORMATIONS = {
 
 		create_military_formation = {
 			type = fleet
-			hq_region = sr:region_caribbean
+			hq_region = sr:region_new_england
 			name = North_America_and_West_Indies_Station
 
 			combat_unit = {
@@ -2657,7 +2657,7 @@ MILITARY_FORMATIONS = {
 	c:HEK ?= {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_rhine
+			hq_region = sr:region_north_germany
 			name = Kurfrstlich_Hessische_Armee
 
 			combat_unit = {
@@ -2683,7 +2683,7 @@ MILITARY_FORMATIONS = {
 	c:HES ?= {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_rhine
+			hq_region = sr:region_north_germany
 			name = Groherzoglich_Hessische_Armee
 
 			combat_unit = {
@@ -2709,7 +2709,7 @@ MILITARY_FORMATIONS = {
 	c:NAS ?= {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_rhine
+			hq_region = sr:region_north_germany
 			name = Herzoglich_Nassauische_Armee
 
 			combat_unit = {
@@ -2885,7 +2885,7 @@ MILITARY_FORMATIONS = {
 	c:FRM ?= {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_rhine
+			hq_region = sr:region_north_germany
 			name = Linienbataillon_Frankfurt
 
 			combat_unit = {
@@ -2899,7 +2899,7 @@ MILITARY_FORMATIONS = {
 	c:WLD ?= {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_rhine
+			hq_region = sr:region_north_germany
 			name = Waldecksches_Bataillon
 
 			combat_unit = {
@@ -2944,13 +2944,13 @@ MILITARY_FORMATIONS = {
 
 			combat_unit = { # Bohusläns regemente, Jönköpings regemente, Värmlands regemente, Västgöta regemente, Västgöta-Dals regemente, Älvsborgs regemente, Göta livgarde, Skaraborgs regemente
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_SVEALAND
+				state_region = s:STATE_SCANIA
 				count = 6 # Reduced from 8 for balance reasons
 			}
 
 			combat_unit = { # Kalmar regemente, Norra skånska infanteriregementet, Södra skånska infanteriregementet,
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_SVEALAND
+				state_region = s:STATE_SCANIA
 				count = 3
 			}
 
@@ -2986,25 +2986,25 @@ MILITARY_FORMATIONS = {
 
 			combat_unit = { # Skånska dragonregementet
 				type = unit_type:combat_unit_type_dragoons
-				state_region = s:STATE_SVEALAND
+				state_region = s:STATE_SCANIA
 				count = 1
 			}
 
 			combat_unit = { # Skånska husarregementet
 				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_SVEALAND
+				state_region = s:STATE_SCANIA
 				count = 1
 			}
 
 			combat_unit = { # Smålands husarregemente
 				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_SVEALAND
+				state_region = s:STATE_SCANIA
 				count = 1
 			}
 
 			combat_unit = { # Göta artillerregemente
 				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_SVEALAND
+				state_region = s:STATE_SCANIA
 				count = 1
 			}
 
@@ -3040,13 +3040,13 @@ MILITARY_FORMATIONS = {
 
 			combat_unit = { # Gustaf den Store, Manligheten, Prins Oscar
 				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_SVEALAND
+				state_region = s:STATE_SCANIA
 				count = 3
 			}
 
 			combat_unit = { # Skandinavien, Wasa
 				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_SVEALAND
+				state_region = s:STATE_SCANIA
 				count = 2
 			}
 
@@ -3058,13 +3058,13 @@ MILITARY_FORMATIONS = {
 
 			combat_unit = { # Galathea, Josephine
 				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_SVEALAND
+				state_region = s:STATE_SCANIA
 				count = 2
 			}
 
 			combat_unit = { # Af Chapman
 				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_SVEALAND
+				state_region = s:STATE_SCANIA
 				count = 1
 			}
 		}
@@ -3400,7 +3400,7 @@ MILITARY_FORMATIONS = {
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_WESTERN_SERBIA
+				state_region = s:STATE_MONTENEGRO
 				count = 7
 			}
 		}
@@ -3414,13 +3414,13 @@ MILITARY_FORMATIONS = {
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_WALLACHIA
+				state_region = s:STATE_MOLDAVIA
 				count = 2
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_WALLACHIA
+				state_region = s:STATE_MOLDAVIA
 				count = 1
 			}
 		}

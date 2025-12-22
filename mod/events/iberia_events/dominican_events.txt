@@ -246,7 +246,7 @@ dominican_events.3 = {
 	option = {
 		name = dominican_events.3.a
 		default_option = yes
-		add_primary_culture = cu:afro_caribbean
+		add_primary_culture = cu:afro_caribeno
 		s:STATE_HAITI = {
 			add_homeland = cu:afro_antillean
 		}
@@ -261,7 +261,7 @@ dominican_events.3 = {
 
 	option = {
 		name = dominican_events.3.b
-		add_primary_culture = cu:afro_caribbean
+		add_primary_culture = cu:afro_caribeno
 		s:STATE_HAITI = {
 			add_homeland = cu:afro_antillean
 		}

@@ -80,11 +80,11 @@ bulgaria_events.1 = {
 			limit = {
 				NOT = {
 					any_scope_state = {
-						state_region = s:STATE_ATTICA
+						state_region = s:STATE_MACEDONIA
 					}
 				}
 			}
-			s:STATE_ATTICA = {
+			s:STATE_MACEDONIA = {
 				add_claim = root
 			}
 		}
@@ -104,11 +104,11 @@ bulgaria_events.1 = {
 			limit = {
 				NOT = {
 					any_scope_state = {
-						state_region = s:STATE_WESTERN_SERBIA
+						state_region = s:STATE_MONTENEGRO
 					}
 				}
 			}
-			s:STATE_WESTERN_SERBIA = {
+			s:STATE_MONTENEGRO = {
 				add_claim = root
 			}
 		}
@@ -119,7 +119,7 @@ bulgaria_events.1 = {
 					state_region = {
 						OR = {
 							this = s:STATE_EASTERN_THRACE
-							this = s:STATE_ATTICA
+							this = s:STATE_MACEDONIA
 							this = s:STATE_WESTERN_SERBIA
 						}
 					}
@@ -130,7 +130,7 @@ bulgaria_events.1 = {
 					state_region = {
 						OR = {
 							this = s:STATE_EASTERN_THRACE
-							this = s:STATE_ATTICA
+							this = s:STATE_MACEDONIA
 							this = s:STATE_WESTERN_SERBIA
 						}
 					}

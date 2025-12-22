@@ -13,7 +13,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_ATTICA
+				state_region = s:STATE_MACEDONIA
 				count = 10
 			}
 
@@ -62,7 +62,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_ATTICA
+				state_region = s:STATE_MACEDONIA
 				count = 15
 			}
 
@@ -86,19 +86,19 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_ATTICA
+				state_region = s:STATE_MACEDONIA
 				count = 5
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_WESTERN_SERBIA
+				state_region = s:STATE_MONTENEGRO
 				count = 5
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_WESTERN_SERBIA
+				state_region = s:STATE_MONTENEGRO
 				count = 2
 			}
 
@@ -234,7 +234,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_ATTICA
+				state_region = s:STATE_MACEDONIA
 				count = 3
 			}
 		}

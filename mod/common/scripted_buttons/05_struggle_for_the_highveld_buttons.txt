@@ -226,9 +226,9 @@ highveld_offer_boer_confederation_button = {
 					state_region = s:STATE_CAPE_COLONY
 					state_region = s:STATE_CAPE_COLONY
 					state_region = s:STATE_CAPE_COLONY
+					state_region = s:STATE_VRYSTAAT
 					state_region = s:STATE_TRANSVAAL
-					state_region = s:STATE_TRANSVAAL
-					state_region = s:STATE_TRANSVAAL
+					state_region = s:STATE_ZULULAND
 				}
 			}
 			is_adjacent_to_country = ROOT
@@ -249,9 +249,9 @@ highveld_offer_boer_confederation_button = {
 						state_region = s:STATE_CAPE_COLONY
 						state_region = s:STATE_CAPE_COLONY
 						state_region = s:STATE_CAPE_COLONY
+						state_region = s:STATE_VRYSTAAT
 						state_region = s:STATE_TRANSVAAL
-						state_region = s:STATE_TRANSVAAL
-						state_region = s:STATE_TRANSVAAL
+						state_region = s:STATE_ZULULAND
 					}
 				}
 				is_at_war = no
@@ -283,9 +283,9 @@ highveld_offer_boer_confederation_button = {
 						state_region = s:STATE_CAPE_COLONY
 						state_region = s:STATE_CAPE_COLONY
 						state_region = s:STATE_CAPE_COLONY
+						state_region = s:STATE_VRYSTAAT
 						state_region = s:STATE_TRANSVAAL
-						state_region = s:STATE_TRANSVAAL
-						state_region = s:STATE_TRANSVAAL
+						state_region = s:STATE_ZULULAND
 					}
 				}
 				is_at_war = no
@@ -364,9 +364,9 @@ highveld_offer_griqua_confederation_button = {
 					state_region = s:STATE_CAPE_COLONY
 					state_region = s:STATE_CAPE_COLONY
 					state_region = s:STATE_CAPE_COLONY
+					state_region = s:STATE_VRYSTAAT
 					state_region = s:STATE_TRANSVAAL
-					state_region = s:STATE_TRANSVAAL
-					state_region = s:STATE_TRANSVAAL
+					state_region = s:STATE_ZULULAND
 				}
 			}
 			is_adjacent_to_country = root
@@ -387,9 +387,9 @@ highveld_offer_griqua_confederation_button = {
 						state_region = s:STATE_CAPE_COLONY
 						state_region = s:STATE_CAPE_COLONY
 						state_region = s:STATE_CAPE_COLONY
+						state_region = s:STATE_VRYSTAAT
 						state_region = s:STATE_TRANSVAAL
-						state_region = s:STATE_TRANSVAAL
-						state_region = s:STATE_TRANSVAAL
+						state_region = s:STATE_ZULULAND
 					}
 				}
 				is_at_war = no
@@ -420,9 +420,9 @@ highveld_offer_griqua_confederation_button = {
 						state_region = s:STATE_CAPE_COLONY
 						state_region = s:STATE_CAPE_COLONY
 						state_region = s:STATE_CAPE_COLONY
+						state_region = s:STATE_VRYSTAAT
 						state_region = s:STATE_TRANSVAAL
-						state_region = s:STATE_TRANSVAAL
-						state_region = s:STATE_TRANSVAAL
+						state_region = s:STATE_ZULULAND
 					}
 				}
 				is_at_war = no

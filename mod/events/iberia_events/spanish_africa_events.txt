@@ -21,7 +21,10 @@ spanish_africa.1 = { # Initiation for Al Rif
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 
 	trigger = {
-		c:SPA ?= this
+		OR = {
+			c:SPA ?= this
+			c:IBE ?= this
+		}
 		NOT = {
 			has_variable = spanish_africa_1_fired
 		}
@@ -151,7 +154,10 @@ spanish_africa.2 = { # Al Rif conquered, now Western Sahara
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 
 	trigger = {
-		c:SPA ?= this
+		OR = {
+			c:SPA ?= this
+			c:IBE ?= this
+		}
 		owns_entire_state_region = STATE_FEZ
 		has_technology_researched = civilizing_mission
 		NOR = {
@@ -264,7 +270,10 @@ spanish_africa.3 = { # Western Sahara conquered, now Guinea
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 
 	trigger = {
-		c:SPA ?= this
+		OR = {
+			c:SPA ?= this
+			c:IBE ?= this
+		}
 		owns_entire_state_region = STATE_FEZ
 		owns_entire_state_region = STATE_WEST_SAHARA
 		has_technology_researched = civilizing_mission
@@ -365,7 +374,10 @@ spanish_africa.4 = { # Guinea conquered, now Morocco
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 
 	trigger = {
-		c:SPA ?= this
+		OR = {
+			c:SPA ?= this
+			c:IBE ?= this
+		}
 		owns_entire_state_region = STATE_FEZ
 		owns_entire_state_region = STATE_WEST_SAHARA
 		any_state_in_subsaharan_africa = {
@@ -549,7 +561,10 @@ spanish_africa.5 = { # Gibraltar owned completely, "The Pillars of Hercules"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 
 	trigger = {
-		c:SPA ?= this
+		OR = {
+			c:SPA ?= this
+			c:IBE ?= this
+		}
 		owns_entire_state_region = STATE_FEZ
 		owns_entire_state_region = STATE_LOWER_ANDALUSIA
 		owns_entire_state_region = STATE_LOWER_ANDALUSIA
