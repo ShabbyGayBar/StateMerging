@@ -185,9 +185,9 @@
             NOT = {
                 exists = c:MON
             }
-            exists = s:STATE_MONTENEGRO.region_state:TUR
+            exists = s:STATE_WESTERN_SERBIA.region_state:TUR
         }
-        s:STATE_MONTENEGRO.region_state:TUR = {
+        s:STATE_WESTERN_SERBIA.region_state:TUR = {
             save_scope_as = montenegro_scope
         }
         create_country = {

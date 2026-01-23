@@ -344,7 +344,7 @@ austria_trialism.3 = { # Forming the Triune Kingdom
 					}
 				}
 			}
-			s:STATE_MONTENEGRO = {
+			s:STATE_WESTERN_SERBIA = {
 				set_owner_of_provinces = {
 					country = scope:croatia_scope
 					provinces = { x90A0E0 }
@@ -406,7 +406,7 @@ austria_trialism.3 = { # Forming the Triune Kingdom
 					}
 				}
 			}
-			s:STATE_MONTENEGRO = {
+			s:STATE_WESTERN_SERBIA = {
 				set_owner_of_provinces = {
 					country = scope:croatia_scope
 					provinces = { x90A0E0 }
@@ -468,7 +468,7 @@ austria_trialism.3 = { # Forming the Triune Kingdom
 					}
 				}
 			}
-			s:STATE_MONTENEGRO = {
+			s:STATE_WESTERN_SERBIA = {
 				set_owner_of_provinces = {
 					country = scope:croatia_scope
 					provinces = { x90A0E0 }
@@ -2173,11 +2173,11 @@ austria_federation.11 = { # Ukrainians
 		trigger = {
 			OR = {
 				any_scope_state = {
-					state_region = s:STATE_BUKOVINA
+					state_region = s:STATE_WALLACHIA
 				}
 				any_subject_or_below = {
 					any_scope_state = {
-						state_region = s:STATE_BUKOVINA
+						state_region = s:STATE_WALLACHIA
 					}
 				}
 			}

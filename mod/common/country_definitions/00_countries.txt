@@ -1060,7 +1060,7 @@ MON = {
 	tier = principality
 
 	cultures = { serb }
-	capital = STATE_MONTENEGRO
+	capital = STATE_WESTERN_SERBIA
 	is_named_from_capital = yes
 }
 

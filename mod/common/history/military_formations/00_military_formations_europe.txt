@@ -562,7 +562,7 @@
 			}
 			combat_unit = { # IR 22, IR 41
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_BUKOVINA
+				state_region = s:STATE_WALLACHIA
 				count = 4
 			}
 
@@ -3400,7 +3400,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_MONTENEGRO
+				state_region = s:STATE_WESTERN_SERBIA
 				count = 7
 			}
 		}

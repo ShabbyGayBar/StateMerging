@@ -6680,7 +6680,7 @@ on_state_owner_change = {
 						is_homeland = cu:bulgarian
 					}
 					OR = {
-						this = s:STATE_MACEDONIA
+						this = s:STATE_ATTICA
 						this = s:STATE_WESTERN_SERBIA
 						this = s:STATE_EASTERN_THRACE
 					}
@@ -6722,7 +6722,7 @@ on_state_created = {
 						is_homeland = cu:bulgarian
 					}
 					OR = {
-						this = s:STATE_MACEDONIA
+						this = s:STATE_ATTICA
 						this = s:STATE_WESTERN_SERBIA
 						this = s:STATE_EASTERN_THRACE
 					}

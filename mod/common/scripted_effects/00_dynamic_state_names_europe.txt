@@ -288,7 +288,7 @@ assign_state_name_region_balkans  = {
 	if = {
         limit = {
             state_region = {
-                s:STATE_MONTENEGRO ?= this
+                s:STATE_WESTERN_SERBIA ?= this
             }
         }
         STATE_MONTENEGRO_state_name_assign = yes
@@ -312,7 +312,7 @@ assign_state_name_region_balkans  = {
 	if = {
         limit = {
             state_region = {
-                s:STATE_MACEDONIA ?= this
+                s:STATE_ATTICA ?= this
             }
         }
         STATE_THESSALIA_state_name_assign = yes
@@ -320,7 +320,7 @@ assign_state_name_region_balkans  = {
 	if = {
         limit = {
             state_region = {
-                s:STATE_MACEDONIA ?= this
+                s:STATE_ATTICA ?= this
             }
         }
         STATE_MACEDONIA_state_name_assign = yes
@@ -328,7 +328,7 @@ assign_state_name_region_balkans  = {
 	if = {
         limit = {
             state_region = {
-                s:STATE_MACEDONIA ?= this
+                s:STATE_ATTICA ?= this
             }
         }
         STATE_WESTERN_THRACE_state_name_assign = yes
@@ -352,7 +352,7 @@ assign_state_name_region_balkans  = {
     if = {
         limit = {
             state_region = {
-                s:STATE_MONTENEGRO ?= this
+                s:STATE_WESTERN_SERBIA ?= this
             }
         }
         STATE_SKOPIA_state_name_assign = yes
