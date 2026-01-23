@@ -616,6 +616,9 @@ iberian_treaty_ports = {
 		owns_treaty_port_in = STATE_ESTREMADURA
 		owns_treaty_port_in = STATE_ESTREMADURA
 		owns_treaty_port_in = STATE_GALICIA
+		owns_treaty_port_in = STATE_ESTREMADURA
+		owns_treaty_port_in = STATE_OLD_CASTILE
+		owns_treaty_port_in = STATE_LOWER_ANDALUSIA
 	}
 }
 
@@ -623,12 +626,12 @@ european_colonies_north_africa = {
 	or = {
 		owns_entire_state_region = STATE_CHAD
 		owns_entire_state_region = STATE_NIGER
-		owns_entire_state_region = STATE_TIMBUKTU
-		owns_entire_state_region = STATE_INNER_MAURITANIA
+		owns_entire_state_region = STATE_EASTERN_MALI
+		owns_entire_state_region = STATE_MAURITANIA
 		owns_entire_state_region = STATE_MAURITANIA
 		owns_entire_state_region = STATE_WEST_SAHARA
 		owns_entire_state_region = STATE_SAHARA
-		owns_entire_state_region = STATE_EAST_SAHARA
+		owns_entire_state_region = STATE_SAHARA
 		owns_entire_state_region = STATE_LIBYA
 		owns_entire_state_region = STATE_LIBYA
 		owns_entire_state_region = STATE_LIBYA
@@ -647,22 +650,22 @@ european_colonies_north_africa = {
 european_colonies_west_africa = {
 	or = {
 		owns_entire_state_region = STATE_NIGER_DELTA
-		owns_entire_state_region = STATE_BENIN
+		owns_entire_state_region = STATE_NIGER_DELTA
 		owns_entire_state_region = STATE_YORUBA_STATES
-		owns_entire_state_region = STATE_HAUSALAND
-		owns_entire_state_region = STATE_OUTER_HAUSALAND
+		owns_entire_state_region = STATE_YORUBA_STATES
+		owns_entire_state_region = STATE_NIGER
 		owns_entire_state_region = STATE_NIGERIA
-		owns_entire_state_region = STATE_EAST_HAUSALAND
-		owns_entire_state_region = STATE_BORNU
+		owns_entire_state_region = STATE_NIGERIA
+		owns_entire_state_region = STATE_NIGERIA
 		owns_entire_state_region = STATE_DAHOMEY
-		owns_entire_state_region = STATE_VOLTA
+		owns_entire_state_region = STATE_DAHOMEY
 		owns_entire_state_region = STATE_GOLD_COAST
 		owns_entire_state_region = STATE_IVORY_COAST
 		owns_entire_state_region = STATE_EASTERN_MALI
-		owns_entire_state_region = STATE_WINDWARD_COAST
-		owns_entire_state_region = STATE_WESTERN_MALI
-		owns_entire_state_region = STATE_GUINEA
-		owns_entire_state_region = STATE_LIBERIA
+		owns_entire_state_region = STATE_IVORY_COAST
+		owns_entire_state_region = STATE_EASTERN_MALI
+		owns_entire_state_region = STATE_SENEGAL
+		owns_entire_state_region = STATE_SIERRA_LEONE
 		owns_entire_state_region = STATE_SIERRA_LEONE
 		owns_entire_state_region = STATE_SENEGAL
 	}
@@ -671,14 +674,14 @@ european_colonies_west_africa = {
 european_colonies_nile_basin = {
 	or = {
 		owns_entire_state_region = STATE_OROMIA
-		owns_entire_state_region = STATE_AMHARA
+		owns_entire_state_region = STATE_OROMIA
 		owns_entire_state_region = STATE_EQUATORIA
-		owns_entire_state_region = STATE_DARFUR
-		owns_entire_state_region = STATE_KORDOFAN
+		owns_entire_state_region = STATE_EQUATORIA
 		owns_entire_state_region = STATE_BLUE_NILE
-		owns_entire_state_region = STATE_GONDER
+		owns_entire_state_region = STATE_BLUE_NILE
+		owns_entire_state_region = STATE_OROMIA
 		owns_entire_state_region = STATE_ERITREA
-		owns_entire_state_region = STATE_DONGOLA
+		owns_entire_state_region = STATE_BLUE_NILE
 		owns_entire_state_region = STATE_UPPER_EGYPT
 		owns_entire_state_region = STATE_UPPER_EGYPT
 		owns_entire_state_region = STATE_UPPER_EGYPT
@@ -703,8 +706,8 @@ european_colonies_central_africa = {
 		owns_entire_state_region = STATE_GABON
 		owns_entire_state_region = STATE_SOUTH_CAMEROON
 		owns_entire_state_region = STATE_UBANGI_SHARI
-		owns_entire_state_region = STATE_WADDAI
-		owns_entire_state_region = STATE_NORTH_CAMEROON
+		owns_entire_state_region = STATE_CHAD
+		owns_entire_state_region = STATE_SOUTH_CAMEROON
 	}
 }
 
@@ -712,7 +715,7 @@ european_colonies_east_africa = {
 	or = {
 		owns_entire_state_region = STATE_SOMALILAND
 		owns_entire_state_region = STATE_KENYA
-		owns_entire_state_region = STATE_RIFT_VALLEY
+		owns_entire_state_region = STATE_KENYA
 		owns_entire_state_region = STATE_UGANDA
 		owns_entire_state_region = STATE_TANGANYIKA
 		owns_entire_state_region = STATE_LINDI
@@ -730,14 +733,14 @@ european_colonies_south_africa = {
 		owns_entire_state_region = STATE_CAPE_COLONY
 		owns_entire_state_region = STATE_CAPE_COLONY
 		owns_entire_state_region = STATE_CAPE_COLONY
-		owns_entire_state_region = STATE_VRYSTAAT
+		owns_entire_state_region = STATE_TRANSVAAL
 		owns_entire_state_region = STATE_NAMAQUALAND
 		owns_entire_state_region = STATE_BOTSWANA
 		owns_entire_state_region = STATE_TRANSVAAL
 		owns_entire_state_region = STATE_LOURENCO_MARQUES
 		owns_entire_state_region = STATE_ZAMBEZI
 		owns_entire_state_region = STATE_HEREROLAND
-		owns_entire_state_region = STATE_ZULULAND
+		owns_entire_state_region = STATE_TRANSVAAL
 	}
 }
 
@@ -1029,7 +1032,7 @@ has_paternalist_ideology = {
 		has_ideology = ideology:ideology_paternalistic
 		has_ideology = ideology:ideology_magnatial
 		has_ideology = ideology:ideology_moderantist
-		has_ideology = ideology:ideology_carlist_ig
+		ig_has_carlist_ideology = yes
 		has_ideology = ideology:ideology_scholar_paternalistic
 		has_ideology = ideology:ideology_junker_paternalistic
 		has_ideology = ideology:ideology_papal_paternalistic
@@ -1591,8 +1594,8 @@ has_reactionary_ideology = {
 			has_ideology = ideology:ideology_legitimist
 			has_ideology = ideology:ideology_luddite
 			has_ideology = ideology:ideology_corporatist_leader
-			has_ideology = ideology:ideology_carlist
-			has_ideology = ideology:ideology_miguelist
+			character_has_carlist_ideology = yes
+			character_has_miguelist_ideology = yes
 		}
 	}
 }
@@ -1621,8 +1624,8 @@ has_monarchist_ideology = {
 		has_ideology = ideology:ideology_orleanist
 		has_ideology = ideology:ideology_bonapartist
 		has_ideology = ideology:ideology_legitimist
-		has_ideology = ideology:ideology_carlist
-		has_ideology = ideology:ideology_miguelist
+		character_has_carlist_ideology = yes
+		character_has_miguelist_ideology = yes
 	}
 }
 

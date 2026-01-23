@@ -19,7 +19,7 @@
 				"scripted_bar_progress(expedition_progress_bar)" = 2
 			}
 		}
-		s:STATE_BENIN = {
+		s:STATE_NIGER_DELTA = {
 			random_scope_state = {
 				update_expedition_location_var = yes
 				save_scope_as = current_expedition_location
@@ -33,7 +33,7 @@
 				"scripted_bar_progress(expedition_progress_bar)" = 3
 			}
 		}
-		s:STATE_HAUSALAND = {
+		s:STATE_YORUBA_STATES = {
 			random_scope_state = {
 				update_expedition_location_var = yes
 				save_scope_as = current_expedition_location
@@ -47,7 +47,7 @@
 				"scripted_bar_progress(expedition_progress_bar)" = 4
 			}
 		}
-		s:STATE_OUTER_HAUSALAND = {
+		s:STATE_NIGER = {
 			random_scope_state = {
 				update_expedition_location_var = yes
 				save_scope_as = current_expedition_location
@@ -61,7 +61,7 @@
 				"scripted_bar_progress(expedition_progress_bar)" = 5
 			}
 		}
-		s:STATE_TIMBUKTU = {
+		s:STATE_EASTERN_MALI = {
 			random_scope_state = {
 				update_expedition_location_var = yes
 				save_scope_as = current_expedition_location
@@ -89,7 +89,7 @@
 				"scripted_bar_progress(expedition_progress_bar)" = 7
 			}
 		}
-		s:STATE_WESTERN_MALI = {
+		s:STATE_EASTERN_MALI = {
 			random_scope_state = {
 				update_expedition_location_var = yes
 				save_scope_as = current_expedition_location
@@ -103,7 +103,7 @@
 				"scripted_bar_progress(expedition_progress_bar)" >= 8
 			}
 		}
-		s:STATE_GUINEA = {
+		s:STATE_SENEGAL = {
 			random_scope_state = {
 				update_expedition_location_var = yes
 				save_scope_as = current_expedition_location

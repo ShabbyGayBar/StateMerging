@@ -77,7 +77,7 @@ algeria_events.1 = {
 			pop_type = soldiers
 			value = medium_radicals
 		}
-		s:STATE_EAST_SAHARA = {
+		s:STATE_SAHARA = {
 			add_claim = c:FRA
 		}
 		s:STATE_SAHARA = {
@@ -131,7 +131,7 @@ algeria_events.1 = {
 				days = long_modifier_time
 			}
 		}
-		s:STATE_EAST_SAHARA = {
+		s:STATE_SAHARA = {
 			add_claim = c:FRA
 		}
 		s:STATE_SAHARA = {
@@ -196,7 +196,7 @@ algeria_events.1 = {
 				value = small_radicals
 			}
 		}
-		s:STATE_EAST_SAHARA = {
+		s:STATE_SAHARA = {
 			add_claim = c:FRA
 		}
 		s:STATE_SAHARA = {
@@ -940,7 +940,7 @@ algeria_events.8 = {
 			name = barbary_pirates_modifier
 			days = very_long_modifier_time
 		}
-		s:STATE_EAST_SAHARA = {
+		s:STATE_SAHARA = {
 			add_claim = c:ALD
 		}
 		s:STATE_SAHARA = {
@@ -994,7 +994,7 @@ algeria_events.8 = {
 			value = 0.2
 			culture = cu:turkish
 		}
-		s:STATE_EAST_SAHARA = {
+		s:STATE_SAHARA = {
 			add_claim = c:ALD
 		}
 		s:STATE_SAHARA = {
@@ -1032,7 +1032,7 @@ algeria_events.8 = {
 		s:STATE_FEZ = {
 			add_claim = c:ALD
 		}
-		s:STATE_EAST_SAHARA = {
+		s:STATE_SAHARA = {
 			add_claim = c:ALD
 		}
 		s:STATE_SAHARA = {
@@ -1074,7 +1074,7 @@ algeria_events.8 = {
 		s:STATE_FEZ = {
 			add_claim = c:ALD
 		}
-		s:STATE_EAST_SAHARA = {
+		s:STATE_SAHARA = {
 			add_claim = c:ALD
 		}
 		s:STATE_SAHARA = {
@@ -1097,7 +1097,7 @@ algeria_events.8 = {
 			value = 0.1
 			culture = cu:maghrebi
 		}
-		s:STATE_EAST_SAHARA = {
+		s:STATE_SAHARA = {
 			add_claim = c:ALD
 		}
 		s:STATE_SAHARA = {

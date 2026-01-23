@@ -16,7 +16,7 @@ assign_state_name_region_niger = {
     if = {
         limit = {
             state_region = {
-                s:STATE_NORTH_CAMEROON ?= this
+                s:STATE_SOUTH_CAMEROON ?= this
             }
         }
         STATE_NORTH_CAMEROON_state_name_assign = yes
@@ -63,7 +63,7 @@ assign_state_name_region_southern_africa = {
     if = {
         limit = {
             state_region = {
-                s:STATE_ZULULAND ?= this
+                s:STATE_TRANSVAAL ?= this
             }
         }
         STATE_ZULULAND_state_name_assign = yes
@@ -79,7 +79,7 @@ assign_state_name_region_southern_africa = {
     if = {
         limit = {
             state_region = {
-                s:STATE_VRYSTAAT ?= this
+                s:STATE_TRANSVAAL ?= this
             }
         }
         STATE_VRYSTAAT_state_name_assign = yes
@@ -125,7 +125,7 @@ assign_state_name_region_senegal = {
     if = {
         limit = {
             state_region = {
-                s:STATE_LIBERIA ?= this
+                s:STATE_SIERRA_LEONE ?= this
             }
         }
         STATE_LIBERIA_state_name_assign = yes
@@ -141,7 +141,7 @@ assign_state_name_region_senegal = {
     else_if = {
         limit = {
             state_region = {
-                s:STATE_GUINEA ?= this
+                s:STATE_SENEGAL ?= this
             }
         }
         STATE_GUINEA_state_name_assign = yes

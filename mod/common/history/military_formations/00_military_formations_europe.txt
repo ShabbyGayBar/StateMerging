@@ -1,4 +1,4 @@
-MILITARY_FORMATIONS = {
+﻿MILITARY_FORMATIONS = {
 	c:PRU ?= {
 		create_military_formation = {
 			type = army
@@ -562,7 +562,7 @@ MILITARY_FORMATIONS = {
 			}
 			combat_unit = { # IR 22, IR 41
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_MOLDAVIA
+				state_region = s:STATE_BUKOVINA
 				count = 4
 			}
 
@@ -683,7 +683,7 @@ MILITARY_FORMATIONS = {
 			}
 			combat_unit = { # IR 61
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_BANAT
+				state_region = s:STATE_NORTHERN_TRANSYLVANIA
 				count = 2
 			}
 
@@ -691,7 +691,7 @@ MILITARY_FORMATIONS = {
 
 			combat_unit = { # 12. Deutsch-Banater, 13. Wallachisch-Illirisch
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_BANAT
+				state_region = s:STATE_NORTHERN_TRANSYLVANIA
 				count = 4
 			}
 
@@ -1469,7 +1469,7 @@ MILITARY_FORMATIONS = {
 
 		create_military_formation = {
 			type = fleet
-			hq_region = sr:region_caribbean
+			hq_region = sr:region_new_england
 			name = North_America_and_West_Indies_Station
 
 			combat_unit = {
@@ -2657,7 +2657,7 @@ MILITARY_FORMATIONS = {
 	c:HEK ?= {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_rhine
+			hq_region = sr:region_north_germany
 			name = Kurfrstlich_Hessische_Armee
 
 			combat_unit = {
@@ -2683,7 +2683,7 @@ MILITARY_FORMATIONS = {
 	c:HES ?= {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_rhine
+			hq_region = sr:region_north_germany
 			name = Groherzoglich_Hessische_Armee
 
 			combat_unit = {
@@ -2709,7 +2709,7 @@ MILITARY_FORMATIONS = {
 	c:NAS ?= {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_rhine
+			hq_region = sr:region_north_germany
 			name = Herzoglich_Nassauische_Armee
 
 			combat_unit = {
@@ -2885,7 +2885,7 @@ MILITARY_FORMATIONS = {
 	c:FRM ?= {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_rhine
+			hq_region = sr:region_north_germany
 			name = Linienbataillon_Frankfurt
 
 			combat_unit = {
@@ -2899,7 +2899,7 @@ MILITARY_FORMATIONS = {
 	c:WLD ?= {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_rhine
+			hq_region = sr:region_north_germany
 			name = Waldecksches_Bataillon
 
 			combat_unit = {
@@ -3414,13 +3414,13 @@ MILITARY_FORMATIONS = {
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_MOLDAVIA
+				state_region = s:STATE_WALLACHIA
 				count = 2
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_MOLDAVIA
+				state_region = s:STATE_WALLACHIA
 				count = 1
 			}
 		}

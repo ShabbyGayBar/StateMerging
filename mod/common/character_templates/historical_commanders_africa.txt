@@ -1,0 +1,139 @@
+﻿ald_general_nsoumer = {
+	first_name = Lalla_Fatma
+	last_name = N_Soumer
+	historical = yes
+	culture = cu:berber
+	female = yes
+	religion = rel:sunni
+	commander_rank = default
+	interest_group = ig_devout
+	ideology = ideology_theocrat
+	birth_date = 1830.8.21 # estimate
+	traits = {
+		brave
+		charismatic
+		stalwart_defender
+	}
+	commander_usage = {
+		country_trigger = {
+			AND = {
+				OR = {
+					AND = {
+						exists = c:ALD
+						c:ALD ?= THIS
+					}
+					AND = {
+						exists = c:MAS
+						c:MAS ?= THIS
+					}
+					AND = {
+						exists = c:CON
+						c:CON ?= THIS
+					}
+					AND = {
+						exists = c:AIT
+						c:AIT ?= THIS
+					}
+					AND = {
+						exists = c:TUG
+						c:TUG ?= THIS
+					}
+				}
+				is_subject = no
+				any_scope_state = {
+					OR = {
+						state_region = s:STATE_ORAN
+						state_region = s:STATE_ALGIERS
+						state_region = s:STATE_CONSTANTINE
+						state_region = s:STATE_SAHARA
+					}
+				}
+				AND = {
+					exists = c:FRA
+					c:FRA ?= {
+						any_scope_state = {
+							OR = {
+								state_region = s:STATE_ORAN
+								state_region = s:STATE_ALGIERS
+								state_region = s:STATE_CONSTANTINE
+								state_region = s:STATE_SAHARA
+							}
+						}
+					}
+				}
+			}
+		}
+		role = general
+		earliest_usage_date = 1856.1.1
+		latest_usage_date = 1894.1.1
+		chance = 75
+	}
+}
+ald_general_mokrani = {
+	first_name = Sheikh_Mohamed
+	last_name = al-Mokrani
+	historical = yes
+	culture = cu:berber
+	female = no
+	religion = rel:sunni
+	commander_rank = default
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	birth_date = 1815.3.7 # only year known
+	traits = {
+		brave
+		popular_commander
+		experienced_offensive_planner
+	}
+	commander_usage = {
+		country_trigger = {
+			NOT = {
+				exists = c:AIT
+			}
+			OR = {
+				AND = {
+					exists = c:ALD
+					c:ALD ?= THIS
+				}
+				AND = {
+					exists = c:MAS
+					c:MAS ?= THIS
+				}
+				AND = {
+					exists = c:CON
+					c:CON ?= THIS
+				}
+				AND = {
+					exists = c:TUG
+					c:TUG ?= THIS
+				}
+			}
+			is_subject = no
+			any_scope_state = {
+				OR = {
+					state_region = s:STATE_ORAN
+					state_region = s:STATE_ALGIERS
+					state_region = s:STATE_CONSTANTINE
+					state_region = s:STATE_SAHARA
+				}
+			}
+			AND = {
+				exists = c:FRA
+				c:FRA ?= {
+					any_scope_state = {
+						OR = {
+							state_region = s:STATE_ORAN
+							state_region = s:STATE_ALGIERS
+							state_region = s:STATE_CONSTANTINE
+							state_region = s:STATE_SAHARA
+						}
+					}
+				}
+			}
+		}
+		role = general
+		earliest_usage_date = 1836.1.1
+		latest_usage_date = 1854.1.1
+		chance = 75
+	}
+}

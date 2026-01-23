@@ -335,7 +335,7 @@ UKR = {
 }
 
 GAL = {
-	states = { STATE_EAST_GALICIA STATE_WEST_GALICIA STATE_MOLDAVIA }
+	states = { STATE_EAST_GALICIA STATE_WEST_GALICIA STATE_BUKOVINA }
 
 	required_num_states = 2
 
@@ -519,7 +519,7 @@ VIE = {
 }
 
 CMI = {
-	states = { STATE_CHIANG_MAI }
+	states = { STATE_BANGKOK }
 
 	ai_will_do = { always = no }
 }
@@ -533,7 +533,7 @@ TIB = {
 MGL = {
 	states = {
 		STATE_ULIASTAI
-		STATE_URGA
+		STATE_ULIASTAI
 	}
 
 	ai_will_do = { always = no }
@@ -1188,8 +1188,8 @@ LEB = {
 SUD = {
 	states = {
 		STATE_BLUE_NILE
-		STATE_KORDOFAN
-		STATE_DONGOLA
+		STATE_BLUE_NILE
+		STATE_BLUE_NILE
 	}
 	ai_will_do = { always = no }
 }
@@ -1205,7 +1205,7 @@ ALD = {
 		STATE_CONSTANTINE
 		STATE_ORAN
 		STATE_SAHARA
-		STATE_EAST_SAHARA
+		STATE_SAHARA
 	}
 	ai_will_do = { always = no }
 }
@@ -1603,7 +1603,7 @@ ION = {
 
 MOL = {
 	states = {
-		STATE_MOLDAVIA
+		STATE_WALLACHIA
 	}
 	ai_will_do = { always = no }
 }
@@ -2425,14 +2425,14 @@ ETH = {
 
 LIB = {
 	states = {
-		STATE_LIBERIA
+		STATE_SIERRA_LEONE
 	}
 	ai_will_do = { always = no }
 }
 
 DFR = {
 	states = {
-		STATE_DARFUR
+		STATE_EQUATORIA
 	}
 	ai_will_do = { always = no }
 }
@@ -2454,7 +2454,7 @@ DAH = {
 WAD = {
 	states = {
 		STATE_CHAD
-		STATE_WADDAI
+		STATE_CHAD
 	}
 	ai_will_do = { always = no }
 }
@@ -2944,7 +2944,7 @@ ALK = {
 BNT = {
 	states = {
 		STATE_WESTERN_SERBIA
-		STATE_BANAT
+		STATE_NORTHERN_TRANSYLVANIA
 	}
 
 	ai_will_do = { always = no }

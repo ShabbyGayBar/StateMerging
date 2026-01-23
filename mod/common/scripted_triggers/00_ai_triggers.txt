@@ -221,8 +221,8 @@ has_je_conquest_reason = {
 			$TARGET$ = {
 				any_scope_state = {
 					OR = {
-						state_region = s:STATE_AMHARA
-						state_region = s:STATE_GONDER
+						state_region = s:STATE_OROMIA
+						state_region = s:STATE_OROMIA
 					}
 				}
 			}
@@ -304,7 +304,7 @@ has_je_conquest_reason = {
 						state_region = s:STATE_CONSTANTINE
 						state_region = s:STATE_ORAN
 						state_region = s:STATE_SAHARA
-						state_region = s:STATE_EAST_SAHARA
+						state_region = s:STATE_SAHARA
 					}
 				}
 			}

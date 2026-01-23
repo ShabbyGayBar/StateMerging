@@ -1037,11 +1037,11 @@ je_south_bessarabian_retrocession = {
 		NOT = { has_variable = south_bessarabia_cession_in_progress }
 		NOR = {
 			any_scope_state = {
-				state_region = s:STATE_MOLDAVIA
+				state_region = s:STATE_WALLACHIA
 			}
 			any_subject_or_below = {
 				any_scope_state = {
-					state_region = s:STATE_MOLDAVIA
+					state_region = s:STATE_WALLACHIA
 				}
 			}
 		}
@@ -1060,7 +1060,7 @@ je_south_bessarabian_retrocession = {
 	            NOT = {
 	            	has_war_with = ROOT
 	            	any_scope_state = {
-	            		state_region = s:STATE_MOLDAVIA
+	            		state_region = s:STATE_WALLACHIA
 	            	}
 	            }
 	            has_interest_marker_in_region = ROOT.capital.region
@@ -1072,7 +1072,7 @@ je_south_bessarabian_retrocession = {
 
 			OR = {
 				any_neighbouring_state = {
-					state_region = s:STATE_MOLDAVIA
+					state_region = s:STATE_WALLACHIA
 					owner = {
 						NOT = { ROOT = this }
 						relations:root > 0
@@ -1083,7 +1083,7 @@ je_south_bessarabian_retrocession = {
 				}
 				any_subject_or_below = {
 					any_neighbouring_state = {
-						state_region = s:STATE_MOLDAVIA
+						state_region = s:STATE_WALLACHIA
 						owner = {
 							NOT = { ROOT = this }
 							relations:root > 0
@@ -1107,7 +1107,7 @@ je_south_bessarabian_retrocession = {
 				relations:root >= 25
 				NOT = { has_war_with = ROOT }
 				any_scope_state = {
-					state_region = s:STATE_MOLDAVIA
+					state_region = s:STATE_WALLACHIA
 				}
 			}
 	   		trigger_event = { id = romania.4 }

@@ -289,7 +289,7 @@ struggle_for_the_highveld.3 = {
 
 		any_scope_state = {
 			any_neighbouring_state = {
-				state_region = s:STATE_ZULULAND
+				state_region = s:STATE_TRANSVAAL
 				owner = {
 					c:ZUL ?= this
 					is_at_war = no
@@ -310,7 +310,7 @@ struggle_for_the_highveld.3 = {
 				save_scope_as = dingane
 			}
 		}
-		s:STATE_ZULULAND = {
+		s:STATE_TRANSVAAL = {
 			save_scope_as = zululand_region
 		}
 		if = {
@@ -441,7 +441,7 @@ struggle_for_the_highveld.4 = {
 		custom_tooltip = {
 			text = struggle_for_the_highveld.4.b.tt
 		}
-		s:STATE_ZULULAND = {
+		s:STATE_TRANSVAAL = {
 			add_claim = scope:oranje
 		}
 
@@ -466,7 +466,7 @@ struggle_for_the_highveld.4 = {
 	option = {
 		name = struggle_for_the_highveld.4.c
 
-		s:STATE_ZULULAND = {
+		s:STATE_TRANSVAAL = {
 			set_owner_of_provinces = {
 				country = scope:oranje
 				provinces = { x5B124F xFF0EF1 x552449 xE0EB02 x85695F xDE0EDE x279045 x7ACC38 xB1F868 x3CED3D x11A090 xCD31DB }
@@ -525,7 +525,7 @@ struggle_for_the_highveld.5 = {
 	}
 
 	immediate = {
-		s:STATE_ZULULAND = {
+		s:STATE_TRANSVAAL = {
 			save_scope_as = zululand_region
 		}
 		save_scope_as = zulu
@@ -609,7 +609,7 @@ struggle_for_the_highveld.5 = {
 			on_created = {
 				set_country_type = unrecognized
 				save_temporary_scope_as = natalia_republic
-				s:STATE_ZULULAND = {
+				s:STATE_TRANSVAAL = {
 					set_owner_of_provinces = {
 						country = c:NAL
 						provinces = { x5B124F xFF0EF1 x552449 xE0EB02 x85695F xDE0EDE x7ACC38 xB1F868 x3CED3D x11A090 xCD31DB }
@@ -633,7 +633,7 @@ struggle_for_the_highveld.5 = {
 		}
 
 		hidden_effect = {
-			s:STATE_ZULULAND = {
+			s:STATE_TRANSVAAL = {
 				random_scope_state = {
 					limit = {
 						NOT = { owner = c:ZUL }
@@ -643,7 +643,7 @@ struggle_for_the_highveld.5 = {
 							culture = cu:zulu
 							NOT = { is_pop_type = peasants }
 						}
-						move_pop = s:STATE_ZULULAND.region_state:ZUL
+						move_pop = s:STATE_TRANSVAAL.region_state:ZUL
 					}
 					create_pop = {
 						culture = boer
@@ -816,11 +816,11 @@ struggle_for_the_highveld.6 = {
 		if = {
 			limit = {
 				NOR = {
-					owns_entire_state_region = STATE_VRYSTAAT
-					has_claim = s:STATE_VRYSTAAT
+					owns_entire_state_region = STATE_TRANSVAAL
+					has_claim = s:STATE_TRANSVAAL
 				}
 			}
-			s:STATE_VRYSTAAT = { add_claim = scope:highveld_winner }
+			s:STATE_TRANSVAAL = { add_claim = scope:highveld_winner }
 		}
 		if = {
 			limit = {
@@ -834,11 +834,11 @@ struggle_for_the_highveld.6 = {
 		if = {
 			limit = {
 				NOR = {
-					owns_entire_state_region = STATE_ZULULAND
-					has_claim = s:STATE_ZULULAND
+					owns_entire_state_region = STATE_TRANSVAAL
+					has_claim = s:STATE_TRANSVAAL
 				}
 			}
-			s:STATE_ZULULAND = { add_claim = scope:highveld_winner }
+			s:STATE_TRANSVAAL = { add_claim = scope:highveld_winner }
 		}
 	}
 }
@@ -903,16 +903,16 @@ struggle_for_the_highveld.7 = {
 			s:STATE_CAPE_COLONY = { remove_claim = scope:highveld_loser }
 		}
 		if = {
-			limit = { has_claim = s:STATE_VRYSTAAT }
-			s:STATE_VRYSTAAT = { remove_claim = scope:highveld_loser }
+			limit = { has_claim = s:STATE_TRANSVAAL }
+			s:STATE_TRANSVAAL = { remove_claim = scope:highveld_loser }
 		}
 		if = {
 			limit = { has_claim = s:STATE_TRANSVAAL }
 			s:STATE_TRANSVAAL = { remove_claim = scope:highveld_loser }
 		}
 		if = {
-			limit = { has_claim = s:STATE_ZULULAND }
-			s:STATE_ZULULAND = { remove_claim = scope:highveld_loser }
+			limit = { has_claim = s:STATE_TRANSVAAL }
+			s:STATE_TRANSVAAL = { remove_claim = scope:highveld_loser }
 		}
 	}
 }

@@ -7803,7 +7803,7 @@ ORA = {
 		trigger = {
 			scope:actor ?= {
 				is_country_type = unrecognized
-				NOT = { owns_entire_state_region = STATE_VRYSTAAT }
+				NOT = { owns_entire_state_region = STATE_TRANSVAAL }
 			}
 		}
 	}

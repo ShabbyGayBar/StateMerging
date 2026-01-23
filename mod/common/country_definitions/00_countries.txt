@@ -1048,7 +1048,7 @@ MOL = {
 	tier = principality
 
 	cultures = { romanian }
-	capital = STATE_MOLDAVIA
+	capital = STATE_WALLACHIA
 	is_named_from_capital = yes
 }
 
@@ -1833,7 +1833,7 @@ DAI = {
 	religion = confucian
 
 	cultures = { vietnamese }
-	capital = STATE_ANNAM
+	capital = STATE_TONKIN
 }
 
 JAV = {
@@ -1935,7 +1935,7 @@ CMI = {
 	tier = principality
 
 	cultures = { thai shan }
-	capital = STATE_CHIANG_MAI
+	capital = STATE_BANGKOK
 }
 
 TIB = {
@@ -1957,7 +1957,7 @@ MGL = {
 	tier = kingdom
 
 	cultures = { mongol }
-	capital = STATE_URGA
+	capital = STATE_ULIASTAI
 }
 
 XIN = {
@@ -5075,7 +5075,7 @@ DGR = {
 	tier = principality
 
 	cultures = { champa }
-	capital = STATE_ANNAM
+	capital = STATE_TONKIN
 }
 
 SCT = {
