@@ -3,7 +3,7 @@
 ![Steam Subscriptions](https://img.shields.io/steam/subscriptions/3371693463?logo=steam)
 ![Steam Downloads](https://img.shields.io/steam/downloads/3371693463?logo=steam)
 
-[简体中文](README_zh-CN.md)
+[简体中文](documentation/README_zh-CN.md)
 
 - If you prefer to merge less states, please check out the minimal version of this mod on:
   - [Github](https://github.com/ShabbyGayBar/StateMergingMinimal), or
