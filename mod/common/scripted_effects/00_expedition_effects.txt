@@ -61,7 +61,7 @@
 				"scripted_bar_progress(expedition_progress_bar)" = 5
 			}
 		}
-		s:STATE_EASTERN_MALI = {
+		s:STATE_TIMBUKTU = {
 			random_scope_state = {
 				update_expedition_location_var = yes
 				save_scope_as = current_expedition_location
@@ -103,7 +103,7 @@
 				"scripted_bar_progress(expedition_progress_bar)" >= 8
 			}
 		}
-		s:STATE_SENEGAL = {
+		s:STATE_GUINEA = {
 			random_scope_state = {
 				update_expedition_location_var = yes
 				save_scope_as = current_expedition_location

@@ -29,12 +29,12 @@ lands_of_anarchy.1 = { # Initial event
 				save_scope_as = al_rif_state_scope
 			}
 		}
-		s:STATE_FEZ = {
+		s:STATE_MARRAKECH = {
 			random_scope_state = {
 				save_scope_as = marrakech_state_scope
 			}
 		}
-		s:STATE_FEZ = {
+		s:STATE_MARRAKECH = {
 			random_scope_state = {
 				limit = {
 					owner = root
@@ -124,12 +124,12 @@ lands_of_anarchy.2 = { # Complete Event
 				save_scope_as = al_rif_state_scope
 			}
 		}
-		s:STATE_FEZ = {
+		s:STATE_MARRAKECH = {
 			random_scope_state = {
 				save_scope_as = marrakech_state_scope
 			}
 		}
-		s:STATE_FEZ = {
+		s:STATE_MARRAKECH = {
 			random_scope_state = {
 				limit = {
 					owner = root
@@ -286,12 +286,12 @@ lands_of_anarchy.3 = { # Fail Event
 				save_scope_as = al_rif_state_scope
 			}
 		}
-		s:STATE_FEZ = {
+		s:STATE_MARRAKECH = {
 			random_scope_state = {
 				save_scope_as = marrakech_state_scope
 			}
 		}
-		s:STATE_FEZ = {
+		s:STATE_MARRAKECH = {
 			random_scope_state = {
 				limit = {
 					owner = root
@@ -445,12 +445,12 @@ lands_of_anarchy.4 = { # Tribe leader as IG leader
 				save_scope_as = al_rif_state_scope
 			}
 		}
-		s:STATE_FEZ = {
+		s:STATE_MARRAKECH = {
 			random_scope_state = {
 				save_scope_as = marrakech_state_scope
 			}
 		}
-		s:STATE_FEZ = {
+		s:STATE_MARRAKECH = {
 			random_scope_state = {
 				limit = {
 					owner = root

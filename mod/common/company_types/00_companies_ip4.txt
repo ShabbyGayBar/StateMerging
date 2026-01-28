@@ -362,14 +362,14 @@ company_office_cherifien_des_phosphates = {
 	attainable = {
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
 			any_scope_state = {
-				state_region = s:STATE_FEZ
+				state_region = s:STATE_MARRAKECH
 			}
 		}
 	}
 
 	possible = {
 		any_scope_state = {
-			state_region = s:STATE_FEZ
+			state_region = s:STATE_MARRAKECH
 			any_scope_building = {
 				is_building_type = building_sulfur_mine
 				level >= 5

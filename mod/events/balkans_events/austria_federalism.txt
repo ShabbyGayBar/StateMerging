@@ -2173,11 +2173,11 @@ austria_federation.11 = { # Ukrainians
 		trigger = {
 			OR = {
 				any_scope_state = {
-					state_region = s:STATE_WALLACHIA
+					state_region = s:STATE_MOLDAVIA
 				}
 				any_subject_or_below = {
 					any_scope_state = {
-						state_region = s:STATE_WALLACHIA
+						state_region = s:STATE_MOLDAVIA
 					}
 				}
 			}

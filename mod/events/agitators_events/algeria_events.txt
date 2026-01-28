@@ -1026,10 +1026,10 @@ algeria_events.8 = {
 		s:STATE_FEZ = {
 			add_claim = c:ALD
 		}
-		s:STATE_FEZ = {
+		s:STATE_MARRAKECH = {
 			add_claim = c:ALD
 		}
-		s:STATE_FEZ = {
+		s:STATE_MARRAKECH = {
 			add_claim = c:ALD
 		}
 		s:STATE_SAHARA = {
@@ -1068,10 +1068,10 @@ algeria_events.8 = {
 		s:STATE_FEZ = {
 			add_claim = c:ALD
 		}
-		s:STATE_FEZ = {
+		s:STATE_MARRAKECH = {
 			add_claim = c:ALD
 		}
-		s:STATE_FEZ = {
+		s:STATE_MARRAKECH = {
 			add_claim = c:ALD
 		}
 		s:STATE_SAHARA = {

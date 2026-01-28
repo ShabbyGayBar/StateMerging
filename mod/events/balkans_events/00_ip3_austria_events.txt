@@ -359,7 +359,7 @@ austria_events.3 = { # Crisis on the Danube
 					OR = {
 						state_region = s:STATE_WEST_GALICIA
 						state_region = s:STATE_EAST_GALICIA
-						state_region = s:STATE_WALLACHIA
+						state_region = s:STATE_MOLDAVIA
 					}
 				}
 			}
@@ -370,7 +370,7 @@ austria_events.3 = { # Crisis on the Danube
 						OR = {
 							state_region = s:STATE_WEST_GALICIA
 							state_region = s:STATE_EAST_GALICIA
-							state_region = s:STATE_WALLACHIA
+							state_region = s:STATE_MOLDAVIA
 						}
 					}
 					save_scope_as = polish_state_scope
@@ -392,7 +392,7 @@ austria_events.3 = { # Crisis on the Danube
 						OR = {
 							state_region = s:STATE_WEST_GALICIA
 							state_region = s:STATE_EAST_GALICIA
-							state_region = s:STATE_WALLACHIA
+							state_region = s:STATE_MOLDAVIA
 						}
 					}
 					set_state_owner = c:GAL

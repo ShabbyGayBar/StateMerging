@@ -1048,7 +1048,7 @@ MOL = {
 	tier = principality
 
 	cultures = { romanian }
-	capital = STATE_WALLACHIA
+	capital = STATE_MOLDAVIA
 	is_named_from_capital = yes
 }
 

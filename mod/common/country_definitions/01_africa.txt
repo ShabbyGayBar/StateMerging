@@ -42,7 +42,7 @@ ETH = {
 	tier = empire
 
 	cultures = { amhara oromo tigray }
-	capital = STATE_OROMIA
+	capital = STATE_GONDER
 }
 
 MAD = {
@@ -76,7 +76,7 @@ LIB = {
 	tier = principality
 
 	cultures = { afro_american }
-	capital = STATE_SIERRA_LEONE
+	capital = STATE_LIBERIA
 	is_named_from_capital = yes
 }
 
@@ -469,7 +469,7 @@ FTJ = {
 	tier = principality
 
 	cultures = { fulbe }
-	capital = STATE_SENEGAL
+	capital = STATE_GUINEA
 }
 
 BUG = {
@@ -889,7 +889,7 @@ AWS = {
 	tier = principality
 
 	cultures = { afar }
-	capital = STATE_OROMIA
+	capital = STATE_GONDER
 }
 
 SHW = {
@@ -923,7 +923,7 @@ BRN = {
 
 	cultures = { oromo }
 	religion = sunni
-	capital = STATE_OROMIA
+	capital = STATE_AMHARA
 }
 
 KFA = {
@@ -934,7 +934,7 @@ KFA = {
 
 	cultures = { sidama oromo }
 	religion = oriental_orthodox
-	capital = STATE_OROMIA
+	capital = STATE_AMHARA
 }
 
 SDM = {
@@ -945,7 +945,7 @@ SDM = {
 
 	cultures = { sidama }
 	religion = oriental_orthodox
-	capital = STATE_OROMIA
+	capital = STATE_AMHARA
 }
 
 WLG = {
@@ -955,7 +955,7 @@ WLG = {
 	tier = principality
 
 	cultures = { oromo }
-	capital = STATE_OROMIA
+	capital = STATE_AMHARA
 }
 
 TGR = {
@@ -965,7 +965,7 @@ TGR = {
 	tier = principality
 
 	cultures =  { tigray amhara }
-	capital = STATE_OROMIA
+	capital = STATE_AMHARA
 }
 
 GJM = {
@@ -975,7 +975,7 @@ GJM = {
 	tier = principality
 
 	cultures = { amhara }
-	capital = STATE_OROMIA
+	capital = STATE_AMHARA
 }
 
 WLO = {
@@ -985,7 +985,7 @@ WLO = {
 	tier = principality
 
 	cultures = { amhara }
-	capital = STATE_OROMIA
+	capital = STATE_AMHARA
 }
 
 BGM = {
@@ -995,7 +995,7 @@ BGM = {
 	tier = principality
 
 	cultures = { amhara oromo tigray }
-	capital = STATE_OROMIA
+	capital = STATE_AMHARA
 }
 
 BOR = {
@@ -1005,7 +1005,7 @@ BOR = {
 	tier = principality
 
 	cultures = { kanuri }
-	capital = STATE_NIGERIA
+	capital = STATE_EAST_HAUSALAND
 }
 
 BGI = {
@@ -1125,7 +1125,7 @@ MOS = {
 	tier = principality
 
 	cultures = { mossi }
-	capital = STATE_DAHOMEY
+	capital = STATE_VOLTA
 }
 
 KRT = {
@@ -1200,7 +1200,7 @@ SSU = {
 	tier = principality
 
 	cultures = { mande }
-	capital = STATE_SENEGAL
+	capital = STATE_GUINEA
 }
 
 MDK = {
@@ -1210,7 +1210,7 @@ MDK = {
 	tier = principality
 
 	cultures = { mande }
-	capital = STATE_SENEGAL
+	capital = STATE_GUINEA
 }
 
 HAU = {
@@ -1270,7 +1270,7 @@ EWE = {
 	tier = principality
 
 	cultures = { ewe }
-	capital = STATE_GOLD_COAST
+	capital = STATE_DAHOMEY
 }
 
 IBO = {
@@ -1330,7 +1330,7 @@ OUA = {
 	tier = principality
 
 	cultures = { bidan }
-	capital = STATE_MAURITANIA
+	capital = STATE_INNER_MAURITANIA
 }
 
 ADG = {
@@ -1340,7 +1340,7 @@ ADG = {
 	tier = principality
 
 	cultures = { tuareg }
-	capital = STATE_EASTERN_MALI
+	capital = STATE_TIMBUKTU
 }
 
 BSS = { # Bassa
@@ -1351,7 +1351,7 @@ BSS = { # Bassa
 	tier = principality
 
 	cultures = { bassa }
-	capital = STATE_SIERRA_LEONE
+	capital = STATE_LIBERIA
 }
 
 TIR = { # Tiris
@@ -1384,7 +1384,7 @@ KSS = { # Kissi
 	tier = principality
 
 	cultures = { kissi }
-	capital = STATE_SENEGAL
+	capital = STATE_GUINEA
 }
 
 GAO = { # Gao
@@ -1395,7 +1395,7 @@ GAO = { # Gao
 	tier = principality
 
 	cultures = { songhai }
-	capital = STATE_EASTERN_MALI
+	capital = STATE_TIMBUKTU
 }
 
 TIV = { # Tivland
@@ -1406,7 +1406,7 @@ TIV = { # Tivland
 	tier = principality
 
 	cultures = { tiv }
-	capital = STATE_NIGERIA
+	capital = STATE_EAST_HAUSALAND
 }
 
 SRA = { # Sara
@@ -1781,7 +1781,7 @@ QWR = { # Qwara, sometimes spelled 'Quara' in literature, or even 'Quoara' if yo
 	tier = principality
 
 	cultures = { amhara }
-	capital = STATE_OROMIA
+	capital = STATE_GONDER
 }
 
 TGI = { # Tungi
@@ -1803,7 +1803,7 @@ WLT = {
 
 	cultures = { sidama }
 	religion = oriental_orthodox
-	capital = STATE_OROMIA
+	capital = STATE_AMHARA
 }
 
 HDY = {
@@ -1814,7 +1814,7 @@ HDY = {
 
 	cultures = { oromo }
 	religion = sunni
-	capital = STATE_OROMIA
+	capital = STATE_AMHARA
 }
 
 ARS = {
@@ -1836,7 +1836,7 @@ ANU = { # Anuak
 
 	cultures = { luo }
 	religion = animist
-	capital = STATE_OROMIA
+	capital = STATE_AMHARA
 }
 
 OMO = { # Omo
@@ -1847,7 +1847,7 @@ OMO = { # Omo
 
 	cultures = { sidama }
 	religion = animist
-	capital = STATE_OROMIA
+	capital = STATE_AMHARA
 }
 
 # Swaziland/Eswatini
@@ -2003,7 +2003,7 @@ TEK = {
 	tier = principality
 
 	cultures = { bidan }
-	capital = STATE_FEZ
+	capital = STATE_MARRAKECH
 }
 
 RGB = { # Hell yeah
@@ -2047,7 +2047,7 @@ ATR = {
 	tier = principality
 
 	cultures = { tuareg }
-	capital = STATE_EASTERN_MALI
+	capital = STATE_TIMBUKTU
 }
 
 ADR = {
@@ -2058,7 +2058,7 @@ ADR = {
 	tier = principality
 
 	cultures = { bidan }
-	capital = STATE_MAURITANIA
+	capital = STATE_INNER_MAURITANIA
 }
 
 BRK = {

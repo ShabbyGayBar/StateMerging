@@ -488,7 +488,7 @@ assign_state_name_region_danubia  = {
     if = {
         limit = {
             state_region = {
-                s:STATE_WALLACHIA ?= this
+                s:STATE_MOLDAVIA ?= this
             }
         }
         STATE_MOLDAVIA_state_name_assign = yes

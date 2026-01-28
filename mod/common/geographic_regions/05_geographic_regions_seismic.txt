@@ -43,7 +43,7 @@ geographic_region_alpide_belt = { # approximation of Alpide belt, Austrian geolo
 		STATE_WEST_SWITZERLAND
 		STATE_AUSTRIA
 		STATE_AUSTRIA
-		STATE_FEZ
+		STATE_MARRAKECH
 		STATE_FEZ
 		STATE_FEZ
 		STATE_ORAN

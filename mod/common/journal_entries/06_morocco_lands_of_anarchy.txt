@@ -41,7 +41,7 @@
 				}
 			}
 		}
-		s:STATE_FEZ = {
+		s:STATE_MARRAKECH = {
 			save_scope_as = marrakech_scope
 			random_scope_state = {
 				limit = {
@@ -58,7 +58,7 @@
 				}
 			}
 		}
-		s:STATE_FEZ = {
+		s:STATE_MARRAKECH = {
 			save_scope_as = inner_morocco_scope
 			random_scope_state = {
 				limit = {

@@ -758,7 +758,7 @@ release_polish_states = {
 				state_region = {
 					OR = {
 						is_homeland = scope:relevant_culture_scope
-						s:STATE_WALLACHIA ?= this
+						s:STATE_MOLDAVIA ?= this
 					}
 					NOR = {
 						is_homeland = cu:south_german
@@ -789,7 +789,7 @@ release_polish_states = {
 						state_region = {
 							OR = {
 								is_homeland = scope:relevant_culture_scope
-								s:STATE_WALLACHIA ?= this
+								s:STATE_MOLDAVIA ?= this
 							}
 							NOR = {
 								is_homeland = cu:south_german
@@ -809,7 +809,7 @@ release_polish_states = {
 						state_region = {
 							OR = {
 								is_homeland = scope:relevant_culture_scope
-								s:STATE_WALLACHIA ?= this
+								s:STATE_MOLDAVIA ?= this
 							}
 							NOR = {
 								is_homeland = cu:south_german
@@ -833,7 +833,7 @@ release_polish_states = {
 								state_region = {
 									OR = {
 										is_homeland = scope:relevant_culture_scope
-										s:STATE_WALLACHIA ?= this
+										s:STATE_MOLDAVIA ?= this
 									}
 									NOR = {
 										is_homeland = cu:south_german

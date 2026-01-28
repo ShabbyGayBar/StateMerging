@@ -243,9 +243,9 @@
             NOT = {
                 exists = c:MOL
             }
-            exists = s:STATE_WALLACHIA.region_state:TUR
+            exists = s:STATE_MOLDAVIA.region_state:TUR
         }
-        s:STATE_WALLACHIA.region_state:TUR = {
+        s:STATE_MOLDAVIA.region_state:TUR = {
             save_scope_as = moldavia_scope
         }
         create_country = {

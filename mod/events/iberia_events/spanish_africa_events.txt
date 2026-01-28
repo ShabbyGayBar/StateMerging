@@ -221,10 +221,10 @@ spanish_africa.2 = { # Al Rif conquered, now Western Sahara
 		if = {
 			limit = {
 				NOT = {
-					has_claim = s:STATE_FEZ
+					has_claim = s:STATE_MARRAKECH
 				}
 			}
-			s:STATE_FEZ = {
+			s:STATE_MARRAKECH = {
 				add_claim = root
 			}
 		}
@@ -413,10 +413,10 @@ spanish_africa.4 = { # Guinea conquered, now Morocco
 		s:STATE_FEZ = {
 			save_scope_as = fez_scope
 		}
-		s:STATE_FEZ = {
+		s:STATE_MARRAKECH = {
 			save_scope_as = inner_morocco_scope
 		}
-		s:STATE_FEZ = {
+		s:STATE_MARRAKECH = {
 			save_scope_as = marrakech_scope
 		}
 		c:MOR ?= {
@@ -430,8 +430,8 @@ spanish_africa.4 = { # Guinea conquered, now Morocco
 	cancellation_trigger = {
 		country_or_subject_owns_entire_state_region = STATE_FEZ
 		country_or_subject_owns_entire_state_region = STATE_FEZ
-		country_or_subject_owns_entire_state_region = STATE_FEZ
-		country_or_subject_owns_entire_state_region = STATE_FEZ
+		country_or_subject_owns_entire_state_region = STATE_MARRAKECH
+		country_or_subject_owns_entire_state_region = STATE_MARRAKECH
 	}
 
 	cooldown = { days = never_fire_again_modifier_time }
@@ -475,22 +475,22 @@ spanish_africa.4 = { # Guinea conquered, now Morocco
 		if = {
 			limit = {
 				NOR = {
-					country_or_subject_owns_entire_state_region = STATE_FEZ
-					has_claim = s:STATE_FEZ
+					country_or_subject_owns_entire_state_region = STATE_MARRAKECH
+					has_claim = s:STATE_MARRAKECH
 				}
 			}
-			s:STATE_FEZ = {
+			s:STATE_MARRAKECH = {
 				add_claim = root
 			}
 		}
 		if = {
 			limit = {
 				NOR = {
-					country_or_subject_owns_entire_state_region = STATE_FEZ
-					has_claim = s:STATE_FEZ
+					country_or_subject_owns_entire_state_region = STATE_MARRAKECH
+					has_claim = s:STATE_MARRAKECH
 				}
 			}
-			s:STATE_FEZ = {
+			s:STATE_MARRAKECH = {
 				add_claim = root
 			}
 		}
@@ -522,17 +522,17 @@ spanish_africa.4 = { # Guinea conquered, now Morocco
 		}
 		if = {
 			limit = {
-				has_claim = s:STATE_FEZ
+				has_claim = s:STATE_MARRAKECH
 			}
-			s:STATE_FEZ = {
+			s:STATE_MARRAKECH = {
 				remove_claim = root
 			}
 		}
 		if = {
 			limit = {
-				has_claim = s:STATE_FEZ
+				has_claim = s:STATE_MARRAKECH
 			}
-			s:STATE_FEZ = {
+			s:STATE_MARRAKECH = {
 				remove_claim = root
 			}
 		}

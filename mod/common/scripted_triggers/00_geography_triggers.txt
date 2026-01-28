@@ -86,8 +86,8 @@ is_vulnerable_to_droughts = {
 				state_region = s:STATE_LOWLANDS
 				state_region = s:STATE_LEINSTER
 				state_region = s:STATE_LEINSTER
-				state_region = s:STATE_LEINSTER
-				state_region = s:STATE_LEINSTER
+				state_region = s:STATE_MUNSTER
+				state_region = s:STATE_MUNSTER
 			}
 		}
 

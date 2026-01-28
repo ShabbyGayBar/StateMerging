@@ -123,8 +123,8 @@
 							AND = {
 								country_or_subject_owns_entire_state_region  = STATE_FEZ
 								country_or_subject_owns_entire_state_region  = STATE_FEZ
-								country_or_subject_owns_entire_state_region  = STATE_FEZ
-								country_or_subject_owns_entire_state_region  = STATE_FEZ
+								country_or_subject_owns_entire_state_region  = STATE_MARRAKECH
+								country_or_subject_owns_entire_state_region  = STATE_MARRAKECH
 							}
 						}
 					}
@@ -220,8 +220,8 @@ je_western_saharan_conquest = { #2nd in chain, western sahara after al-rif
 						AND = {
 							country_or_subject_owns_entire_state_region  = STATE_FEZ
 							country_or_subject_owns_entire_state_region  = STATE_FEZ
-							country_or_subject_owns_entire_state_region  = STATE_FEZ
-							country_or_subject_owns_entire_state_region  = STATE_FEZ
+							country_or_subject_owns_entire_state_region  = STATE_MARRAKECH
+							country_or_subject_owns_entire_state_region  = STATE_MARRAKECH
 						}
 					}
 				}
@@ -310,8 +310,8 @@ je_guinean_conquest = { #3rd in chain, equatorial africa
 						AND = {
 							country_or_subject_owns_entire_state_region = STATE_FEZ
 							country_or_subject_owns_entire_state_region = STATE_FEZ
-							country_or_subject_owns_entire_state_region = STATE_FEZ
-							country_or_subject_owns_entire_state_region = STATE_FEZ
+							country_or_subject_owns_entire_state_region = STATE_MARRAKECH
+							country_or_subject_owns_entire_state_region = STATE_MARRAKECH
 						}
 					}
 				}
@@ -362,8 +362,8 @@ je_moroccan_conquest = { #4th in chain, whole of morocco
 			AND = {
 				country_or_subject_owns_entire_state_region = STATE_FEZ
 				country_or_subject_owns_entire_state_region = STATE_FEZ
-				country_or_subject_owns_entire_state_region = STATE_FEZ
-				country_or_subject_owns_entire_state_region = STATE_FEZ
+				country_or_subject_owns_entire_state_region = STATE_MARRAKECH
+				country_or_subject_owns_entire_state_region = STATE_MARRAKECH
 			}
 		}
 	}
@@ -386,10 +386,10 @@ je_moroccan_conquest = { #4th in chain, whole of morocco
 		s:STATE_FEZ = {
 			remove_claim = root
 		}
-		s:STATE_FEZ = {
+		s:STATE_MARRAKECH = {
 			remove_claim = root
 		}
-		s:STATE_FEZ = {
+		s:STATE_MARRAKECH = {
 			remove_claim = root
 		}
 	}

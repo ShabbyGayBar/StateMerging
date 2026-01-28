@@ -1608,8 +1608,8 @@ ai_strategy_default = {
 					has_journal_entry = je_age_of_princes
 					scope:target_state = {
 						OR = {
-							state_region = s:STATE_OROMIA
-							state_region = s:STATE_OROMIA
+							state_region = s:STATE_AMHARA
+							state_region = s:STATE_GONDER
 						}
 					}
 				}
@@ -6147,8 +6147,8 @@ ai_strategy_default = {
 							any_scope_state = {
 								state_region = {
 									OR = {
-										s:STATE_OROMIA = this
-										s:STATE_OROMIA = this
+										s:STATE_GONDER = this
+										s:STATE_AMHARA = this
 										s:STATE_OROMIA = this
 										s:STATE_ERITREA = this # not necessary for unification but something an Ethiopian state has, historically, expressed a keen interest in
 									}

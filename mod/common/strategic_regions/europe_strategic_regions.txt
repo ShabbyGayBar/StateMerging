@@ -9,7 +9,7 @@ region_england = {
 region_north_sea_coast = {
 	capital_province = x84625B
 	map_color = { 220 215 33 }
-	states = {  STATE_LOWLANDS STATE_ICELAND STATE_GREENLAND  STATE_LEINSTER   }
+	states = {  STATE_LOWLANDS STATE_ICELAND STATE_GREENLAND  STATE_LEINSTER  STATE_MUNSTER }
 }
 
 region_iberia = {
@@ -31,7 +31,7 @@ region_occitania = {
 }
 
 region_rhine = {
-	capital_province = x904020
+	capital_province = x6E4891
 	map_color = { 91 205 60 }
 	states = { STATE_FLANDERS STATE_HOLLAND    STATE_RHINELAND   STATE_WESTPHALIA  }
 }
@@ -69,7 +69,7 @@ region_baltic = {
 region_danubia = {
 	capital_province = x51E0E0
 	map_color = { 249 126 98 }
-	states = {  STATE_CENTRAL_HUNGARY STATE_SLOVAKIA       STATE_WALLACHIA    STATE_NORTHERN_TRANSYLVANIA }
+	states = {  STATE_CENTRAL_HUNGARY STATE_SLOVAKIA       STATE_WALLACHIA  STATE_MOLDAVIA  STATE_NORTHERN_TRANSYLVANIA }
 }
 
 region_poland = {
@@ -109,7 +109,7 @@ region_finland = {
 }
 
 region_arctic_russia = {
-	capital_province = xCF8844
+	capital_province = x1CE50A
 	map_color = { 220 250 220 }
 	states = {  STATE_ARKHANGELSK  }
 }

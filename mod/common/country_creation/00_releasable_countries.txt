@@ -335,7 +335,7 @@ UKR = {
 }
 
 GAL = {
-	states = { STATE_EAST_GALICIA STATE_WEST_GALICIA STATE_WALLACHIA }
+	states = { STATE_EAST_GALICIA STATE_WEST_GALICIA STATE_MOLDAVIA }
 
 	required_num_states = 2
 
@@ -1603,7 +1603,7 @@ ION = {
 
 MOL = {
 	states = {
-		STATE_WALLACHIA
+		STATE_MOLDAVIA
 	}
 	ai_will_do = { always = no }
 }
@@ -2388,10 +2388,10 @@ CAU = {
 
 MOR = {
 	states = {
+		STATE_MARRAKECH
 		STATE_FEZ
 		STATE_FEZ
-		STATE_FEZ
-		STATE_FEZ
+		STATE_MARRAKECH
 	}
 
 	required_num_states = 3
@@ -2425,7 +2425,7 @@ ETH = {
 
 LIB = {
 	states = {
-		STATE_SIERRA_LEONE
+		STATE_LIBERIA
 	}
 	ai_will_do = { always = no }
 }

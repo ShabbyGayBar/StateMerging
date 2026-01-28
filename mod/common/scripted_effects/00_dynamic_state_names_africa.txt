@@ -125,7 +125,7 @@ assign_state_name_region_senegal = {
     if = {
         limit = {
             state_region = {
-                s:STATE_SIERRA_LEONE ?= this
+                s:STATE_LIBERIA ?= this
             }
         }
         STATE_LIBERIA_state_name_assign = yes
@@ -141,7 +141,7 @@ assign_state_name_region_senegal = {
     else_if = {
         limit = {
             state_region = {
-                s:STATE_SENEGAL ?= this
+                s:STATE_GUINEA ?= this
             }
         }
         STATE_GUINEA_state_name_assign = yes
