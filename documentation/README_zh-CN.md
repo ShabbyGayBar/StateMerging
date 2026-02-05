@@ -26,11 +26,6 @@
 
 其中，每个键代表了 Mod 中存在的省份代码，对应的值代表了要合并到这个省份的原版省份代码。
 
-## 未来计划
-![Future Plans](../figures/Merge_States_objective.png)
-
-这只是一个大致的计划，实际实现可能会有所不同。
-
 ## 安装方法
 
 - 在 [Steam 创意工坊](https://steamcommunity.com/sharedfiles/filedetails/?id=3371693463) 订阅本 Mod。
