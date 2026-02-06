@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd ..
+
 # Check mod directory
 if [ -d "$1" ]
 then
