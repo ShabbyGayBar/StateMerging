@@ -3,43 +3,40 @@
 ![Steam Subscriptions](https://img.shields.io/steam/subscriptions/3371693463?logo=steam)
 ![Steam Downloads](https://img.shields.io/steam/downloads/3371693463?logo=steam)
 
-- 如果您希望只合并少数某些州，您可以选择使用本 Mod 的保守版：
-  - [Github](https://github.com/ShabbyGayBar/StateMergingMinimal), 或
-  - [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3432100126), 或
-  - [Paradox Mods](https://mods.paradoxplaza.com/mods/113894/Any).
-- 如果您希望制作自己的省份合并 Mod，您可以使用[省份合并自动化脚本及教程](https://github.com/ShabbyGayBar/StateMerger).
+一个省份合并模组，合并了部分地区。
 
-一个省份合并 Mod，合并了部分地区。
+建筑、人口等数据都保留原样。但是因为合并了各个省份，所以整体陆军、海军、征税等加成在省份上的数值上限都减少了，所以通过加 buff 的方式弥补了一部分回来。
 
-建筑、人口等数据都保留原样。但是因为合并了各个州，所以整体陆军、海军、征税等加成在州上的数值上限都减少了，所以通过加 buff 的方式弥补了一部分回来。
+因技术力有限，被合并的省份的城市、建筑模型都会消失。
 
-因技术力有限，被合并的州的城市、建筑模型都会消失。
+被合并的省份的代码会消失，可能会导致部分日志和事件无法触发或完成，如有此 BUG 请在 Issues 中提出。 
 
-被合并的州的代码会消失，可能会导致部分日志和事件无法触发或完成，如有此 BUG 请在 Issues 中提出。 
-
-另外，buff 是按被合并的州的数量给的，但是因为有些州实在太小了，我认为它们本来就不应该算一个州，所以给 buff 时没有计入。
+另外，buff 是按被合并的省份的数量给的，但是因为有些省份实在太小了，我认为它们本来就不应该算一个省份，所以给 buff 时没有计入。
 
 ## 当前已经合并的省份
+
 ![Currently Merged States](../figures/Merge_States_current.png)
 
 所有对省份的改动请参照 [merge_states.json](../merge_states.json)。
 
-其中，每个键代表了 Mod 中存在的省份代码，对应的值代表了要合并到这个省份的原版省份代码。
+其中，每个键代表了模组中存在的省份代码，对应的值代表了要合并到这个省份的原版省份代码。
 
 ## 安装方法
 
-- 在 [Steam 创意工坊](https://steamcommunity.com/sharedfiles/filedetails/?id=3371693463) 订阅本 Mod。
+- 在 [Steam 创意工坊](https://steamcommunity.com/sharedfiles/filedetails/?id=3371693463) 订阅本模组。
 或者
-- 下载 Mod 的 zip 文件并解压到维多利亚3的 Mod 文件夹中（通常位于 `Documents\Pardox Interactive\Victoria 3\mod`）。
+- 在 [Paradox 官网](https://mods.paradoxplaza.com/mods/120868/Any) 下载本模组。
+或者
+- 下载模组的 zip 文件并解压到维多利亚3的模组文件夹中（通常位于 `Documents\Pardox Interactive\Victoria 3\mod`）。
 
 ## 合并标准
 
 以下标准按照重要性排序：
 
 - **地块数目**
-  - 任何地块数目小于 8 的州都会被合并。
-  - 地块数目在 8-20 之间的州，如果没有后面因素的支撑，大概率会被合并。
-  - 地块数目小于 4 的州被合并时不会被计入 buff。
+  - 任何地块数目小于 8 的省份都会被合并。
+  - 地块数目在 8-20 之间的省份，如果没有后面因素的支撑，大概率会被合并。
+  - 地块数目小于 4 的省份被合并时不会被计入 buff。
 
 - **历史渊源和地理特质**
   - 文化本土和省份特质相同的省份更有倾向被合并。
@@ -72,7 +69,7 @@
 - game\common\history\states\
 - game\map_data\state_regions\
 
-下的文件的Mod都不兼容
+下的文件的模组都不兼容
 
 <details>
 
@@ -97,10 +94,18 @@
 
 </details>
 
+## 相关链接
+
+- 如果您希望只合并少数某些省份，您可以选择使用本模组的保守版：
+  - [Github](https://github.com/ShabbyGayBar/StateMergingMinimal), 或
+  - [Steam 创意工坊](https://steamcommunity.com/sharedfiles/filedetails/?id=3432100126), 或
+  - [Paradox 官网](https://mods.paradoxplaza.com/mods/113894/Any).
+- 如果您希望制作自己的省份合并模组，您可以使用[省份合并自动化脚本及教程](https://github.com/ShabbyGayBar/StateMerger).
+
 ## 致谢
 
-* 感谢原作者 [思考的肾结核](https://steamcommunity.com/profiles/76561198104682926) 制作的最初版本 [省份合并 Mod](https://steamcommunity.com/sharedfiles/filedetails/?id=3254683348)。
+* 感谢原作者 [思考的肾结核](https://steamcommunity.com/profiles/76561198104682926) 制作的最初版本 [省份合并模组](https://steamcommunity.com/sharedfiles/filedetails/?id=3254683348)。
 
 ## 软件许可证
 
-本 Mod 使用 [MIT LICENSE](../LICENSE) 授权。
+本模组使用 [MIT LICENSE](../LICENSE) 授权。
