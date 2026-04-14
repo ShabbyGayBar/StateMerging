@@ -1,4 +1,4 @@
-namespace = state_merging_error_suppression
+﻿namespace = state_merging_error_suppression
 
 state_merging_error_suppression.0001 = {
     hidden = yes

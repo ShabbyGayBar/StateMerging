@@ -1,4 +1,4 @@
-on_game_started = {
+﻿on_game_started = {
     on_actions = {
         on_state_merging_start
     }
