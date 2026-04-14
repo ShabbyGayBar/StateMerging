@@ -19,7 +19,7 @@ region_great_plains = {
 }
 
 region_atlantic_coast = {
-	capital_province = x6B3BE8
+	capital_province = xE217B5
 	map_color = { 0 0.8 0.4 }
 	states = {  STATE_MICHIGAN    STATE_OHIO  STATE_TENNESSEE STATE_MASSACHUSETTS      STATE_NEW_BRUNSWICK   STATE_NEW_YORK  STATE_MISSISSIPPI  STATE_FLORIDA   STATE_NORTH_CAROLINA  STATE_DISTRICT_OF_COLUMBIA  }
 }
