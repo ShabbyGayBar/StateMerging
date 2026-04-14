@@ -1,0 +1,13 @@
+on_game_started = {
+    on_actions = {
+        on_state_merging_start
+    }
+}
+on_state_merging_start = {
+    effect = {
+        set_global_variable = {
+            name = state_merging_is_loaded
+            value = yes
+        }
+    }
+}

@@ -1,0 +1,9 @@
+namespace = state_merging_error_suppression
+
+state_merging_error_suppression.0001 = {
+    hidden = yes
+    orphan = yes
+    trigger = {
+        exists = global_var:state_merging_is_loaded
+    }
+}
