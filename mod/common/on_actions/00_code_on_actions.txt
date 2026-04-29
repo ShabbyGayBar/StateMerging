@@ -232,7 +232,7 @@ on_monthly_pulse = {
 					state_region = {
 						has_harvest_condition = disease_outbreak
 					}
-					count >= 10
+					count >= 15
 				}
 			}
 			set_global_variable = hungry_forties_happened

@@ -2698,6 +2698,41 @@
                 }
             }
             create_building = {
+                building = building_textile_mill
+                add_ownership = {
+                    building = {
+                        type = building_textile_mill
+                        country = c:FRA
+                        levels = 1
+                        region = STATE_ILE_DE_FRANCE
+                    }
+                    building = {
+                        type = building_financial_district
+                        country = c:FRA
+                        levels = 6
+                        region = STATE_ILE_DE_FRANCE
+                    }
+                    building = {
+                        type = building_textile_mill
+                        country = c:FRA
+                        levels = 4
+                        region = "STATE_ILE_DE_FRANCE"
+                    }
+                    building = {
+                        type = building_financial_district
+                        country = c:FRA
+                        levels = 2
+                        region = "STATE_ILE_DE_FRANCE"
+                    }
+                }
+                reserves = 1
+                activate_production_methods = {
+                    pm_dye_workshops
+                    pm_traditional_looms
+                    pm_craftsman_sewing
+                }
+            }
+            create_building = {
                 building = building_wheat_farm
                 add_ownership = {
                     building = {
@@ -2823,35 +2858,6 @@
                 reserves = 1
                 activate_production_methods = {
                     pm_basic_shipbuilding
-                }
-            }
-            create_building = {
-                building = building_textile_mill
-                add_ownership = {
-                    building = {
-                        type = building_textile_mill
-                        country = c:FRA
-                        levels = 4
-                        region = "STATE_ILE_DE_FRANCE"
-                    }
-                    building = {
-                        type = building_financial_district
-                        country = c:FRA
-                        levels = 2
-                        region = "STATE_ILE_DE_FRANCE"
-                    }
-                    building = {
-                        type = building_financial_district
-                        country = c:FRA
-                        levels = 5
-                        region = STATE_ILE_DE_FRANCE
-                    }
-                }
-                reserves = 1
-                activate_production_methods = {
-                    pm_dye_workshops
-                    pm_no_luxury_clothes
-                    pm_traditional_looms
                 }
             }
             create_building = {
@@ -39616,10 +39622,10 @@
                 building = building_livestock_ranch
                 add_ownership = {
                     building = {
-                        type = building_manor_house
-                        country = c:SWE
+                        type = building_livestock_ranch
+                        country = c:JAP
                         levels = 2
-                        region = "STATE_SCANIA"
+                        region = STATE_KYOTO
                     }
                 }
                 reserves = 1
