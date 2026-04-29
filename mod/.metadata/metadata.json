@@ -2,7 +2,7 @@
   "name" : "States Merging",
 	"id" : "3371693463",
   "version" : "2.4.2",
-  "supported_game_version" : "1.12.*",
+  "supported_game_version" : "1.13.*",
   "short_description" : "Combines multiple states together while keeping the overall pop & buildings unchanged.",
   "thumbnail": "thumbnail.png",
   "tags" : ["map"],
