@@ -1,0 +1,185 @@
+﻿### Persia character template file ###
+
+per_mohammad_shah_qajar_template = {
+    # Mohammad Shah Qajar
+    is_general = yes
+    first_name = "Mohammad_Shah"
+    last_name = "Qajar"
+    historical = yes
+    culture = primary_culture
+    ruler = yes
+    birth_date = 1808.1.5
+    home_region = STATE_IRAKAJEMI
+    dna = dna_king_mohammad_shah_qajar
+    interest_group = ig_landowners
+    ideology = ideology_traditionalist
+    traits = {
+        imperious
+    }
+}
+per_nasir_al_din_qajar_template = {
+    # Nasir al-Din Shah
+    first_name = "Nasir_al-Din"
+    last_name = "Qajar"
+    historical = yes
+    culture = primary_culture
+    heir = yes
+    birth_date = 1831.7.16
+    home_region = STATE_IRAKAJEMI
+	dna = dna_naser_qajar
+    interest_group = ig_landowners
+    ideology = ideology_traditionalist
+    traits = {
+        trait_child
+    }
+}
+
+PER_mirza_aqasi_iravani = {
+	first_name = "Mirza_Aqasi"
+	last_name = Iravani
+	historical = yes
+	age = 53 # unknown birthday
+	home_region = STATE_TABRIZ
+	ig_leader = yes
+	culture = cu:azerbaijani
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	traits = {
+		reckless
+	}
+}
+
+# Reza Shah Pahlavi
+PER_reza_pahlavi = {
+	first_name = Reza
+	last_name = Pahlavi
+	historical = yes
+	culture = cu:mazanderani
+	interest_group = ig_armed_forces
+	ideology = ideology_authoritarian
+	role = character_role_politician
+	birth_date = 1878.3.15
+	home_region = STATE_IRAKAJEMI
+	dna = dna_reza_shah_pahlavi
+	traits = {
+		ambitious
+		direct
+		popular_commander
+	}
+	trait_generation = { }
+
+	commander_usage = {
+		country_trigger = {
+			exists = c:PER
+			c:PER ?= THIS
+		}
+		role = general
+		earliest_usage_date = 1915.1.1 # colonel
+		latest_usage_date = 1936.1.1
+		chance = 50
+	}
+    interest_group_leader_usage = {
+        country_trigger = {
+            exists = c:PER
+            c:PER ?= THIS
+        }
+        interest_group_trigger = {
+            ig_counts_as_marginal = no
+            is_interest_group_type = ig_armed_forces
+        }
+        earliest_usage_date = 1919.1.1 # Minister of War
+        latest_usage_date = 1936.1.1
+        #guaranteed to spawn if possible
+    }
+}
+
+# Mirza Kuchik Khan
+PER_mirza_kuchik_khan = {
+    first_name = Mirza_Kuchik
+    last_name = Khan
+    historical = yes
+    culture = cu:persian
+    interest_group = ig_rural_folk # Petty Bourgeoisie is also a potentially valid descriptor of Mirza Kuchik's IG, but communism isn't a valid ideology for the PB
+    ideology = ideology_communist
+    role = character_role_politician
+    birth_date = 1880.10.12
+    home_region = STATE_IRAKAJEMI
+    dna = dna_mizra_kuchak_khan
+    traits = {
+        imposing
+        pious
+        firebrand
+    }
+    trait_generation = { }
+
+    interest_group_leader_usage = {
+        country_trigger = {
+            exists = c:PER
+            c:PER ?= THIS
+            has_dlc_feature = ep1_content
+        }
+        interest_group_trigger = {
+            ig_counts_as_marginal = no
+            is_interest_group_type = ig_rural_folk
+        }
+        earliest_usage_date = 1909.1.1
+        latest_usage_date = 1936.1.1
+        #guaranteed to spawn if possible
+    }
+    agitator_usage = {
+        country_trigger = {
+            has_dlc_feature = voice_of_the_people_content
+            c:PER ?= this
+            has_dlc_feature = ep1_content
+        }
+        interest_group_trigger = {
+            ig_counts_as_marginal = no
+            OR = {
+                is_interest_group_type = ig_rural_folk
+                is_interest_group_type = ig_armed_forces
+            }
+        }
+        earliest_usage_date = 1909.1.1
+        latest_usage_date = 1936.1.1
+        #guaranteed to spawn if possible
+    }
+}
+
+# Sattar Khan
+PER_sattar_khan = {
+    first_name = Sattar
+    last_name = Khan
+    historical = yes
+    culture = cu:persian
+    interest_group = ig_petty_bourgeoisie
+    ideology = ideology_radical
+    ig_leader = yes
+    birth_date = 1866.10.20
+    home_region = STATE_AZERBAIJAN
+    dna = dna_sattar_khan
+    traits = {
+        brave
+        pious
+        popular_commander
+    }
+    trait_generation = { }
+
+    agitator_usage = {
+        country_trigger = {
+            has_dlc_feature = voice_of_the_people_content
+            c:PER ?= this
+            has_dlc_feature = ep1_content
+        }
+        interest_group_trigger = {
+            ig_counts_as_marginal = no
+            OR = {
+                is_interest_group_type = ig_petty_bourgeoisie
+                is_interest_group_type = ig_intelligentsia
+                is_interest_group_type = ig_rural_folk
+            }
+        }
+        earliest_usage_date = 1905.1.1
+        latest_usage_date = 1936.1.1
+        #guaranteed to spawn if possible
+    }
+}

@@ -1,0 +1,82 @@
+﻿### Hannover character template file ###
+
+# Hannover - HAN
+
+HAN_hugh_halkett = {
+	# Hugh Halkett, general of infantry
+	is_general = yes
+	first_name = Hugh
+	last_name = Halkett
+	historical = yes
+	culture = cu:scottish
+	birth_date = 1783.9.30
+	interest_group = ig_armed_forces
+	ideology = ideology_royalist
+	home_region = STATE_LOWLANDS
+	traits = {
+		experienced_offensive_planner
+		direct
+	}
+}
+HAN_andreas_von_schlutter = {
+	# Andreas von Schlütter, final commander of the "Elbzollfregatte"
+	is_admiral = yes
+	first_name = Andreas
+	last_name = von_Schlu_tter
+	historical = yes
+	culture = cu:north_german
+	birth_date = 1781.6.3
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	traits = {
+		basic_naval_commander
+		tactful
+	}
+}
+HAN_jacob_grimm = {
+	first_name = Jacob
+	last_name = Grimm
+	historical = yes
+	culture = primary_culture
+	birth_date = 1785.1.4
+	is_agitator = yes
+	interest_group = ig_intelligentsia
+	female = no
+	ideology = ideology_radical
+	home_region = STATE_WESTPHALIA
+	dna = dna_grimm_jacob
+	traits = {
+		meticulous
+		tactful
+        literary
+	}
+}
+HAN_ernest_augustus_hannover = {
+	first_name = Ernest_Augustus
+	last_name = Hannover
+	historical = yes
+	ruler = yes
+	noble = yes
+	birth_date = 1771.6.5
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	home_region = STATE_HANNOVER
+	traits = {
+		basic_political_operator
+		arrogant
+	}
+}
+HAN_george_hannover = {
+	first_name = George
+	last_name = Hannover
+	historical = yes
+	heir = yes
+	noble = yes
+	birth_date = 1819.5.27
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	home_region = STATE_HANNOVER
+	traits = {
+		arrogant
+	}
+}

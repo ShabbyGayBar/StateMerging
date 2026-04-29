@@ -28,30 +28,17 @@ region_north_china = {
 	states = { STATE_SHANDONG STATE_BEIJING STATE_ZHILI STATE_HENAN STATE_NORTHERN_ANHUI STATE_SHANXI STATE_JIANGSU STATE_ULIASTAI  STATE_HINGGAN STATE_ALXA STATE_NINGXIA STATE_GANSU STATE_XIAN }
 }
 
-region_manchuria = {
+region_northeast_asia = {
 	graphical_culture = "asian"
-	capital_province = x21D001
+	capital_province = xA0E2EE
 	map_color = { 0.7 0.7 0.3 }
-	states = { STATE_SOUTHERN_MANCHURIA STATE_NORTHERN_MANCHURIA STATE_SHENGJING STATE_OUTER_MANCHURIA STATE_SEOUL   STATE_PYONGYANG   }
+	states = { STATE_SOUTHERN_MANCHURIA STATE_NORTHERN_MANCHURIA STATE_SHENGJING STATE_OUTER_MANCHURIA STATE_SEOUL   STATE_PYONGYANG   STATE_HOKKAIDO  STATE_KANTO  STATE_KANSAI STATE_KYUSHU   STATE_SAKHALIN  STATE_KYOTO    STATE_OKHOTSK }
 }
 
-region_japan = {
-	graphical_culture = "asian"
-	capital_province = xB050C0
-	map_color = { 0.1 0.7 0.7 }
-	states = { STATE_HOKKAIDO  STATE_KANTO  STATE_KANSAI STATE_KYUSHU STATE_CHUGOKU  STATE_SAKHALIN  }
-}
-
-region_west_siberia = {
+region_siberia = {
 	capital_province = x0C0895
 	map_color = { 0.68 1 0.32 }
-	states = {   STATE_TOMSK  STATE_TUVA STATE_SURGUT   }
-}
-
-region_east_siberia = {
-	capital_province = xF9D594
-	map_color = { 0.204 0.251 0.808 }
-	states = { STATE_YAKUTSK STATE_TRANS_BAIKAL   STATE_OKHOTSK STATE_IRKUTSK   }
+	states = {   STATE_TOMSK  STATE_TUVA STATE_SURGUT   STATE_URAL  STATE_YAKUTSK STATE_TRANS_BAIKAL STATE_IRKUTSK   }
 }
 
 region_oceania = {

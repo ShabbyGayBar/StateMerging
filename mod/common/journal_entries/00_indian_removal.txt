@@ -54,7 +54,7 @@
 
 	invalid = {
 		OR = {
-			NOT = { owns_entire_state_region = STATE_NORTH_CAROLINA }
+			NOT = { owns_entire_state_region = STATE_FLORIDA }
 			NOT = {
 				AND = {
 					exists = c:SEQ
@@ -67,7 +67,8 @@
 
 	weight = 200
 
-	should_be_pinned_by_default = yes
+		
+	should_be_pinned_by_default_uninvolved_or_context = yes
 
 	transferable = no
 }

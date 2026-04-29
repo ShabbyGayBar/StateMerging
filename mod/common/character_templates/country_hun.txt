@@ -1,0 +1,795 @@
+﻿### Hungary character template file ###
+
+# Hungary - HUN
+
+HUN_joseph_of_habsburg-lorraine = {
+    # Archduke Joseph of Austria, Palatine of Hungary
+    first_name = Joseph
+    last_name = von_Habsburg_Lothringen
+    historical = yes
+    culture = cu:south_german
+    religion = rel:catholic
+    ruler = yes
+    noble = yes
+    birth_date = 1776.3.9
+    interest_group = ig_landowners
+    ideology = ideology_reformer
+    home_region = STATE_PIEDMONT
+    traits = {
+        experienced_political_operator
+        tactful
+    }
+    on_created = {
+        set_variable = is_married
+    }
+}
+
+HUN_lazar_meszaros = {
+    # Lázár Mészáros, Minister of War during the 1848 Hungarian Revolution
+    first_name = Lazar
+    last_name = Meszaros
+    historical = yes
+    culture = cu:hungarian
+    religion = rel:catholic
+    ig_leader = yes
+    noble = yes
+    birth_date = 1796.2.20
+    interest_group = ig_armed_forces
+    ideology = ideology_jingoist_leader
+    home_region = STATE_WESTERN_SERBIA
+    traits = {
+        cautious
+        basic_diplomat
+        traditionalist_commander
+    }
+}
+
+HUN_istvan_szechenyi = {
+    # István Széchenyi, "the Greatest Hungarian"
+    first_name = IstvA_n
+    last_name = SzE_chenyi
+    historical = yes
+    culture = cu:hungarian
+    religion = rel:catholic
+    ig_leader = yes
+    noble = yes
+    birth_date = 1791.9.21
+    interest_group = ig_industrialists
+    ideology = ideology_liberal_leader
+    home_region = STATE_AUSTRIA
+    traits = {
+        experienced_political_operator
+        tactful
+        cautious
+    }
+    on_created = {
+        set_variable = is_married
+    }
+}
+
+HUN_lajos_kossuth = {
+    # Lajos Kossuth, needs no introduction
+    first_name = Lajos
+    last_name = Kossuth
+    historical = yes
+    culture = cu:hungarian
+	religion = rel:protestant
+    ig_leader = yes
+    noble = yes
+    birth_date = 1802.9.19
+    interest_group = ig_petty_bourgeoisie
+    ideology = ideology_radical
+    home_region = STATE_CENTRAL_HUNGARY
+    traits = {
+        experienced_political_operator
+        inspirational_orator
+		charismatic
+        direct
+    }
+    on_created = {
+    }
+}
+
+HUN_mihaly_tancsics = {
+    # Mihály Táncsics, writer, politician, and utopian socialist-adjecent character
+    first_name = MihA_ly
+    last_name = TA_ncsics
+    historical = yes
+    culture = cu:hungarian
+    religion = rel:catholic
+    ig_leader = yes
+    birth_date = 1799.4.21
+    interest_group = ig_trade_unions
+    ideology = ideology_radical
+    home_region = STATE_CENTRAL_HUNGARY
+    traits = {
+        literary
+        persistent
+    }
+    on_created = {
+    }
+}
+
+HUN_jozsef_kopacsy = {
+    # József Kopácsy, Archbishop of Esztergom and Primate of Hungary from 1838
+    first_name = JO_zsef
+    last_name = KopA_csy
+    historical = yes
+    culture = cu:hungarian
+    religion = rel:catholic
+    ig_leader = yes
+    birth_date = 1802.9.19
+    interest_group = ig_devout
+    ideology = ideology_traditionalist
+    home_region = STATE_CENTRAL_HUNGARY
+    traits = {
+        pious
+        political_appointee
+    }
+    on_created = {
+    }
+}
+
+HUN_lajos_batthyany = {
+    # Lajos Batthyány, first Hungarian Prime Minister
+    first_name = Lajos
+    last_name = BatthyA_ny
+    historical = yes
+    culture = cu:hungarian
+    religion = rel:catholic
+    ig_leader = yes
+    noble = yes
+    birth_date = 1807.2.10
+    interest_group = ig_landowners
+    ideology = ideology_market_liberal
+    home_region = STATE_SLOVAKIA
+    traits = {
+        experienced_diplomat
+        tactful
+        cautious
+    }
+    on_created = {
+        set_variable = is_married
+    }
+}
+
+HUN_ferenc_kolcsey = {
+    # Ferenc Kölcsey, politician and author of the Hungarian national anthem
+    first_name = Ferenc
+    last_name = KO_lcsey
+    historical = yes
+    culture = cu:hungarian
+    religion = rel:protestant
+    ig_leader = yes
+    noble = yes
+    birth_date = 1790.8.8
+    interest_group = ig_intelligentsia
+    ideology = ideology_radical
+    home_region = STATE_NORTHERN_TRANSYLVANIA
+    traits = {
+        inspirational_orator
+        literary
+        sickly
+    }
+    on_created = {
+    }
+}
+### Hungary - HUN character template file ###
+
+### Executives
+
+HUN_manfred_weiss = { # Manfred Weiss, Manfred Weiss etc.
+	first_name = Manfred
+    last_name = Weiss
+    historical = yes
+    birth_date = 1857.4.11
+    dna = dna_manfred_weiss
+    culture = cu:hungarian
+    interest_group = ig_industrialists
+    ideology = ideology_moderate
+    home_region = STATE_CENTRAL_HUNGARY
+    traits = {
+        ambitious
+        basic_entrepreneur
+    }
+    executive_usage = {
+		country_trigger = {
+			has_dlc_feature = mp1_content
+		}
+		company_trigger = {
+			is_company_type = company_type:company_manfred_weiss
+		}
+	    earliest_usage_date = 1882.1.1
+	    latest_usage_date = 1922.1.1
+		#guaranteed to spawn if possible
+	}
+}
+
+# Generated IG Leaders
+# ARMED FORCES
+HUN_gyorgy_klapka = { # One of the most important Hungarian generals of the Hungarian War of Independence of 1848–1849, politician, member of the Hungarian Parliament, and deputy War Minister.
+    first_name = Gyorgy
+    last_name = Klapka
+    historical = yes
+    culture = cu:hungarian
+    religion = rel:catholic
+    birth_date = 1820.4.7
+    role = character_role_politician
+    interest_group = ig_armed_forces
+    ideology = ideology_moderate
+    home_region = STATE_NORTHERN_TRANSYLVANIA
+    traits = {
+        charismatic
+        tactful
+        popular_commander
+    }
+    interest_group_leader_usage = {
+    	country_trigger = {
+    		has_dlc_feature = ip3_content
+    		c:HUN ?= this
+    	}
+    	interest_group_trigger = {
+    	    is_interest_group_type = ig_armed_forces
+    	}
+    	earliest_usage_date = 1842.1.1
+    	latest_usage_date = 1870.12.31
+    	#guaranteed to spawn if possible
+    }
+}
+
+# DEVOUT
+HUN_janos_scitovszky = { # Hungarian prelate, Cardinal of the Roman Catholic Church and Archbishop of Esztergom and Primate of Hungary
+    first_name = Janos
+    last_name = Scitovszky
+    historical = yes
+    culture = cu:hungarian
+    religion = rel:catholic
+    birth_date = 1785.11.1
+    role = character_role_politician
+    interest_group = ig_devout
+    ideology = ideology_theocrat
+    home_region = STATE_SLOVAKIA
+    traits = {
+        pious
+        imposing
+        inspirational_orator
+    }
+    interest_group_leader_usage = {
+    	country_trigger = {
+    		has_dlc_feature = ip3_content
+    		c:HUN ?= this
+    	}
+    	interest_group_trigger = {
+    	    is_interest_group_type = ig_devout
+    	}
+    	earliest_usage_date = 1836.1.1
+    	latest_usage_date = 1866.10.19
+    	#guaranteed to spawn if possible
+    }
+}
+
+HUN_lajos_haynald = { # a Hungarian Archbishop of Kalocsa-Bács, naturalist, and cardinal
+    first_name = Lajos
+    last_name = Haynald
+    historical = yes
+    culture = cu:hungarian
+    religion = rel:catholic
+    birth_date = 1816.10.3
+    role = character_role_politician
+    interest_group = ig_devout
+    ideology = ideology_moderate
+    home_region = STATE_CENTRAL_HUNGARY
+    traits = {
+        pious
+        cautious
+        inspirational_orator
+    }
+    interest_group_leader_usage = {
+    	country_trigger = {
+    		has_dlc_feature = ip3_content
+    		c:HUN ?= this
+    	}
+    	interest_group_trigger = {
+    	    is_interest_group_type = ig_devout
+    	}
+    	earliest_usage_date = 1842.1.1
+    	latest_usage_date = 1891.7.4
+    	#guaranteed to spawn if possible
+    }
+}
+
+
+
+# INDUSTRIALISTS
+HUN_abraham_ganz = { # a Swiss-born iron manufacturer, machine and technical engineer, entrepreneur, father of Ganz Works. He was the founder and the manager of the company that he made the flagship of the Hungarian economy in the 19th century
+    first_name = Abraham_2
+    last_name = Ganz
+    historical = yes
+    culture = cu:ashkenazi
+    religion = rel:jewish
+    birth_date = 1814.11.6
+    role = character_role_politician
+    interest_group = ig_industrialists
+    ideology = ideology_market_liberal
+    home_region = STATE_WEST_SWITZERLAND
+    traits = {
+        ambitious
+        ruthless
+        experienced_entrepreneur
+    }
+    interest_group_leader_usage = {
+    	country_trigger = {
+    		has_dlc_feature = ip3_content
+    		c:HUN ?= this
+    	}
+    	interest_group_trigger = {
+    	    is_interest_group_type = ig_industrialists
+    	}
+    	earliest_usage_date = 1844.1.1
+    	latest_usage_date = 1867.12.15
+    	#guaranteed to spawn if possible
+    }
+}
+
+HUN_sandor_hatvany_deutsch = { # A leading Hungarian Jewish industrialist, business magnate, philanthropist, investor and art patron
+    first_name = SA_ndor
+    last_name = Hatvany_Deutsch
+    historical = yes
+    culture = cu:hungarian
+    religion = rel:jewish
+    birth_date = 1852.11.12
+    role = character_role_politician
+    interest_group = ig_industrialists
+    ideology = ideology_liberal_leader
+    home_region = STATE_NORTHERN_TRANSYLVANIA
+    traits = {
+        persistent
+        meticulous
+        expert_entrepreneur
+    }
+    interest_group_leader_usage = {
+    	country_trigger = {
+    		has_dlc_feature = ip3_content
+    		c:HUN ?= this
+    	}
+    	interest_group_trigger = {
+    	    is_interest_group_type = ig_industrialists
+    	}
+    	earliest_usage_date = 1889.1.1
+    	latest_usage_date = 1913.2.18
+    	#guaranteed to spawn if possible
+    }
+}
+
+# INTELLIGENTSIA
+HUN_jozsef_eotvos = { #  Hungarian writer and statesman
+    first_name = Jozsef
+    last_name = Eotvos
+    historical = yes
+    culture = cu:hungarian
+    religion = rel:catholic
+    birth_date = 1813.9.3
+    role = character_role_politician
+    interest_group = ig_intelligentsia
+    ideology = ideology_reformer
+    home_region = STATE_CENTRAL_HUNGARY
+    traits = {
+        brave
+        meticulous
+        literary
+    }
+    interest_group_leader_usage = {
+    	country_trigger = {
+    		has_dlc_feature = ip3_content
+    		c:HUN ?= this
+    	}
+    	interest_group_trigger = {
+    	    is_interest_group_type = ig_intelligentsia
+    	}
+    	earliest_usage_date = 1836.1.1
+    	latest_usage_date = 1871.2.2
+    	#guaranteed to spawn if possible
+    }
+}
+
+HUN_agoston_trefort = { # a Hungarian politician, who served as Minister of Religion and Education from 1872 until his death. He was the President of the Hungarian Academy of Sciences
+    first_name = Agoston
+    last_name = Trefort
+    historical = yes
+    culture = cu:hungarian
+    religion = rel:catholic
+    birth_date = 1817.2.7
+    role = character_role_politician
+    interest_group = ig_intelligentsia
+    ideology = ideology_modernizer_leader
+    home_region = STATE_SLOVAKIA
+    traits = {
+        direct
+        erudite
+        experienced_diplomat
+    }
+    interest_group_leader_usage = {
+    	country_trigger = {
+    		has_dlc_feature = ip3_content
+    		c:HUN ?= this
+    	}
+    	interest_group_trigger = {
+    	    is_interest_group_type = ig_intelligentsia
+    	}
+    	earliest_usage_date = 1840.1.1
+    	latest_usage_date = 1888.8.22
+    	#guaranteed to spawn if possible
+    }
+}
+
+# LANDOWNERS
+HUN_gyula_andrassy = { # A Hungarian statesman, who served as Prime Minister of Hungary (1867–1871) and subsequently as Foreign Minister of Austria-Hungary (1871–1879)
+    first_name = Gyula
+    last_name = Andrassy
+    historical = yes
+    dna = dna_gyula_andrassy
+    culture = cu:hungarian
+    religion = rel:catholic
+    birth_date = 1823.3.8
+    role = character_role_politician
+    interest_group = ig_landowners
+    ideology = ideology_reformer
+    home_region = STATE_SLOVAKIA
+    traits = {
+        charismatic
+        tactful
+        inspirational_orator
+    }
+    interest_group_leader_usage = {
+    	country_trigger = {
+    		has_dlc_feature = ip3_content
+    		c:HUN ?= this
+    	}
+    	interest_group_trigger = {
+    	    is_interest_group_type = ig_landowners
+    	}
+    	earliest_usage_date = 1848.3.15
+    	latest_usage_date = 1879.10.8
+    	#guaranteed to spawn if possible
+    }
+}
+
+HUN_istvan_karolyi = { # Count, lord, politician, academic, and founder of Újpest.
+    first_name = IstvA_n
+    last_name = Karolyi
+    historical = yes
+    culture = cu:hungarian
+    religion = rel:catholic
+    birth_date = 1797.11.18
+    role = character_role_politician
+    interest_group = ig_landowners
+    ideology = ideology_traditionalist
+    home_region = STATE_AUSTRIA
+    traits = {
+        imperious
+        direct
+        demagogue
+    }
+    interest_group_leader_usage = {
+    	country_trigger = {
+    		has_dlc_feature = ip3_content
+    		c:HUN ?= this
+    	}
+    	interest_group_trigger = {
+    	    is_interest_group_type = ig_landowners
+    	}
+    	earliest_usage_date = 1836.1.1
+    	latest_usage_date = 1881.6.12
+    	#guaranteed to spawn if possible
+    }
+}
+
+# PETITE BOURGEOISIE
+HUN_ferenc_deak = { # a Hungarian statesman and Minister of Justice. He was known as "The Wise Man of the Nation"
+    first_name = Ferenc
+    last_name = Deak
+    historical = yes
+    dna = dna_ferenc_deak
+    culture = cu:hungarian
+    religion = rel:catholic
+    birth_date = 1803.10.17
+    role = character_role_politician
+    interest_group = ig_petty_bourgeoisie
+    ideology = ideology_liberal_leader
+    home_region = STATE_CENTRAL_HUNGARY
+    traits = {
+        direct
+        honorable
+        experienced_diplomat
+    }
+    interest_group_leader_usage = {
+    	country_trigger = {
+    		has_dlc_feature = ip3_content
+    		c:HUN ?= this
+    	}
+    	interest_group_trigger = {
+    	    is_interest_group_type = ig_petty_bourgeoisie
+    	}
+    	earliest_usage_date = 1836.1.1
+    	latest_usage_date = 1876.1.28
+    	#guaranteed to spawn if possible
+    }
+}
+
+HUN_mor_jokai = { # a Hungarian novelist, dramatist and revolutionary
+    first_name = Mor
+    last_name = Jokai
+    historical = yes
+    culture = cu:hungarian
+    religion = rel:protestant
+    birth_date = 1825.2.18
+    role = character_role_politician
+    interest_group = ig_petty_bourgeoisie
+    ideology = ideology_reformer
+    home_region = STATE_SLOVAKIA
+    traits = {
+        charismatic
+        ambitious
+        inspirational_orator
+    }
+    interest_group_leader_usage = {
+    	country_trigger = {
+    		has_dlc_feature = ip3_content
+    		c:HUN ?= this
+    	}
+    	interest_group_trigger = {
+    	    is_interest_group_type = ig_petty_bourgeoisie
+    	}
+    	earliest_usage_date = 1846.1.1
+    	latest_usage_date = 1904.5.5
+    	#guaranteed to spawn if possible
+    }
+}
+
+# RURAL FOLK
+HUN_gabor_baross = { # a Hungarian statesman in Hungarian parliament
+    first_name = Gabor
+    last_name = Baross
+    historical = yes
+    culture = cu:hungarian
+    religion = rel:catholic
+    birth_date = 1848.7.6
+    role = character_role_politician
+    interest_group = ig_rural_folk
+    ideology = ideology_protectionist
+    home_region = STATE_SLOVAKIA
+    traits = {
+        persistent
+        basic_political_operator
+        master_bureaucrat
+    }
+    interest_group_leader_usage = {
+    	country_trigger = {
+    		has_dlc_feature = ip3_content
+    		c:HUN ?= this
+    	}
+    	interest_group_trigger = {
+    	    is_interest_group_type = ig_rural_folk
+    	}
+    	earliest_usage_date = 1875.1.1
+    	latest_usage_date = 1892.5.8
+    	#guaranteed to spawn if possible
+    }
+}
+
+HUN_jozsef_szell = { # Hungarian lawyer who was the vice-governor of Vasvár County (1842-1848), later (1867-1871) the chief governor. He was a member of Parliament in 1848.
+    first_name = JO_zsef
+    last_name = Szell
+    historical = yes
+    culture = cu:hungarian
+    religion = rel:catholic
+    birth_date = 1801.5.11
+    role = character_role_politician
+    interest_group = ig_rural_folk
+    ideology = ideology_moderate
+    home_region = STATE_CENTRAL_HUNGARY
+    traits = {
+        cautious
+        tactful
+        experienced_diplomat
+    }
+    interest_group_leader_usage = {
+    	country_trigger = {
+    		has_dlc_feature = ip3_content
+    		c:HUN ?= this
+    	}
+    	interest_group_trigger = {
+    	    is_interest_group_type = ig_rural_folk
+    	}
+    	earliest_usage_date = 1836.1.1
+    	latest_usage_date = 1871.4.6
+    	#guaranteed to spawn if possible
+    }
+}
+
+# TRADE UNION
+HUN_laszlo_madarasz = { # a Hungarian politician, a member of the opposition to the reform movement, and later the Minister of Police.
+    first_name = Laszlo
+    last_name = Madarasz
+    historical = yes
+    culture = cu:hungarian
+    religion = rel:catholic
+    birth_date = 1811.9.25
+    role = character_role_politician
+    interest_group = ig_trade_unions
+    ideology = ideology_radical
+    home_region = STATE_CENTRAL_HUNGARY
+    traits = {
+        reckless
+        basic_diplomat
+    }
+    interest_group_leader_usage = {
+    	country_trigger = {
+    		has_dlc_feature = ip3_content
+    		c:HUN ?= this
+    	}
+    	interest_group_trigger = {
+    	    is_interest_group_type = ig_trade_unions
+    	}
+    	earliest_usage_date = 1836.1.1
+    	latest_usage_date = 1849.4.1
+    	#guaranteed to spawn if possible
+    }
+}
+
+HUN_leo_frankel = { # a socialist revolutionary, labour leader of Jewish descent
+    first_name = Leo_2
+    last_name = Frankel
+    historical = yes
+    culture = cu:hungarian
+    religion = rel:jewish
+    birth_date = 1844.2.25
+    role = character_role_politician
+    interest_group = ig_trade_unions
+    ideology = ideology_utopian
+    home_region = STATE_CENTRAL_HUNGARY
+    traits = {
+        persistent
+        erudite
+        demagogue
+    }
+    interest_group_leader_usage = {
+    	country_trigger = {
+    		has_dlc_feature = ip3_content
+    		c:HUN ?= this
+    	}
+    	interest_group_trigger = {
+    	    is_interest_group_type = ig_trade_unions
+    	}
+    	earliest_usage_date = 1861.1.1
+    	latest_usage_date = 1896.3.29
+    	#guaranteed to spawn if possible
+    }
+}
+
+# AGITATORS
+AUS_mihaly_karolyi = { # Count Mihály Károlyi, strict opposer of the monarchy, advocator of land reform, pacifism and a democratic republic.
+	first_name = MihA_ly
+	last_name = Karolyi
+	historical = yes
+	is_agitator = yes
+	culture = cu:south_german
+	religion = rel:catholic
+	interest_group = ig_trade_unions
+	ideology = ideology_radical
+	home_region = STATE_CENTRAL_HUNGARY
+	birth_date = 1875.3.4
+	traits = {
+		reckless
+        wrathful
+        firebrand
+	}
+    agitator_usage = {
+        country_trigger = {
+			c:HUN ?= this
+			has_dlc_feature = ip3_content
+		}
+        interest_group_trigger = {
+			is_interest_group_type = ig_trade_unions
+        }
+        earliest_usage_date = 1900.1.1
+        latest_usage_date = 1936.1.1
+        #guaranteed to spawn if possible
+    }
+}
+
+HUN_sandor_petofi = { # A Hungarian poet and liberal revolutionary
+    first_name = SA_ndor
+    last_name = Petofi
+    historical = yes
+    dna = dna_sandor_petofi
+    culture = cu:hungarian
+    religion = rel:protestant
+    birth_date = 1823.1.1
+    ig_leader = yes
+    interest_group = ig_intelligentsia
+    ideology = ideology_radical
+    home_region = STATE_WESTERN_SERBIA
+    traits = {
+        romantic
+        literary
+        inspirational_orator
+    }
+    agitator_usage = {
+        country_trigger = {
+            OR = {
+                has_dlc_feature = ip3_content
+			    has_dlc_feature = voice_of_the_people_content
+            }
+            c:HUN ?= this
+        }
+        interest_group_trigger = {
+            is_interest_group_type = ig_intelligentsia
+        }
+        earliest_usage_date = 1842.1.1
+        latest_usage_date = 1849.7.31
+        #guaranteed to spawn if possible
+    }
+}
+
+# GENERALS
+HUN_general_artur_gorgei = { # Hungarian military leader renowned for being one of the greatest generals of the Hungarian Revolutionary Army
+    first_name = Artur_2
+    last_name = Gorgei
+    historical = yes
+	culture = cu:hungarian
+	religion = rel:protestant
+    ideology = ideology_jingoist_leader
+    home_region = STATE_SLOVAKIA
+    interest_group = ig_armed_forces
+    birth_date = 1818.1.30
+    commander_rank = commander_rank_4
+    is_general = yes
+    traits = {
+        ambitious
+        experienced_offensive_planner
+        popular_commander
+    }
+    commander_usage = {
+		country_trigger = {
+			has_dlc_feature = ip3_content
+			c:HUN ?= this
+		}
+		role = general
+		earliest_usage_date = 1837.1.1
+		latest_usage_date = 1860.1.1
+		#guaranteed to spawn if possible
+	}
+}
+
+HUN_general_lajos_aulich = { #
+    first_name = Lajos
+    last_name = Aulich
+    historical = yes
+	culture = cu:hungarian
+	religion = rel:catholic
+    ideology = ideology_authoritarian
+    home_region = STATE_SLOVAKIA
+    interest_group = ig_armed_forces
+    birth_date = 1792.5.15
+    commander_rank = commander_rank_3
+    is_general = yes
+    traits = {
+        tactful
+        experienced_defensive_strategist
+        traditionalist_commander
+    }
+    commander_usage = {
+		country_trigger = {
+			has_dlc_feature = ip3_content
+			c:HUN ?= this
+		}
+		role = general
+		earliest_usage_date = 1836.1.1
+		latest_usage_date = 1849.10.6
+		#guaranteed to spawn if possible
+	}
+}
+
+# ADMIRALS
+

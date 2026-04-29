@@ -1,0 +1,193 @@
+﻿# Afghanistan - AFG
+afg_general_mohammed = {
+	first_name = Yar
+	last_name = Mohammed
+	historical = yes
+	culture = cu:pashtun
+	female = no
+	religion = rel:sunni
+	commander_rank = default
+	interest_group = ig_landowners
+	birth_date = 1800.1.1 # Uncertain birth date
+	home_region = STATE_KABUL
+	traits = {
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:AFG
+			c:AFG ?= THIS
+		}
+		role = general
+		earliest_usage_date = 1836.1.1
+		latest_usage_date = 1865.1.1
+		#guaranteed to spawn if possible
+	}
+}
+
+# Japan - JAP
+jap_admiral_togo = {
+	first_name = Heihachiro
+	last_name = Togo
+	historical = yes
+	culture = cu:japanese
+	female = no
+	ideology = ideology_moderate
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1848.1.27
+	home_region = STATE_KYUSHU
+	traits = {
+		expert_naval_commander
+		direct
+		meticulous
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:JAP
+			c:JAP ?= THIS
+		}
+		role = admiral
+		earliest_usage_date = 1883.2.5
+		latest_usage_date = 1913.1.1
+		#guaranteed to spawn if possible
+	}
+}
+jap_general_gentaro = {
+	first_name = Gentaro
+	last_name = Kodama
+	historical = yes
+	culture = cu:japanese
+	female = no
+	ideology = ideology_royalist
+	commander_rank = default
+	interest_group = ig_landowners
+	birth_date = 1852.3.16
+	home_region = STATE_KANSAI
+	traits = {
+		experienced_offensive_planner
+		experienced_colonial_administrator
+		innovative
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:JAP
+			c:JAP ?= THIS
+		}
+		role = general
+		earliest_usage_date = 1889.1.1
+		latest_usage_date = 1906.1.1
+		#guaranteed to spawn if possible
+	}
+}
+jap_general_oyama = {
+	first_name = Iwao
+	last_name = Oyama
+	historical = yes
+	culture = cu:japanese
+	female = no
+	ideology = ideology_royalist
+	commander_rank = default
+	interest_group = ig_landowners
+	birth_date = 1842.11.12
+	home_region = STATE_KYUSHU
+	traits = {
+		experienced_offensive_planner
+		trench_rat
+		reserved
+	}
+	commander_usage = {
+		country_trigger = {
+			exists = c:JAP
+			c:JAP ?= THIS
+		}
+		role = general
+		earliest_usage_date = 1889.1.1
+		latest_usage_date = 1906.1.1
+		#guaranteed to spawn if possible
+	}
+}
+
+# Gwalior - GWA
+gwa_general_tope = {
+	first_name = Tatya
+	last_name = Tope
+	historical = yes
+	dna = dna_tatya_tope
+	culture = cu:marathi
+	female = no
+	religion = rel:hindu
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1814.2.16
+	home_region = STATE_BOMBAY
+	traits = {
+		persistent
+		forest_commander
+		war_criminal
+	}
+	commander_usage = {
+		country_trigger = {
+			has_dlc_feature = ip2_content
+			exists = c:GWA
+			c:GWA ?= THIS
+		}
+		role = general
+		earliest_usage_date = 1850.1.1
+		latest_usage_date = 1870.1.1
+		#guaranteed to spawn if possible
+	}
+}
+
+# Jhansi - JHN
+jhn_rani_of_jhansi = {
+	first_name = Lakshmibai
+	last_name = Newalkar
+	dna = dna_rani_lakshmibai
+	historical = yes
+	culture = cu:marathi
+	female = yes
+	religion = rel:hindu
+	commander_rank = default
+	interest_group = ig_armed_forces
+	ideology = ideology_traditionalist
+	birth_date = 1828.11.19
+	home_region = STATE_AWADH
+	traits = {
+		cruel
+		imposing
+		celebrity_commander
+	}
+	commander_usage = {
+		country_trigger = {
+			has_dlc_feature = ip2_content
+			OR = {
+				AND = {
+					exists = c:JHN
+					c:JHN ?= THIS
+				}
+				AND = {
+					NOT = {
+						exists = c:JHN
+					}
+					any_primary_culture = {
+						has_discrimination_trait_group = heritage_group_south_asian
+					}
+					OR = {
+						AND = {
+							exists = c:BIC
+							has_war_with = c:BIC
+						}
+						AND = {
+							exists = c:GBR
+							has_war_with = c:GBR
+						}
+					}
+				}
+			}
+		}
+		role = general
+		earliest_usage_date = 1846.1.1
+		latest_usage_date = 1875.1.1
+		#guaranteed to spawn if possible
+	}
+}

@@ -1,0 +1,221 @@
+﻿### Egypt character template file ###
+
+# Egypt - EGY
+
+### Royals
+
+egy_muhammad_ali_template = {
+	# Muhammad Ali
+	first_name = "Muhammad_Ali"
+	last_name = "al-_Alawi"
+	historical = yes
+	ruler = yes
+	culture = cu:albanian
+	birth_date = 1769.3.4
+	dna = dna_muhammad_ali
+	interest_group = ig_armed_forces
+	ideology = ideology_jingoist_leader
+	home_region = STATE_LOWER_EGYPT
+	traits = {
+		ambitious
+		persistent
+		innovative
+	}
+}
+
+egy_ibrahim_alawi_template = {
+	# Ibrahim Pasha of Egypt
+	first_name = Ibrahim
+	last_name = "al-_Alawi"
+	historical = yes
+	heir = yes
+	dna = dna_ibrahim_pasha
+	culture = cu:misri
+	is_general = yes
+	age = 47
+	interest_group = ig_armed_forces
+	ideology = ideology_jingoist_leader
+	hq = region_nile_basin
+	commander_rank = commander_rank_3
+	home_region = STATE_LOWER_EGYPT
+	traits = {
+		persistent
+		experienced_offensive_planner
+		pillager
+	}
+}
+
+### Interest Group leaders
+
+# Rifa'a at-Tahtawi, Egyptian reformer, educator, proponent of modernization, and early figure in the Nahda.
+egy_rifa_a_at-Tahtawi = {
+	first_name = "Rifa_a"
+	last_name = "at-Tahtawi"
+	historical = yes
+	ig_leader = yes
+	culture= cu:misri
+	religion = rel:sunni
+	birth_date = 1801.10.15
+
+	interest_group = ig_intelligentsia
+	ideology = ideology_reformer
+	home_region = STATE_UPPER_EGYPT
+
+	traits = {
+		meticulous
+		pious # Proponent of secularism and a scientific renaissance in Egypt, but he /was/ also an imam and had memorized the whole of the Quran
+		persistent
+		erudite
+	}
+}
+
+### Agitators
+
+# check historical_agitators file for agitator_ahmed_urabi, Urabi Pasha
+
+egy_aisha_taymur = {
+	first_name = "Aisha"
+	last_name = "Taymur"
+	historical = yes
+	female = yes
+	birth_date = 1840.1.6 # Born in 1840, exact date unknown. Died May 2nd, 1902.
+	culture = cu:misri
+	religion = rel:sunni
+	interest_group = ig_intelligentsia
+	ideology = ideology_feminist
+	home_region = STATE_LOWER_EGYPT
+	traits = {
+		persistent
+		tactful
+		aesthete
+		literary
+	}
+	agitator_usage = {
+		country_trigger = {
+			c:EGY ?= this
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_intelligentsia
+		}
+		earliest_usage_date = 1885.1.1 # returned to Egypt after the death of her daughter (d. 1873), her father (d. 1885), and her husband (d. 1885), and published her first collection of poetry
+		latest_usage_date = 1895.1.1
+		#guaranteed to spawn if possible
+	}
+}
+
+### Generals
+
+EGY_charles_marie_napoleon_de_beaufort_dhautpoul = { # French military attache to Egypt
+	is_general = yes
+	first_name = Charles-Marie-Napoleon
+	culture = cu:french
+	last_name = de-beaufort-dhautpoul
+	historical = yes
+	dna = dna_charles_marie_napoleon_de_beaufort_dhautpoul
+	interest_group = ig_armed_forces
+	ideology = ideology_bonapartist
+	hq = region_nile_basin
+	commander_rank = commander_rank_2
+	age = 32
+	home_region = STATE_ILE_DE_FRANCE
+	traits = {
+		plains_commander
+	}
+}
+
+EGY_ahmad_pasha_abu_widan = { # EGY, general
+	is_general = yes
+	first_name = Ahmad
+	last_name = Pasha_Abu_Widan
+	historical = yes
+	culture = cu:circassian
+	interest_group = ig_armed_forces
+	ideology = ideology_royalist
+	birth_date = 1798.1.22 # Complete guesswork, but was old enough to be colonial governor of Sudan in 1838
+	hq = region_nile_basin
+	commander_rank = commander_rank_2
+	home_region = STATE_LOWER_EGYPT
+	traits = {
+		basic_offensive_planner
+		cruel
+		experienced_colonial_administrator
+	}
+}
+
+EGY_soliman_al_faransawi = { # Joseph Anthelme Sève
+	is_general = yes
+	first_name = Soliman
+	last_name = al-Faransawi
+	historical = yes
+	dna = dna_soliman_al_faransawi
+	culture = cu:french
+	religion = rel:sunni
+	age = 48
+	hq = region_near_east
+	home_region = STATE_PROVENCE
+	traits = {
+	}
+}
+
+### Admirals
+
+EGY_matush_bey = {
+	is_admiral = yes
+	first_name = Matush
+	last_name = Bey
+	historical = yes
+	culture = cu:albanian
+	age = 56 # died in 1842, so was probably rather old by 1836
+	hq = region_nile_basin
+	commander_rank = commander_rank_2
+	home_region = STATE_ALBANIA
+	traits = {
+	}
+}
+
+EGY_jean_victor_besson = { # EGY, admiral
+	is_admiral = yes
+	first_name = Jean_Victor
+	last_name = Besson
+	historical = yes
+	dna = dna_jean_victor_besson
+	culture = cu:french
+	interest_group = ig_armed_forces
+	ideology = ideology_moderate
+	birth_date = 1778.4.24
+	hq = region_east_africa
+	home_region = STATE_ILE_DE_FRANCE
+	traits = {
+		basic_naval_commander
+	}
+}
+
+### Executives
+
+EGY_talaat_harb = { # Talaat Harb, Misr Spinning and Weaving Company
+    first_name = Talaat
+    last_name = Harb
+    historical = yes
+    culture = cu:misri
+    birth_date = 1867.11.25
+    dna = dna_talaat_harb
+    interest_group = ig_industrialists
+    ideology = ideology_moderate
+    home_region = STATE_LOWER_EGYPT
+    traits = {
+    	persistent
+    	direct
+        basic_entrepreneur
+    }
+    executive_usage = {
+		country_trigger = {
+			has_dlc_feature = mp1_content
+		}
+		company_trigger = {
+			is_company_type = company_type:company_misr
+		}
+		earliest_usage_date = 1907.1.1
+		latest_usage_date = 1965.6.12
+		#guaranteed to spawn if possible
+    }
+}

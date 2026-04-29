@@ -3,10 +3,7 @@
 
 	strategic_regions = {
 		sr:region_indonesia
-		sr:region_japan
 		sr:region_pacific_coast
-		sr:region_mexico
-		sr:region_central_america
 		sr:region_gran_colombia
 		sr:region_andes
 		sr:region_la_plata
@@ -18,9 +15,35 @@
 		STATE_OKHOTSK
 		STATE_SOLOMON_ISLANDS
 		STATE_SOLOMON_ISLANDS
+
+		# Japan
 		STATE_NORTH_ISLAND
 		STATE_NORTH_ISLAND
 		STATE_FIJI
+		STATE_HOKKAIDO
+		STATE_KANTO
+		STATE_KANTO
+		STATE_KYOTO
+		STATE_KANSAI
+		STATE_KYUSHU
+		STATE_KANSAI
+		STATE_KANSAI
+		STATE_SAKHALIN
+		STATE_KYUSHU
+		STATE_KYOTO
+		STATE_KYOTO
+
+		# Pacific Mexico
+		STATE_JALISCO
+		STATE_MEXICO
+		STATE_JALISCO
+		STATE_MEXICO
+		STATE_RIO_GRANDE
+		STATE_RIO_GRANDE
+		STATE_BAJA_CALIFORNIA
+		STATE_BAJA_CALIFORNIA
+		STATE_MEXICO
+		STATE_JALISCO
 	}
 }
 
@@ -28,13 +51,11 @@ geographic_region_alpide_belt = { # approximation of Alpide belt, Austrian geolo
 	short_key = "alpide_belt"
 
 	strategic_regions = {
-		sr:region_iberia
-		sr:region_italy
-		sr:region_balkans
-		sr:region_anatolia
-		sr:region_persia
+		sr:region_southern_europe
+		sr:region_near_east
+		sr:region_greater_persia
 		sr:region_himalayas
-		sr:region_bengal
+		sr:region_north_india
 		sr:region_indochina
 	}
 
@@ -62,7 +83,6 @@ geographic_region_great_rift_valley = { # approximation of East African Rift, or
 
 	strategic_regions = {
 		sr:region_nile_basin
-		sr:region_ethiopia
-		sr:region_zanj
+		sr:region_east_africa
 	}
 }
