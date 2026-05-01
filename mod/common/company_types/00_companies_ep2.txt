@@ -132,6 +132,7 @@ company_yasuda = {
 	}
 
 	potential = {
+		has_dlc_feature = ep2_content
 		has_interest_marker_in_region = sr:region_northeast_asia
 	}
 
@@ -230,6 +231,7 @@ company_tokyo_electric_light_company = {
 	}
 
 	potential = {
+		has_dlc_feature = ep2_content
 		has_interest_marker_in_region = sr:region_northeast_asia
 	}
 
@@ -477,6 +479,7 @@ company_broken_hill_proprietary_company = {
 	}
 
 	potential = {
+		has_dlc_feature = ep2_content
 		has_interest_marker_in_region = sr:region_oceania
 	}
 
@@ -567,6 +570,7 @@ company_ramirez = {
 	}
 
 	potential = {
+		has_dlc_feature = ep2_content
 		has_interest_marker_in_region = sr:region_southern_europe
 	}
 
@@ -653,6 +657,7 @@ company_oriental_consolidated_mining = {
 	}
 
 	potential = {
+		has_dlc_feature = ep2_content
 		has_interest_marker_in_region = sr:region_northeast_asia
 	}
 
@@ -727,6 +732,7 @@ company_siam_electrical_company_limited = {
 	}
 
 	potential = {
+		has_dlc_feature = ep2_content
 		has_interest_marker_in_region = sr:region_indochina
 	}
 
@@ -801,6 +807,7 @@ company_ferranti_ltd = {
 	}
 
 	potential = {
+		has_dlc_feature = ep2_content
 		has_interest_marker_in_region = sr:region_western_europe
 	}
 
@@ -879,6 +886,7 @@ company_van_vlissingen_en_dudok_van_heel = {
 	}
 
 	potential = {
+		has_dlc_feature = ep2_content
 		has_interest_marker_in_region = sr:region_western_europe
 	}
 
@@ -955,6 +963,7 @@ company_maschinenfabrik_oerlikon = {
 	}
 
 	potential = {
+		has_dlc_feature = ep2_content
 		has_interest_marker_in_region = sr:region_central_europe
 	}
 
@@ -1112,6 +1121,7 @@ company_nhm = {
 	}
 
 	potential = {
+		has_dlc_feature = ep2_content
 		has_interest_marker_in_region = sr:region_indonesia
 	}
 
@@ -1214,6 +1224,7 @@ company_white_star_line = {
 	}
 
 	potential = {
+		has_dlc_feature = ep2_content
 		has_interest_marker_in_region = sr:region_western_europe
 	}
 
@@ -1288,6 +1299,7 @@ company_noda_shoyu = {
 	}
 
 	potential = {
+		has_dlc_feature = ep2_content
 		has_interest_marker_in_region = sr:region_northeast_asia
 	}
 

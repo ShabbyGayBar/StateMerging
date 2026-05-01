@@ -36,7 +36,6 @@
 					}
 					add_character_role = character_role_politician
 				}
-				remove_character_role = ruler
 				set_variable = former_shogun_var
 				set_as_interest_group_leader = yes # Landowners leader, typically
 				hidden_effect = { set_character_immortal = yes }
@@ -66,7 +65,6 @@
 				retire_character = yes
 			}
 			ruler ?= {
-				remove_character_role = ruler
 				set_variable = former_shogun_var
 				set_as_interest_group_leader = yes # Landowners leader, typically
 				set_character_immortal = yes

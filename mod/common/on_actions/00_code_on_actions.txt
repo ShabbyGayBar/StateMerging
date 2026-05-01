@@ -2748,10 +2748,6 @@ on_character_death = {
 									c:JAP ?= {
 										set_variable = { name = emperor_var value = PREV }
 									}
-									add_career_length = {
-										years = 75
-										random_range = { 1.0 1.5 } # 75-100 years
-									}
 									if = {
 										limit = {
 											c:JAP ?= { has_variable = one_emperor_one_era }
@@ -2790,10 +2786,6 @@ on_character_death = {
 									c:JAP ?= {
 										set_variable = { name = emperor_var value = PREV }
 									}
-									add_career_length = {
-										years = 75
-										random_range = { 1.0 1.5 } # 75-100 years
-									}
 									set_first_name = Meiji
 								}
 							}
@@ -2825,10 +2817,6 @@ on_character_death = {
 									c:JAP ?= {
 										set_variable = { name = emperor_var value = PREV }
 									}
-									add_career_length = {
-										years = 75
-										random_range = { 1.0 1.5 } # 75-100 years
-									}
 									set_first_name = Taisho
 								}
 							}
@@ -2858,10 +2846,6 @@ on_character_death = {
 								on_created = {
 									c:JAP ?= {
 										set_variable = { name = emperor_var value = PREV }
-									}
-									add_career_length = {
-										years = 75
-										random_range = { 1.0 1.5 } # 75-100 years
 									}
 									set_first_name = Showa
 								}
@@ -3137,37 +3121,6 @@ on_new_ruler = {
 						}
 					}
 					character_japan_ruler_succession_chain_effect = yes
-					if = {
-						limit = {
-							has_variable = house_yamato
-						}
-						c:JAP ?= {
-							set_variable = { name = emperor_var value = PREV }
-						}
-						if = {
-							limit = {
-								NOT = {
-									has_trait = special_character_japanese_emperor
-								}
-							}
-							add_trait = special_character_japanese_emperor
-						}
-					}
-					if = { # Sitting Emperors don't need this role
-						limit = {
-							has_role = character_role_emperor_of_japan
-						}
-						remove_character_role = character_role_emperor_of_japan
-					}
-					if = { # Marks the Shogun as the Shogun
-						limit = {
-							owner = {
-								has_gov_regency = no
-								has_law = law_type:law_bakufu
-							}
-						}
-						set_variable = shogun_var
-					}
 				}
 			}
 
@@ -3204,6 +3157,55 @@ on_new_ruler = {
 						}
 					}
 					set_heir = scope:portuguese_monarch_scope
+				}
+			}
+
+			if = {
+				limit = {
+					c:JAP ?= owner
+				}
+				if = {
+					limit = {
+						has_variable = house_yamato
+					}
+					save_temporary_scope_as = emperor_to_be_scope
+					c:JAP ?= {
+						set_variable = { name = emperor_var value = scope:emperor_to_be_scope }
+					}
+					if = {
+						limit = {
+							NOT = {
+								has_trait = special_character_japanese_emperor
+							}
+						}
+						add_trait = special_character_japanese_emperor
+					}
+					if = {
+						limit = {
+							owner ?= {
+								has_law = law_type:law_bakufu # If a member of the Imperial Family somehow heads the Bakufu, end it instantly
+							}
+						}
+						owner ?= {
+							deactivate_law = law_type:law_bakufu
+							activate_law = law_type:law_oligarchy
+						}
+					}
+				}
+				if = { # Sitting Emperors don't need this role
+					limit = {
+						has_role = character_role_emperor_of_japan
+					}
+					remove_character_role = character_role_emperor_of_japan
+				}
+				if = { # Marks the Shogun as the Shogun
+					limit = {
+						owner = {
+							has_gov_regency = no
+							has_law = law_type:law_bakufu
+						}
+					}
+					set_variable = shogun_var
 				}
 			}
 		}

@@ -72,10 +72,6 @@ JAP_komei_yamato = {
 				}
 			}
 			add_trait = special_character_japanese_emperor
-			add_career_length = {
-				years = 75
-				random_range = { 1.0 1.5 } # 75-100 years
-			}
 		}
 	}
 }
@@ -105,10 +101,6 @@ JAP_meiji_yamato = {
 				}
 			}
 			add_trait = special_character_japanese_emperor
-			add_career_length = {
-				years = 75
-				random_range = { 1.0 1.5 } # 75-100 years
-			}
 		}
 	}
 }
@@ -143,10 +135,6 @@ JAP_taisho_yamato = {
 				}
 			}
 			add_trait = special_character_japanese_emperor
-			add_career_length = {
-				years = 75
-				random_range = { 1.0 1.5 } # 75-100 years
-			}
 		}
 	}
 }
@@ -174,10 +162,6 @@ JAP_showa_yamato = {
 				}
 			}
 			add_trait = special_character_japanese_emperor
-			add_career_length = {
-				years = 75
-				random_range = { 1.0 1.5 } # 75-100 years
-			}
 		}
 	}
 }
@@ -189,24 +173,13 @@ JAP_backup_emperor_template = {
 	culture = cu:japanese
 	religion = rel:shinto
 	noble = yes
-	home_region = STATE_KANTO
+	role = character_role_emperor_of_japan
+	home_region = STATE_KYOTO
 	traits = {
 		special_character_japanese_emperor
 	}
 	on_created = {
 		set_variable = house_yamato
-		if = {
-			limit = {
-				owner = {
-					has_law = law_type:law_bakufu
-				}
-			}
-			add_character_role = character_role_emperor_of_japan
-			add_career_length = {
-				years = 75
-				random_range = { 1.0 1.5 } # 75-100 years
-			}
-		}
 	}
 }
 
