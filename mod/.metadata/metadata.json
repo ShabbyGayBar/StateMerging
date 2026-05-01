@@ -5,7 +5,7 @@
   "supported_game_version" : "1.13.*",
   "short_description" : "Combines multiple states together while keeping the overall pop & buildings unchanged.",
   "thumbnail": "thumbnail.png",
-  "tags" : ["map"],
+  "tags" : ["Gameplay", "Map"],
   "relationships" : [],
   "game_custom_data" : {
     "multiplayer_synchronized" : true
