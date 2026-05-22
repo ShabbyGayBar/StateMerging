@@ -1758,8 +1758,8 @@ JAP_iwasaki_yataro = { # Iwasaki Yatarō, Mitsubishi
 }
 
 JAP_shibusawa_eiichi = { # Shibusawa Eiichi - Politician turned Japanese business magnate
-	first_name = Shibusawa
-	last_name = Eiichi
+	first_name = Eiichi
+	last_name = Shibusawa
 	historical = yes
 	culture = cu:japanese
 	birth_date = 1840.3.16
@@ -1792,8 +1792,8 @@ JAP_shibusawa_eiichi = { # Shibusawa Eiichi - Politician turned Japanese busines
 }
 
 JAP_asano_soichiro = { # Asano Sōichirō - Politician turned Japanese business magnate
-	first_name = Asano
-	last_name = Soichiro
+	first_name = Soichiro
+	last_name = Asano
 	historical = yes
 	culture = cu:japanese
 	birth_date = 1848.4.13
@@ -1825,9 +1825,9 @@ JAP_asano_soichiro = { # Asano Sōichirō - Politician turned Japanese business 
     }
 }
 
-JAP_dan_takuma = { # Dan Takuma, GM of Mitsui 
-	first_name = Dan
-    last_name = Takuma
+JAP_dan_takuma = { # Dan Takuma, GM of Mitsui
+	first_name = Takuma
+    last_name = Dan
     historical = yes
     birth_date = 1857.12.7
     culture = cu:japanese
@@ -1882,8 +1882,8 @@ JAP_koan_ogata = {
 }
 
 JAP_yamagata_aritomo = { # Yamagata Aritomo - Armed Forces
-	first_name = Yamagata
-	last_name = Aritomo
+	first_name = Aritomo
+	last_name = Yamagata
 	historical = yes
 	culture = cu:japanese
 	birth_date = 1838.6.14
@@ -1909,8 +1909,8 @@ JAP_yamagata_aritomo = { # Yamagata Aritomo - Armed Forces
 }
 
 JAP_ito_hirobumi = { # Itō Hirobumi - Armed Forces
-	first_name = ItO_
-	last_name = Hirobumi
+	first_name = Hirobumi
+	last_name = ItO_
 	historical = yes
 	culture = cu:japanese
 	birth_date = 1841.10.16
@@ -1935,15 +1935,15 @@ JAP_ito_hirobumi = { # Itō Hirobumi - Armed Forces
     }
 }
 
-JAP_fukuzawa_yukichi = { # Fukuzawa Yukichi - Rural Folk
-	first_name = Fukuzawa
-	last_name = Yukichi
+JAP_fukuzawa_yukichi = { # Fukuzawa Yukichi - Intelligentsia
+	first_name = Yukichi
+	last_name = Fukuzawa
 	historical = yes
 	culture = cu:japanese
 	birth_date = 1835.1.10
 	role = character_role_politician
-	interest_group = ig_rural_folk
-	ideology = ideology_market_liberal
+	interest_group = ig_intelligentsia
+	ideology = ideology_modernizer_leader
 	home_region = STATE_KANSAI
 	traits = {
 		persistent
@@ -1963,8 +1963,8 @@ JAP_fukuzawa_yukichi = { # Fukuzawa Yukichi - Rural Folk
 }
 
 JAP_sanjo_sanetomi = { # Sanjō Sanetomi - Landowners Mejimportant
-	first_name = SanjO_
-	last_name = Sanetomi
+	first_name = Sanetomi
+	last_name = SanjO_
 	historical = yes
 	culture = cu:japanese
 	birth_date = 1837.3.13
@@ -1991,8 +1991,8 @@ JAP_sanjo_sanetomi = { # Sanjō Sanetomi - Landowners Mejimportant
 }
 
 JAP_matsukata_masayoshi = { # Matsukata Masayoshi - Samurai Mejimportant
-	first_name = Matsukata
-	last_name = Masayoshi
+	first_name = Masayoshi
+	last_name = Matsukata
 	historical = yes
 	culture = cu:japanese
 	birth_date = 1835.2.25
@@ -2018,8 +2018,8 @@ JAP_matsukata_masayoshi = { # Matsukata Masayoshi - Samurai Mejimportant
 }
 
 JAP_hara_takashi = { # Hara Takashi - Intelligentsia first 'common' PM
-	first_name = Hara
-	last_name = Takashi
+	first_name = Takashi
+	last_name = Hara
 	historical = yes
 	culture = cu:japanese
 	birth_date = 1856.3.15
@@ -2045,8 +2045,8 @@ JAP_hara_takashi = { # Hara Takashi - Intelligentsia first 'common' PM
 }
 
 JAP_saionji_kinmochi = { # Saionji Kinmochi - Last surviving genrō and PM
-	first_name = Saionji
-	last_name = Kinmochi
+	first_name = Kinmochi
+	last_name = Saionji
 	historical = yes
 	culture = cu:japanese
 	birth_date = 1849.12.7
@@ -2072,8 +2072,8 @@ JAP_saionji_kinmochi = { # Saionji Kinmochi - Last surviving genrō and PM
 }
 
 JAP_katsura_taro = { # Katsura Tarō - Authoritarian General/PM - second longest serving
-	first_name = Katsura
-	last_name = Taro
+	first_name = Taro
+	last_name = Katsura
 	historical = yes
 	culture = cu:japanese
 	birth_date = 1848.1.4
@@ -2100,8 +2100,8 @@ JAP_katsura_taro = { # Katsura Tarō - Authoritarian General/PM - second longest
 }
 
 JAP_okuma_shigenobu = { # Ōkuma Shigenobu - PM - Pro-western
-	first_name = O_kuma
-	last_name = Shigenobu
+	first_name = Shigenobu
+	last_name = O_kuma
 	historical = yes
 	culture = cu:japanese
 	birth_date = 1838.1.10
@@ -2127,8 +2127,8 @@ JAP_okuma_shigenobu = { # Ōkuma Shigenobu - PM - Pro-western
 }
 
 JAP_kodama_gentaro = { # Kodama Gentaro - Authoritarian General
-	first_name = Kodama
-	last_name = Gentaro
+	first_name = Gentaro
+	last_name = Kodama
 	historical = yes
 	culture = cu:japanese
 	birth_date = 1852.3.16
@@ -2187,8 +2187,8 @@ JAP_maejima_hisoka = {
 }
 
 JAP_hamaguchi_osachi = { # Hamaguchi Osachi - Liberal PM who got assassinated
-	first_name = Hamaguchi
-	last_name = Osachi
+	first_name = Osachi
+	last_name = Hamaguchi
 	historical = yes
 	culture = cu:japanese
 	birth_date = 1870.4.1
@@ -2214,8 +2214,8 @@ JAP_hamaguchi_osachi = { # Hamaguchi Osachi - Liberal PM who got assassinated
 }
 
 JAP_goto_shinpei = { # Gotō Shinpei - Taiwan Administrator/Modernizer
-	first_name = Got_O
-	last_name = Shinpei
+	first_name = Shinpei
+	last_name = Got_O
 	historical = yes
 	culture = cu:japanese
 	birth_date = 1857.7.24
@@ -2244,9 +2244,9 @@ JAP_goto_shinpei = { # Gotō Shinpei - Taiwan Administrator/Modernizer
     }
 }
 
-JAP_suzuki_bunji = { # Suzuki Bunji - Christian Labor Leader 
-	first_name = Suzuki
-	last_name = Bunji
+JAP_suzuki_bunji = { # Suzuki Bunji - Christian Labor Leader
+	first_name = Bunji
+	last_name = Suzuki
 	historical = yes
 	culture = cu:japanese
 	birth_date = 1885.9.4
@@ -2271,8 +2271,8 @@ JAP_suzuki_bunji = { # Suzuki Bunji - Christian Labor Leader
 }
 
 JAP_iwakura_tomomi = { # Iwakura Tomomi - Leading figures of Meji Restoration
-	first_name = Iwakura
-	last_name = Tomomi
+	first_name = Tomomi
+	last_name = Iwakura
 	historical = yes
 	culture = cu:japanese
 	birth_date = 1825.10.26
@@ -2300,8 +2300,8 @@ JAP_iwakura_tomomi = { # Iwakura Tomomi - Leading figures of Meji Restoration
 ## Admirals / Generals
 
 JAP_togo_heihachiro = { # Tōgō Heihachirō - Nelson of the east
-	first_name = Togo
-	last_name = HeihachirO_
+	first_name = HeihachirO_
+	last_name = Togo
 	historical = yes
 	commander_rank = commander_rank_2
 	is_admiral = yes
@@ -2328,8 +2328,8 @@ JAP_togo_heihachiro = { # Tōgō Heihachirō - Nelson of the east
 }
 
 JAP_nogi_maresuke = { # Nogi Maresuke - Junshi War hero
-	first_name = Nogi
-	last_name = Maresuke
+	first_name = Maresuke
+	last_name = Nogi
 	historical = yes
 	commander_rank = commander_rank_2
 	is_general = yes
@@ -2355,8 +2355,8 @@ JAP_nogi_maresuke = { # Nogi Maresuke - Junshi War hero
 }
 
 JAP_yamamoto_gonnohyoe = { # Yamamoto Gonnohyoe - Admiral who wrote gunnery manual for Navy
-	first_name = Yamamoto
-	last_name = Gonnohyoe
+	first_name = Gonnohyoe
+	last_name = Yamamoto
 	historical = yes
 	commander_rank = commander_rank_1
 	is_admiral = yes
@@ -2382,8 +2382,8 @@ JAP_yamamoto_gonnohyoe = { # Yamamoto Gonnohyoe - Admiral who wrote gunnery manu
 }
 
 JAP_oku_yasukata = { # Oku Yasukata - Influential Formative General
-	first_name = Oku
-	last_name = Yasukata
+	first_name = Yasukata
+	last_name = Oku
 	historical = yes
 	commander_rank = commander_rank_1
 	is_general = yes
@@ -2409,8 +2409,8 @@ JAP_oku_yasukata = { # Oku Yasukata - Influential Formative General
 }
 
 JAP_hasegawa_yoshimichi = { # Hasegawa Yoshimichi - Korea Administrator
-	first_name = Hasegawa
-	last_name = Yoshimichi
+	first_name = Yoshimichi
+	last_name = Hasegawa
 	historical = yes
 	culture = cu:japanese
 	birth_date = 1850.10.1
@@ -2564,8 +2564,8 @@ JAP_chikako_yamato = {
 # Agitators
 
 JAP_kume_kunitake = {
-	first_name = Kume
-	last_name = Kunitake
+	first_name = Kunitake
+	last_name = Kume
 	culture = cu:japanese
 	birth_date = 1839.8.19
 	dna = dna_kume_kunitake
@@ -2601,8 +2601,8 @@ JAP_aizawa_seishisai = {
 }
 
 JAP_nakae_chomin = { # Nakae Chōmin - Petty Bourgeoisie
-	first_name = Nakae
-	last_name = chO_min
+	first_name = chO_min
+	last_name = Nakae
 	historical = yes
 	culture = cu:japanese
 	birth_date = 1847.12.8
@@ -2629,8 +2629,8 @@ JAP_nakae_chomin = { # Nakae Chōmin - Petty Bourgeoisie
 }
 
 JAP_kotoku_denjiro = { # Kōtoku Denjirō - Socialist Anarchist
-	first_name = KO_toku
-	last_name = DenjirO_
+	first_name = DenjirO_
+	last_name = KO_toku
 	historical = yes
 	culture = cu:japanese
 	birth_date = 1871.11.5
@@ -2684,8 +2684,8 @@ JAP_yukio_ozaki = { # Yukio Ozaki - Liberal Politician - Father of Japanese Cons
 }
 
 JAP_inoue_kaoru = { # Inoue Kaoru - Anti-western Samurai turned Pro-western Chōshū
-	first_name = Inoue
-	last_name = Kaoru
+	first_name = Kaoru
+	last_name = Inoue
 	historical = yes
 	culture = cu:japanese
 	birth_date = 1836.1.16
@@ -2712,8 +2712,8 @@ JAP_inoue_kaoru = { # Inoue Kaoru - Anti-western Samurai turned Pro-western Chō
 }
 
 JAP_kishida_toshiko = { # Kishida Toshiko - Feminist advocate for women’s rights
-	first_name = Kishida
-	last_name = Toshiko
+	first_name = Toshiko
+	last_name = Kishida
 	historical = yes
 	female = yes
 	culture = cu:japanese
@@ -2741,8 +2741,8 @@ JAP_kishida_toshiko = { # Kishida Toshiko - Feminist advocate for women’s righ
 }
 
 JAP_hiratsuka_raicho = { # Hiratsuka Raichō - Feminist political activist
-	first_name = Hiratsuka
-	last_name = RaichO_
+	first_name = RaichO_
+	last_name = Hiratsuka
 	historical = yes
 	female = yes
 	culture = cu:japanese
@@ -2770,8 +2770,8 @@ JAP_hiratsuka_raicho = { # Hiratsuka Raichō - Feminist political activist
 }
 
 JAP_yosano_akiko = { # Yosano Akiko - Feminist pacifist poet
-	first_name = Yosano
-	last_name = Akiko
+	first_name = Akiko
+	last_name = Yosano
 	historical = yes
 	female = yes
 	culture = cu:japanese
@@ -2800,8 +2800,8 @@ JAP_yosano_akiko = { # Yosano Akiko - Feminist pacifist poet
 }
 
 JAP_sakamoto_ryoma = { # Sakamoto Ryōma - Reformist Samurai
-	first_name = Sakamoto
-	last_name = RyO_ma
+	first_name = RyO_ma
+	last_name = Sakamoto
 	historical = yes
 	culture = cu:japanese
 	birth_date = 1836.1.3
@@ -2858,8 +2858,8 @@ JAP_ichiyo_higuchi = { # Ichiyō Higuchi - First female writer of modern littera
 }
 
 JAP_tanaka_chigaku = { # Tanaka Chigaku - Religious Nationalist
-	first_name = Tanaka
-	last_name = Chigaku
+	first_name = Chigaku
+	last_name = Tanaka
 	historical = yes
 	culture = cu:japanese
 	birth_date = 1861.12.14
@@ -2887,8 +2887,8 @@ JAP_tanaka_chigaku = { # Tanaka Chigaku - Religious Nationalist
 }
 
 JAP_kagawa_toyohiko = { # Kagawa Toyohiko - Gandhi of Japan
-	first_name = Kagawa
-	last_name = Toyohiko
+	first_name = Toyohiko
+	last_name = Kagawa
 	historical = yes
 	culture = cu:japanese
 	birth_date = 1888.7.10
@@ -2914,9 +2914,9 @@ JAP_kagawa_toyohiko = { # Kagawa Toyohiko - Gandhi of Japan
     }
 }
 
-JAP_sakai_toshihiko = { # Sakai Toshihiko - Socialist Activist 
-	first_name = Sakai
-	last_name = Toshihiko
+JAP_sakai_toshihiko = { # Sakai Toshihiko - Socialist Activist
+	first_name = Toshihiko
+	last_name = Sakai
 	historical = yes
 	culture = cu:japanese
 	birth_date = 1871.1.15

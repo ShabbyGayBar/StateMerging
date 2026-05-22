@@ -115,6 +115,7 @@ on_game_started_after_lobby = {
 
 				}
 			}
+			je_meiji_restoration_update_daimyos = yes
 		}
 	}
 }
@@ -830,12 +831,10 @@ on_monthly_pulse_country = {
 				has_technology_researched = egalitarianism
 				country_rank >= rank_value:major_power
 				OR = {
-					any_political_movement = {
-						OR = {
-							movement_is_liberal = yes
-							movement_is_socialist = yes
+					AND = {
+						country_has_springtime_revolution = {
+							THRESHOLD = 0.25
 						}
-						is_insurrectionary = yes
 					}
 					AND = {
 						c:FRA ?= this
@@ -849,6 +848,7 @@ on_monthly_pulse_country = {
 				name = peoples_springtime_recent
 				days = normal_modifier_time
 			}
+			debug_log = "Springtime of the Peoples Started"
 			every_country_in_europe = {
 				limit = {
 					has_technology_researched = egalitarianism
@@ -989,7 +989,7 @@ on_monthly_pulse_country = {
 				on_created = {
 					if = {
 						limit = { is_in_exile_pool = no }
-						exile_character = yes
+						exile_character_with_role_cleanup = yes
 					}
 				}
 			}

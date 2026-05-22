@@ -23199,6 +23199,20 @@
                 }
             }
             create_building = {
+                building = building_arms_industry
+                add_ownership = {
+                    country = {
+                        country = c:USA
+                        levels = 1
+                    }
+                }
+                reserves = 1
+                activate_production_methods = {
+                    pm_muskets
+                    pm_automation_disabled
+                }
+            }
+            create_building = {
                 building = building_university
                 add_ownership = {
                     country = {
@@ -44040,7 +44054,7 @@
                 add_ownership = {
                     country = {
                         country = c:RUS
-                        levels = 8
+                        levels = 14
                     }
                 }
                 reserves = 1
@@ -44140,7 +44154,7 @@
                 add_ownership = {
                     country = {
                         country = c:RUS
-                        levels = 4
+                        levels = 6
                     }
                 }
                 reserves = 1
@@ -44363,7 +44377,7 @@
                 add_ownership = {
                     country = {
                         country = c:RUS
-                        levels = 2
+                        levels = 16
                     }
                 }
                 reserves = 1
@@ -44425,7 +44439,7 @@
                     building = {
                         type = building_manor_house
                         country = c:RUS
-                        levels = 8
+                        levels = 12
                         region = STATE_INGRIA
                     }
                     building = {
@@ -44773,6 +44787,19 @@
                 }
             }
             create_building = {
+                building = building_naval_administration
+                add_ownership = {
+                    country = {
+                        country = c:RUS
+                        levels = 2
+                    }
+                }
+                reserves = 1
+                activate_production_methods = {
+                    pm_simple_sailor_recruitment
+                }
+            }
+            create_building = {
                 building = building_tobacco_plantation
                 add_ownership = {
                     building = {
@@ -45000,6 +45027,19 @@
                 }
             }
             create_building = {
+                building = building_naval_administration
+                add_ownership = {
+                    country = {
+                        country = c:RUS
+                        levels = 4
+                    }
+                }
+                reserves = 1
+                activate_production_methods = {
+                    pm_simple_sailor_recruitment
+                }
+            }
+            create_building = {
                 building = building_shipyard
                 add_ownership = {
                     building = {
@@ -45038,7 +45078,7 @@
                 add_ownership = {
                     country = {
                         country = c:RUS
-                        levels = 1
+                        levels = 2
                     }
                 }
                 reserves = 1
@@ -45650,6 +45690,19 @@
                     pm_no_equipment
                     pm_road_carts
                     pm_hardwood
+                }
+            }
+            create_building = {
+                building = building_naval_administration
+                add_ownership = {
+                    country = {
+                        country = c:RUS
+                        levels = 8
+                    }
+                }
+                reserves = 1
+                activate_production_methods = {
+                    pm_simple_sailor_recruitment
                 }
             }
             create_building = {

@@ -81,8 +81,3 @@ REPLACE_OR_CREATE:usa_state_counter = {
         }
     }
 }
-
-REPLACE_OR_CREATE:greek_homeland_states_owned_to_activate_min = 1
-REPLACE_OR_CREATE:greek_homeland_states_owned_to_complete_min = 2
-REPLACE_OR_CREATE:greek_homeland_states_owned_to_complete_max = 5
-REPLACE_OR_CREATE:byzantium_state_region_owned_to_complete = 4
