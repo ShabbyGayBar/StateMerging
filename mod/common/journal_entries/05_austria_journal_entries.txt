@@ -49,7 +49,7 @@
 					state_region = {
 						is_homeland = cu:hungarian
 					}
-					count >= 8
+					count >= 4
 					is_incorporated = yes
 					turmoil < 0.05
 				}
