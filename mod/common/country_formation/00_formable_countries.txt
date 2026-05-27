@@ -114,7 +114,7 @@ BYZ = {
 		STATE_ATTICA
 		STATE_ATTICA
 		STATE_ATTICA
-		# STATE_WESTERN_SERBIA
+		STATE_WESTERN_SERBIA
 		STATE_ATTICA
 		STATE_BULGARIA
 		STATE_EASTERN_THRACE
@@ -225,7 +225,7 @@ IBE = {
 		has_technology_researched = pan-nationalism
 		trigger_if = {
 			limit = {
-				capital = {
+				capital ?= {
 					is_in_geographic_region = geographic_region_iberia_old
 				}
 				any_country_in_iberia_old = {
@@ -1078,7 +1078,7 @@ LBY = {
 	ai_will_do = { always = yes }
 
 	potential = {
-		capital.state_region = {
+		capital.state_region ?= {
 			OR = {
 				this = s:STATE_LIBYA
 				this = s:STATE_LIBYA

@@ -2050,7 +2050,7 @@ STATE_SLOVENIA_state_name_assign = {
             }
         }
 
-        set_state_name = STATE_SLOVENIA_german # Carinola made up the majority of modern day Slovenia, but it's not a perfect fit.
+        set_state_name = STATE_SLOVENIA_german # Carniola made up the majority of modern day Slovenia, but it's not a perfect fit.
 
         set_hub_name = {
             type = city
@@ -2081,7 +2081,7 @@ STATE_SLOVENIA_state_name_assign = {
             }
         }
 
-        set_state_name = STATE_SLOVENIA_italian # Carinola made up the majority of modern day Slovenia, but it's not a perfect fit.
+        set_state_name = STATE_SLOVENIA_italian # Carniola made up the majority of modern day Slovenia, but it's not a perfect fit.
 
         set_hub_name = {
             type = city

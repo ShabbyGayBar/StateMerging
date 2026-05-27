@@ -663,7 +663,7 @@ je_spa_economic_regeneration_land_reform = {
                     is_homeland = cu:spanish
                 }
                 average_sol > 15
-                count >= 4
+                count >= 12
             }
             OR = {
                 AND = {
@@ -700,7 +700,7 @@ je_spa_economic_regeneration_land_reform = {
                     is_homeland = cu:spanish
                 }
                 average_sol > 10
-                count >= 4
+                count >= 12
             }
             OR = {
                 AND = {
@@ -908,7 +908,7 @@ je_spa_economic_regeneration_railways = {
                     is_building_type = building_railway
                     level >= 3
                 }
-                count >= 4
+                count >= 12
             }
         }
         trigger_else_if = {
@@ -923,7 +923,7 @@ je_spa_economic_regeneration_railways = {
                     is_building_type = building_railway
                     level >= 1
                 }
-                count >= 4
+                count >= 12
             }
         }
     }

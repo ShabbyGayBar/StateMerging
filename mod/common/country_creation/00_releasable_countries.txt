@@ -1,19 +1,45 @@
-﻿UBD = {
+﻿#   Root                     = the country that would give up the land
+#
+#   scope:war_goal_holder    = The country enforcing/pressing a war goal.
+#                              this scope is not set when the release is done outside of a war goal context.
+# 
+# Can have assymetric requirements for self releasing vs being forced to release, otherwise do as follows.
+# e.g.:
+#    OR = {
+#			scope:war_goal_holder ?= {
+#				has_technology_researched = pan-nationalism
+#			}
+#			AND = {
+#				NOT = { exists = scope:war_goal_holder }
+#				has_technology_researched = pan-nationalism
+#			}
+#		}
+
+UBD = {
 	states = { STATE_VILNIUS STATE_VILNIUS STATE_TALINN STATE_TALINN STATE_RIGA STATE_RIGA }
 
-	required_num_states = 1
+	required_num_states = 3
 
 	ai_will_do = { always = no }
 
 	possible = {
-		has_technology_researched = pan-nationalism
+		# Checks if the technology is researched by the war goal holder (if any) or by the releasing country
+		OR = {
+			scope:war_goal_holder ?= {
+				has_technology_researched = pan-nationalism
+			}
+			AND = {
+				NOT = { exists = scope:war_goal_holder }
+				has_technology_researched = pan-nationalism
+			}
+		}
 	}
 }
 
 AUS = {
 	use_culture_states = yes
 
-	required_num_states = 1
+	required_num_states = 2
 
 	ai_will_do = { always = no }
 }
@@ -21,7 +47,7 @@ AUS = {
 IRE = {
 	use_culture_states = yes
 
-	required_num_states = 1
+	required_num_states = 2
 
 	ai_will_do = { always = no }
 }
@@ -105,7 +131,7 @@ ENG = {
 		STATE_YORKSHIRE
 	}
 
-	required_num_states = 1
+	required_num_states = 3
 
 	ai_will_do = { always = no }
 }
@@ -136,7 +162,7 @@ SWE = {
 		STATE_SVEALAND
 	}
 
-	required_num_states = 1
+	required_num_states = 2
 
 	ai_will_do = { always = no }
 }
@@ -150,7 +176,7 @@ FIN = {
 		STATE_UUSIMAA
 	}
 
-	required_num_states = 1
+	required_num_states = 2
 
 	ai_will_do = { always = no }
 }
@@ -158,7 +184,7 @@ FIN = {
 NOR = {
 	use_culture_states = yes
 
-	required_num_states = 1
+	required_num_states = 2
 
 	ai_will_do = { always = no }
 }
@@ -166,7 +192,7 @@ NOR = {
 DEN = {
 	use_culture_states = yes
 
-	required_num_states = 1
+	required_num_states = 2
 
 	ai_will_do = { always = no }
 }
@@ -180,7 +206,7 @@ ICL = {
 CSA = {
 	use_culture_states = yes
 
-	required_num_states = 1
+	required_num_states = 5
 
 	ai_will_do = { always = no }
 
@@ -221,7 +247,7 @@ AGJ = {
 		STATE_PERNAMBUCO
 	}
 
-	required_num_states = 1
+	required_num_states = 2
 
 	ai_will_do = { always = no }
 }
@@ -321,7 +347,7 @@ JAN = {
 POL = {
 	states = { STATE_GREATER_POLAND STATE_GREATER_POLAND STATE_WEST_GALICIA STATE_WEST_GALICIA STATE_WEST_PRUSSIA STATE_WEST_PRUSSIA STATE_UPPER_SILESIA }
 
-	required_num_states = 1
+	required_num_states = 3
 
 	ai_will_do = { always = no }
 }
@@ -329,7 +355,7 @@ POL = {
 UKR = {
 	states = { STATE_EAST_GALICIA STATE_KIEV STATE_EAST_GALICIA STATE_KIEV STATE_CRIMEA STATE_KHARKOV STATE_CRIMEA STATE_KHARKOV }
 
-	required_num_states = 1
+	required_num_states = 3
 
 	ai_will_do = { always = no }
 }
@@ -337,7 +363,7 @@ UKR = {
 GAL = {
 	states = { STATE_EAST_GALICIA STATE_WEST_GALICIA STATE_MOLDAVIA }
 
-	required_num_states = 1
+	required_num_states = 2
 
 	ai_will_do = { always = no }
 }
@@ -345,7 +371,7 @@ GAL = {
 HUN = {
 	use_culture_states = yes
 
-	required_num_states = 1
+	required_num_states = 2
 
 	ai_will_do = { always = no }
 }
@@ -353,7 +379,7 @@ HUN = {
 ROM = {
 	use_culture_states = yes
 
-	required_num_states = 1
+	required_num_states = 3
 
 	ai_will_do = { always = no }
 }
@@ -361,7 +387,7 @@ ROM = {
 BOH = {
 	states = { STATE_BOHEMIA STATE_BOHEMIA STATE_UPPER_SILESIA }
 
-	required_num_states = 1
+	required_num_states = 2
 
 	ai_will_do = { always = no }
 }
@@ -372,7 +398,7 @@ CRO = {
 		STATE_CROATIA
 		STATE_CROATIA
 	}
-	required_num_states = 1
+	required_num_states = 2
 
 	ai_will_do = { always = no }
 }
@@ -399,7 +425,7 @@ LOM = {
 BYE = {
 	use_culture_states = yes
 
-	required_num_states = 1
+	required_num_states = 2
 
 	ai_will_do = { always = no }
 }
@@ -441,7 +467,7 @@ WES = {
 		STATE_RHINELAND
 	}
 
-	required_num_states = 1
+	required_num_states = 2
 
 	ai_will_do = { always = no }
 }
@@ -457,7 +483,7 @@ PRU = {
 		STATE_WEST_PRUSSIA
 	}
 
-	required_num_states = 2
+	required_num_states = 3
 
 	ai_will_do = { always = no }
 }
@@ -465,7 +491,7 @@ PRU = {
 JAP = {
 	use_culture_states = yes
 
-	required_num_states = 2
+	required_num_states = 3
 
 	ai_will_do = { always = no }
 }
@@ -473,7 +499,7 @@ JAP = {
 RUS = {
 	use_culture_states = yes
 
-	required_num_states = 3
+	required_num_states = 5
 
 	ai_will_do = { always = no }
 }
@@ -572,7 +598,7 @@ DOM = {
 ATL = {
 	states = { STATE_WESTERN_CUBA STATE_WESTERN_CUBA STATE_WESTERN_CUBA STATE_WEST_INDIES STATE_HAITI }
 
-	required_num_states = 1
+	required_num_states = 4
 
 	ai_will_do = { always = no }
 }
@@ -583,7 +609,7 @@ WIN = {
 		STATE_WEST_INDIES
 	}
 
-	required_num_states = 1
+	required_num_states = 2
 
 	ai_will_do = { always = no }
 }
@@ -597,7 +623,7 @@ MAY = {
 CAT = {
 	use_culture_states = yes
 
-	required_num_states = 1
+	required_num_states = 2
 
 	ai_will_do = { always = no }
 }
@@ -605,7 +631,7 @@ CAT = {
 SPA = {
 	use_culture_states = yes
 
-	required_num_states = 1
+	required_num_states = 2
 
 	ai_will_do = { always = no }
 }
@@ -704,7 +730,7 @@ PHI = {
 		STATE_LUZON
 		STATE_LUZON
 	}
-	required_num_states = 1
+	required_num_states = 2
 	ai_will_do = { always = no }
 }
 
@@ -752,7 +778,7 @@ CAS = {
 CAN = {
 	use_culture_states = yes
 
-	required_num_states = 1
+	required_num_states = 4
 
 	ai_will_do = { always = no }
 }
@@ -927,7 +953,7 @@ SMI = {
 GBR = {
 	use_culture_states = yes
 
-	required_num_states = 3
+	required_num_states = 6
 
 	ai_will_do = { always = no }
 }
@@ -1113,7 +1139,16 @@ NCA = {
 		STATE_DAGESTAN
 	}
 	possible = {
-		has_technology_researched = pan-nationalism
+		# Checks if the technology is researched by the war goal holder (if any) or by the releasing country
+		OR = {
+			scope:war_goal_holder ?= {
+				has_technology_researched = pan-nationalism
+			}
+			AND = {
+				NOT = { exists = scope:war_goal_holder }
+				has_technology_researched = pan-nationalism
+			}
+		}
 	}
 	ai_will_do = { always = no }
 }
@@ -1226,10 +1261,19 @@ YUG = {
 		STATE_CROATIA
 	}
 
-	required_num_states = 1
+	required_num_states = 3
 
 	possible = {
-		has_technology_researched = pan-nationalism
+		# Checks if the technology is researched by the war goal holder (if any) or by the releasing country
+		OR = {
+			scope:war_goal_holder ?= {
+				has_technology_researched = pan-nationalism
+			}
+			AND = {
+				NOT = { exists = scope:war_goal_holder }
+				has_technology_researched = pan-nationalism
+			}
+		}
 	}
 
 	ai_will_do = { always = no }
@@ -1251,7 +1295,7 @@ CLM = {
 		STATE_CAUCA
 	}
 
-	required_num_states = 1
+	required_num_states = 3
 
 	ai_will_do = { always = no }
 }
@@ -1259,7 +1303,7 @@ CLM = {
 TUR = {
 	use_culture_states = yes
 
-	required_num_states = 2
+	required_num_states = 5
 
 	ai_will_do = { always = no }
 }
@@ -1275,7 +1319,7 @@ DZG = {
 EGY = {
 	use_culture_states = yes
 
-	required_num_states = 1
+	required_num_states = 3
 
 	ai_will_do = { always = no }
 }
@@ -1284,10 +1328,19 @@ CZH = {
 
 	ai_will_do = { always = no }
 
-	required_num_states = 1
+	required_num_states = 3
 
 	possible = {
-		has_technology_researched = pan-nationalism
+		# Checks if the technology is researched by the war goal holder (if any) or by the releasing country
+		OR = {
+			scope:war_goal_holder ?= {
+				has_technology_researched = pan-nationalism
+			}
+			AND = {
+				NOT = { exists = scope:war_goal_holder }
+				has_technology_researched = pan-nationalism
+			}
+		}
 	}
 }
 
@@ -1315,7 +1368,7 @@ SIC = {
 
 UCA = {
 	use_culture_states = yes
-	required_num_states = 1
+	required_num_states = 3
 
 	ai_will_do = { always = no }
 }
@@ -1347,7 +1400,16 @@ KUR = {
 	ai_will_do = { always = no }
 
 	possible = {
-		has_technology_researched = nationalism
+		# Checks if the technology is researched by the war goal holder (if any) or by the releasing country
+		OR = {
+			scope:war_goal_holder ?= {
+				has_technology_researched = nationalism
+			}
+			AND = {
+				NOT = { exists = scope:war_goal_holder }
+				has_technology_researched = nationalism
+			}
+		}
 	}
 }
 
@@ -1367,7 +1429,16 @@ ISR = {
 	ai_will_do = { always = no }
 
 	possible = {
-		has_technology_researched = pan-nationalism
+		# Checks if the technology is researched by the war goal holder (if any) or by the releasing country
+		OR = {
+			scope:war_goal_holder ?= {
+				has_technology_researched = pan-nationalism
+			}
+			AND = {
+				NOT = { exists = scope:war_goal_holder }
+				has_technology_researched = pan-nationalism
+			}
+		}
 	}
 }
 
@@ -1382,7 +1453,16 @@ PAL = {
 	ai_will_do = { always = no }
 
 	possible = {
-		has_technology_researched = nationalism
+		# Checks if the technology is researched by the war goal holder (if any) or by the releasing country
+		OR = {
+			scope:war_goal_holder ?= {
+				has_technology_researched = nationalism
+			}
+			AND = {
+				NOT = { exists = scope:war_goal_holder }
+				has_technology_researched = nationalism
+			}
+		}
 	}
 }
 
@@ -1408,12 +1488,21 @@ SIB = {
 		STATE_URAL
 	}
 
-	required_num_states = 2
+	required_num_states = 4
 
 	ai_will_do = { always = no }
 
 	possible = {
-		has_technology_researched = pan-nationalism
+		# Checks if the technology is researched by the war goal holder (if any) or by the releasing country
+		OR = {
+			scope:war_goal_holder ?= {
+				has_technology_researched = pan-nationalism
+			}
+			AND = {
+				NOT = { exists = scope:war_goal_holder }
+				has_technology_researched = pan-nationalism
+			}
+		}
 	}
 }
 
@@ -1440,7 +1529,7 @@ CAL = {
 USA = {
 	use_culture_states = yes
 
-	required_num_states = 5
+	required_num_states = 10
 
 	ai_will_do = { always = no }
 }
@@ -1448,7 +1537,7 @@ USA = {
 BEL = {
 	use_culture_states = yes
 
-	required_num_states = 1
+	required_num_states = 2
 
 	ai_will_do = { always = no }
 }
@@ -1563,7 +1652,7 @@ SAR = {
 		STATE_SARDINIA
 		STATE_PROVENCE
 	}
-	required_num_states = 1
+	required_num_states = 2
 
 	ai_will_do = { always = no }
 }
@@ -1591,7 +1680,7 @@ SWI = {
 GRE = {
 	use_culture_states = yes
 
-	required_num_states = 1
+	required_num_states = 2
 
 	ai_will_do = { always = no }
 }
@@ -1639,11 +1728,20 @@ AFG = {
 		STATE_KABUL
 		STATE_HERAT
 	}
-	required_num_states = 1
+	required_num_states = 4
 	ai_will_do = { always = no }
 
 	possible = {
-		has_technology_researched = pan-nationalism
+		# Checks if the technology is researched by the war goal holder (if any) or by the releasing country
+		OR = {
+			scope:war_goal_holder ?= {
+				has_technology_researched = pan-nationalism
+			}
+			AND = {
+				NOT = { exists = scope:war_goal_holder }
+				has_technology_researched = pan-nationalism
+			}
+		}
 	}
 }
 
@@ -1693,7 +1791,7 @@ OMA = {
 
 PER = {
 	use_culture_states = yes
-	required_num_states = 2
+	required_num_states = 4
 	ai_will_do = { always = no }
 }
 
@@ -1709,7 +1807,16 @@ YEM = {
 		STATE_YEMEN
 	}
 	possible = {
-		has_technology_researched = nationalism
+		# Checks if the technology is researched by the war goal holder (if any) or by the releasing country
+		OR = {
+			scope:war_goal_holder ?= {
+				has_technology_researched = nationalism
+			}
+			AND = {
+				NOT = { exists = scope:war_goal_holder }
+				has_technology_researched = nationalism
+			}
+		}
 	}
 	ai_will_do = { always = no }
 }
@@ -2347,7 +2454,16 @@ ASS = {
 		STATE_ERZURUM
 	}
 	possible = {
-		has_technology_researched = nationalism
+		# Checks if the technology is researched by the war goal holder (if any) or by the releasing country
+		OR = {
+			scope:war_goal_holder ?= {
+				has_technology_researched = nationalism
+			}
+			AND = {
+				NOT = { exists = scope:war_goal_holder }
+				has_technology_researched = nationalism
+			}
+		}
 	}
 	ai_will_do = { always = no }
 }
@@ -2377,12 +2493,21 @@ CAU = {
 		STATE_AZERBAIJAN
 	}
 
-	required_num_states = 1
+	required_num_states = 3
 
 	ai_will_do = { always = no }
 
 	possible = {
-		has_technology_researched = pan-nationalism
+		# Checks if the technology is researched by the war goal holder (if any) or by the releasing country
+		OR = {
+			scope:war_goal_holder ?= {
+				has_technology_researched = pan-nationalism
+			}
+			AND = {
+				NOT = { exists = scope:war_goal_holder }
+				has_technology_researched = pan-nationalism
+			}
+		}
 	}
 }
 
@@ -2394,7 +2519,7 @@ MOR = {
 		STATE_MARRAKECH
 	}
 
-	required_num_states = 1
+	required_num_states = 3
 
 	ai_will_do = { always = no }
 }
@@ -2496,7 +2621,7 @@ RHE = {
 		STATE_RHINELAND
 	}
 
-	required_num_states = 1
+	required_num_states = 2
 
 	ai_will_do = { always = no }
 }
@@ -2875,7 +3000,16 @@ BIH = {
 	}
 
 	possible = {
-		has_technology_researched = nationalism
+		# Checks if the technology is researched by the war goal holder (if any) or by the releasing country
+		OR = {
+			scope:war_goal_holder ?= {
+				has_technology_researched = nationalism
+			}
+			AND = {
+				NOT = { exists = scope:war_goal_holder }
+				has_technology_researched = nationalism
+			}
+		}
 	}
 
 	ai_will_do = { always = no }
@@ -2992,7 +3126,7 @@ TRH = { # Turkestan
 
 	ai_will_do = { always = no }
 
-	required_num_states = 2
+	required_num_states = 5
 }
 
 FZN = {
@@ -3023,10 +3157,19 @@ LBY = {
 	}
 
 	possible = {
-		has_technology_researched = nationalism
+		# Checks if the technology is researched by the war goal holder (if any) or by the releasing country
+		OR = {
+			scope:war_goal_holder ?= {
+				has_technology_researched = nationalism
+			}
+			AND = {
+				NOT = { exists = scope:war_goal_holder }
+				has_technology_researched = nationalism
+			}
+		}
 	}
 
 	ai_will_do = { always = no }
 
-	required_num_states = 1
+	required_num_states = 3
 }

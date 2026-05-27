@@ -17428,7 +17428,7 @@
                 building = building_naval_administration
                 add_ownership = {
                     country = {
-                        country = c:MOR
+                        country = c:CON
                         levels = 2
                     }
                 }
@@ -22320,6 +22320,19 @@
                     pm_hardwood
                     pm_no_equipment
                     pm_road_carts
+                }
+            }
+            create_building = {
+                building = building_port
+                add_ownership = {
+                    country = {
+                        country = c:HBC
+                        levels = 1
+                    }
+                }
+                reserves = 1
+                activate_production_methods = {
+                    pm_anchorage
                 }
             }
         }

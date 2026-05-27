@@ -1157,7 +1157,7 @@ company_oriental_development_company = {
 				}
 				level >= 5
 			}
-			count >= 2
+			count >= 4
 		}
 	}
 
