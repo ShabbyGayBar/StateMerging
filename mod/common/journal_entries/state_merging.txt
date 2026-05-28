@@ -598,7 +598,7 @@ REPLACE:je_indian_removal = {
 
 	invalid = {
 		OR = {
-			NOT = { owns_entire_state_region = STATE_FLORIDA }
+			NOT = { owns_entire_state_region = STATE_NORTH_CAROLINA }
 			NOT = {
 				AND = {
 					exists = c:SEQ
@@ -8135,7 +8135,7 @@ REPLACE:je_matter_of_hungary = {
 					state_region = {
 						is_homeland = cu:hungarian
 					}
-					count >= 8
+					count >= 4
 					is_incorporated = yes
 					turmoil < 0.05
 				}
@@ -11365,7 +11365,7 @@ REPLACE:je_spa_economic_regeneration_land_reform = {
                     is_homeland = cu:spanish
                 }
                 average_sol > 15
-                count >= 12
+                count >= 4
             }
             OR = {
                 AND = {
@@ -11402,7 +11402,7 @@ REPLACE:je_spa_economic_regeneration_land_reform = {
                     is_homeland = cu:spanish
                 }
                 average_sol > 10
-                count >= 12
+                count >= 4
             }
             OR = {
                 AND = {
@@ -11610,7 +11610,7 @@ REPLACE:je_spa_economic_regeneration_railways = {
                     is_building_type = building_railway
                     level >= 3
                 }
-                count >= 12
+                count >= 4
             }
         }
         trigger_else_if = {
@@ -11625,7 +11625,7 @@ REPLACE:je_spa_economic_regeneration_railways = {
                     is_building_type = building_railway
                     level >= 1
                 }
-                count >= 12
+                count >= 4
             }
         }
     }
