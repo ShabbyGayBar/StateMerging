@@ -1,0 +1,3176 @@
+﻿# ---- 00_releasable_countries.txt ----
+#   Root                     = the country that would give up the land
+#
+#   scope:war_goal_holder    = The country enforcing/pressing a war goal.
+#                              this scope is not set when the release is done outside of a war goal context.
+# 
+# Can have assymetric requirements for self releasing vs being forced to release, otherwise do as follows.
+# e.g.:
+#    OR = {
+#			scope:war_goal_holder ?= {
+#				has_technology_researched = pan-nationalism
+#			}
+#			AND = {
+#				NOT = { exists = scope:war_goal_holder }
+#				has_technology_researched = pan-nationalism
+#			}
+#		}
+
+REPLACE:UBD = {
+	states = { STATE_VILNIUS STATE_VILNIUS STATE_TALINN STATE_TALINN STATE_RIGA STATE_RIGA }
+
+	required_num_states = 3
+
+	ai_will_do = { always = no }
+
+	possible = {
+		# Checks if the technology is researched by the war goal holder (if any) or by the releasing country
+		OR = {
+			scope:war_goal_holder ?= {
+				has_technology_researched = pan-nationalism
+			}
+			AND = {
+				NOT = { exists = scope:war_goal_holder }
+				has_technology_researched = pan-nationalism
+			}
+		}
+	}
+}
+
+REPLACE:AUS = {
+	use_culture_states = yes
+
+	required_num_states = 2
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:IRE = {
+	use_culture_states = yes
+
+	required_num_states = 2
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:MTC = {
+	use_culture_states = yes
+
+	required_num_states = 1
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:GEO = {
+	states = {
+		STATE_GREATER_CAUCASUS
+	}
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:ARM = {
+	states = {
+		STATE_AZERBAIJAN
+		STATE_ERZURUM
+		STATE_GREATER_CAUCASUS
+		STATE_AZERBAIJAN
+	}
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:DAG = {
+	states = {
+		STATE_DAGESTAN
+	}
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:AZB = {
+	states = {
+		STATE_AZERBAIJAN
+		STATE_AZERBAIJAN
+	}
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:SCO = {
+	states = {
+		STATE_LOWLANDS
+		STATE_LOWLANDS
+	}
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:WLS = {
+	states = {
+		STATE_MIDLANDS
+	}
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:ULS = {
+	states = {
+		STATE_LEINSTER
+	}
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:ENG = {
+	states = {
+		STATE_HOME_COUNTIES
+		STATE_MIDLANDS
+		STATE_HOME_COUNTIES
+		STATE_HOME_COUNTIES
+		STATE_YORKSHIRE
+		STATE_YORKSHIRE
+	}
+
+	required_num_states = 3
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:LAT = {
+	states = { STATE_RIGA STATE_RIGA }
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:EST = {
+	states = { STATE_TALINN STATE_TALINN }
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:LIT = {
+	states = { STATE_VILNIUS STATE_VILNIUS }
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:SWE = {
+	states = {
+		STATE_SVEALAND
+		STATE_SCANIA
+		STATE_SCANIA
+		STATE_SVEALAND
+	}
+
+	required_num_states = 2
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:FIN = {
+	states = {
+		STATE_UUSIMAA
+		STATE_UUSIMAA
+		STATE_UUSIMAA
+		STATE_UUSIMAA
+		STATE_UUSIMAA
+	}
+
+	required_num_states = 2
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:NOR = {
+	use_culture_states = yes
+
+	required_num_states = 2
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:DEN = {
+	use_culture_states = yes
+
+	required_num_states = 2
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:ICL = {
+	states = { STATE_ICELAND }
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:CSA = {
+	use_culture_states = yes
+
+	required_num_states = 5
+
+	ai_will_do = { always = no }
+
+	possible = {
+		custom_tooltip = {
+			text = csa_releasable_tt
+			has_global_variable = american_civil_war
+		}
+	}
+}
+
+REPLACE:ASA = {
+	states = {
+		STATE_FLORIDA
+		STATE_LOUISIANA
+		STATE_NORTH_CAROLINA
+		STATE_MISSISSIPPI
+		STATE_MISSISSIPPI
+		STATE_FLORIDA
+	}
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:LOU = {
+	states = {
+		STATE_LOUISIANA
+	}
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:AGJ = {
+	states = {
+		STATE_PERNAMBUCO
+		STATE_PERNAMBUCO
+		STATE_PERNAMBUCO
+		STATE_PERNAMBUCO
+	}
+
+	required_num_states = 2
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:AMZ = {
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:CHE = {
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:SCN = {
+	states = { STATE_SCANIA }
+
+	ai_will_do = { always = no }
+
+	possible = {
+		NOT = { has_game_rule = plausible_releasable_nations }
+	}
+}
+
+REPLACE:NAV = {
+	states = { STATE_OLD_CASTILE }
+
+	ai_will_do = { always = no }
+}
+
+
+REPLACE:TRS = {
+	states = {
+		STATE_NORTHERN_TRANSYLVANIA
+		STATE_NORTHERN_TRANSYLVANIA
+	}
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:CRI = {
+	states = { STATE_CRIMEA }
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:TRE = {
+	states = { STATE_CROATIA }
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:FRA = {
+	states = {
+		STATE_ILE_DE_FRANCE
+		STATE_PROVENCE
+		STATE_ILE_DE_FRANCE
+		STATE_PROVENCE
+		STATE_PROVENCE
+		STATE_FLANDERS
+		STATE_ILE_DE_FRANCE
+		STATE_BADEN
+		STATE_BRITTANY
+		STATE_AQUITAINE
+		STATE_AQUITAINE
+		STATE_BRITTANY
+		STATE_BURGUNDY
+		STATE_BURGUNDY
+		STATE_BURGUNDY
+		STATE_BURGUNDY
+		STATE_AQUITAINE
+		STATE_ILE_DE_FRANCE
+		STATE_BRITTANY
+	}
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:BRI = {
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:JAN = {
+	provinces = { x31968A }
+
+	ai_will_do = { always = no }
+
+	possible = {
+		NOT = { has_game_rule = plausible_releasable_nations }
+	}
+}
+
+REPLACE:POL = {
+	states = { STATE_GREATER_POLAND STATE_GREATER_POLAND STATE_WEST_GALICIA STATE_WEST_GALICIA STATE_WEST_PRUSSIA STATE_WEST_PRUSSIA STATE_UPPER_SILESIA }
+
+	required_num_states = 3
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:UKR = {
+	states = { STATE_EAST_GALICIA STATE_KIEV STATE_EAST_GALICIA STATE_KIEV STATE_CRIMEA STATE_KHARKOV STATE_CRIMEA STATE_KHARKOV }
+
+	required_num_states = 3
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:GAL = {
+	states = { STATE_EAST_GALICIA STATE_WEST_GALICIA STATE_MOLDAVIA }
+
+	required_num_states = 2
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:HUN = {
+	use_culture_states = yes
+
+	required_num_states = 2
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:ROM = {
+	use_culture_states = yes
+
+	required_num_states = 3
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:BOH = {
+	states = { STATE_BOHEMIA STATE_BOHEMIA STATE_UPPER_SILESIA }
+
+	required_num_states = 2
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:CRO = {
+	states = {
+		STATE_CROATIA
+		STATE_CROATIA
+		STATE_CROATIA
+	}
+	required_num_states = 2
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:SLV = {
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:VEN = {
+	states = { STATE_VENETIA }
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:LOM = {
+	states = { STATE_VENETIA }
+
+	ai_will_do = { always = no }
+}
+
+
+REPLACE:BYE = {
+	use_culture_states = yes
+
+	required_num_states = 2
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:CRE = {
+	states = { STATE_CRETE }
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:POM = {
+	states = { STATE_BRANDENBURG }
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:ANH = {
+	states = { STATE_SAXONY }
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:NAS = {
+	provinces = { x3E794B x90C0A0 x1357DB }
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:HES = {
+	states = { STATE_WESTPHALIA }
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:WES = {
+	states = {
+		STATE_WESTPHALIA
+		STATE_RHINELAND
+		STATE_RHINELAND
+	}
+
+	required_num_states = 2
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:PRU = {
+	states = {
+		STATE_BRANDENBURG
+		STATE_BRANDENBURG
+		STATE_WEST_PRUSSIA
+		STATE_EAST_PRUSSIA
+		STATE_UPPER_SILESIA
+		STATE_UPPER_SILESIA
+		STATE_WEST_PRUSSIA
+	}
+
+	required_num_states = 3
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:JAP = {
+	use_culture_states = yes
+
+	required_num_states = 3
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:RUS = {
+	use_culture_states = yes
+
+	required_num_states = 5
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:CHI = {
+	use_culture_states = yes
+
+	required_num_states = 5
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:DAI = {
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:JAV = {
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:KOR = {
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:LAO = {
+	states = { STATE_LAOS }
+
+	required_num_states = 1
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:VIE = {
+	states = { STATE_LAOS }
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:CMI = {
+	states = { STATE_BANGKOK }
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:TIB = {
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:MGL = {
+	states = {
+		STATE_ULIASTAI
+		STATE_ULIASTAI
+	}
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:MCH = {
+	states = {
+		STATE_SOUTHERN_MANCHURIA
+		STATE_NORTHERN_MANCHURIA
+		STATE_OUTER_MANCHURIA
+		STATE_SHENGJING
+		STATE_OUTER_MANCHURIA
+	}
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:XIN = {
+	states = { STATE_DZUNGARIA STATE_TIANSHAN STATE_SEMIRECHE }
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:HAI = {
+	states = { STATE_HAITI }
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:DOM = {
+	states = { STATE_HAITI }
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:ATL = {
+	states = { STATE_WESTERN_CUBA STATE_WESTERN_CUBA STATE_WESTERN_CUBA STATE_WEST_INDIES STATE_HAITI }
+
+	required_num_states = 4
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:WIN = {
+	STATES = {
+		STATE_WEST_INDIES
+		STATE_WEST_INDIES
+	}
+
+	required_num_states = 2
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:MAY = {
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:CAT = {
+	use_culture_states = yes
+
+	required_num_states = 2
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:SPA = {
+	use_culture_states = yes
+
+	required_num_states = 2
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:ELS = {
+	states = { STATE_SAN_SALVADOR }
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:GUA = {
+	states = { STATE_GUATEMALA }
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:ALT = {
+	provinces = { xD9BEFE x78C465 xBD8628  }
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:NIC = {
+	states = { STATE_NICARAGUA }
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:HON = {
+	states = { STATE_HONDURAS }
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:COS = {
+	states = { STATE_COSTA_RICA }
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:FRM = {
+	provinces = { x11C0A0 }
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:LUB = {
+	provinces = { x60809F }
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:HAM = {
+	provinces = { x587297 }
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:BRE = {
+	provinces = { xC08061 x68BE66 }
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:CUB = {
+	states = {
+		STATE_WESTERN_CUBA
+		STATE_WESTERN_CUBA
+		STATE_WESTERN_CUBA
+	}
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:PCO = {
+	states = { STATE_WEST_INDIES }
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:JAM = {
+	states = { STATE_WEST_INDIES }
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:BAH = {
+	states = { STATE_WEST_INDIES }
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:PHI = {
+	states = {
+		STATE_LUZON
+		STATE_LUZON
+		STATE_LUZON
+	}
+	required_num_states = 2
+	ai_will_do = { always = no }
+}
+
+REPLACE:PUE = {
+	use_culture_states = yes
+	ai_will_do = { always = no }
+}
+
+REPLACE:NAH = {
+	use_culture_states = yes
+	ai_will_do = { always = no }
+}
+
+REPLACE:GRN = {
+	states = {
+		STATE_GREENLAND
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:AIN = {
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:ANL = {
+	states = {
+		STATE_LOWER_ANDALUSIA
+		STATE_LOWER_ANDALUSIA
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:CAS = {
+	states = {
+		STATE_OLD_CASTILE
+		STATE_OLD_CASTILE
+		STATE_LOWER_ANDALUSIA
+	}
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:CAN = {
+	use_culture_states = yes
+
+	required_num_states = 4
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:QUE = {
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:NBS = {
+	provinces = {
+		xC91FD7 xEE2FFF x5A0CA8 x71A015 x326F36 xF01C37 x70A0CE x484A09 x082153 x62FC6A xDE0FD5 xBB0F05 x7040C0 x4D9EEE x8ED253 xD090A6 x20CF66 x66DFE7 x493CD4 x740012 x8E553E x70C040
+	}
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:NVS = {
+	provinces = {
+		x085C83 xEC5B4B x406FBA xC060C0 xE4892F x99CA75 x380F20 xB95DB3 x905458 x8060C0 x80AA26 x6B5822 xCA0399 x63E1C4 xF95D47 x8CFA32 xEAFA99 xF04040
+	}
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:AST = {
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:NZL = {
+	states = {
+		STATE_NORTH_ISLAND
+		STATE_NORTH_ISLAND
+	}
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:YUC = {
+	states = {
+		STATE_YUCATAN
+	}
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:RIO = {
+
+	provinces = {
+		# Rio Grande
+		x00879A x00B001 x059C97 x08C98F x0DA7FA x0F59F0 x1B9AEE x1BD480 x1C58D1 x1CC654 x20360A x2F16DF x304ACD x41A909 x4C9B4D x4EE20D x4FF638 x50EF80 x54B95F x592CDF x59E37B x60385F x654D48 x6EDB2C x766F08 x7B177A x7F00A8 x8030C0 x80B080 x9486AD x9C099B x9F69AD xA164AB xA20ABD xA98620 xA995BC xB13782 xB65993 xBA8759 xBCFFF7 xC03001 xC1EF57 xC202B5 xC68684 xCAEB7A xD51E89 xD69138 xDCEE0B xDDC3A9 xDDE205 xDEEEB0 xE1E8AB xE4E032 xE86EA3 xEA81D3 xF468A1 xF53F63 xF9A35E xFC72E1 xFEC6A5
+
+		# Mexican Texas
+		x3751A7 x24C127 x10CA7B x951736 x871357 xD08070 xB9118E xC9D330 x5D3843 x2DA551 x760779 x4E19F4 x6958D6 x6E8169 xBB8A78 x0E125F x90CE2B x860F5A x0D192D x6BB536 xA55E5C xB16A3C x8EBCC7 x94A617 x18F9D5 x03FDD9 xE222E2 xDB3E39 x27C614 xE3F481 x08F331 x3DAE0A xC7ED1C xFDD38C xD206BC x0030C0 xED08F5 xA3A810 x91A02C
+	}
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:PNI = {
+	states = {
+		STATE_RIO_GRANDE_DO_SUL
+	}
+
+	possible = {
+		hidden_trigger = {
+			NOT = { has_variable = sulistas_integrated }
+		}
+	}
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:CEY = {
+	states = {
+		STATE_CEYLON
+	}
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:NEN = {
+	states = {
+		STATE_MASSACHUSETTS
+		STATE_MASSACHUSETTS
+		STATE_MASSACHUSETTS
+		STATE_MASSACHUSETTS
+		STATE_MASSACHUSETTS
+		STATE_MASSACHUSETTS
+	}
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:PNM = {
+	states = {
+		STATE_PANAMA
+	}
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:TWT = {
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:AYM = {
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:IRO = {
+	provinces = {
+		x195b49 x8c059d xe217b5 x70c080 x2ca754 x4b0747 xb343e6 x308000 x38c881 x01d042 xe7be2d xa6bed5 xedc7da x3cb274 x235e9f xa7b5fe x42d496 xb00080 x05187e x9484f3 xec2eaa x73a16c xfcf1be x99cb10
+	}
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:TEX = {
+	states = {
+		STATE_TEXAS
+	}
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:WLL = {
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:MLT = {
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:FLA = {
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:NNV = {
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:NEW = {
+	states = {
+		STATE_NEWFOUNDLAND
+	}
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:SMI = {
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:GBR = {
+	use_culture_states = yes
+
+	required_num_states = 6
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:BOS = {
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:SAF = {
+	states = {
+		STATE_CAPE_COLONY
+		STATE_CAPE_COLONY
+		STATE_CAPE_COLONY
+	}
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:BUL = {
+	states = {
+		STATE_BULGARIA
+		STATE_BULGARIA
+		STATE_WALLACHIA
+	}
+
+	ai_will_do = { always = no }
+}
+
+
+REPLACE:OCC = {
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:IRQ = {
+	states = {
+		STATE_BAGHDAD
+		STATE_BAGHDAD
+		STATE_BAGHDAD
+	}
+	ai_will_do = { always = no }
+}
+
+
+REPLACE:CYP = {
+	states = {
+		STATE_CYPRUS
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:TUV = {
+	states = {
+		STATE_TUVA
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:COR = {
+	states = {
+		STATE_CORSICA
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:YAK = {
+	states = {
+		STATE_YAKUTSK
+		STATE_YAKUTSK
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:TNS = {
+	states = {
+		STATE_SURGUT
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:FER = {
+	states = {
+		STATE_OKHOTSK
+		STATE_OKHOTSK
+		STATE_OKHOTSK
+		STATE_OUTER_MANCHURIA
+		STATE_OUTER_MANCHURIA
+		STATE_SAKHALIN
+		STATE_TRANS_BAIKAL
+		STATE_TRANS_BAIKAL
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:IUS = {
+	states = {
+		STATE_KAZAN
+		STATE_PERM
+		STATE_KAZAN
+		STATE_URAL
+		STATE_KAZAN
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:KNT = {
+	states = {
+		STATE_SURGUT
+		STATE_SURGUT
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:URL = {
+	states = {
+		STATE_URAL
+		STATE_URAL
+		STATE_PERM
+		STATE_PERM
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:ALI = {
+	states = {
+		STATE_TUVA
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:KAZ = {
+	use_culture_states = yes
+	ai_will_do = { always = no }
+}
+
+REPLACE:CKC = {
+	states = {
+		STATE_OKHOTSK
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:KMC = {
+	states = {
+		STATE_OKHOTSK
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:BRY = {
+	states = {
+		STATE_TRANS_BAIKAL
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:BKR = {
+	states = {
+		STATE_PERM
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:TAR = {
+	states = {
+		STATE_KAZAN
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:KRL = {
+	states = {
+		STATE_ARKHANGELSK
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:NCA = {
+	states = {
+		STATE_DAGESTAN
+	}
+	possible = {
+		# Checks if the technology is researched by the war goal holder (if any) or by the releasing country
+		OR = {
+			scope:war_goal_holder ?= {
+				has_technology_researched = pan-nationalism
+			}
+			AND = {
+				NOT = { exists = scope:war_goal_holder }
+				has_technology_researched = pan-nationalism
+			}
+		}
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:DON = {
+	states = {
+		STATE_KURSK
+		STATE_KUBAN
+		STATE_KUBAN
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:UDM = {
+	#provinces = { x206020 x0DC008 xF4A935 x4344A1 xFBBA97 x494CD7 xCA4466 x624DC2 x1DFAE3 x199917 x0E6979 xD754F9 x8BAC4A xEF2B33 x6578DF xE365BE x5B57D5 x2080C0 x5A83AD }
+	states = {
+		STATE_VYATKA
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:CHV = {
+	#provinces = { xDB5DBD xC23BD0 xD13AC6 x811458 x0CBEE6 xD6E65F xDA0014 x307CEB xE89369 }
+	states = {
+		STATE_KAZAN
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:MRD = {
+	#provinces = { x0434D7 x47EA0C x0DCAF1 x003D07 x61384B x75FC6F x6DC89F x00DA3C x7D40C9 x74730E }
+	states = {
+		STATE_TAMBOV
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:MRI = {
+	#provinces = { x1066EF x635E09 x5D97AC x83DB48 x0D7D00 x67980D x9DA7C7 xEDEDEF x1910A8 x062B1B xA000C0 x80F7CE x1D5A12 }
+	states = {
+		STATE_KAZAN
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:SYR = {
+	states = {
+		STATE_SYRIA
+		STATE_SYRIA
+		STATE_SYRIA
+		STATE_PALESTINE
+		STATE_PALESTINE
+		STATE_SYRIA
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:EOT = {
+	states = {
+		STATE_PALESTINE
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:LEB = {
+	states = {
+		STATE_SYRIA
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:SUD = {
+	states = {
+		STATE_BLUE_NILE
+		STATE_BLUE_NILE
+		STATE_BLUE_NILE
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:MEX = {
+	use_culture_states = yes
+	ai_will_do = { always = no }
+}
+
+REPLACE:ALD = {
+	states = {
+		STATE_ALGIERS
+		STATE_CONSTANTINE
+		STATE_ORAN
+		STATE_SAHARA
+		STATE_SAHARA
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:YUG = {
+	states = {
+		STATE_WESTERN_SERBIA
+		STATE_WESTERN_SERBIA
+		STATE_WESTERN_SERBIA
+		STATE_WESTERN_SERBIA
+		STATE_WESTERN_SERBIA
+		STATE_WESTERN_SERBIA
+		STATE_CROATIA
+		STATE_CROATIA
+		STATE_CROATIA
+		STATE_CROATIA
+		STATE_CROATIA
+		STATE_CROATIA
+	}
+
+	required_num_states = 3
+
+	possible = {
+		# Checks if the technology is researched by the war goal holder (if any) or by the releasing country
+		OR = {
+			scope:war_goal_holder ?= {
+				has_technology_researched = pan-nationalism
+			}
+			AND = {
+				NOT = { exists = scope:war_goal_holder }
+				has_technology_researched = pan-nationalism
+			}
+		}
+	}
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:ZIM = {
+	states = {
+		STATE_ZAMBEZI
+	}
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:CLM = {
+	states = {
+		STATE_CUNDINAMARCA
+		STATE_CUNDINAMARCA
+		STATE_CAUCA
+		STATE_CAUCA
+	}
+
+	required_num_states = 3
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:TUR = {
+	use_culture_states = yes
+
+	required_num_states = 5
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:DZG = {
+	provinces = {
+		x7CB839 x80A0A0
+	}
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:EGY = {
+	use_culture_states = yes
+
+	required_num_states = 3
+
+	ai_will_do = { always = no }
+}
+REPLACE:CZH = {
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+
+	required_num_states = 3
+
+	possible = {
+		# Checks if the technology is researched by the war goal holder (if any) or by the releasing country
+		OR = {
+			scope:war_goal_holder ?= {
+				has_technology_researched = pan-nationalism
+			}
+			AND = {
+				NOT = { exists = scope:war_goal_holder }
+				has_technology_researched = pan-nationalism
+			}
+		}
+	}
+}
+
+REPLACE:ARG = {
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:HAN = {
+	states = {
+		STATE_HANNOVER
+	}
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:SIC = {
+	states = {
+		STATE_SICILY
+	}
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:UCA = {
+	use_culture_states = yes
+	required_num_states = 3
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:SLO = {
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:ALB = {
+	states = {
+		STATE_ALBANIA
+	}
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:KUR = {
+	states = {
+		STATE_BAGHDAD
+		STATE_SYRIA
+		STATE_ERZURUM
+		STATE_ERZURUM
+		STATE_TABRIZ
+		STATE_TABRIZ
+	}
+
+	ai_will_do = { always = no }
+
+	possible = {
+		# Checks if the technology is researched by the war goal holder (if any) or by the releasing country
+		OR = {
+			scope:war_goal_holder ?= {
+				has_technology_researched = nationalism
+			}
+			AND = {
+				NOT = { exists = scope:war_goal_holder }
+				has_technology_researched = nationalism
+			}
+		}
+	}
+}
+
+REPLACE:GLI = {
+	states = {
+		STATE_GALICIA
+	}
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:ISR = {
+	states = {
+		STATE_PALESTINE
+	}
+
+	ai_will_do = { always = no }
+
+	possible = {
+		# Checks if the technology is researched by the war goal holder (if any) or by the releasing country
+		OR = {
+			scope:war_goal_holder ?= {
+				has_technology_researched = pan-nationalism
+			}
+			AND = {
+				NOT = { exists = scope:war_goal_holder }
+				has_technology_researched = pan-nationalism
+			}
+		}
+	}
+}
+
+REPLACE:PAL = {
+	states = {
+		STATE_PALESTINE
+		STATE_PALESTINE
+	}
+
+	required_num_states = 1
+
+	ai_will_do = { always = no }
+
+	possible = {
+		# Checks if the technology is researched by the war goal holder (if any) or by the releasing country
+		OR = {
+			scope:war_goal_holder ?= {
+				has_technology_researched = nationalism
+			}
+			AND = {
+				NOT = { exists = scope:war_goal_holder }
+				has_technology_researched = nationalism
+			}
+		}
+	}
+}
+
+REPLACE:SIB = {
+	states = {
+		STATE_YAKUTSK
+		STATE_IRKUTSK
+		STATE_TRANS_BAIKAL
+		STATE_OKHOTSK
+		STATE_OKHOTSK
+		STATE_SURGUT
+		STATE_TOMSK
+		STATE_OKHOTSK
+		STATE_YAKUTSK
+		STATE_TUVA
+		STATE_IRKUTSK
+		STATE_TUVA
+		STATE_TRANS_BAIKAL
+		STATE_SURGUT
+		STATE_SURGUT
+		STATE_TOMSK
+		STATE_URAL
+		STATE_URAL
+	}
+
+	required_num_states = 4
+
+	ai_will_do = { always = no }
+
+	possible = {
+		# Checks if the technology is researched by the war goal holder (if any) or by the releasing country
+		OR = {
+			scope:war_goal_holder ?= {
+				has_technology_researched = pan-nationalism
+			}
+			AND = {
+				NOT = { exists = scope:war_goal_holder }
+				has_technology_researched = pan-nationalism
+			}
+		}
+	}
+}
+
+REPLACE:UOM = {
+	states = {
+		STATE_MICHIGAN
+	}
+
+	ai_will_do = { always = no }
+
+	possible = {
+		NOT = { has_game_rule = plausible_releasable_nations }
+	}
+}
+
+REPLACE:CAL = {
+	states = {
+		STATE_CALIFORNIA
+	}
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:USA = {
+	use_culture_states = yes
+
+	required_num_states = 10
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:BEL = {
+	use_culture_states = yes
+
+	required_num_states = 2
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:NET = {
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:POR = {
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:BAD = {
+	states = {
+		STATE_BADEN
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:BAV = {
+	states = {
+		STATE_BAVARIA
+		STATE_BAVARIA
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:BRA = {
+	states = {
+		STATE_WESTPHALIA
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:HOL = {
+	provinces = { xBFCC21 x804160 x64824C xE000A0 }
+	ai_will_do = { always = no }
+}
+
+REPLACE:SCH = {
+	provinces = { x00C060 x78B203 xE3C876 }
+	ai_will_do = { always = no }
+}
+
+REPLACE:LUX = {
+	provinces = { x5180A0 xD001A0}
+	ai_will_do = { always = no }
+}
+
+REPLACE:MEC = {
+	states = {
+		STATE_BRANDENBURG
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:OLD = {
+	provinces = { xECC3B4 xC00161 x4101E0 }
+	ai_will_do = { always = no }
+}
+
+REPLACE:SAX = {
+	states = {
+		STATE_SAXONY
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:WUR = {
+	provinces = { x118060 x100060 xC541D2 x8F0060 xDBB84C }
+	ai_will_do = { always = no }
+}
+
+REPLACE:LUC = {
+	provinces = { xF080A0 }
+	ai_will_do = { always = no }
+}
+
+REPLACE:MOD = {
+	provinces = { xEF0021 xF08021 }
+	ai_will_do = { always = no }
+}
+
+REPLACE:PAP = {
+	states = {
+		STATE_LAZIO
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:PAR = {
+	provinces = { x0B3B43 x700120 }
+	ai_will_do = { always = no }
+}
+
+REPLACE:PRA = {
+	states = {
+		STATE_PARA
+		STATE_AMAZONAS
+		STATE_AMAZONAS
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:SAR = {
+	states = {
+		STATE_PIEDMONT
+		STATE_SARDINIA
+		STATE_PROVENCE
+	}
+	required_num_states = 2
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:TUS = {
+	states = {
+		STATE_PIEDMONT
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:KRA = {
+	provinces = { x906060 }
+	ai_will_do = { always = no }
+}
+
+REPLACE:SWI = {
+	states = {
+		STATE_WEST_SWITZERLAND
+		STATE_WEST_SWITZERLAND
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:GRE = {
+	use_culture_states = yes
+
+	required_num_states = 2
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:ION = {
+	provinces = { x4B79CA x405060 }
+	ai_will_do = { always = no }
+}
+
+REPLACE:MOL = {
+	states = {
+		STATE_MOLDAVIA
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:MON = {
+	states = {
+		STATE_WESTERN_SERBIA
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:SER = {
+	states = {
+		STATE_WESTERN_SERBIA
+		STATE_WESTERN_SERBIA
+		STATE_WESTERN_SERBIA
+		STATE_WESTERN_SERBIA
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:ABU = {
+	states = {
+		STATE_NEJD
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:AFG = {
+	states = {
+		STATE_KABUL
+		STATE_HERAT
+		STATE_KABUL
+		STATE_HERAT
+	}
+	required_num_states = 4
+	ai_will_do = { always = no }
+
+	possible = {
+		# Checks if the technology is researched by the war goal holder (if any) or by the releasing country
+		OR = {
+			scope:war_goal_holder ?= {
+				has_technology_researched = pan-nationalism
+			}
+			AND = {
+				NOT = { exists = scope:war_goal_holder }
+				has_technology_researched = pan-nationalism
+			}
+		}
+	}
+}
+
+REPLACE:BUK = {
+	states = {
+		STATE_UZBEKIA
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:HDJ = {
+	states = {
+		STATE_HEDJAZ
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:KHI = {
+	states = {
+		STATE_KHIVA
+		STATE_KHIVA
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:KOK = {
+	states = {
+		STATE_KIRGHIZIA
+		STATE_TAJIKISTAN
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:NEJ = {
+	states = {
+		STATE_NEJD
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:OMA = {
+	states = {
+		STATE_OMAN
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:PER = {
+	use_culture_states = yes
+	required_num_states = 4
+	ai_will_do = { always = no }
+}
+
+REPLACE:JAB = {
+	states = {
+		STATE_NEJD
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:YEM = {
+	states = {
+		STATE_YEMEN
+	}
+	possible = {
+		# Checks if the technology is researched by the war goal holder (if any) or by the releasing country
+		OR = {
+			scope:war_goal_holder ?= {
+				has_technology_researched = nationalism
+			}
+			AND = {
+				NOT = { exists = scope:war_goal_holder }
+				has_technology_researched = nationalism
+			}
+		}
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:MAH = {
+	provinces = { x30A3E2 x37058f xAD1CE2 x8D121D x8D6307 xBDEA27 x02B35C xA2FDFA x6BD0A9 xB010DF x9D6547 xA0540A }
+	ai_will_do = { always = no }
+}
+
+REPLACE:KAT = {
+	provinces = { xC790E8 x299C0F xDFA579 x346541 x90602A x3D86FC x75D341 x8E96A7 xDD732E x95D64E x5F3582 x2A9E89 xBAA208 x308FDF xD6CC22 x1C7B77 xA05CB5 x6D2F95 x5C91FE x3D7345 xC09525 xB8A8D2 x672267 x60DFF9 xD3F276 xA1AAB0 x843C65 x5DF9FC x895FE6 xCF61E1 x0B9A27 xF385EB x0C7E0C x872CEB x8BF4B8 }
+	ai_will_do = { always = no }
+}
+
+REPLACE:ZAI = {
+	provinces = { x567A83 xE5892F x02F9FF x7EC879 x625380 x9D8A78 xEF2E43 xBB387A xCF6C49 x7C3EA9 xFE5027 x68B524 xE5DF3B x1A7BB0 x2576C1 xCF401E x49FCAB x6290E6 xF86F58 x84FA60 x8B1488 x075453  x00E3EF xB79DED x9E941B x034B03 x8436FE }
+	ai_will_do = { always = no }
+}
+
+REPLACE:LAH = {
+	provinces = { x319060 xB090E0 x2BD409 xFA0283 x657048 x54840B x3D1674 x2975A3 }
+	ai_will_do = { always = no }
+}
+
+REPLACE:BHN = {
+	provinces = { x505AE0 x2768F8 xEF5020 }
+	ai_will_do = { always = no }
+}
+
+REPLACE:BHW = {
+	provinces = { x022D2B xD597DC x30122F xCF602F x706940 x2DBD82 x19E5C0 xEFC3B4 xCA516D xB4E322 }
+	ai_will_do = { always = no }
+}
+
+REPLACE:BAS = {
+	provinces = { x8ECE82 x013159 xF09DA1 x1170A0 xB56E8E x2F70FB x274E94 x66F24C x20BC2C xC38F66 }
+	ai_will_do = { always = no }
+}
+
+REPLACE:HYD = {
+	states = {
+		STATE_HYDERABAD
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:BGL = {
+	states = {
+		STATE_WEST_BENGAL
+		STATE_EAST_BENGAL
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:IND = {
+	provinces = { x82DEEF x2A9BFB xE9D03F xC0F1B9 x585F79 x4CA2A3 xB8A7B3 x0E199B x70D0E0 }
+	ai_will_do = { always = no }
+}
+
+REPLACE:JAI = {
+	provinces = { x604D2F xC7EF85 x0170B1 x67EA54 xA2025E x4EA8C5 xFFFB3C x5A410D xB9580C x61F021 }
+	ai_will_do = { always = no }
+}
+
+REPLACE:JAS = {
+	provinces = { x3C6F90 x77810B xD0F7A0 x6E8BCD xBD0984 x6031A0 x1031A8 x599EC5 x006D72 }
+	ai_will_do = { always = no }
+}
+
+REPLACE:JOD = {
+	provinces = { xBD1F80 x9A6A95 x7B1C30 x22627C xDD12D2 xD77479 xCA50D5 x4CEAC0 xCBE6C4 x0C11FE x425430 xD76ACC xA389C9 xBAD851 xC28B1B x4922B9 xE0B020 x2A57A1 x25467F x3FF532 x166BD9 x5C95B5 }
+	ai_will_do = { always = no }
+}
+
+REPLACE:KAL = {
+	states = {
+		STATE_BALUCHISTAN
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:KAS = {
+	states = {
+		STATE_KASHMIR
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:KUT = {
+	provinces = { xC0310F xF64FA2 xB05060 xEB6009 x5B6745 x8F568D xB89EF0 }
+	ai_will_do = { always = no }
+}
+
+REPLACE:MAK = {
+	provinces = { x978421 x4E09C5 xF9577D x45F2DD x113E0B x7FE584 xC070E0 xC6E602 xB0F79E x407060 x951063 xB7B2BD x8ED831 x2E7961 xE87BBF }
+	ai_will_do = { always = no }
+}
+
+REPLACE:MEW = {
+	provinces = { x40881F xF051DF xCC8FF3 x0A34C2 xF671B7 x6E01FB xA614CA xDCFF99 }
+	ai_will_do = { always = no }
+}
+
+REPLACE:MYS = {
+	states = {
+		STATE_MYSORE
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:NAG = {
+	states = {
+		STATE_CENTRAL_PROVINCES
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:NEP = {
+	states = {
+		STATE_HIMALAYAS
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:ORI = {
+	states = {
+		STATE_ORISSA
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:PAN = {
+	use_culture_states = yes
+	ai_will_do = { always = no }
+}
+
+REPLACE:SIK = {
+	provinces = { xE0B0E0 x2070E0 }
+	ai_will_do = { always = no }
+}
+
+REPLACE:SIN = {
+	states = {
+		STATE_SINDH
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:TRA = {
+	states = {
+		STATE_TRAVANCORE
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:ACE = {
+	states = {
+		STATE_NORTH_SUMATRA
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:BAL = {
+	provinces = { x5ABA94 x100090 }
+	ai_will_do = { always = no }
+}
+
+REPLACE:BHU = {
+	provinces = { x388D2C xDA7F32 x665E5B x01C109 xD10C8F x4F99DC x84F73C xE5D3E0 x60B0DF }
+	ai_will_do = { always = no }
+}
+
+REPLACE:LAN = {
+	provinces = { x1C7417 x2A3D46 xE02CB6 }
+	ai_will_do = { always = no }
+}
+
+REPLACE:BRU = {
+	states = {
+		STATE_WEST_BORNEO
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:BUR = {
+	use_culture_states = yes
+	ai_will_do = { always = no }
+}
+
+REPLACE:CAM = {
+	use_culture_states = yes
+	ai_will_do = { always = no }
+}
+
+REPLACE:LUA = {
+	provinces = { x3130A0 x89F1F9 xDFCAA8 x70B3CE xED7937 x874BED xCD2D5D x1F8AE4 x8D0FE2 x6BA60C xDA6CAB xE8A817 x0B160B x578898 x8D4D75 x2DE84E x1957E0 x1E6D3C x625009 xEAEF3A xB0B020 xDE87E1 x46CCB6 x8BFF1F x6C400A x61478F }
+	ai_will_do = { always = no }
+}
+
+REPLACE:CHP = {
+	provinces = { xB0EFA0 x30EFA0 x3E6297 x036ED6 x32A2B1 x21D9CC xC8AFB5 x94CA13 x899047 }
+	ai_will_do = { always = no }
+}
+
+REPLACE:JOH = {
+	states = {
+		STATE_MALAYA
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:SIA = {
+	use_culture_states = yes
+	ai_will_do = { always = no }
+}
+
+REPLACE:DES = {
+	states = {
+		STATE_UTAH
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:ONT = {
+	states = {
+		STATE_ONTARIO
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:BOL = {
+	states = {
+		STATE_LA_PAZ
+		STATE_LA_PAZ
+		STATE_LA_PAZ
+		STATE_AMAZONAS
+		STATE_ANTOFAGASTA
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:BRZ = {
+	use_culture_states = yes
+	ai_will_do = { always = no }
+}
+
+REPLACE:CHL = {
+	states = {
+		STATE_SANTIAGO
+		STATE_SANTIAGO
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:ECU = {
+	states = {
+		STATE_ECUADOR
+		STATE_AMAZONAS
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:PEU = {
+	states = {
+		STATE_LIMA
+		STATE_LIMA
+		STATE_ICA
+		STATE_ICA
+		STATE_ANTOFAGASTA
+		STATE_AMAZONAS
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:PRG = {
+	states = {
+		STATE_BAJO_PARAGUAY
+		STATE_BAJO_PARAGUAY
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:URU = {
+	states = {
+		STATE_SANTA_FE
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:VNZ = {
+	states = {
+		STATE_MIRANDA
+		STATE_MIRANDA
+		STATE_MIRANDA
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:ORG = {
+	states = {
+		STATE_OREGON
+		STATE_OREGON
+		STATE_OREGON
+		STATE_BRITISH_COLUMBIA
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:SEQ = {
+	states = {
+		STATE_TEXAS
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:MKT = {
+	provinces = { x17F33B x6C22F2 x59D231 xAD9EE8 }
+	ai_will_do = { always = no }
+}
+
+REPLACE:HZJ = {
+	states = {
+		STATE_HERAT
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:TRC = {
+	states = {
+		STATE_KHIVA
+		STATE_KHIVA
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:ASM = {
+	states = {
+		STATE_ASSAM
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:TOB = {
+	states = {
+		STATE_NORTH_SUMATRA
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:KLT = {
+	states = {
+		STATE_WEST_BORNEO
+		STATE_WEST_BORNEO
+		STATE_WEST_BORNEO
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:HTH = {
+	states = {
+		STATE_PEGU
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:KRN = {
+	states = {
+		STATE_TENASSERIM
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:KHM = {
+	states = {
+		STATE_LAOS
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:KHN = {
+	states = {
+		STATE_KACHIN
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:EZO = {
+	states = {
+		STATE_HOKKAIDO
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:QIA = {
+	use_culture_states = yes
+	ai_will_do = { always = no }
+}
+
+REPLACE:FRS = {
+	states = {
+		STATE_FORMOSA
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:YUN = {
+	use_culture_states = yes
+	ai_will_do = { always = no }
+}
+
+REPLACE:YUE = {
+	use_culture_states = yes
+	ai_will_do = { always = no }
+}
+
+REPLACE:SRB = {
+	states = {
+		STATE_SAXONY
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:BLH = {
+	states = {
+		STATE_BALUCHISTAN
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:HNA = {
+	states = {
+		STATE_HUNAN
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:AHU = {
+	states = {
+		STATE_SOUTHERN_ANHUI
+		STATE_NORTHERN_ANHUI
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:ZHI = {
+	states = {
+		STATE_ZHILI
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:SHN = {
+	states = {
+		STATE_SHANXI
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:GUI = {
+	states = {
+		STATE_GUIZHOU
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:GNG = {
+	states = {
+		STATE_GUANGXI
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:SIH = {
+	states = {
+		STATE_SICHUAN
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:SHA = {
+	states = {
+		STATE_SHANDONG
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:XIB = {
+	states = {
+		STATE_NINGXIA
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:COB = {
+	provinces = { x66FE0A }
+	ai_will_do = { always = no }
+}
+
+REPLACE:MEI = {
+	provinces = { x5141A0 xD0C021 }
+	ai_will_do = { always = no }
+}
+
+REPLACE:WEI = {
+	provinces = { xC00A37 }
+	ai_will_do = { always = no }
+}
+
+REPLACE:SCW = {
+	provinces = { x51C021 }
+	ai_will_do = { always = no }
+}
+
+REPLACE:HEK = {
+	provinces = { xD04121 x2248E2 xC08020 xFF1DBB }
+	ai_will_do = { always = no }
+}
+
+REPLACE:LIP = {
+	provinces = { x9F0060 }
+	ai_will_do = { always = no }
+}
+
+REPLACE:SCM = {
+	provinces = { x1BA4F6 }
+	ai_will_do = { always = no }
+}
+
+REPLACE:MST = {
+	provinces = { xE041A0 xD9A469 }
+	ai_will_do = { always = no }
+}
+
+REPLACE:HOH = {
+	provinces = { x908060 }
+	ai_will_do = { always = no }
+}
+
+REPLACE:WLD = {
+	provinces = { x3E794B }
+	ai_will_do = { always = no }
+}
+
+REPLACE:SAK = {
+	provinces = { x01317D x3F7EA0 x677AA6 x87F7B6 x8171EA x48428B x6021D0 x5BE3D2 x8B7A14 x35213F }
+	ai_will_do = { always = no }
+}
+
+REPLACE:PON = {
+	provinces = { xFFE074 x71D428 x706E00 xA91194 x4DD36E xB7B05B xAD54BC x4408AB xF8375D }
+	ai_will_do = { always = no }
+}
+
+REPLACE:SMB = {
+	provinces = { x60FDC2 x42973E x6D4CDF }
+	ai_will_do = { always = no }
+}
+
+REPLACE:JMB = {
+	provinces = { x5157D3 xDA82F4 x7AC280 xAE71B4 xEC5DEA xA2F773 x6ED39E xE4C2D6 }
+	ai_will_do = { always = no }
+}
+
+REPLACE:YOG = {
+	provinces = { xD19D2E }
+	ai_will_do = { always = no }
+}
+
+REPLACE:SRK = {
+	provinces = { x143969 }
+	ai_will_do = { always = no }
+}
+
+REPLACE:BTN = {
+	states = {
+		STATE_MOLUCCAS
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:SEL = {
+	provinces = { x23578B x8E3305 xC84C4C }
+	ai_will_do = { always = no }
+}
+
+REPLACE:PRK = {
+	provinces = { xAA2287 x78EF92 xCF3E8D xD8E596 xE87C53 }
+	ai_will_do = { always = no }
+}
+
+REPLACE:SUL = {
+	provinces = { x0180F0 x99D030 }
+	ai_will_do = { always = no }
+}
+
+REPLACE:TID = {
+	states = {
+		STATE_MOLUCCAS
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:STG = {
+	provinces = { x477680 xA6D36E xCF4105 x7FFBF0 xBC374E xA5A916 x56FE77 x445D59 x9910E9 x939612 x04BB3B }
+	ai_will_do = { always = no }
+}
+
+REPLACE:BNJ = {
+	provinces = { x9B7A4D x496AEF xDF0BCF x0ED6AA xE9E984 xDB778E xEA35E9 x71A232 x3660F5 x9C48FE x38416A x6A70EA x88A1EC xFF0B89 x10645D x0E858D x8D8D4A x8F8FDE x0596C2 x0A7250 x0A8175}
+	ai_will_do = { always = no }
+}
+
+REPLACE:CIR = {
+	states = {
+		STATE_KUBAN
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:CHC = {
+	provinces = { x9A6A44 x5C32EA x676C0E x27E9C3 xDA8EF4 x019041 }
+	ai_will_do = { always = no }
+}
+
+REPLACE:HOB = {
+	provinces = { xE585C3 x1D4F93 x324717 xCB3B07 x6BA02C x6D66A6 xFE3534 x60EAC8 xDDF9DB xE4636A x76595D x83A1A3 x58307A xB64D3E x049442 xF5E822 x73FE30 xA05C39 x6D0680 x469B34 xA2A857 x529552 }
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:ASS = {
+	states = {
+		STATE_BAGHDAD
+		STATE_SYRIA
+		STATE_ERZURUM
+	}
+	possible = {
+		# Checks if the technology is researched by the war goal holder (if any) or by the releasing country
+		OR = {
+			scope:war_goal_holder ?= {
+				has_technology_researched = nationalism
+			}
+			AND = {
+				NOT = { exists = scope:war_goal_holder }
+				has_technology_researched = nationalism
+			}
+		}
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:WAL = {
+
+	states = {
+		STATE_WALLACHIA
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:KLM = {
+	states = {
+		STATE_ASTRAKHAN
+	}
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:CAU = {
+	states = {
+		STATE_GREATER_CAUCASUS
+		STATE_AZERBAIJAN
+		STATE_AZERBAIJAN
+		STATE_GREATER_CAUCASUS
+		STATE_AZERBAIJAN
+	}
+
+	required_num_states = 3
+
+	ai_will_do = { always = no }
+
+	possible = {
+		# Checks if the technology is researched by the war goal holder (if any) or by the releasing country
+		OR = {
+			scope:war_goal_holder ?= {
+				has_technology_researched = pan-nationalism
+			}
+			AND = {
+				NOT = { exists = scope:war_goal_holder }
+				has_technology_researched = pan-nationalism
+			}
+		}
+	}
+}
+
+REPLACE:MOR = {
+	states = {
+		STATE_MARRAKECH
+		STATE_FEZ
+		STATE_FEZ
+		STATE_MARRAKECH
+	}
+
+	required_num_states = 3
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:TUN = {
+	states = {
+		STATE_TUNISIA
+	}
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:TRI = {
+	states = {
+		STATE_LIBYA
+		STATE_LIBYA
+		STATE_LIBYA
+	}
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:ETH = {
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:LIB = {
+	states = {
+		STATE_LIBERIA
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:DFR = {
+	states = {
+		STATE_EQUATORIA
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:ASH = {
+	states = {
+		STATE_GOLD_COAST
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:DAH = {
+	states = {
+		STATE_DAHOMEY
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:WAD = {
+	states = {
+		STATE_CHAD
+		STATE_CHAD
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:MAD = {
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:KAU = {
+	states = {
+		STATE_WESTERN_AUSTRALIA
+	}
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:YUZ = {
+	states = {
+		STATE_FORMOSA
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:SAV = {
+	states = {
+		STATE_PROVENCE
+		STATE_PROVENCE
+	}
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:RHE = {
+	states = {
+		STATE_RHINELAND
+		STATE_RHINELAND
+		STATE_RHINELAND
+	}
+
+	required_num_states = 2
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:CON = {
+	states = {
+		STATE_CONSTANTINE
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:MAS = {
+	states = {
+		STATE_ORAN
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:AIT = {
+	provinces = { x429B12 x9AF6A4 x8E7690 x2DF9DB x3A0E38 x0090A0 xB1BCFF x0C5C65 }
+	ai_will_do = { always = no }
+}
+
+REPLACE:TJI = {
+	states = {
+		STATE_TAJIKISTAN
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:UZB = {
+	states = {
+		STATE_UZBEKIA
+		STATE_FERGANA
+		STATE_KHIVA
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:KYR = {
+	states = {
+		STATE_KIRGHIZIA
+	}
+	ai_will_do = { always = no }
+}
+
+REPLACE:EQT = {
+	states = {
+		STATE_PERNAMBUCO
+		STATE_PERNAMBUCO
+		STATE_PERNAMBUCO
+		STATE_PERNAMBUCO
+		STATE_PERNAMBUCO
+
+		STATE_PARA
+	}
+
+	possible = {
+		hidden_trigger = {
+			NOT = { has_variable = nordestinos_integrated }
+		}
+	}
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:PAU = {
+	use_culture_states = yes
+
+	possible = {
+		hidden_trigger = {
+			NOT = { has_variable = paulistas_integrated }
+		}
+	}
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:CTR = {
+	states = {
+		STATE_RIO_GRANDE_DO_SUL
+	}
+
+	possible = {
+		hidden_trigger = {
+			NOT = { has_variable = sulistas_integrated }
+		}
+	}
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:MNG = {
+	states = {
+		STATE_RIO_DE_JANEIRO
+		STATE_MATO_GROSSO
+	}
+
+	possible = {
+		hidden_trigger = {
+			has_journal_entry = je_brazilian_nation_building
+		}
+	}
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:BHI = {
+	states = {
+		STATE_PERNAMBUCO
+	}
+
+	possible = {
+		hidden_trigger = {
+			NOT = { has_variable = nordestinos_integrated }
+		}
+	}
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:CNW = {
+	provinces = { x1E38F8 x63EF7E xC900EF xA2DD9E }
+
+	ai_will_do = { always = no }
+
+	possible = {
+		NOT = { has_game_rule = plausible_releasable_nations }
+	}
+}
+
+REPLACE:NCR = {
+	states = {
+		STATE_NORTH_CAROLINA
+	}
+
+	ai_will_do = { always = no }
+
+	possible = {
+		NOT = { has_game_rule = plausible_releasable_nations }
+	}
+}
+
+REPLACE:SCR = {
+	states = {
+		STATE_NORTH_CAROLINA
+	}
+
+	ai_will_do = { always = no }
+
+	possible = {
+		NOT = { has_game_rule = plausible_releasable_nations }
+	}
+}
+
+REPLACE:CLI = {
+	states = {
+		STATE_NORTH_CAROLINA
+		STATE_NORTH_CAROLINA
+	}
+
+	ai_will_do = { always = no }
+
+	possible = {
+		NOT = { has_game_rule = plausible_releasable_nations }
+	}
+}
+
+REPLACE:GRG = {
+	states = {
+		STATE_FLORIDA
+	}
+
+	ai_will_do = { always = no }
+
+	possible = {
+		NOT = { has_game_rule = plausible_releasable_nations }
+	}
+}
+
+REPLACE:FLR = {
+	states = {
+		STATE_FLORIDA
+	}
+
+	ai_will_do = { always = no }
+
+	possible = {
+		NOT = { has_game_rule = plausible_releasable_nations }
+	}
+}
+
+REPLACE:ARB = {
+	states = {
+		STATE_KHUZESTAN
+	}
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:LUR = {
+	states = {
+		STATE_KHUZESTAN
+	}
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:MAZ = {
+	states = {
+		STATE_IRAKAJEMI
+	}
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:SAT = {
+	provinces = { x3E5505 x33E560 xE73C3C x47EE55 x4F5C91 xCC722D xE01853 x187C37 xCF3817 xD6660F
+	#Kolhapur
+	x40CE40 x42ACA6 x1131A0 }
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:KHP = {
+	provinces = { x40CE40 x42ACA6 x1131A0 }
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:COC = {
+	provinces = { xE4EB67 }
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:PUD = {
+	provinces = { xA02050 }
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:KNO = {
+	provinces = { x84EE56 xF91482 }
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:JEY = {
+	provinces = { x6B15F1 x7166FA xC744F9 x3EC5D1 xB3DED5 xD19AD8 xB00B6B }
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:MYB = {
+	provinces = { x0CE6EA xCCE5B7 x323B8A x11D169 x22B96B xBAE4B3 }
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:NAR = {
+	provinces = { xA0A8E0 xA15F01 x30C2D5 }
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:PTN = {
+	provinces = { xB6E5C1 x1504AD x5031A0 x1622F2 x404EEA xFBF096 x5BC5C8 xB07FDD }
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:COO = {
+	provinces = { x13A493 }
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:MNP = {
+	provinces = { x8C53B3 xCB0893 xB03121 xA17DC4 xB238B2 }
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:SUR = {
+	provinces = { x66337F x6B7184 x7884D6 x52001D x4605A8 xD64336 x5CBFF7 }
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:BAG = {
+	provinces = { x355332 xFE11FD xBC06E9 x0E5FEA x114EAE x618D5B x845EA7 xD0B021 xD0F986 }
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:BUN = {
+	provinces = { x5272B3 xE81D4F xEB50A4 x907021 }
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:AWA = {
+	provinces = { xBBC0A2 x4E84EF x0CE121 x923D4D x669ECB xACD960 x9EA436 x1405D1 xD99008 x564B78 x337F6C x43F651 xE070A0 x7D9692 x41D87C }
+	ai_will_do = { always = no }
+}
+
+REPLACE:PTA = {
+	provinces = { x945283 xA0F0A0 x66C9D9 x0C25D9 x394B7F }
+	ai_will_do = { always = no }
+}
+
+REPLACE:DHA = {
+	provinces = { x4EB354 x7E0401 }
+	ai_will_do = { always = no }
+}
+
+REPLACE:BER = {
+	provinces = { x3151E0 x73656F xEB1229 xD8CEF7 xECB4F5 x90B589 x03C674 x30E365 }
+	ai_will_do = { always = no }
+}
+
+REPLACE:IDA = {
+	provinces = { x3FFA53 x128888 x90052D x4133D4 xADD2A3 }
+	ai_will_do = { always = no }
+}
+
+REPLACE:BHV = {
+	provinces = { x697511 xB11F7B xBBB2BD }
+	ai_will_do = { always = no }
+}
+
+REPLACE:JUN = {
+	provinces = { x30D060 x075A8E xB3D1CD }
+	ai_will_do = { always = no }
+}
+
+REPLACE:PLP = {
+	provinces = { xD31590 }
+	ai_will_do = { always = no }
+}
+
+REPLACE:NAW = {
+	provinces = { xFC0FC1 x164DBB xD77765 xB9D851 x49DDB8 x0A4C7A }
+	ai_will_do = { always = no }
+}
+
+REPLACE:BHO = {
+	provinces = { x51E979 xEFD0DF }
+	ai_will_do = { always = no }
+}
+
+REPLACE:BIK = {
+	provinces = { xF3C5EA x9601FD x84F1F8 xA99FB3 xC40894 xF591B3 x53A30A x01F0E0 xEBA05F x214E7A x6A103F xEB0422 x5DACF4 }
+	ai_will_do = { always = no }
+}
+
+REPLACE:GWA = {
+	provinces = { xC77D13 x6A8538 xCD2556 xDCAFE4 xFBDCC9 x346A50 x87DE7B x897F27 xE3AF55 xAA246A x983C0D x0A05FF xF6BCF1 xC4F4E4 x1E9A75 x14EB25 xFA701B xA9E591 x746A39 }
+	ai_will_do = { always = no }
+}
+
+REPLACE:ALW = {
+	provinces = { x82B440 x0A43D0 x0710F5 xBA06BC }
+	ai_will_do = { always = no }
+}
+
+REPLACE:KOT = {
+	provinces = { xE95A9E xE27278 xBC1373 }
+	ai_will_do = { always = no }
+}
+
+REPLACE:BIH = {
+	states = {
+		STATE_BIHAR
+	}
+
+	possible = {
+		# Checks if the technology is researched by the war goal holder (if any) or by the releasing country
+		OR = {
+			scope:war_goal_holder ?= {
+				has_technology_researched = nationalism
+			}
+			AND = {
+				NOT = { exists = scope:war_goal_holder }
+				has_technology_researched = nationalism
+			}
+		}
+	}
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:ARK = {
+	states = {
+		STATE_ARAKAN
+	}
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:ZAN = {
+	states = {
+		STATE_ZANZIBAR
+	}
+
+	possible = {
+		hidden_trigger = {
+			NOT = { has_journal_entry = je_splitting_oman }
+		}
+	}
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:QWR = { # Qwara
+	provinces = { xC19466 xA2BCF9 x7E83AE x61A2A3 xEFA8BC }
+	ai_will_do = { always = no }
+}
+
+REPLACE:TGR = { # Tigray
+	provinces = { x793499 x81DDA7 xB1B90E x5B5305 xF090A0 x28FE62 xA3CD68 x962CFC xDF15B2 x68239C x57AA00 x5CAB2B x1539E2 x1A5869 }
+	ai_will_do = { always = no }
+}
+
+REPLACE:WLO = { # Wello
+	provinces = { x4A8BE1 xDF37BE x6BA88A xC040E0 xBB012E xC00F88 x5EF353 xCA393F xAFF2F2 x3E9959 x079D31 x82A9D3 x7A0E0D x5A5824 x61A090 }
+	ai_will_do = { always = no }
+}
+
+REPLACE:BGM = { # Begemder
+	provinces = { xC19466 x0DED25 xDF2090 x536ACF xB87731 x61A2A3 xEFA8BC x7E83AE xA2BCF9  }
+	ai_will_do = { always = no }
+}
+
+REPLACE:GJM = { # Gojjam
+	provinces = { x7152F3 x2F3AE3 x652B36 xB969A7 x6F31A5 x3BE1BE xE06640 x931306 x251691 xDA7922 x489309 xA50EE3 xD7E040 }
+	ai_will_do = { always = no }
+}
+
+REPLACE:MPH = { # Muang Phuan
+	provinces = { x2DE84E x8BFF1F x0B160B x1957E0 xB0B020 }
+	ai_will_do = { always = no }
+}
+
+REPLACE:ALK = {
+	states = {
+		STATE_ALASKA
+	}
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:BNT = {
+	states = {
+		STATE_WESTERN_SERBIA
+		STATE_NORTHERN_TRANSYLVANIA
+	}
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:ARN = {
+	states = {
+		STATE_CATALONIA
+	}
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:LEO = {
+	states = {
+		STATE_GALICIA
+		STATE_GALICIA
+		STATE_GALICIA
+	}
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:ASU = {
+	states = {
+		STATE_GALICIA
+	}
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:TRH = { # Turkestan
+	states = {
+		STATE_FERGANA
+		STATE_UZBEKIA
+		STATE_KIRGHIZIA
+		STATE_KHIVA
+		STATE_KHIVA
+		STATE_HERAT
+		STATE_TAJIKISTAN
+		STATE_KHIVA
+		STATE_AKMOLINSK
+		STATE_SEMIRECHE
+	}
+
+	ai_will_do = { always = no }
+
+	required_num_states = 5
+}
+
+REPLACE:FZN = {
+	states = {
+		STATE_LIBYA
+	}
+
+	ai_will_do = { always = no }
+
+	required_num_states = 1
+}
+
+REPLACE:CYR = {
+	states = {
+		STATE_LIBYA
+	}
+
+	ai_will_do = { always = no }
+
+	required_num_states = 1
+}
+
+REPLACE:LBY = {
+	states = {
+		STATE_LIBYA
+		STATE_LIBYA
+		STATE_LIBYA
+	}
+
+	possible = {
+		# Checks if the technology is researched by the war goal holder (if any) or by the releasing country
+		OR = {
+			scope:war_goal_holder ?= {
+				has_technology_researched = nationalism
+			}
+			AND = {
+				NOT = { exists = scope:war_goal_holder }
+				has_technology_researched = nationalism
+			}
+		}
+	}
+
+	ai_will_do = { always = no }
+
+	required_num_states = 3
+}

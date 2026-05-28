@@ -1,0 +1,353 @@
+﻿# ---- african_strategic_regions.txt ----
+# Strategic Regions in Africa
+
+REPLACE:region_nile_basin = {
+	graphical_culture = "arabic"
+	capital_province = x50D060
+	map_color = { 0.5 0 0 }
+	states = {   STATE_UPPER_EGYPT STATE_LOWER_EGYPT STATE_SINAI    STATE_EQUATORIA STATE_BLUE_NILE  }
+}
+
+REPLACE:region_north_africa = {
+	graphical_culture = "arabic"
+	capital_province = xE6014A
+	map_color = { 0.7 1 0.1 }
+	states = { STATE_WEST_SAHARA STATE_SAHARA  STATE_MARRAKECH STATE_FEZ   STATE_ORAN STATE_ALGIERS STATE_CONSTANTINE STATE_TUNISIA STATE_LIBYA   }
+}
+
+REPLACE:region_west_africa = {
+	graphical_culture = "african"
+	capital_province = x186409
+	map_color = { 72 208 203 }
+	states = { STATE_SENEGAL STATE_GUINEA STATE_SIERRA_LEONE STATE_LIBERIA  STATE_IVORY_COAST STATE_GOLD_COAST STATE_VOLTA  STATE_EASTERN_MALI STATE_MAURITANIA STATE_TIMBUKTU STATE_INNER_MAURITANIA  STATE_NIGER_DELTA STATE_YORUBA_STATES   STATE_EAST_HAUSALAND    STATE_DAHOMEY STATE_NIGER }
+}
+
+REPLACE:region_equatorial_africa = {
+	graphical_culture = "african"
+	capital_province = xE9DE6C
+	map_color = { 0 0.5 0 }
+	states = { STATE_BAS_CONGO STATE_CONGO STATE_KASAI STATE_EQUATEUR STATE_CONGO_ORIENTALE STATE_UBANGI_SHARI STATE_NORTH_ANGOLA STATE_EAST_ANGOLA STATE_SOUTH_ANGOLA STATE_GABON STATE_SOUTH_CAMEROON STATE_KATANGA STATE_CHAD   }
+}
+
+REPLACE:region_southern_africa = {
+	graphical_culture = "african"
+	capital_province = x41C0F0
+	map_color = { 0.761 0.134 0.735 }
+	states = { STATE_NAMAQUALAND STATE_BOTSWANA  STATE_CAPE_COLONY   STATE_TRANSVAAL  STATE_HEREROLAND }
+}
+
+REPLACE:region_east_africa = {
+	graphical_culture = "african"
+	capital_province = x3A7D3F
+	map_color = { 0.978 0.123 0.1 }
+	states = { STATE_ZANZIBAR STATE_LINDI STATE_MOCAMBIQUE STATE_TANGANYIKA STATE_SOUTH_MADAGASCAR STATE_NORTH_MADAGASCAR STATE_INDIAN_OCEAN_TERRITORY STATE_KAZEMBE STATE_ZAMBEZIA STATE_KENYA  STATE_UGANDA STATE_ZAMBEZI STATE_ZAMBIA STATE_LOURENCO_MARQUES STATE_ERITREA STATE_GONDER STATE_AMHARA STATE_OROMIA STATE_SOMALILAND }
+}
+
+
+# ---- east_asia_strategic_regions.txt ----
+# Strategic Regions in Eastern Asia
+
+REPLACE:region_indochina = {
+	graphical_culture = "asian"
+	capital_province = x5C3070
+	map_color = { 0.9 0.1 0.1 }
+	states = { STATE_CAMBODIA  STATE_TONKIN  STATE_LAOS   STATE_MALAYA STATE_TENASSERIM STATE_BANGKOK STATE_KACHIN STATE_SHAN_STATES STATE_MANDALAY STATE_PEGU STATE_ARAKAN }
+}
+
+REPLACE:region_indonesia = {
+	graphical_culture = "asian"
+	capital_province = x6ED39E
+	map_color = { 0.204 0.651 0.308 }
+	states = { STATE_NORTH_SUMATRA   STATE_WEST_JAVA    STATE_MOLUCCAS  STATE_WEST_BORNEO    STATE_LUZON  STATE_WESTERN_NEW_GUINEA  }
+}
+
+REPLACE:region_south_china = {
+	graphical_culture = "asian"
+	capital_province = x2BDE7B
+	map_color = { 0.8 0.8 0.9 }
+	states = { STATE_GUIZHOU STATE_CHONGQING STATE_SICHUAN STATE_SOUTHERN_ANHUI STATE_SHAOZHOU STATE_GUANGDONG STATE_FUJIAN STATE_FORMOSA STATE_GUANGXI STATE_ZHEJIANG STATE_SUZHOU STATE_NANJING STATE_HUNAN STATE_JIANGXI STATE_YUNNAN STATE_EASTERN_HUBEI STATE_WESTERN_HUBEI }
+}
+
+REPLACE:region_north_china = {
+	graphical_culture = "asian"
+	capital_province = x90D001
+	map_color = { 1 1 0 }
+	states = { STATE_SHANDONG STATE_BEIJING STATE_ZHILI STATE_HENAN STATE_NORTHERN_ANHUI STATE_SHANXI STATE_JIANGSU STATE_ULIASTAI  STATE_HINGGAN STATE_ALXA STATE_NINGXIA STATE_GANSU STATE_XIAN }
+}
+
+REPLACE:region_northeast_asia = {
+	graphical_culture = "asian"
+	capital_province = xA0E2EE
+	map_color = { 0.7 0.7 0.3 }
+	states = { STATE_SOUTHERN_MANCHURIA STATE_NORTHERN_MANCHURIA STATE_SHENGJING STATE_OUTER_MANCHURIA STATE_SEOUL   STATE_PYONGYANG   STATE_HOKKAIDO  STATE_KANTO  STATE_KANSAI STATE_KYUSHU   STATE_SAKHALIN  STATE_KYOTO    STATE_OKHOTSK }
+}
+
+REPLACE:region_siberia = {
+	capital_province = x0C0895
+	map_color = { 0.68 1 0.32 }
+	states = {   STATE_TOMSK  STATE_TUVA STATE_SURGUT   STATE_URAL  STATE_YAKUTSK STATE_TRANS_BAIKAL STATE_IRKUTSK   }
+}
+
+REPLACE:region_oceania = {
+	capital_province = x10DF50
+	map_color = { 0.2 0.4 0.7 }
+	states = { STATE_NEW_SOUTH_WALES    STATE_WESTERN_AUSTRALIA  STATE_NORTH_ISLAND  STATE_HAWAIIAN_ISLANDS  STATE_WEST_MICRONESIA STATE_SOLOMON_ISLANDS STATE_FIJI        }
+}
+
+
+# ---- europe_strategic_regions.txt ----
+# Strategic Regions in Western Europe
+
+#NEW West Europe
+REPLACE:region_western_europe = {
+	capital_province = xA0A0C0
+	map_color = { 1 0 0 }
+	states = {  STATE_MIDLANDS   STATE_HOME_COUNTIES STATE_YORKSHIRE   STATE_LOWLANDS  STATE_LEINSTER  STATE_MUNSTER  STATE_ILE_DE_FRANCE   STATE_BRITTANY    STATE_BURGUNDY    STATE_FLANDERS STATE_HOLLAND    STATE_RHINELAND  }
+}
+
+# region_north_sea_coast = {
+# 	capital_province = x84625B
+# 	map_color = { 220 215 33 }
+# 	states = {  STATE_LOWLANDS STATE_ICELAND STATE_GREENLAND  STATE_LEINSTER  STATE_MUNSTER }
+# }
+
+# region_iberia = {
+# 	capital_province = xD060C0
+# 	map_color = { 186 113 22 }
+# 	states = { STATE_CATALONIA STATE_OLD_CASTILE    STATE_GALICIA   STATE_LOWER_ANDALUSIA      STATE_ESTREMADURA   STATE_AZORES     }
+# }
+
+# region_france = {
+# 	capital_province = x90E000
+# 	map_color = { 9 16 164 }
+# 	states = {  STATE_ILE_DE_FRANCE   STATE_BRITTANY    STATE_BURGUNDY    }
+# }
+
+#NEW South Europe
+REPLACE:region_southern_europe = {
+	capital_province = x7516B6
+	map_color = { 39 146 164 }
+	states = {
+	# Iberia
+	STATE_CATALONIA STATE_OLD_CASTILE    STATE_GALICIA   STATE_LOWER_ANDALUSIA      STATE_ESTREMADURA   STATE_AZORES    
+
+	# Italy
+	STATE_PIEDMONT   STATE_LAZIO   STATE_SICILY STATE_SARDINIA  STATE_CORSICA   STATE_ABRUZZO  STATE_VENETIA   
+
+	# Occitania
+	STATE_PROVENCE   STATE_AQUITAINE   
+	}
+}
+
+# region_rhine = {
+# 	capital_province = x6E4891
+# 	map_color = { 91 205 60 }
+# 	states = { STATE_FLANDERS STATE_HOLLAND    STATE_RHINELAND   STATE_WESTPHALIA  }
+# }
+
+# region_italy = {
+# 	capital_province = xB040A0
+# 	map_color = { 97 209 251 }
+# 	states = { STATE_PIEDMONT   STATE_LAZIO   STATE_SICILY STATE_SARDINIA  STATE_CORSICA   STATE_ABRUZZO  STATE_VENETIA    }
+# }
+
+#NEW Balkans
+REPLACE:region_balkans = {
+	capital_province = xEFA0C0
+	map_color = { 125 171 84 }
+	states = {  STATE_CROATIA     STATE_ALBANIA    STATE_BULGARIA  STATE_WESTERN_SERBIA   STATE_ATTICA    STATE_CRETE   STATE_CENTRAL_HUNGARY STATE_SLOVAKIA       STATE_WALLACHIA  STATE_MOLDAVIA  STATE_NORTHERN_TRANSYLVANIA STATE_EASTERN_THRACE }
+}
+
+#NEW Central Europe
+REPLACE:region_central_europe = {
+	capital_province = x8001A0
+	map_color = { 143 141 128 }
+	states = {  STATE_HANNOVER   STATE_SCHLESWIG_HOLSTEIN   STATE_BRANDENBURG  STATE_SAXONY  STATE_UPPER_SILESIA  STATE_BOHEMIA  STATE_BAVARIA    STATE_AUSTRIA STATE_WEST_SWITZERLAND STATE_BADEN  STATE_WESTPHALIA  }
+}
+
+# region_south_germany = {
+# 	capital_province = xA40093
+# 	map_color = { 75 130 135 }
+# 	states = {  STATE_BOHEMIA  STATE_BAVARIA    STATE_AUSTRIA STATE_WEST_SWITZERLAND STATE_BADEN  }
+# }
+
+#NEW Northern Europe
+REPLACE:region_northern_europe = {
+	capital_province = x9686A5
+	map_color = { 8 82 165 }
+	states = {   STATE_ZEALAND   STATE_SCANIA STATE_SVEALAND STATE_EASTERN_NORWAY   STATE_ICELAND STATE_GREENLAND  STATE_UUSIMAA       }
+}
+
+# region_danubia = {
+# 	capital_province = x51E0E0
+# 	map_color = { 249 126 98 }
+# 	states = {  STATE_CENTRAL_HUNGARY STATE_SLOVAKIA       STATE_WALLACHIA  STATE_MOLDAVIA  STATE_NORTHERN_TRANSYLVANIA }
+# }
+
+# region_poland = {
+# 	capital_province = x4161A0
+# 	map_color = { 197 92 106 }
+# 	states = {  STATE_GREATER_POLAND   STATE_WEST_GALICIA STATE_EAST_GALICIA STATE_UPPER_SILESIA STATE_WEST_PRUSSIA STATE_EAST_PRUSSIA }
+# }
+
+#NEW Russia
+REPLACE:region_russia = {
+	capital_province = xE0A021
+	map_color = { 20 112 22 }
+	states = { STATE_DAGESTAN STATE_KUBAN   STATE_ASTRAKHAN   STATE_INGRIA STATE_KURSK   STATE_MOSCOW  STATE_ORYOL  STATE_YAROSLAVL  STATE_TAMBOV     STATE_ARKHANGELSK   STATE_PERM STATE_VYATKA STATE_KAZAN  }
+}
+
+# region_dnieper = {
+# 	capital_province = xA12B5A
+# 	map_color = { 80 220 220 }
+# 	states = { STATE_CRIMEA  STATE_KHARKOV STATE_KIEV    }
+# }
+
+# region_belarus = {
+# 	capital_province = xA16195
+# 	map_color = { 170 190 190 }
+# 	states = {  STATE_BREST STATE_MINSK  }
+# }
+
+#NEW Baltic States
+REPLACE:region_eastern_europe = {
+	capital_province = x00A0A0
+	map_color = { 80 100 150 }
+	states = { STATE_VILNIUS    STATE_RIGA STATE_TALINN  STATE_BREST STATE_MINSK  STATE_WEST_PRUSSIA STATE_EAST_PRUSSIA  STATE_GREATER_POLAND   STATE_WEST_GALICIA STATE_EAST_GALICIA STATE_CRIMEA  STATE_KHARKOV STATE_KIEV    }
+}
+
+# region_finland = {
+# 	capital_province = xED8DC6
+# 	map_color = { 250 250 250 }
+# 	states = {  STATE_UUSIMAA       }
+# }
+
+# region_arctic_russia = {
+# 	capital_province = x1CE50A
+# 	map_color = { 220 250 220 }
+# 	states = {  STATE_ARKHANGELSK  }
+# }
+
+# region_urals = {
+# 	capital_province = x492819
+# 	map_color = { 120 120 120 }
+# 	states = {  STATE_PERM STATE_URAL  STATE_VYATKA STATE_KAZAN  }
+# }
+
+
+# ---- north_america_strategic_regions.txt ----
+# Strategic Regions in North America
+
+REPLACE:region_canada = {
+	capital_province = x8C4FC7
+	map_color = { 0.21 0.81 0.82 }
+	states = { STATE_NORTHWEST_TERRITORIES STATE_NUNAVUT STATE_ONTARIO STATE_QUEBEC STATE_NEWFOUNDLAND STATE_MANITOBA STATE_ALBERTA STATE_SASKATCHEWAN }
+}
+
+REPLACE:region_pacific_coast = {
+	capital_province = xBD0F03
+	map_color = { 0.471 0.824 0.196 }
+	states = { STATE_CALIFORNIA  STATE_OREGON   STATE_UTAH STATE_ARIZONA STATE_ALASKA STATE_YUKON_TERRITORY STATE_BRITISH_COLUMBIA }
+}
+
+REPLACE:region_great_plains = {
+	capital_province = x9A9935
+	map_color = { 0.5 1 0.5 }
+	states = {  STATE_WYOMING   STATE_SOUTH_DAKOTA  STATE_KANSAS  STATE_LOUISIANA  STATE_TEXAS  STATE_MISSOURI  STATE_MINNESOTA}
+}
+
+REPLACE:region_atlantic_coast = {
+	capital_province = x6B3BE8
+	map_color = { 0 0.8 0.4 }
+	states = {  STATE_MICHIGAN    STATE_OHIO  STATE_TENNESSEE STATE_MASSACHUSETTS      STATE_NEW_BRUNSWICK   STATE_NEW_YORK  STATE_MISSISSIPPI  STATE_FLORIDA   STATE_NORTH_CAROLINA  STATE_DISTRICT_OF_COLUMBIA  }
+}
+
+REPLACE:region_central_america = {
+	graphical_culture = "latin"
+	capital_province = x10EFC0
+	map_color = { 1 0.25 0.25 }
+	states = { STATE_BAJA_CALIFORNIA STATE_HONDURAS STATE_NICARAGUA STATE_COSTA_RICA STATE_PANAMA STATE_SAN_SALVADOR STATE_YUCATAN  STATE_GUATEMALA STATE_JALISCO   STATE_MEXICO   STATE_RIO_GRANDE      STATE_WESTERN_CUBA  STATE_HAITI  STATE_WEST_INDIES    }
+}
+
+
+# ---- south_america_strategic_regions.txt ----
+# Strategic Regions in South America
+
+REPLACE:region_brazil = {
+	graphical_culture = "latin"
+	capital_province = x7600E6
+	map_color = { 0.222 1 0.362 }
+	states = {  STATE_SAO_PAULO STATE_RIO_DE_JANEIRO  STATE_RIO_GRANDE_DO_SUL STATE_MATO_GROSSO   STATE_PERNAMBUCO        STATE_PARA STATE_AMAZONAS }
+}
+
+REPLACE:region_andes = {
+	graphical_culture = "latin"
+	capital_province = x40E12A
+	map_color = { 0 1 0 }
+	states = { STATE_LIMA STATE_ICA    STATE_LA_PAZ STATE_ECUADOR    STATE_ANTOFAGASTA   }
+}
+
+REPLACE:region_la_plata = {
+	graphical_culture = "latin"
+	capital_province = x708090
+	map_color = { 0 0.8 0.4 }
+	states = { STATE_RIO_NEGRO  STATE_SANTA_FE   STATE_CHACO STATE_BUENOS_AIRES  STATE_BAJO_PARAGUAY STATE_SOUTH_ATLANTIC_ISLANDS  STATE_ARAUCANIA STATE_PATAGONIA STATE_SANTIAGO }
+}
+
+REPLACE:region_gran_colombia = {
+	graphical_culture = "latin"
+	capital_province = xA00111
+	map_color = { 0.4 0.3 0.2 }
+	states = {  STATE_GUAYANA STATE_MIRANDA    STATE_CAUCA STATE_CUNDINAMARCA }
+}
+
+
+# ---- west_south_asia_strategic_regions.txt ----
+# Strategic Regions in West and South Asia
+
+REPLACE:region_near_east = {
+	graphical_culture = "arabic"
+	capital_province = x66B13B
+	map_color = { 0.25 0.5 1 }
+	states = {    STATE_ANKARA STATE_ADANA  STATE_CYPRUS  STATE_TRABZON  STATE_ERZURUM   STATE_PALESTINE  STATE_SYRIA   STATE_BAGHDAD   }
+}
+
+REPLACE:region_arabia = {
+	graphical_culture = "arabic"
+	map_color = { 0.1 0.7 0.1 }
+	states = { STATE_OMAN  STATE_YEMEN STATE_HEDJAZ  STATE_NEJD  }
+}
+
+REPLACE:region_greater_persia = {
+	graphical_culture = "arabic"
+	map_color = { 119 105 225 }
+	states = { STATE_BALUCHISTAN STATE_GREATER_CAUCASUS  STATE_AZERBAIJAN  STATE_KHORASAN STATE_ISFAHAN  STATE_IRAKAJEMI STATE_LARISTAN   STATE_KHUZESTAN STATE_TABRIZ     STATE_KABUL STATE_PASHTUNISTAN     STATE_HERAT   }
+}
+
+REPLACE:region_central_asia = {
+	graphical_culture = "arabic"
+	capital_province = x8ABC27
+	map_color = { 0.24 0.65 0.34 }
+	states = { STATE_UZBEKIA STATE_KHIVA STATE_TAJIKISTAN STATE_KIRGHIZIA  STATE_SEMIRECHE STATE_AKMOLINSK   STATE_FERGANA  STATE_DZUNGARIA STATE_TIANSHAN STATE_URALSK  }
+}
+
+REPLACE:region_south_india = {
+	graphical_culture = "arabic"
+	capital_province = x07104c
+	map_color = { 0.607 0.843 0.337 }
+	states = { STATE_CEYLON STATE_CIRCARS STATE_MYSORE STATE_TRAVANCORE STATE_MADRAS STATE_HYDERABAD STATE_KURNOOL STATE_BOMBAY }
+}
+
+REPLACE:region_himalayas = {
+	graphical_culture = "asian"
+	capital_province = x286514
+	map_color = { 177 207 205 }
+	states = { STATE_HIMALAYAS STATE_LHASA STATE_NGARI STATE_KASHMIR STATE_QINGHAI STATE_EASTERN_HIMALAYAS }
+}
+
+REPLACE:region_north_india = {
+	graphical_culture = "arabic"
+	capital_province = x13E50E
+	map_color = { 0.392 0.863 1 }
+	states = { STATE_GUJARAT STATE_SINDH STATE_CENTRAL_PROVINCES STATE_AWADH STATE_MALWA STATE_AGRA STATE_BUNDELKHAND STATE_BIHAR STATE_EAST_BENGAL STATE_WEST_BENGAL STATE_ASSAM STATE_ORISSA STATE_PUNJAB STATE_HILL_PUNJAB STATE_DELHI STATE_RAJPUTANA }
+}
