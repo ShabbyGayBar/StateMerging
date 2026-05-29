@@ -14706,7 +14706,7 @@ REPLACE:je_colonize_korea = {
 	            }
 				any_scope_state = {
 					is_in_geographic_region = geographic_region_korea
-					count >= 3
+					count >= 2
 	                OR = {
 	                    state_has_building_group_levels = {
 	                        type = bg_plantations
@@ -14795,7 +14795,7 @@ REPLACE:je_colonize_korea = {
 					NOT = {
 						any_scope_state = {
 							is_in_geographic_region = geographic_region_korea
-							count >= 5
+							count >= 2
 						}
 					}
 					c:KOR ?= {
