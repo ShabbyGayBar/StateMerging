@@ -63,7 +63,7 @@ gran_colombia.1 = {
 			}
 			add_claim = ROOT
 		}
-		s:STATE_AMAZONAS = {
+		s:STATE_LIMA = {
 			add_claim = ROOT
 		}
 		add_modifier = {

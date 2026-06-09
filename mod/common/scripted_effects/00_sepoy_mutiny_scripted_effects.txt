@@ -108,13 +108,13 @@
 			}
 			# Give Hill Punjab to Sikhs
 			NOT = { exists = c:PAN }
-			exists = s:STATE_HILL_PUNJAB.region_state:BIC
+			exists = s:STATE_DELHI.region_state:BIC
 		}
 		set_global_variable = sepoy_mutiny_sikh_uprising_global_var
 		create_country = {
 			origin = root
 			tag = PAN
-			state = s:STATE_HILL_PUNJAB.region_state:BIC
+			state = s:STATE_DELHI.region_state:BIC
 			on_created = {
 				set_variable = sepoy_mutiny_revolter_var
 				sepoy_mutiny_apply_laws_effect = yes
@@ -928,12 +928,12 @@ sepoy_mutiny_bengal_effect_high = {
 			# Hill Punjab State
 			if = {
 				limit = {
-					exists = s:STATE_HILL_PUNJAB.region_state:PAN
+					exists = s:STATE_DELHI.region_state:PAN
 				}
 				add_war_goal = {
 					holder = c:BIC
 					type = conquer_state
-					target_state = s:STATE_HILL_PUNJAB.region_state:PAN
+					target_state = s:STATE_DELHI.region_state:PAN
 				}
 			}
 			# Punjab State
@@ -1266,12 +1266,12 @@ sepoy_mutiny_bengal_effect_critical = {
 			# Hill Punjab State
 			if = {
 				limit = {
-					exists = s:STATE_HILL_PUNJAB.region_state:PAN
+					exists = s:STATE_DELHI.region_state:PAN
 				}
 				add_war_goal = {
 					holder = c:BIC
 					type = conquer_state
-					target_state = s:STATE_HILL_PUNJAB.region_state:PAN
+					target_state = s:STATE_DELHI.region_state:PAN
 				}
 			}
 			# Punjab State
@@ -2749,7 +2749,7 @@ sepoy_mutiny_tag_specific_war_goals = {
 	}
 	if = {
 		limit = {
-			exists = s:STATE_HILL_PUNJAB.region_state:BIC
+			exists = s:STATE_DELHI.region_state:BIC
 			root = {
 				OR = {
 					country_has_primary_culture = cu:panjabi
@@ -2760,7 +2760,7 @@ sepoy_mutiny_tag_specific_war_goals = {
 		add_war_goal = {
 			holder = root
 			type = conquer_state
-			target_state = s:STATE_HILL_PUNJAB.region_state:BIC
+			target_state = s:STATE_DELHI.region_state:BIC
 		}
 	}
 }

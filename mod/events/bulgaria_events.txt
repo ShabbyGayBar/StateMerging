@@ -60,7 +60,7 @@ bulgaria_events.1 = {
 						OR = {
 							this = s:STATE_EASTERN_THRACE
 							this = s:STATE_ATTICA
-							this = s:STATE_WESTERN_SERBIA
+							this = s:STATE_EASTERN_SERBIA
 						}
 					}
 				}
@@ -71,7 +71,7 @@ bulgaria_events.1 = {
 						OR = {
 							this = s:STATE_EASTERN_THRACE
 							this = s:STATE_ATTICA
-							this = s:STATE_WESTERN_SERBIA
+							this = s:STATE_EASTERN_SERBIA
 						}
 					}
 				}

@@ -305,10 +305,10 @@ assign_state_name_region_punjab = {
     if = {
         limit = {
             state_region = {
-                s:STATE_HILL_PUNJAB ?= this
+                s:STATE_DELHI ?= this
             }
         }
-        STATE_HILL_PUNJAB_state_name_assign = yes
+        STATE_DELHI_state_name_assign = yes
     }
 }
 
@@ -2486,7 +2486,7 @@ STATE_RAJPUTANA_state_name_assign = {
 }
 
 # Hill Punjab
-STATE_HILL_PUNJAB_state_name_assign = {
+STATE_DELHI_state_name_assign = {
     if = { # South Asian
         limit = {
             owner = {
@@ -2503,26 +2503,26 @@ STATE_HILL_PUNJAB_state_name_assign = {
             }
         }
 
-        set_state_name = STATE_HILL_PUNJAB_indian
+        set_state_name = STATE_DELHI_indian
 
         set_hub_name = {
             type = city
-            name = HUB_NAME_STATE_HILL_PUNJAB_city_indian
+            name = HUB_NAME_STATE_DELHI_city_indian
         }
 
         set_hub_name = {
             type = farm
-            name = HUB_NAME_STATE_HILL_PUNJAB_farm_indian
+            name = HUB_NAME_STATE_DELHI_farm_indian
         }
 
         set_hub_name = {
             type = wood
-            name = HUB_NAME_STATE_HILL_PUNJAB_wood_indian
+            name = HUB_NAME_STATE_DELHI_wood_indian
         }
 
         set_hub_name = {
             type = mine
-            name = HUB_NAME_STATE_HILL_PUNJAB_mine_indian
+            name = HUB_NAME_STATE_DELHI_mine_indian
         }
     }
     else = { # By putting an else at the end that resets the names we ensure that the names are switched back to their defaults if anyone else takes the states

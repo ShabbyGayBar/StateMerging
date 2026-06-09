@@ -1509,7 +1509,7 @@ REPLACE:GBR = { # Great Britain of United Kingdom
 
 		trigger = {
 			coa_def_republic_flag_trigger = yes
-			scope:actor ?= { NOT = { capital = { state_region = s:STATE_YORKSHIRE } } }
+			scope:actor ?= { NOT = { capital = { state_region = s:STATE_LANCASHIRE } } }
 		}
 	}
 	dynamic_country_name = {
@@ -1535,7 +1535,7 @@ REPLACE:GBR = { # Great Britain of United Kingdom
 			scope:actor ?= {
 				NOT = { has_law_or_variant = law_type:law_council_republic }
 				exists = capital
-				capital = { state_region = s:STATE_YORKSHIRE }
+				capital = { state_region = s:STATE_LANCASHIRE }
 			}
 		}
 	}
@@ -1549,7 +1549,7 @@ REPLACE:GBR = { # Great Britain of United Kingdom
 			coa_def_communist_flag_trigger = yes
 			scope:actor ?= {
 				exists = capital
-				capital = { state_region = s:STATE_YORKSHIRE }
+				capital = { state_region = s:STATE_LANCASHIRE }
 			}
 		}
 	}

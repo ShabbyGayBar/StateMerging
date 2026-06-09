@@ -7175,7 +7175,7 @@ on_state_owner_change = {
 					}
 					OR = {
 						this = s:STATE_ATTICA
-						this = s:STATE_WESTERN_SERBIA
+						this = s:STATE_EASTERN_SERBIA
 						this = s:STATE_EASTERN_THRACE
 					}
 				}
@@ -7217,7 +7217,7 @@ on_state_created = {
 					}
 					OR = {
 						this = s:STATE_ATTICA
-						this = s:STATE_WESTERN_SERBIA
+						this = s:STATE_EASTERN_SERBIA
 						this = s:STATE_EASTERN_THRACE
 					}
 				}

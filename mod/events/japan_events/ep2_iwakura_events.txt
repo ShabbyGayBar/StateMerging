@@ -524,7 +524,7 @@ iwakura_mission.5 = {
 		var:expedition_leader_storage_var ?= {
 			save_scope_as = iwakura_scope
 		}
-		s:STATE_YORKSHIRE ?= {
+		s:STATE_LANCASHIRE ?= {
 			random_scope_state = {
 				limit = {
 					is_largest_state_in_region = yes
