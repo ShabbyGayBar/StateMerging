@@ -308,7 +308,7 @@ is_vulnerable_to_ice = {
 
 is_vulnerable_to_tropical_storm = {
 	OR = {
-		this = s:STATE_CAPE_VERDE_SEA
+		this = s:STATE_AZORES_SEA
 		this = s:STATE_EQUATORIAL_ATLANTIC_OCEAN
 		this = s:STATE_MAIN_EQUATORIAL_CRURRENT
 		this = s:STATE_AMAZON_DELTA

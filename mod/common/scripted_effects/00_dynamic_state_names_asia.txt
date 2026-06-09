@@ -15,7 +15,7 @@ assign_state_name_region_anatolia  = {
                 s:STATE_EASTERN_THRACE ?= this
             }
         }
-        STATE_EAST_AEGEAN_ISLANDS_state_name_assign = yes
+        STATE_EASTERN_THRACE_state_name_assign = yes
     }
     if = {
         limit = {
@@ -23,7 +23,7 @@ assign_state_name_region_anatolia  = {
                 s:STATE_EASTERN_THRACE ?= this
             }
         }
-        STATE_AYDIN_state_name_assign = yes
+        STATE_EASTERN_THRACE_state_name_assign = yes
     }
     if = {
         limit = {
@@ -31,7 +31,7 @@ assign_state_name_region_anatolia  = {
                 s:STATE_EASTERN_THRACE ?= this
             }
         }
-        STATE_HUDAVENDIGAR_state_name_assign = yes
+        STATE_EASTERN_THRACE_state_name_assign = yes
     }
     if = {
         limit = {
@@ -66,7 +66,7 @@ assign_state_name_region_japan = {
                 s:STATE_KANTO ?= this
             }
         }
-        STATE_TOHOKU_state_name_assign = yes
+        STATE_KANTO_state_name_assign = yes
     }
     if = {
         limit = {
@@ -82,7 +82,7 @@ assign_state_name_region_japan = {
                 s:STATE_KYOTO ?= this
             }
         }
-        STATE_HOKUSHINETSU_state_name_assign = yes
+        STATE_KYOTO_state_name_assign = yes
     }
     if = {
         limit = {
@@ -90,7 +90,7 @@ assign_state_name_region_japan = {
                 s:STATE_KYOTO ?= this
             }
         }
-        STATE_TOKAI_state_name_assign = yes
+        STATE_KYOTO_state_name_assign = yes
     }
     if = {
         limit = {
@@ -98,7 +98,7 @@ assign_state_name_region_japan = {
                 s:STATE_KANTO ?= this
             }
         }
-        STATE_TOHOKU_state_name_assign = yes
+        STATE_KANTO_state_name_assign = yes
     }
     if = {
         limit = {
@@ -122,7 +122,7 @@ assign_state_name_region_japan = {
                 s:STATE_KANSAI ?= this
             }
         }
-        STATE_SHIKOKU_state_name_assign = yes
+        STATE_KANSAI_state_name_assign = yes
     }
     if = {
         limit = {
@@ -130,7 +130,7 @@ assign_state_name_region_japan = {
                 s:STATE_KANSAI ?= this
             }
         }
-        STATE_CHUGOKU_state_name_assign = yes
+        STATE_KANSAI_state_name_assign = yes
     }
     if = {
         limit = {
@@ -146,7 +146,7 @@ assign_state_name_region_japan = {
                 s:STATE_KYUSHU ?= this
             }
         }
-        STATE_RYUKYU_ISLANDS_state_name_assign = yes
+        STATE_KYUSHU_state_name_assign = yes
     }
 }
 ## South China
@@ -308,7 +308,7 @@ assign_state_name_region_punjab = {
                 s:STATE_DELHI ?= this
             }
         }
-        STATE_HILL_PUNJAB_state_name_assign = yes
+        STATE_DELHI_state_name_assign = yes
     }
 }
 
@@ -347,7 +347,7 @@ assign_state_name_region_manchuria = {
                 s:STATE_OUTER_MANCHURIA ?= this
             }
         }
-        STATE_AMUR_state_name_assign = yes
+        STATE_OUTER_MANCHURIA_state_name_assign = yes
     }
     if = {
         limit = {
@@ -371,7 +371,7 @@ assign_state_name_region_manchuria = {
                 s:STATE_SEOUL ?= this
             }
         }
-        STATE_BUSAN_state_name_assign = yes
+        STATE_SEOUL_state_name_assign = yes
     }
     if = {
         limit = {
@@ -379,7 +379,7 @@ assign_state_name_region_manchuria = {
                 s:STATE_PYONGYANG ?= this
             }
         }
-        STATE_SARIWON_state_name_assign = yes
+        STATE_PYONGYANG_state_name_assign = yes
     }
     if = {
         limit = {
@@ -395,7 +395,7 @@ assign_state_name_region_manchuria = {
                 s:STATE_SEOUL ?= this
             }
         }
-        STATE_YANGHO_state_name_assign = yes
+        STATE_SEOUL_state_name_assign = yes
     }
 }
 
@@ -415,7 +415,7 @@ assign_state_name_region_indochina = {
                 s:STATE_TONKIN ?= this
             }
         }
-        STATE_ANNAM_state_name_assign = yes
+        STATE_TONKIN_state_name_assign = yes
     }
     if = {
         limit = {
@@ -423,7 +423,7 @@ assign_state_name_region_indochina = {
                 s:STATE_TONKIN ?= this
             }
         }
-        STATE_MEKONG_state_name_assign = yes
+        STATE_TONKIN_state_name_assign = yes
     }
     if = {
         limit = {
@@ -449,7 +449,7 @@ assign_state_name_region_indochina = {
 
 ## Anatolia Region
 # East Aegean Islands
-STATE_EAST_AEGEAN_ISLANDS_state_name_assign = {
+STATE_EASTERN_THRACE_state_name_assign = {
     if = { # Greek
         limit = {
             owner = {
@@ -459,26 +459,26 @@ STATE_EAST_AEGEAN_ISLANDS_state_name_assign = {
             }
         }
 
-        set_state_name = STATE_EAST_AEGEAN_ISLANDS_greek
+        set_state_name = STATE_EASTERN_THRACE_greek
 
         set_hub_name = {
             type = city
-            name = HUB_NAME_STATE_EAST_AEGEAN_ISLANDS_city_greek
+            name = HUB_NAME_STATE_EASTERN_THRACE_city_greek
         }
 
         set_hub_name = {
             type = farm
-            name = HUB_NAME_STATE_EAST_AEGEAN_ISLANDS_farm_greek
+            name = HUB_NAME_STATE_EASTERN_THRACE_farm_greek
         }
 
         set_hub_name = {
             type = wood
-            name = HUB_NAME_STATE_EAST_AEGEAN_ISLANDS_wood_greek
+            name = HUB_NAME_STATE_EASTERN_THRACE_wood_greek
         }
 
         set_hub_name = {
             type = port
-            name = HUB_NAME_STATE_EAST_AEGEAN_ISLANDS_port_greek
+            name = HUB_NAME_STATE_EASTERN_THRACE_port_greek
         }
     }
     else_if = { # Turkish
@@ -490,26 +490,26 @@ STATE_EAST_AEGEAN_ISLANDS_state_name_assign = {
             }
         }
 
-        set_state_name = STATE_EAST_AEGEAN_ISLANDS_turkish
+        set_state_name = STATE_EASTERN_THRACE_turkish
 
         set_hub_name = {
             type = city
-            name = HUB_NAME_STATE_EAST_AEGEAN_ISLANDS_city_turkish
+            name = HUB_NAME_STATE_EASTERN_THRACE_city_turkish
         }
 
         set_hub_name = {
             type = farm
-            name = HUB_NAME_STATE_EAST_AEGEAN_ISLANDS_farm_turkish
+            name = HUB_NAME_STATE_EASTERN_THRACE_farm_turkish
         }
 
         set_hub_name = {
             type = wood
-            name = HUB_NAME_STATE_EAST_AEGEAN_ISLANDS_wood_turkish
+            name = HUB_NAME_STATE_EASTERN_THRACE_wood_turkish
         }
 
         set_hub_name = {
             type = port
-            name = HUB_NAME_STATE_EAST_AEGEAN_ISLANDS_port_turkish
+            name = HUB_NAME_STATE_EASTERN_THRACE_port_turkish
         }
     }
     else = { # By putting an else at the end that resets the names we ensure that the names are switched back to their defaults if anyone else takes the states
@@ -752,7 +752,7 @@ STATE_EASTERN_THRACE_state_name_assign = {
 }
 
 # Aydin
-STATE_AYDIN_state_name_assign = {
+STATE_EASTERN_THRACE_state_name_assign = {
     if = { # Greek
         limit = {
             owner = {
@@ -762,31 +762,31 @@ STATE_AYDIN_state_name_assign = {
             }
         }
 
-        set_state_name = STATE_AYDIN_greek
+        set_state_name = STATE_EASTERN_THRACE_greek
 
         set_hub_name = {
             type = city
-            name = HUB_NAME_STATE_AYDIN_city_greek
+            name = HUB_NAME_STATE_EASTERN_THRACE_city_greek
         }
 
         set_hub_name = {
             type = farm
-            name = HUB_NAME_STATE_AYDIN_farm_greek
+            name = HUB_NAME_STATE_EASTERN_THRACE_farm_greek
         }
 
         set_hub_name = {
             type = wood
-            name = HUB_NAME_STATE_AYDIN_wood_greek
+            name = HUB_NAME_STATE_EASTERN_THRACE_wood_greek
         }
 
         set_hub_name = {
             type = mine
-            name = HUB_NAME_STATE_AYDIN_mine_greek
+            name = HUB_NAME_STATE_EASTERN_THRACE_mine_greek
         }
 
         set_hub_name = {
             type = port
-            name = HUB_NAME_STATE_AYDIN_port_greek
+            name = HUB_NAME_STATE_EASTERN_THRACE_port_greek
         }
     }
     else = { # By putting an else at the end that resets the names we ensure that the names are switched back to their defaults if anyone else takes the states
@@ -796,7 +796,7 @@ STATE_AYDIN_state_name_assign = {
 }
 
 # Hudavendigar
-STATE_HUDAVENDIGAR_state_name_assign = {
+STATE_EASTERN_THRACE_state_name_assign = {
     if = { # Greek
         limit = {
             owner = {
@@ -806,31 +806,31 @@ STATE_HUDAVENDIGAR_state_name_assign = {
             }
         }
 
-        set_state_name = STATE_HUDAVENDIGAR_greek
+        set_state_name = STATE_EASTERN_THRACE_greek
 
         set_hub_name = {
             type = city
-            name = HUB_NAME_STATE_HUDAVENDIGAR_city_greek
+            name = HUB_NAME_STATE_EASTERN_THRACE_city_greek
         }
 
         set_hub_name = {
             type = farm
-            name = HUB_NAME_STATE_HUDAVENDIGAR_farm_greek
+            name = HUB_NAME_STATE_EASTERN_THRACE_farm_greek
         }
 
         set_hub_name = {
             type = wood
-            name = HUB_NAME_STATE_HUDAVENDIGAR_wood_greek
+            name = HUB_NAME_STATE_EASTERN_THRACE_wood_greek
         }
 
         set_hub_name = {
             type = mine
-            name = HUB_NAME_STATE_HUDAVENDIGAR_mine_greek
+            name = HUB_NAME_STATE_EASTERN_THRACE_mine_greek
         }
 
         set_hub_name = {
             type = port
-            name = HUB_NAME_STATE_HUDAVENDIGAR_port_greek
+            name = HUB_NAME_STATE_EASTERN_THRACE_port_greek
         }
     }
     else = { # By putting an else at the end that resets the names we ensure that the names are switched back to their defaults if anyone else takes the states
@@ -1315,7 +1315,7 @@ STATE_HOKKAIDO_state_name_assign = {
     }
 }
 
-STATE_TOHOKU_state_name_assign = {
+STATE_KANTO_state_name_assign = {
     if = {
         limit = {
             owner = {
@@ -1325,7 +1325,7 @@ STATE_TOHOKU_state_name_assign = {
             }
         }
 
-        set_state_name = STATE_TOHOKU_japanese
+        set_state_name = STATE_KANTO_japanese
         set_hub_names = japanese
     }
     else = {
@@ -1353,7 +1353,7 @@ STATE_KANTO_state_name_assign = {
     }
 }
 
-STATE_HOKUSHINETSU_state_name_assign = {
+STATE_KYOTO_state_name_assign = {
     if = {
         limit = {
             owner = {
@@ -1363,7 +1363,7 @@ STATE_HOKUSHINETSU_state_name_assign = {
             }
         }
 
-        set_state_name = STATE_HOKUSHINETSU_japanese
+        set_state_name = STATE_KYOTO_japanese
         set_hub_names = japanese
     }
     else = {
@@ -1372,7 +1372,7 @@ STATE_HOKUSHINETSU_state_name_assign = {
     }
 }
 
-STATE_TOKAI_state_name_assign = {
+STATE_KYOTO_state_name_assign = {
     if = {
         limit = {
             owner = {
@@ -1382,7 +1382,7 @@ STATE_TOKAI_state_name_assign = {
             }
         }
 
-        set_state_name = STATE_TOKAI_japanese
+        set_state_name = STATE_KYOTO_japanese
         set_hub_names = japanese
     }
     else = {
@@ -1445,7 +1445,7 @@ STATE_KYOTO_state_name_assign = {
     }
 }
 
-STATE_SHIKOKU_state_name_assign = {
+STATE_KANSAI_state_name_assign = {
     if = {
         limit = {
             owner = {
@@ -1455,7 +1455,7 @@ STATE_SHIKOKU_state_name_assign = {
             }
         }
 
-        set_state_name = STATE_SHIKOKU_japanese
+        set_state_name = STATE_KANSAI_japanese
         set_hub_names = japanese
     }
     else = {
@@ -1464,7 +1464,7 @@ STATE_SHIKOKU_state_name_assign = {
     }
 }
 
-STATE_CHUGOKU_state_name_assign = {
+STATE_KANSAI_state_name_assign = {
     if = {
         limit = {
             owner = {
@@ -1474,7 +1474,7 @@ STATE_CHUGOKU_state_name_assign = {
             }
         }
 
-        set_state_name = STATE_CHUGOKU_japanese
+        set_state_name = STATE_KANSAI_japanese
         set_hub_names = japanese
     }
     else = {
@@ -1502,7 +1502,7 @@ STATE_KYUSHU_state_name_assign = {
     }
 }
 
-STATE_RYUKYU_ISLANDS_state_name_assign = {
+STATE_KYUSHU_state_name_assign = {
     if = {
         limit = {
             owner = {
@@ -1510,7 +1510,7 @@ STATE_RYUKYU_ISLANDS_state_name_assign = {
             }
         }
 
-        set_state_name = STATE_RYUKYU_ISLANDS_ryukyuan
+        set_state_name = STATE_KYUSHU_ryukyuan
         set_hub_names = ryukyuan
     }
     else_if = {
@@ -1522,7 +1522,7 @@ STATE_RYUKYU_ISLANDS_state_name_assign = {
             }
         }
 
-        set_state_name = STATE_RYUKYU_ISLANDS_japanese
+        set_state_name = STATE_KYUSHU_japanese
         set_hub_names = japanese
     }
     else_if = {
@@ -1534,7 +1534,7 @@ STATE_RYUKYU_ISLANDS_state_name_assign = {
             }
         }
 
-        set_state_name = STATE_RYUKYU_ISLANDS_chinese
+        set_state_name = STATE_KYUSHU_chinese
         set_hub_names = chinese
     }
     else = {
@@ -1601,7 +1601,7 @@ STATE_WEST_JAVA_state_name_assign = {
 
 ## Manchuria Region
 # Amur
-STATE_AMUR_state_name_assign = {
+STATE_OUTER_MANCHURIA_state_name_assign = {
     if = {
         limit = {
             owner = {
@@ -1611,7 +1611,7 @@ STATE_AMUR_state_name_assign = {
             }
         }
 
-        set_state_name = STATE_AMUR_russian
+        set_state_name = STATE_OUTER_MANCHURIA_russian
         set_hub_names = russian
     }
     else = {
@@ -1639,7 +1639,7 @@ STATE_SEOUL_state_name_assign = {
     }
 }
 
-STATE_BUSAN_state_name_assign = {
+STATE_SEOUL_state_name_assign = {
     if = {
         limit = {
             owner = {
@@ -1649,26 +1649,7 @@ STATE_BUSAN_state_name_assign = {
             }
         }
 
-        set_state_name = STATE_BUSAN_japanese
-        set_hub_names = japanese
-    }
-    else = {
-        reset_state_name = yes
-        reset_hub_names = yes
-    }
-}
-
-STATE_SARIWON_state_name_assign = {
-    if = {
-        limit = {
-            owner = {
-                any_primary_culture = {
-                    has_discrimination_trait = language_japanese
-                }
-            }
-        }
-
-        set_state_name = STATE_SARIWON_japanese
+        set_state_name = STATE_SEOUL_japanese
         set_hub_names = japanese
     }
     else = {
@@ -1696,7 +1677,7 @@ STATE_PYONGYANG_state_name_assign = {
     }
 }
 
-STATE_YANGHO_state_name_assign = {
+STATE_PYONGYANG_state_name_assign = {
     if = {
         limit = {
             owner = {
@@ -1706,7 +1687,26 @@ STATE_YANGHO_state_name_assign = {
             }
         }
 
-        set_state_name = STATE_YANGHO_japanese
+        set_state_name = STATE_PYONGYANG_japanese
+        set_hub_names = japanese
+    }
+    else = {
+        reset_state_name = yes
+        reset_hub_names = yes
+    }
+}
+
+STATE_SEOUL_state_name_assign = {
+    if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_japanese
+                }
+            }
+        }
+
+        set_state_name = STATE_SEOUL_japanese
         set_hub_names = japanese
     }
     else = {
@@ -2486,7 +2486,7 @@ STATE_RAJPUTANA_state_name_assign = {
 }
 
 # Hill Punjab
-STATE_HILL_PUNJAB_state_name_assign = {
+STATE_DELHI_state_name_assign = {
     if = { # South Asian
         limit = {
             owner = {
@@ -2503,26 +2503,26 @@ STATE_HILL_PUNJAB_state_name_assign = {
             }
         }
 
-        set_state_name = STATE_HILL_PUNJAB_indian
+        set_state_name = STATE_DELHI_indian
 
         set_hub_name = {
             type = city
-            name = HUB_NAME_STATE_HILL_PUNJAB_city_indian
+            name = HUB_NAME_STATE_DELHI_city_indian
         }
 
         set_hub_name = {
             type = farm
-            name = HUB_NAME_STATE_HILL_PUNJAB_farm_indian
+            name = HUB_NAME_STATE_DELHI_farm_indian
         }
 
         set_hub_name = {
             type = wood
-            name = HUB_NAME_STATE_HILL_PUNJAB_wood_indian
+            name = HUB_NAME_STATE_DELHI_wood_indian
         }
 
         set_hub_name = {
             type = mine
-            name = HUB_NAME_STATE_HILL_PUNJAB_mine_indian
+            name = HUB_NAME_STATE_DELHI_mine_indian
         }
     }
     else = { # By putting an else at the end that resets the names we ensure that the names are switched back to their defaults if anyone else takes the states
@@ -2642,14 +2642,14 @@ STATE_TONKIN_state_name_assign = {
 }
 
 # Annam
-STATE_ANNAM_state_name_assign = {
+STATE_TONKIN_state_name_assign = {
     if = { # Vietnamese
         limit = {
             owner = {
                 country_has_primary_culture = cu:vietnamese
             }
         }
-        set_state_name = STATE_ANNAM_vietnamese
+        set_state_name = STATE_TONKIN_vietnamese
     }
     else_if = { # French
         limit = {
@@ -2659,7 +2659,7 @@ STATE_ANNAM_state_name_assign = {
         }
         set_hub_name = {
             type = port
-            name = HUB_NAME_STATE_ANNAM_port_french
+            name = HUB_NAME_STATE_TONKIN_port_french
         }
     }
     else = { # By putting an else at the end that resets the names we ensure that the names are switched back to their defaults if anyone else takes the states
@@ -2669,14 +2669,14 @@ STATE_ANNAM_state_name_assign = {
 }
 
 # Mekong
-STATE_MEKONG_state_name_assign = {
+STATE_TONKIN_state_name_assign = {
     if = { # Vietnamese
         limit = {
             owner = {
                 country_has_primary_culture = cu:vietnamese
             }
         }
-        set_state_name = STATE_MEKONG_vietnamese
+        set_state_name = STATE_TONKIN_vietnamese
     }
     else_if = { # French
         limit = {
@@ -2684,11 +2684,11 @@ STATE_MEKONG_state_name_assign = {
                 country_has_primary_culture = cu:french
             }
         }
-        set_state_name = STATE_MEKONG_french
+        set_state_name = STATE_TONKIN_french
 
         set_hub_name = {
             type = port
-            name = HUB_NAME_STATE_MEKONG_port_french
+            name = HUB_NAME_STATE_TONKIN_port_french
         }
     }
     else = { # By putting an else at the end that resets the names we ensure that the names are switched back to their defaults if anyone else takes the states

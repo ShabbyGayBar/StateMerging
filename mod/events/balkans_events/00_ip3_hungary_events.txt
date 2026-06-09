@@ -199,7 +199,7 @@ hungary_events.2 = { # Serbian Revolt
 						limit = {
 							state_region = s:STATE_WESTERN_SERBIA
 						}
-						STATE_DELVIDEK_state_name_assign = yes
+						STATE_WESTERN_SERBIA_state_name_assign = yes
 					}
 					s:STATE_BEKES = {
 						add_claim = c:BNT
@@ -1357,7 +1357,7 @@ hungary_events.8 = { # Romanian revolt
 						limit = {
 							state_region = s:STATE_NORTHERN_TRANSYLVANIA
 						}
-						STATE_SOUTHERN_TRANSYLVANIA_state_name_assign = yes
+						STATE_NORTHERN_TRANSYLVANIA_state_name_assign = yes
 					}
 					s:STATE_NORTHERN_TRANSYLVANIA = {
 						add_claim = c:TRS
