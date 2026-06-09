@@ -365,7 +365,7 @@ REPLACE:france_annex_luxembourg = {
 
 	possible = {
 		has_technology_researched = nationalism
-		owns_entire_state_region = STATE_BADEN
+		owns_entire_state_region = STATE_ALSACE_LORRAINE
 		taking_loans = no
 		c:LUX ?= {
 			top_overlord = {

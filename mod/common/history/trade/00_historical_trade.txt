@@ -106,7 +106,7 @@
             }
         }
     }
-    s:STATE_BURGUNDY={
+    s:STATE_CHAMPAGNE={
         region_state:FRA={
             sg:luxury_furniture = {
                 add_exports = 5

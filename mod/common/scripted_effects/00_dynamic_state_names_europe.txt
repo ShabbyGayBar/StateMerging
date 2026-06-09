@@ -352,7 +352,7 @@ assign_state_name_region_balkans  = {
     if = {
         limit = {
             state_region = {
-                s:STATE_WESTERN_SERBIA ?= this
+                s:STATE_EASTERN_SERBIA ?= this
             }
         }
         STATE_SKOPIA_state_name_assign = yes
@@ -440,7 +440,7 @@ assign_state_name_region_danubia  = {
     if = {
         limit = {
             state_region = {
-                s:STATE_NORTHERN_TRANSYLVANIA ?= this
+                s:STATE_BEKES ?= this
             }
         }
         STATE_BEKES_state_name_assign = yes
@@ -464,7 +464,7 @@ assign_state_name_region_danubia  = {
     if = {
         limit = {
             state_region = {
-                s:STATE_NORTHERN_TRANSYLVANIA ?= this
+                s:STATE_BEKES ?= this
             }
         }
         STATE_BANAT_state_name_assign = yes
@@ -588,7 +588,7 @@ assign_state_name_region_rhine  = { # region_rhine
     else_if = {
         limit = {
             state_region = {
-                s:STATE_BADEN ?= this
+                s:STATE_ALSACE_LORRAINE ?= this
             }
         }
         STATE_ALSACE_LORRAINE_state_name_assign = yes
@@ -596,7 +596,7 @@ assign_state_name_region_rhine  = { # region_rhine
     else_if = {
         limit = {
             state_region = {
-                s:STATE_BURGUNDY ?= this
+                s:STATE_CHAMPAGNE ?= this
             }
         }
     	STATE_LORRAINE_state_name_assign = yes

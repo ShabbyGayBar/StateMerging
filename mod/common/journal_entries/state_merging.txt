@@ -296,251 +296,6 @@ REPLACE:je_belle_epoque = {
 }
 
 
-# ---- 00_canada_australia.txt ----
-REPLACE:je_canada_can = {
-	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
-
-	group = je_group_historical_content
-
-	is_shown_when_inactive = {
-		capital = {
-			is_in_geographic_region = geographic_region_greater_canada
-		}
-		is_subject = yes
-	}
-
-	is_shown_in_lobby = {
-		OR = {
-			country_has_primary_culture = cu:anglo_canadian
-			country_has_primary_culture = cu:franco_canadian
-		}
-	}
-
-	possible = {
-		has_technology_researched = nationalism
-	}
-
-	scripted_button = je_canada_unite_can_button
-
-	complete = {
-		any_state_in_greater_canada = {
-			filter = {
-				NOR = {
-					this.state_region = s:STATE_OREGON
-					this.state_region = s:STATE_OREGON
-					this.state_region = s:STATE_OREGON
-					this.state_region = s:STATE_NEWFOUNDLAND
-				}
-			}
-			owner = ROOT
-			percent = 1
-		}
-	}
-
-	on_complete = {
-		trigger_event = { id = can_aus.5 }
-		hidden_effect = {
-			if = {
-				limit = {
-					any_scope_state = {
-						state_region = s:STATE_ONTARIO
-					}
-				}
-			}
-			s:STATE_ONTARIO = {
-				random_scope_state = {
-			        set_hub_name = {
-			            type = city
-			            name = HUB_NAME_STATE_ONTARIO_city_ottawa
-			        }
-				}
-			}
-		}
-	}
-
-	invalid = {
-		is_subject = no
-	}
-
-	weight = 100
-
-
-	should_be_pinned_by_default_uninvolved_or_context = yes
-}
-
-REPLACE:je_canada_gbr = {
-	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
-
-	group = je_group_historical_content
-
-	is_shown_in_lobby = {
-		any_subject_or_below = {
-			capital = {
-				is_in_geographic_region = geographic_region_greater_canada
-			}
-			count >= 2
-		}
-		NOT = {
-			capital = {
-				is_in_geographic_region = geographic_region_greater_canada
-			}
-		}
-	}
-
-	is_shown_when_inactive = {
-		any_subject_or_below = {
-			capital = {
-				is_in_geographic_region = geographic_region_greater_canada
-			}
-			count >= 2
-		}
-		NOT = {
-			capital = {
-				is_in_geographic_region = geographic_region_greater_canada
-			}
-		}
-	}
-
-	possible = {
-		has_technology_researched = nationalism
-	}
-
-	scripted_button = je_canada_unite_can_button
-
-	complete = {
-		any_country_in_greater_canada = {
-			is_subject_of = ROOT
-			owns_entire_state_region = STATE_ONTARIO
-			owns_entire_state_region = STATE_NEW_BRUNSWICK
-			owns_entire_state_region = STATE_QUEBEC
-			owns_entire_state_region = STATE_NEWFOUNDLAND
-			owns_entire_state_region = STATE_ALBERTA
-			owns_entire_state_region = STATE_BRITISH_COLUMBIA
-			owns_entire_state_region = STATE_SASKATCHEWAN
-			owns_entire_state_region = STATE_MANITOBA
-			owns_entire_state_region = STATE_YUKON_TERRITORY
-			owns_entire_state_region = STATE_NORTHWEST_TERRITORIES
-			owns_entire_state_region = STATE_NUNAVUT
-		}
-	}
-
-	on_complete = {
-		trigger_event = { id = can_aus.6 }
-		hidden_effect = {
-			if = {
-				limit = {
-					any_subject_or_below = {
-						any_scope_state = {
-							state_region = s:STATE_ONTARIO
-						}
-					}
-				}
-			}
-			s:STATE_ONTARIO = {
-				random_scope_state = {
-			        set_hub_name = {
-			            type = city
-			            name = HUB_NAME_STATE_ONTARIO_city_ottawa
-			        }
-				}
-			}
-		}
-	}
-
-	weight = 100
-
-
-	should_be_pinned_by_default_uninvolved_or_context = yes
-}
-
-REPLACE:je_australia_aus = {
-	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
-
-	group = je_group_historical_content
-
-	is_shown_when_inactive = {
-		capital = {
-			is_in_geographic_region = geographic_region_australasia
-		}
-		is_subject = yes
-	}
-
-	possible = {
-		has_technology_researched = nationalism
-	}
-
-	scripted_button = je_australia_unite_aus_button
-
-	complete = {
-		any_state_in_australasia = {
-			owner = ROOT
-			percent = 1
-		}
-	}
-
-	on_complete = {
-		trigger_event = { id = can_aus.7 }
-	}
-
-	invalid = {
-		is_subject = no
-	}
-
-
-	should_be_pinned_by_default_uninvolved_or_context = yes
-}
-
-REPLACE:je_australia_gbr = {
-	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
-
-	group = je_group_historical_content
-
-	is_shown_when_inactive = {
-		any_subject_or_below = {
-			capital = {
-				is_in_geographic_region = geographic_region_australasia
-			}
-			count >= 2
-		}
-		NOT = {
-			capital = {
-				is_in_geographic_region = geographic_region_australasia
-			}
-		}
-	}
-
-	possible = {
-		has_technology_researched = nationalism
-	}
-
-	scripted_button = je_australia_unite_aus_button
-
-	complete = {
-		any_country_in_australasia = {
-			is_subject_of = ROOT
-			owns_entire_state_region = STATE_NEW_SOUTH_WALES
-			owns_entire_state_region = STATE_NEW_SOUTH_WALES
-			owns_entire_state_region = STATE_NEW_SOUTH_WALES
-			owns_entire_state_region = STATE_NEW_SOUTH_WALES
-			owns_entire_state_region = STATE_WESTERN_AUSTRALIA
-			owns_entire_state_region = STATE_WESTERN_AUSTRALIA
-			owns_entire_state_region = STATE_WESTERN_AUSTRALIA
-			owns_entire_state_region = STATE_NORTH_ISLAND
-			owns_entire_state_region = STATE_NORTH_ISLAND
-		}
-	}
-
-	on_complete = {
-		trigger_event = { id = can_aus.8 }
-	}
-
-	weight = 100
-
-
-	should_be_pinned_by_default_uninvolved_or_context = yes
-}
-
-
 # ---- 00_indian_removal.txt ----
 REPLACE:je_indian_removal = {
 	icon = "gfx/interface/icons/event_icons/event_skull.dds"
@@ -598,7 +353,7 @@ REPLACE:je_indian_removal = {
 
 	invalid = {
 		OR = {
-			NOT = { owns_entire_state_region = STATE_NORTH_CAROLINA }
+			NOT = { owns_entire_state_region = STATE_FLORIDA }
 			NOT = {
 				AND = {
 					exists = c:SEQ
@@ -841,13 +596,13 @@ REPLACE:je_canada_pacific_railway = {
 				state_region = s:STATE_ONTARIO
 			}
 			any_scope_state = {
-				state_region = s:STATE_ALBERTA
+				state_region = s:STATE_BRITISH_COLUMBIA
 			}
 			any_scope_state = {
-				state_region = s:STATE_SASKATCHEWAN
+				state_region = s:STATE_BRITISH_COLUMBIA
 			}
 			any_scope_state = {
-				state_region = s:STATE_MANITOBA
+				state_region = s:STATE_ONTARIO
 			}
 		}
 	}
@@ -864,13 +619,13 @@ REPLACE:je_canada_pacific_railway = {
 			state_region = s:STATE_ONTARIO
 		}
 		any_scope_state = {
-			state_region = s:STATE_ALBERTA
+			state_region = s:STATE_BRITISH_COLUMBIA
 		}
 		any_scope_state = {
-			state_region = s:STATE_SASKATCHEWAN
+			state_region = s:STATE_BRITISH_COLUMBIA
 		}
 		any_scope_state = {
-			state_region = s:STATE_MANITOBA
+			state_region = s:STATE_ONTARIO
 		}
 	}
 
@@ -888,15 +643,15 @@ REPLACE:je_canada_pacific_railway = {
 			has_building = building_railway
 		}
 		any_scope_state = {
-			state_region = s:STATE_ALBERTA
+			state_region = s:STATE_BRITISH_COLUMBIA
 			has_building = building_railway
 		}
 		any_scope_state = {
-			state_region = s:STATE_SASKATCHEWAN
+			state_region = s:STATE_BRITISH_COLUMBIA
 			has_building = building_railway
 		}
 		any_scope_state = {
-			state_region = s:STATE_MANITOBA
+			state_region = s:STATE_ONTARIO
 			has_building = building_railway
 		}
 	}
@@ -967,177 +722,6 @@ REPLACE:je_manifest_destiny_frontier_wars = {
 	transferable = no
 		
 	should_be_pinned_by_default_uninvolved_or_context = yes
-}
-
-
-# ---- 00_oregon.txt ----
-REPLACE:je_oregon = {
-	icon = "gfx/interface/icons/event_icons/event_map.dds"
-
-	group = je_group_usa_manifest_destiny
-
-	is_shown_when_inactive = {
-		exists = c:USA
-		exists = c:GBR
-		c:USA = ROOT
-		s:STATE_OREGON = {
-			any_scope_state = {
-				owner = {
-					OR = {
-						c:GBR = THIS
-						is_subject_of = c:GBR
-					}
-				}
-			}
-		}
-		s:STATE_OREGON = {
-			any_scope_state = {
-				owner = {
-					OR = {
-						c:GBR = THIS
-						is_subject_of = c:GBR
-					}
-				}
-			}
-		}
-		s:STATE_OREGON = {
-			any_scope_state = {
-				owner = {
-					OR = {
-						c:GBR = THIS
-						is_subject_of = c:GBR
-					}
-				}
-			}
-		}
-	}
-
-	possible = {
-		OR = {
-			has_interest_marker_in_region = sr:region_pacific_coast
-			custom_tooltip = {
-				text = oregon_tt
-				has_global_variable = oregon_trail_mapped
-			}
-			owns_entire_state_region = STATE_WYOMING
-			owns_entire_state_region = STATE_WYOMING
-		}
-	}
-
-	complete = {
-		OR = {
-			AND = {
-				has_interest_marker_in_region = sr:region_pacific_coast
-				custom_tooltip = {
-					text = oregon_tt
-					has_global_variable = oregon_trail_mapped
-				}
-				owns_entire_state_region = STATE_WYOMING
-				owns_entire_state_region = STATE_WYOMING
-				c:GBR ?= {
-					relations:ROOT >= relations_threshold:cordial
-				}
-			}
-			AND = {
-				owns_entire_state_region = STATE_OREGON
-				owns_entire_state_region = STATE_OREGON
-				owns_entire_state_region = STATE_OREGON
-			}
-			c:ORG ?= {
-				is_subject_of = ROOT
-			}
-		}
-	}
-
-	on_complete = {
-		if = {
-			limit = {
-				s:STATE_OREGON = {
-					any_scope_state = {
-						owner = {
-							OR = {
-								c:GBR = THIS
-								is_subject_of = c:GBR
-							}
-						}
-					}
-				}
-				s:STATE_OREGON = {
-					any_scope_state = {
-						owner = {
-							OR = {
-								c:GBR = THIS
-								is_subject_of = c:GBR
-							}
-						}
-					}
-				}
-				s:STATE_OREGON = {
-					any_scope_state = {
-						owner = {
-							OR = {
-								c:GBR = THIS
-								is_subject_of = c:GBR
-							}
-						}
-					}
-				}
-			}
-			c:GBR ?= { trigger_event = { id = oregon.2 } }
-		}
-		else = {
-			s:STATE_OREGON = {
-				add_homeland = cu:yankee
-			}
-			s:STATE_OREGON = {
-				add_homeland = cu:yankee
-			}
-			s:STATE_OREGON = {
-				add_homeland = cu:yankee
-			}
-			if = {
-				limit = {
-					s:STATE_BRITISH_COLUMBIA = {
-						any_scope_state = {
-							owner = {
-								OR = {
-									c:USA ?= THIS
-									is_subject_of = c:USA
-								}
-							}
-						}
-					}
-				}
-				s:STATE_BRITISH_COLUMBIA = {
-					add_homeland = cu:yankee
-				}
-			}
-			add_modifier = {
-				name = oregon_resolved
-				days = normal_modifier_time
-			}
-		}
-	}
-
-	weight = 100
-}
-
-REPLACE:je_conquer_oregon = {
-	icon = "gfx/interface/icons/event_icons/event_military.dds"
-
-	group = je_group_usa_manifest_destiny
-
-	complete = {
-		c:USA ?= {
-			owns_entire_state_region = STATE_OREGON
-			owns_entire_state_region = STATE_OREGON
-			owns_entire_state_region = STATE_OREGON
-		}
-	}
-
-	weight = 100
-
-	transferable = no
 }
 
 
@@ -2909,137 +2493,6 @@ REPLACE:je_achieve_sovereignty = {
 }
 
 
-# ---- 00_poland.txt ----
-REPLACE:je_christ_of_nations = {
-    icon = "gfx/interface/icons/event_icons/waving_flag.dds"
-
-	group = je_group_poland
-
-    is_shown_in_lobby = {
-        OR = {
-            c:POL ?= this
-            c:KRA ?= this
-        }
-    }
-
-    scripted_button = christ_of_nations_button
-
-    is_shown_when_inactive = {
-        OR = {
-            c:POL ?= this
-            c:KRA ?= this
-            AND = {
-                c:GAL ?= this
-                ruler = {
-                    culture = cu:polish
-                }
-            }
-        }
-    }
-
-    possible = {
-        has_technology_researched = nationalism
-    }
-
-    immediate = {
-        cu:polish = {
-            save_scope_as = polish_culture_scope
-        }
-    }
-
-    complete = {
-        any_state_in_poland_old = {
-            owner = root
-            count = all
-        }
-    }
-
-    on_complete = {
-        trigger_event = { id = poland_events.4 days = 0 popup = yes }
-    }
-
-    	
-	should_be_pinned_by_default_uninvolved_or_context = yes
-}
-
-REPLACE:je_poland_lithuania = {
-    icon = "gfx/interface/icons/event_icons/waving_flag.dds"
-
-	group = je_group_poland
-
-     is_shown_in_lobby = {
-        country_has_primary_culture = cu:polish
-    }
-
-    is_shown_when_inactive = {
-       country_has_primary_culture = cu:polish
-    }
-
-    possible = {
-        has_technology_researched = pan-nationalism
-        custom_tooltip = {
-            text = je_poland_lithuania_tt
-            c:PLC ?= THIS
-        }
-    }
-
-    immediate = {
-        trigger_event = { id = poland_events.6 popup = yes }
-    }
-
-    complete = {
-        owns_entire_state_region = STATE_MINSK
-        owns_entire_state_region = STATE_KIEV
-        any_scope_state = {
-            state_region = {
-                OR = {
-                    is_homeland = cu:ukrainian
-                    is_homeland = cu:byelorussian
-                }
-            }
-            count >=7
-        }
-    }
-
-    on_complete = {
-        set_variable = greater_commonwealth_var
-        trigger_event = { id = poland_events.7 popup = yes }
-		s:STATE_VILNIUS = {
-			add_homeland = cu:polish
-		}
-		s:STATE_BREST = {
-			add_homeland = cu:polish
-		}
-		s:STATE_EAST_GALICIA = {
-			add_homeland = cu:polish
-		}
-        custom_tooltip = plc_discrimination_tt
-        show_as_tooltip = {
-            add_primary_culture = cu:ukrainian
-            add_primary_culture = cu:byelorussian
-            add_loyalists = {
-                culture = cu:ukrainian
-                value = 0.1
-            }
-            add_loyalists = {
-                culture = cu:byelorussian
-                value = 0.1
-            }
-        }
-        custom_tooltip = plc_discrimination_tt_2
-        show_as_tooltip = {
-            add_loyalists = {
-                culture = cu:polish
-                value = 0.1
-            }
-        }
-    }
-
-    	
-	should_be_pinned_by_default_uninvolved_or_context = yes
-}
-
-
 # ---- 00_seminole_wars.txt ----
 REPLACE:je_seminole_wars = {
 	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
@@ -3127,516 +2580,6 @@ REPLACE:je_seminole_wars = {
 		
 	should_be_pinned_by_default_uninvolved_or_context = yes
 }
-
-
-# ---- 00_sick_man.txt ----
-REPLACE:je_sick_man_main = {
-	icon = "gfx/interface/icons/event_icons/event_skull.dds"
-
-	group = je_group_tanzimat
-
-	is_shown_in_lobby = {
-		c:TUR = THIS
-    }
-
-	complete = {
-		scope:journal_entry = {
-			is_goal_complete = yes
-		}
-	}
-
-	on_complete = {
-		remove_modifier = sick_man_of_europe
-		trigger_event = {
-			id = sick_man.2
-		}
-	}
-
-	timeout = 10950
-
-	on_timeout = {
-		remove_modifier = sick_man_of_europe
-		add_modifier = {
-			name = dead_man_of_europe
-			days = very_long_modifier_time
-			is_decaying = yes
-		}
-		trigger_event = {
-			id = sick_man.3
-		}
-		if = {
-			limit = {
-	       		is_in_power_bloc = yes
-	        	is_power_bloc_leader = yes
-			}
-			custom_tooltip = sick_man_of_europe_lose_power_bloc
-		}
-		custom_tooltip = {
-			text = je_sick_man_main_failure_movements_tt
-			set_variable = {
-				name = failed_tanzimat
-				years = 20
-			}
-		}
-		if = {
-			limit = {
-				has_dlc_feature = ip3_content
-			}
-			custom_tooltip = {
-				text = eastern_crisis_consequence_tt
-				set_variable = failed_sick_man_main
-			}
-		}
-		if = { #failure immediately triggers eastern_crisis
-			limit = {
-				c:TUR ?= this
-				has_dlc_feature = ip3_content
-				NOT = {
-					has_global_variable = eastern_crisis_happened
-				}
-			}
-			add_contextless_journal_entry = je_great_eastern_crisis
-		}
-		cu:albanian = {
-			remove_tradition_trait = tradition_rumelian
-		}
-		cu:bosniak = {
-			remove_tradition_trait = tradition_rumelian
-		}
-		cu:sephardic = {
-			remove_tradition_trait = tradition_rumelian
-		}
-	}
-
-	current_value = {
-		value = var:sick_man_var
-	}
-
-	goal_add_value = {
-		add = 4
-	}
-
-	progressbar = yes
-
-	weight = 10000
-
-
-	should_be_pinned_by_default_uninvolved_or_context = yes
-}
-
-REPLACE:je_sick_man_syria = {
-	icon = "gfx/interface/icons/event_icons/event_military.dds"
-
-	group = je_group_tanzimat
-
-	complete = {
-		owns_entire_state_region = STATE_SYRIA
-		owns_entire_state_region = STATE_SYRIA
-		owns_entire_state_region = STATE_SYRIA
-		owns_entire_state_region = STATE_PALESTINE
-		owns_entire_state_region = STATE_PALESTINE
-		owns_entire_state_region = STATE_ADANA
-	}
-
-	on_complete = {
-		custom_tooltip = je_sick_man_advance
-		change_variable = {
-			name = sick_man_var
-			add = 1
-		}
-		set_variable = completed_syria_je
-		s:STATE_SINAI = {
-			add_claim = ROOT
-		}
-		s:STATE_UPPER_EGYPT = {
-			add_claim = ROOT
-		}
-		s:STATE_UPPER_EGYPT = {
-			add_claim = ROOT
-		}
-		s:STATE_LOWER_EGYPT = {
-			add_claim = ROOT
-		}
-		if = {
-			limit = {
-				OR = {
-					AND = {
-						exists = c:EGY
-						c:EGY ?= {
-							is_subject_of = ROOT
-							is_subject_type = subject_type_puppet
-						}
-					}
-					AND = {
-						owns_entire_state_region = STATE_SINAI
-						owns_entire_state_region = STATE_UPPER_EGYPT
-						owns_entire_state_region = STATE_UPPER_EGYPT
-						owns_entire_state_region = STATE_LOWER_EGYPT
-					}
-				}
-			}
-			change_variable = {
-				name = sick_man_var
-				add = 1
-			}
-		}
-		else = {
-			add_journal_entry = {
-				type = je_sick_man_egypt
-			}
-		}
-		custom_tooltip = sickman_syria_egypt
-	}
-
-	invalid = {
-		custom_tooltip = {
-			text = finished_sick_man_tt
-			has_variable = sick_man_complete
-		}
-	}
-
-	on_weekly_pulse = {
-		events = {
-			#egyptian_crisis_events.1
-		}
-	}
-
-	transferable = no
-
-	weight = 5000
-
-
-	should_be_pinned_by_default_uninvolved_or_context = yes
-}
-
-REPLACE:je_sick_man_egypt = {
-	icon = "gfx/interface/icons/event_icons/event_military.dds"
-
-	group = je_group_tanzimat
-
-	complete = {
-		OR = {
-			AND = {
-				exists = c:EGY
-				c:EGY ?= {
-					is_subject_of = ROOT
-					is_subject_type = subject_type_puppet
-				}
-			}
-			AND = {
-				owns_entire_state_region = STATE_SINAI
-				owns_entire_state_region = STATE_UPPER_EGYPT
-				owns_entire_state_region = STATE_UPPER_EGYPT
-				owns_entire_state_region = STATE_LOWER_EGYPT
-			}
-		}
-	}
-
-	on_complete = {
-		custom_tooltip = je_sick_man_advance
-		change_variable = {
-			name = sick_man_var
-			add = 1
-		}
-	}
-
-	invalid = {
-		custom_tooltip = {
-			text = finished_sick_man_tt
-			has_variable = sick_man_complete
-		}
-	}
-
-	transferable = no
-
-	weight = 5000
-
-
-	should_be_pinned_by_default_uninvolved_or_context = yes
-}
-
-REPLACE:je_sick_man_economy = {
-	icon = "gfx/interface/icons/event_icons/event_industry.dds"
-
-	group = je_group_tanzimat
-
-	complete = {
-		in_default = no
-		any_scope_state = {
-			is_incorporated = yes
-			has_building = building_urban_center
-			percent >= 0.75
-		}
-	}
-
-	on_complete = {
-		set_variable = completed_sick_man_economy_je
-		custom_tooltip = je_sick_man_advance
-		change_variable = {
-			name = sick_man_var
-			add = 1
-		}
-	}
-
-	invalid = {
-		custom_tooltip = {
-			text = finished_sick_man_tt
-			has_variable = sick_man_complete
-		}
-	}
-
-	transferable = no
-
-	weight = 5000
-
-	should_be_pinned_by_default_uninvolved_or_context = yes
-}
-
-# Literacy and Universities
-REPLACE:je_sick_man_education = {
-	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
-
-	group = je_group_tanzimat
-
-	complete = {
-		any_scope_building = {
-			is_building_type = building_university
-			occupancy > 0.9
-			level >= 5
-		}
-		scope:journal_entry = {
-			is_goal_complete = yes
-		}
-	}
-
-	on_complete = {
-		set_variable = completed_sick_man_education_je
-		custom_tooltip = je_sick_man_advance
-		change_variable = {
-			name = sick_man_var
-			add = 1
-		}
-	}
-
-	current_value = {
-		value = root.literacy_rate
-	}
-
-	goal_add_value = {
-		add = 0.2
-	}
-
-	invalid = {
-		custom_tooltip = {
-			text = finished_sick_man_tt
-			has_variable = sick_man_complete
-		}
-	}
-
-	transferable = no
-
-	weight = 5000
-
-
-	should_be_pinned_by_default_uninvolved_or_context = yes
-
-	progressbar = yes
-}
-
-# Nationalism
-REPLACE:je_sick_man_separatism = {
-	icon = "gfx/interface/icons/event_icons/event_fire.dds"
-
-	group = je_group_tanzimat
-
-	complete = {
-		scope:journal_entry = {
-			is_goal_complete = yes
-		}
-		highest_secession_progress < 0.5
-	}
-
-	on_complete = {
-		set_variable = completed_separatism_sick_man_je
-		custom_tooltip = je_sick_man_advance
-		change_variable = {
-			name = sick_man_var
-			add = 1
-		}
-	}
-
-	on_monthly_pulse = {
-		effect = {
-			if = {
-				limit = {
-					highest_secession_progress < 0.5
-				}
-				change_variable = {
-					name = sick_man_separatist_var
-					add = 1
-				}
-			}
-		}
-		random_events = {
-			100 = 0
-			10 = tanzimat_events.5 # Paranoia Event
-		}
-	}
-
-	fail = {
-		highest_secession_progress > 0.5
-	}
-
-	on_fail = {
-		set_variable = failed_sick_man_separatism
-		if = { #failure immediately triggers eastern_crisis
-			limit = {
-				c:TUR ?= this
-				has_dlc_feature = ip3_content
-				NOT = {
-					has_global_variable = eastern_crisis_happened
-				}
-			}
-			add_contextless_journal_entry = je_great_eastern_crisis
-		}
-	}
-
-	current_value = {
-		value = var:sick_man_separatist_var
-	}
-
-	goal_add_value = {
-		add = 180
-	}
-
-	invalid = {
-		custom_tooltip = {
-			text = finished_sick_man_tt
-			has_variable = sick_man_complete
-		}
-	}
-
-	transferable = no
-
-	weight = 5000
-
-
-	should_be_pinned_by_default_uninvolved_or_context = yes
-
-	progressbar = yes
-}
-
-# Army Reform
-REPLACE:je_sick_man_army = {
-	icon = "gfx/interface/icons/event_icons/event_military.dds"
-
-	group = je_group_tanzimat
-
-	complete = {
-		army_size >= 100
-		has_technology_researched = napoleonic_warfare
-		any_scope_building = {
-			filter = {
-				is_building_type = building_barrack
-			}
-			NOR = {
-				building_has_goods_shortage = yes
-				has_active_production_method = pm_no_organization
-			}
-			percent = 1
-		}
-		NOT = {
-			any_military_formation = {
-				filter = {
-					is_army = yes
-				}
-				any_combat_unit = {
-					has_unit_type = unit_type:combat_unit_type_irregular_infantry
-				}
-				percent >= 0.25
-			}
-		}
-	}
-
-	on_complete = {
-		set_variable = completed_sick_man_army_je
-		custom_tooltip = je_sick_man_advance
-		change_variable = {
-			name = sick_man_var
-			add = 1
-		}
-	}
-
-	on_monthly_pulse = {
-		events = {
-			tanzimat_events.10 # Tanzimat Draft Question
-		}
-	}
-
-	invalid = {
-		custom_tooltip = {
-			text = finished_sick_man_tt
-			has_variable = sick_man_complete
-		}
-	}
-
-	transferable = no
-
-
-	should_be_pinned_by_default_uninvolved_or_context = yes
-
-	weight = 5000
-}
-
-
-# Bureaucractic Reform
-REPLACE:je_sick_man_bureaucracy = {
-	icon = "gfx/interface/icons/event_icons/event_scales.dds"
-
-	group = je_group_tanzimat
-
-	complete = {
-		NOR = {
-			has_law_or_variant = law_type:law_hereditary_bureaucrats
-			has_law_or_variant = law_type:law_land_based_taxation
-			has_law_or_variant = law_type:law_consumption_based_taxation
-		}
-		bureaucracy >= 0
-		approaching_bureaucracy_shortage = no
-	}
-
-	on_complete = {
-		set_variable = completed_sick_man_bureaucracy_je
-		custom_tooltip = je_sick_man_advance
-		change_variable = {
-			name = sick_man_var
-			add = 1
-		}
-		remove_modifier = outmoded_bureaucracy
-	}
-
-	on_monthly_pulse = {
-		random_events = {
-			100 = 0
-			10 = tanzimat_events.9 # Land registration resisted
-		}
-	}
-
-	invalid = {
-		custom_tooltip = {
-			text = finished_sick_man_tt
-			has_variable = sick_man_complete
-		}
-	}
-
-	transferable = no
-
-	weight = 5000
-
-
-	should_be_pinned_by_default_uninvolved_or_context = yes
-}
-
 
 
 # ---- 00_veiled_protectorate.txt ----
@@ -5437,1197 +4380,6 @@ REPLACE:je_isabel = {
 }
 
 
-# ---- 03_afghanistan.txt ----
-REPLACE:je_consolidate_afghanistan = {
-		
-	should_be_pinned_by_default_uninvolved_or_context = yes
-	icon = "gfx/interface/icons/event_icons/event_map.dds"
-
-	group = je_group_foreign_affairs
-
-	is_shown_in_lobby = {
-		has_dlc_feature = ep1_content #Spheres of Influence
-		c:GBR ?= THIS
-	}
-
-	is_shown_when_inactive = {
-		country_rank >= rank_value:great_power
-		has_dlc_feature = ep1_content
-		c:AFG ?= {
-			has_overlapping_interests = ROOT
-		}
-		NOT = {
-			has_global_variable = afghan_borders_solidified
-		}
-	}
-
-	scripted_button = je_consolidate_afghanistan_durand_line
-	scripted_button = je_consolidate_afghanistan_indus_line
-	scripted_button = je_consolidate_afghanistan_southeast_status_quo
-	scripted_button = je_consolidate_afghanistan_torkestan_line
-	scripted_button = je_consolidate_afghanistan_amu_darya_line
-	scripted_button = je_consolidate_afghanistan_north_status_quo
-	scripted_button = je_consolidate_afghanistan_offer_compensation
-	scripted_button = je_consolidate_afghanistan_threaten_reprisals
-	scripted_button = je_consolidate_afghanistan_approve_of_treaty
-	scripted_button = je_consolidate_afghanistan_retract_treaty
-	scripted_button = je_consolidate_afghanistan_resolve_southwest_conflict
-	scripted_button = je_consolidate_afghanistan_resolve_northern_conflict
-
-	invalid = {
-		NOT = {
-			exists = c:AFG
-		}
-	}
-
-	on_weekly_pulse = {
-		effect = {
-			if = {
-				limit = {
-					has_variable = afghan_notification_sender
-					scope:gp_scope = {
-						has_variable = afghanistan_delimitation_treaty_approved
-					}
-					scope:rival_gp_scope = {
-						has_variable = afghanistan_delimitation_treaty_approved
-					}
-					c:AFG ?= {
-						NOT = {
-							has_variable = received_afghan_border_notification
-						}
-					}
-				}
-				if = {
-					limit = {
-						NOT = { c:AFG ?= { has_variable = afg_proposal_ai_cooldown } }
-					}
-					c:AFG ?= {
-						trigger_event = { id = gg_afghanistan.1 popup = yes }
-					}
-				}
-			}
-		}
-	}
-
-	immediate = {
-		if = {
-			limit = {
-				exists = c:AFG
-			}
-			c:AFG ?= {
-				save_scope_as = afghanistan_scope
-			}
-		}
-		save_scope_as = gp_scope
-		if = {
-			limit = {
-				NOT = {
-					any_country = {
-						has_variable = afghan_notification_sender
-					}
-				}
-			}
-			set_variable = afghan_notification_sender
-		}
-		# Searches for the canonical GBR-RUS conference first
-		if = {
-			limit = {
-				c:GBR ?= this
-				exists = c:RUS
-			}
-			c:RUS ?= { save_temporary_scope_as = candidate_rival }
-		}
-		else_if = {
-			limit = {
-				c:RUS ?= this
-				exists = c:GBR
-			}
-			c:GBR ?= { save_temporary_scope_as = candidate_rival }
-		}
-
-		# Priority: candidate GP itself > relevant candidate GP subject > any eligible GP > any eligible GP-subject
-		if = {
-			limit = {
-				exists = scope:candidate_rival
-				scope:candidate_rival ?= {
-					country_rank >= rank_value:great_power
-					c:AFG ?= {
-						has_overlapping_interests = PREV # scope:candidate_rival
-					}
-					OR = {
-						any_scope_state = {
-							OR = {
-								is_in_geographic_region = geographic_region_central_asia
-								is_in_geographic_region = geographic_region_india
-							}
-							any_neighbouring_state = { c:AFG ?= owner }
-						}
-						any_subject_or_below = {
-							NOT = { c:AFG ?= this }
-							any_scope_state = {
-								OR = {
-									is_in_geographic_region = geographic_region_central_asia
-									is_in_geographic_region = geographic_region_india
-								}
-								any_neighbouring_state = { c:AFG ?= owner }
-							}
-						}
-					}
-				}
-			}
-			scope:candidate_rival = { save_scope_as = rival_gp_scope }
-		}
-		else_if = {
-			limit = {
-				any_country = {
-					country_rank >= rank_value:great_power
-					c:AFG ?= {
-						has_overlapping_interests = PREV # scope:candidate_rival
-					}
-					OR = {
-						any_scope_state = {
-							OR = {
-								is_in_geographic_region = geographic_region_central_asia
-								is_in_geographic_region = geographic_region_india
-							}
-							any_neighbouring_state = { c:AFG ?= owner }
-						}
-						any_subject_or_below = {
-							NOT = { c:AFG ?= this }
-							any_scope_state = {
-								OR = {
-									is_in_geographic_region = geographic_region_central_asia
-									is_in_geographic_region = geographic_region_india
-								}
-								any_neighbouring_state = { c:AFG ?= owner }
-							}
-						}
-					}
-					NOT = { THIS = ROOT }
-				}
-			}
-			random_country = {
-				limit = {
-					country_rank >= rank_value:great_power
-					c:AFG ?= {
-						has_overlapping_interests = PREV # scope:candidate_rival
-					}
-					OR = {
-						any_scope_state = {
-							OR = {
-								is_in_geographic_region = geographic_region_central_asia
-								is_in_geographic_region = geographic_region_india
-							}
-							any_neighbouring_state = { c:AFG ?= owner }
-						}
-						any_subject_or_below = {
-							NOT = { c:AFG ?= this }
-							any_scope_state = {
-								OR = {
-									is_in_geographic_region = geographic_region_central_asia
-									is_in_geographic_region = geographic_region_india
-								}
-								any_neighbouring_state = { c:AFG ?= owner }
-							}
-						}
-					}
-					NOT = { THIS = ROOT }
-				}
-				save_scope_as = rival_gp_scope
-			}
-		}
-		if = {
-			limit = {
-				scope:rival_gp_scope ?=  {
-					any_subject_or_below = {
-						NOT = { c:AFG ?= this }
-						any_scope_state = {
-							OR = {
-								is_in_geographic_region = geographic_region_central_asia
-								is_in_geographic_region = geographic_region_india
-							}
-							any_neighbouring_state = { c:AFG ?= owner }
-						}
-					}
-				}
-			}
-			scope:rival_gp_scope ?=  {
-				ordered_subject_or_below = {
-					limit = {
-						NOT = { c:AFG ?= this }
-						any_scope_state = {
-							OR = {
-								is_in_geographic_region = geographic_region_central_asia
-								is_in_geographic_region = geographic_region_india
-							}
-							any_neighbouring_state = { c:AFG ?= owner }
-						}
-					}
-					order_by = gdp
-					position = 0
-					check_range_bounds = no
-					save_scope_as = rival_afghan_partition_proxy
-				}
-			}
-		}
-
-		if = {
-			limit = {
-				any_subject_or_below = {
-					NOT = {
-						c:AFG ?= this
-					}
-					any_neighbouring_state = {
-						c:AFG ?= owner
-					}
-				}
-			}
-			ordered_subject_or_below = {
-				limit = {
-					NOT = {
-						c:AFG ?= this
-					}
-					any_neighbouring_state = {
-						c:AFG ?= owner
-					}
-				}
-				order_by = gdp
-				position = 0
-				check_range_bounds = no
-				save_scope_as = afghan_partition_proxy
-			}
-		}
-	}
-
-	possible = {
-		custom_tooltip = {
-			text = afghanistan_exists_tt
-			exists = c:AFG
-		}
-		custom_tooltip = {
-			text = is_bordering_afghanistan_tt
-			country_rank >= rank_value:great_power
-			c:AFG ?= {
-				has_overlapping_interests = ROOT
-			}
-			OR = {
-				any_state_in_india = {
-					OR = {
-						owner ?= ROOT
-						owner ?= { is_subject_of = ROOT }
-					}
-					any_neighbouring_state = {
-						c:AFG ?= owner
-					}
-				}
-				any_state_in_central_asia = {
-					OR = {
-						owner ?= ROOT
-						owner ?= { is_subject_of = ROOT }
-					}
-					any_neighbouring_state = {
-						c:AFG ?= owner
-					}
-				}
-			}
-		}
-		custom_tooltip = {
-			text = another_gp_is_bordering_afghanistan_tt
-			any_country = {
-				country_rank >= rank_value:great_power
-				NOT = {
-					THIS = ROOT
-				}
-				c:AFG ?= {
-					has_overlapping_interests = PREV # any_country
-				}
-				OR = {
-					any_scope_state = {
-						OR = {
-							is_in_geographic_region = geographic_region_central_asia
-							is_in_geographic_region = geographic_region_india
-						}
-						any_neighbouring_state = {
-							c:AFG ?= owner
-						}
-					}
-					any_subject_or_below = {
-						any_scope_state = {
-							OR = {
-								is_in_geographic_region = geographic_region_central_asia
-								is_in_geographic_region = geographic_region_india
-							}
-							any_neighbouring_state = {
-								c:AFG ?= owner
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-
-	complete = {
-		trigger_if = {
-			limit = {
-				exists = scope:gp_scope
-			}
-			custom_tooltip = {
-				text = first_gp_approves_tt
-				scope:gp_scope ?= {
-					has_variable = afghanistan_delimitation_treaty_approved
-				}
-			}
-		}
-		trigger_if = {
-			limit = {
-				exists = scope:rival_gp_scope
-			}
-			custom_tooltip = {
-				text = second_gp_approves_tt
-				scope:rival_gp_scope ?= {
-					has_variable = afghanistan_delimitation_treaty_approved
-				}
-			}
-		}
-		trigger_if = {
-			limit = {
-				exists = scope:afghanistan_scope
-			}
-			custom_tooltip = {
-				text = afghanistan_approves_tt
-				c:AFG ?= {
-					has_variable = afghanistan_delimitation_treaty_approved
-				}
-			}
-		}
-	}
-
-	on_complete = {
-		if = {
-			limit = {
-				exists = c:AFG
-			}
-			custom_tooltip = {
-				text = afghanistan_abandon_claims_tt
-				every_state_region = {
-					limit = {
-						c:AFG ?= {
-							has_claim = prev
-						}
-					}
-					remove_claim = c:AFG
-				}
-			}
-		}
-		if = {
-			limit = {
-				scope:rival_gp_scope ?= {
-					has_variable = proposed_durand_line
-				}
-			}
-			c:AFG ?= {
-				every_scope_state = {
-					limit = {
-						is_in_geographic_region = geographic_region_india
-					}
-					if = {
-						limit = {
-							exists = scope:rival_afghan_partition_proxy
-						}
-						set_state_owner = scope:rival_afghan_partition_proxy
-					}
-					else = {
-						set_state_owner = scope:rival_gp_scope
-					}
-				}
-			}
-			every_state_in_afghanistan = {
-				limit = {
-					OR = {
-						scope:rival_gp_scope ?= owner
-						scope:rival_afghan_partition_proxy ?= owner
-					}
-				}
-				set_state_owner = c:AFG
-			}
-		}
-		else_if = {
-			limit = {
-				scope:rival_gp_scope ?= {
-					has_variable = proposed_indus_line
-				}
-			}
-			c:AFG ?= {
-				every_scope_state = {
-					limit = {
-						is_in_geographic_region = geographic_region_india
-						NOT = {
-							state_region = {
-								is_homeland = cu:pashtun
-							}
-						}
-					}
-					if = {
-						limit = {
-							exists = scope:rival_afghan_partition_proxy
-						}
-						set_state_owner = scope:rival_afghan_partition_proxy
-					}
-					else = {
-						set_state_owner = scope:rival_gp_scope
-					}
-				}
-			}
-			every_state_in_greater_afghanistan = {
-				limit = {
-					OR = {
-						scope:rival_gp_scope ?= owner
-						scope:rival_afghan_partition_proxy ?= owner
-					}
-				}
-				set_state_owner = c:AFG
-			}
-		}
-		else_if = {
-			limit = {
-				scope:rival_gp_scope ?= {
-					has_variable = proposed_status_quo
-				}
-			}
-			custom_tooltip = status_quo_southeast_tt
-		}
-
-		if = {
-			limit = {
-				scope:rival_gp_scope ?= {
-					has_variable = proposed_torkestan_line
-				}
-			}
-			c:AFG ?= {
-				every_scope_state = {
-					limit = {
-						OR = {
-							is_in_geographic_region = geographic_region_central_asia
-							state_region = s:STATE_HERAT
-						}
-					}
-					if = {
-						limit = {
-							exists = scope:rival_afghan_partition_proxy
-						}
-						set_state_owner = scope:rival_afghan_partition_proxy
-					}
-					else = {
-						set_state_owner = scope:rival_gp_scope
-					}
-				}
-			}
-			every_state_in_greater_afghanistan = {
-				limit = {
-					OR = {
-						scope:rival_gp_scope ?= owner
-						scope:rival_afghan_partition_proxy ?= owner
-					}
-					NOT = {
-						state_region = s:STATE_HERAT
-					}
-				}
-				set_state_owner = c:AFG
-			}
-		}
-		else_if = {
-			limit = {
-				scope:rival_gp_scope ?= {
-					has_variable = proposed_amu_darya_line
-				}
-			}
-			c:AFG ?= {
-				every_scope_state = {
-					limit = {
-						is_in_geographic_region = geographic_region_central_asia
-					}
-					if = {
-						limit = {
-							exists = scope:rival_afghan_partition_proxy
-						}
-						set_state_owner = scope:rival_afghan_partition_proxy
-					}
-					else = {
-						set_state_owner = scope:rival_gp_scope
-					}
-				}
-			}
-			every_state_in_greater_afghanistan = {
-				limit = {
-					OR = {
-						scope:rival_gp_scope ?= owner
-						scope:rival_afghan_partition_proxy ?= owner
-					}
-				}
-				set_state_owner = c:AFG
-			}
-		}
-		else_if = {
-			limit = {
-				scope:rival_gp_scope ?= {
-					has_variable = proposed_status_quo_north
-				}
-			}
-			custom_tooltip = status_quo_north_tt
-		}
-		if = {
-			limit = {
-				scope:rival_gp_scope ?= {
-					has_variable = proposed_compensation_for_afghanistan
-				}
-			}
-			scope:rival_gp_scope ?= {
-				create_treaty = {
-					first_country = scope:rival_gp_scope
-					second_country = c:AFG
-
-					is_draft = no
-					binding_period = { years = 2 }
-
-					articles_to_create = {
-						{
-							article = money_transfer
-							source_country = scope:rival_gp_scope
-							target_country = c:AFG
-							inputs = {
-								{ quantity = 1000 }
-							}
-						}
-					}
-				}
-			}
-		}
-		if = {
-			limit = {
-				ROOT = {
-					has_variable = proposed_durand_line
-				}
-			}
-			c:AFG ?= {
-				every_scope_state = {
-					limit = {
-						is_in_geographic_region = geographic_region_india
-					}
-					if = {
-						limit = {
-							exists = scope:afghan_partition_proxy
-						}
-						set_state_owner = scope:afghan_partition_proxy
-					}
-					else = {
-						set_state_owner = ROOT
-					}
-				}
-			}
-			every_state_in_afghanistan = {
-				limit = {
-					OR = {
-						ROOT ?= owner
-						scope:afghan_partition_proxy ?= owner
-					}
-				}
-				set_state_owner = c:AFG
-			}
-		}
-		else_if = {
-			limit = {
-				ROOT = {
-					has_variable = proposed_indus_line
-				}
-			}
-			c:AFG ?= {
-				every_scope_state = {
-					limit = {
-						is_in_geographic_region = geographic_region_india
-						NOT = {
-							state_region = {
-								is_homeland = cu:pashtun
-							}
-						}
-					}
-					if = {
-						limit = {
-							exists = scope:afghan_partition_proxy
-						}
-						set_state_owner = scope:afghan_partition_proxy
-					}
-					else = {
-						set_state_owner = ROOT
-					}
-				}
-			}
-			every_state_in_greater_afghanistan = {
-				limit = {
-					OR = {
-						ROOT ?= owner
-						scope:afghan_partition_proxy ?= owner
-					}
-				}
-				set_state_owner = c:AFG
-			}
-		}
-		else_if = {
-			limit = {
-				ROOT = {
-					has_variable = proposed_status_quo
-				}
-			}
-			custom_tooltip = status_quo_southeast_tt
-		}
-
-		if = {
-			limit = {
-				has_variable = proposed_torkestan_line
-			}
-			c:AFG ?= {
-				every_scope_state = {
-					limit = {
-						OR = {
-							is_in_geographic_region = geographic_region_central_asia
-							state_region = s:STATE_HERAT
-						}
-					}
-					if = {
-						limit = {
-							exists = scope:afghan_partition_proxy
-						}
-						set_state_owner = scope:afghan_partition_proxy
-					}
-					else = {
-						set_state_owner = ROOT
-					}
-				}
-			}
-			every_state_in_greater_afghanistan = {
-				limit = {
-					OR = {
-						ROOT ?= owner
-						scope:afghan_partition_proxy ?= owner
-					}
-					NOT = {
-						state_region = s:STATE_HERAT
-					}
-				}
-				set_state_owner = c:AFG
-			}
-		}
-		else_if = {
-			limit = {
-				ROOT = {
-					has_variable = proposed_amu_darya_line
-				}
-			}
-			c:AFG ?= {
-				every_scope_state = {
-					limit = {
-						is_in_geographic_region = geographic_region_central_asia
-					}
-					if = {
-						limit = {
-							exists = scope:afghan_partition_proxy
-						}
-						set_state_owner = scope:afghan_partition_proxy
-					}
-					else = {
-						set_state_owner = ROOT
-					}
-				}
-			}
-			every_state_in_greater_afghanistan = {
-				limit = {
-					OR = {
-						ROOT ?= owner
-						scope:afghan_partition_proxy ?= owner
-					}
-				}
-				set_state_owner = c:AFG
-			}
-		}
-		else_if = {
-			limit = {
-				ROOT = {
-					has_variable = proposed_status_quo_north
-				}
-			}
-			custom_tooltip = status_quo_north_tt
-		}
-		if = {
-			limit = {
-				ROOT = {
-					has_variable = proposed_compensation_for_afghanistan
-				}
-			}
-			create_treaty = {
-				first_country = root
-				second_country = c:AFG
-
-				is_draft = no
-				binding_period = { years = 2 }
-
-				articles_to_create = {
-					{
-						article = money_transfer
-						source_country = root
-						target_country = c:AFG
-						inputs = {
-							{ quantity = 1000 }
-						}
-					}
-				}
-			}
-		}
-		set_global_variable = afghan_borders_solidified
-		hidden_effect = {
-			clear_afghanistan_variables = yes
-		}
-	}
-
-	timeout = 365
-
-	on_timeout = {
-		custom_tooltip = negotiations_failure_tt
-		# Southeast - rival_gp_scope
-		if = {
-			limit = {
-				scope:rival_gp_scope ?= {
-					has_variable = proposed_durand_line
-				}
-			}
-			every_state_region_in_india = {
-				limit = {
-					any_scope_state = {
-						c:AFG ?= owner
-					}
-				}
-				if = {
-					limit = {
-						exists = scope:rival_afghan_partition_proxy
-					}
-					add_claim = scope:rival_afghan_partition_proxy
-				}
-				else = {
-					add_claim = scope:rival_gp_scope
-				}
-			}
-			every_state_region_in_afghanistan = {
-				limit = {
-					NOT = { 
-						any_scope_state = {
-							has_claim_by = c:AFG
-						}
-					}
-					NOT = { s:STATE_HERAT ?= this }
-					any_scope_state = {
-						OR = {
-							scope:rival_gp_scope ?= owner
-							scope:rival_afghan_partition_proxy ?= owner
-						}
-					}
-				}
-				add_claim = c:AFG
-			}
-		}
-		else_if = {
-			limit = {
-				scope:rival_gp_scope ?= {
-					has_variable = proposed_indus_line
-				}
-			}
-			every_state_region_in_india = {
-				limit = {
-					NOT = { is_homeland = cu:pashtun }
-					any_scope_state = {
-						c:AFG ?= owner
-					}
-				}
-				if = {
-					limit = {
-						exists = scope:rival_afghan_partition_proxy
-					}
-					add_claim = scope:rival_afghan_partition_proxy
-				}
-				else = {
-					add_claim = scope:rival_gp_scope
-				}
-			}
-			every_state_region_in_greater_afghanistan = {
-				limit = {
-					NOT = { 
-						any_scope_state = {
-							has_claim_by = c:AFG
-						}
-					}
-					NOT = { s:STATE_HERAT ?= this }
-					any_scope_state = {
-						OR = {
-							scope:rival_gp_scope ?= owner
-							scope:rival_afghan_partition_proxy ?= owner
-						}
-					}
-				}
-				add_claim = c:AFG
-			}
-		}
-		# North - rival_gp_scope
-		if = {
-			limit = {
-				scope:rival_gp_scope ?= {
-					has_variable = proposed_torkestan_line
-				}
-			}
-			every_state_region_in_central_asia = {
-				limit = {
-					any_scope_state = {
-						c:AFG ?= owner
-					}
-				}
-				if = {
-					limit = {
-						exists = scope:rival_afghan_partition_proxy
-					}
-					add_claim = scope:rival_afghan_partition_proxy
-				}
-				else = {
-					add_claim = scope:rival_gp_scope
-				}
-			}
-			if = {
-				limit = {
-					c:AFG ?= {
-						has_state_in_state_region = STATE_HERAT
-					}
-				}
-				s:STATE_HERAT ?= {
-					if = {
-						limit = {
-							exists = scope:rival_afghan_partition_proxy
-						}
-						add_claim = scope:rival_afghan_partition_proxy
-					}
-					else = {
-						add_claim = scope:rival_gp_scope
-					}
-				}
-			}
-			if = {
-				limit = {
-					NOT = {
-						s:STATE_HERAT ?= {
-							any_scope_state = {
-								has_claim_by = c:AFG
-							}
-						}
-					}
-					OR = {
-						scope:rival_afghan_partition_proxy ?= {
-							has_state_in_state_region = STATE_HERAT
-						}
-						scope:rival_gp_scope ?= {
-							has_state_in_state_region = STATE_HERAT
-						}
-					}
-				}
-				s:STATE_HERAT ?= {
-					add_claim = c:AFG
-				}
-			}
-		}
-		else_if = {
-			limit = {
-				scope:rival_gp_scope ?= {
-					has_variable = proposed_amu_darya_line
-				}
-			}
-			every_state_region_in_central_asia = {
-				limit = {
-					any_scope_state = {
-						c:AFG ?= owner
-					}
-				}
-				if = {
-					limit = {
-						exists = scope:rival_afghan_partition_proxy
-					}
-					add_claim = scope:rival_afghan_partition_proxy
-				}
-				else = {
-					add_claim = scope:rival_gp_scope
-				}
-			}
-			every_state_region_in_afghanistan = {
-				limit = {
-					NOT = {
-						any_scope_state = {
-							has_claim_by = c:AFG
-						}
-					}
-					any_scope_state = {
-						OR = {
-							scope:rival_gp_scope ?= owner
-							scope:rival_afghan_partition_proxy ?= owner
-						}
-					}
-				}
-				add_claim = c:AFG
-			}
-		}
-		# Southeast - ROOT
-		if = {
-			limit = {
-				ROOT = {
-					has_variable = proposed_durand_line
-				}
-			}
-			every_state_region_in_india = {
-				limit = {
-					any_scope_state = {
-						c:AFG ?= owner
-					}
-				}
-				if = {
-					limit = {
-						exists = scope:afghan_partition_proxy
-					}
-					add_claim = scope:afghan_partition_proxy
-				}
-				else = {
-					add_claim = ROOT
-				}
-			}
-			every_state_region_in_afghanistan = {
-				limit = {
-					NOT = {
-						any_scope_state = {
-							has_claim_by = c:AFG
-						}
-					}
-					NOT = { s:STATE_HERAT ?= this }
-					any_scope_state = {
-						OR = {
-							ROOT ?= owner
-							scope:afghan_partition_proxy ?= owner
-						}
-					}
-				}
-				add_claim = c:AFG
-			}
-		}
-		else_if = {
-			limit = {
-				ROOT = {
-					has_variable = proposed_indus_line
-				}
-			}
-			every_state_region_in_india = {
-				limit = {
-					NOT = { is_homeland = cu:pashtun }
-					any_scope_state = {
-						c:AFG ?= owner
-					}
-				}
-				if = {
-					limit = {
-						exists = scope:afghan_partition_proxy
-					}
-					add_claim = scope:afghan_partition_proxy
-				}
-				else = {
-					add_claim = ROOT
-				}
-			}
-			every_state_region_in_greater_afghanistan = {
-				limit = {
-					NOT = {
-						any_scope_state = {
-							has_claim_by = c:AFG
-						}
-					}
-					NOT = { s:STATE_HERAT ?= this }
-					any_scope_state = {
-						OR = {
-							ROOT ?= owner
-							scope:afghan_partition_proxy ?= owner
-						}
-					}
-				}
-				add_claim = c:AFG
-			}
-		}
-
-		# North - ROOT
-		if = {
-			limit = {
-				ROOT = {
-					has_variable = proposed_torkestan_line
-				}
-			}
-			every_state_region_in_central_asia = {
-				limit = {
-					any_scope_state = {
-						c:AFG ?= owner
-					}
-				}
-				if = {
-					limit = {
-						exists = scope:afghan_partition_proxy
-					}
-					add_claim = scope:afghan_partition_proxy
-				}
-				else = {
-					add_claim = ROOT
-				}
-			}
-			if = {
-				limit = {
-					c:AFG ?= {
-						has_state_in_state_region = STATE_HERAT
-					}
-				}
-				s:STATE_HERAT ?= {
-					if = {
-						limit = {
-							exists = scope:afghan_partition_proxy
-						}
-						add_claim = scope:afghan_partition_proxy
-					}
-					else = {
-						add_claim = ROOT
-					}
-				}
-			}
-			if = {
-				limit = {
-					NOT = {
-						s:STATE_HERAT ?= {
-							any_scope_state = {
-								has_claim_by = c:AFG
-							}
-						}
-					}
-					OR = {
-						scope:afghan_partition_proxy ?= {
-							has_state_in_state_region = STATE_HERAT
-						}
-						ROOT = {
-							has_state_in_state_region = STATE_HERAT
-						}
-					}
-				}
-				s:STATE_HERAT ?= {
-					add_claim = c:AFG
-				}
-			}
-		}
-		else_if = {
-			limit = {
-				ROOT = {
-					has_variable = proposed_amu_darya_line
-				}
-			}
-			every_state_region_in_central_asia = {
-				limit = {
-					any_scope_state = {
-						c:AFG ?= owner
-					}
-				}
-				if = {
-					limit = {
-						exists = scope:afghan_partition_proxy
-					}
-					add_claim = scope:afghan_partition_proxy
-				}
-				else = {
-					add_claim = ROOT
-				}
-			}
-			every_state_region_in_afghanistan = {
-				limit = {
-					NOT = { 
-						any_scope_state = {
-							has_claim_by = c:AFG
-						}
-					}
-					any_scope_state = {
-						OR = {
-							ROOT ?= owner
-							scope:afghan_partition_proxy ?= owner
-						}
-					}
-				}
-				add_claim = c:AFG
-			}
-		}
-
-		hidden_effect = {
-			clear_afghanistan_variables = yes
-		}
-	}
-
-	weight = 1001
-}
-
-REPLACE:je_unify_afghanistan = {
-		
-	should_be_pinned_by_default_uninvolved_or_context = yes
-	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
-
-	group = je_group_foreign_affairs
-
-	is_shown_in_lobby = {
-		has_dlc_feature = ep1_content #spheres of influence
-		capital ?= {
-			region = sr:region_greater_persia
-		}
-		OR = {
-			country_has_primary_culture = cu:pashtun
-			country_has_primary_culture = cu:tajik
-		}
-	}
-
-	scripted_button = je_afghan_unification_appeal_to_russia_button
-	scripted_button = je_afghan_unification_appeal_to_britain_button
-
-	possible = {
-		capital ?= {
-			region = sr:region_greater_persia
-		}
-		OR = {
-			country_has_primary_culture = cu:pashtun
-			country_has_primary_culture = cu:tajik
-		}
-	}
-
-	complete = {
-		custom_tooltip = {
-			text = has_formed_afghanistan_tt
-			c:AFG ?= this
-		}
-	}
-
-	on_complete = {
-		show_as_tooltip = {
-			trigger_event = { id = gg_afghanistan.4 }
-		}
-	}
-
-    event_outcome_completed_desc = {
-        first_valid = {
-            triggered_desc = {
-                desc = event_effects_gg_afghanistan.4_tt
-            }
-        }
-    }
-
-	weight = 1000
-}
-
-
 # ---- 03_eastern_frontier.txt ----
 REPLACE:je_eastern_frontier = {
 		
@@ -8083,6 +5835,620 @@ REPLACE:je_great_reforms_bureaucratic = {
 }
 
 
+# ---- 04_sepoy_mutiny.txt ----
+REPLACE:je_uneasy_raj = {
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+
+	group = je_group_global_international_situations
+
+	should_be_involved = {
+		c:BIC ?= this
+	}
+
+	should_show_when_not_involved = {
+		OR = {
+			is_in_geographic_region = geographic_region_india
+			any_subject_or_below = {
+				is_in_geographic_region = geographic_region_india
+			}
+		}
+	}
+
+	scripted_progress_bar = sepoy_mutiny_progress_bar_bengal
+	scripted_progress_bar = sepoy_mutiny_progress_bar_bombay
+	scripted_progress_bar = sepoy_mutiny_progress_bar_madras
+
+	immediate = {
+		c:BIC ?= {
+			save_scope_as = raj_scope
+			set_global_variable = { name = bengal_presidency_stability value = "scope:journal_entry.scripted_bar_progress(sepoy_mutiny_progress_bar_bengal)" }
+			set_global_variable = { name = bombay_presidency_stability value = "scope:journal_entry.scripted_bar_progress(sepoy_mutiny_progress_bar_bombay)" }
+			set_global_variable = { name = madras_presidency_stability value = "scope:journal_entry.scripted_bar_progress(sepoy_mutiny_progress_bar_madras)" }
+			set_variable = {
+				name = sepoy_mutiny_timer_var
+				value = 0
+			}
+		}
+	}
+
+	custom_completion_header = je_uneasy_raj_complete_header
+
+	complete = {
+		c:BIC ?= {
+			custom_tooltip = {
+				text = je_avert_sepoy_mutiny_tt_1
+				has_variable = consolidated_colonial_rule
+			}
+			average_sol >= 10
+			radical_fraction = {
+				value <= 0.10
+			}
+		}
+	}
+
+	custom_failure_header = je_uneasy_raj_fail_header
+
+	fail = {
+		c:BIC ?= {
+			OR = {
+				custom_tooltip = {
+					text = je_uneasy_raj_tt_2
+					var:sepoy_mutiny_timer_var >= 100
+				}
+				custom_tooltip = {
+					text = time_has_run_out_tt
+					NOT = {
+						has_journal_entry = je_uneasy_raj
+					}
+				}
+			}
+		}
+	}
+
+	timeout = 9000
+
+	on_timeout = {
+		c:BIC ?= {
+			custom_tooltip = {
+				text = indian_uprising_triggered_tt
+				custom_tooltip = british_raj_later_tt
+				if = {
+					limit = {
+						NOT = {
+							has_variable = utilitarianism_done
+						}
+					}
+					custom_tooltip = no_more_utilitarianism_tt
+				}
+				add_journal_entry = { type = je_sepoy_mutiny }
+				trigger_event = { id = sepoy_mutiny_events.3 popup = yes }
+				remove_global_variable = bengal_presidency_stability
+				remove_global_variable = bombay_presidency_stability
+				remove_global_variable = madras_presidency_stability
+				# Bengal Presidency
+				if = {
+					limit = {
+						je:je_uneasy_raj ?= {
+							"scripted_bar_progress(sepoy_mutiny_progress_bar_bengal)" <= uneasy_raj_stability_low_lower_bound
+						}
+					}
+					set_variable = sepoy_mutiny_bengal_effect_critical
+				}
+				if = {
+					limit = {
+						je:je_uneasy_raj ?= {
+							"scripted_bar_progress(sepoy_mutiny_progress_bar_bengal)" > uneasy_raj_stability_low_lower_bound
+							"scripted_bar_progress(sepoy_mutiny_progress_bar_bengal)" <= uneasy_raj_stability_medium_lower_bound
+						}
+					}
+					set_variable = sepoy_mutiny_bengal_effect_high
+				}
+				if = {
+					limit = {
+						je:je_uneasy_raj ?= {
+							"scripted_bar_progress(sepoy_mutiny_progress_bar_bengal)" > uneasy_raj_stability_medium_lower_bound
+							"scripted_bar_progress(sepoy_mutiny_progress_bar_bengal)" <= uneasy_raj_stability_high_lower_bound
+						}
+					}
+					set_variable = sepoy_mutiny_bengal_effect_medium
+				}
+				if = {
+					limit = {
+						je:je_uneasy_raj ?= {
+							"scripted_bar_progress(sepoy_mutiny_progress_bar_bengal)" > uneasy_raj_stability_high_lower_bound
+						}
+					}
+					set_variable = sepoy_mutiny_bengal_effect_low
+				}
+				# Bombay Presidency
+				if = {
+					limit = {
+						je:je_uneasy_raj ?= {
+							"scripted_bar_progress(sepoy_mutiny_progress_bar_bombay)" <= uneasy_raj_stability_low_lower_bound
+						}
+					}
+					set_variable = sepoy_mutiny_bombay_effect_critical
+				}
+				if = {
+					limit = {
+						je:je_uneasy_raj ?= {
+							"scripted_bar_progress(sepoy_mutiny_progress_bar_bombay)" > uneasy_raj_stability_low_lower_bound
+							"scripted_bar_progress(sepoy_mutiny_progress_bar_bombay)" <= uneasy_raj_stability_medium_lower_bound
+						}
+					}
+					set_variable = sepoy_mutiny_bombay_effect_high
+				}
+				if = {
+					limit = {
+						je:je_uneasy_raj ?= {
+							"scripted_bar_progress(sepoy_mutiny_progress_bar_bombay)" > uneasy_raj_stability_medium_lower_bound
+							"scripted_bar_progress(sepoy_mutiny_progress_bar_bombay)" <= uneasy_raj_stability_high_lower_bound
+						}
+					}
+					set_variable = sepoy_mutiny_bombay_effect_medium
+				}
+				if = {
+					limit = {
+						je:je_uneasy_raj ?= {
+							"scripted_bar_progress(sepoy_mutiny_progress_bar_bombay)" > uneasy_raj_stability_high_lower_bound
+						}
+					}
+					set_variable = sepoy_mutiny_bombay_effect_low
+				}
+				# Madras Presidency
+				if = {
+					limit = {
+						je:je_uneasy_raj ?= {
+							"scripted_bar_progress(sepoy_mutiny_progress_bar_madras)" <= uneasy_raj_stability_low_lower_bound
+						}
+					}
+					set_variable = sepoy_mutiny_madras_effect_critical
+				}
+				if = {
+					limit = {
+						je:je_uneasy_raj ?= {
+							"scripted_bar_progress(sepoy_mutiny_progress_bar_madras)" > uneasy_raj_stability_low_lower_bound
+							"scripted_bar_progress(sepoy_mutiny_progress_bar_madras)" <= uneasy_raj_stability_medium_lower_bound
+						}
+					}
+					set_variable = sepoy_mutiny_madras_effect_high
+				}
+				if = {
+					limit = {
+						je:je_uneasy_raj ?= {
+							"scripted_bar_progress(sepoy_mutiny_progress_bar_madras)" > uneasy_raj_stability_medium_lower_bound
+							"scripted_bar_progress(sepoy_mutiny_progress_bar_madras)" <= uneasy_raj_stability_high_lower_bound
+						}
+					}
+					set_variable = sepoy_mutiny_madras_effect_medium
+				}
+				if = {
+					limit = {
+						je:je_uneasy_raj ?= {
+							"scripted_bar_progress(sepoy_mutiny_progress_bar_madras)" > uneasy_raj_stability_high_lower_bound
+						}
+					}
+					set_variable = sepoy_mutiny_madras_effect_low
+				}
+			}
+		}
+	}
+
+	#event_outcome_timeout_desc = {
+	#	first_valid = {
+	#		triggered_desc = {
+	#			desc = event_effects_sepoy_mutiny_events.3_tt
+	#		}
+	#	}
+	#}
+
+	invalid = {
+	}
+
+	custom_on_completion_header = je_uneasy_raj_on_complete_header
+
+	on_complete = {
+		c:BIC ?= {
+			custom_tooltip = home_rule_unavailable_tt
+			custom_tooltip = end_company_rule_made_available_tt
+			trigger_event = { id = sepoy_mutiny_events.11 popup = yes }
+			remove_global_variable = bengal_presidency_stability
+			remove_global_variable = bombay_presidency_stability
+			remove_global_variable = madras_presidency_stability
+			set_variable = company_rule_enduring
+		}
+	}
+
+	event_outcome_completed_desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = event_effects_sepoy_mutiny_events.11_tt
+			}
+		}
+	}
+
+	custom_on_failure_header = je_uneasy_raj_on_fail_header
+
+	on_fail = {
+		c:BIC ?= {
+			custom_tooltip = british_raj_later_tt
+			if = {
+				limit = {
+					NOT = {
+						has_variable = utilitarianism_done
+					}
+				}
+				custom_tooltip = no_more_utilitarianism_tt
+			}
+			add_journal_entry = { type = je_sepoy_mutiny }
+			trigger_event = { id = sepoy_mutiny_events.3 popup = yes }
+			# Bengal Presidency
+			if = {
+				limit = {
+					je:je_uneasy_raj ?= {
+						"scripted_bar_progress(sepoy_mutiny_progress_bar_bengal)" <= uneasy_raj_stability_low_lower_bound
+					}
+				}
+				set_variable = sepoy_mutiny_bengal_effect_critical
+			}
+			if = {
+				limit = {
+					je:je_uneasy_raj ?= {
+						"scripted_bar_progress(sepoy_mutiny_progress_bar_bengal)" > uneasy_raj_stability_low_lower_bound
+						"scripted_bar_progress(sepoy_mutiny_progress_bar_bengal)" <= uneasy_raj_stability_medium_lower_bound
+					}
+				}
+				set_variable = sepoy_mutiny_bengal_effect_high
+			}
+			if = {
+				limit = {
+					je:je_uneasy_raj ?= {
+						"scripted_bar_progress(sepoy_mutiny_progress_bar_bengal)" > uneasy_raj_stability_medium_lower_bound
+						"scripted_bar_progress(sepoy_mutiny_progress_bar_bengal)" <= uneasy_raj_stability_high_lower_bound
+					}
+				}
+				set_variable = sepoy_mutiny_bengal_effect_medium
+			}
+			if = {
+				limit = {
+					je:je_uneasy_raj ?= {
+						"scripted_bar_progress(sepoy_mutiny_progress_bar_bengal)" > uneasy_raj_stability_high_lower_bound
+					}
+				}
+				set_variable = sepoy_mutiny_bengal_effect_low
+			}
+			# Bombay Presidency
+			if = {
+				limit = {
+					je:je_uneasy_raj ?= {
+						"scripted_bar_progress(sepoy_mutiny_progress_bar_bombay)" <= uneasy_raj_stability_low_lower_bound
+					}
+				}
+				set_variable = sepoy_mutiny_bombay_effect_critical
+			}
+			if = {
+				limit = {
+					je:je_uneasy_raj ?= {
+						"scripted_bar_progress(sepoy_mutiny_progress_bar_bombay)" > uneasy_raj_stability_low_lower_bound
+						"scripted_bar_progress(sepoy_mutiny_progress_bar_bombay)" <= uneasy_raj_stability_medium_lower_bound
+					}
+				}
+				set_variable = sepoy_mutiny_bombay_effect_high
+			}
+			if = {
+				limit = {
+					je:je_uneasy_raj ?= {
+						"scripted_bar_progress(sepoy_mutiny_progress_bar_bombay)" > uneasy_raj_stability_medium_lower_bound
+						"scripted_bar_progress(sepoy_mutiny_progress_bar_bombay)" <= uneasy_raj_stability_high_lower_bound
+					}
+				}
+				set_variable = sepoy_mutiny_bombay_effect_medium
+			}
+			if = {
+				limit = {
+					je:je_uneasy_raj ?= {
+						"scripted_bar_progress(sepoy_mutiny_progress_bar_bombay)" > uneasy_raj_stability_high_lower_bound
+					}
+				}
+				set_variable = sepoy_mutiny_bombay_effect_low
+			}
+			# Madras Presidency
+			if = {
+				limit = {
+					je:je_uneasy_raj ?= {
+						"scripted_bar_progress(sepoy_mutiny_progress_bar_madras)" <= uneasy_raj_stability_low_lower_bound
+					}
+				}
+				set_variable = sepoy_mutiny_madras_effect_critical
+			}
+			if = {
+				limit = {
+					je:je_uneasy_raj ?= {
+						"scripted_bar_progress(sepoy_mutiny_progress_bar_madras)" > uneasy_raj_stability_low_lower_bound
+						"scripted_bar_progress(sepoy_mutiny_progress_bar_madras)" <= uneasy_raj_stability_medium_lower_bound
+					}
+				}
+				set_variable = sepoy_mutiny_madras_effect_high
+			}
+			if = {
+				limit = {
+					je:je_uneasy_raj ?= {
+						"scripted_bar_progress(sepoy_mutiny_progress_bar_madras)" > uneasy_raj_stability_medium_lower_bound
+						"scripted_bar_progress(sepoy_mutiny_progress_bar_madras)" <= uneasy_raj_stability_high_lower_bound
+					}
+				}
+				set_variable = sepoy_mutiny_madras_effect_medium
+			}
+			if = {
+				limit = {
+					je:je_uneasy_raj ?= {
+						"scripted_bar_progress(sepoy_mutiny_progress_bar_madras)" > uneasy_raj_stability_high_lower_bound
+					}
+				}
+				set_variable = sepoy_mutiny_madras_effect_low
+			}
+			remove_global_variable = bengal_presidency_stability
+			remove_global_variable = bombay_presidency_stability
+			remove_global_variable = madras_presidency_stability
+		}
+	}
+
+	event_outcome_failed_desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = event_effects_sepoy_mutiny_events.3_tt
+			}
+		}
+	}
+
+	on_weekly_pulse = {
+		events = {
+		}
+		effect = {
+			c:BIC ?= {
+				set_global_variable = { name = bengal_presidency_stability value = "scope:journal_entry.scripted_bar_progress(sepoy_mutiny_progress_bar_bengal)" }
+				set_global_variable = { name = bombay_presidency_stability value = "scope:journal_entry.scripted_bar_progress(sepoy_mutiny_progress_bar_bombay)" }
+				set_global_variable = { name = madras_presidency_stability value = "scope:journal_entry.scripted_bar_progress(sepoy_mutiny_progress_bar_madras)" }
+			}
+		}
+	}
+
+	on_monthly_pulse = {
+		effect = {
+			if = {
+				limit = {
+					c:BIC ?= {
+						OR = {
+							je:je_uneasy_raj ?= {
+								"scripted_bar_progress(sepoy_mutiny_progress_bar_bengal)" < uneasy_raj_stability_medium_upper_bound
+							}
+							je:je_uneasy_raj ?= {
+								"scripted_bar_progress(sepoy_mutiny_progress_bar_bombay)" < uneasy_raj_stability_medium_upper_bound
+							}
+							je:je_uneasy_raj ?= {
+								"scripted_bar_progress(sepoy_mutiny_progress_bar_madras)" < uneasy_raj_stability_medium_upper_bound
+							}
+						}
+					}
+				}
+				c:BIC ?= {
+					change_variable = {
+						name = sepoy_mutiny_timer_var
+						add = 1
+					}
+				}
+			}
+			c:BIC ?= {
+				random_list = {
+					11 = { }
+					1 = { trigger_event = sepoy_mutiny_events.6 }
+					1 = { trigger_event = raj.4 }
+					1 = { trigger_event = raj.5 }
+				}
+			}
+		}
+	}
+
+	weight = 100
+
+	should_be_pinned_by_default_involved = yes
+	should_be_pinned_by_default_uninvolved_or_context = no
+
+	can_revolution_inherit = yes
+}
+
+REPLACE:je_sepoy_mutiny = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_british_india
+
+	immediate = {
+		ig:ig_industrialists ?= {
+			save_scope_as = eic_ig
+		}
+	}
+
+	complete = {
+		trigger_if = {
+			limit = {
+				c:MUG ?= {
+					has_variable = sepoy_mutiny_revolter_var
+				}
+			}
+			c:MUG ?= { is_country_alive = no }
+		}
+		trigger_if = {
+			limit = {
+				c:BGL ?= {
+					has_variable = sepoy_mutiny_revolter_var
+				}
+			}
+			c:BGL ?= { is_country_alive = no }
+		}
+		trigger_if = {
+			limit = {
+				c:SAT ?= {
+					has_variable = sepoy_mutiny_revolter_var
+				}
+			}
+			c:SAT ?= { is_country_alive = no }
+		}
+		trigger_if = {
+			limit = {
+				c:PAN ?= {
+					has_variable = sepoy_mutiny_revolter_var
+				}
+			}
+			c:PAN ?= { is_country_alive = no }
+		}
+		highest_secession_progress < 0.3
+		has_any_secessionists_broken_out = no
+		is_at_war = no
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:GBR
+				is_subject_of = c:GBR
+				c:GBR ?= {
+					is_country_alive = yes
+					NOT = { has_variable = british_raj_var }
+				}
+			}
+			c:GBR ?= {
+				trigger_event = { id = raj.1 days = 0 popup = yes }
+			}
+		}
+		else = {
+			add_modifier = {
+				name = company_crushed_mutiny
+				days = normal_modifier_time
+			}
+		}
+		hidden_effect = {
+			every_scope_state = {
+				limit = {
+					owner = ROOT
+					has_variable = bic_incorporated_state
+				}
+				set_state_type = incorporated
+				remove_variable = bic_incorporated_state
+			}
+		}
+	}
+
+	event_outcome_completed_desc = {
+		first_valid = {
+            triggered_desc = {
+                desc = event_effects_raj.1_tt
+            }
+        }
+	}
+
+	fail = {
+		OR = {
+			trigger_if = {
+				limit = {
+					c:MUG ?= {
+						has_variable = sepoy_mutiny_revolter_var
+					}
+				}
+				exists = c:MUG
+				NOT = {
+					has_war_with = c:MUG
+					has_state_in_state_region = STATE_DELHI
+					has_state_in_state_region = STATE_AGRA
+				}
+			}
+			trigger_if = {
+				limit = {
+					c:BGL ?= {
+						has_variable = sepoy_mutiny_revolter_var
+					}
+				}
+				exists = c:BGL
+				NOT = {
+					has_war_with = c:BGL
+					has_state_in_state_region = STATE_EAST_BENGAL
+					has_state_in_state_region = STATE_WEST_BENGAL
+				}
+			}
+			trigger_if = {
+				limit = {
+					c:SAT ?= {
+						has_variable = sepoy_mutiny_revolter_var
+					}
+				}
+				exists = c:SAT
+				NOT = {
+					has_war_with = c:SAT
+					has_state_in_state_region = STATE_BOMBAY
+				}
+			}
+			trigger_if = {
+				limit = {
+					c:PAN ?= {
+						has_variable = sepoy_mutiny_revolter_var
+					}
+				}
+				exists = c:PAN
+				NOT = {
+					has_war_with = c:PAN
+					has_state_in_state_region = STATE_PUNJAB
+					has_state_in_state_region = STATE_DELHI
+				}
+			}
+			trigger_if = {
+				limit = {
+					c:KNO ?= {
+						has_variable = sepoy_mutiny_revolter_var
+					}
+				}
+				exists = c:KNO
+				NOT = {
+					has_war_with = c:KNO
+					has_state_in_state_region = STATE_MADRAS
+				}
+			}
+		}
+		hidden_trigger = {
+			NOT = {
+				any_diplomatic_play = {
+					any_scope_play_involved = { this = root }
+					is_diplomatic_play_type = dp_sepoy_mutiny
+					target = {
+						capital = {
+							OR = {
+								region = sr:region_north_india
+								region = sr:region_south_india
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	on_fail = {
+		trigger_event = { id = sepoy_mutiny_events.2 days = 0 popup = yes }
+	}
+
+    event_outcome_failed_desc = {
+        first_valid = {
+            triggered_desc = {
+                desc = event_effects_sepoy_mutiny_events.2_tt
+            }
+        }
+    }
+
+	weight = 100
+
+	should_be_pinned_by_default_involved = yes
+	should_be_pinned_by_default_uninvolved_or_context = no
+}
+
+
 # ---- 05_austria_journal_entries.txt ----
 REPLACE:je_matter_of_hungary = {
 	icon = "gfx/interface/icons/war_goals/unify_italy.dds"
@@ -8135,7 +6501,7 @@ REPLACE:je_matter_of_hungary = {
 					state_region = {
 						is_homeland = cu:hungarian
 					}
-					count >= 4
+					count >= 8
 					is_incorporated = yes
 					turmoil < 0.05
 				}
@@ -9202,285 +7568,6 @@ REPLACE:je_danubian_federation_observer = {
 
 		
 	should_be_pinned_by_default_uninvolved_or_context = yes
-}
-
-
-# ---- 05_eastern_question.txt ----
-REPLACE:je_eastern_question_russia = {
-	group = je_group_foreign_affairs
-	icon = "gfx/interface/icons/event_icons/event_skull.dds"
-
-	scripted_progress_bar = control_eastern_crisis_bar
-
-	is_shown_when_inactive = {
-		has_dlc_feature = ip3_content
-		OR = {
-			c:RUS ?= this
-			c:UKR ?= this
-		}
-		NOT = {
-			exists = c:BUL
-		}
-		c:TUR ?= {
-			has_strategic_adjacency = ROOT
-		}
-	}
-
-	possible = {
-		c:TUR ?= {
-			has_journal_entry = je_great_eastern_crisis
-		}
-	}
-
-	modifiers_while_active = {
-		positive_crisis_influence
-	}
-
-	immediate = {
-		trigger_event = { id = eastern_crisis.1 popup = yes }
-		c:TUR ?= {
-			save_scope_as = ottoman_scope
-		}
-		ROOT = {
-			save_scope_as = root_scope
-		}
-		if = {
-			limit = {
-				c:TUR ?= {
-					any_scope_state = {
-						state_region = s:STATE_GREATER_CAUCASUS
-					}
-				}
-			}
-			set_variable = ottomans_own_kars_at_start
-		}
-		if = {
-			limit = {
-				c:TUR ?= {
-					any_scope_state = {
-						state_region = s:STATE_WALLACHIA
-					}
-				}
-			}
-			set_variable = ottomans_own_dobrudja_at_start
-		}
-	}
-
-	complete = {
-		custom_tooltip = {
-			text = bulgaria_is_independent_tt
-			any_diplomatically_relevant_country = {
-				country_has_primary_culture = cu:bulgarian
-				NOR = {
-					is_diplomatic_play_enemy_of = c:TUR
-					has_war_with = c:TUR
-				}
-			}
-		}
-		trigger_if = {
-			limit = {
-				has_variable = ottomans_own_kars_at_start
-			}
-			owns_entire_state_region = STATE_GREATER_CAUCASUS
-		}
-		trigger_if = {
-			limit = {
-				has_variable = ottomans_own_dobrudja_at_start
-			}
-			custom_tooltip = {
-				text = ottomans_not_owns_dobruja_tt
-				s:STATE_WALLACHIA = {
-					NOT = {
-						any_scope_state = {
-							c:TUR ?= owner
-						}
-					}
-				}
-			}
-		}
-	}
-
-	on_complete = {
-		set_variable = russia_eastern_question_victory
-		trigger_event = { id = eastern_question_russia.1 popup = yes }
-	}
-
-	event_outcome_completed_desc = {
-		first_valid = {
-			triggered_desc = {
-				desc = event_effects_eastern_question_russia.1_tt
-			}
-		}
-	}
-
-	timeout = 3650 # 10 years
-
-	fail = {
-		custom_tooltip = {
-			text = bulgaria_is_not_free_tt
-			NOT = {
-				exists = c:BUL
-			}
-		}
-		c:TUR ?= {
-			NOT = {
-				has_journal_entry = je_great_eastern_crisis
-			}
-		}
-	}
-
-	invalid = {
-		NOT = {
-			exists = c:TUR
-		}
-	}
-
-		
-	should_be_pinned_by_default_uninvolved_or_context = yes
-	weight = 100
-	transferable = no
-
-}
-
-REPLACE:je_eastern_question_austria = {
-		
-	should_be_pinned_by_default_uninvolved_or_context = yes
-	icon = "gfx/interface/icons/relations_icons/hostile.dds"
-
-	scripted_progress_bar = control_eastern_crisis_bar
-
-	group = je_group_foreign_affairs
-
-	timeout = 3650
-
-	modifiers_while_active = {
-		positive_crisis_influence
-	}
-
-	immediate = {
-		if = {
-			limit = {
-				c:TUR ?= {
-					has_journal_entry = je_great_eastern_crisis
-				}
-			}
-			trigger_event = { id = eastern_crisis.1 }
-		}
-		random_political_lobby = {
-			limit = {
-				target = {
-					OR = {
-						c:RUS ?= this
-						c:UKR ?= this
-					}
-				}
-				is_political_lobby_type = lobby_anti_country
-			}
-			save_scope_as = relevant_lobby
-			target = {
-				save_scope_as = relevant_country
-			}
-		}
-		random_diplomatically_relevant_country = {
-			limit = {
-				owns_entire_state_region = STATE_CROATIA
-			}
-			if = {
-				limit = {
-					is_subject = yes
-				}
-				top_overlord = {
-					save_scope_as = bosnia_owner_scope
-				}
-			}
-			else = {
-				save_scope_as = bosnia_owner_scope
-			}
-		}
-		ROOT = {
-			set_variable = { name = anti_lobby_demand_target value = scope:relevant_country }
-		}
-	}
-
-	complete = {
-		OR = {
-			owns_entire_state_region = STATE_CROATIA
-			any_subject_or_below = {
-				owns_entire_state_region = STATE_CROATIA
-			}
-			trigger_if = {
-				limit = {
-					is_power_bloc_leader = yes
-				}
-				scope:power_bloc ?= {
-					any_power_bloc_member = {
-						owns_entire_state_region = STATE_CROATIA
-					}
-				}
-			}
-		}
-	}
-
-	event_outcome_completed_desc = {
-		first_valid = {
-			triggered_desc = {
-				desc = event_effects_eastern_question_austria.2_tt
-			}
-		}
-	}
-
-	invalid = {
-		NOR = {
-			owns_entire_state_region = STATE_CROATIA
-			any_subject_or_below = {
-				owns_entire_state_region = STATE_CROATIA
-			}
-			trigger_if = {
-				limit = {
-					is_power_bloc_leader = yes
-				}
-				scope:power_bloc ?= {
-					any_power_bloc_member = {
-						owns_entire_state_region = STATE_CROATIA
-					}
-				}
-			}
-			scope:bosnia_owner_scope ?= {
-				owns_entire_state_region = STATE_CROATIA
-			}
-		}
-	}
-
-	fail = {
-		c:TUR ?= {
-			NOT = {
-				has_journal_entry = je_great_eastern_crisis
-			}
-		}
-	}
-
-	on_complete = {
-		scope:relevant_lobby = {
-			change_appeasement = {
-				amount = 3
-				factor = appeasement_lobby_request_accepted
-			}
-		}
-		trigger_event = { id = eastern_question_austria.2 popup = yes }
-		clear_anti_lobby_vars = yes
-	}
-
-	on_timeout = {
-		scope:relevant_lobby = {
-			change_appeasement = {
-				amount = -5
-				factor = appeasement_lobby_request_ignored
-			}
-		}
-		clear_anti_lobby_vars = yes
-	}
-
-	weight = 1000
 }
 
 
@@ -11365,7 +9452,7 @@ REPLACE:je_spa_economic_regeneration_land_reform = {
                     is_homeland = cu:spanish
                 }
                 average_sol > 15
-                count >= 4
+                count >= 12
             }
             OR = {
                 AND = {
@@ -11402,7 +9489,7 @@ REPLACE:je_spa_economic_regeneration_land_reform = {
                     is_homeland = cu:spanish
                 }
                 average_sol > 10
-                count >= 4
+                count >= 12
             }
             OR = {
                 AND = {
@@ -11610,7 +9697,7 @@ REPLACE:je_spa_economic_regeneration_railways = {
                     is_building_type = building_railway
                     level >= 3
                 }
-                count >= 4
+                count >= 12
             }
         }
         trigger_else_if = {
@@ -11625,7 +9712,7 @@ REPLACE:je_spa_economic_regeneration_railways = {
                     is_building_type = building_railway
                     level >= 1
                 }
-                count >= 4
+                count >= 12
             }
         }
     }
@@ -14341,6 +12428,2813 @@ REPLACE:je_the_first_carlist_war = {
 
 
 
+# ---- 07_korea_colonization.txt ----
+REPLACE:je_colonize_korea = {
+	should_be_pinned_by_default_uninvolved_or_context = yes
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	group = je_group_historical_content
+
+	modifiers_while_active = {
+
+	}
+
+	is_shown_when_inactive = {
+		has_dlc_feature = ep2_content
+		c:JAP ?= this
+		NOT = {
+			has_law_or_variant = law_type:law_isolationism
+		}
+	}
+
+	possible = {
+		institution_investment_level = {
+			institution = institution_colonial_affairs
+			value >= 1
+		}
+		NOT = { has_law = law_type:law_no_colonial_affairs }
+		AND = {
+			owns_entire_state_region = STATE_SEOUL
+			owns_entire_state_region = STATE_SEOUL
+			owns_entire_state_region = STATE_SEOUL
+			owns_entire_state_region = STATE_PYONGYANG
+			owns_entire_state_region = STATE_PYONGYANG
+		}
+	}
+
+	immediate = {
+		every_state_in_korea = {
+			root = {
+				add_to_variable_list = {
+					name = colonize_korea_states_states
+					target = prev
+				}
+			}
+		}
+
+		cu:korean = {
+			save_scope_as = korean_scope
+		}
+		cu:japanese = {
+			save_scope_as = japanese_scope
+		}
+ 		s:STATE_SEOUL ?= {
+ 			save_scope_as = seoul_state_scope
+ 		}
+		s:STATE_SEOUL ?= {
+			save_scope_as = busan_state_scope
+		}
+ 		s:STATE_SEOUL ?= {
+ 			save_scope_as = yangho_state_scope
+ 		}
+ 		s:STATE_PYONGYANG ?= {
+ 			save_scope_as = sariwon_state_scope
+		}
+ 		s:STATE_PYONGYANG ?= {
+ 			save_scope_as = pyongyang_state_scope
+		}
+
+		add_fervor_target_modifier = { # changes target
+			culture = cu:korean
+			days = normal_modifier_time
+			multiplier = 5
+		}
+	}
+
+	on_weekly_pulse = {
+		effect = {
+			clear_variable_list = colonize_korea_states_states
+			every_state_in_korea = {
+				limit = {
+					NAND = {
+						c:JAP ?= owner
+						is_incorporated = yes
+						turmoil < je_colonize_korea_state_turmoil_max
+						culture_percent_state = {
+							target = cu:japanese
+							value >= je_colonize_korea_state_japanese_culture_min # set in event_values
+						}
+					}
+				}
+				root = {
+					add_to_variable_list = {
+						name = colonize_korea_states_states
+						target = prev
+					}
+				}
+			}
+		}
+	}
+
+	# Japan owns Korea directly
+	complete = {
+		institution_investment_level = {
+			institution = institution_colonial_affairs
+			value >= 3
+		}
+		bureaucracy >= 0
+		approaching_bureaucracy_shortage = no
+		OR = {
+			any_company = {
+				OR = {
+					is_company_type = company_type:company_mantetsu
+					is_company_type = company_type:company_oriental_development_company
+				}
+				company_prosperity >= 75
+			}
+			AND = { # second option to account for je_zaibatsu
+				any_company = {
+	                company_is_prosperous = yes
+	                count >= 2
+	            }
+				any_scope_state = {
+					is_in_geographic_region = geographic_region_korea
+					count >= 3
+	                OR = {
+	                    state_has_building_group_levels = {
+	                        type = bg_plantations
+	                        value >= 35
+	                    }
+	                    state_has_building_group_levels = {
+	                        type = bg_mining
+	                        value >= 35
+	                    }
+	                    state_has_building_type_levels = {
+	                        target = bt:building_railway
+	                        value >= 10
+	                    }
+	                }
+				}
+			}
+		}
+		any_state_in_korea = {
+			count = all
+			custom_tooltip = {
+                text = "JE_COLONIZE_KOREA_STATES_TT"
+				c:JAP ?= owner
+				is_incorporated = yes
+				turmoil < je_colonize_korea_state_turmoil_max
+				culture_percent_state = {
+					target = cu:japanese
+					value >= je_colonize_korea_state_japanese_culture_min # set in event_values
+				}
+			}
+		}
+	}
+
+	on_complete = {
+		clear_variable_list = colonize_korea_states_states
+		trigger_event = {
+			id = korea_colonization.2
+			days = 1
+		}
+	}
+
+	event_outcome_completed_effect_desc = {
+		header = korea_colonization.2.a
+        effect = {
+	    	add_modifier = {
+				name = modifier_peninsula_control_prestige_authority
+				days = moderately_long_modifier_time
+				is_decaying = yes
+			}
+			every_scope_state = {
+				limit = {
+					OR = {
+						state_region = s:STATE_SEOUL
+						state_region = s:STATE_SEOUL
+						state_region = s:STATE_SEOUL
+						state_region = s:STATE_PYONGYANG
+						state_region = s:STATE_PYONGYANG
+					}
+				}
+				add_modifier = {
+					name = modifier_peninsula_control_assimilation_migration
+					days = moderately_long_modifier_time
+					is_decaying = yes
+				}
+			}
+        }
+	}
+
+	event_outcome_completed_effect_desc = {
+		header = korea_colonization.2.b
+		effect = {
+			custom_tooltip = {
+				text = korea_colinzation_2b_executive_tt
+			}
+			custom_tooltip = {
+				text = korea_colinzation_2b_company_tt
+			}
+		}
+	}
+
+	# Korea broke free from Japan control
+	fail = {
+		custom_tooltip = {
+			text = je_colonize_korea_fail_tt
+			OR = {
+				AND = {
+					NOT = {
+						any_scope_state = {
+							is_in_geographic_region = geographic_region_korea
+							count >= 5
+						}
+					}
+					c:KOR ?= {
+						NOT = {
+							is_subject_of = root
+						}
+					}
+				}
+				AND = {
+					exists = c:KOR
+					c:KOR ?= {
+						NOT = {
+							is_subject_of = root
+						}
+					}
+				}
+				any_state_in_korea = {
+					count = all
+					NOT = {
+						owner = ROOT
+					}
+				}
+			}
+		}
+	}
+
+	on_fail = {
+		clear_variable_list = colonize_korea_states_states
+		trigger_event = {
+			id = korea_colonization.3
+			days = 1
+		}
+	}
+
+	event_outcome_failed_effect_desc = {
+        header = korea_colonization.3.a
+        effect = {
+			add_modifier = {
+				name = modifier_peninsula_control_prestige_loss
+				days = moderately_long_modifier_time
+				is_decaying = yes
+			}
+        }
+    }
+
+	event_outcome_failed_effect_desc = {
+		header = korea_colinzation_3b_tt
+        effect = {
+			custom_tooltip = {
+				text = korea_colinzation_3b_ig_leader_tt
+			}
+			custom_tooltip = {
+				text = korea_colinzation_3b_ig_tt
+			}
+        }
+    }
+
+    invalid = {
+    	has_law = law_type:law_no_colonial_affairs
+    }
+
+	on_invalid = {
+		clear_variable_list = colonize_korea_states_states
+	}
+
+	weight = 1000
+}
+
+
+# ---- 00_canada_australia.txt ----
+REPLACE:je_canada_can = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	group = je_group_historical_content
+
+	is_shown_when_inactive = {
+		capital = {
+			is_in_geographic_region = geographic_region_greater_canada
+		}
+		is_subject = yes
+	}
+
+	is_shown_in_lobby = {
+		OR = {
+			country_has_primary_culture = cu:anglo_canadian
+			country_has_primary_culture = cu:franco_canadian
+		}
+	}
+
+	possible = {
+		has_technology_researched = nationalism
+	}
+
+	scripted_button = je_canada_unite_can_button
+
+	complete = {
+		any_state_in_greater_canada = {
+			filter = {
+				NOR = {
+					this.state_region = s:STATE_OREGON
+					this.state_region = s:STATE_OREGON
+					this.state_region = s:STATE_OREGON
+					this.state_region = s:STATE_NEWFOUNDLAND
+				}
+			}
+			owner = ROOT
+			percent = 1
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = can_aus.5 }
+		hidden_effect = {
+			if = {
+				limit = {
+					any_scope_state = {
+						state_region = s:STATE_ONTARIO
+					}
+				}
+			}
+			s:STATE_ONTARIO = {
+				random_scope_state = {
+			        set_hub_name = {
+			            type = city
+			            name = HUB_NAME_STATE_ONTARIO_city_ottawa
+			        }
+				}
+			}
+		}
+	}
+
+	invalid = {
+		is_subject = no
+	}
+
+	weight = 100
+
+
+	should_be_pinned_by_default_uninvolved_or_context = yes
+}
+
+REPLACE:je_canada_gbr = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	group = je_group_historical_content
+
+	is_shown_in_lobby = {
+		any_subject_or_below = {
+			capital = {
+				is_in_geographic_region = geographic_region_greater_canada
+			}
+			count >= 2
+		}
+		NOT = {
+			capital = {
+				is_in_geographic_region = geographic_region_greater_canada
+			}
+		}
+	}
+
+	is_shown_when_inactive = {
+		any_subject_or_below = {
+			capital = {
+				is_in_geographic_region = geographic_region_greater_canada
+			}
+			count >= 2
+		}
+		NOT = {
+			capital = {
+				is_in_geographic_region = geographic_region_greater_canada
+			}
+		}
+	}
+
+	possible = {
+		has_technology_researched = nationalism
+	}
+
+	scripted_button = je_canada_unite_can_button
+
+	complete = {
+		any_country_in_greater_canada = {
+			is_subject_of = ROOT
+			owns_entire_state_region = STATE_ONTARIO
+			owns_entire_state_region = STATE_NEW_BRUNSWICK
+			owns_entire_state_region = STATE_QUEBEC
+			owns_entire_state_region = STATE_NEWFOUNDLAND
+			owns_entire_state_region = STATE_BRITISH_COLUMBIA
+			owns_entire_state_region = STATE_BRITISH_COLUMBIA
+			owns_entire_state_region = STATE_BRITISH_COLUMBIA
+			owns_entire_state_region = STATE_ONTARIO
+			owns_entire_state_region = STATE_NORTHWEST_TERRITORIES
+			owns_entire_state_region = STATE_NORTHWEST_TERRITORIES
+			owns_entire_state_region = STATE_NORTHWEST_TERRITORIES
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = can_aus.6 }
+		hidden_effect = {
+			if = {
+				limit = {
+					any_subject_or_below = {
+						any_scope_state = {
+							state_region = s:STATE_ONTARIO
+						}
+					}
+				}
+			}
+			s:STATE_ONTARIO = {
+				random_scope_state = {
+			        set_hub_name = {
+			            type = city
+			            name = HUB_NAME_STATE_ONTARIO_city_ottawa
+			        }
+				}
+			}
+		}
+	}
+
+	weight = 100
+
+
+	should_be_pinned_by_default_uninvolved_or_context = yes
+}
+
+REPLACE:je_australia_aus = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	group = je_group_historical_content
+
+	is_shown_when_inactive = {
+		capital = {
+			is_in_geographic_region = geographic_region_australasia
+		}
+		is_subject = yes
+	}
+
+	possible = {
+		has_technology_researched = nationalism
+	}
+
+	scripted_button = je_australia_unite_aus_button
+
+	complete = {
+		any_state_in_australasia = {
+			owner = ROOT
+			percent = 1
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = can_aus.7 }
+	}
+
+	invalid = {
+		is_subject = no
+	}
+
+
+	should_be_pinned_by_default_uninvolved_or_context = yes
+}
+
+REPLACE:je_australia_gbr = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	group = je_group_historical_content
+
+	is_shown_when_inactive = {
+		any_subject_or_below = {
+			capital = {
+				is_in_geographic_region = geographic_region_australasia
+			}
+			count >= 2
+		}
+		NOT = {
+			capital = {
+				is_in_geographic_region = geographic_region_australasia
+			}
+		}
+	}
+
+	possible = {
+		has_technology_researched = nationalism
+	}
+
+	scripted_button = je_australia_unite_aus_button
+
+	complete = {
+		any_country_in_australasia = {
+			is_subject_of = ROOT
+			owns_entire_state_region = STATE_NEW_SOUTH_WALES
+			owns_entire_state_region = STATE_NEW_SOUTH_WALES
+			owns_entire_state_region = STATE_NEW_SOUTH_WALES
+			owns_entire_state_region = STATE_NEW_SOUTH_WALES
+			owns_entire_state_region = STATE_WESTERN_AUSTRALIA
+			owns_entire_state_region = STATE_WESTERN_AUSTRALIA
+			owns_entire_state_region = STATE_WESTERN_AUSTRALIA
+			owns_entire_state_region = STATE_NORTH_ISLAND
+			owns_entire_state_region = STATE_NORTH_ISLAND
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = can_aus.8 }
+	}
+
+	weight = 100
+
+
+	should_be_pinned_by_default_uninvolved_or_context = yes
+}
+
+
+# ---- 00_oregon.txt ----
+REPLACE:je_oregon = {
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	group = je_group_usa_manifest_destiny
+
+	is_shown_when_inactive = {
+		exists = c:USA
+		exists = c:GBR
+		c:USA = ROOT
+		s:STATE_OREGON = {
+			any_scope_state = {
+				owner = {
+					OR = {
+						c:GBR = THIS
+						is_subject_of = c:GBR
+					}
+				}
+			}
+		}
+		s:STATE_OREGON = {
+			any_scope_state = {
+				owner = {
+					OR = {
+						c:GBR = THIS
+						is_subject_of = c:GBR
+					}
+				}
+			}
+		}
+		s:STATE_OREGON = {
+			any_scope_state = {
+				owner = {
+					OR = {
+						c:GBR = THIS
+						is_subject_of = c:GBR
+					}
+				}
+			}
+		}
+	}
+
+	possible = {
+		OR = {
+			has_interest_marker_in_region = sr:region_pacific_coast
+			custom_tooltip = {
+				text = oregon_tt
+				has_global_variable = oregon_trail_mapped
+			}
+			owns_entire_state_region = STATE_WYOMING
+			owns_entire_state_region = STATE_WYOMING
+		}
+	}
+
+	complete = {
+		OR = {
+			AND = {
+				has_interest_marker_in_region = sr:region_pacific_coast
+				custom_tooltip = {
+					text = oregon_tt
+					has_global_variable = oregon_trail_mapped
+				}
+				owns_entire_state_region = STATE_WYOMING
+				owns_entire_state_region = STATE_WYOMING
+				c:GBR ?= {
+					relations:ROOT >= relations_threshold:cordial
+				}
+			}
+			AND = {
+				owns_entire_state_region = STATE_OREGON
+				owns_entire_state_region = STATE_OREGON
+				owns_entire_state_region = STATE_OREGON
+			}
+			c:ORG ?= {
+				is_subject_of = ROOT
+			}
+		}
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				s:STATE_OREGON = {
+					any_scope_state = {
+						owner = {
+							OR = {
+								c:GBR = THIS
+								is_subject_of = c:GBR
+							}
+						}
+					}
+				}
+				s:STATE_OREGON = {
+					any_scope_state = {
+						owner = {
+							OR = {
+								c:GBR = THIS
+								is_subject_of = c:GBR
+							}
+						}
+					}
+				}
+				s:STATE_OREGON = {
+					any_scope_state = {
+						owner = {
+							OR = {
+								c:GBR = THIS
+								is_subject_of = c:GBR
+							}
+						}
+					}
+				}
+			}
+			c:GBR ?= { trigger_event = { id = oregon.2 } }
+		}
+		else = {
+			s:STATE_OREGON = {
+				add_homeland = cu:yankee
+			}
+			s:STATE_OREGON = {
+				add_homeland = cu:yankee
+			}
+			s:STATE_OREGON = {
+				add_homeland = cu:yankee
+			}
+			if = {
+				limit = {
+					s:STATE_BRITISH_COLUMBIA = {
+						any_scope_state = {
+							owner = {
+								OR = {
+									c:USA ?= THIS
+									is_subject_of = c:USA
+								}
+							}
+						}
+					}
+				}
+				s:STATE_BRITISH_COLUMBIA = {
+					add_homeland = cu:yankee
+				}
+			}
+			add_modifier = {
+				name = oregon_resolved
+				days = normal_modifier_time
+			}
+		}
+	}
+
+	weight = 100
+}
+
+REPLACE:je_conquer_oregon = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_usa_manifest_destiny
+
+	complete = {
+		c:USA ?= {
+			owns_entire_state_region = STATE_OREGON
+			owns_entire_state_region = STATE_OREGON
+			owns_entire_state_region = STATE_OREGON
+		}
+	}
+
+	weight = 100
+
+	transferable = no
+}
+
+
+# ---- 00_poland.txt ----
+REPLACE:je_christ_of_nations = {
+    icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	group = je_group_poland
+
+    is_shown_in_lobby = {
+        OR = {
+            c:POL ?= this
+            c:KRA ?= this
+        }
+    }
+
+    scripted_button = christ_of_nations_button
+
+    is_shown_when_inactive = {
+        OR = {
+            c:POL ?= this
+            c:KRA ?= this
+            AND = {
+                c:GAL ?= this
+                ruler = {
+                    culture = cu:polish
+                }
+            }
+        }
+    }
+
+    possible = {
+        has_technology_researched = nationalism
+    }
+
+    immediate = {
+        cu:polish = {
+            save_scope_as = polish_culture_scope
+        }
+    }
+
+    complete = {
+        any_state_in_poland_old = {
+            owner = root
+            count = all
+        }
+    }
+
+    on_complete = {
+        trigger_event = { id = poland_events.4 days = 0 popup = yes }
+    }
+
+    	
+	should_be_pinned_by_default_uninvolved_or_context = yes
+}
+
+REPLACE:je_poland_lithuania = {
+    icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	group = je_group_poland
+
+     is_shown_in_lobby = {
+        country_has_primary_culture = cu:polish
+    }
+
+    is_shown_when_inactive = {
+       country_has_primary_culture = cu:polish
+    }
+
+    possible = {
+        has_technology_researched = pan-nationalism
+        custom_tooltip = {
+            text = je_poland_lithuania_tt
+            c:PLC ?= THIS
+        }
+    }
+
+    immediate = {
+        trigger_event = { id = poland_events.6 popup = yes }
+    }
+
+    complete = {
+        owns_entire_state_region = STATE_MINSK
+        owns_entire_state_region = STATE_KIEV
+        any_scope_state = {
+            state_region = {
+                OR = {
+                    is_homeland = cu:ukrainian
+                    is_homeland = cu:byelorussian
+                }
+            }
+            count >=7
+        }
+    }
+
+    on_complete = {
+        set_variable = greater_commonwealth_var
+        trigger_event = { id = poland_events.7 popup = yes }
+		s:STATE_VILNIUS = {
+			add_homeland = cu:polish
+		}
+		s:STATE_BREST = {
+			add_homeland = cu:polish
+		}
+		s:STATE_EAST_GALICIA = {
+			add_homeland = cu:polish
+		}
+        custom_tooltip = plc_discrimination_tt
+        show_as_tooltip = {
+            add_primary_culture = cu:ukrainian
+            add_primary_culture = cu:byelorussian
+            add_loyalists = {
+                culture = cu:ukrainian
+                value = 0.1
+            }
+            add_loyalists = {
+                culture = cu:byelorussian
+                value = 0.1
+            }
+        }
+        custom_tooltip = plc_discrimination_tt_2
+        show_as_tooltip = {
+            add_loyalists = {
+                culture = cu:polish
+                value = 0.1
+            }
+        }
+    }
+
+    	
+	should_be_pinned_by_default_uninvolved_or_context = yes
+}
+
+
+# ---- 00_sick_man.txt ----
+REPLACE:je_sick_man_main = {
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+
+	group = je_group_tanzimat
+
+	is_shown_in_lobby = {
+		c:TUR = THIS
+    }
+
+	complete = {
+		scope:journal_entry = {
+			is_goal_complete = yes
+		}
+	}
+
+	on_complete = {
+		remove_modifier = sick_man_of_europe
+		trigger_event = {
+			id = sick_man.2
+		}
+	}
+
+	timeout = 10950
+
+	on_timeout = {
+		remove_modifier = sick_man_of_europe
+		add_modifier = {
+			name = dead_man_of_europe
+			days = very_long_modifier_time
+			is_decaying = yes
+		}
+		trigger_event = {
+			id = sick_man.3
+		}
+		if = {
+			limit = {
+	       		is_in_power_bloc = yes
+	        	is_power_bloc_leader = yes
+			}
+			custom_tooltip = sick_man_of_europe_lose_power_bloc
+		}
+		custom_tooltip = {
+			text = je_sick_man_main_failure_movements_tt
+			set_variable = {
+				name = failed_tanzimat
+				years = 20
+			}
+		}
+		if = {
+			limit = {
+				has_dlc_feature = ip3_content
+			}
+			custom_tooltip = {
+				text = eastern_crisis_consequence_tt
+				set_variable = failed_sick_man_main
+			}
+		}
+		if = { #failure immediately triggers eastern_crisis
+			limit = {
+				c:TUR ?= this
+				has_dlc_feature = ip3_content
+				NOT = {
+					has_global_variable = eastern_crisis_happened
+				}
+			}
+			add_contextless_journal_entry = je_great_eastern_crisis
+		}
+		cu:albanian = {
+			remove_tradition_trait = tradition_rumelian
+		}
+		cu:bosniak = {
+			remove_tradition_trait = tradition_rumelian
+		}
+		cu:sephardic = {
+			remove_tradition_trait = tradition_rumelian
+		}
+	}
+
+	current_value = {
+		value = var:sick_man_var
+	}
+
+	goal_add_value = {
+		add = 4
+	}
+
+	progressbar = yes
+
+	weight = 10000
+
+
+	should_be_pinned_by_default_uninvolved_or_context = yes
+}
+
+REPLACE:je_sick_man_syria = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_tanzimat
+
+	complete = {
+		owns_entire_state_region = STATE_SYRIA
+		owns_entire_state_region = STATE_SYRIA
+		owns_entire_state_region = STATE_SYRIA
+		owns_entire_state_region = STATE_PALESTINE
+		owns_entire_state_region = STATE_PALESTINE
+		owns_entire_state_region = STATE_ADANA
+	}
+
+	on_complete = {
+		custom_tooltip = je_sick_man_advance
+		change_variable = {
+			name = sick_man_var
+			add = 1
+		}
+		set_variable = completed_syria_je
+		s:STATE_SINAI = {
+			add_claim = ROOT
+		}
+		s:STATE_UPPER_EGYPT = {
+			add_claim = ROOT
+		}
+		s:STATE_UPPER_EGYPT = {
+			add_claim = ROOT
+		}
+		s:STATE_LOWER_EGYPT = {
+			add_claim = ROOT
+		}
+		if = {
+			limit = {
+				OR = {
+					AND = {
+						exists = c:EGY
+						c:EGY ?= {
+							is_subject_of = ROOT
+							is_subject_type = subject_type_puppet
+						}
+					}
+					AND = {
+						owns_entire_state_region = STATE_SINAI
+						owns_entire_state_region = STATE_UPPER_EGYPT
+						owns_entire_state_region = STATE_UPPER_EGYPT
+						owns_entire_state_region = STATE_LOWER_EGYPT
+					}
+				}
+			}
+			change_variable = {
+				name = sick_man_var
+				add = 1
+			}
+		}
+		else = {
+			add_journal_entry = {
+				type = je_sick_man_egypt
+			}
+		}
+		custom_tooltip = sickman_syria_egypt
+	}
+
+	invalid = {
+		custom_tooltip = {
+			text = finished_sick_man_tt
+			has_variable = sick_man_complete
+		}
+	}
+
+	on_weekly_pulse = {
+		events = {
+			#egyptian_crisis_events.1
+		}
+	}
+
+	transferable = no
+
+	weight = 5000
+
+
+	should_be_pinned_by_default_uninvolved_or_context = yes
+}
+
+REPLACE:je_sick_man_egypt = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_tanzimat
+
+	complete = {
+		OR = {
+			AND = {
+				exists = c:EGY
+				c:EGY ?= {
+					is_subject_of = ROOT
+					is_subject_type = subject_type_puppet
+				}
+			}
+			AND = {
+				owns_entire_state_region = STATE_SINAI
+				owns_entire_state_region = STATE_UPPER_EGYPT
+				owns_entire_state_region = STATE_UPPER_EGYPT
+				owns_entire_state_region = STATE_LOWER_EGYPT
+			}
+		}
+	}
+
+	on_complete = {
+		custom_tooltip = je_sick_man_advance
+		change_variable = {
+			name = sick_man_var
+			add = 1
+		}
+	}
+
+	invalid = {
+		custom_tooltip = {
+			text = finished_sick_man_tt
+			has_variable = sick_man_complete
+		}
+	}
+
+	transferable = no
+
+	weight = 5000
+
+
+	should_be_pinned_by_default_uninvolved_or_context = yes
+}
+
+REPLACE:je_sick_man_economy = {
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	group = je_group_tanzimat
+
+	complete = {
+		in_default = no
+		any_scope_state = {
+			is_incorporated = yes
+			has_building = building_urban_center
+			percent >= 0.75
+		}
+	}
+
+	on_complete = {
+		set_variable = completed_sick_man_economy_je
+		custom_tooltip = je_sick_man_advance
+		change_variable = {
+			name = sick_man_var
+			add = 1
+		}
+	}
+
+	invalid = {
+		custom_tooltip = {
+			text = finished_sick_man_tt
+			has_variable = sick_man_complete
+		}
+	}
+
+	transferable = no
+
+	weight = 5000
+
+	should_be_pinned_by_default_uninvolved_or_context = yes
+}
+
+# Literacy and Universities
+REPLACE:je_sick_man_education = {
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	group = je_group_tanzimat
+
+	complete = {
+		any_scope_building = {
+			is_building_type = building_university
+			occupancy > 0.9
+			level >= 5
+		}
+		scope:journal_entry = {
+			is_goal_complete = yes
+		}
+	}
+
+	on_complete = {
+		set_variable = completed_sick_man_education_je
+		custom_tooltip = je_sick_man_advance
+		change_variable = {
+			name = sick_man_var
+			add = 1
+		}
+	}
+
+	current_value = {
+		value = root.literacy_rate
+	}
+
+	goal_add_value = {
+		add = 0.2
+	}
+
+	invalid = {
+		custom_tooltip = {
+			text = finished_sick_man_tt
+			has_variable = sick_man_complete
+		}
+	}
+
+	transferable = no
+
+	weight = 5000
+
+
+	should_be_pinned_by_default_uninvolved_or_context = yes
+
+	progressbar = yes
+}
+
+# Nationalism
+REPLACE:je_sick_man_separatism = {
+	icon = "gfx/interface/icons/event_icons/event_fire.dds"
+
+	group = je_group_tanzimat
+
+	complete = {
+		scope:journal_entry = {
+			is_goal_complete = yes
+		}
+		highest_secession_progress < 0.5
+	}
+
+	on_complete = {
+		set_variable = completed_separatism_sick_man_je
+		custom_tooltip = je_sick_man_advance
+		change_variable = {
+			name = sick_man_var
+			add = 1
+		}
+	}
+
+	on_monthly_pulse = {
+		effect = {
+			if = {
+				limit = {
+					highest_secession_progress < 0.5
+				}
+				change_variable = {
+					name = sick_man_separatist_var
+					add = 1
+				}
+			}
+		}
+		random_events = {
+			100 = 0
+			10 = tanzimat_events.5 # Paranoia Event
+		}
+	}
+
+	fail = {
+		highest_secession_progress > 0.5
+	}
+
+	on_fail = {
+		set_variable = failed_sick_man_separatism
+		if = { #failure immediately triggers eastern_crisis
+			limit = {
+				c:TUR ?= this
+				has_dlc_feature = ip3_content
+				NOT = {
+					has_global_variable = eastern_crisis_happened
+				}
+			}
+			add_contextless_journal_entry = je_great_eastern_crisis
+		}
+	}
+
+	current_value = {
+		value = var:sick_man_separatist_var
+	}
+
+	goal_add_value = {
+		add = 180
+	}
+
+	invalid = {
+		custom_tooltip = {
+			text = finished_sick_man_tt
+			has_variable = sick_man_complete
+		}
+	}
+
+	transferable = no
+
+	weight = 5000
+
+
+	should_be_pinned_by_default_uninvolved_or_context = yes
+
+	progressbar = yes
+}
+
+# Army Reform
+REPLACE:je_sick_man_army = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_tanzimat
+
+	complete = {
+		army_size >= 100
+		has_technology_researched = napoleonic_warfare
+		any_scope_building = {
+			filter = {
+				is_building_type = building_barrack
+			}
+			NOR = {
+				building_has_goods_shortage = yes
+				has_active_production_method = pm_no_organization
+			}
+			percent = 1
+		}
+		NOT = {
+			any_military_formation = {
+				filter = {
+					is_army = yes
+				}
+				any_combat_unit = {
+					has_unit_type = unit_type:combat_unit_type_irregular_infantry
+				}
+				percent >= 0.25
+			}
+		}
+	}
+
+	on_complete = {
+		set_variable = completed_sick_man_army_je
+		custom_tooltip = je_sick_man_advance
+		change_variable = {
+			name = sick_man_var
+			add = 1
+		}
+	}
+
+	on_monthly_pulse = {
+		events = {
+			tanzimat_events.10 # Tanzimat Draft Question
+		}
+	}
+
+	invalid = {
+		custom_tooltip = {
+			text = finished_sick_man_tt
+			has_variable = sick_man_complete
+		}
+	}
+
+	transferable = no
+
+
+	should_be_pinned_by_default_uninvolved_or_context = yes
+
+	weight = 5000
+}
+
+
+# Bureaucractic Reform
+REPLACE:je_sick_man_bureaucracy = {
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	group = je_group_tanzimat
+
+	complete = {
+		NOR = {
+			has_law_or_variant = law_type:law_hereditary_bureaucrats
+			has_law_or_variant = law_type:law_land_based_taxation
+			has_law_or_variant = law_type:law_consumption_based_taxation
+		}
+		bureaucracy >= 0
+		approaching_bureaucracy_shortage = no
+	}
+
+	on_complete = {
+		set_variable = completed_sick_man_bureaucracy_je
+		custom_tooltip = je_sick_man_advance
+		change_variable = {
+			name = sick_man_var
+			add = 1
+		}
+		remove_modifier = outmoded_bureaucracy
+	}
+
+	on_monthly_pulse = {
+		random_events = {
+			100 = 0
+			10 = tanzimat_events.9 # Land registration resisted
+		}
+	}
+
+	invalid = {
+		custom_tooltip = {
+			text = finished_sick_man_tt
+			has_variable = sick_man_complete
+		}
+	}
+
+	transferable = no
+
+	weight = 5000
+
+
+	should_be_pinned_by_default_uninvolved_or_context = yes
+}
+
+
+
+# ---- 03_afghanistan.txt ----
+REPLACE:je_consolidate_afghanistan = {
+		
+	should_be_pinned_by_default_uninvolved_or_context = yes
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	group = je_group_foreign_affairs
+
+	is_shown_in_lobby = {
+		has_dlc_feature = ep1_content #Spheres of Influence
+		c:GBR ?= THIS
+	}
+
+	is_shown_when_inactive = {
+		country_rank >= rank_value:great_power
+		has_dlc_feature = ep1_content
+		c:AFG ?= {
+			has_overlapping_interests = ROOT
+		}
+		NOT = {
+			has_global_variable = afghan_borders_solidified
+		}
+	}
+
+	scripted_button = je_consolidate_afghanistan_durand_line
+	scripted_button = je_consolidate_afghanistan_indus_line
+	scripted_button = je_consolidate_afghanistan_southeast_status_quo
+	scripted_button = je_consolidate_afghanistan_torkestan_line
+	scripted_button = je_consolidate_afghanistan_amu_darya_line
+	scripted_button = je_consolidate_afghanistan_north_status_quo
+	scripted_button = je_consolidate_afghanistan_offer_compensation
+	scripted_button = je_consolidate_afghanistan_threaten_reprisals
+	scripted_button = je_consolidate_afghanistan_approve_of_treaty
+	scripted_button = je_consolidate_afghanistan_retract_treaty
+	scripted_button = je_consolidate_afghanistan_resolve_southwest_conflict
+	scripted_button = je_consolidate_afghanistan_resolve_northern_conflict
+
+	invalid = {
+		NOT = {
+			exists = c:AFG
+		}
+	}
+
+	on_weekly_pulse = {
+		effect = {
+			if = {
+				limit = {
+					has_variable = afghan_notification_sender
+					scope:gp_scope = {
+						has_variable = afghanistan_delimitation_treaty_approved
+					}
+					scope:rival_gp_scope = {
+						has_variable = afghanistan_delimitation_treaty_approved
+					}
+					c:AFG ?= {
+						NOT = {
+							has_variable = received_afghan_border_notification
+						}
+					}
+				}
+				if = {
+					limit = {
+						NOT = { c:AFG ?= { has_variable = afg_proposal_ai_cooldown } }
+					}
+					c:AFG ?= {
+						trigger_event = { id = gg_afghanistan.1 popup = yes }
+					}
+				}
+			}
+		}
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				exists = c:AFG
+			}
+			c:AFG ?= {
+				save_scope_as = afghanistan_scope
+			}
+		}
+		save_scope_as = gp_scope
+		if = {
+			limit = {
+				NOT = {
+					any_country = {
+						has_variable = afghan_notification_sender
+					}
+				}
+			}
+			set_variable = afghan_notification_sender
+		}
+		# Searches for the canonical GBR-RUS conference first
+		if = {
+			limit = {
+				c:GBR ?= this
+				exists = c:RUS
+			}
+			c:RUS ?= { save_temporary_scope_as = candidate_rival }
+		}
+		else_if = {
+			limit = {
+				c:RUS ?= this
+				exists = c:GBR
+			}
+			c:GBR ?= { save_temporary_scope_as = candidate_rival }
+		}
+
+		# Priority: candidate GP itself > relevant candidate GP subject > any eligible GP > any eligible GP-subject
+		if = {
+			limit = {
+				exists = scope:candidate_rival
+				scope:candidate_rival ?= {
+					country_rank >= rank_value:great_power
+					c:AFG ?= {
+						has_overlapping_interests = PREV # scope:candidate_rival
+					}
+					OR = {
+						any_scope_state = {
+							OR = {
+								is_in_geographic_region = geographic_region_central_asia
+								is_in_geographic_region = geographic_region_india
+							}
+							any_neighbouring_state = { c:AFG ?= owner }
+						}
+						any_subject_or_below = {
+							NOT = { c:AFG ?= this }
+							any_scope_state = {
+								OR = {
+									is_in_geographic_region = geographic_region_central_asia
+									is_in_geographic_region = geographic_region_india
+								}
+								any_neighbouring_state = { c:AFG ?= owner }
+							}
+						}
+					}
+				}
+			}
+			scope:candidate_rival = { save_scope_as = rival_gp_scope }
+		}
+		else_if = {
+			limit = {
+				any_country = {
+					country_rank >= rank_value:great_power
+					c:AFG ?= {
+						has_overlapping_interests = PREV # scope:candidate_rival
+					}
+					OR = {
+						any_scope_state = {
+							OR = {
+								is_in_geographic_region = geographic_region_central_asia
+								is_in_geographic_region = geographic_region_india
+							}
+							any_neighbouring_state = { c:AFG ?= owner }
+						}
+						any_subject_or_below = {
+							NOT = { c:AFG ?= this }
+							any_scope_state = {
+								OR = {
+									is_in_geographic_region = geographic_region_central_asia
+									is_in_geographic_region = geographic_region_india
+								}
+								any_neighbouring_state = { c:AFG ?= owner }
+							}
+						}
+					}
+					NOT = { THIS = ROOT }
+				}
+			}
+			random_country = {
+				limit = {
+					country_rank >= rank_value:great_power
+					c:AFG ?= {
+						has_overlapping_interests = PREV # scope:candidate_rival
+					}
+					OR = {
+						any_scope_state = {
+							OR = {
+								is_in_geographic_region = geographic_region_central_asia
+								is_in_geographic_region = geographic_region_india
+							}
+							any_neighbouring_state = { c:AFG ?= owner }
+						}
+						any_subject_or_below = {
+							NOT = { c:AFG ?= this }
+							any_scope_state = {
+								OR = {
+									is_in_geographic_region = geographic_region_central_asia
+									is_in_geographic_region = geographic_region_india
+								}
+								any_neighbouring_state = { c:AFG ?= owner }
+							}
+						}
+					}
+					NOT = { THIS = ROOT }
+				}
+				save_scope_as = rival_gp_scope
+			}
+		}
+		if = {
+			limit = {
+				scope:rival_gp_scope ?=  {
+					any_subject_or_below = {
+						NOT = { c:AFG ?= this }
+						any_scope_state = {
+							OR = {
+								is_in_geographic_region = geographic_region_central_asia
+								is_in_geographic_region = geographic_region_india
+							}
+							any_neighbouring_state = { c:AFG ?= owner }
+						}
+					}
+				}
+			}
+			scope:rival_gp_scope ?=  {
+				ordered_subject_or_below = {
+					limit = {
+						NOT = { c:AFG ?= this }
+						any_scope_state = {
+							OR = {
+								is_in_geographic_region = geographic_region_central_asia
+								is_in_geographic_region = geographic_region_india
+							}
+							any_neighbouring_state = { c:AFG ?= owner }
+						}
+					}
+					order_by = gdp
+					position = 0
+					check_range_bounds = no
+					save_scope_as = rival_afghan_partition_proxy
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				any_subject_or_below = {
+					NOT = {
+						c:AFG ?= this
+					}
+					any_neighbouring_state = {
+						c:AFG ?= owner
+					}
+				}
+			}
+			ordered_subject_or_below = {
+				limit = {
+					NOT = {
+						c:AFG ?= this
+					}
+					any_neighbouring_state = {
+						c:AFG ?= owner
+					}
+				}
+				order_by = gdp
+				position = 0
+				check_range_bounds = no
+				save_scope_as = afghan_partition_proxy
+			}
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			text = afghanistan_exists_tt
+			exists = c:AFG
+		}
+		custom_tooltip = {
+			text = is_bordering_afghanistan_tt
+			country_rank >= rank_value:great_power
+			c:AFG ?= {
+				has_overlapping_interests = ROOT
+			}
+			OR = {
+				any_state_in_india = {
+					OR = {
+						owner ?= ROOT
+						owner ?= { is_subject_of = ROOT }
+					}
+					any_neighbouring_state = {
+						c:AFG ?= owner
+					}
+				}
+				any_state_in_central_asia = {
+					OR = {
+						owner ?= ROOT
+						owner ?= { is_subject_of = ROOT }
+					}
+					any_neighbouring_state = {
+						c:AFG ?= owner
+					}
+				}
+			}
+		}
+		custom_tooltip = {
+			text = another_gp_is_bordering_afghanistan_tt
+			any_country = {
+				country_rank >= rank_value:great_power
+				NOT = {
+					THIS = ROOT
+				}
+				c:AFG ?= {
+					has_overlapping_interests = PREV # any_country
+				}
+				OR = {
+					any_scope_state = {
+						OR = {
+							is_in_geographic_region = geographic_region_central_asia
+							is_in_geographic_region = geographic_region_india
+						}
+						any_neighbouring_state = {
+							c:AFG ?= owner
+						}
+					}
+					any_subject_or_below = {
+						any_scope_state = {
+							OR = {
+								is_in_geographic_region = geographic_region_central_asia
+								is_in_geographic_region = geographic_region_india
+							}
+							any_neighbouring_state = {
+								c:AFG ?= owner
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	complete = {
+		trigger_if = {
+			limit = {
+				exists = scope:gp_scope
+			}
+			custom_tooltip = {
+				text = first_gp_approves_tt
+				scope:gp_scope ?= {
+					has_variable = afghanistan_delimitation_treaty_approved
+				}
+			}
+		}
+		trigger_if = {
+			limit = {
+				exists = scope:rival_gp_scope
+			}
+			custom_tooltip = {
+				text = second_gp_approves_tt
+				scope:rival_gp_scope ?= {
+					has_variable = afghanistan_delimitation_treaty_approved
+				}
+			}
+		}
+		trigger_if = {
+			limit = {
+				exists = scope:afghanistan_scope
+			}
+			custom_tooltip = {
+				text = afghanistan_approves_tt
+				c:AFG ?= {
+					has_variable = afghanistan_delimitation_treaty_approved
+				}
+			}
+		}
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:AFG
+			}
+			custom_tooltip = {
+				text = afghanistan_abandon_claims_tt
+				every_state_region = {
+					limit = {
+						c:AFG ?= {
+							has_claim = prev
+						}
+					}
+					remove_claim = c:AFG
+				}
+			}
+		}
+		if = {
+			limit = {
+				scope:rival_gp_scope ?= {
+					has_variable = proposed_durand_line
+				}
+			}
+			c:AFG ?= {
+				every_scope_state = {
+					limit = {
+						is_in_geographic_region = geographic_region_india
+					}
+					if = {
+						limit = {
+							exists = scope:rival_afghan_partition_proxy
+						}
+						set_state_owner = scope:rival_afghan_partition_proxy
+					}
+					else = {
+						set_state_owner = scope:rival_gp_scope
+					}
+				}
+			}
+			every_state_in_afghanistan = {
+				limit = {
+					OR = {
+						scope:rival_gp_scope ?= owner
+						scope:rival_afghan_partition_proxy ?= owner
+					}
+				}
+				set_state_owner = c:AFG
+			}
+		}
+		else_if = {
+			limit = {
+				scope:rival_gp_scope ?= {
+					has_variable = proposed_indus_line
+				}
+			}
+			c:AFG ?= {
+				every_scope_state = {
+					limit = {
+						is_in_geographic_region = geographic_region_india
+						NOT = {
+							state_region = {
+								is_homeland = cu:pashtun
+							}
+						}
+					}
+					if = {
+						limit = {
+							exists = scope:rival_afghan_partition_proxy
+						}
+						set_state_owner = scope:rival_afghan_partition_proxy
+					}
+					else = {
+						set_state_owner = scope:rival_gp_scope
+					}
+				}
+			}
+			every_state_in_greater_afghanistan = {
+				limit = {
+					OR = {
+						scope:rival_gp_scope ?= owner
+						scope:rival_afghan_partition_proxy ?= owner
+					}
+				}
+				set_state_owner = c:AFG
+			}
+		}
+		else_if = {
+			limit = {
+				scope:rival_gp_scope ?= {
+					has_variable = proposed_status_quo
+				}
+			}
+			custom_tooltip = status_quo_southeast_tt
+		}
+
+		if = {
+			limit = {
+				scope:rival_gp_scope ?= {
+					has_variable = proposed_torkestan_line
+				}
+			}
+			c:AFG ?= {
+				every_scope_state = {
+					limit = {
+						OR = {
+							is_in_geographic_region = geographic_region_central_asia
+							state_region = s:STATE_HERAT
+						}
+					}
+					if = {
+						limit = {
+							exists = scope:rival_afghan_partition_proxy
+						}
+						set_state_owner = scope:rival_afghan_partition_proxy
+					}
+					else = {
+						set_state_owner = scope:rival_gp_scope
+					}
+				}
+			}
+			every_state_in_greater_afghanistan = {
+				limit = {
+					OR = {
+						scope:rival_gp_scope ?= owner
+						scope:rival_afghan_partition_proxy ?= owner
+					}
+					NOT = {
+						state_region = s:STATE_HERAT
+					}
+				}
+				set_state_owner = c:AFG
+			}
+		}
+		else_if = {
+			limit = {
+				scope:rival_gp_scope ?= {
+					has_variable = proposed_amu_darya_line
+				}
+			}
+			c:AFG ?= {
+				every_scope_state = {
+					limit = {
+						is_in_geographic_region = geographic_region_central_asia
+					}
+					if = {
+						limit = {
+							exists = scope:rival_afghan_partition_proxy
+						}
+						set_state_owner = scope:rival_afghan_partition_proxy
+					}
+					else = {
+						set_state_owner = scope:rival_gp_scope
+					}
+				}
+			}
+			every_state_in_greater_afghanistan = {
+				limit = {
+					OR = {
+						scope:rival_gp_scope ?= owner
+						scope:rival_afghan_partition_proxy ?= owner
+					}
+				}
+				set_state_owner = c:AFG
+			}
+		}
+		else_if = {
+			limit = {
+				scope:rival_gp_scope ?= {
+					has_variable = proposed_status_quo_north
+				}
+			}
+			custom_tooltip = status_quo_north_tt
+		}
+		if = {
+			limit = {
+				scope:rival_gp_scope ?= {
+					has_variable = proposed_compensation_for_afghanistan
+				}
+			}
+			scope:rival_gp_scope ?= {
+				create_treaty = {
+					first_country = scope:rival_gp_scope
+					second_country = c:AFG
+
+					is_draft = no
+					binding_period = { years = 2 }
+
+					articles_to_create = {
+						{
+							article = money_transfer
+							source_country = scope:rival_gp_scope
+							target_country = c:AFG
+							inputs = {
+								{ quantity = 1000 }
+							}
+						}
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				ROOT = {
+					has_variable = proposed_durand_line
+				}
+			}
+			c:AFG ?= {
+				every_scope_state = {
+					limit = {
+						is_in_geographic_region = geographic_region_india
+					}
+					if = {
+						limit = {
+							exists = scope:afghan_partition_proxy
+						}
+						set_state_owner = scope:afghan_partition_proxy
+					}
+					else = {
+						set_state_owner = ROOT
+					}
+				}
+			}
+			every_state_in_afghanistan = {
+				limit = {
+					OR = {
+						ROOT ?= owner
+						scope:afghan_partition_proxy ?= owner
+					}
+				}
+				set_state_owner = c:AFG
+			}
+		}
+		else_if = {
+			limit = {
+				ROOT = {
+					has_variable = proposed_indus_line
+				}
+			}
+			c:AFG ?= {
+				every_scope_state = {
+					limit = {
+						is_in_geographic_region = geographic_region_india
+						NOT = {
+							state_region = {
+								is_homeland = cu:pashtun
+							}
+						}
+					}
+					if = {
+						limit = {
+							exists = scope:afghan_partition_proxy
+						}
+						set_state_owner = scope:afghan_partition_proxy
+					}
+					else = {
+						set_state_owner = ROOT
+					}
+				}
+			}
+			every_state_in_greater_afghanistan = {
+				limit = {
+					OR = {
+						ROOT ?= owner
+						scope:afghan_partition_proxy ?= owner
+					}
+				}
+				set_state_owner = c:AFG
+			}
+		}
+		else_if = {
+			limit = {
+				ROOT = {
+					has_variable = proposed_status_quo
+				}
+			}
+			custom_tooltip = status_quo_southeast_tt
+		}
+
+		if = {
+			limit = {
+				has_variable = proposed_torkestan_line
+			}
+			c:AFG ?= {
+				every_scope_state = {
+					limit = {
+						OR = {
+							is_in_geographic_region = geographic_region_central_asia
+							state_region = s:STATE_HERAT
+						}
+					}
+					if = {
+						limit = {
+							exists = scope:afghan_partition_proxy
+						}
+						set_state_owner = scope:afghan_partition_proxy
+					}
+					else = {
+						set_state_owner = ROOT
+					}
+				}
+			}
+			every_state_in_greater_afghanistan = {
+				limit = {
+					OR = {
+						ROOT ?= owner
+						scope:afghan_partition_proxy ?= owner
+					}
+					NOT = {
+						state_region = s:STATE_HERAT
+					}
+				}
+				set_state_owner = c:AFG
+			}
+		}
+		else_if = {
+			limit = {
+				ROOT = {
+					has_variable = proposed_amu_darya_line
+				}
+			}
+			c:AFG ?= {
+				every_scope_state = {
+					limit = {
+						is_in_geographic_region = geographic_region_central_asia
+					}
+					if = {
+						limit = {
+							exists = scope:afghan_partition_proxy
+						}
+						set_state_owner = scope:afghan_partition_proxy
+					}
+					else = {
+						set_state_owner = ROOT
+					}
+				}
+			}
+			every_state_in_greater_afghanistan = {
+				limit = {
+					OR = {
+						ROOT ?= owner
+						scope:afghan_partition_proxy ?= owner
+					}
+				}
+				set_state_owner = c:AFG
+			}
+		}
+		else_if = {
+			limit = {
+				ROOT = {
+					has_variable = proposed_status_quo_north
+				}
+			}
+			custom_tooltip = status_quo_north_tt
+		}
+		if = {
+			limit = {
+				ROOT = {
+					has_variable = proposed_compensation_for_afghanistan
+				}
+			}
+			create_treaty = {
+				first_country = root
+				second_country = c:AFG
+
+				is_draft = no
+				binding_period = { years = 2 }
+
+				articles_to_create = {
+					{
+						article = money_transfer
+						source_country = root
+						target_country = c:AFG
+						inputs = {
+							{ quantity = 1000 }
+						}
+					}
+				}
+			}
+		}
+		set_global_variable = afghan_borders_solidified
+		hidden_effect = {
+			clear_afghanistan_variables = yes
+		}
+	}
+
+	timeout = 365
+
+	on_timeout = {
+		custom_tooltip = negotiations_failure_tt
+		# Southeast - rival_gp_scope
+		if = {
+			limit = {
+				scope:rival_gp_scope ?= {
+					has_variable = proposed_durand_line
+				}
+			}
+			every_state_region_in_india = {
+				limit = {
+					any_scope_state = {
+						c:AFG ?= owner
+					}
+				}
+				if = {
+					limit = {
+						exists = scope:rival_afghan_partition_proxy
+					}
+					add_claim = scope:rival_afghan_partition_proxy
+				}
+				else = {
+					add_claim = scope:rival_gp_scope
+				}
+			}
+			every_state_region_in_afghanistan = {
+				limit = {
+					NOT = { 
+						any_scope_state = {
+							has_claim_by = c:AFG
+						}
+					}
+					NOT = { s:STATE_HERAT ?= this }
+					any_scope_state = {
+						OR = {
+							scope:rival_gp_scope ?= owner
+							scope:rival_afghan_partition_proxy ?= owner
+						}
+					}
+				}
+				add_claim = c:AFG
+			}
+		}
+		else_if = {
+			limit = {
+				scope:rival_gp_scope ?= {
+					has_variable = proposed_indus_line
+				}
+			}
+			every_state_region_in_india = {
+				limit = {
+					NOT = { is_homeland = cu:pashtun }
+					any_scope_state = {
+						c:AFG ?= owner
+					}
+				}
+				if = {
+					limit = {
+						exists = scope:rival_afghan_partition_proxy
+					}
+					add_claim = scope:rival_afghan_partition_proxy
+				}
+				else = {
+					add_claim = scope:rival_gp_scope
+				}
+			}
+			every_state_region_in_greater_afghanistan = {
+				limit = {
+					NOT = { 
+						any_scope_state = {
+							has_claim_by = c:AFG
+						}
+					}
+					NOT = { s:STATE_HERAT ?= this }
+					any_scope_state = {
+						OR = {
+							scope:rival_gp_scope ?= owner
+							scope:rival_afghan_partition_proxy ?= owner
+						}
+					}
+				}
+				add_claim = c:AFG
+			}
+		}
+		# North - rival_gp_scope
+		if = {
+			limit = {
+				scope:rival_gp_scope ?= {
+					has_variable = proposed_torkestan_line
+				}
+			}
+			every_state_region_in_central_asia = {
+				limit = {
+					any_scope_state = {
+						c:AFG ?= owner
+					}
+				}
+				if = {
+					limit = {
+						exists = scope:rival_afghan_partition_proxy
+					}
+					add_claim = scope:rival_afghan_partition_proxy
+				}
+				else = {
+					add_claim = scope:rival_gp_scope
+				}
+			}
+			if = {
+				limit = {
+					c:AFG ?= {
+						has_state_in_state_region = STATE_HERAT
+					}
+				}
+				s:STATE_HERAT ?= {
+					if = {
+						limit = {
+							exists = scope:rival_afghan_partition_proxy
+						}
+						add_claim = scope:rival_afghan_partition_proxy
+					}
+					else = {
+						add_claim = scope:rival_gp_scope
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						s:STATE_HERAT ?= {
+							any_scope_state = {
+								has_claim_by = c:AFG
+							}
+						}
+					}
+					OR = {
+						scope:rival_afghan_partition_proxy ?= {
+							has_state_in_state_region = STATE_HERAT
+						}
+						scope:rival_gp_scope ?= {
+							has_state_in_state_region = STATE_HERAT
+						}
+					}
+				}
+				s:STATE_HERAT ?= {
+					add_claim = c:AFG
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				scope:rival_gp_scope ?= {
+					has_variable = proposed_amu_darya_line
+				}
+			}
+			every_state_region_in_central_asia = {
+				limit = {
+					any_scope_state = {
+						c:AFG ?= owner
+					}
+				}
+				if = {
+					limit = {
+						exists = scope:rival_afghan_partition_proxy
+					}
+					add_claim = scope:rival_afghan_partition_proxy
+				}
+				else = {
+					add_claim = scope:rival_gp_scope
+				}
+			}
+			every_state_region_in_afghanistan = {
+				limit = {
+					NOT = {
+						any_scope_state = {
+							has_claim_by = c:AFG
+						}
+					}
+					any_scope_state = {
+						OR = {
+							scope:rival_gp_scope ?= owner
+							scope:rival_afghan_partition_proxy ?= owner
+						}
+					}
+				}
+				add_claim = c:AFG
+			}
+		}
+		# Southeast - ROOT
+		if = {
+			limit = {
+				ROOT = {
+					has_variable = proposed_durand_line
+				}
+			}
+			every_state_region_in_india = {
+				limit = {
+					any_scope_state = {
+						c:AFG ?= owner
+					}
+				}
+				if = {
+					limit = {
+						exists = scope:afghan_partition_proxy
+					}
+					add_claim = scope:afghan_partition_proxy
+				}
+				else = {
+					add_claim = ROOT
+				}
+			}
+			every_state_region_in_afghanistan = {
+				limit = {
+					NOT = {
+						any_scope_state = {
+							has_claim_by = c:AFG
+						}
+					}
+					NOT = { s:STATE_HERAT ?= this }
+					any_scope_state = {
+						OR = {
+							ROOT ?= owner
+							scope:afghan_partition_proxy ?= owner
+						}
+					}
+				}
+				add_claim = c:AFG
+			}
+		}
+		else_if = {
+			limit = {
+				ROOT = {
+					has_variable = proposed_indus_line
+				}
+			}
+			every_state_region_in_india = {
+				limit = {
+					NOT = { is_homeland = cu:pashtun }
+					any_scope_state = {
+						c:AFG ?= owner
+					}
+				}
+				if = {
+					limit = {
+						exists = scope:afghan_partition_proxy
+					}
+					add_claim = scope:afghan_partition_proxy
+				}
+				else = {
+					add_claim = ROOT
+				}
+			}
+			every_state_region_in_greater_afghanistan = {
+				limit = {
+					NOT = {
+						any_scope_state = {
+							has_claim_by = c:AFG
+						}
+					}
+					NOT = { s:STATE_HERAT ?= this }
+					any_scope_state = {
+						OR = {
+							ROOT ?= owner
+							scope:afghan_partition_proxy ?= owner
+						}
+					}
+				}
+				add_claim = c:AFG
+			}
+		}
+
+		# North - ROOT
+		if = {
+			limit = {
+				ROOT = {
+					has_variable = proposed_torkestan_line
+				}
+			}
+			every_state_region_in_central_asia = {
+				limit = {
+					any_scope_state = {
+						c:AFG ?= owner
+					}
+				}
+				if = {
+					limit = {
+						exists = scope:afghan_partition_proxy
+					}
+					add_claim = scope:afghan_partition_proxy
+				}
+				else = {
+					add_claim = ROOT
+				}
+			}
+			if = {
+				limit = {
+					c:AFG ?= {
+						has_state_in_state_region = STATE_HERAT
+					}
+				}
+				s:STATE_HERAT ?= {
+					if = {
+						limit = {
+							exists = scope:afghan_partition_proxy
+						}
+						add_claim = scope:afghan_partition_proxy
+					}
+					else = {
+						add_claim = ROOT
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						s:STATE_HERAT ?= {
+							any_scope_state = {
+								has_claim_by = c:AFG
+							}
+						}
+					}
+					OR = {
+						scope:afghan_partition_proxy ?= {
+							has_state_in_state_region = STATE_HERAT
+						}
+						ROOT = {
+							has_state_in_state_region = STATE_HERAT
+						}
+					}
+				}
+				s:STATE_HERAT ?= {
+					add_claim = c:AFG
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				ROOT = {
+					has_variable = proposed_amu_darya_line
+				}
+			}
+			every_state_region_in_central_asia = {
+				limit = {
+					any_scope_state = {
+						c:AFG ?= owner
+					}
+				}
+				if = {
+					limit = {
+						exists = scope:afghan_partition_proxy
+					}
+					add_claim = scope:afghan_partition_proxy
+				}
+				else = {
+					add_claim = ROOT
+				}
+			}
+			every_state_region_in_afghanistan = {
+				limit = {
+					NOT = { 
+						any_scope_state = {
+							has_claim_by = c:AFG
+						}
+					}
+					any_scope_state = {
+						OR = {
+							ROOT ?= owner
+							scope:afghan_partition_proxy ?= owner
+						}
+					}
+				}
+				add_claim = c:AFG
+			}
+		}
+
+		hidden_effect = {
+			clear_afghanistan_variables = yes
+		}
+	}
+
+	weight = 1001
+}
+
+REPLACE:je_unify_afghanistan = {
+		
+	should_be_pinned_by_default_uninvolved_or_context = yes
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	group = je_group_foreign_affairs
+
+	is_shown_in_lobby = {
+		has_dlc_feature = ep1_content #spheres of influence
+		capital ?= {
+			region = sr:region_greater_persia
+		}
+		OR = {
+			country_has_primary_culture = cu:pashtun
+			country_has_primary_culture = cu:tajik
+		}
+	}
+
+	scripted_button = je_afghan_unification_appeal_to_russia_button
+	scripted_button = je_afghan_unification_appeal_to_britain_button
+
+	possible = {
+		capital ?= {
+			region = sr:region_greater_persia
+		}
+		OR = {
+			country_has_primary_culture = cu:pashtun
+			country_has_primary_culture = cu:tajik
+		}
+	}
+
+	complete = {
+		custom_tooltip = {
+			text = has_formed_afghanistan_tt
+			c:AFG ?= this
+		}
+	}
+
+	on_complete = {
+		show_as_tooltip = {
+			trigger_event = { id = gg_afghanistan.4 }
+		}
+	}
+
+    event_outcome_completed_desc = {
+        first_valid = {
+            triggered_desc = {
+                desc = event_effects_gg_afghanistan.4_tt
+            }
+        }
+    }
+
+	weight = 1000
+}
+
+
+# ---- 05_eastern_question.txt ----
+REPLACE:je_eastern_question_russia = {
+	group = je_group_foreign_affairs
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+
+	scripted_progress_bar = control_eastern_crisis_bar
+
+	is_shown_when_inactive = {
+		has_dlc_feature = ip3_content
+		OR = {
+			c:RUS ?= this
+			c:UKR ?= this
+		}
+		NOT = {
+			exists = c:BUL
+		}
+		c:TUR ?= {
+			has_strategic_adjacency = ROOT
+		}
+	}
+
+	possible = {
+		c:TUR ?= {
+			has_journal_entry = je_great_eastern_crisis
+		}
+	}
+
+	modifiers_while_active = {
+		positive_crisis_influence
+	}
+
+	immediate = {
+		trigger_event = { id = eastern_crisis.1 popup = yes }
+		c:TUR ?= {
+			save_scope_as = ottoman_scope
+		}
+		ROOT = {
+			save_scope_as = root_scope
+		}
+		if = {
+			limit = {
+				c:TUR ?= {
+					any_scope_state = {
+						state_region = s:STATE_GREATER_CAUCASUS
+					}
+				}
+			}
+			set_variable = ottomans_own_kars_at_start
+		}
+		if = {
+			limit = {
+				c:TUR ?= {
+					any_scope_state = {
+						state_region = s:STATE_WALLACHIA
+					}
+				}
+			}
+			set_variable = ottomans_own_dobrudja_at_start
+		}
+	}
+
+	complete = {
+		custom_tooltip = {
+			text = bulgaria_is_independent_tt
+			any_diplomatically_relevant_country = {
+				country_has_primary_culture = cu:bulgarian
+				NOR = {
+					is_diplomatic_play_enemy_of = c:TUR
+					has_war_with = c:TUR
+				}
+			}
+		}
+		trigger_if = {
+			limit = {
+				has_variable = ottomans_own_kars_at_start
+			}
+			owns_entire_state_region = STATE_GREATER_CAUCASUS
+		}
+		trigger_if = {
+			limit = {
+				has_variable = ottomans_own_dobrudja_at_start
+			}
+			custom_tooltip = {
+				text = ottomans_not_owns_dobruja_tt
+				s:STATE_WALLACHIA = {
+					NOT = {
+						any_scope_state = {
+							c:TUR ?= owner
+						}
+					}
+				}
+			}
+		}
+	}
+
+	on_complete = {
+		set_variable = russia_eastern_question_victory
+		trigger_event = { id = eastern_question_russia.1 popup = yes }
+	}
+
+	event_outcome_completed_desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = event_effects_eastern_question_russia.1_tt
+			}
+		}
+	}
+
+	timeout = 3650 # 10 years
+
+	fail = {
+		custom_tooltip = {
+			text = bulgaria_is_not_free_tt
+			NOT = {
+				exists = c:BUL
+			}
+		}
+		c:TUR ?= {
+			NOT = {
+				has_journal_entry = je_great_eastern_crisis
+			}
+		}
+	}
+
+	invalid = {
+		NOT = {
+			exists = c:TUR
+		}
+	}
+
+		
+	should_be_pinned_by_default_uninvolved_or_context = yes
+	weight = 100
+	transferable = no
+
+}
+
+REPLACE:je_eastern_question_austria = {
+		
+	should_be_pinned_by_default_uninvolved_or_context = yes
+	icon = "gfx/interface/icons/relations_icons/hostile.dds"
+
+	scripted_progress_bar = control_eastern_crisis_bar
+
+	group = je_group_foreign_affairs
+
+	timeout = 3650
+
+	modifiers_while_active = {
+		positive_crisis_influence
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				c:TUR ?= {
+					has_journal_entry = je_great_eastern_crisis
+				}
+			}
+			trigger_event = { id = eastern_crisis.1 }
+		}
+		random_political_lobby = {
+			limit = {
+				target = {
+					OR = {
+						c:RUS ?= this
+						c:UKR ?= this
+					}
+				}
+				is_political_lobby_type = lobby_anti_country
+			}
+			save_scope_as = relevant_lobby
+			target = {
+				save_scope_as = relevant_country
+			}
+		}
+		random_diplomatically_relevant_country = {
+			limit = {
+				owns_entire_state_region = STATE_CROATIA
+			}
+			if = {
+				limit = {
+					is_subject = yes
+				}
+				top_overlord = {
+					save_scope_as = bosnia_owner_scope
+				}
+			}
+			else = {
+				save_scope_as = bosnia_owner_scope
+			}
+		}
+		ROOT = {
+			set_variable = { name = anti_lobby_demand_target value = scope:relevant_country }
+		}
+	}
+
+	complete = {
+		OR = {
+			owns_entire_state_region = STATE_CROATIA
+			any_subject_or_below = {
+				owns_entire_state_region = STATE_CROATIA
+			}
+			trigger_if = {
+				limit = {
+					is_power_bloc_leader = yes
+				}
+				scope:power_bloc ?= {
+					any_power_bloc_member = {
+						owns_entire_state_region = STATE_CROATIA
+					}
+				}
+			}
+		}
+	}
+
+	event_outcome_completed_desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = event_effects_eastern_question_austria.2_tt
+			}
+		}
+	}
+
+	invalid = {
+		NOR = {
+			owns_entire_state_region = STATE_CROATIA
+			any_subject_or_below = {
+				owns_entire_state_region = STATE_CROATIA
+			}
+			trigger_if = {
+				limit = {
+					is_power_bloc_leader = yes
+				}
+				scope:power_bloc ?= {
+					any_power_bloc_member = {
+						owns_entire_state_region = STATE_CROATIA
+					}
+				}
+			}
+			scope:bosnia_owner_scope ?= {
+				owns_entire_state_region = STATE_CROATIA
+			}
+		}
+	}
+
+	fail = {
+		c:TUR ?= {
+			NOT = {
+				has_journal_entry = je_great_eastern_crisis
+			}
+		}
+	}
+
+	on_complete = {
+		scope:relevant_lobby = {
+			change_appeasement = {
+				amount = 3
+				factor = appeasement_lobby_request_accepted
+			}
+		}
+		trigger_event = { id = eastern_question_austria.2 popup = yes }
+		clear_anti_lobby_vars = yes
+	}
+
+	on_timeout = {
+		scope:relevant_lobby = {
+			change_appeasement = {
+				amount = -5
+				factor = appeasement_lobby_request_ignored
+			}
+		}
+		clear_anti_lobby_vars = yes
+	}
+
+	weight = 1000
+}
+
+
 # ---- 07_japanese_religion.txt ----
 REPLACE:je_shinbutsu_bunri = {
 	icon = "gfx/interface/icons/religion_icons/shinto.dds"
@@ -14583,412 +15477,3 @@ REPLACE:je_elevate_buddhism = {
 	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
-
-
-# ---- 07_korea_colonization.txt ----
-REPLACE:je_colonize_korea = {
-	should_be_pinned_by_default_uninvolved_or_context = yes
-	icon = "gfx/interface/icons/event_icons/event_map.dds"
-
-	group = je_group_historical_content
-
-	modifiers_while_active = {
-
-	}
-
-	is_shown_when_inactive = {
-		has_dlc_feature = ep2_content
-		c:JAP ?= this
-		NOT = {
-			has_law_or_variant = law_type:law_isolationism
-		}
-	}
-
-	possible = {
-		institution_investment_level = {
-			institution = institution_colonial_affairs
-			value >= 1
-		}
-		NOT = { has_law = law_type:law_no_colonial_affairs }
-		AND = {
-			owns_entire_state_region = STATE_SEOUL
-			owns_entire_state_region = STATE_SEOUL
-			owns_entire_state_region = STATE_SEOUL
-			owns_entire_state_region = STATE_PYONGYANG
-			owns_entire_state_region = STATE_PYONGYANG
-		}
-	}
-
-	immediate = {
-		every_state_in_korea = {
-			root = {
-				add_to_variable_list = {
-					name = colonize_korea_states_states
-					target = prev
-				}
-			}
-		}
-
-		cu:korean = {
-			save_scope_as = korean_scope
-		}
-		cu:japanese = {
-			save_scope_as = japanese_scope
-		}
- 		s:STATE_SEOUL ?= {
- 			save_scope_as = seoul_state_scope
- 		}
-		s:STATE_SEOUL ?= {
-			save_scope_as = busan_state_scope
-		}
- 		s:STATE_SEOUL ?= {
- 			save_scope_as = yangho_state_scope
- 		}
- 		s:STATE_PYONGYANG ?= {
- 			save_scope_as = sariwon_state_scope
-		}
- 		s:STATE_PYONGYANG ?= {
- 			save_scope_as = pyongyang_state_scope
-		}
-
-		add_fervor_target_modifier = { # changes target
-			culture = cu:korean
-			days = normal_modifier_time
-			multiplier = 5
-		}
-	}
-
-	on_weekly_pulse = {
-		effect = {
-			clear_variable_list = colonize_korea_states_states
-			every_state_in_korea = {
-				limit = {
-					NAND = {
-						c:JAP ?= owner
-						is_incorporated = yes
-						turmoil < je_colonize_korea_state_turmoil_max
-						culture_percent_state = {
-							target = cu:japanese
-							value >= je_colonize_korea_state_japanese_culture_min # set in event_values
-						}
-					}
-				}
-				root = {
-					add_to_variable_list = {
-						name = colonize_korea_states_states
-						target = prev
-					}
-				}
-			}
-		}
-	}
-
-	# Japan owns Korea directly
-	complete = {
-		institution_investment_level = {
-			institution = institution_colonial_affairs
-			value >= 3
-		}
-		bureaucracy >= 0
-		approaching_bureaucracy_shortage = no
-		OR = {
-			any_company = {
-				OR = {
-					is_company_type = company_type:company_mantetsu
-					is_company_type = company_type:company_oriental_development_company
-				}
-				company_prosperity >= 75
-			}
-			AND = { # second option to account for je_zaibatsu
-				any_company = {
-	                company_is_prosperous = yes
-	                count >= 2
-	            }
-				any_scope_state = {
-					is_in_geographic_region = geographic_region_korea
-					count >= 2
-	                OR = {
-	                    state_has_building_group_levels = {
-	                        type = bg_plantations
-	                        value >= 35
-	                    }
-	                    state_has_building_group_levels = {
-	                        type = bg_mining
-	                        value >= 35
-	                    }
-	                    state_has_building_type_levels = {
-	                        target = bt:building_railway
-	                        value >= 10
-	                    }
-	                }
-				}
-			}
-		}
-		any_state_in_korea = {
-			count = all
-			custom_tooltip = {
-                text = "JE_COLONIZE_KOREA_STATES_TT"
-				c:JAP ?= owner
-				is_incorporated = yes
-				turmoil < je_colonize_korea_state_turmoil_max
-				culture_percent_state = {
-					target = cu:japanese
-					value >= je_colonize_korea_state_japanese_culture_min # set in event_values
-				}
-			}
-		}
-	}
-
-	on_complete = {
-		clear_variable_list = colonize_korea_states_states
-		trigger_event = {
-			id = korea_colonization.2
-			days = 1
-		}
-	}
-
-	event_outcome_completed_effect_desc = {
-		header = korea_colonization.2.a
-        effect = {
-	    	add_modifier = {
-				name = modifier_peninsula_control_prestige_authority
-				days = moderately_long_modifier_time
-				is_decaying = yes
-			}
-			every_scope_state = {
-				limit = {
-					OR = {
-						state_region = s:STATE_SEOUL
-						state_region = s:STATE_SEOUL
-						state_region = s:STATE_SEOUL
-						state_region = s:STATE_PYONGYANG
-						state_region = s:STATE_PYONGYANG
-					}
-				}
-				add_modifier = {
-					name = modifier_peninsula_control_assimilation_migration
-					days = moderately_long_modifier_time
-					is_decaying = yes
-				}
-			}
-        }
-	}
-
-	event_outcome_completed_effect_desc = {
-		header = korea_colonization.2.b
-		effect = {
-			custom_tooltip = {
-				text = korea_colinzation_2b_executive_tt
-			}
-			custom_tooltip = {
-				text = korea_colinzation_2b_company_tt
-			}
-		}
-	}
-
-	# Korea broke free from Japan control
-	fail = {
-		custom_tooltip = {
-			text = je_colonize_korea_fail_tt
-			OR = {
-				AND = {
-					NOT = {
-						any_scope_state = {
-							is_in_geographic_region = geographic_region_korea
-							count >= 2
-						}
-					}
-					c:KOR ?= {
-						NOT = {
-							is_subject_of = root
-						}
-					}
-				}
-				AND = {
-					exists = c:KOR
-					c:KOR ?= {
-						NOT = {
-							is_subject_of = root
-						}
-					}
-				}
-				any_state_in_korea = {
-					count = all
-					NOT = {
-						owner = ROOT
-					}
-				}
-			}
-		}
-	}
-
-	on_fail = {
-		clear_variable_list = colonize_korea_states_states
-		trigger_event = {
-			id = korea_colonization.3
-			days = 1
-		}
-	}
-
-	event_outcome_failed_effect_desc = {
-        header = korea_colonization.3.a
-        effect = {
-			add_modifier = {
-				name = modifier_peninsula_control_prestige_loss
-				days = moderately_long_modifier_time
-				is_decaying = yes
-			}
-        }
-    }
-
-	event_outcome_failed_effect_desc = {
-		header = korea_colinzation_3b_tt
-        effect = {
-			custom_tooltip = {
-				text = korea_colinzation_3b_ig_leader_tt
-			}
-			custom_tooltip = {
-				text = korea_colinzation_3b_ig_tt
-			}
-        }
-    }
-
-    invalid = {
-    	has_law = law_type:law_no_colonial_affairs
-    }
-
-	on_invalid = {
-		clear_variable_list = colonize_korea_states_states
-	}
-
-	weight = 1000
-}
-
-REPLACE:je_hungarian_revolution = {
-
-    group = je_group_historical_content
-    icon = "gfx/interface/icons/event_icons/waving_flag.dds"
-
-    is_shown_in_lobby = {
-        c:HUN ?= THIS
-        has_dlc_feature = ip3_content
-    }
-
-    modifiers_while_active = {
-        modifier_hungarian_renaissance
-    }
-
-
-    should_be_pinned_by_default_uninvolved_or_context = yes
-    transferable = no
-    weight = 10000
-
-    scripted_button = hungarian_revolution_twelve_points_button
-    scripted_button = hungarian_revolution_annex_transylvania_button
-    scripted_button = hungarian_revolution_establish_honved_button
-
-    immediate = {
-        cu:hungarian = {
-            save_scope_as = hungarian_culture_scope
-        }
-        cu:szekely = {
-            save_scope_as = szekely_culture_scope
-        }
-        cu:romanian = {
-            save_scope_as = romanian_culture_scope
-        }
-        cu:south_german = {
-            save_scope_as = south_german_culture_scope
-        }
-        c:TRS ?= {
-            save_scope_as = transylvania_scope
-        }
-        c:AUS ?= {
-            save_scope_as = austria_scope
-        }
-        c:CRO ?= {
-            save_scope_as = croatia_scope
-        }
-        springtime_save_conservative_laws = yes
-    }
-    on_monthly_pulse = {
-        random_events = {
-            #	1 = 0
-            1 = hungary_events.2 # Serbian Revolt
-            1 = hungary_events.3 # Slovak Revolt
-            1 = hungary_events.8 # Romanian Revolt
-        }
-    }
-
-    complete = {
-        custom_tooltip = {
-            text = owns_all_hungarian_homelands_tt
-            any_scope_state = {
-                is_in_geographic_region = geographic_region_hungary
-                count >= 4
-            }
-        }
-        OR = {
-            is_subject = no
-            is_subject_type = subject_type_personal_union
-        }
-        country_has_voting_franchise = yes
-        NOR = {
-            has_law_or_variant = law_type:law_serfdom
-            has_law_or_variant = law_type:law_land_based_taxation
-            has_law_or_variant = law_type:law_traditionalism
-        }
-        root.gdp > 6000000
-        custom_tooltip = {
-            text = has_founded_budapest_tt
-            has_global_variable = budapest_founded_global_var
-        }
-    }
-
-    on_complete = {
-        trigger_event = { id = hungary_events.12 popup = yes }
-    }
-
-    event_outcome_completed_desc = {
-        first_valid = {
-            triggered_desc = {
-                desc = event_effects_hungary_events.12_tt
-            }
-        }
-    }
-
-    fail = {
-        custom_tooltip = {
-            text = je_hungarian_revolution_backed_down_fail
-            has_variable = hungary_folded_to_austria_var
-        }
-    }
-
-    on_fail = {
-        add_fervor_target_modifier = { #changes target
-            culture = cu:hungarian
-            days = stupidly_long_modifier_time
-            multiplier = -20
-        }
-        add_radicals = {
-            value = medium_radicals
-        }
-    }
-
-    timeout = 12410
-
-
-    on_timeout = {
-        add_modifier = {
-            name = modifier_hungary_timeout
-            days = long_modifier_time
-        }
-    }
-
-    invalid = {
-
-    }
-
-    on_invalid = {
-    }
-}

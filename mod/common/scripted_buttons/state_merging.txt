@@ -1,4 +1,64 @@
-﻿# ---- 00_hispaniola_buttons.txt ----
+﻿# ---- acre_dispute_button.txt ----
+REPLACE:acre_dispute_button = {
+	name = "acre_dispute_button"
+	desc = "acre_dispute_button_desc"
+
+	visible = {
+		has_dlc_feature = rp1_content
+		s:STATE_AMAZONAS = {
+			any_scope_state = {
+				owner = ROOT
+			}
+		}
+		NOR = {
+			country_or_subject_owns_entire_state_region = STATE_AMAZONAS
+			has_global_variable = acre_dispute_button_global_var
+		}
+	}
+
+	possible = {
+		country_or_subject_owns_entire_state_region = STATE_AMAZONAS
+		any_country = {
+			owns_entire_state_region = STATE_AMAZONAS
+		}
+	}
+
+	effect = {
+		trigger_event = { id = acre_dispute.1 popup = yes }
+		show_as_tooltip = {
+			s:STATE_AMAZONAS = {
+				add_claim = ROOT
+			}
+			random_country = {
+				limit = {
+					owns_entire_state_region = STATE_AMAZONAS
+				}
+				change_relations = {
+					country = ROOT
+					value = -50
+				}
+			}
+			add_journal_entry = { type = je_acre_dispute }
+		}
+		set_global_variable = acre_dispute_button_global_var
+	}
+
+	ai_chance = {
+		value = 20
+		if = {
+			limit = {
+				OR = {
+					is_at_war = yes
+					in_default = yes
+				}
+			}
+			add = -100
+		}
+	}
+}
+
+
+# ---- 00_hispaniola_buttons.txt ----
 REPLACE:je_haitian_debt_negotiation_button = {
 	name = "je_haitian_debt_negotiation_button"
 	desc = "je_haitian_debt_negotiation_button_desc"
@@ -327,6 +387,4379 @@ REPLACE:je_haitian_cancel_debt_button = {
 			}
 			multiply = 0
 		}
+	}
+}
+
+
+# ---- 04_india_buttons.txt ----
+REPLACE:je_india_home_rule_request_democracy_permission = {
+	name = "je_india_home_rule_request_democracy_permission"
+	desc = "je_india_home_rule_request_democracy_permission_desc"
+
+	visible = {
+		c:BIC ?= this
+		is_subject = yes
+	}
+
+	ai_chance = {
+		value = 0
+		if = {
+			limit = {
+				is_at_war = yes
+			}
+			add = -5
+		}
+		if = {
+			limit = {
+				loyalist_fraction = {
+					value > 0.05
+				}
+			}
+			add = -1
+		}
+		if = {
+			limit = {
+				loyalist_fraction = {
+					value > 0.10
+				}
+			}
+			add = -2
+		}
+		if = {
+			limit = {
+				any_political_movement = {
+					movement_is_plausibly_indian_nationalist = yes
+					political_movement_radicalism < 0.1
+				}
+			}
+			add = -1
+		}
+		if = {
+			limit = {
+				any_political_movement = {
+					movement_is_plausibly_indian_nationalist = yes
+					political_movement_radicalism >= 0.1
+				}
+			}
+			add = 1
+		}
+		if = {
+			limit = {
+				any_political_movement = {
+					movement_is_plausibly_indian_nationalist = yes
+					political_movement_radicalism >= 0.2
+				}
+			}
+			add = 2
+		}
+		if = {
+			limit = {
+				any_political_movement = {
+					movement_is_plausibly_indian_nationalist = yes
+					political_movement_radicalism >= 0.3
+				}
+			}
+			add = 3
+		}
+		if = {
+			limit = {
+				any_political_movement = {
+					movement_is_plausibly_indian_nationalist = yes
+					political_movement_radicalism >= 0.4
+				}
+			}
+			add = 4
+		}
+		if = {
+			limit = {
+				any_political_movement = {
+					movement_is_plausibly_indian_nationalist = yes
+					political_movement_radicalism >= 0.5
+				}
+			}
+			add = 5
+		}
+		if = {
+			limit = {
+				game_date > 1900.1.1
+			}
+			add = 1
+		}
+		if = {
+			limit = {
+				has_ruling_interest_group = ig_industrialists
+			}
+			add = -1
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			text = progressbar_above_50_tt
+			je:je_india_home_rule = {
+				"scripted_bar_progress(je_india_home_rule_progressbar)" >= 50
+			}
+		}
+		c:BIC ?= {
+			any_political_movement = {
+				movement_is_plausibly_indian_nationalist = yes
+				political_movement_support >= 0.10
+			}
+		}
+		custom_tooltip = {
+			text = requested_dop_permission_tt
+			NOT = {
+				has_variable = requested_dop_permission
+			}
+		}
+	}
+
+	effect = {
+		set_variable = { name = requested_dop_permission years = 5 }
+		top_overlord = {
+			trigger_event = { id = india_home_rule_events.2 popup = yes }
+		}
+	}
+}
+
+REPLACE:je_india_nationalism_britain_indian_self_governance = {
+	name = "je_india_nationalism_britain_indian_self_governance"
+	desc = "je_india_nationalism_britain_indian_self_governance_desc"
+
+	visible = {
+		any_subject_or_below = {
+			c:BIC ?= this
+			NOT = {
+				country_has_voting_franchise = yes
+				has_law_or_variant = law_type:law_elected_bureaucrats
+			}
+		}
+		NOT = { has_variable = montagu_chelmsford_reforms }
+	}
+
+	ai_chance = {
+		value = 0
+		if = {
+			limit = {
+				is_at_war = yes
+			}
+			add = -5
+		}
+		if = {
+			limit = {
+				c:BIC ?= {
+					loyalist_fraction = {
+						value > 0.05
+					}
+				}
+			}
+			add = -1
+		}
+		if = {
+			limit = {
+				c:BIC ?= {
+					loyalist_fraction = {
+						value > 0.10
+					}
+				}
+			}
+			add = -2
+		}
+		if = {
+			limit = {
+				c:BIC ?= {
+					any_political_movement = {
+						movement_is_plausibly_indian_nationalist = yes
+						political_movement_radicalism < 0.1
+					}
+				}
+			}
+			add = -1
+		}
+		if = {
+			limit = {
+				c:BIC ?= {
+					any_political_movement = {
+						movement_is_plausibly_indian_nationalist = yes
+						political_movement_radicalism >= 0.1
+					}
+				}
+			}
+			add = 1
+		}
+		if = {
+			limit = {
+				c:BIC ?= {
+					any_political_movement = {
+						movement_is_plausibly_indian_nationalist = yes
+						political_movement_radicalism >= 0.2
+					}
+				}
+			}
+			add = 2
+		}
+		if = {
+			limit = {
+				c:BIC ?= {
+					any_political_movement = {
+						movement_is_plausibly_indian_nationalist = yes
+						political_movement_radicalism >= 0.3
+					}
+				}
+			}
+			add = 3
+		}
+		if = {
+			limit = {
+				c:BIC ?= {
+					any_political_movement = {
+						movement_is_plausibly_indian_nationalist = yes
+						political_movement_radicalism >= 0.4
+					}
+				}
+			}
+			add = 4
+		}
+		if = {
+			limit = {
+				c:BIC ?= {
+					any_political_movement = {
+						movement_is_plausibly_indian_nationalist = yes
+						political_movement_radicalism >= 0.5
+					}
+				}
+			}
+			add = 5
+		}
+		if = {
+			limit = {
+				game_date < 1890.1.1
+			}
+			add = -1
+		}
+		if = {
+			limit = {
+				game_date > 1910.1.1
+			}
+			add = 1
+		}
+		if = {
+			limit = {
+				exists = py:fascist_party
+				any_interest_group = {
+					is_in_government = yes
+					is_member_of_party = py:fascist_party
+				}
+			}
+			add = -3
+		}
+		if = {
+			limit = {
+				exists = py:conservative_party
+				any_interest_group = {
+					is_in_government = yes
+					is_member_of_party = py:conservative_party
+				}
+			}
+			add = -1
+		}
+		if = {
+			limit = {
+				exists = py:social_democrat_party
+				any_interest_group = {
+					is_in_government = yes
+					is_member_of_party = py:social_democrat_party
+				}
+			}
+			add = 1
+		}
+		if = {
+			limit = {
+				exists = py:communist_party
+				any_interest_group = {
+					is_in_government = yes
+					is_member_of_party = py:communist_party
+				}
+			}
+			add = 2
+		}
+		if = {
+			limit = {
+				exists = py:anarchist_party
+				any_interest_group = {
+					is_in_government = yes
+					is_member_of_party = py:anarchist_party
+				}
+			}
+			add = 2
+		}
+	}
+
+	possible = {
+		is_at_war = no
+		any_interest_group = {
+			is_in_government = yes
+			OR = {
+				law_stance = {
+					law = law_type:law_no_colonial_affairs
+					value > neutral
+				}
+				law_stance = {
+					law = law_type:law_cultural_exclusion
+					value > neutral
+				}
+			}
+		}
+		c:BIC ?= {
+			has_technology_researched = political_agitation
+			any_political_movement = {
+				movement_is_plausibly_indian_nationalist = yes
+				political_movement_support >= 0.10
+			}
+		}
+	}
+
+	effect = {
+		set_variable = montagu_chelmsford_reforms
+		custom_tooltip = {
+			text = authorise_indian_self_governance_tt
+			c:BIC ?= {
+				trigger_event = { id = india_home_rule_events.9 popup = yes }
+			}
+		}
+		set_variable = { name = simon_commission_timer_var value = 120 }
+	}
+}
+
+REPLACE:je_india_nationalism_britain_dispatch_simon_commission = {
+	name = "je_india_nationalism_britain_dispatch_simon_commission"
+	desc = "je_india_nationalism_britain_dispatch_simon_commission_desc"
+
+	visible = {
+		any_subject_or_below = {
+			c:BIC ?= this
+		}
+		NOT = {
+			has_variable = simon_commission_var
+		}
+	}
+
+	ai_chance = {
+		value = 0
+		if = {
+			limit = {
+				is_at_war = yes
+			}
+			add = -5
+		}
+		if = {
+			limit = {
+				c:BIC ?= {
+					loyalist_fraction = {
+						value > 0.05
+					}
+				}
+			}
+			add = -1
+		}
+		if = {
+			limit = {
+				c:BIC ?= {
+					loyalist_fraction = {
+						value > 0.10
+					}
+				}
+			}
+			add = -2
+		}
+		if = {
+			limit = {
+				c:BIC ?= {
+					any_political_movement = {
+						movement_is_plausibly_indian_nationalist = yes
+						political_movement_radicalism < 0.1
+					}
+				}
+			}
+			add = -1
+		}
+		if = {
+			limit = {
+				c:BIC ?= {
+					any_political_movement = {
+						movement_is_plausibly_indian_nationalist = yes
+						political_movement_radicalism >= 0.1
+					}
+				}
+			}
+			add = 1
+		}
+		if = {
+			limit = {
+				c:BIC ?= {
+					any_political_movement = {
+						movement_is_plausibly_indian_nationalist = yes
+						political_movement_radicalism >= 0.2
+					}
+				}
+			}
+			add = 2
+		}
+		if = {
+			limit = {
+				c:BIC ?= {
+					any_political_movement = {
+						movement_is_plausibly_indian_nationalist = yes
+						political_movement_radicalism >= 0.3
+					}
+				}
+			}
+			add = 3
+		}
+		if = {
+			limit = {
+				c:BIC ?= {
+					any_political_movement = {
+						movement_is_plausibly_indian_nationalist = yes
+						political_movement_radicalism >= 0.4
+					}
+				}
+			}
+			add = 4
+		}
+		if = {
+			limit = {
+				c:BIC ?= {
+					any_political_movement = {
+						movement_is_plausibly_indian_nationalist = yes
+						political_movement_radicalism >= 0.5
+					}
+				}
+			}
+			add = 5
+		}
+		if = {
+			limit = {
+				game_date < 1890.1.1
+			}
+			add = -1
+		}
+		if = {
+			limit = {
+				game_date > 1910.1.1
+			}
+			add = 1
+		}
+		if = {
+			limit = {
+				exists = py:fascist_party
+				any_interest_group = {
+					is_in_government = yes
+					is_member_of_party = py:fascist_party
+				}
+			}
+			add = -3
+		}
+		if = {
+			limit = {
+				exists = py:conservative_party
+				any_interest_group = {
+					is_in_government = yes
+					is_member_of_party = py:conservative_party
+				}
+			}
+			add = -1
+		}
+		if = {
+			limit = {
+				exists = py:social_democrat_party
+				any_interest_group = {
+					is_in_government = yes
+					is_member_of_party = py:social_democrat_party
+				}
+			}
+			add = 1
+		}
+		if = {
+			limit = {
+				exists = py:communist_party
+				any_interest_group = {
+					is_in_government = yes
+					is_member_of_party = py:communist_party
+				}
+			}
+			add = 2
+		}
+		if = {
+			limit = {
+				exists = py:anarchist_party
+				any_interest_group = {
+					is_in_government = yes
+					is_member_of_party = py:anarchist_party
+				}
+			}
+			add = 2
+		}
+	}
+
+	possible = {
+		is_at_war = no
+		custom_tooltip = {
+			text = has_issued_montagu_chelmsford_reforms_tt
+			OR = {
+				c:BIC ?= {
+					has_variable = britain_granted_dop_permission
+				}
+				has_variable = montagu_chelmsford_reforms
+			}
+		}
+		c:BIC ?= {
+			country_has_voting_franchise = yes
+			has_law_or_variant = law_type:law_elected_bureaucrats
+			has_technology_researched = political_agitation
+			any_political_movement = {
+				movement_is_plausibly_indian_nationalist = yes
+				political_movement_support >= 0.10
+			}
+		}
+	}
+
+	effect = {
+		if = {
+			limit = {
+				has_variable = simon_commission_timer_var
+			}
+			custom_tooltip = simon_commission_dispatch_timer_tt
+		}
+		trigger_event = { id = india_home_rule_events.10 popup = yes }
+	}
+}
+
+REPLACE:je_communal_divides_federal_solution = {
+	name = "je_communal_divides_federal_solution"
+	desc = "je_communal_divides_federal_solution_desc"
+
+	visible = {
+		always = yes
+	}
+
+	ai_chance = {
+		value = 0
+	}
+
+	possible = {
+		hidden_trigger = {
+			NOT = {
+				has_variable = selected_federal_solution_var
+			}
+		}
+		is_at_war = no
+		country_or_subject_owns_entire_state_region = STATE_EAST_BENGAL
+		country_or_subject_owns_entire_state_region = STATE_PUNJAB
+		country_or_subject_owns_entire_state_region = STATE_SINDH
+		country_or_subject_owns_entire_state_region = STATE_KASHMIR
+		NOT = {
+			has_law_or_variant = law_type:law_state_religion
+			exists = c:BGL
+			exists = c:IDS
+		}
+		OR = {
+			custom_tooltip = {
+				text = granted_home_rule_tt
+				has_global_variable = india_home_rule
+			}
+			is_subject = no
+		}
+	}
+
+	effect = {
+		set_variable = selected_federal_solution_var
+		custom_tooltip = confederacy_of_india
+		custom_tooltip = {
+			text = create_indusstan_bangla_tt
+			if = {
+				limit = {
+					c:BIC ?= ROOT
+				}
+				create_country = {
+					origin = root
+					tag = BGL
+					state = s:STATE_EAST_BENGAL.region_state:BIC
+					on_created = {
+						set_variable = indian_federation_member
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					c:BHT ?= ROOT
+				}
+				create_country = {
+					origin = root
+					tag = BGL
+					state = s:STATE_EAST_BENGAL.region_state:BHT
+					on_created = {
+						set_variable = indian_federation_member
+					}
+				}
+			}
+			if = {
+				limit = {
+					c:BIC ?= ROOT
+				}
+				create_country = {
+					origin = root
+					tag = IDS
+					state = s:STATE_PUNJAB.region_state:BIC
+					on_created = {
+						set_variable = indian_federation_member
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					c:BHT ?= ROOT
+				}
+				create_country = {
+					origin = root
+					tag = IDS
+					state = s:STATE_PUNJAB.region_state:BHT
+					on_created = {
+						set_variable = indian_federation_member
+					}
+				}
+			}
+			create_diplomatic_pact = {
+				country = c:BGL
+				type = puppet
+			}
+			create_diplomatic_pact = {
+				country = c:IDS
+				type = puppet
+			}
+			every_scope_state = {
+				limit = {
+					OR = {
+						state_region = s:STATE_PUNJAB
+						state_region = s:STATE_SINDH
+						state_region = s:STATE_KASHMIR
+						state_region = s:STATE_PASHTUNISTAN
+						state_region = s:STATE_BALUCHISTAN
+						state_region = s:STATE_PASHTUNISTAN
+					}
+				}
+				set_state_owner = c:IDS
+			}
+		}
+		add_radicals = {
+			value = large_radicals
+			religion = rel:hindu
+		}
+		add_loyalists = {
+			value = medium_radicals
+			religion = rel:sunni
+		}
+		add_loyalists = {
+			value = small_radicals
+			religion = rel:shiite
+		}
+		custom_tooltip = break_confederation_promise_tt
+	}
+}
+
+REPLACE:je_federation_of_india_invite_princely_states = {
+	name = "je_federation_of_india_invite_princely_states"
+	desc = "je_federation_of_india_invite_princely_states_desc"
+
+	visible = {
+		always = yes
+	}
+
+	cooldown = { days = 365 }
+
+	ai_chance = {
+		value = 0
+	}
+
+	possible = {
+		is_at_war = no
+		any_princely_state = {
+			is_subject_of = ROOT
+			relations:ROOT >= relations_threshold:amicable
+			liberty_desire < define:NDiplomacy|WAR_GOAL_INFAMY_LOW_LIBERTY_DESIRE_THRESHOLD
+		}
+	}
+
+	effect = {
+		custom_tooltip = {
+			text = all_princely_states_get_invitation_tt
+			every_princely_state = {
+				limit = {
+					is_subject_of = ROOT
+					relations:ROOT >= relations_threshold:amicable
+					liberty_desire < define:NDiplomacy|WAR_GOAL_INFAMY_LOW_LIBERTY_DESIRE_THRESHOLD
+				}
+				trigger_event = { id = federation_of_india.1 }
+			}
+		}
+		if = {
+			limit = {
+				any_princely_state = {
+					is_subject_of = ROOT
+					relations:ROOT >= relations_threshold:amicable
+					liberty_desire < define:NDiplomacy|WAR_GOAL_INFAMY_LOW_LIBERTY_DESIRE_THRESHOLD
+				}
+			}
+			custom_tooltip = warning_may_cause_massive_debt_tt
+			show_as_tooltip = {
+				custom_tooltip = eligible_states_include_tt
+				ordered_princely_state = {
+					limit = {
+						is_subject_of = ROOT
+						relations:ROOT >= relations_threshold:amicable
+						liberty_desire < define:NDiplomacy|WAR_GOAL_INFAMY_LOW_LIBERTY_DESIRE_THRESHOLD
+					}
+					order_by = country_rank
+					position = 0
+					check_range_bounds = no
+					custom_tooltip = eligible_country_entry_tt
+				}
+				if = {
+					limit = {
+						any_princely_state = {
+							is_subject_of = ROOT
+							relations:ROOT >= relations_threshold:amicable
+							liberty_desire < define:NDiplomacy|WAR_GOAL_INFAMY_LOW_LIBERTY_DESIRE_THRESHOLD
+							count > 1
+						}
+					}
+					ordered_princely_state = {
+						limit = {
+							is_subject_of = ROOT
+							relations:ROOT >= relations_threshold:amicable
+							liberty_desire < define:NDiplomacy|WAR_GOAL_INFAMY_LOW_LIBERTY_DESIRE_THRESHOLD
+						}
+						order_by = country_rank
+						position = 1
+						check_range_bounds = no
+						custom_tooltip = eligible_country_entry_tt
+					}
+				}
+				if = {
+					limit = {
+						any_princely_state = {
+							is_subject_of = ROOT
+							relations:ROOT >= relations_threshold:amicable
+							liberty_desire < define:NDiplomacy|WAR_GOAL_INFAMY_LOW_LIBERTY_DESIRE_THRESHOLD
+							count > 2
+						}
+					}
+					ordered_princely_state = {
+						limit = {
+							is_subject_of = ROOT
+							relations:ROOT >= relations_threshold:amicable
+							liberty_desire < define:NDiplomacy|WAR_GOAL_INFAMY_LOW_LIBERTY_DESIRE_THRESHOLD
+						}
+						order_by = country_rank
+						position = 2
+						check_range_bounds = no
+						if = {
+							limit = {
+								ROOT.num_princely_state_subjects_eligible_for_federation_minus_three > 0
+							}
+							custom_tooltip = eligible_country_entry_last_tt
+						}
+						else = {
+							custom_tooltip = eligible_country_entry_tt
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+# ---- 05_struggle_for_the_highveld_buttons.txt ----
+# Struggle for the Highveld buttons
+
+REPLACE:saf_highveld_add_boer_as_primary_button = {
+	name = saf_highveld_add_boer_as_primary_button
+	desc = saf_highveld_add_boer_as_primary_button_desc
+
+	visible = {
+		c:SAF ?= this
+		NOR = {
+			country_has_primary_culture = cu:boer
+			country_has_primary_culture = cu:griqua
+		}
+	}
+
+	possible = {
+		# Cape Colony must adopt discriminatory laws as discriminatory as the most discriminatory Boer state, or if no Boer state exists then Cape Colony must fully accept Boer culture already.
+		trigger_if = {
+			limit = {
+				OR = {
+					exists = c:ORA
+					exists = c:TRN
+					exists = c:NAL
+				}
+			}
+			trigger_if = {
+				limit = {
+					OR = {
+						c:ORA ?= {
+							has_law_or_variant = law_type:law_ethnostate
+						}
+						c:TRN ?= {
+							has_law_or_variant = law_type:law_ethnostate
+						}
+						c:NAL ?= {
+							has_law_or_variant = law_type:law_ethnostate
+						}
+					}
+				}
+				has_law_or_variant = law_type:law_ethnostate
+			}
+			trigger_else_if = {
+				limit = {
+					OR = {
+						c:ORA ?= {
+							has_law_or_variant = law_type:law_national_supremacy
+						}
+						c:TRN ?= {
+							has_law_or_variant = law_type:law_national_supremacy
+						}
+						c:NAL ?= {
+							has_law_or_variant = law_type:law_national_supremacy
+						}
+					}
+				}
+				OR = {
+					has_law_or_variant = law_type:law_ethnostate
+					has_law_or_variant = law_type:law_national_supremacy
+				}
+			}
+			trigger_else_if = {
+				limit = {
+					OR = {
+						c:ORA ?= {
+							OR = {
+								has_law_or_variant = law_type:law_racial_segregation
+								has_law_or_variant = law_type:law_subjecthood
+							}
+						}
+						c:TRN ?= {
+							OR = {
+								has_law_or_variant = law_type:law_racial_segregation
+								has_law_or_variant = law_type:law_subjecthood
+							}
+						}
+						c:NAL ?= {
+							OR = {
+								has_law_or_variant = law_type:law_racial_segregation
+								has_law_or_variant = law_type:law_subjecthood
+							}
+						}
+					}
+				}
+				OR = {
+					has_law_or_variant = law_type:law_ethnostate
+					has_law_or_variant = law_type:law_national_supremacy
+					has_law_or_variant = law_type:law_racial_segregation
+					has_law_or_variant = law_type:law_subjecthood
+				}
+			}
+			trigger_else_if = {
+				limit = {
+					OR = {
+						c:ORA ?= {
+							has_law_or_variant = law_type:law_cultural_exclusion
+						}
+						c:TRN ?= {
+							has_law_or_variant = law_type:law_cultural_exclusion
+						}
+						c:NAL ?= {
+							has_law_or_variant = law_type:law_cultural_exclusion
+						}
+					}
+				}
+				OR = {
+					has_law_or_variant = law_type:law_ethnostate
+					has_law_or_variant = law_type:law_national_supremacy
+					has_law_or_variant = law_type:law_racial_segregation
+					has_law_or_variant = law_type:law_subjecthood
+					has_law_or_variant = law_type:law_cultural_exclusion
+				}
+			}
+			trigger_else_if = {
+				limit = {
+					OR = {
+						c:ORA ?= {
+							has_law_or_variant = law_type:law_multicultural
+						}
+						c:TRN ?= {
+							has_law_or_variant = law_type:law_multicultural
+						}
+						c:NAL ?= {
+							has_law_or_variant = law_type:law_multicultural
+						}
+					}
+				}
+				OR = {
+					has_law_or_variant = law_type:law_ethnostate
+					has_law_or_variant = law_type:law_national_supremacy
+					has_law_or_variant = law_type:law_racial_segregation
+					has_law_or_variant = law_type:law_subjecthood
+					has_law_or_variant = law_type:law_cultural_exclusion
+					has_law_or_variant = law_type:law_multicultural
+				}
+			}
+		}
+		trigger_else = {
+			country_average_cultural_acceptance = {
+				target = cu:boer
+				value > acceptance_status_4
+			}
+		}
+	}
+
+	selected = {
+	}
+
+	effect = {
+		add_primary_culture = cu:boer
+		custom_tooltip = saf_struggle_for_the_highveld_boer_confederation_tt
+
+		every_country = {
+			limit = {
+				NOT = {
+					ROOT = this
+					is_country_type = decentralized
+				}
+				country_has_primary_culture = cu:griqua
+			}
+			change_relations = {
+				country = ROOT
+				value = -30
+			}
+		}
+	}
+
+	ai_chance = {
+		value = 1
+	}
+}
+
+REPLACE:saf_highveld_add_griqua_as_primary_button = {
+	name = saf_highveld_add_griqua_as_primary_button
+	desc = saf_highveld_add_griqua_as_primary_button_desc
+
+	visible = {
+		c:SAF ?= this
+		NOR = {
+			country_has_primary_culture = cu:boer
+			country_has_primary_culture = cu:griqua
+		}
+	}
+
+	possible = {
+		country_average_cultural_acceptance = {
+			target = cu:griqua
+			value >= acceptance_status_3
+		}
+	}
+
+	selected = {
+	}
+
+	effect = {
+		add_primary_culture = cu:griqua
+		custom_tooltip = saf_struggle_for_the_highveld_griqua_confederation_tt
+
+		every_country = {
+			limit = {
+				NOT = {
+					ROOT = this
+					is_country_type = decentralized
+				}
+				country_has_primary_culture = cu:boer
+			}
+			change_relations = {
+				country = ROOT
+				value = -30
+			}
+		}
+	}
+
+	ai_chance = {
+		value = 1
+	}
+}
+
+REPLACE:highveld_offer_boer_confederation_button = {
+	name = highveld_offer_boer_confederation_button
+	desc = highveld_offer_boer_confederation_button_desc
+
+	visible = {
+		country_has_primary_culture = cu:boer
+		any_country = {
+			capital = {
+				OR = {
+					state_region = s:STATE_CAPE_COLONY
+					state_region = s:STATE_CAPE_COLONY
+					state_region = s:STATE_CAPE_COLONY
+					state_region = s:STATE_TRANSVAAL
+					state_region = s:STATE_TRANSVAAL
+					state_region = s:STATE_TRANSVAAL
+				}
+			}
+			is_adjacent_to_country = ROOT
+			country_has_primary_culture = cu:boer
+		}
+	}
+
+	possible = {
+		is_at_war = no
+		has_technology_researched = nationalism
+
+		custom_tooltip = {
+			text = highveld_offer_boer_confederation_tt
+
+			any_country = {
+				capital = {
+					OR = {
+						state_region = s:STATE_CAPE_COLONY
+						state_region = s:STATE_CAPE_COLONY
+						state_region = s:STATE_CAPE_COLONY
+						state_region = s:STATE_TRANSVAAL
+						state_region = s:STATE_TRANSVAAL
+						state_region = s:STATE_TRANSVAAL
+					}
+				}
+				is_at_war = no
+				is_player = no
+				is_adjacent_to_country = ROOT
+				country_has_primary_culture = cu:boer
+				this.gdp < ROOT.gdp
+				relations:ROOT >= relations_threshold:amicable
+				OR = {
+					is_subject = no
+					is_subject_of = ROOT
+					AND = {
+						ROOT = { is_subject = yes }
+						is_subject_of = ROOT.top_overlord
+					}
+				}
+			}
+		}
+	}
+
+	selected = {
+	}
+
+	effect = {
+		ordered_country = {
+			limit = {
+				capital = {
+					OR = {
+						state_region = s:STATE_CAPE_COLONY
+						state_region = s:STATE_CAPE_COLONY
+						state_region = s:STATE_CAPE_COLONY
+						state_region = s:STATE_TRANSVAAL
+						state_region = s:STATE_TRANSVAAL
+						state_region = s:STATE_TRANSVAAL
+					}
+				}
+				is_at_war = no
+				is_player = no
+				is_adjacent_to_country = ROOT
+				country_has_primary_culture = cu:boer
+				this.gdp < ROOT.gdp
+				relations:ROOT >= relations_threshold:amicable
+				OR = {
+					is_subject = no
+					is_subject_of = ROOT
+					AND = {
+						ROOT = { is_subject = yes }
+						is_subject_of = ROOT.top_overlord
+					}
+				}
+			}
+			order_by = gdp
+			save_temporary_scope_as = boer_state_to_annex
+		}
+		if = {
+			limit = { exists = scope:boer_state_to_annex }
+			annex = scope:boer_state_to_annex
+		}
+		else = {
+			custom_tooltip = highveld_offer_boer_confederation_effect_tt
+		}
+	}
+
+	ai_chance = {
+		value = 1
+
+		# South Africa is less gung-ho for confederation
+		if = {
+			limit = {
+				any_primary_culture = {
+					NOT = { cu:boer = this }
+				}
+			}
+			subtract = 1
+		}
+
+		if = {
+			limit = {
+				ruler = {
+					OR = {
+						has_trait = cautious
+						has_trait = inept
+						has_trait = tactful
+						has_trait = reserved
+						has_ideology = ideology:ideology_traditionalist
+					}
+				}
+			}
+			subtract = 1
+		}
+
+		if = {
+			limit = {
+				has_technology_researched = pan-nationalism
+			}
+			add = 5
+		}
+	}
+}
+
+REPLACE:highveld_offer_griqua_confederation_button = {
+	name = highveld_offer_griqua_confederation_button
+	desc = highveld_offer_griqua_confederation_button_desc
+
+	visible = {
+		country_has_primary_culture = cu:griqua
+		any_country = {
+			capital = {
+				OR = {
+					state_region = s:STATE_CAPE_COLONY
+					state_region = s:STATE_CAPE_COLONY
+					state_region = s:STATE_CAPE_COLONY
+					state_region = s:STATE_TRANSVAAL
+					state_region = s:STATE_TRANSVAAL
+					state_region = s:STATE_TRANSVAAL
+				}
+			}
+			is_adjacent_to_country = root
+			country_has_primary_culture = cu:griqua
+		}
+	}
+
+	possible = {
+		is_at_war = no
+		has_technology_researched = nationalism
+
+		custom_tooltip = {
+			text = highveld_offer_griqua_confederation_tt
+
+			any_country = {
+				capital = {
+					OR = {
+						state_region = s:STATE_CAPE_COLONY
+						state_region = s:STATE_CAPE_COLONY
+						state_region = s:STATE_CAPE_COLONY
+						state_region = s:STATE_TRANSVAAL
+						state_region = s:STATE_TRANSVAAL
+						state_region = s:STATE_TRANSVAAL
+					}
+				}
+				is_at_war = no
+				is_adjacent_to_country = ROOT
+				country_has_primary_culture = cu:griqua
+				this.gdp < ROOT.gdp
+				relations:ROOT >= relations_threshold:amicable
+				OR = {
+					is_subject = no
+					is_subject_of = ROOT
+					AND = {
+						ROOT = { is_subject = yes }
+						is_subject_of = ROOT.top_overlord
+					}
+				}
+			}
+		}
+	}
+
+	selected = {
+	}
+
+	effect = {
+		ordered_country = {
+			limit = {
+				capital = {
+					OR = {
+						state_region = s:STATE_CAPE_COLONY
+						state_region = s:STATE_CAPE_COLONY
+						state_region = s:STATE_CAPE_COLONY
+						state_region = s:STATE_TRANSVAAL
+						state_region = s:STATE_TRANSVAAL
+						state_region = s:STATE_TRANSVAAL
+					}
+				}
+				is_at_war = no
+				is_adjacent_to_country = ROOT
+				country_has_primary_culture = cu:griqua
+				this.gdp < ROOT.gdp
+				relations:ROOT >= relations_threshold:amicable
+				OR = {
+					is_subject = no
+					is_subject_of = ROOT
+					AND = {
+						ROOT = { is_subject = yes }
+						is_subject_of = ROOT.top_overlord
+					}
+				}
+			}
+			order_by = gdp
+			save_temporary_scope_as = griqua_state_to_annex
+		}
+		if = {
+			limit = { exists = scope:griqua_state_to_annex }
+			annex = scope:griqua_state_to_annex
+		}
+		else = {
+			custom_tooltip = highveld_offer_griqua_confederation_effect_tt
+		}
+	}
+
+	ai_chance = {
+		value = 1
+
+		# South Africa is less gung-ho for confederation
+		if = {
+			limit = {
+				any_primary_culture = {
+					NOT = { cu:griqua = this }
+				}
+			}
+			subtract = 1
+		}
+
+		if = {
+			limit = {
+				ruler = {
+					OR = {
+						has_trait = cautious
+						has_trait = inept
+						has_trait = tactful
+						has_trait = reserved
+						has_ideology = ideology:ideology_traditionalist
+					}
+				}
+			}
+			subtract = 1
+		}
+
+		if = {
+			limit = {
+				has_technology_researched = pan-nationalism
+			}
+			add = 5
+		}
+	}
+}
+
+
+# ---- 06_philippines_buttons.txt ----
+# For je_philippines_main
+
+# Ilustrados Button
+REPLACE:je_philippines_main_ilustrado_button = {
+	name = je_philippines_main_ilustrado_button
+	desc = je_philippines_main_ilustrado_button_desc
+
+	visible = {
+		NOT = {
+			has_variable = je_philippines_main_ilustrado_button_happened
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			text = je_philippines_development_complete
+			has_variable = phi_dev_done
+		}
+        AND = {
+            OR = {
+                has_law_or_variant = law_type:law_freedom_of_conscience
+                has_law_or_variant = law_type:law_total_separation
+            }
+            OR = {
+                has_law_or_variant = law_type:law_right_of_assembly
+                has_law_or_variant = law_type:law_protected_speech
+            }
+            NOT = {
+                has_law_or_variant = law_type:law_no_schools
+            }
+        }
+        ig:ig_intelligentsia ?= {
+            ig_counts_as_marginal = no
+        }
+	}
+
+	selected = {
+		has_variable = je_philippines_main_ilustrado_button_happened
+	}
+
+	effect = {
+		trigger_event = {
+				id = philippines.5
+				days = 0
+				popup = yes
+		}
+		set_variable = je_philippines_main_ilustrado_button_happened
+	}
+
+	ai_chance = {
+		value = 10
+	}
+}
+
+# Mindanao Colonization Button
+REPLACE:je_filipino_ethnogenesis_colonization_button = {
+	name = je_filipino_ethnogenesis_colonization_button
+	desc = je_filipino_ethnogenesis_colonization_button_desc
+
+	visible = {
+		s:STATE_LUZON = {
+			any_scope_state = {
+				owner = {
+					is_country_type = decentralized
+				}
+			}
+		}
+		NOT = {
+			has_variable = je_filipino_ethnogenesis_colonization_button_var
+		}
+	}
+
+	possible = {
+		s:STATE_LUZON = {
+			any_scope_state = {
+				owner = {
+					is_country_type = decentralized
+				}
+			}
+			any_scope_state = {
+				owner = root
+				has_decree = decree_greener_grass_campaign
+			}
+		}
+	}
+
+	effect = {
+		set_variable = je_filipino_ethnogenesis_colonization_button_var
+		if = {
+			limit = {
+				has_law_or_variant = law_type:law_no_colonial_affairs
+			}
+			activate_law = law_type:law_frontier_colonization
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_LUZON
+			}
+			add_modifier = {
+				name = modifier_integrating_the_highlands
+				days = long_modifier_time
+			}
+		}
+		add_modifier = {
+			name = modifier_settling_the_highlands_cost
+			days = long_modifier_time
+			multiplier = money_amount_multiplier_small
+		}
+	}
+
+	ai_chance = {
+		value = 10
+	}
+}
+
+
+# ---- 04_persia_buttons.txt ----
+REPLACE:greater_khorasan_button = {
+	name = "greater_khorasan_button"
+	desc = "greater_khorasan_button_desc"
+
+	visible = {
+		NOT = {
+			has_variable = greater_khorasan_var
+		}
+	}
+
+	possible = {
+		country_or_subject_owns_entire_state_region = STATE_HERAT
+	}
+
+	effect = {
+		trigger_event = { id = persia_events.2 popup = yes }
+		set_variable = greater_khorasan_var
+		show_as_tooltip = {
+			if = {
+				limit = {
+					s:STATE_KABUL = {
+						any_scope_state = {
+							NOT = {
+								has_claim_by = root
+							}
+						}
+					}
+					NOT = {
+						country_or_subject_owns_entire_state_region = STATE_KABUL
+					}
+				}
+				s:STATE_KABUL = {
+					add_claim = root
+				}
+			}
+			if = {
+				limit = {
+					s:STATE_KABUL = {
+						any_scope_state = {
+							NOT = {
+								has_claim_by = root
+							}
+						}
+					}
+					NOT = {
+						country_or_subject_owns_entire_state_region = STATE_KABUL
+					}
+				}
+				s:STATE_KABUL = {
+					add_claim = root
+				}
+			}
+			if = {
+				limit = {
+					s:STATE_HERAT = {
+						any_scope_state = {
+							NOT = {
+								has_claim_by = root
+							}
+						}
+					}
+					NOT = {
+						country_or_subject_owns_entire_state_region = STATE_HERAT
+					}
+				}
+				s:STATE_HERAT = {
+					add_claim = root
+				}
+			}
+			if = {
+				limit = {
+					s:STATE_HERAT = {
+						any_scope_state = {
+							NOT = {
+								has_claim_by = root
+							}
+						}
+					}
+					NOT = {
+						country_or_subject_owns_entire_state_region = STATE_HERAT
+					}
+				}
+				s:STATE_HERAT = {
+					add_claim = root
+				}
+			}
+			if = {
+				limit = {
+					s:STATE_KABUL = {
+						any_scope_state = {
+							NOT = {
+								has_claim_by = root
+							}
+						}
+					}
+					NOT = {
+						country_or_subject_owns_entire_state_region = STATE_KABUL
+					}
+				}
+				s:STATE_KABUL = {
+					add_claim = root
+				}
+			}
+			if = {
+				limit = {
+					s:STATE_KHIVA = {
+						any_scope_state = {
+							NOT = {
+								has_claim_by = root
+							}
+						}
+					}
+					NOT = {
+						country_or_subject_owns_entire_state_region = STATE_KHIVA
+					}
+				}
+				s:STATE_KHIVA = {
+					add_claim = root
+				}
+			}
+			if = {
+				limit = {
+					s:STATE_TAJIKISTAN = {
+						any_scope_state = {
+							NOT = {
+								has_claim_by = root
+							}
+						}
+					}
+					NOT = {
+						country_or_subject_owns_entire_state_region = STATE_TAJIKISTAN
+					}
+				}
+				s:STATE_TAJIKISTAN = {
+					add_claim = root
+				}
+			}
+			if = {
+				limit = {
+					s:STATE_UZBEKIA = {
+						any_scope_state = {
+							NOT = {
+								has_claim_by = root
+							}
+						}
+					}
+					NOT = {
+						country_or_subject_owns_entire_state_region = STATE_UZBEKIA
+					}
+				}
+				s:STATE_UZBEKIA = {
+					add_claim = root
+				}
+			}
+			if = {
+				limit = {
+					s:STATE_KHIVA = {
+						any_scope_state = {
+							NOT = {
+								has_claim_by = root
+							}
+						}
+					}
+					NOT = {
+						country_or_subject_owns_entire_state_region = STATE_KHIVA
+					}
+				}
+				s:STATE_KHIVA = {
+					add_claim = root
+				}
+			}
+			if = {
+				limit = {
+					s:STATE_KHIVA = {
+						any_scope_state = {
+							NOT = {
+								has_claim_by = root
+							}
+						}
+					}
+					NOT = {
+						country_or_subject_owns_entire_state_region = STATE_KHIVA
+					}
+				}
+				s:STATE_KHIVA = {
+					add_claim = root
+				}
+			}
+			add_modifier = {
+				name = modifier_herat_inspiration
+				days = long_modifier_time
+			}
+			custom_tooltip = greater_khorasan_button_tt
+			if = {
+				limit = {
+					c:GBR ?= {
+						has_interest_marker_in_region = sr:region_greater_persia
+						relations:root <= relations_threshold:neutral
+						NOR = {
+							is_diplomatic_play_ally_of = root
+							root = {
+								is_subject_of = prev
+							}
+							has_truce_with = root
+						}
+					}
+				}
+				c:GBR ?= {
+					trigger_event = { id = persia_events.6 popup = yes }
+				}
+			}
+		}
+	}
+
+	ai_chance = {
+		value = 20
+		if = {
+			limit = {
+				OR = {
+					is_at_war = yes
+					in_default = yes
+				}
+			}
+			add = -100
+		}
+	}
+}
+
+REPLACE:persian_baluchistan_button = {
+	name = "persian_baluchistan_button"
+	desc = "persian_baluchistan_button_desc"
+
+	visible = {
+		NOT = {
+			has_variable = persian_baluchistan_var
+		}
+		any_neighbouring_state = {
+			OR = {
+				state_region = s:STATE_KHIVA
+				state_region = s:STATE_KHIVA
+			}
+			owner = {
+				is_country_type = decentralized
+			}
+		}
+	}
+
+	possible = {
+		OR = {
+			any_scope_state = {
+				OR = {
+					state_region = s:STATE_KHORASAN
+					state_region = s:STATE_IRAKAJEMI
+					state_region = s:STATE_HERAT
+				}
+				any_scope_building = {
+					is_building_type = building_barrack
+					level >= 10
+				}
+			}
+			army_size >= 50
+		}
+		has_technology_researched = colonization
+	}
+
+	effect = {
+		trigger_event = { id = persia_events.3 popup = yes }
+		set_variable = persian_baluchistan_var
+		show_as_tooltip = {
+			if = {
+				limit = {
+					NOT = {
+						has_law = law_type:law_frontier_colonization
+					}
+				}
+				activate_law = law_type:law_frontier_colonization
+				add_modifier = {
+					name = modifier_turkmen_subjugation
+					days = normal_modifier_time
+				}
+			}
+			else = {
+				add_modifier = {
+					name = modifier_turkmen_subjugation
+					days = normal_modifier_time
+					multiplier = 2
+				}
+			}
+			add_modifier = {
+				name = modifier_turkmen_logistics
+				days = normal_modifier_time
+				multiplier = money_amount_multiplier_very_large
+			}
+			add_radicals = {
+				culture = cu:turkmen
+				value = medium_radicals
+			}
+			add_loyalists = {
+				culture = cu:persian
+				value = small_radicals
+			}
+		}
+	}
+
+	ai_chance = {
+		value = 20
+		if = {
+			limit = {
+				OR = {
+					is_at_war = yes
+					in_default = yes
+				}
+			}
+			add = -100
+		}
+	}
+}
+
+REPLACE:persia_british_aid_button = {
+	name = "persia_british_aid_button"
+	desc = "persia_british_aid_button_desc"
+
+	selected = {
+		has_variable = PER_appealed_to_GBR
+	}
+
+	cooldown = { days = long_modifier_time }
+
+	visible = {
+		exists = c:GBR
+	}
+
+	possible = {
+		NOT = {
+			custom_tooltip = {
+				text = PER_GBR_support_request_rejected_tt
+				has_variable = PER_GBR_support_request_rejected
+			}
+		}
+		c:GBR ?= {
+			has_interest_marker_in_region = sr:region_greater_persia
+			relations:root >= relations_threshold:amicable
+		}
+		custom_tooltip = {
+			text = "can_create_treaty_MILITARY_ASSISTANCE"
+			c:GBR ?= {
+				can_create_treaty = {
+					first_country = c:GBR
+					second_country = ROOT
+					is_draft = no
+					binding_period = { years = 2 }
+					articles_to_create = {
+						{
+							article = military_assistance
+							source_country = c:GBR
+							target_country = ROOT
+						}
+					}
+				}
+			}
+		}
+	}
+
+	effect = {
+		set_variable = PER_appealed_to_GBR
+		save_scope_as = persian_nation_scope
+		c:GBR ?= {
+			save_scope_as = relevant_country
+			trigger_event = { id = persia_events.4 popup = yes }
+		}
+		custom_tooltip = if_they_accept_tt
+		show_as_tooltip = {
+			if = {
+				limit = {
+					NOT = {
+						has_modifier = modifier_south_persia_rifles
+					}
+				}
+				add_modifier = {
+					name = modifier_south_persia_rifles
+				}
+				c:GBR ?= {
+					create_treaty = {
+						first_country = c:GBR
+						second_country = ROOT
+
+						is_draft = no
+						binding_period = { years = 2 }
+
+						articles_to_create = {
+							{
+								article = military_assistance
+								source_country = c:GBR
+								target_country = ROOT
+							}
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_modifier = modifier_south_persia_rifles
+				}
+				c:GBR ?= {
+					create_treaty = {
+						first_country = c:GBR
+						second_country = ROOT
+
+						is_draft = no
+						binding_period = { years = 2 }
+
+						articles_to_create = {
+							{
+								article = military_assistance
+								source_country = c:GBR
+								target_country = ROOT
+							}
+						}
+					}
+				}
+			}
+			scope:relevant_country.power_bloc = {
+				add_leverage = { target = scope:persian_nation_scope value = 25 }
+			}
+		}
+	}
+
+	ai_chance = {
+		value = 15
+	}
+}
+
+REPLACE:persia_russian_aid_button = {
+	name = "persia_russian_aid_button"
+	desc = "persia_russian_aid_button_desc"
+
+	selected = {
+		has_variable = PER_appealed_to_RUS
+	}
+
+	cooldown = { days = long_modifier_time }
+
+	visible = {
+		exists = c:RUS
+	}
+
+	possible = {
+		NOT = {
+			custom_tooltip = {
+				text = PER_RUS_support_request_rejected_tt
+				has_variable = PER_RUS_support_request_rejected
+			}
+		}
+		c:RUS ?= {
+			has_interest_marker_in_region = sr:region_greater_persia
+			relations:root >= relations_threshold:amicable
+		}
+		custom_tooltip = {
+			text = "can_create_treaty_MILITARY_ASSISTANCE"
+			c:RUS ?= {
+				can_create_treaty = {
+					first_country = c:RUS
+					second_country = ROOT
+					is_draft = no
+					binding_period = { years = 2 }
+					articles_to_create = {
+						{
+							article = military_assistance
+							source_country = c:RUS
+							target_country = ROOT
+						}
+					}
+				}
+			}
+		}
+	}
+
+	effect = {
+		set_variable = PER_appealed_to_RUS
+		save_scope_as = persian_nation_scope
+		c:RUS ?= {
+			save_scope_as = relevant_country
+			trigger_event = { id = persia_events.4 popup = yes }
+		}
+		custom_tooltip = if_they_accept_tt
+		show_as_tooltip = {
+			if = {
+				limit = {
+					NOT = {
+						has_modifier = modifier_persian_cossack_brigade
+					}
+				}
+				add_modifier = {
+					name = modifier_persian_cossack_brigade
+				}
+				c:RUS ?= {
+					create_treaty = {
+						first_country = c:RUS
+						second_country = ROOT
+
+						is_draft = no
+						binding_period = { years = 2 }
+
+						articles_to_create = {
+							{
+								article = military_assistance
+								source_country = c:RUS
+								target_country = ROOT
+							}
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_modifier = modifier_persian_cossack_brigade
+				}
+				c:RUS ?= {
+					create_treaty = {
+						first_country = c:RUS
+						second_country = ROOT
+
+						is_draft = no
+						binding_period = { years = 2 }
+
+						articles_to_create = {
+							{
+								article = military_assistance
+								source_country = c:RUS
+								target_country = ROOT
+							}
+						}
+					}
+				}
+			}
+			scope:relevant_country.power_bloc = {
+				add_leverage = { target = scope:persian_nation_scope value = 25 }
+			}
+		}
+	}
+}
+
+REPLACE:persia_resettle_merv_button = {
+	name = "persia_resettle_merv_button"
+	desc = "persia_resettle_merv_button_desc"
+
+	visible = {
+		any_scope_state = {
+			state_region = s:STATE_KHIVA
+		}
+		NOT = {
+			has_variable = restoration_of_merv_var
+		}
+	}
+
+	possible = {
+		owns_entire_state_region = STATE_KHIVA
+		any_scope_state = {
+			state_region = s:STATE_KHIVA
+			any_scope_building = {
+				is_building_type = building_urban_center
+				level >= 2
+			}
+		}
+	}
+
+	effect = {
+		set_variable = restoration_of_merv_var
+		trigger_event = { id = persia_events.7 popup = yes }
+		custom_tooltip = choose_one_of_tt
+		show_as_tooltip = {
+			add_modifier = {
+				name = modifier_merv_queen_of_the_world
+			}
+			s:STATE_KHIVA.region_state:PER = {
+				add_modifier = {
+					name = modifier_soltanbent_dam
+				}
+			}
+		}
+	}
+
+	ai_chance = {
+		value = 15
+	}
+}
+
+
+# ---- 04_russia_buttons.txt ----
+REPLACE:je_the_eastern_border_treaty_of_beijing = {
+	name = "je_the_eastern_border_treaty_of_beijing"
+	desc = "je_the_eastern_border_treaty_of_beijing_desc"
+
+	visible = {
+		exists = c:RUS
+		c:RUS = ROOT
+		is_subject = no
+		has_technology_researched = nationalism
+		NOR = {
+			owns_entire_state_region = STATE_OUTER_MANCHURIA
+			has_global_variable = rus_bought_outer_manchuria
+		}
+		AND = {
+			any_scope_state = {
+				state_region = s:STATE_TRANS_BAIKAL
+			}
+			any_scope_state = {
+				state_region = s:STATE_OKHOTSK
+			}
+		}
+		s:STATE_OUTER_MANCHURIA = {
+			any_scope_state = {
+				is_split_state = no
+				is_capital = no
+				owner = {
+					is_player = no
+					is_country_type = unrecognized
+					OR = {
+						country_has_primary_culture = cu:manchu
+						country_has_primary_culture = cu:han
+					}
+				}
+			}
+		}
+	}
+
+	ai_chance = {
+		value = 10
+	}
+
+	possible = {
+		c:RUS ?= {
+			country_rank >= rank_value:great_power
+		}
+		any_neighbouring_state = {
+			state_region = s:STATE_OUTER_MANCHURIA
+		}
+		any_country = {
+			OR = {
+				country_has_primary_culture = cu:manchu
+				country_has_primary_culture = cu:han
+			}
+			OR = {
+				trigger_if = {
+					limit = {
+						has_journal_entry = je_warlord_china
+					}
+					custom_tooltip = {
+						text = china_explosion_point_2_tt
+						var:china_warlord_explosion <= 3
+					}
+				}
+				country_rank < rank_value:unrecognized_major_power
+			}
+			OR = {
+				is_subject = no
+				is_subject_of = ROOT
+			}
+			trigger_if = {
+				limit = {
+					country_rank >= rank_value:unrecognized_major_power
+				}
+				OR = {
+					custom_tooltip = {
+						text = war_with_china_not_russia_tt
+						any_enemy_in_war = {
+							NOT = {
+								c:RUS ?= this
+							}
+						}
+					}
+					custom_tooltip = {
+						text = owes_russia_obligation_tt
+						c:RUS ?= {
+							is_owed_obligation_by = PREV
+						}
+					}
+				}
+			}
+		}
+	}
+
+	effect = {
+		random_country = {
+			limit = {
+				OR = {
+					country_has_primary_culture = cu:manchu
+					country_has_primary_culture = cu:han
+				}
+				any_scope_state = {
+					state_region = s:STATE_OUTER_MANCHURIA
+					is_split_state = no
+					is_capital = no
+				}
+				is_country_type = unrecognized
+				is_player = no
+			}
+			save_scope_as = donor_scope
+		}
+		if = {
+			limit = {
+				scope:donor_scope = {
+					owes_obligation_to = ROOT
+				}
+			}
+			custom_tooltip = obligation_for_outer_manchuria_tt
+		}
+		else_if = {
+			limit = {
+				scope:donor_scope = {
+					is_subject_of = ROOT
+				}
+			}
+			custom_tooltip = transfer_of_outer_manchuria_tt
+		}
+		else = {
+			c:RUS ?= {
+				create_incident = {
+					country = scope:donor_scope
+					value = 10
+				}
+			}
+			custom_tooltip = transfer_of_outer_manchuria_tt
+		}
+		set_global_variable = rus_bought_outer_manchuria
+		trigger_event = { id = russo_chinese.1 popup = yes }
+	}
+}
+
+REPLACE:je_the_eastern_border_russia_chuguchak_protocol = {
+	name = "je_the_eastern_border_russia_chuguchak_protocol"
+	desc = "je_the_eastern_border_russia_chuguchak_protocol_desc"
+
+	visible = {
+		exists = c:RUS
+		c:RUS = ROOT
+		is_subject = no
+		has_technology_researched = nationalism
+		NOT = {
+			owns_entire_state_region = STATE_TUVA
+			owns_entire_state_region = STATE_SEMIRECHE
+			owns_entire_state_region = STATE_KIRGHIZIA
+		}
+		NOT = {
+			has_global_variable = rus_chuguchak_protocol
+		}
+		OR = {
+			AND = {
+				owns_entire_state_region = STATE_SEMIRECHE
+				owns_entire_state_region = STATE_AKMOLINSK
+			}
+			any_subject_or_below = {
+				owns_entire_state_region = STATE_SEMIRECHE
+				owns_entire_state_region = STATE_AKMOLINSK
+			}
+		}
+			OR = {
+			s:STATE_TUVA = {
+				any_scope_state = {
+					is_capital = no
+					owner = {
+						is_player = no
+						is_country_type = unrecognized
+						OR = {
+				country_has_primary_culture = cu:manchu
+				country_has_primary_culture = cu:han
+			}
+				}
+				}
+			}
+			s:STATE_SEMIRECHE = {
+				any_scope_state = {
+					is_capital = no
+					owner = {
+						is_player = no
+						is_country_type = unrecognized
+						OR = {
+							country_has_primary_culture = cu:manchu
+							country_has_primary_culture = cu:han
+				}
+					}
+				}
+			}
+			s:STATE_KIRGHIZIA = {
+				any_scope_state = {
+					is_capital = no
+					owner = {
+						is_player = no
+						is_country_type = unrecognized
+						OR = {
+							country_has_primary_culture = cu:manchu
+							country_has_primary_culture = cu:han
+				}
+			}
+		}
+	}
+		}
+	}
+
+	ai_chance = {
+		value = 10
+	}
+
+	possible = {
+		any_country = {
+			OR = {
+				country_has_primary_culture = cu:manchu
+				country_has_primary_culture = cu:han
+			}
+			OR = {
+				trigger_if = {
+					limit = {
+						has_journal_entry = je_warlord_china
+					}
+					custom_tooltip = {
+						text = china_explosion_point_2_tt
+						var:china_warlord_explosion <= 3
+					}
+				}
+				country_rank < rank_value:unrecognized_major_power
+			}
+			OR = {
+				is_subject = no
+				is_subject_of = ROOT
+			}
+			trigger_if = {
+				limit = {
+					country_rank >= rank_value:unrecognized_major_power
+				}
+				OR = {
+					custom_tooltip = {
+						text = war_with_china_not_russia_tt
+						any_enemy_in_war = {
+							NOT = {
+								c:RUS ?= this
+							}
+						}
+					}
+					custom_tooltip = {
+						text = owes_russia_obligation_tt
+						c:RUS ?= {
+							is_owed_obligation_by = PREV
+						}
+					}
+				}
+			}
+		}
+		custom_tooltip = {
+			text = russia_chuguchak_protocol_req_tt
+			c:RUS ?= {
+				OR = {
+					AND = {
+						owns_entire_state_region = STATE_SEMIRECHE
+						owns_entire_state_region = STATE_AKMOLINSK
+					}
+					any_subject_or_below = {
+						owns_entire_state_region = STATE_SEMIRECHE
+						owns_entire_state_region = STATE_AKMOLINSK
+					}
+				}
+			}
+		}
+	}
+
+	effect = {
+		random_country = {
+			limit = {
+				OR = {
+					country_has_primary_culture = cu:manchu
+					country_has_primary_culture = cu:han
+				}
+				OR = {
+					any_scope_state = {
+						state_region = s:STATE_TUVA
+						is_capital = no
+					}
+					any_scope_state = {
+						state_region = s:STATE_SEMIRECHE
+						is_capital = no
+					}
+					any_scope_state = {
+						state_region = s:STATE_KIRGHIZIA
+						is_capital = no
+					}
+				}
+				is_country_type = unrecognized
+				is_player = no
+			}
+			save_scope_as = donor_scope
+		}
+		if = {
+			limit = {
+				scope:donor_scope = {
+					owes_obligation_to = ROOT
+				}
+			}
+			custom_tooltip = obligation_for_central_asia_tt
+		}
+		else_if = {
+			limit = {
+				scope:donor_scope = {
+					is_subject_of = ROOT
+				}
+			}
+			custom_tooltip = transfer_of_central_asia_tt
+		}
+		else = {
+			c:RUS ?= {
+				create_incident = {
+					country = scope:donor_scope
+					value = 15
+				}
+			}
+			custom_tooltip = transfer_of_central_asia_tt
+		}
+		set_global_variable = rus_chuguchak_protocol
+		trigger_event = { id = russo_chinese.2 popup = yes }
+	}
+}
+
+REPLACE:je_the_eastern_border_treaty_of_aigun = {
+	name = "je_the_eastern_border_treaty_of_aigun"
+	desc = "je_the_eastern_border_treaty_of_aigun_desc"
+
+	visible = {
+		has_technology_researched = nationalism
+		NOR = {
+			owns_entire_state_region = STATE_OUTER_MANCHURIA
+			has_global_variable = rus_bought_amur
+		}
+		AND = {
+			any_scope_state = {
+				state_region = s:STATE_TRANS_BAIKAL
+			}
+			any_scope_state = {
+				state_region = s:STATE_OKHOTSK
+			}
+		}
+		s:STATE_OUTER_MANCHURIA = {
+			any_scope_state = {
+				is_split_state = no
+				is_capital = no
+				owner = {
+					is_player = no
+					is_country_type = unrecognized
+			OR = {
+				country_has_primary_culture = cu:manchu
+				country_has_primary_culture = cu:han
+			}
+			}
+		}
+	}
+	}
+
+	ai_chance = {
+		value = 10
+	}
+
+	possible = {
+		sr:region_siberia = {
+			save_temporary_scope_as = east_siberia_region
+		}
+		any_country = {
+			OR = {
+				is_subject = no
+				is_subject_of = ROOT
+			}
+			OR = {
+				custom_tooltip = {
+					text = war_with_china_not_russia_tt
+					any_enemy_in_war = {
+						NOT = {
+							c:RUS ?= this
+						}
+					}
+				}
+				custom_tooltip = {
+					text = owes_russia_obligation_tt
+					c:RUS ?= {
+						is_owed_obligation_by = PREV
+					}
+				}
+				trigger_if = {
+					limit = {
+						has_journal_entry = je_warlord_china
+					}
+					custom_tooltip = {
+						text = china_explosion_point_2_tt
+						var:china_warlord_explosion <= 3
+					}
+				}
+				country_rank < rank_value:unrecognized_major_power
+			}
+		}
+		c:RUS ?= {
+			country_rank >= rank_value:great_power
+		}
+		custom_tooltip = {
+			text = east_siberia_formation_tt
+			OR = {
+				is_ai = yes
+				any_military_formation = {
+					is_army = yes
+					current_hq.region ?= sr:region_siberia
+					any_combat_unit = {
+						count >= 20
+					}
+				}
+			}
+		}
+	}
+
+	effect = {
+		random_country = {
+			limit = {
+				OR = {
+					country_has_primary_culture = cu:manchu
+					country_has_primary_culture = cu:han
+				}
+				any_scope_state = {
+					state_region = s:STATE_OUTER_MANCHURIA
+					is_split_state = no
+					is_capital = no
+				}
+				is_country_type = unrecognized
+				is_player = no
+			}
+			save_scope_as = donor_scope
+		}
+		if = {
+			limit = {
+				scope:donor_scope = {
+					owes_obligation_to = ROOT
+				}
+			}
+			custom_tooltip = obligation_for_amur_tt
+		}
+		else_if = {
+			limit = {
+				scope:donor_scope = {
+					is_subject_of = ROOT
+				}
+			}
+			custom_tooltip = transfer_of_amur_tt
+		}
+		else = {
+			c:RUS ?= {
+				create_incident = {
+					country = scope:donor_scope
+					value = 10
+				}
+			}
+			custom_tooltip = transfer_of_amur_tt
+		}
+		set_global_variable = rus_bought_amur
+		trigger_event = { id = russo_chinese.4 popup = yes }
+	}
+}
+
+
+REPLACE:imamate_dispatch_muhammad_amin = {
+	name = "imamate_dispatch_muhammad_amin"
+	desc = "imamate_dispatch_muhammad_amin_desc"
+	visible = {
+		exists = c:CIR
+		is_subject = no
+		c:CIR ?= {
+			has_journal_entry = je_caucasian_war_circassia
+		}
+		NOT = {
+			has_variable = sent_muhammad_amin_var
+		}
+	}
+
+	possible = {
+		is_subject = no
+		c:CIR ?= {
+			has_journal_entry = je_caucasian_war_circassia
+		}
+		custom_tooltip = {
+			text = muhammad_amin_possible
+			c:CIR ?= {
+				ruler = {
+					NOT = {
+						OR = {
+							has_variable = ismail_var
+							has_variable = hawduqo_var
+						}
+					}
+				}
+			}
+		}
+	}
+
+	effect = {
+		custom_tooltip = {
+			text = circassia_muhammad_amin_tt
+		}
+		c:CIR ?= {
+			trigger_event = { id = caucasuswar.9 }
+		}
+		set_variable = sent_muhammad_amin_var
+	}
+
+	ai_chance = {
+		value = 15
+		if = {
+			limit = {
+				c:CIR.relations:root < relations_threshold:neutral
+			}
+			add = -30
+		}
+	}
+}
+
+REPLACE:russia_escalate_caucasian_war = {
+	name = "russia_escalate_caucasian_war"
+	desc = "russia_escalate_caucasian_war_desc"
+	visible = {
+		is_subject = no
+		NOT = {
+			owns_entire_state_region = STATE_KUBAN
+			owns_entire_state_region = STATE_DAGESTAN
+			owns_entire_state_region = STATE_DAGESTAN
+		}
+		AND = {
+			any_scope_state = {
+				state_region = s:STATE_KUBAN
+			}
+			any_scope_state = {
+				state_region = s:STATE_DAGESTAN
+			}
+			any_scope_state = {
+				state_region = s:STATE_DAGESTAN
+			}
+		}
+		OR = {
+			AND = {
+				exists = c:CHC
+				has_truce_with = c:CHC
+			}
+			AND = {
+				exists = c:CIR
+				has_truce_with = c:CIR
+			}
+		}
+        NOT = {
+        	has_variable = escalated_caucasian_war
+        }
+	}
+
+	possible = {
+		c:RUS ?= {
+			country_rank >= rank_value:great_power
+		}
+			OR = {
+			s:STATE_KUBAN = {
+				any_scope_state = {
+					OR = {
+						AND = {
+							exists = c:CIR
+							owner = c:CIR
+			}
+						AND = {
+							exists = c:CHC
+							owner = c:CHC
+						}
+					}
+				}
+			}
+			s:STATE_DAGESTAN = {
+				any_scope_state = {
+			OR = {
+						AND = {
+							exists = c:CIR
+				owner = c:CIR
+						}
+						AND = {
+							exists = c:CHC
+				owner = c:CHC
+			}
+		}
+				}
+			}
+			s:STATE_DAGESTAN = {
+				any_scope_state = {
+					OR = {
+						AND = {
+							exists = c:CIR
+							owner = c:CIR
+						}
+						AND = {
+							exists = c:CHC
+							owner = c:CHC
+						}
+					}
+				}
+			}
+		}
+		has_technology_researched = rifling
+		has_technology_researched = logistics
+	}
+
+	effect = {
+		set_variable = escalated_caucasian_war
+		end_truce = c:CHC
+		end_truce = c:CIR
+	}
+
+	ai_chance = {
+		value = 15
+	}
+}
+
+REPLACE:je_conquest_of_central_asia_turkmen_button = {
+	name = "je_conquest_of_central_asia_turkmen_button"
+	desc = "je_conquest_of_central_asia_turkmen_button_desc"
+
+	visible = {
+		NOT = {
+			has_variable = russian_turkmenia_var
+		}
+		any_neighbouring_state = {
+			OR = {
+				state_region = s:STATE_KHIVA
+				state_region = s:STATE_KHIVA
+				state_region = s:STATE_URALSK
+			}
+			owner = {
+				is_country_type = decentralized
+			}
+		}
+	}
+
+	possible = {
+		trigger_if = {
+			limit = {
+				is_ai = no
+			}
+			any_scope_state = {
+				region = sr:region_central_asia
+				any_scope_building = {
+					is_building_type = building_barrack
+					level >= 10
+				}
+			}
+		}
+		has_technology_researched = colonization
+	}
+
+	effect = {
+		trigger_event = { id = russian_central_asia.3 popup = yes }
+		set_variable = russian_turkmenia_var
+		show_as_tooltip = {
+			if = {
+				limit = {
+					NOT = {
+						has_law = law_type:law_frontier_colonization
+					}
+				}
+				activate_law = law_type:law_frontier_colonization
+				add_modifier = {
+					name = modifier_turkmen_subjugation
+					days = normal_modifier_time
+				}
+			}
+			else = {
+				add_modifier = {
+					name = modifier_turkmen_subjugation
+					days = normal_modifier_time
+					multiplier = 2
+				}
+			}
+			add_modifier = {
+				name = modifier_turkmen_logistics
+				days = normal_modifier_time
+				multiplier = money_amount_multiplier_very_large
+			}
+			add_radicals = {
+				culture = cu:turkmen
+				value = medium_radicals
+			}
+			every_scope_state = {
+				limit = { region = sr:region_central_asia }
+				add_loyalists_in_state = {
+					culture = cu:russian
+					value = small_radicals
+				}
+			}
+		}
+	}
+
+	ai_chance = {
+		value = 20
+		if = {
+			limit = {
+				OR = {
+					is_at_war = yes
+					in_default = yes
+				}
+			}
+			add = -100
+		}
+	}
+}
+
+REPLACE:russia_halt_circassian_expulsions = {
+	name = "russia_halt_circassian_expulsions"
+	desc = "russia_halt_circassian_expulsions_desc"
+
+	visible = {
+		always = yes
+	}
+
+	possible = {
+		any_interest_group = {
+			is_in_government = yes
+			law_stance = {
+				law = law_type:law_national_supremacy
+				value < neutral
+			}
+		}
+		any_interest_group = {
+			is_in_government = yes
+			law_stance = {
+				law = law_type:law_state_religion
+				value < neutral
+			}
+		}
+		custom_tooltip = {
+			text = halted_expulsions_tt
+			NOT = {
+				has_variable = halted_circassian_deportations
+			}
+		}
+	}
+
+	effect = {
+		custom_tooltip = {
+			text = halt_circassian_deportations_tt
+			set_variable = halted_circassian_deportations
+		}
+		every_interest_group = {
+			limit = {
+				OR = {
+					is_interest_group_type = ig_armed_forces
+					leader = {
+						has_ideology = ideology:ideology_jingoist_leader
+					}
+					law_stance = {
+						law = law_type:law_national_supremacy
+						value > neutral
+					}
+				}
+			}
+			add_modifier = {
+				name = modifier_halted_circassian_expulsions
+				days = normal_modifier_time
+			}
+		}
+	}
+
+	ai_chance = {
+		value = 20
+		if = {
+			limit = {
+				OR = {
+					is_at_war = yes
+					in_default = yes
+				}
+			}
+			add = -100
+		}
+	}
+}
+
+
+# ---- 05_austria_buttons.txt ----
+# Matter of Hungary
+
+REPLACE:matter_of_hungary_dual_monarchy_button = {
+	name = matter_of_hungary_dual_monarchy_button
+	desc = matter_of_hungary_dual_monarchy_button_desc
+
+	visible = {
+		NOT = {
+			has_variable = established_austria_hungary_var
+		}
+	}
+
+	possible = {
+		has_law = law_type:law_monarchy
+		custom_tooltip = {
+			text = matter_of_hungary_hungarian_homelands_tt
+			country_or_subject_owns_entire_state_region = STATE_CENTRAL_HUNGARY
+			country_or_subject_owns_entire_state_region = STATE_CENTRAL_HUNGARY
+		}
+		OR = {
+			trigger_if = {
+				limit = {
+					has_dlc_feature = ip3_content
+				}
+				OR = {
+					custom_tooltip = {
+						text = je_matter_of_hungary_neoabsolutist_fail_tt
+						has_variable = je_austrian_neo_absolutism_failed_var
+					}
+				}
+			}
+			has_technology_researched = philosophical_pragmatism
+			c:HUN ?= {
+				is_subject_of = root
+				is_subject_type = subject_type_personal_union
+			}
+		}
+		is_diplomatic_play_committed_participant = no
+		is_at_war = no
+	}
+
+	selected = {
+	}
+
+	effect = {
+		save_scope_as = austria_scope
+		s:STATE_CENTRAL_HUNGARY = {
+			random_scope_state = {
+				save_scope_as = budapest_state_scope
+			}
+		}
+		custom_tooltip = {
+			text = matter_of_hungary_ausgleich_tt
+			if = {
+				limit = {
+					NOT = {
+						exists = c:HUN
+					}
+				}
+				create_country = {
+					origin = root
+					tag = HUN
+					state = scope:budapest_state_scope
+					on_created = {
+					}
+				}
+			}
+		}
+		custom_tooltip = dual_monarchy_cannot_form_germany_tt
+		trigger_event = { id = austria_events.4 popup = yes}
+		set_variable = established_austria_hungary_var
+	}
+
+	ai_chance = {
+		value = 25
+	}
+}
+
+REPLACE:matter_of_hungary_integrate_crown_lands_button = {
+	name = matter_of_hungary_integrate_crown_lands_button
+	desc = matter_of_hungary_integrate_crown_lands_button_desc
+
+	visible = {
+		NOT = {
+			has_variable = crownlands_annexed_var
+		}
+		any_subject_or_below = {
+			is_subject_type = subject_type_crown_land
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			text = matter_of_hungary_integrate_crown_lands_tt
+			NOT = {
+				any_subject_or_below = {
+					is_subject_type = subject_type_crown_land
+					liberty_desire > 25
+				}
+			}
+		}
+	}
+
+	selected = {
+	}
+
+	effect = {
+		set_variable = crownlands_annexed_var
+		every_subject_or_below = {
+			limit = {
+				is_subject_type = subject_type_crown_land
+			}
+			if = {
+				limit = {
+					is_player = yes
+				}
+				play_as = prev
+			}
+			root = {
+				annex = prev
+			}
+		}
+		add_modifier = {
+			name = modifier_streamline_crown_lands
+			days = normal_modifier_time
+		}
+		add_radicals = {
+			culture = cu:hungarian
+			value = medium_radicals
+		}
+		add_radicals = {
+			culture = cu:polish
+			value = medium_radicals
+		}
+		add_radicals = {
+			culture = cu:croat
+			value = medium_radicals
+		}
+	}
+
+	ai_chance = {
+		value = 10
+		if = {
+			limit = { # Will not annex players until their liberty desire is below 5.
+				any_subject_or_below = {
+					is_subject_type = subject_type_crown_land
+					is_player = yes
+					liberty_desire > 5
+				}
+			}
+			add = -100
+		}
+	}
+}
+
+# Neo-Absolutism
+
+REPLACE:austrian_neo_absolutism_abolish_crown_land_autonomy_button = {
+	name = austrian_neo_absolutism_abolish_crown_land_autonomy_button
+	desc = austrian_neo_absolutism_abolish_crown_land_autonomy_button_desc
+
+	visible = {
+		NOT = {
+			has_variable = je_austrian_neo_absolutism_marginalized_crown_diets_var
+		}
+	}
+
+	possible = {
+		NOT = {
+			exists = c:HUN
+		}
+		has_law_or_variant = law_type:law_appointed_bureaucrats
+		any_scope_state = {
+			state_region = {
+				OR = {
+					is_homeland = cu:hungarian
+					is_homeland = cu:croat
+					is_homeland = cu:polish
+				}
+			}
+			count >= 12
+			is_incorporated = yes
+			turmoil < 0.05
+		}
+		NOT = {
+			any_political_movement = {
+				is_political_movement_type = movement_cultural_minority
+				political_movement_support > 0.2
+			}
+		}
+	}
+
+	selected = {
+	}
+
+	effect = {
+		set_variable = je_austrian_neo_absolutism_marginalized_crown_diets_var
+		custom_tooltip = {
+			text = austrian_neo_absolutism_constitutional_pressure_progress_bar_increase_10_tt
+			je:je_austrian_neo_absolutism = {
+				add_progress = { value = 10 name = austrian_neo_absolutism_constitutional_pressure_progress_bar }
+			}
+		}
+		ig:ig_landowners ?= {
+			add_modifier = {
+				name = modifier_bureaucratisation_of_the_landtage
+				days = normal_modifier_time
+			}
+		}
+		ig:ig_devout ?= {
+			add_modifier = {
+				name = modifier_bureaucratisation_of_the_landtage
+				days = normal_modifier_time
+			}
+		}
+		add_radicals = {
+			value = medium_radicals
+			strata = upper
+		}
+	}
+
+	ai_chance = {
+		value = 1
+	}
+}
+
+REPLACE:austrian_neo_absolutism_abolish_feudal_obligations_button = {
+	name = austrian_neo_absolutism_abolish_feudal_obligations_button
+	desc = austrian_neo_absolutism_abolish_feudal_obligations_button_desc
+
+	visible = {
+		NOT = {
+			has_variable = je_austrian_neo_absolutism_marginalized_feudal_obligations_var
+		}
+	}
+
+	possible = {
+		NOT = {
+			has_law = law_type:law_manorialism
+		}
+		NOT = {
+			has_law = law_type:law_crownland_diets
+		}
+	}
+
+	selected = {
+	}
+
+	effect = {
+		set_variable = je_austrian_neo_absolutism_marginalized_feudal_obligations_var
+		custom_tooltip = {
+			text = austrian_neo_absolutism_constitutional_pressure_progress_bar_decrease_10_tt
+			je:je_austrian_neo_absolutism = {
+				add_progress = { value = -10 name = austrian_neo_absolutism_constitutional_pressure_progress_bar }
+			}
+		}
+		ig:ig_landowners ?= {
+			add_modifier = {
+				name = modifier_abolished_feudal_obligations
+				days = normal_modifier_time
+			}
+		}
+		ig:ig_rural_folk ?= {
+			add_modifier = {
+				name = modifier_empowered_smallholders
+				days = normal_modifier_time
+			}
+		}
+		add_modifier = {
+			name = modifier_robot_compensation_payments
+			days = normal_modifier_time
+			multiplier = money_amount_multiplier_medium
+		}
+		add_modifier = {
+			name = modifier_bureaucratisation_of_nobles
+			days = normal_modifier_time
+		}
+	}
+
+	ai_chance = {
+		value = 1
+	}
+}
+
+REPLACE:austrian_neo_absolutism_papal_concordat_button = {
+	name = austrian_neo_absolutism_papal_concordat_button
+	desc = austrian_neo_absolutism_papal_concordat_button_desc
+
+	visible = {
+		NOT = {
+			has_variable = austrian_neo_absolutism_papal_concordat_var
+		}
+	}
+
+	possible = {
+		NOT = {
+			c:PAP ?= {
+				is_diplomatic_play_enemy_of = root
+			}
+		}
+		OR = {
+			NOT = {
+				exists = c:PAP
+			}
+			c:PAP ?= {
+				relations:root >= relations_threshold:amicable
+			}
+		}
+	}
+
+	selected = {
+	}
+
+	effect = {
+		set_variable = je_austrian_neo_absolutism_marginalized_papal_concordat_var
+		custom_tooltip = {
+			text = austrian_neo_absolutism_constitutional_pressure_progress_bar_increase_10_tt
+			je:je_austrian_neo_absolutism = {
+				add_progress = { value = 10 name = austrian_neo_absolutism_constitutional_pressure_progress_bar }
+			}
+		}
+		if = {
+			limit = {
+				exists = c:PAP
+			}
+			change_relations = {
+				country = c:PAP
+				value = 40
+			}
+			if = {
+				limit = {
+					is_power_bloc_leader = yes
+				}
+				root.power_bloc ?= {
+					add_leverage = { target = c:PAP value = 100 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_law = law_type:law_state_religion
+				}
+			}
+			activate_law = law_type:law_state_religion
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_law = law_type:law_religious_schools
+				}
+			}
+			activate_law = law_type:law_religious_schools
+		}
+		add_loyalists = {
+			religion = rel:catholic
+			value = medium_radicals
+		}
+		add_radicals = {
+			religion = rel:protestant
+			value = small_radicals
+		}
+		set_variable = austrian_neo_absolutism_papal_concordat_var
+	}
+
+	ai_chance = {
+		value = 1
+	}
+}
+
+REPLACE:je_danubian_federation_czech_button = {
+	name = "je_danubian_federation_czech_button"
+	desc = "je_danubian_federation_czech_button_desc"
+
+	visible = {
+		je_danubian_federation_czech_button_visible = yes
+	}
+
+	selected = {
+		any_in_list = {
+			variable = aus_integrated_cultures
+			cu:czech ?= this
+		}
+		NOT = {
+			any_in_list = {
+				variable = aus_disqualified_cultures
+				cu:czech ?= this
+			}
+		}
+	}
+
+	ai_chance = {
+		value = 10
+	}
+
+	possible = {
+		je_danubian_federation_czech_button_possible = yes
+	}
+
+	effect = {
+		set_variable = danubian_federation_czech_button
+		trigger_event = {
+			id = austria_federation.3
+		}
+		custom_tooltip = je_danubian_federation_czech_button_integrate_tt
+		custom_tooltip = je_danubian_federation_czech_button_disqualify_tt
+		set_variable = {
+			name = danubian_federation_button_cooldown
+			days = 180
+		}
+	}
+
+	ai_chance = {
+		value = 100
+	}
+}
+
+REPLACE:je_danubian_federation_polish_button = {
+	name = "je_danubian_federation_polish_button"
+	desc = "je_danubian_federation_polish_button_desc"
+
+	visible = {
+		exists = c:AUS
+		c:AUS = ROOT
+		OR = {
+			any_scope_state = {
+				state_region = {
+					is_homeland = cu:polish
+				}
+			}
+			any_subject_or_below = {
+				OR = {
+					#is_subject_type = subject_type_crown_land
+					is_subject_type = subject_type_personal_union
+				}
+				any_scope_state = {
+					state_region = {
+						is_homeland = cu:polish
+					}
+				}
+			}
+		}
+		NAND = {
+			has_variable = danubian_federation_polish_button
+			NOT = {
+				any_in_list = {
+					variable = aus_integrated_cultures
+					cu:polish ?= this
+				}
+			}
+		}
+		NOT = {
+			any_in_list = {
+				variable = aus_disqualified_cultures
+				cu:polish ?= this
+			}
+		}
+	}
+
+	selected = {
+		any_in_list = {
+			variable = aus_integrated_cultures
+			cu:polish ?= this
+		}
+		NOT = {
+			any_in_list = {
+				variable = aus_disqualified_cultures
+				cu:polish ?= this
+			}
+		}
+	}
+
+	ai_chance = {
+		value = 10
+	}
+
+	possible = {
+		custom_tooltip = {
+			text = danubian_federation_button_cooldown_tt
+			NOT = {
+				has_variable = danubian_federation_button_cooldown
+			}
+		}
+		custom_tooltip = {
+			text = not_already_used_this_interaction_tt
+			NOT = {
+				has_variable = danubian_federation_polish_button
+			}
+		}
+		country_average_culture_pop_acceptance = {
+			culture = cu:polish
+			value >= acceptance_status_3
+		}
+		radical_fraction = {
+			culture = cu:polish
+			value <= 0.10
+		}
+		cu:polish = {
+			custom_tooltip = {
+				text = all_culture_states_integrated_tt
+				NOT = {
+					ROOT = {
+						any_scope_state = {
+							state_region = {
+								is_homeland = cu:polish
+							}
+							is_incorporated = no
+						}
+					}
+				}
+			}
+			custom_tooltip = {
+				text = no_active_secession_movement_tt
+				culture_secession_progress = { target = ROOT value = 0 }
+			}
+			custom_tooltip = {
+				text = already_integrated_tt
+				ROOT = {
+					NOT = {
+						any_in_list = {
+							variable = aus_integrated_cultures
+							cu:polish ?= this
+						}
+					}
+				}
+			}
+			custom_tooltip = {
+				text = culture_disqualified_tt
+				ROOT = {
+					NOT = {
+						any_in_list = {
+							variable = aus_disqualified_cultures
+							cu:polish ?= this
+						}
+					}
+				}
+			}
+		}
+	}
+
+	effect = {
+		set_variable = danubian_federation_polish_button
+		trigger_event = {
+			id = austria_federation.5
+		}
+		custom_tooltip = je_danubian_federation_polish_button_integrate_tt
+		custom_tooltip = je_danubian_federation_polish_button_disqualify_tt
+		set_variable = {
+			name = danubian_federation_button_cooldown
+			days = 180
+		}
+	}
+
+	ai_chance = {
+		value = 100
+	}
+}
+
+REPLACE:je_danubian_federation_slovak_button = {
+	name = "je_danubian_federation_slovak_button"
+	desc = "je_danubian_federation_slovak_button_desc"
+
+	visible = {
+		je_danubian_federation_slovak_button_visible = yes
+	}
+
+	selected = {
+		any_in_list = {
+			variable = aus_integrated_cultures
+			cu:slovak ?= this
+		}
+		NOT = {
+			any_in_list = {
+				variable = aus_disqualified_cultures
+				cu:slovak ?= this
+			}
+		}
+	}
+
+	ai_chance = {
+		value = 10
+	}
+
+	possible = {
+		je_danubian_federation_slovak_button_possible = yes
+	}
+
+	effect = {
+		set_variable = danubian_federation_slovak_button
+		trigger_event = {
+			id = austria_federation.4
+		}
+		custom_tooltip = je_danubian_federation_slovak_button_integrate_tt
+		custom_tooltip = je_danubian_federation_slovak_button_disqualify_tt
+		set_variable = {
+			name = danubian_federation_button_cooldown
+			days = 180
+		}
+	}
+
+	ai_chance = {
+		value = 100
+	}
+}
+
+REPLACE:je_danubian_federation_hungarian_button = {
+	name = "je_danubian_federation_hungarian_button"
+	desc = "je_danubian_federation_hungarian_button_desc"
+
+	visible = {
+		je_danubian_federation_hungarian_button_visible = yes
+	}
+
+	selected = {
+		any_in_list = {
+			variable = aus_integrated_cultures
+			cu:hungarian ?= this
+		}
+		NOT = {
+			any_in_list = {
+				variable = aus_disqualified_cultures
+				cu:hungarian ?= this
+			}
+		}
+	}
+
+	ai_chance = {
+		value = 10
+	}
+
+	possible = {
+		je_danubian_federation_hungarian_button_possible = yes
+	}
+
+	effect = {
+		set_variable = danubian_federation_hungarian_button
+		trigger_event = {
+			id = austria_federation.6
+		}
+		custom_tooltip = je_danubian_federation_hungarian_button_integrate_tt
+		custom_tooltip = je_danubian_federation_hungarian_button_disqualify_tt
+		set_variable = {
+			name = danubian_federation_button_cooldown
+			days = 180
+		}
+	}
+
+	ai_chance = {
+		value = 100
+	}
+}
+
+REPLACE:je_danubian_federation_slovene_button = {
+	name = "je_danubian_federation_slovene_button"
+	desc = "je_danubian_federation_slovene_button_desc"
+
+	visible = {
+		je_danubian_federation_slovene_button_visible = yes
+	}
+
+	selected = {
+		any_in_list = {
+			variable = aus_integrated_cultures
+			cu:slovene ?= this
+		}
+		NOT = {
+			any_in_list = {
+				variable = aus_disqualified_cultures
+				cu:slovene ?= this
+			}
+		}
+	}
+
+	ai_chance = {
+		value = 10
+	}
+
+	possible = {
+		je_danubian_federation_slovene_button_possible = yes
+	}
+
+	effect = {
+		set_variable = danubian_federation_slovene_button
+		trigger_event = {
+			id = austria_federation.7
+		}
+		custom_tooltip = je_danubian_federation_slovene_button_integrate_tt
+		custom_tooltip = je_danubian_federation_slovene_button_disqualify_tt
+		set_variable = {
+			name = danubian_federation_button_cooldown
+			days = 180
+		}
+	}
+
+	ai_chance = {
+		value = 100
+	}
+}
+
+REPLACE:je_danubian_federation_croat_button = {
+	name = "je_danubian_federation_croat_button"
+	desc = "je_danubian_federation_croat_button_desc"
+
+	visible = {
+		je_danubian_federation_croat_button_visible = yes
+	}
+
+	selected = {
+		any_in_list = {
+			variable = aus_integrated_cultures
+			cu:croat ?= this
+		}
+		NOT = {
+			any_in_list = {
+				variable = aus_disqualified_cultures
+				cu:croat ?= this
+			}
+		}
+	}
+
+	ai_chance = {
+		value = 10
+	}
+
+	possible = {
+		je_danubian_federation_croat_button_possible = yes
+	}
+
+	effect = {
+		set_variable = danubian_federation_croat_button
+		trigger_event = {
+			id = austria_federation.8
+		}
+		custom_tooltip = je_danubian_federation_croat_button_integrate_tt
+		custom_tooltip = je_danubian_federation_croat_button_disqualify_tt
+		set_variable = {
+			name = danubian_federation_button_cooldown
+			days = 180
+		}
+	}
+
+	ai_chance = {
+		value = 100
+	}
+}
+
+REPLACE:je_danubian_federation_romanian_button = {
+	name = "je_danubian_federation_romanian_button"
+	desc = "je_danubian_federation_romanian_button_desc"
+
+	visible = {
+		je_danubian_federation_romanian_button_visible = yes
+	}
+
+	selected = {
+		any_in_list = {
+			variable = aus_integrated_cultures
+			cu:romanian ?= this
+		}
+		NOT = {
+			any_in_list = {
+				variable = aus_disqualified_cultures
+				cu:romanian ?= this
+			}
+		}
+	}
+
+	ai_chance = {
+		value = 10
+	}
+
+	possible = {
+		je_danubian_federation_romanian_button_possible = yes
+	}
+
+	effect = {
+		set_variable = danubian_federation_romanian_button
+		trigger_event = {
+			id = austria_federation.9
+		}
+		custom_tooltip = je_danubian_federation_romanian_button_integrate_tt
+		custom_tooltip = je_danubian_federation_romanian_button_disqualify_tt
+		set_variable = {
+			name = danubian_federation_button_cooldown
+			days = 180
+		}
+	}
+
+	ai_chance = {
+		value = 100
+	}
+}
+
+REPLACE:je_danubian_federation_north_italian_button = {
+	name = "je_danubian_federation_north_italian_button"
+	desc = "je_danubian_federation_north_italian_button_desc"
+
+	visible = {
+		je_danubian_federation_north_italian_button_visible = yes
+	}
+
+	selected = {
+		has_variable_list = aus_integrated_cultures
+		any_in_list = {
+			variable = aus_integrated_cultures
+			cu:north_italian ?= this
+		}
+		NOT = {
+			any_in_list = {
+				variable = aus_disqualified_cultures
+				cu:north_italian ?= this
+			}
+		}
+	}
+
+	ai_chance = {
+		value = 10
+	}
+
+	possible = {
+		je_danubian_federation_north_italian_button_possible = yes
+	}
+
+	effect = {
+		set_variable = danubian_federation_north_italian_button
+		trigger_event = {
+			id = austria_federation.10
+		}
+		custom_tooltip = je_danubian_federation_north_italian_button_integrate_tt
+		set_variable = {
+			name = danubian_federation_button_cooldown
+			days = 180
+		}
+	}
+
+	ai_chance = {
+		value = 100
+	}
+}
+
+REPLACE:je_danubian_federation_serb_button = {
+	name = "je_danubian_federation_serb_button"
+	desc = "je_danubian_federation_serb_button_desc"
+
+	visible = {
+		je_danubian_federation_serb_button_visible = yes
+	}
+
+	selected = {
+		has_variable_list = aus_integrated_cultures
+		any_in_list = {
+			variable = aus_integrated_cultures
+			cu:serb ?= this
+		}
+		NOT = {
+			any_in_list = {
+				variable = aus_disqualified_cultures
+				cu:serb ?= this
+			}
+		}
+	}
+
+	ai_chance = {
+		value = 10
+	}
+
+	possible = {
+		je_danubian_federation_serb_button_possible = yes
+	}
+
+	effect = {
+		set_variable = danubian_federation_serb_button
+		trigger_event = {
+			id = austria_federation.12
+		}
+		custom_tooltip = je_danubian_federation_serb_button_integrate_tt
+		custom_tooltip = je_danubian_federation_serb_button_disqualify_tt
+		set_variable = {
+			name = danubian_federation_button_cooldown
+			days = 180
+		}
+	}
+
+	ai_chance = {
+		value = 100
+	}
+}
+
+REPLACE:je_danubian_federation_ukrainian_button = {
+	name = "je_danubian_federation_ukrainian_button"
+	desc = "je_danubian_federation_ukrainian_button_desc"
+
+	visible = {
+		je_danubian_federation_ukrainian_button_visible = yes
+	}
+
+	selected = {
+		has_variable_list = aus_integrated_cultures
+		any_in_list = {
+			variable = aus_integrated_cultures
+			cu:ukrainian ?= this
+		}
+		NOT = {
+			any_in_list = {
+				variable = aus_disqualified_cultures
+				cu:ukrainian ?= this
+			}
+		}
+	}
+
+	ai_chance = {
+		value = 10
+	}
+
+	possible = {
+		je_danubian_federation_ukrainian_button_possible = yes
+	}
+
+	effect = {
+		set_variable = danubian_federation_ukrainian_button
+		trigger_event = {
+			id = austria_federation.11
+		}
+		custom_tooltip = je_danubian_federation_ukrainian_button_integrate_tt
+		custom_tooltip = je_danubian_federation_ukrainian_button_disqualify_tt
+		set_variable = {
+			name = danubian_federation_button_cooldown
+			days = 180
+		}
+	}
+
+	ai_chance = {
+		value = 100
+	}
+}
+
+REPLACE:je_danubian_federation_enact_the_federation = {
+	name = "je_danubian_federation_enact_the_federation"
+	desc = "je_danubian_federation_enact_the_federation_desc"
+
+	visible = {
+		exists = c:AUS
+		c:AUS = ROOT
+	}
+
+	ai_chance = {
+		value = 10
+	}
+
+	possible = {
+		trigger_if = {
+			limit = {
+				has_variable = count_integrated_cultures
+			}
+			custom_tooltip = {
+				text = has_integrated_5_danubian_cultures_tt
+				var:count_integrated_cultures >= 5
+				NOT = { has_variable = danubian_federation_final_act }
+			}
+		}
+	}
+
+	effect = {
+		custom_tooltip = {
+			text = federalization_signed_tt
+			set_variable = danubian_federation_final_act
+		}
+	}
+
+	selected = {
+		custom_tooltip = {
+			text = federalization_was_signed_tt
+			has_variable = danubian_federation_final_act
+		}
+	}
+
+	ai_chance = {
+		value = 100
+	}
+}
+
+REPLACE:je_danubian_federation_observer_pledge_cooperation = {
+	name = "je_danubian_federation_observer_pledge_cooperation"
+	desc = "je_danubian_federation_observer_pledge_cooperation_desc"
+
+	visible = {
+		exists = c:AUS
+		c:AUS ?= overlord
+		has_variable = danubian_federation_receptive
+	}
+
+	ai_chance = {
+		value = 10
+	}
+
+	possible = {
+		"ROOT.relations(c:AUS)" >= 0
+		custom_tooltip = {
+			text = no_other_subject_signaling_support_tt
+			NOT = {
+				c:AUS ?= {
+					any_subject_or_below = {
+						has_variable = aus_federation_helping_var
+					}
+				}
+			}
+		}
+		custom_tooltip = {
+			text = not_already_used_this_interaction_tt
+			NOT = {
+				has_variable = aus_federation_sent_support
+			}
+		}
+		custom_tooltip = {
+			text = no_culture_disqualified_tt
+			NOT = {
+				any_primary_culture = {
+					is_danubian_culture = yes
+					save_temporary_scope_as = temp_primary_culture
+					c:AUS ?= {
+						any_in_list = {
+							variable = aus_disqualified_cultures
+							scope:temp_primary_culture ?= this
+						}
+					}
+				}
+			}
+		}
+	}
+
+	effect = {
+		set_variable = { name = aus_federation_helping_var days = 90 }
+		set_variable = aus_federation_sent_support
+		custom_tooltip = {
+			text = inform_vienna_tt
+			c:AUS ?= {
+				trigger_event = { id = austria_federation.15 }
+			}
+		}
+	}
+
+	selected = {
+		has_variable = aus_federation_sent_support
+	}
+
+	ai_chance = {
+		value = 5
+	}
+}
+
+REPLACE:je_danubian_federation_observer_reject_cooperation = {
+	name = "je_danubian_federation_observer_reject_cooperation"
+	desc = "je_danubian_federation_observer_reject_cooperation_desc"
+
+	visible = {
+		exists = c:AUS
+		c:AUS ?= overlord
+		has_variable = danubian_federation_opposed
+	}
+
+	ai_chance = {
+		value = 10
+	}
+
+	possible = {
+		"ROOT.relations(c:AUS)" <= 0
+		custom_tooltip = {
+			text = no_other_subject_signaling_opposition_tt
+			NOT = {
+				c:AUS ?= {
+					any_subject_or_below = {
+						has_variable = aus_federation_hating_var
+					}
+				}
+			}
+		}
+		custom_tooltip = {
+			text = not_already_used_this_interaction_tt
+			NOT = {
+				has_variable = aus_federation_sent_opposition
+			}
+		}
+	}
+
+	effect = {
+		set_variable = { name = aus_federation_hating_var days = 90 }
+		set_variable = aus_federation_sent_opposition
+		custom_tooltip = {
+			text = inform_vienna_that_no_tt
+			c:AUS ?= {
+				trigger_event = { id = austria_federation.16 }
+			}
+		}
+	}
+
+	selected = {
+		has_variable = aus_federation_sent_opposition
+	}
+
+	ai_chance = {
+		value = 5
+	}
+}
+
+REPLACE:je_standestaat_eliminate_parliament = {
+	name = "je_standestaat_eliminate_parliament"
+	desc = "je_standestaat_eliminate_parliament_desc"
+
+	visible = {
+		NOT = {
+			has_variable = fatherland_front_var
+		}
+	}
+
+	ai_chance = {
+		value = 10
+	}
+
+	possible = {
+		legitimacy >= 50
+		ruler.interest_group ?= {
+			is_in_government = yes
+			OR = {
+				custom_tooltip = {
+					text = has_corporatist_ideology_tt
+					has_ideology = ideology:ideology_corporatist
+				}
+				custom_tooltip = {
+					text = leader_has_corporatist_ideology_tt
+					leader = {
+						OR = {
+							has_ideology = ideology:ideology_fascist
+							has_ideology = ideology:ideology_integralist
+							has_ideology = ideology:ideology_corporatist_leader
+						}
+					}
+				}
+			}
+			custom_tooltip = {
+				text = is_fatherland_front_party_tt
+				party ?= {
+					OR = {
+						is_party_type = agrarian_party
+						is_party_type = conservative_party
+						is_party_type = fascist_party
+						is_party_type = military_party
+						is_party_type = religious_party
+					}
+				}
+			}
+		}
+		custom_tooltip = {
+			text = no_non_fatherland_front_party_in_government_tt
+			NOT = {
+				any_interest_group = {
+					is_in_government = yes
+					party ?= {
+						NOR = {
+							is_party_type = agrarian_party
+							is_party_type = conservative_party
+							is_party_type = fascist_party
+							is_party_type = military_party
+							is_party_type = religious_party
+						}
+					}
+				}
+			}
+		}
+	}
+
+	effect = {
+		set_variable = fatherland_front_var
+		ruler.interest_group.party ?= {
+			save_scope_as = relevant_party
+		}
+		if = {
+			limit = {
+				exists = ruler.interest_group.party
+			}
+			custom_tooltip = form_fatherland_front_tt
+		}
+		activate_law = law_type:law_single_party_state
+	}
+
+	selected = {
+
+	}
+
+	ai_chance = {
+		value = 5
+	}
+}
+
+# Imperial Yellow Kaiserforum
+REPLACE:je_kaiserforum_kaisergelb_button = {
+	name = je_kaiserforum_kaisergelb_button
+	desc = je_kaiserforum_kaisergelb_button_desc
+
+	visible = {
+
+	}
+
+	possible = {
+		custom_tooltip = {
+			text = kaiserforum_second_stage_tt
+			any_scope_building = {
+				is_building_type = building_kaiserforum_2
+				level > 0
+			}
+		}
+		custom_tooltip = {
+			text = not_already_used_this_interaction_tt
+			NOT = {
+				has_variable = je_kaiserforum_kaisergelb_button_happened
+			}
+		}
+	}
+
+	selected = {
+		has_variable = je_kaiserforum_kaisergelb_button_happened
+	}
+
+	effect = {
+		trigger_event = { id = kaiserforum.4 popup = yes }
+		set_variable = je_kaiserforum_kaisergelb_button_happened
+	}
+
+	ai_chance = {
+		value = 10
+	}
+}
+
+
+# ---- 05_hungary_buttons.txt ----
+# Hungarian Revolution
+
+REPLACE:hungarian_revolution_annex_transylvania_button = {
+	name = hungarian_revolution_annex_transylvania_button
+	desc = hungarian_revolution_annex_transylvania_button_desc
+
+	visible = {
+		exists = c:TRS
+		NOT = {
+			has_variable = hungarian_revolution_annex_transylvania_button_var
+		}
+	}
+
+	possible = {
+		OR = {
+			AND = {
+				c:TRS ?= {
+					relations:root >= relations_threshold:amicable
+				}
+				OR = {
+					AND = {
+						exists = c:AUS
+						OR = {
+							is_subject_of = c:AUS
+				#			is_diplomatic_play_enemy_of = c:AUS
+						}
+						c:TRS ?= {
+							is_subject_of = c:AUS
+						}
+						liberty_desire >= 75
+					}
+					AND = {
+						is_subject = no
+						c:TRS ?= {
+							is_subject = no
+						}
+					}
+				}
+			}
+			hidden_trigger = {
+				AND = {
+					is_player = no
+					exists = c:AUS
+					is_subject_of = c:AUS
+					c:TRS ?= {
+						is_subject_of = c:AUS
+					}
+					has_variable = hungarian_revolution_twelve_points_var
+				}
+			}
+		}
+		is_diplomatic_play_committed_participant = no
+		is_at_war = no
+	}
+
+	selected = {
+	}
+
+	effect = {
+		if = {
+			limit = {
+				is_subject_of = c:AUS
+				NOT = {
+					is_diplomatic_play_enemy_of = c:AUS
+				}
+			}
+			custom_tooltip = hungarian_revolution_twelve_points_tt
+			custom_tooltip = hungarian_revolution_austrian_ruler
+		}
+		s:STATE_NORTHERN_TRANSYLVANIA = {
+			add_claim = root
+		}
+		s:STATE_NORTHERN_TRANSYLVANIA = {
+			add_claim = root
+		}
+		c:TRS ?= {
+			trigger_event = { id = hungary_events.4 popup = yes }
+		}
+		set_variable = hungarian_revolution_annex_transylvania_button_var
+		if = {
+			limit = {
+				c:AUS ?= {
+					any_subject_or_below = {
+						c:TRS ?= this
+					}
+				}
+			}
+			root ?= {
+				change_relations = {
+					country = c:AUS
+					value = -40
+				}
+				create_diplomatic_catalyst = {
+					type = catalyst_event_negative
+					target = c:AUS
+				}
+			}
+			if = {
+				limit = {
+					c:AUS ?= {
+						any_subject_or_below = {
+							c:HUN ?= this
+						}
+					}
+				}
+				add_liberty_desire = 20
+			}
+		}
+		show_as_tooltip = {
+			custom_tooltip = {
+				text = if_trs_accepts_tt
+				annex = c:TRS
+			}
+		}
+	}
+
+	ai_chance = {
+		value = 10
+	}
+}
+
+REPLACE:hungarian_revolution_twelve_points_button = {
+	name = hungarian_revolution_twelve_points_button
+	desc = hungarian_revolution_twelve_points_button_desc
+
+	visible = {
+		NOT = {
+			has_variable = hungarian_revolution_twelve_points_var
+		}
+	}
+
+	possible = {
+		OR = {
+			hidden_trigger = {
+				AND = {
+					is_player = no
+					exists = c:AUS
+					is_subject_of = c:AUS
+					c:TRS ?= {
+						is_subject_of = c:AUS
+					}
+					c:AUS ?= {
+						has_journal_entry = je_springtime_of_the_peoples
+					}
+				}
+			}
+			AND = {
+				legitimacy >= 75
+				any_interest_group = {
+					is_in_government = yes
+					leader = {
+						has_ideology = ideology:ideology_radical
+					}
+				}
+			}
+		}
+	}
+
+	selected = {
+	}
+
+	effect = {
+		set_variable = hungarian_revolution_twelve_points_var
+		if = {
+			limit = {
+				is_subject_of = c:AUS
+				NOT = {
+					is_diplomatic_play_enemy_of = c:AUS
+				}
+			}
+			c:AUS ?= {
+				trigger_event = { id = hungary_events.9 popup = yes }
+			}
+			custom_tooltip = hungarian_revolution_twelve_points_tt
+			custom_tooltip = hungarian_revolution_austrian_ruler
+		}
+		if = {
+			limit = {
+				OR = {
+					has_law_or_variant = law_type:law_autocracy
+					has_law_or_variant = law_type:law_oligarchy
+				}
+			}
+			custom_tooltip = {
+				text = possible_hun_lawgroup_distribution_of_power_change_tt
+				activate_law = law_type:law_census_voting
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_law_or_variant = law_type:law_censorship
+				}
+			}
+			custom_tooltip = {
+				text = possible_hun_lawgroup_free_speech_change_tt
+				activate_law = law_type:law_protected_speech
+			}
+		}
+		if = {
+			limit = {
+				has_law_or_variant = law_type:law_serfdom
+			}
+			custom_tooltip = {
+				text = possible_hun_lawgroup_land_reform_change_tt
+				activate_law = law_type:law_tenant_farmers
+			}
+		}
+		if = {
+			limit = {
+				has_law_or_variant = law_type:law_state_religion
+			}
+			custom_tooltip = {
+				text = possible_hun_lawgroup_church_and_state_change_tt
+				activate_law = law_type:law_freedom_of_conscience
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_law = law_type:law_national_guard
+				}
+			}
+			custom_tooltip = {
+				text = possible_hun_lawgroup_internal_security_change_tt
+				activate_law = law_type:law_national_guard
+			}
+		}
+		if = {
+			limit = {
+				has_law_or_variant = law_type:law_land_based_taxation
+			}
+			custom_tooltip = {
+				text = possible_hun_lawgroup_taxation_change_tt
+				activate_law = law_type:law_per_capita_based_taxation
+			}
+		}
+		if = {
+			limit = {
+				has_law_or_variant = law_type:law_traditionalism
+			}
+			custom_tooltip = {
+				text = possible_hun_lawgroup_economic_system_change_tt
+				activate_law = law_type:law_interventionism
+			}
+		}
+		every_interest_group = {
+			limit = {
+				law_stance = {
+					law = law_type:law_census_voting
+					value > neutral
+				}
+				ig_counts_as_marginal = no
+			}
+			add_modifier = {
+				name = modifier_the_spirit_of_48
+				days = moderately_long_modifier_time
+				is_decaying = yes
+			}
+		}
+		add_modifier = {
+			name = modifier_revolutionary_fervor
+			days = short_modifier_time
+			is_decaying = yes
+		}
+	}
+	ai_chance = {
+		value = 10
+	}
+}
+
+REPLACE:hungarian_revolution_establish_honved_button = {
+	name = hungarian_revolution_establish_honved_button
+	desc = hungarian_revolution_establish_honved_button_desc
+
+	visible = {
+		NOT = {
+			has_variable = hungarian_revolution_establish_honved_var
+		}
+	}
+
+	possible = {
+		OR = {
+			AND = {
+				OR = {
+					has_law_or_variant = law_type:law_national_guard
+					has_law_or_variant = law_type:law_mass_conscription
+				}
+				OR = {
+					is_subject = no
+					is_subject_type = subject_type_personal_union
+				}
+				any_scope_state = {
+					has_decree = decree_enlistment_efforts
+					state_region = {
+						is_homeland = cu:hungarian
+					}
+					count >= 2
+				}
+				any_scope_character = {
+					has_role_of_type = general
+					count >= 4
+				}
+			}
+			hidden_trigger = {
+				is_player = no
+				is_diplomatic_play_enemy_of = c:AUS
+			}
+		}
+	}
+
+	selected = {
+	}
+
+	effect = {
+		set_variable = hungarian_revolution_establish_honved_var
+		trigger_event = { id = hungary_events.7 popup = yes }
+		custom_tooltip = possible_effects_hungary_events.7_tt
+		show_as_tooltip = {
+			add_fervor_target_modifier = { #changes target
+				culture = cu:hungarian
+				days = normal_modifier_time
+				multiplier = 5
+			}
+		}
+		show_as_tooltip = {
+			add_modifier = {
+				name = modifier_honved_mobilization_programme
+				days = normal_modifier_time
+				multiplier = money_amount_multiplier_large
+			}
+		}
+		custom_tooltip = choose_one_of_tt
+		show_as_tooltip = {
+			add_modifier = {
+				name = modifier_defenders_of_the_homeland
+				days = normal_modifier_time
+			}
+			add_modifier = {
+				name = modifier_autumn_campaign
+				days = normal_modifier_time
+			}
+		}
+		custom_tooltip = {
+			text = every_state_with_enlistment_decree_get_modifier
+		}
+		show_as_tooltip = {
+			capital = {
+				add_modifier = {
+					name = modifier_mustering_the_honved
+					days = normal_modifier_time
+				}
+			}
+		}
+	}
+
+	ai_chance = {
+		value = 10
 	}
 }
 
@@ -3567,4439 +8000,6 @@ REPLACE:je_pamir_expedition_dismiss_button = {
 				}
 			}
 			add = -50
-		}
-	}
-}
-
-
-# ---- 04_india_buttons.txt ----
-REPLACE:je_india_home_rule_request_democracy_permission = {
-	name = "je_india_home_rule_request_democracy_permission"
-	desc = "je_india_home_rule_request_democracy_permission_desc"
-
-	visible = {
-		c:BIC ?= this
-		is_subject = yes
-	}
-
-	ai_chance = {
-		value = 0
-		if = {
-			limit = {
-				is_at_war = yes
-			}
-			add = -5
-		}
-		if = {
-			limit = {
-				loyalist_fraction = {
-					value > 0.05
-				}
-			}
-			add = -1
-		}
-		if = {
-			limit = {
-				loyalist_fraction = {
-					value > 0.10
-				}
-			}
-			add = -2
-		}
-		if = {
-			limit = {
-				any_political_movement = {
-					movement_is_plausibly_indian_nationalist = yes
-					political_movement_radicalism < 0.1
-				}
-			}
-			add = -1
-		}
-		if = {
-			limit = {
-				any_political_movement = {
-					movement_is_plausibly_indian_nationalist = yes
-					political_movement_radicalism >= 0.1
-				}
-			}
-			add = 1
-		}
-		if = {
-			limit = {
-				any_political_movement = {
-					movement_is_plausibly_indian_nationalist = yes
-					political_movement_radicalism >= 0.2
-				}
-			}
-			add = 2
-		}
-		if = {
-			limit = {
-				any_political_movement = {
-					movement_is_plausibly_indian_nationalist = yes
-					political_movement_radicalism >= 0.3
-				}
-			}
-			add = 3
-		}
-		if = {
-			limit = {
-				any_political_movement = {
-					movement_is_plausibly_indian_nationalist = yes
-					political_movement_radicalism >= 0.4
-				}
-			}
-			add = 4
-		}
-		if = {
-			limit = {
-				any_political_movement = {
-					movement_is_plausibly_indian_nationalist = yes
-					political_movement_radicalism >= 0.5
-				}
-			}
-			add = 5
-		}
-		if = {
-			limit = {
-				game_date > 1900.1.1
-			}
-			add = 1
-		}
-		if = {
-			limit = {
-				has_ruling_interest_group = ig_industrialists
-			}
-			add = -1
-		}
-	}
-
-	possible = {
-		custom_tooltip = {
-			text = progressbar_above_50_tt
-			je:je_india_home_rule = {
-				"scripted_bar_progress(je_india_home_rule_progressbar)" >= 50
-			}
-		}
-		c:BIC ?= {
-			any_political_movement = {
-				movement_is_plausibly_indian_nationalist = yes
-				political_movement_support >= 0.10
-			}
-		}
-		custom_tooltip = {
-			text = requested_dop_permission_tt
-			NOT = {
-				has_variable = requested_dop_permission
-			}
-		}
-	}
-
-	effect = {
-		set_variable = { name = requested_dop_permission years = 5 }
-		top_overlord = {
-			trigger_event = { id = india_home_rule_events.2 popup = yes }
-		}
-	}
-}
-
-REPLACE:je_india_nationalism_britain_indian_self_governance = {
-	name = "je_india_nationalism_britain_indian_self_governance"
-	desc = "je_india_nationalism_britain_indian_self_governance_desc"
-
-	visible = {
-		any_subject_or_below = {
-			c:BIC ?= this
-			NOT = {
-				country_has_voting_franchise = yes
-				has_law_or_variant = law_type:law_elected_bureaucrats
-			}
-		}
-		NOT = { has_variable = montagu_chelmsford_reforms }
-	}
-
-	ai_chance = {
-		value = 0
-		if = {
-			limit = {
-				is_at_war = yes
-			}
-			add = -5
-		}
-		if = {
-			limit = {
-				c:BIC ?= {
-					loyalist_fraction = {
-						value > 0.05
-					}
-				}
-			}
-			add = -1
-		}
-		if = {
-			limit = {
-				c:BIC ?= {
-					loyalist_fraction = {
-						value > 0.10
-					}
-				}
-			}
-			add = -2
-		}
-		if = {
-			limit = {
-				c:BIC ?= {
-					any_political_movement = {
-						movement_is_plausibly_indian_nationalist = yes
-						political_movement_radicalism < 0.1
-					}
-				}
-			}
-			add = -1
-		}
-		if = {
-			limit = {
-				c:BIC ?= {
-					any_political_movement = {
-						movement_is_plausibly_indian_nationalist = yes
-						political_movement_radicalism >= 0.1
-					}
-				}
-			}
-			add = 1
-		}
-		if = {
-			limit = {
-				c:BIC ?= {
-					any_political_movement = {
-						movement_is_plausibly_indian_nationalist = yes
-						political_movement_radicalism >= 0.2
-					}
-				}
-			}
-			add = 2
-		}
-		if = {
-			limit = {
-				c:BIC ?= {
-					any_political_movement = {
-						movement_is_plausibly_indian_nationalist = yes
-						political_movement_radicalism >= 0.3
-					}
-				}
-			}
-			add = 3
-		}
-		if = {
-			limit = {
-				c:BIC ?= {
-					any_political_movement = {
-						movement_is_plausibly_indian_nationalist = yes
-						political_movement_radicalism >= 0.4
-					}
-				}
-			}
-			add = 4
-		}
-		if = {
-			limit = {
-				c:BIC ?= {
-					any_political_movement = {
-						movement_is_plausibly_indian_nationalist = yes
-						political_movement_radicalism >= 0.5
-					}
-				}
-			}
-			add = 5
-		}
-		if = {
-			limit = {
-				game_date < 1890.1.1
-			}
-			add = -1
-		}
-		if = {
-			limit = {
-				game_date > 1910.1.1
-			}
-			add = 1
-		}
-		if = {
-			limit = {
-				exists = py:fascist_party
-				any_interest_group = {
-					is_in_government = yes
-					is_member_of_party = py:fascist_party
-				}
-			}
-			add = -3
-		}
-		if = {
-			limit = {
-				exists = py:conservative_party
-				any_interest_group = {
-					is_in_government = yes
-					is_member_of_party = py:conservative_party
-				}
-			}
-			add = -1
-		}
-		if = {
-			limit = {
-				exists = py:social_democrat_party
-				any_interest_group = {
-					is_in_government = yes
-					is_member_of_party = py:social_democrat_party
-				}
-			}
-			add = 1
-		}
-		if = {
-			limit = {
-				exists = py:communist_party
-				any_interest_group = {
-					is_in_government = yes
-					is_member_of_party = py:communist_party
-				}
-			}
-			add = 2
-		}
-		if = {
-			limit = {
-				exists = py:anarchist_party
-				any_interest_group = {
-					is_in_government = yes
-					is_member_of_party = py:anarchist_party
-				}
-			}
-			add = 2
-		}
-	}
-
-	possible = {
-		is_at_war = no
-		any_interest_group = {
-			is_in_government = yes
-			OR = {
-				law_stance = {
-					law = law_type:law_no_colonial_affairs
-					value > neutral
-				}
-				law_stance = {
-					law = law_type:law_cultural_exclusion
-					value > neutral
-				}
-			}
-		}
-		c:BIC ?= {
-			has_technology_researched = political_agitation
-			any_political_movement = {
-				movement_is_plausibly_indian_nationalist = yes
-				political_movement_support >= 0.10
-			}
-		}
-	}
-
-	effect = {
-		set_variable = montagu_chelmsford_reforms
-		custom_tooltip = {
-			text = authorise_indian_self_governance_tt
-			c:BIC ?= {
-				trigger_event = { id = india_home_rule_events.9 popup = yes }
-			}
-		}
-		set_variable = { name = simon_commission_timer_var value = 120 }
-	}
-}
-
-REPLACE:je_india_nationalism_britain_dispatch_simon_commission = {
-	name = "je_india_nationalism_britain_dispatch_simon_commission"
-	desc = "je_india_nationalism_britain_dispatch_simon_commission_desc"
-
-	visible = {
-		any_subject_or_below = {
-			c:BIC ?= this
-		}
-		NOT = {
-			has_variable = simon_commission_var
-		}
-	}
-
-	ai_chance = {
-		value = 0
-		if = {
-			limit = {
-				is_at_war = yes
-			}
-			add = -5
-		}
-		if = {
-			limit = {
-				c:BIC ?= {
-					loyalist_fraction = {
-						value > 0.05
-					}
-				}
-			}
-			add = -1
-		}
-		if = {
-			limit = {
-				c:BIC ?= {
-					loyalist_fraction = {
-						value > 0.10
-					}
-				}
-			}
-			add = -2
-		}
-		if = {
-			limit = {
-				c:BIC ?= {
-					any_political_movement = {
-						movement_is_plausibly_indian_nationalist = yes
-						political_movement_radicalism < 0.1
-					}
-				}
-			}
-			add = -1
-		}
-		if = {
-			limit = {
-				c:BIC ?= {
-					any_political_movement = {
-						movement_is_plausibly_indian_nationalist = yes
-						political_movement_radicalism >= 0.1
-					}
-				}
-			}
-			add = 1
-		}
-		if = {
-			limit = {
-				c:BIC ?= {
-					any_political_movement = {
-						movement_is_plausibly_indian_nationalist = yes
-						political_movement_radicalism >= 0.2
-					}
-				}
-			}
-			add = 2
-		}
-		if = {
-			limit = {
-				c:BIC ?= {
-					any_political_movement = {
-						movement_is_plausibly_indian_nationalist = yes
-						political_movement_radicalism >= 0.3
-					}
-				}
-			}
-			add = 3
-		}
-		if = {
-			limit = {
-				c:BIC ?= {
-					any_political_movement = {
-						movement_is_plausibly_indian_nationalist = yes
-						political_movement_radicalism >= 0.4
-					}
-				}
-			}
-			add = 4
-		}
-		if = {
-			limit = {
-				c:BIC ?= {
-					any_political_movement = {
-						movement_is_plausibly_indian_nationalist = yes
-						political_movement_radicalism >= 0.5
-					}
-				}
-			}
-			add = 5
-		}
-		if = {
-			limit = {
-				game_date < 1890.1.1
-			}
-			add = -1
-		}
-		if = {
-			limit = {
-				game_date > 1910.1.1
-			}
-			add = 1
-		}
-		if = {
-			limit = {
-				exists = py:fascist_party
-				any_interest_group = {
-					is_in_government = yes
-					is_member_of_party = py:fascist_party
-				}
-			}
-			add = -3
-		}
-		if = {
-			limit = {
-				exists = py:conservative_party
-				any_interest_group = {
-					is_in_government = yes
-					is_member_of_party = py:conservative_party
-				}
-			}
-			add = -1
-		}
-		if = {
-			limit = {
-				exists = py:social_democrat_party
-				any_interest_group = {
-					is_in_government = yes
-					is_member_of_party = py:social_democrat_party
-				}
-			}
-			add = 1
-		}
-		if = {
-			limit = {
-				exists = py:communist_party
-				any_interest_group = {
-					is_in_government = yes
-					is_member_of_party = py:communist_party
-				}
-			}
-			add = 2
-		}
-		if = {
-			limit = {
-				exists = py:anarchist_party
-				any_interest_group = {
-					is_in_government = yes
-					is_member_of_party = py:anarchist_party
-				}
-			}
-			add = 2
-		}
-	}
-
-	possible = {
-		is_at_war = no
-		custom_tooltip = {
-			text = has_issued_montagu_chelmsford_reforms_tt
-			OR = {
-				c:BIC ?= {
-					has_variable = britain_granted_dop_permission
-				}
-				has_variable = montagu_chelmsford_reforms
-			}
-		}
-		c:BIC ?= {
-			country_has_voting_franchise = yes
-			has_law_or_variant = law_type:law_elected_bureaucrats
-			has_technology_researched = political_agitation
-			any_political_movement = {
-				movement_is_plausibly_indian_nationalist = yes
-				political_movement_support >= 0.10
-			}
-		}
-	}
-
-	effect = {
-		if = {
-			limit = {
-				has_variable = simon_commission_timer_var
-			}
-			custom_tooltip = simon_commission_dispatch_timer_tt
-		}
-		trigger_event = { id = india_home_rule_events.10 popup = yes }
-	}
-}
-
-REPLACE:je_communal_divides_federal_solution = {
-	name = "je_communal_divides_federal_solution"
-	desc = "je_communal_divides_federal_solution_desc"
-
-	visible = {
-		always = yes
-	}
-
-	ai_chance = {
-		value = 0
-	}
-
-	possible = {
-		hidden_trigger = {
-			NOT = {
-				has_variable = selected_federal_solution_var
-			}
-		}
-		is_at_war = no
-		country_or_subject_owns_entire_state_region = STATE_EAST_BENGAL
-		country_or_subject_owns_entire_state_region = STATE_PUNJAB
-		country_or_subject_owns_entire_state_region = STATE_SINDH
-		country_or_subject_owns_entire_state_region = STATE_KASHMIR
-		NOT = {
-			has_law_or_variant = law_type:law_state_religion
-			exists = c:BGL
-			exists = c:IDS
-		}
-		OR = {
-			custom_tooltip = {
-				text = granted_home_rule_tt
-				has_global_variable = india_home_rule
-			}
-			is_subject = no
-		}
-	}
-
-	effect = {
-		set_variable = selected_federal_solution_var
-		custom_tooltip = confederacy_of_india
-		custom_tooltip = {
-			text = create_indusstan_bangla_tt
-			if = {
-				limit = {
-					c:BIC ?= ROOT
-				}
-				create_country = {
-					origin = root
-					tag = BGL
-					state = s:STATE_EAST_BENGAL.region_state:BIC
-					on_created = {
-						set_variable = indian_federation_member
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					c:BHT ?= ROOT
-				}
-				create_country = {
-					origin = root
-					tag = BGL
-					state = s:STATE_EAST_BENGAL.region_state:BHT
-					on_created = {
-						set_variable = indian_federation_member
-					}
-				}
-			}
-			if = {
-				limit = {
-					c:BIC ?= ROOT
-				}
-				create_country = {
-					origin = root
-					tag = IDS
-					state = s:STATE_PUNJAB.region_state:BIC
-					on_created = {
-						set_variable = indian_federation_member
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					c:BHT ?= ROOT
-				}
-				create_country = {
-					origin = root
-					tag = IDS
-					state = s:STATE_PUNJAB.region_state:BHT
-					on_created = {
-						set_variable = indian_federation_member
-					}
-				}
-			}
-			create_diplomatic_pact = {
-				country = c:BGL
-				type = puppet
-			}
-			create_diplomatic_pact = {
-				country = c:IDS
-				type = puppet
-			}
-			every_scope_state = {
-				limit = {
-					OR = {
-						state_region = s:STATE_PUNJAB
-						state_region = s:STATE_SINDH
-						state_region = s:STATE_KASHMIR
-						state_region = s:STATE_PASHTUNISTAN
-						state_region = s:STATE_BALUCHISTAN
-						state_region = s:STATE_PASHTUNISTAN
-					}
-				}
-				set_state_owner = c:IDS
-			}
-		}
-		add_radicals = {
-			value = large_radicals
-			religion = rel:hindu
-		}
-		add_loyalists = {
-			value = medium_radicals
-			religion = rel:sunni
-		}
-		add_loyalists = {
-			value = small_radicals
-			religion = rel:shiite
-		}
-		custom_tooltip = break_confederation_promise_tt
-	}
-}
-
-REPLACE:je_federation_of_india_invite_princely_states = {
-	name = "je_federation_of_india_invite_princely_states"
-	desc = "je_federation_of_india_invite_princely_states_desc"
-
-	visible = {
-		always = yes
-	}
-
-	cooldown = { days = 365 }
-
-	ai_chance = {
-		value = 0
-	}
-
-	possible = {
-		is_at_war = no
-		any_princely_state = {
-			is_subject_of = ROOT
-			relations:ROOT >= relations_threshold:amicable
-			liberty_desire < define:NDiplomacy|WAR_GOAL_INFAMY_LOW_LIBERTY_DESIRE_THRESHOLD
-		}
-	}
-
-	effect = {
-		custom_tooltip = {
-			text = all_princely_states_get_invitation_tt
-			every_princely_state = {
-				limit = {
-					is_subject_of = ROOT
-					relations:ROOT >= relations_threshold:amicable
-					liberty_desire < define:NDiplomacy|WAR_GOAL_INFAMY_LOW_LIBERTY_DESIRE_THRESHOLD
-				}
-				trigger_event = { id = federation_of_india.1 }
-			}
-		}
-		if = {
-			limit = {
-				any_princely_state = {
-					is_subject_of = ROOT
-					relations:ROOT >= relations_threshold:amicable
-					liberty_desire < define:NDiplomacy|WAR_GOAL_INFAMY_LOW_LIBERTY_DESIRE_THRESHOLD
-				}
-			}
-			custom_tooltip = warning_may_cause_massive_debt_tt
-			show_as_tooltip = {
-				custom_tooltip = eligible_states_include_tt
-				ordered_princely_state = {
-					limit = {
-						is_subject_of = ROOT
-						relations:ROOT >= relations_threshold:amicable
-						liberty_desire < define:NDiplomacy|WAR_GOAL_INFAMY_LOW_LIBERTY_DESIRE_THRESHOLD
-					}
-					order_by = country_rank
-					position = 0
-					check_range_bounds = no
-					custom_tooltip = eligible_country_entry_tt
-				}
-				if = {
-					limit = {
-						any_princely_state = {
-							is_subject_of = ROOT
-							relations:ROOT >= relations_threshold:amicable
-							liberty_desire < define:NDiplomacy|WAR_GOAL_INFAMY_LOW_LIBERTY_DESIRE_THRESHOLD
-							count > 1
-						}
-					}
-					ordered_princely_state = {
-						limit = {
-							is_subject_of = ROOT
-							relations:ROOT >= relations_threshold:amicable
-							liberty_desire < define:NDiplomacy|WAR_GOAL_INFAMY_LOW_LIBERTY_DESIRE_THRESHOLD
-						}
-						order_by = country_rank
-						position = 1
-						check_range_bounds = no
-						custom_tooltip = eligible_country_entry_tt
-					}
-				}
-				if = {
-					limit = {
-						any_princely_state = {
-							is_subject_of = ROOT
-							relations:ROOT >= relations_threshold:amicable
-							liberty_desire < define:NDiplomacy|WAR_GOAL_INFAMY_LOW_LIBERTY_DESIRE_THRESHOLD
-							count > 2
-						}
-					}
-					ordered_princely_state = {
-						limit = {
-							is_subject_of = ROOT
-							relations:ROOT >= relations_threshold:amicable
-							liberty_desire < define:NDiplomacy|WAR_GOAL_INFAMY_LOW_LIBERTY_DESIRE_THRESHOLD
-						}
-						order_by = country_rank
-						position = 2
-						check_range_bounds = no
-						if = {
-							limit = {
-								ROOT.num_princely_state_subjects_eligible_for_federation_minus_three > 0
-							}
-							custom_tooltip = eligible_country_entry_last_tt
-						}
-						else = {
-							custom_tooltip = eligible_country_entry_tt
-						}
-					}
-				}
-			}
-		}
-	}
-}
-
-
-# ---- 04_persia_buttons.txt ----
-REPLACE:greater_khorasan_button = {
-	name = "greater_khorasan_button"
-	desc = "greater_khorasan_button_desc"
-
-	visible = {
-		NOT = {
-			has_variable = greater_khorasan_var
-		}
-	}
-
-	possible = {
-		country_or_subject_owns_entire_state_region = STATE_HERAT
-	}
-
-	effect = {
-		trigger_event = { id = persia_events.2 popup = yes }
-		set_variable = greater_khorasan_var
-		show_as_tooltip = {
-			if = {
-				limit = {
-					s:STATE_KABUL = {
-						any_scope_state = {
-							NOT = {
-								has_claim_by = root
-							}
-						}
-					}
-					NOT = {
-						country_or_subject_owns_entire_state_region = STATE_KABUL
-					}
-				}
-				s:STATE_KABUL = {
-					add_claim = root
-				}
-			}
-			if = {
-				limit = {
-					s:STATE_KABUL = {
-						any_scope_state = {
-							NOT = {
-								has_claim_by = root
-							}
-						}
-					}
-					NOT = {
-						country_or_subject_owns_entire_state_region = STATE_KABUL
-					}
-				}
-				s:STATE_KABUL = {
-					add_claim = root
-				}
-			}
-			if = {
-				limit = {
-					s:STATE_HERAT = {
-						any_scope_state = {
-							NOT = {
-								has_claim_by = root
-							}
-						}
-					}
-					NOT = {
-						country_or_subject_owns_entire_state_region = STATE_HERAT
-					}
-				}
-				s:STATE_HERAT = {
-					add_claim = root
-				}
-			}
-			if = {
-				limit = {
-					s:STATE_HERAT = {
-						any_scope_state = {
-							NOT = {
-								has_claim_by = root
-							}
-						}
-					}
-					NOT = {
-						country_or_subject_owns_entire_state_region = STATE_HERAT
-					}
-				}
-				s:STATE_HERAT = {
-					add_claim = root
-				}
-			}
-			if = {
-				limit = {
-					s:STATE_KABUL = {
-						any_scope_state = {
-							NOT = {
-								has_claim_by = root
-							}
-						}
-					}
-					NOT = {
-						country_or_subject_owns_entire_state_region = STATE_KABUL
-					}
-				}
-				s:STATE_KABUL = {
-					add_claim = root
-				}
-			}
-			if = {
-				limit = {
-					s:STATE_KHIVA = {
-						any_scope_state = {
-							NOT = {
-								has_claim_by = root
-							}
-						}
-					}
-					NOT = {
-						country_or_subject_owns_entire_state_region = STATE_KHIVA
-					}
-				}
-				s:STATE_KHIVA = {
-					add_claim = root
-				}
-			}
-			if = {
-				limit = {
-					s:STATE_TAJIKISTAN = {
-						any_scope_state = {
-							NOT = {
-								has_claim_by = root
-							}
-						}
-					}
-					NOT = {
-						country_or_subject_owns_entire_state_region = STATE_TAJIKISTAN
-					}
-				}
-				s:STATE_TAJIKISTAN = {
-					add_claim = root
-				}
-			}
-			if = {
-				limit = {
-					s:STATE_UZBEKIA = {
-						any_scope_state = {
-							NOT = {
-								has_claim_by = root
-							}
-						}
-					}
-					NOT = {
-						country_or_subject_owns_entire_state_region = STATE_UZBEKIA
-					}
-				}
-				s:STATE_UZBEKIA = {
-					add_claim = root
-				}
-			}
-			if = {
-				limit = {
-					s:STATE_KHIVA = {
-						any_scope_state = {
-							NOT = {
-								has_claim_by = root
-							}
-						}
-					}
-					NOT = {
-						country_or_subject_owns_entire_state_region = STATE_KHIVA
-					}
-				}
-				s:STATE_KHIVA = {
-					add_claim = root
-				}
-			}
-			if = {
-				limit = {
-					s:STATE_KHIVA = {
-						any_scope_state = {
-							NOT = {
-								has_claim_by = root
-							}
-						}
-					}
-					NOT = {
-						country_or_subject_owns_entire_state_region = STATE_KHIVA
-					}
-				}
-				s:STATE_KHIVA = {
-					add_claim = root
-				}
-			}
-			add_modifier = {
-				name = modifier_herat_inspiration
-				days = long_modifier_time
-			}
-			custom_tooltip = greater_khorasan_button_tt
-			if = {
-				limit = {
-					c:GBR ?= {
-						has_interest_marker_in_region = sr:region_greater_persia
-						relations:root <= relations_threshold:neutral
-						NOR = {
-							is_diplomatic_play_ally_of = root
-							root = {
-								is_subject_of = prev
-							}
-							has_truce_with = root
-						}
-					}
-				}
-				c:GBR ?= {
-					trigger_event = { id = persia_events.6 popup = yes }
-				}
-			}
-		}
-	}
-
-	ai_chance = {
-		value = 20
-		if = {
-			limit = {
-				OR = {
-					is_at_war = yes
-					in_default = yes
-				}
-			}
-			add = -100
-		}
-	}
-}
-
-REPLACE:persian_baluchistan_button = {
-	name = "persian_baluchistan_button"
-	desc = "persian_baluchistan_button_desc"
-
-	visible = {
-		NOT = {
-			has_variable = persian_baluchistan_var
-		}
-		any_neighbouring_state = {
-			OR = {
-				state_region = s:STATE_KHIVA
-				state_region = s:STATE_KHIVA
-			}
-			owner = {
-				is_country_type = decentralized
-			}
-		}
-	}
-
-	possible = {
-		OR = {
-			any_scope_state = {
-				OR = {
-					state_region = s:STATE_KHORASAN
-					state_region = s:STATE_IRAKAJEMI
-					state_region = s:STATE_HERAT
-				}
-				any_scope_building = {
-					is_building_type = building_barrack
-					level >= 10
-				}
-			}
-			army_size >= 50
-		}
-		has_technology_researched = colonization
-	}
-
-	effect = {
-		trigger_event = { id = persia_events.3 popup = yes }
-		set_variable = persian_baluchistan_var
-		show_as_tooltip = {
-			if = {
-				limit = {
-					NOT = {
-						has_law = law_type:law_frontier_colonization
-					}
-				}
-				activate_law = law_type:law_frontier_colonization
-				add_modifier = {
-					name = modifier_turkmen_subjugation
-					days = normal_modifier_time
-				}
-			}
-			else = {
-				add_modifier = {
-					name = modifier_turkmen_subjugation
-					days = normal_modifier_time
-					multiplier = 2
-				}
-			}
-			add_modifier = {
-				name = modifier_turkmen_logistics
-				days = normal_modifier_time
-				multiplier = money_amount_multiplier_very_large
-			}
-			add_radicals = {
-				culture = cu:turkmen
-				value = medium_radicals
-			}
-			add_loyalists = {
-				culture = cu:persian
-				value = small_radicals
-			}
-		}
-	}
-
-	ai_chance = {
-		value = 20
-		if = {
-			limit = {
-				OR = {
-					is_at_war = yes
-					in_default = yes
-				}
-			}
-			add = -100
-		}
-	}
-}
-
-REPLACE:persia_british_aid_button = {
-	name = "persia_british_aid_button"
-	desc = "persia_british_aid_button_desc"
-
-	selected = {
-		has_variable = PER_appealed_to_GBR
-	}
-
-	cooldown = { days = long_modifier_time }
-
-	visible = {
-		exists = c:GBR
-	}
-
-	possible = {
-		NOT = {
-			custom_tooltip = {
-				text = PER_GBR_support_request_rejected_tt
-				has_variable = PER_GBR_support_request_rejected
-			}
-		}
-		c:GBR ?= {
-			has_interest_marker_in_region = sr:region_greater_persia
-			relations:root >= relations_threshold:amicable
-		}
-		custom_tooltip = {
-			text = "can_create_treaty_MILITARY_ASSISTANCE"
-			c:GBR ?= {
-				can_create_treaty = {
-					first_country = c:GBR
-					second_country = ROOT
-					is_draft = no
-					binding_period = { years = 2 }
-					articles_to_create = {
-						{
-							article = military_assistance
-							source_country = c:GBR
-							target_country = ROOT
-						}
-					}
-				}
-			}
-		}
-	}
-
-	effect = {
-		set_variable = PER_appealed_to_GBR
-		save_scope_as = persian_nation_scope
-		c:GBR ?= {
-			save_scope_as = relevant_country
-			trigger_event = { id = persia_events.4 popup = yes }
-		}
-		custom_tooltip = if_they_accept_tt
-		show_as_tooltip = {
-			if = {
-				limit = {
-					NOT = {
-						has_modifier = modifier_south_persia_rifles
-					}
-				}
-				add_modifier = {
-					name = modifier_south_persia_rifles
-				}
-				c:GBR ?= {
-					create_treaty = {
-						first_country = c:GBR
-						second_country = ROOT
-
-						is_draft = no
-						binding_period = { years = 2 }
-
-						articles_to_create = {
-							{
-								article = military_assistance
-								source_country = c:GBR
-								target_country = ROOT
-							}
-						}
-					}
-				}
-			}
-			if = {
-				limit = {
-					has_modifier = modifier_south_persia_rifles
-				}
-				c:GBR ?= {
-					create_treaty = {
-						first_country = c:GBR
-						second_country = ROOT
-
-						is_draft = no
-						binding_period = { years = 2 }
-
-						articles_to_create = {
-							{
-								article = military_assistance
-								source_country = c:GBR
-								target_country = ROOT
-							}
-						}
-					}
-				}
-			}
-			scope:relevant_country.power_bloc = {
-				add_leverage = { target = scope:persian_nation_scope value = 25 }
-			}
-		}
-	}
-
-	ai_chance = {
-		value = 15
-	}
-}
-
-REPLACE:persia_russian_aid_button = {
-	name = "persia_russian_aid_button"
-	desc = "persia_russian_aid_button_desc"
-
-	selected = {
-		has_variable = PER_appealed_to_RUS
-	}
-
-	cooldown = { days = long_modifier_time }
-
-	visible = {
-		exists = c:RUS
-	}
-
-	possible = {
-		NOT = {
-			custom_tooltip = {
-				text = PER_RUS_support_request_rejected_tt
-				has_variable = PER_RUS_support_request_rejected
-			}
-		}
-		c:RUS ?= {
-			has_interest_marker_in_region = sr:region_greater_persia
-			relations:root >= relations_threshold:amicable
-		}
-		custom_tooltip = {
-			text = "can_create_treaty_MILITARY_ASSISTANCE"
-			c:RUS ?= {
-				can_create_treaty = {
-					first_country = c:RUS
-					second_country = ROOT
-					is_draft = no
-					binding_period = { years = 2 }
-					articles_to_create = {
-						{
-							article = military_assistance
-							source_country = c:RUS
-							target_country = ROOT
-						}
-					}
-				}
-			}
-		}
-	}
-
-	effect = {
-		set_variable = PER_appealed_to_RUS
-		save_scope_as = persian_nation_scope
-		c:RUS ?= {
-			save_scope_as = relevant_country
-			trigger_event = { id = persia_events.4 popup = yes }
-		}
-		custom_tooltip = if_they_accept_tt
-		show_as_tooltip = {
-			if = {
-				limit = {
-					NOT = {
-						has_modifier = modifier_persian_cossack_brigade
-					}
-				}
-				add_modifier = {
-					name = modifier_persian_cossack_brigade
-				}
-				c:RUS ?= {
-					create_treaty = {
-						first_country = c:RUS
-						second_country = ROOT
-
-						is_draft = no
-						binding_period = { years = 2 }
-
-						articles_to_create = {
-							{
-								article = military_assistance
-								source_country = c:RUS
-								target_country = ROOT
-							}
-						}
-					}
-				}
-			}
-			if = {
-				limit = {
-					has_modifier = modifier_persian_cossack_brigade
-				}
-				c:RUS ?= {
-					create_treaty = {
-						first_country = c:RUS
-						second_country = ROOT
-
-						is_draft = no
-						binding_period = { years = 2 }
-
-						articles_to_create = {
-							{
-								article = military_assistance
-								source_country = c:RUS
-								target_country = ROOT
-							}
-						}
-					}
-				}
-			}
-			scope:relevant_country.power_bloc = {
-				add_leverage = { target = scope:persian_nation_scope value = 25 }
-			}
-		}
-	}
-}
-
-REPLACE:persia_resettle_merv_button = {
-	name = "persia_resettle_merv_button"
-	desc = "persia_resettle_merv_button_desc"
-
-	visible = {
-		any_scope_state = {
-			state_region = s:STATE_KHIVA
-		}
-		NOT = {
-			has_variable = restoration_of_merv_var
-		}
-	}
-
-	possible = {
-		owns_entire_state_region = STATE_KHIVA
-		any_scope_state = {
-			state_region = s:STATE_KHIVA
-			any_scope_building = {
-				is_building_type = building_urban_center
-				level >= 2
-			}
-		}
-	}
-
-	effect = {
-		set_variable = restoration_of_merv_var
-		trigger_event = { id = persia_events.7 popup = yes }
-		custom_tooltip = choose_one_of_tt
-		show_as_tooltip = {
-			add_modifier = {
-				name = modifier_merv_queen_of_the_world
-			}
-			s:STATE_KHIVA.region_state:PER = {
-				add_modifier = {
-					name = modifier_soltanbent_dam
-				}
-			}
-		}
-	}
-
-	ai_chance = {
-		value = 15
-	}
-}
-
-
-# ---- 04_russia_buttons.txt ----
-REPLACE:je_the_eastern_border_treaty_of_beijing = {
-	name = "je_the_eastern_border_treaty_of_beijing"
-	desc = "je_the_eastern_border_treaty_of_beijing_desc"
-
-	visible = {
-		exists = c:RUS
-		c:RUS = ROOT
-		is_subject = no
-		has_technology_researched = nationalism
-		NOR = {
-			owns_entire_state_region = STATE_OUTER_MANCHURIA
-			has_global_variable = rus_bought_outer_manchuria
-		}
-		AND = {
-			any_scope_state = {
-				state_region = s:STATE_TRANS_BAIKAL
-			}
-			any_scope_state = {
-				state_region = s:STATE_OKHOTSK
-			}
-		}
-		s:STATE_OUTER_MANCHURIA = {
-			any_scope_state = {
-				is_split_state = no
-				is_capital = no
-				owner = {
-					is_player = no
-					is_country_type = unrecognized
-					OR = {
-						country_has_primary_culture = cu:manchu
-						country_has_primary_culture = cu:han
-					}
-				}
-			}
-		}
-	}
-
-	ai_chance = {
-		value = 10
-	}
-
-	possible = {
-		c:RUS ?= {
-			country_rank >= rank_value:great_power
-		}
-		any_neighbouring_state = {
-			state_region = s:STATE_OUTER_MANCHURIA
-		}
-		any_country = {
-			OR = {
-				country_has_primary_culture = cu:manchu
-				country_has_primary_culture = cu:han
-			}
-			OR = {
-				trigger_if = {
-					limit = {
-						has_journal_entry = je_warlord_china
-					}
-					custom_tooltip = {
-						text = china_explosion_point_2_tt
-						var:china_warlord_explosion <= 3
-					}
-				}
-				country_rank < rank_value:unrecognized_major_power
-			}
-			OR = {
-				is_subject = no
-				is_subject_of = ROOT
-			}
-			trigger_if = {
-				limit = {
-					country_rank >= rank_value:unrecognized_major_power
-				}
-				OR = {
-					custom_tooltip = {
-						text = war_with_china_not_russia_tt
-						any_enemy_in_war = {
-							NOT = {
-								c:RUS ?= this
-							}
-						}
-					}
-					custom_tooltip = {
-						text = owes_russia_obligation_tt
-						c:RUS ?= {
-							is_owed_obligation_by = PREV
-						}
-					}
-				}
-			}
-		}
-	}
-
-	effect = {
-		random_country = {
-			limit = {
-				OR = {
-					country_has_primary_culture = cu:manchu
-					country_has_primary_culture = cu:han
-				}
-				any_scope_state = {
-					state_region = s:STATE_OUTER_MANCHURIA
-					is_split_state = no
-					is_capital = no
-				}
-				is_country_type = unrecognized
-				is_player = no
-			}
-			save_scope_as = donor_scope
-		}
-		if = {
-			limit = {
-				scope:donor_scope = {
-					owes_obligation_to = ROOT
-				}
-			}
-			custom_tooltip = obligation_for_outer_manchuria_tt
-		}
-		else_if = {
-			limit = {
-				scope:donor_scope = {
-					is_subject_of = ROOT
-				}
-			}
-			custom_tooltip = transfer_of_outer_manchuria_tt
-		}
-		else = {
-			c:RUS ?= {
-				create_incident = {
-					country = scope:donor_scope
-					value = 10
-				}
-			}
-			custom_tooltip = transfer_of_outer_manchuria_tt
-		}
-		set_global_variable = rus_bought_outer_manchuria
-		trigger_event = { id = russo_chinese.1 popup = yes }
-	}
-}
-
-REPLACE:je_the_eastern_border_russia_chuguchak_protocol = {
-	name = "je_the_eastern_border_russia_chuguchak_protocol"
-	desc = "je_the_eastern_border_russia_chuguchak_protocol_desc"
-
-	visible = {
-		exists = c:RUS
-		c:RUS = ROOT
-		is_subject = no
-		has_technology_researched = nationalism
-		NOT = {
-			owns_entire_state_region = STATE_TUVA
-			owns_entire_state_region = STATE_SEMIRECHE
-			owns_entire_state_region = STATE_KIRGHIZIA
-		}
-		NOT = {
-			has_global_variable = rus_chuguchak_protocol
-		}
-		OR = {
-			AND = {
-				owns_entire_state_region = STATE_SEMIRECHE
-				owns_entire_state_region = STATE_AKMOLINSK
-			}
-			any_subject_or_below = {
-				owns_entire_state_region = STATE_SEMIRECHE
-				owns_entire_state_region = STATE_AKMOLINSK
-			}
-		}
-			OR = {
-			s:STATE_TUVA = {
-				any_scope_state = {
-					is_capital = no
-					owner = {
-						is_player = no
-						is_country_type = unrecognized
-						OR = {
-				country_has_primary_culture = cu:manchu
-				country_has_primary_culture = cu:han
-			}
-				}
-				}
-			}
-			s:STATE_SEMIRECHE = {
-				any_scope_state = {
-					is_capital = no
-					owner = {
-						is_player = no
-						is_country_type = unrecognized
-						OR = {
-							country_has_primary_culture = cu:manchu
-							country_has_primary_culture = cu:han
-				}
-					}
-				}
-			}
-			s:STATE_KIRGHIZIA = {
-				any_scope_state = {
-					is_capital = no
-					owner = {
-						is_player = no
-						is_country_type = unrecognized
-						OR = {
-							country_has_primary_culture = cu:manchu
-							country_has_primary_culture = cu:han
-				}
-			}
-		}
-	}
-		}
-	}
-
-	ai_chance = {
-		value = 10
-	}
-
-	possible = {
-		any_country = {
-			OR = {
-				country_has_primary_culture = cu:manchu
-				country_has_primary_culture = cu:han
-			}
-			OR = {
-				trigger_if = {
-					limit = {
-						has_journal_entry = je_warlord_china
-					}
-					custom_tooltip = {
-						text = china_explosion_point_2_tt
-						var:china_warlord_explosion <= 3
-					}
-				}
-				country_rank < rank_value:unrecognized_major_power
-			}
-			OR = {
-				is_subject = no
-				is_subject_of = ROOT
-			}
-			trigger_if = {
-				limit = {
-					country_rank >= rank_value:unrecognized_major_power
-				}
-				OR = {
-					custom_tooltip = {
-						text = war_with_china_not_russia_tt
-						any_enemy_in_war = {
-							NOT = {
-								c:RUS ?= this
-							}
-						}
-					}
-					custom_tooltip = {
-						text = owes_russia_obligation_tt
-						c:RUS ?= {
-							is_owed_obligation_by = PREV
-						}
-					}
-				}
-			}
-		}
-		custom_tooltip = {
-			text = russia_chuguchak_protocol_req_tt
-			c:RUS ?= {
-				OR = {
-					AND = {
-						owns_entire_state_region = STATE_SEMIRECHE
-						owns_entire_state_region = STATE_AKMOLINSK
-					}
-					any_subject_or_below = {
-						owns_entire_state_region = STATE_SEMIRECHE
-						owns_entire_state_region = STATE_AKMOLINSK
-					}
-				}
-			}
-		}
-	}
-
-	effect = {
-		random_country = {
-			limit = {
-				OR = {
-					country_has_primary_culture = cu:manchu
-					country_has_primary_culture = cu:han
-				}
-				OR = {
-					any_scope_state = {
-						state_region = s:STATE_TUVA
-						is_capital = no
-					}
-					any_scope_state = {
-						state_region = s:STATE_SEMIRECHE
-						is_capital = no
-					}
-					any_scope_state = {
-						state_region = s:STATE_KIRGHIZIA
-						is_capital = no
-					}
-				}
-				is_country_type = unrecognized
-				is_player = no
-			}
-			save_scope_as = donor_scope
-		}
-		if = {
-			limit = {
-				scope:donor_scope = {
-					owes_obligation_to = ROOT
-				}
-			}
-			custom_tooltip = obligation_for_central_asia_tt
-		}
-		else_if = {
-			limit = {
-				scope:donor_scope = {
-					is_subject_of = ROOT
-				}
-			}
-			custom_tooltip = transfer_of_central_asia_tt
-		}
-		else = {
-			c:RUS ?= {
-				create_incident = {
-					country = scope:donor_scope
-					value = 15
-				}
-			}
-			custom_tooltip = transfer_of_central_asia_tt
-		}
-		set_global_variable = rus_chuguchak_protocol
-		trigger_event = { id = russo_chinese.2 popup = yes }
-	}
-}
-
-REPLACE:je_the_eastern_border_treaty_of_aigun = {
-	name = "je_the_eastern_border_treaty_of_aigun"
-	desc = "je_the_eastern_border_treaty_of_aigun_desc"
-
-	visible = {
-		has_technology_researched = nationalism
-		NOR = {
-			owns_entire_state_region = STATE_OUTER_MANCHURIA
-			has_global_variable = rus_bought_amur
-		}
-		AND = {
-			any_scope_state = {
-				state_region = s:STATE_TRANS_BAIKAL
-			}
-			any_scope_state = {
-				state_region = s:STATE_OKHOTSK
-			}
-		}
-		s:STATE_OUTER_MANCHURIA = {
-			any_scope_state = {
-				is_split_state = no
-				is_capital = no
-				owner = {
-					is_player = no
-					is_country_type = unrecognized
-			OR = {
-				country_has_primary_culture = cu:manchu
-				country_has_primary_culture = cu:han
-			}
-			}
-		}
-	}
-	}
-
-	ai_chance = {
-		value = 10
-	}
-
-	possible = {
-		sr:region_siberia = {
-			save_temporary_scope_as = east_siberia_region
-		}
-		any_country = {
-			OR = {
-				is_subject = no
-				is_subject_of = ROOT
-			}
-			OR = {
-				custom_tooltip = {
-					text = war_with_china_not_russia_tt
-					any_enemy_in_war = {
-						NOT = {
-							c:RUS ?= this
-						}
-					}
-				}
-				custom_tooltip = {
-					text = owes_russia_obligation_tt
-					c:RUS ?= {
-						is_owed_obligation_by = PREV
-					}
-				}
-				trigger_if = {
-					limit = {
-						has_journal_entry = je_warlord_china
-					}
-					custom_tooltip = {
-						text = china_explosion_point_2_tt
-						var:china_warlord_explosion <= 3
-					}
-				}
-				country_rank < rank_value:unrecognized_major_power
-			}
-		}
-		c:RUS ?= {
-			country_rank >= rank_value:great_power
-		}
-		custom_tooltip = {
-			text = east_siberia_formation_tt
-			OR = {
-				is_ai = yes
-				any_military_formation = {
-					is_army = yes
-					current_hq.region ?= sr:region_siberia
-					any_combat_unit = {
-						count >= 20
-					}
-				}
-			}
-		}
-	}
-
-	effect = {
-		random_country = {
-			limit = {
-				OR = {
-					country_has_primary_culture = cu:manchu
-					country_has_primary_culture = cu:han
-				}
-				any_scope_state = {
-					state_region = s:STATE_OUTER_MANCHURIA
-					is_split_state = no
-					is_capital = no
-				}
-				is_country_type = unrecognized
-				is_player = no
-			}
-			save_scope_as = donor_scope
-		}
-		if = {
-			limit = {
-				scope:donor_scope = {
-					owes_obligation_to = ROOT
-				}
-			}
-			custom_tooltip = obligation_for_amur_tt
-		}
-		else_if = {
-			limit = {
-				scope:donor_scope = {
-					is_subject_of = ROOT
-				}
-			}
-			custom_tooltip = transfer_of_amur_tt
-		}
-		else = {
-			c:RUS ?= {
-				create_incident = {
-					country = scope:donor_scope
-					value = 10
-				}
-			}
-			custom_tooltip = transfer_of_amur_tt
-		}
-		set_global_variable = rus_bought_amur
-		trigger_event = { id = russo_chinese.4 popup = yes }
-	}
-}
-
-
-REPLACE:imamate_dispatch_muhammad_amin = {
-	name = "imamate_dispatch_muhammad_amin"
-	desc = "imamate_dispatch_muhammad_amin_desc"
-	visible = {
-		exists = c:CIR
-		is_subject = no
-		c:CIR ?= {
-			has_journal_entry = je_caucasian_war_circassia
-		}
-		NOT = {
-			has_variable = sent_muhammad_amin_var
-		}
-	}
-
-	possible = {
-		is_subject = no
-		c:CIR ?= {
-			has_journal_entry = je_caucasian_war_circassia
-		}
-		custom_tooltip = {
-			text = muhammad_amin_possible
-			c:CIR ?= {
-				ruler = {
-					NOT = {
-						OR = {
-							has_variable = ismail_var
-							has_variable = hawduqo_var
-						}
-					}
-				}
-			}
-		}
-	}
-
-	effect = {
-		custom_tooltip = {
-			text = circassia_muhammad_amin_tt
-		}
-		c:CIR ?= {
-			trigger_event = { id = caucasuswar.9 }
-		}
-		set_variable = sent_muhammad_amin_var
-	}
-
-	ai_chance = {
-		value = 15
-		if = {
-			limit = {
-				c:CIR.relations:root < relations_threshold:neutral
-			}
-			add = -30
-		}
-	}
-}
-
-REPLACE:russia_escalate_caucasian_war = {
-	name = "russia_escalate_caucasian_war"
-	desc = "russia_escalate_caucasian_war_desc"
-	visible = {
-		is_subject = no
-		NOT = {
-			owns_entire_state_region = STATE_KUBAN
-			owns_entire_state_region = STATE_DAGESTAN
-			owns_entire_state_region = STATE_DAGESTAN
-		}
-		AND = {
-			any_scope_state = {
-				state_region = s:STATE_KUBAN
-			}
-			any_scope_state = {
-				state_region = s:STATE_DAGESTAN
-			}
-			any_scope_state = {
-				state_region = s:STATE_DAGESTAN
-			}
-		}
-		OR = {
-			AND = {
-				exists = c:CHC
-				has_truce_with = c:CHC
-			}
-			AND = {
-				exists = c:CIR
-				has_truce_with = c:CIR
-			}
-		}
-        NOT = {
-        	has_variable = escalated_caucasian_war
-        }
-	}
-
-	possible = {
-		c:RUS ?= {
-			country_rank >= rank_value:great_power
-		}
-			OR = {
-			s:STATE_KUBAN = {
-				any_scope_state = {
-					OR = {
-						AND = {
-							exists = c:CIR
-							owner = c:CIR
-			}
-						AND = {
-							exists = c:CHC
-							owner = c:CHC
-						}
-					}
-				}
-			}
-			s:STATE_DAGESTAN = {
-				any_scope_state = {
-			OR = {
-						AND = {
-							exists = c:CIR
-				owner = c:CIR
-						}
-						AND = {
-							exists = c:CHC
-				owner = c:CHC
-			}
-		}
-				}
-			}
-			s:STATE_DAGESTAN = {
-				any_scope_state = {
-					OR = {
-						AND = {
-							exists = c:CIR
-							owner = c:CIR
-						}
-						AND = {
-							exists = c:CHC
-							owner = c:CHC
-						}
-					}
-				}
-			}
-		}
-		has_technology_researched = rifling
-		has_technology_researched = logistics
-	}
-
-	effect = {
-		set_variable = escalated_caucasian_war
-		end_truce = c:CHC
-		end_truce = c:CIR
-	}
-
-	ai_chance = {
-		value = 15
-	}
-}
-
-REPLACE:je_conquest_of_central_asia_turkmen_button = {
-	name = "je_conquest_of_central_asia_turkmen_button"
-	desc = "je_conquest_of_central_asia_turkmen_button_desc"
-
-	visible = {
-		NOT = {
-			has_variable = russian_turkmenia_var
-		}
-		any_neighbouring_state = {
-			OR = {
-				state_region = s:STATE_KHIVA
-				state_region = s:STATE_KHIVA
-				state_region = s:STATE_URALSK
-			}
-			owner = {
-				is_country_type = decentralized
-			}
-		}
-	}
-
-	possible = {
-		trigger_if = {
-			limit = {
-				is_ai = no
-			}
-			any_scope_state = {
-				region = sr:region_central_asia
-				any_scope_building = {
-					is_building_type = building_barrack
-					level >= 10
-				}
-			}
-		}
-		has_technology_researched = colonization
-	}
-
-	effect = {
-		trigger_event = { id = russian_central_asia.3 popup = yes }
-		set_variable = russian_turkmenia_var
-		show_as_tooltip = {
-			if = {
-				limit = {
-					NOT = {
-						has_law = law_type:law_frontier_colonization
-					}
-				}
-				activate_law = law_type:law_frontier_colonization
-				add_modifier = {
-					name = modifier_turkmen_subjugation
-					days = normal_modifier_time
-				}
-			}
-			else = {
-				add_modifier = {
-					name = modifier_turkmen_subjugation
-					days = normal_modifier_time
-					multiplier = 2
-				}
-			}
-			add_modifier = {
-				name = modifier_turkmen_logistics
-				days = normal_modifier_time
-				multiplier = money_amount_multiplier_very_large
-			}
-			add_radicals = {
-				culture = cu:turkmen
-				value = medium_radicals
-			}
-			every_scope_state = {
-				limit = { region = sr:region_central_asia }
-				add_loyalists_in_state = {
-					culture = cu:russian
-					value = small_radicals
-				}
-			}
-		}
-	}
-
-	ai_chance = {
-		value = 20
-		if = {
-			limit = {
-				OR = {
-					is_at_war = yes
-					in_default = yes
-				}
-			}
-			add = -100
-		}
-	}
-}
-
-REPLACE:russia_halt_circassian_expulsions = {
-	name = "russia_halt_circassian_expulsions"
-	desc = "russia_halt_circassian_expulsions_desc"
-
-	visible = {
-		always = yes
-	}
-
-	possible = {
-		any_interest_group = {
-			is_in_government = yes
-			law_stance = {
-				law = law_type:law_national_supremacy
-				value < neutral
-			}
-		}
-		any_interest_group = {
-			is_in_government = yes
-			law_stance = {
-				law = law_type:law_state_religion
-				value < neutral
-			}
-		}
-		custom_tooltip = {
-			text = halted_expulsions_tt
-			NOT = {
-				has_variable = halted_circassian_deportations
-			}
-		}
-	}
-
-	effect = {
-		custom_tooltip = {
-			text = halt_circassian_deportations_tt
-			set_variable = halted_circassian_deportations
-		}
-		every_interest_group = {
-			limit = {
-				OR = {
-					is_interest_group_type = ig_armed_forces
-					leader = {
-						has_ideology = ideology:ideology_jingoist_leader
-					}
-					law_stance = {
-						law = law_type:law_national_supremacy
-						value > neutral
-					}
-				}
-			}
-			add_modifier = {
-				name = modifier_halted_circassian_expulsions
-				days = normal_modifier_time
-			}
-		}
-	}
-
-	ai_chance = {
-		value = 20
-		if = {
-			limit = {
-				OR = {
-					is_at_war = yes
-					in_default = yes
-				}
-			}
-			add = -100
-		}
-	}
-}
-
-
-# ---- 05_austria_buttons.txt ----
-# Matter of Hungary
-
-REPLACE:matter_of_hungary_dual_monarchy_button = {
-	name = matter_of_hungary_dual_monarchy_button
-	desc = matter_of_hungary_dual_monarchy_button_desc
-
-	visible = {
-		NOT = {
-			has_variable = established_austria_hungary_var
-		}
-	}
-
-	possible = {
-		has_law = law_type:law_monarchy
-		custom_tooltip = {
-			text = matter_of_hungary_hungarian_homelands_tt
-			country_or_subject_owns_entire_state_region = STATE_CENTRAL_HUNGARY
-			country_or_subject_owns_entire_state_region = STATE_CENTRAL_HUNGARY
-		}
-		OR = {
-			trigger_if = {
-				limit = {
-					has_dlc_feature = ip3_content
-				}
-				OR = {
-					custom_tooltip = {
-						text = je_matter_of_hungary_neoabsolutist_fail_tt
-						has_variable = je_austrian_neo_absolutism_failed_var
-					}
-				}
-			}
-			has_technology_researched = philosophical_pragmatism
-			c:HUN ?= {
-				is_subject_of = root
-				is_subject_type = subject_type_personal_union
-			}
-		}
-		is_diplomatic_play_committed_participant = no
-		is_at_war = no
-	}
-
-	selected = {
-	}
-
-	effect = {
-		save_scope_as = austria_scope
-		s:STATE_CENTRAL_HUNGARY = {
-			random_scope_state = {
-				save_scope_as = budapest_state_scope
-			}
-		}
-		custom_tooltip = {
-			text = matter_of_hungary_ausgleich_tt
-			if = {
-				limit = {
-					NOT = {
-						exists = c:HUN
-					}
-				}
-				create_country = {
-					origin = root
-					tag = HUN
-					state = scope:budapest_state_scope
-					on_created = {
-					}
-				}
-			}
-		}
-		custom_tooltip = dual_monarchy_cannot_form_germany_tt
-		trigger_event = { id = austria_events.4 popup = yes}
-		set_variable = established_austria_hungary_var
-	}
-
-	ai_chance = {
-		value = 25
-	}
-}
-
-REPLACE:matter_of_hungary_integrate_crown_lands_button = {
-	name = matter_of_hungary_integrate_crown_lands_button
-	desc = matter_of_hungary_integrate_crown_lands_button_desc
-
-	visible = {
-		NOT = {
-			has_variable = crownlands_annexed_var
-		}
-		any_subject_or_below = {
-			is_subject_type = subject_type_crown_land
-		}
-	}
-
-	possible = {
-		custom_tooltip = {
-			text = matter_of_hungary_integrate_crown_lands_tt
-			NOT = {
-				any_subject_or_below = {
-					is_subject_type = subject_type_crown_land
-					liberty_desire > 25
-				}
-			}
-		}
-	}
-
-	selected = {
-	}
-
-	effect = {
-		set_variable = crownlands_annexed_var
-		every_subject_or_below = {
-			limit = {
-				is_subject_type = subject_type_crown_land
-			}
-			if = {
-				limit = {
-					is_player = yes
-				}
-				play_as = prev
-			}
-			root = {
-				annex = prev
-			}
-		}
-		add_modifier = {
-			name = modifier_streamline_crown_lands
-			days = normal_modifier_time
-		}
-		add_radicals = {
-			culture = cu:hungarian
-			value = medium_radicals
-		}
-		add_radicals = {
-			culture = cu:polish
-			value = medium_radicals
-		}
-		add_radicals = {
-			culture = cu:croat
-			value = medium_radicals
-		}
-	}
-
-	ai_chance = {
-		value = 10
-		if = {
-			limit = { # Will not annex players until their liberty desire is below 5.
-				any_subject_or_below = {
-					is_subject_type = subject_type_crown_land
-					is_player = yes
-					liberty_desire > 5
-				}
-			}
-			add = -100
-		}
-	}
-}
-
-# Neo-Absolutism
-
-REPLACE:austrian_neo_absolutism_abolish_crown_land_autonomy_button = {
-	name = austrian_neo_absolutism_abolish_crown_land_autonomy_button
-	desc = austrian_neo_absolutism_abolish_crown_land_autonomy_button_desc
-
-	visible = {
-		NOT = {
-			has_variable = je_austrian_neo_absolutism_marginalized_crown_diets_var
-		}
-	}
-
-	possible = {
-		NOT = {
-			exists = c:HUN
-		}
-		has_law_or_variant = law_type:law_appointed_bureaucrats
-		any_scope_state = {
-			state_region = {
-				OR = {
-					is_homeland = cu:hungarian
-					is_homeland = cu:croat
-					is_homeland = cu:polish
-				}
-			}
-			count >= 8
-			is_incorporated = yes
-			turmoil < 0.05
-		}
-		NOT = {
-			any_political_movement = {
-				is_political_movement_type = movement_cultural_minority
-				political_movement_support > 0.2
-			}
-		}
-	}
-
-	selected = {
-	}
-
-	effect = {
-		set_variable = je_austrian_neo_absolutism_marginalized_crown_diets_var
-		custom_tooltip = {
-			text = austrian_neo_absolutism_constitutional_pressure_progress_bar_increase_10_tt
-			je:je_austrian_neo_absolutism = {
-				add_progress = { value = 10 name = austrian_neo_absolutism_constitutional_pressure_progress_bar }
-			}
-		}
-		ig:ig_landowners ?= {
-			add_modifier = {
-				name = modifier_bureaucratisation_of_the_landtage
-				days = normal_modifier_time
-			}
-		}
-		ig:ig_devout ?= {
-			add_modifier = {
-				name = modifier_bureaucratisation_of_the_landtage
-				days = normal_modifier_time
-			}
-		}
-		add_radicals = {
-			value = medium_radicals
-			strata = upper
-		}
-	}
-
-	ai_chance = {
-		value = 1
-	}
-}
-
-REPLACE:austrian_neo_absolutism_abolish_feudal_obligations_button = {
-	name = austrian_neo_absolutism_abolish_feudal_obligations_button
-	desc = austrian_neo_absolutism_abolish_feudal_obligations_button_desc
-
-	visible = {
-		NOT = {
-			has_variable = je_austrian_neo_absolutism_marginalized_feudal_obligations_var
-		}
-	}
-
-	possible = {
-		NOT = {
-			has_law = law_type:law_manorialism
-		}
-		NOT = {
-			has_law = law_type:law_crownland_diets
-		}
-	}
-
-	selected = {
-	}
-
-	effect = {
-		set_variable = je_austrian_neo_absolutism_marginalized_feudal_obligations_var
-		custom_tooltip = {
-			text = austrian_neo_absolutism_constitutional_pressure_progress_bar_decrease_10_tt
-			je:je_austrian_neo_absolutism = {
-				add_progress = { value = -10 name = austrian_neo_absolutism_constitutional_pressure_progress_bar }
-			}
-		}
-		ig:ig_landowners ?= {
-			add_modifier = {
-				name = modifier_abolished_feudal_obligations
-				days = normal_modifier_time
-			}
-		}
-		ig:ig_rural_folk ?= {
-			add_modifier = {
-				name = modifier_empowered_smallholders
-				days = normal_modifier_time
-			}
-		}
-		add_modifier = {
-			name = modifier_robot_compensation_payments
-			days = normal_modifier_time
-			multiplier = money_amount_multiplier_medium
-		}
-		add_modifier = {
-			name = modifier_bureaucratisation_of_nobles
-			days = normal_modifier_time
-		}
-	}
-
-	ai_chance = {
-		value = 1
-	}
-}
-
-REPLACE:austrian_neo_absolutism_papal_concordat_button = {
-	name = austrian_neo_absolutism_papal_concordat_button
-	desc = austrian_neo_absolutism_papal_concordat_button_desc
-
-	visible = {
-		NOT = {
-			has_variable = austrian_neo_absolutism_papal_concordat_var
-		}
-	}
-
-	possible = {
-		NOT = {
-			c:PAP ?= {
-				is_diplomatic_play_enemy_of = root
-			}
-		}
-		OR = {
-			NOT = {
-				exists = c:PAP
-			}
-			c:PAP ?= {
-				relations:root >= relations_threshold:amicable
-			}
-		}
-	}
-
-	selected = {
-	}
-
-	effect = {
-		set_variable = je_austrian_neo_absolutism_marginalized_papal_concordat_var
-		custom_tooltip = {
-			text = austrian_neo_absolutism_constitutional_pressure_progress_bar_increase_10_tt
-			je:je_austrian_neo_absolutism = {
-				add_progress = { value = 10 name = austrian_neo_absolutism_constitutional_pressure_progress_bar }
-			}
-		}
-		if = {
-			limit = {
-				exists = c:PAP
-			}
-			change_relations = {
-				country = c:PAP
-				value = 40
-			}
-			if = {
-				limit = {
-					is_power_bloc_leader = yes
-				}
-				root.power_bloc ?= {
-					add_leverage = { target = c:PAP value = 100 }
-				}
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_law = law_type:law_state_religion
-				}
-			}
-			activate_law = law_type:law_state_religion
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_law = law_type:law_religious_schools
-				}
-			}
-			activate_law = law_type:law_religious_schools
-		}
-		add_loyalists = {
-			religion = rel:catholic
-			value = medium_radicals
-		}
-		add_radicals = {
-			religion = rel:protestant
-			value = small_radicals
-		}
-		set_variable = austrian_neo_absolutism_papal_concordat_var
-	}
-
-	ai_chance = {
-		value = 1
-	}
-}
-
-REPLACE:je_danubian_federation_czech_button = {
-	name = "je_danubian_federation_czech_button"
-	desc = "je_danubian_federation_czech_button_desc"
-
-	visible = {
-		je_danubian_federation_czech_button_visible = yes
-	}
-
-	selected = {
-		any_in_list = {
-			variable = aus_integrated_cultures
-			cu:czech ?= this
-		}
-		NOT = {
-			any_in_list = {
-				variable = aus_disqualified_cultures
-				cu:czech ?= this
-			}
-		}
-	}
-
-	ai_chance = {
-		value = 10
-	}
-
-	possible = {
-		je_danubian_federation_czech_button_possible = yes
-	}
-
-	effect = {
-		set_variable = danubian_federation_czech_button
-		trigger_event = {
-			id = austria_federation.3
-		}
-		custom_tooltip = je_danubian_federation_czech_button_integrate_tt
-		custom_tooltip = je_danubian_federation_czech_button_disqualify_tt
-		set_variable = {
-			name = danubian_federation_button_cooldown
-			days = 180
-		}
-	}
-
-	ai_chance = {
-		value = 100
-	}
-}
-
-REPLACE:je_danubian_federation_polish_button = {
-	name = "je_danubian_federation_polish_button"
-	desc = "je_danubian_federation_polish_button_desc"
-
-	visible = {
-		exists = c:AUS
-		c:AUS = ROOT
-		OR = {
-			any_scope_state = {
-				state_region = {
-					is_homeland = cu:polish
-				}
-			}
-			any_subject_or_below = {
-				OR = {
-					#is_subject_type = subject_type_crown_land
-					is_subject_type = subject_type_personal_union
-				}
-				any_scope_state = {
-					state_region = {
-						is_homeland = cu:polish
-					}
-				}
-			}
-		}
-		NAND = {
-			has_variable = danubian_federation_polish_button
-			NOT = {
-				any_in_list = {
-					variable = aus_integrated_cultures
-					cu:polish ?= this
-				}
-			}
-		}
-		NOT = {
-			any_in_list = {
-				variable = aus_disqualified_cultures
-				cu:polish ?= this
-			}
-		}
-	}
-
-	selected = {
-		any_in_list = {
-			variable = aus_integrated_cultures
-			cu:polish ?= this
-		}
-		NOT = {
-			any_in_list = {
-				variable = aus_disqualified_cultures
-				cu:polish ?= this
-			}
-		}
-	}
-
-	ai_chance = {
-		value = 10
-	}
-
-	possible = {
-		custom_tooltip = {
-			text = danubian_federation_button_cooldown_tt
-			NOT = {
-				has_variable = danubian_federation_button_cooldown
-			}
-		}
-		custom_tooltip = {
-			text = not_already_used_this_interaction_tt
-			NOT = {
-				has_variable = danubian_federation_polish_button
-			}
-		}
-		country_average_culture_pop_acceptance = {
-			culture = cu:polish
-			value >= acceptance_status_3
-		}
-		radical_fraction = {
-			culture = cu:polish
-			value <= 0.10
-		}
-		cu:polish = {
-			custom_tooltip = {
-				text = all_culture_states_integrated_tt
-				NOT = {
-					ROOT = {
-						any_scope_state = {
-							state_region = {
-								is_homeland = cu:polish
-							}
-							is_incorporated = no
-						}
-					}
-				}
-			}
-			custom_tooltip = {
-				text = no_active_secession_movement_tt
-				culture_secession_progress = { target = ROOT value = 0 }
-			}
-			custom_tooltip = {
-				text = already_integrated_tt
-				ROOT = {
-					NOT = {
-						any_in_list = {
-							variable = aus_integrated_cultures
-							cu:polish ?= this
-						}
-					}
-				}
-			}
-			custom_tooltip = {
-				text = culture_disqualified_tt
-				ROOT = {
-					NOT = {
-						any_in_list = {
-							variable = aus_disqualified_cultures
-							cu:polish ?= this
-						}
-					}
-				}
-			}
-		}
-	}
-
-	effect = {
-		set_variable = danubian_federation_polish_button
-		trigger_event = {
-			id = austria_federation.5
-		}
-		custom_tooltip = je_danubian_federation_polish_button_integrate_tt
-		custom_tooltip = je_danubian_federation_polish_button_disqualify_tt
-		set_variable = {
-			name = danubian_federation_button_cooldown
-			days = 180
-		}
-	}
-
-	ai_chance = {
-		value = 100
-	}
-}
-
-REPLACE:je_danubian_federation_slovak_button = {
-	name = "je_danubian_federation_slovak_button"
-	desc = "je_danubian_federation_slovak_button_desc"
-
-	visible = {
-		je_danubian_federation_slovak_button_visible = yes
-	}
-
-	selected = {
-		any_in_list = {
-			variable = aus_integrated_cultures
-			cu:slovak ?= this
-		}
-		NOT = {
-			any_in_list = {
-				variable = aus_disqualified_cultures
-				cu:slovak ?= this
-			}
-		}
-	}
-
-	ai_chance = {
-		value = 10
-	}
-
-	possible = {
-		je_danubian_federation_slovak_button_possible = yes
-	}
-
-	effect = {
-		set_variable = danubian_federation_slovak_button
-		trigger_event = {
-			id = austria_federation.4
-		}
-		custom_tooltip = je_danubian_federation_slovak_button_integrate_tt
-		custom_tooltip = je_danubian_federation_slovak_button_disqualify_tt
-		set_variable = {
-			name = danubian_federation_button_cooldown
-			days = 180
-		}
-	}
-
-	ai_chance = {
-		value = 100
-	}
-}
-
-REPLACE:je_danubian_federation_hungarian_button = {
-	name = "je_danubian_federation_hungarian_button"
-	desc = "je_danubian_federation_hungarian_button_desc"
-
-	visible = {
-		je_danubian_federation_hungarian_button_visible = yes
-	}
-
-	selected = {
-		any_in_list = {
-			variable = aus_integrated_cultures
-			cu:hungarian ?= this
-		}
-		NOT = {
-			any_in_list = {
-				variable = aus_disqualified_cultures
-				cu:hungarian ?= this
-			}
-		}
-	}
-
-	ai_chance = {
-		value = 10
-	}
-
-	possible = {
-		je_danubian_federation_hungarian_button_possible = yes
-	}
-
-	effect = {
-		set_variable = danubian_federation_hungarian_button
-		trigger_event = {
-			id = austria_federation.6
-		}
-		custom_tooltip = je_danubian_federation_hungarian_button_integrate_tt
-		custom_tooltip = je_danubian_federation_hungarian_button_disqualify_tt
-		set_variable = {
-			name = danubian_federation_button_cooldown
-			days = 180
-		}
-	}
-
-	ai_chance = {
-		value = 100
-	}
-}
-
-REPLACE:je_danubian_federation_slovene_button = {
-	name = "je_danubian_federation_slovene_button"
-	desc = "je_danubian_federation_slovene_button_desc"
-
-	visible = {
-		je_danubian_federation_slovene_button_visible = yes
-	}
-
-	selected = {
-		any_in_list = {
-			variable = aus_integrated_cultures
-			cu:slovene ?= this
-		}
-		NOT = {
-			any_in_list = {
-				variable = aus_disqualified_cultures
-				cu:slovene ?= this
-			}
-		}
-	}
-
-	ai_chance = {
-		value = 10
-	}
-
-	possible = {
-		je_danubian_federation_slovene_button_possible = yes
-	}
-
-	effect = {
-		set_variable = danubian_federation_slovene_button
-		trigger_event = {
-			id = austria_federation.7
-		}
-		custom_tooltip = je_danubian_federation_slovene_button_integrate_tt
-		custom_tooltip = je_danubian_federation_slovene_button_disqualify_tt
-		set_variable = {
-			name = danubian_federation_button_cooldown
-			days = 180
-		}
-	}
-
-	ai_chance = {
-		value = 100
-	}
-}
-
-REPLACE:je_danubian_federation_croat_button = {
-	name = "je_danubian_federation_croat_button"
-	desc = "je_danubian_federation_croat_button_desc"
-
-	visible = {
-		je_danubian_federation_croat_button_visible = yes
-	}
-
-	selected = {
-		any_in_list = {
-			variable = aus_integrated_cultures
-			cu:croat ?= this
-		}
-		NOT = {
-			any_in_list = {
-				variable = aus_disqualified_cultures
-				cu:croat ?= this
-			}
-		}
-	}
-
-	ai_chance = {
-		value = 10
-	}
-
-	possible = {
-		je_danubian_federation_croat_button_possible = yes
-	}
-
-	effect = {
-		set_variable = danubian_federation_croat_button
-		trigger_event = {
-			id = austria_federation.8
-		}
-		custom_tooltip = je_danubian_federation_croat_button_integrate_tt
-		custom_tooltip = je_danubian_federation_croat_button_disqualify_tt
-		set_variable = {
-			name = danubian_federation_button_cooldown
-			days = 180
-		}
-	}
-
-	ai_chance = {
-		value = 100
-	}
-}
-
-REPLACE:je_danubian_federation_romanian_button = {
-	name = "je_danubian_federation_romanian_button"
-	desc = "je_danubian_federation_romanian_button_desc"
-
-	visible = {
-		je_danubian_federation_romanian_button_visible = yes
-	}
-
-	selected = {
-		any_in_list = {
-			variable = aus_integrated_cultures
-			cu:romanian ?= this
-		}
-		NOT = {
-			any_in_list = {
-				variable = aus_disqualified_cultures
-				cu:romanian ?= this
-			}
-		}
-	}
-
-	ai_chance = {
-		value = 10
-	}
-
-	possible = {
-		je_danubian_federation_romanian_button_possible = yes
-	}
-
-	effect = {
-		set_variable = danubian_federation_romanian_button
-		trigger_event = {
-			id = austria_federation.9
-		}
-		custom_tooltip = je_danubian_federation_romanian_button_integrate_tt
-		custom_tooltip = je_danubian_federation_romanian_button_disqualify_tt
-		set_variable = {
-			name = danubian_federation_button_cooldown
-			days = 180
-		}
-	}
-
-	ai_chance = {
-		value = 100
-	}
-}
-
-REPLACE:je_danubian_federation_north_italian_button = {
-	name = "je_danubian_federation_north_italian_button"
-	desc = "je_danubian_federation_north_italian_button_desc"
-
-	visible = {
-		je_danubian_federation_north_italian_button_visible = yes
-	}
-
-	selected = {
-		has_variable_list = aus_integrated_cultures
-		any_in_list = {
-			variable = aus_integrated_cultures
-			cu:north_italian ?= this
-		}
-		NOT = {
-			any_in_list = {
-				variable = aus_disqualified_cultures
-				cu:north_italian ?= this
-			}
-		}
-	}
-
-	ai_chance = {
-		value = 10
-	}
-
-	possible = {
-		je_danubian_federation_north_italian_button_possible = yes
-	}
-
-	effect = {
-		set_variable = danubian_federation_north_italian_button
-		trigger_event = {
-			id = austria_federation.10
-		}
-		custom_tooltip = je_danubian_federation_north_italian_button_integrate_tt
-		set_variable = {
-			name = danubian_federation_button_cooldown
-			days = 180
-		}
-	}
-
-	ai_chance = {
-		value = 100
-	}
-}
-
-REPLACE:je_danubian_federation_serb_button = {
-	name = "je_danubian_federation_serb_button"
-	desc = "je_danubian_federation_serb_button_desc"
-
-	visible = {
-		je_danubian_federation_serb_button_visible = yes
-	}
-
-	selected = {
-		has_variable_list = aus_integrated_cultures
-		any_in_list = {
-			variable = aus_integrated_cultures
-			cu:serb ?= this
-		}
-		NOT = {
-			any_in_list = {
-				variable = aus_disqualified_cultures
-				cu:serb ?= this
-			}
-		}
-	}
-
-	ai_chance = {
-		value = 10
-	}
-
-	possible = {
-		je_danubian_federation_serb_button_possible = yes
-	}
-
-	effect = {
-		set_variable = danubian_federation_serb_button
-		trigger_event = {
-			id = austria_federation.12
-		}
-		custom_tooltip = je_danubian_federation_serb_button_integrate_tt
-		custom_tooltip = je_danubian_federation_serb_button_disqualify_tt
-		set_variable = {
-			name = danubian_federation_button_cooldown
-			days = 180
-		}
-	}
-
-	ai_chance = {
-		value = 100
-	}
-}
-
-REPLACE:je_danubian_federation_ukrainian_button = {
-	name = "je_danubian_federation_ukrainian_button"
-	desc = "je_danubian_federation_ukrainian_button_desc"
-
-	visible = {
-		je_danubian_federation_ukrainian_button_visible = yes
-	}
-
-	selected = {
-		has_variable_list = aus_integrated_cultures
-		any_in_list = {
-			variable = aus_integrated_cultures
-			cu:ukrainian ?= this
-		}
-		NOT = {
-			any_in_list = {
-				variable = aus_disqualified_cultures
-				cu:ukrainian ?= this
-			}
-		}
-	}
-
-	ai_chance = {
-		value = 10
-	}
-
-	possible = {
-		je_danubian_federation_ukrainian_button_possible = yes
-	}
-
-	effect = {
-		set_variable = danubian_federation_ukrainian_button
-		trigger_event = {
-			id = austria_federation.11
-		}
-		custom_tooltip = je_danubian_federation_ukrainian_button_integrate_tt
-		custom_tooltip = je_danubian_federation_ukrainian_button_disqualify_tt
-		set_variable = {
-			name = danubian_federation_button_cooldown
-			days = 180
-		}
-	}
-
-	ai_chance = {
-		value = 100
-	}
-}
-
-REPLACE:je_danubian_federation_enact_the_federation = {
-	name = "je_danubian_federation_enact_the_federation"
-	desc = "je_danubian_federation_enact_the_federation_desc"
-
-	visible = {
-		exists = c:AUS
-		c:AUS = ROOT
-	}
-
-	ai_chance = {
-		value = 10
-	}
-
-	possible = {
-		trigger_if = {
-			limit = {
-				has_variable = count_integrated_cultures
-			}
-			custom_tooltip = {
-				text = has_integrated_5_danubian_cultures_tt
-				var:count_integrated_cultures >= 5
-				NOT = { has_variable = danubian_federation_final_act }
-			}
-		}
-	}
-
-	effect = {
-		custom_tooltip = {
-			text = federalization_signed_tt
-			set_variable = danubian_federation_final_act
-		}
-	}
-
-	selected = {
-		custom_tooltip = {
-			text = federalization_was_signed_tt
-			has_variable = danubian_federation_final_act
-		}
-	}
-
-	ai_chance = {
-		value = 100
-	}
-}
-
-REPLACE:je_danubian_federation_observer_pledge_cooperation = {
-	name = "je_danubian_federation_observer_pledge_cooperation"
-	desc = "je_danubian_federation_observer_pledge_cooperation_desc"
-
-	visible = {
-		exists = c:AUS
-		c:AUS ?= overlord
-		has_variable = danubian_federation_receptive
-	}
-
-	ai_chance = {
-		value = 10
-	}
-
-	possible = {
-		"ROOT.relations(c:AUS)" >= 0
-		custom_tooltip = {
-			text = no_other_subject_signaling_support_tt
-			NOT = {
-				c:AUS ?= {
-					any_subject_or_below = {
-						has_variable = aus_federation_helping_var
-					}
-				}
-			}
-		}
-		custom_tooltip = {
-			text = not_already_used_this_interaction_tt
-			NOT = {
-				has_variable = aus_federation_sent_support
-			}
-		}
-		custom_tooltip = {
-			text = no_culture_disqualified_tt
-			NOT = {
-				any_primary_culture = {
-					is_danubian_culture = yes
-					save_temporary_scope_as = temp_primary_culture
-					c:AUS ?= {
-						any_in_list = {
-							variable = aus_disqualified_cultures
-							scope:temp_primary_culture ?= this
-						}
-					}
-				}
-			}
-		}
-	}
-
-	effect = {
-		set_variable = { name = aus_federation_helping_var days = 90 }
-		set_variable = aus_federation_sent_support
-		custom_tooltip = {
-			text = inform_vienna_tt
-			c:AUS ?= {
-				trigger_event = { id = austria_federation.15 }
-			}
-		}
-	}
-
-	selected = {
-		has_variable = aus_federation_sent_support
-	}
-
-	ai_chance = {
-		value = 5
-	}
-}
-
-REPLACE:je_danubian_federation_observer_reject_cooperation = {
-	name = "je_danubian_federation_observer_reject_cooperation"
-	desc = "je_danubian_federation_observer_reject_cooperation_desc"
-
-	visible = {
-		exists = c:AUS
-		c:AUS ?= overlord
-		has_variable = danubian_federation_opposed
-	}
-
-	ai_chance = {
-		value = 10
-	}
-
-	possible = {
-		"ROOT.relations(c:AUS)" <= 0
-		custom_tooltip = {
-			text = no_other_subject_signaling_opposition_tt
-			NOT = {
-				c:AUS ?= {
-					any_subject_or_below = {
-						has_variable = aus_federation_hating_var
-					}
-				}
-			}
-		}
-		custom_tooltip = {
-			text = not_already_used_this_interaction_tt
-			NOT = {
-				has_variable = aus_federation_sent_opposition
-			}
-		}
-	}
-
-	effect = {
-		set_variable = { name = aus_federation_hating_var days = 90 }
-		set_variable = aus_federation_sent_opposition
-		custom_tooltip = {
-			text = inform_vienna_that_no_tt
-			c:AUS ?= {
-				trigger_event = { id = austria_federation.16 }
-			}
-		}
-	}
-
-	selected = {
-		has_variable = aus_federation_sent_opposition
-	}
-
-	ai_chance = {
-		value = 5
-	}
-}
-
-REPLACE:je_standestaat_eliminate_parliament = {
-	name = "je_standestaat_eliminate_parliament"
-	desc = "je_standestaat_eliminate_parliament_desc"
-
-	visible = {
-		NOT = {
-			has_variable = fatherland_front_var
-		}
-	}
-
-	ai_chance = {
-		value = 10
-	}
-
-	possible = {
-		legitimacy >= 50
-		ruler.interest_group ?= {
-			is_in_government = yes
-			OR = {
-				custom_tooltip = {
-					text = has_corporatist_ideology_tt
-					has_ideology = ideology:ideology_corporatist
-				}
-				custom_tooltip = {
-					text = leader_has_corporatist_ideology_tt
-					leader = {
-						OR = {
-							has_ideology = ideology:ideology_fascist
-							has_ideology = ideology:ideology_integralist
-							has_ideology = ideology:ideology_corporatist_leader
-						}
-					}
-				}
-			}
-			custom_tooltip = {
-				text = is_fatherland_front_party_tt
-				party ?= {
-					OR = {
-						is_party_type = agrarian_party
-						is_party_type = conservative_party
-						is_party_type = fascist_party
-						is_party_type = military_party
-						is_party_type = religious_party
-					}
-				}
-			}
-		}
-		custom_tooltip = {
-			text = no_non_fatherland_front_party_in_government_tt
-			NOT = {
-				any_interest_group = {
-					is_in_government = yes
-					party ?= {
-						NOR = {
-							is_party_type = agrarian_party
-							is_party_type = conservative_party
-							is_party_type = fascist_party
-							is_party_type = military_party
-							is_party_type = religious_party
-						}
-					}
-				}
-			}
-		}
-	}
-
-	effect = {
-		set_variable = fatherland_front_var
-		ruler.interest_group.party ?= {
-			save_scope_as = relevant_party
-		}
-		if = {
-			limit = {
-				exists = ruler.interest_group.party
-			}
-			custom_tooltip = form_fatherland_front_tt
-		}
-		activate_law = law_type:law_single_party_state
-	}
-
-	selected = {
-
-	}
-
-	ai_chance = {
-		value = 5
-	}
-}
-
-# Imperial Yellow Kaiserforum
-REPLACE:je_kaiserforum_kaisergelb_button = {
-	name = je_kaiserforum_kaisergelb_button
-	desc = je_kaiserforum_kaisergelb_button_desc
-
-	visible = {
-
-	}
-
-	possible = {
-		custom_tooltip = {
-			text = kaiserforum_second_stage_tt
-			any_scope_building = {
-				is_building_type = building_kaiserforum_2
-				level > 0
-			}
-		}
-		custom_tooltip = {
-			text = not_already_used_this_interaction_tt
-			NOT = {
-				has_variable = je_kaiserforum_kaisergelb_button_happened
-			}
-		}
-	}
-
-	selected = {
-		has_variable = je_kaiserforum_kaisergelb_button_happened
-	}
-
-	effect = {
-		trigger_event = { id = kaiserforum.4 popup = yes }
-		set_variable = je_kaiserforum_kaisergelb_button_happened
-	}
-
-	ai_chance = {
-		value = 10
-	}
-}
-
-
-# ---- 05_hungary_buttons.txt ----
-# Hungarian Revolution
-
-REPLACE:hungarian_revolution_annex_transylvania_button = {
-	name = hungarian_revolution_annex_transylvania_button
-	desc = hungarian_revolution_annex_transylvania_button_desc
-
-	visible = {
-		exists = c:TRS
-		NOT = {
-			has_variable = hungarian_revolution_annex_transylvania_button_var
-		}
-	}
-
-	possible = {
-		OR = {
-			AND = {
-				c:TRS ?= {
-					relations:root >= relations_threshold:amicable
-				}
-				OR = {
-					AND = {
-						exists = c:AUS
-						OR = {
-							is_subject_of = c:AUS
-				#			is_diplomatic_play_enemy_of = c:AUS
-						}
-						c:TRS ?= {
-							is_subject_of = c:AUS
-						}
-						liberty_desire >= 75
-					}
-					AND = {
-						is_subject = no
-						c:TRS ?= {
-							is_subject = no
-						}
-					}
-				}
-			}
-			hidden_trigger = {
-				AND = {
-					is_player = no
-					exists = c:AUS
-					is_subject_of = c:AUS
-					c:TRS ?= {
-						is_subject_of = c:AUS
-					}
-					has_variable = hungarian_revolution_twelve_points_var
-				}
-			}
-		}
-		is_diplomatic_play_committed_participant = no
-		is_at_war = no
-	}
-
-	selected = {
-	}
-
-	effect = {
-		if = {
-			limit = {
-				is_subject_of = c:AUS
-				NOT = {
-					is_diplomatic_play_enemy_of = c:AUS
-				}
-			}
-			custom_tooltip = hungarian_revolution_twelve_points_tt
-			custom_tooltip = hungarian_revolution_austrian_ruler
-		}
-		s:STATE_NORTHERN_TRANSYLVANIA = {
-			add_claim = root
-		}
-		s:STATE_NORTHERN_TRANSYLVANIA = {
-			add_claim = root
-		}
-		c:TRS ?= {
-			trigger_event = { id = hungary_events.4 popup = yes }
-		}
-		set_variable = hungarian_revolution_annex_transylvania_button_var
-		if = {
-			limit = {
-				c:AUS ?= {
-					any_subject_or_below = {
-						c:TRS ?= this
-					}
-				}
-			}
-			root ?= {
-				change_relations = {
-					country = c:AUS
-					value = -40
-				}
-				create_diplomatic_catalyst = {
-					type = catalyst_event_negative
-					target = c:AUS
-				}
-			}
-			if = {
-				limit = {
-					c:AUS ?= {
-						any_subject_or_below = {
-							c:HUN ?= this
-						}
-					}
-				}
-				add_liberty_desire = 20
-			}
-		}
-		show_as_tooltip = {
-			custom_tooltip = {
-				text = if_trs_accepts_tt
-				annex = c:TRS
-			}
-		}
-	}
-
-	ai_chance = {
-		value = 10
-	}
-}
-
-REPLACE:hungarian_revolution_twelve_points_button = {
-	name = hungarian_revolution_twelve_points_button
-	desc = hungarian_revolution_twelve_points_button_desc
-
-	visible = {
-		NOT = {
-			has_variable = hungarian_revolution_twelve_points_var
-		}
-	}
-
-	possible = {
-		OR = {
-			hidden_trigger = {
-				AND = {
-					is_player = no
-					exists = c:AUS
-					is_subject_of = c:AUS
-					c:TRS ?= {
-						is_subject_of = c:AUS
-					}
-					c:AUS ?= {
-						has_journal_entry = je_springtime_of_the_peoples
-					}
-				}
-			}
-			AND = {
-				legitimacy >= 75
-				any_interest_group = {
-					is_in_government = yes
-					leader = {
-						has_ideology = ideology:ideology_radical
-					}
-				}
-			}
-		}
-	}
-
-	selected = {
-	}
-
-	effect = {
-		set_variable = hungarian_revolution_twelve_points_var
-		if = {
-			limit = {
-				is_subject_of = c:AUS
-				NOT = {
-					is_diplomatic_play_enemy_of = c:AUS
-				}
-			}
-			c:AUS ?= {
-				trigger_event = { id = hungary_events.9 popup = yes }
-			}
-			custom_tooltip = hungarian_revolution_twelve_points_tt
-			custom_tooltip = hungarian_revolution_austrian_ruler
-		}
-		if = {
-			limit = {
-				OR = {
-					has_law_or_variant = law_type:law_autocracy
-					has_law_or_variant = law_type:law_oligarchy
-				}
-			}
-			custom_tooltip = {
-				text = possible_hun_lawgroup_distribution_of_power_change_tt
-				activate_law = law_type:law_census_voting
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_law_or_variant = law_type:law_censorship
-				}
-			}
-			custom_tooltip = {
-				text = possible_hun_lawgroup_free_speech_change_tt
-				activate_law = law_type:law_protected_speech
-			}
-		}
-		if = {
-			limit = {
-				has_law_or_variant = law_type:law_serfdom
-			}
-			custom_tooltip = {
-				text = possible_hun_lawgroup_land_reform_change_tt
-				activate_law = law_type:law_tenant_farmers
-			}
-		}
-		if = {
-			limit = {
-				has_law_or_variant = law_type:law_state_religion
-			}
-			custom_tooltip = {
-				text = possible_hun_lawgroup_church_and_state_change_tt
-				activate_law = law_type:law_freedom_of_conscience
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_law = law_type:law_national_guard
-				}
-			}
-			custom_tooltip = {
-				text = possible_hun_lawgroup_internal_security_change_tt
-				activate_law = law_type:law_national_guard
-			}
-		}
-		if = {
-			limit = {
-				has_law_or_variant = law_type:law_land_based_taxation
-			}
-			custom_tooltip = {
-				text = possible_hun_lawgroup_taxation_change_tt
-				activate_law = law_type:law_per_capita_based_taxation
-			}
-		}
-		if = {
-			limit = {
-				has_law_or_variant = law_type:law_traditionalism
-			}
-			custom_tooltip = {
-				text = possible_hun_lawgroup_economic_system_change_tt
-				activate_law = law_type:law_interventionism
-			}
-		}
-		every_interest_group = {
-			limit = {
-				law_stance = {
-					law = law_type:law_census_voting
-					value > neutral
-				}
-				ig_counts_as_marginal = no
-			}
-			add_modifier = {
-				name = modifier_the_spirit_of_48
-				days = moderately_long_modifier_time
-				is_decaying = yes
-			}
-		}
-		add_modifier = {
-			name = modifier_revolutionary_fervor
-			days = short_modifier_time
-			is_decaying = yes
-		}
-	}
-	ai_chance = {
-		value = 10
-	}
-}
-
-REPLACE:hungarian_revolution_establish_honved_button = {
-	name = hungarian_revolution_establish_honved_button
-	desc = hungarian_revolution_establish_honved_button_desc
-
-	visible = {
-		NOT = {
-			has_variable = hungarian_revolution_establish_honved_var
-		}
-	}
-
-	possible = {
-		OR = {
-			AND = {
-				OR = {
-					has_law_or_variant = law_type:law_national_guard
-					has_law_or_variant = law_type:law_mass_conscription
-				}
-				OR = {
-					is_subject = no
-					is_subject_type = subject_type_personal_union
-				}
-				any_scope_state = {
-					has_decree = decree_enlistment_efforts
-					state_region = {
-						is_homeland = cu:hungarian
-					}
-					count >= 2
-				}
-				any_scope_character = {
-					has_role_of_type = general
-					count >= 4
-				}
-			}
-			hidden_trigger = {
-				is_player = no
-				is_diplomatic_play_enemy_of = c:AUS
-			}
-		}
-	}
-
-	selected = {
-	}
-
-	effect = {
-		set_variable = hungarian_revolution_establish_honved_var
-		trigger_event = { id = hungary_events.7 popup = yes }
-		custom_tooltip = possible_effects_hungary_events.7_tt
-		show_as_tooltip = {
-			add_fervor_target_modifier = { #changes target
-				culture = cu:hungarian
-				days = normal_modifier_time
-				multiplier = 5
-			}
-		}
-		show_as_tooltip = {
-			add_modifier = {
-				name = modifier_honved_mobilization_programme
-				days = normal_modifier_time
-				multiplier = money_amount_multiplier_large
-			}
-		}
-		custom_tooltip = choose_one_of_tt
-		show_as_tooltip = {
-			add_modifier = {
-				name = modifier_defenders_of_the_homeland
-				days = normal_modifier_time
-			}
-			add_modifier = {
-				name = modifier_autumn_campaign
-				days = normal_modifier_time
-			}
-		}
-		custom_tooltip = {
-			text = every_state_with_enlistment_decree_get_modifier
-		}
-		show_as_tooltip = {
-			capital = {
-				add_modifier = {
-					name = modifier_mustering_the_honved
-					days = normal_modifier_time
-				}
-			}
-		}
-	}
-
-	ai_chance = {
-		value = 10
-	}
-}
-
-
-# ---- 05_struggle_for_the_highveld_buttons.txt ----
-# Struggle for the Highveld buttons
-
-REPLACE:saf_highveld_add_boer_as_primary_button = {
-	name = saf_highveld_add_boer_as_primary_button
-	desc = saf_highveld_add_boer_as_primary_button_desc
-
-	visible = {
-		c:SAF ?= this
-		NOR = {
-			country_has_primary_culture = cu:boer
-			country_has_primary_culture = cu:griqua
-		}
-	}
-
-	possible = {
-		# Cape Colony must adopt discriminatory laws as discriminatory as the most discriminatory Boer state, or if no Boer state exists then Cape Colony must fully accept Boer culture already.
-		trigger_if = {
-			limit = {
-				OR = {
-					exists = c:ORA
-					exists = c:TRN
-					exists = c:NAL
-				}
-			}
-			trigger_if = {
-				limit = {
-					OR = {
-						c:ORA ?= {
-							has_law_or_variant = law_type:law_ethnostate
-						}
-						c:TRN ?= {
-							has_law_or_variant = law_type:law_ethnostate
-						}
-						c:NAL ?= {
-							has_law_or_variant = law_type:law_ethnostate
-						}
-					}
-				}
-				has_law_or_variant = law_type:law_ethnostate
-			}
-			trigger_else_if = {
-				limit = {
-					OR = {
-						c:ORA ?= {
-							has_law_or_variant = law_type:law_national_supremacy
-						}
-						c:TRN ?= {
-							has_law_or_variant = law_type:law_national_supremacy
-						}
-						c:NAL ?= {
-							has_law_or_variant = law_type:law_national_supremacy
-						}
-					}
-				}
-				OR = {
-					has_law_or_variant = law_type:law_ethnostate
-					has_law_or_variant = law_type:law_national_supremacy
-				}
-			}
-			trigger_else_if = {
-				limit = {
-					OR = {
-						c:ORA ?= {
-							OR = {
-								has_law_or_variant = law_type:law_racial_segregation
-								has_law_or_variant = law_type:law_subjecthood
-							}
-						}
-						c:TRN ?= {
-							OR = {
-								has_law_or_variant = law_type:law_racial_segregation
-								has_law_or_variant = law_type:law_subjecthood
-							}
-						}
-						c:NAL ?= {
-							OR = {
-								has_law_or_variant = law_type:law_racial_segregation
-								has_law_or_variant = law_type:law_subjecthood
-							}
-						}
-					}
-				}
-				OR = {
-					has_law_or_variant = law_type:law_ethnostate
-					has_law_or_variant = law_type:law_national_supremacy
-					has_law_or_variant = law_type:law_racial_segregation
-					has_law_or_variant = law_type:law_subjecthood
-				}
-			}
-			trigger_else_if = {
-				limit = {
-					OR = {
-						c:ORA ?= {
-							has_law_or_variant = law_type:law_cultural_exclusion
-						}
-						c:TRN ?= {
-							has_law_or_variant = law_type:law_cultural_exclusion
-						}
-						c:NAL ?= {
-							has_law_or_variant = law_type:law_cultural_exclusion
-						}
-					}
-				}
-				OR = {
-					has_law_or_variant = law_type:law_ethnostate
-					has_law_or_variant = law_type:law_national_supremacy
-					has_law_or_variant = law_type:law_racial_segregation
-					has_law_or_variant = law_type:law_subjecthood
-					has_law_or_variant = law_type:law_cultural_exclusion
-				}
-			}
-			trigger_else_if = {
-				limit = {
-					OR = {
-						c:ORA ?= {
-							has_law_or_variant = law_type:law_multicultural
-						}
-						c:TRN ?= {
-							has_law_or_variant = law_type:law_multicultural
-						}
-						c:NAL ?= {
-							has_law_or_variant = law_type:law_multicultural
-						}
-					}
-				}
-				OR = {
-					has_law_or_variant = law_type:law_ethnostate
-					has_law_or_variant = law_type:law_national_supremacy
-					has_law_or_variant = law_type:law_racial_segregation
-					has_law_or_variant = law_type:law_subjecthood
-					has_law_or_variant = law_type:law_cultural_exclusion
-					has_law_or_variant = law_type:law_multicultural
-				}
-			}
-		}
-		trigger_else = {
-			country_average_cultural_acceptance = {
-				target = cu:boer
-				value > acceptance_status_4
-			}
-		}
-	}
-
-	selected = {
-	}
-
-	effect = {
-		add_primary_culture = cu:boer
-		custom_tooltip = saf_struggle_for_the_highveld_boer_confederation_tt
-
-		every_country = {
-			limit = {
-				NOT = {
-					ROOT = this
-					is_country_type = decentralized
-				}
-				country_has_primary_culture = cu:griqua
-			}
-			change_relations = {
-				country = ROOT
-				value = -30
-			}
-		}
-	}
-
-	ai_chance = {
-		value = 1
-	}
-}
-
-REPLACE:saf_highveld_add_griqua_as_primary_button = {
-	name = saf_highveld_add_griqua_as_primary_button
-	desc = saf_highveld_add_griqua_as_primary_button_desc
-
-	visible = {
-		c:SAF ?= this
-		NOR = {
-			country_has_primary_culture = cu:boer
-			country_has_primary_culture = cu:griqua
-		}
-	}
-
-	possible = {
-		country_average_cultural_acceptance = {
-			target = cu:griqua
-			value >= acceptance_status_3
-		}
-	}
-
-	selected = {
-	}
-
-	effect = {
-		add_primary_culture = cu:griqua
-		custom_tooltip = saf_struggle_for_the_highveld_griqua_confederation_tt
-
-		every_country = {
-			limit = {
-				NOT = {
-					ROOT = this
-					is_country_type = decentralized
-				}
-				country_has_primary_culture = cu:boer
-			}
-			change_relations = {
-				country = ROOT
-				value = -30
-			}
-		}
-	}
-
-	ai_chance = {
-		value = 1
-	}
-}
-
-REPLACE:highveld_offer_boer_confederation_button = {
-	name = highveld_offer_boer_confederation_button
-	desc = highveld_offer_boer_confederation_button_desc
-
-	visible = {
-		country_has_primary_culture = cu:boer
-		any_country = {
-			capital = {
-				OR = {
-					state_region = s:STATE_CAPE_COLONY
-					state_region = s:STATE_CAPE_COLONY
-					state_region = s:STATE_CAPE_COLONY
-					state_region = s:STATE_TRANSVAAL
-					state_region = s:STATE_TRANSVAAL
-					state_region = s:STATE_TRANSVAAL
-				}
-			}
-			is_adjacent_to_country = ROOT
-			country_has_primary_culture = cu:boer
-		}
-	}
-
-	possible = {
-		is_at_war = no
-		has_technology_researched = nationalism
-
-		custom_tooltip = {
-			text = highveld_offer_boer_confederation_tt
-
-			any_country = {
-				capital = {
-					OR = {
-						state_region = s:STATE_CAPE_COLONY
-						state_region = s:STATE_CAPE_COLONY
-						state_region = s:STATE_CAPE_COLONY
-						state_region = s:STATE_TRANSVAAL
-						state_region = s:STATE_TRANSVAAL
-						state_region = s:STATE_TRANSVAAL
-					}
-				}
-				is_at_war = no
-				is_player = no
-				is_adjacent_to_country = ROOT
-				country_has_primary_culture = cu:boer
-				this.gdp < ROOT.gdp
-				relations:ROOT >= relations_threshold:amicable
-				OR = {
-					is_subject = no
-					is_subject_of = ROOT
-					AND = {
-						ROOT = { is_subject = yes }
-						is_subject_of = ROOT.top_overlord
-					}
-				}
-			}
-		}
-	}
-
-	selected = {
-	}
-
-	effect = {
-		ordered_country = {
-			limit = {
-				capital = {
-					OR = {
-						state_region = s:STATE_CAPE_COLONY
-						state_region = s:STATE_CAPE_COLONY
-						state_region = s:STATE_CAPE_COLONY
-						state_region = s:STATE_TRANSVAAL
-						state_region = s:STATE_TRANSVAAL
-						state_region = s:STATE_TRANSVAAL
-					}
-				}
-				is_at_war = no
-				is_player = no
-				is_adjacent_to_country = ROOT
-				country_has_primary_culture = cu:boer
-				this.gdp < ROOT.gdp
-				relations:ROOT >= relations_threshold:amicable
-				OR = {
-					is_subject = no
-					is_subject_of = ROOT
-					AND = {
-						ROOT = { is_subject = yes }
-						is_subject_of = ROOT.top_overlord
-					}
-				}
-			}
-			order_by = gdp
-			save_temporary_scope_as = boer_state_to_annex
-		}
-		if = {
-			limit = { exists = scope:boer_state_to_annex }
-			annex = scope:boer_state_to_annex
-		}
-		else = {
-			custom_tooltip = highveld_offer_boer_confederation_effect_tt
-		}
-	}
-
-	ai_chance = {
-		value = 1
-
-		# South Africa is less gung-ho for confederation
-		if = {
-			limit = {
-				any_primary_culture = {
-					NOT = { cu:boer = this }
-				}
-			}
-			subtract = 1
-		}
-
-		if = {
-			limit = {
-				ruler = {
-					OR = {
-						has_trait = cautious
-						has_trait = inept
-						has_trait = tactful
-						has_trait = reserved
-						has_ideology = ideology:ideology_traditionalist
-					}
-				}
-			}
-			subtract = 1
-		}
-
-		if = {
-			limit = {
-				has_technology_researched = pan-nationalism
-			}
-			add = 5
-		}
-	}
-}
-
-REPLACE:highveld_offer_griqua_confederation_button = {
-	name = highveld_offer_griqua_confederation_button
-	desc = highveld_offer_griqua_confederation_button_desc
-
-	visible = {
-		country_has_primary_culture = cu:griqua
-		any_country = {
-			capital = {
-				OR = {
-					state_region = s:STATE_CAPE_COLONY
-					state_region = s:STATE_CAPE_COLONY
-					state_region = s:STATE_CAPE_COLONY
-					state_region = s:STATE_TRANSVAAL
-					state_region = s:STATE_TRANSVAAL
-					state_region = s:STATE_TRANSVAAL
-				}
-			}
-			is_adjacent_to_country = root
-			country_has_primary_culture = cu:griqua
-		}
-	}
-
-	possible = {
-		is_at_war = no
-		has_technology_researched = nationalism
-
-		custom_tooltip = {
-			text = highveld_offer_griqua_confederation_tt
-
-			any_country = {
-				capital = {
-					OR = {
-						state_region = s:STATE_CAPE_COLONY
-						state_region = s:STATE_CAPE_COLONY
-						state_region = s:STATE_CAPE_COLONY
-						state_region = s:STATE_TRANSVAAL
-						state_region = s:STATE_TRANSVAAL
-						state_region = s:STATE_TRANSVAAL
-					}
-				}
-				is_at_war = no
-				is_adjacent_to_country = ROOT
-				country_has_primary_culture = cu:griqua
-				this.gdp < ROOT.gdp
-				relations:ROOT >= relations_threshold:amicable
-				OR = {
-					is_subject = no
-					is_subject_of = ROOT
-					AND = {
-						ROOT = { is_subject = yes }
-						is_subject_of = ROOT.top_overlord
-					}
-				}
-			}
-		}
-	}
-
-	selected = {
-	}
-
-	effect = {
-		ordered_country = {
-			limit = {
-				capital = {
-					OR = {
-						state_region = s:STATE_CAPE_COLONY
-						state_region = s:STATE_CAPE_COLONY
-						state_region = s:STATE_CAPE_COLONY
-						state_region = s:STATE_TRANSVAAL
-						state_region = s:STATE_TRANSVAAL
-						state_region = s:STATE_TRANSVAAL
-					}
-				}
-				is_at_war = no
-				is_adjacent_to_country = ROOT
-				country_has_primary_culture = cu:griqua
-				this.gdp < ROOT.gdp
-				relations:ROOT >= relations_threshold:amicable
-				OR = {
-					is_subject = no
-					is_subject_of = ROOT
-					AND = {
-						ROOT = { is_subject = yes }
-						is_subject_of = ROOT.top_overlord
-					}
-				}
-			}
-			order_by = gdp
-			save_temporary_scope_as = griqua_state_to_annex
-		}
-		if = {
-			limit = { exists = scope:griqua_state_to_annex }
-			annex = scope:griqua_state_to_annex
-		}
-		else = {
-			custom_tooltip = highveld_offer_griqua_confederation_effect_tt
-		}
-	}
-
-	ai_chance = {
-		value = 1
-
-		# South Africa is less gung-ho for confederation
-		if = {
-			limit = {
-				any_primary_culture = {
-					NOT = { cu:griqua = this }
-				}
-			}
-			subtract = 1
-		}
-
-		if = {
-			limit = {
-				ruler = {
-					OR = {
-						has_trait = cautious
-						has_trait = inept
-						has_trait = tactful
-						has_trait = reserved
-						has_ideology = ideology:ideology_traditionalist
-					}
-				}
-			}
-			subtract = 1
-		}
-
-		if = {
-			limit = {
-				has_technology_researched = pan-nationalism
-			}
-			add = 5
-		}
-	}
-}
-
-
-# ---- 06_philippines_buttons.txt ----
-# For je_philippines_main
-
-# Ilustrados Button
-REPLACE:je_philippines_main_ilustrado_button = {
-	name = je_philippines_main_ilustrado_button
-	desc = je_philippines_main_ilustrado_button_desc
-
-	visible = {
-		NOT = {
-			has_variable = je_philippines_main_ilustrado_button_happened
-		}
-	}
-
-	possible = {
-		custom_tooltip = {
-			text = je_philippines_development_complete
-			has_variable = phi_dev_done
-		}
-        AND = {
-            OR = {
-                has_law_or_variant = law_type:law_freedom_of_conscience
-                has_law_or_variant = law_type:law_total_separation
-            }
-            OR = {
-                has_law_or_variant = law_type:law_right_of_assembly
-                has_law_or_variant = law_type:law_protected_speech
-            }
-            NOT = {
-                has_law_or_variant = law_type:law_no_schools
-            }
-        }
-        ig:ig_intelligentsia ?= {
-            ig_counts_as_marginal = no
-        }
-	}
-
-	selected = {
-		has_variable = je_philippines_main_ilustrado_button_happened
-	}
-
-	effect = {
-		trigger_event = {
-				id = philippines.5
-				days = 0
-				popup = yes
-		}
-		set_variable = je_philippines_main_ilustrado_button_happened
-	}
-
-	ai_chance = {
-		value = 10
-	}
-}
-
-# Mindanao Colonization Button
-REPLACE:je_filipino_ethnogenesis_colonization_button = {
-	name = je_filipino_ethnogenesis_colonization_button
-	desc = je_filipino_ethnogenesis_colonization_button_desc
-
-	visible = {
-		s:STATE_LUZON = {
-			any_scope_state = {
-				owner = {
-					is_country_type = decentralized
-				}
-			}
-		}
-		NOT = {
-			has_variable = je_filipino_ethnogenesis_colonization_button_var
-		}
-	}
-
-	possible = {
-		s:STATE_LUZON = {
-			any_scope_state = {
-				owner = {
-					is_country_type = decentralized
-				}
-			}
-			any_scope_state = {
-				owner = root
-				has_decree = decree_greener_grass_campaign
-			}
-		}
-	}
-
-	effect = {
-		set_variable = je_filipino_ethnogenesis_colonization_button_var
-		if = {
-			limit = {
-				has_law_or_variant = law_type:law_no_colonial_affairs
-			}
-			activate_law = law_type:law_frontier_colonization
-		}
-		random_scope_state = {
-			limit = {
-				state_region = s:STATE_LUZON
-			}
-			add_modifier = {
-				name = modifier_integrating_the_highlands
-				days = long_modifier_time
-			}
-		}
-		add_modifier = {
-			name = modifier_settling_the_highlands_cost
-			days = long_modifier_time
-			multiplier = money_amount_multiplier_small
-		}
-	}
-
-	ai_chance = {
-		value = 10
-	}
-}
-
-
-# ---- acre_dispute_button.txt ----
-REPLACE:acre_dispute_button = {
-	name = "acre_dispute_button"
-	desc = "acre_dispute_button_desc"
-
-	visible = {
-		has_dlc_feature = rp1_content
-		s:STATE_AMAZONAS = {
-			any_scope_state = {
-				owner = ROOT
-			}
-		}
-		NOR = {
-			country_or_subject_owns_entire_state_region = STATE_AMAZONAS
-			has_global_variable = acre_dispute_button_global_var
-		}
-	}
-
-	possible = {
-		country_or_subject_owns_entire_state_region = STATE_AMAZONAS
-		any_country = {
-			owns_entire_state_region = STATE_AMAZONAS
-		}
-	}
-
-	effect = {
-		trigger_event = { id = acre_dispute.1 popup = yes }
-		show_as_tooltip = {
-			s:STATE_AMAZONAS = {
-				add_claim = ROOT
-			}
-			random_country = {
-				limit = {
-					owns_entire_state_region = STATE_AMAZONAS
-				}
-				change_relations = {
-					country = ROOT
-					value = -50
-				}
-			}
-			add_journal_entry = { type = je_acre_dispute }
-		}
-		set_global_variable = acre_dispute_button_global_var
-	}
-
-	ai_chance = {
-		value = 20
-		if = {
-			limit = {
-				OR = {
-					is_at_war = yes
-					in_default = yes
-				}
-			}
-			add = -100
 		}
 	}
 }

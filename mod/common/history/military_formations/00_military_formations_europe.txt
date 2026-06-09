@@ -625,7 +625,7 @@
 			}
 			combat_unit = { # IR 61
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_NORTHERN_TRANSYLVANIA
+				state_region = s:STATE_BEKES
 				count = 2
 			}
 
@@ -633,7 +633,7 @@
 
 			combat_unit = { # 12. Deutsch-Banater, 13. Wallachisch-Illirisch
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_NORTHERN_TRANSYLVANIA
+				state_region = s:STATE_BEKES
 				count = 4
 			}
 
@@ -781,13 +781,13 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_AQUITAINE
+				state_region = s:STATE_LANGUEDOC
 				count = 25
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_PROVENCE
+				state_region = s:STATE_LANGUEDOC
 				count = 15
 			}
 
@@ -824,25 +824,25 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_BADEN
+				state_region = s:STATE_ALSACE_LORRAINE
 				count = 15
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_BURGUNDY
+				state_region = s:STATE_ILE_DE_FRANCE
 				count = 10
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_lancers
-				state_region = s:STATE_BURGUNDY
+				state_region = s:STATE_CHAMPAGNE
 				count = 5
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_BURGUNDY
+				state_region = s:STATE_CHAMPAGNE
 				count = 10
 			}
 			save_scope_as = thirdcorpfra
@@ -884,19 +884,19 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_BURGUNDY
+				state_region = s:STATE_CHAMPAGNE
 				count = 15
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_ILE_DE_FRANCE
+				state_region = s:STATE_NORMANDY
 				count = 10
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_lancers
-				state_region = s:STATE_BURGUNDY
+				state_region = s:STATE_CHAMPAGNE
 				count = 5
 			}
 
@@ -1017,31 +1017,31 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_lancers
-				state_region = s:STATE_YORKSHIRE
+				state_region = s:STATE_LANCASHIRE
 				count = 2
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_YORKSHIRE
+				state_region = s:STATE_LANCASHIRE
 				count = 3
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_MIDLANDS
+				state_region = s:STATE_YORKSHIRE
 				count = 3
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_dragoons
-				state_region = s:STATE_MIDLANDS
+				state_region = s:STATE_YORKSHIRE
 				count = 2
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_cuirassiers
-				state_region = s:STATE_MIDLANDS
+				state_region = s:STATE_YORKSHIRE
 				count = 1
 			}
 
@@ -1146,13 +1146,13 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_MIDLANDS
+				state_region = s:STATE_LANCASHIRE
 				count = 10
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_YORKSHIRE
+				state_region = s:STATE_LANCASHIRE
 				count = 9
 			}
 
@@ -1192,7 +1192,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_YORKSHIRE
+				state_region = s:STATE_LANCASHIRE
 				count = 5
 			}
 
@@ -1246,7 +1246,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_dragoons
-				state_region = s:STATE_MIDLANDS
+				state_region = s:STATE_YORKSHIRE
 				count = 1
 			}
 			save_scope_as = army_india_army
@@ -1297,7 +1297,7 @@
 
 		create_military_formation = {
 			type = fleet
-			hq_region = sr:region_canada
+			hq_region = sr:region_atlantic_coast
 			name = North_America_and_West_Indies_Station
 
 			ship = {

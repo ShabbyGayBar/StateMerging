@@ -305,7 +305,7 @@ assign_state_name_region_punjab = {
     if = {
         limit = {
             state_region = {
-                s:STATE_HILL_PUNJAB ?= this
+                s:STATE_DELHI ?= this
             }
         }
         STATE_HILL_PUNJAB_state_name_assign = yes

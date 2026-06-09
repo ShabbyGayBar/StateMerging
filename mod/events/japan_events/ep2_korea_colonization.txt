@@ -31,7 +31,7 @@ korea_colonization.2 = {
 		NOT = { # checks if c:JAP still owns all five states
 			any_scope_state = {
 				is_in_geographic_region = geographic_region_korea
-				count >= 2
+				count >= 5
 			}
 		}
 	}

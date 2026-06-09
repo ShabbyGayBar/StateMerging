@@ -19,7 +19,7 @@
 REPLACE:UBD = {
 	states = { STATE_VILNIUS STATE_VILNIUS STATE_TALINN STATE_TALINN STATE_RIGA STATE_RIGA }
 
-	required_num_states = 1
+	required_num_states = 3
 
 	ai_will_do = { always = no }
 
@@ -40,7 +40,7 @@ REPLACE:UBD = {
 REPLACE:AUS = {
 	use_culture_states = yes
 
-	required_num_states = 1
+	required_num_states = 2
 
 	ai_will_do = { always = no }
 }
@@ -48,7 +48,7 @@ REPLACE:AUS = {
 REPLACE:IRE = {
 	use_culture_states = yes
 
-	required_num_states = 1
+	required_num_states = 2
 
 	ai_will_do = { always = no }
 }
@@ -108,7 +108,7 @@ REPLACE:SCO = {
 
 REPLACE:WLS = {
 	states = {
-		STATE_MIDLANDS
+		STATE_LANCASHIRE
 	}
 
 	ai_will_do = { always = no }
@@ -125,14 +125,14 @@ REPLACE:ULS = {
 REPLACE:ENG = {
 	states = {
 		STATE_HOME_COUNTIES
-		STATE_MIDLANDS
+		STATE_YORKSHIRE
 		STATE_HOME_COUNTIES
 		STATE_HOME_COUNTIES
 		STATE_YORKSHIRE
-		STATE_YORKSHIRE
+		STATE_LANCASHIRE
 	}
 
-	required_num_states = 1
+	required_num_states = 3
 
 	ai_will_do = { always = no }
 }
@@ -163,7 +163,7 @@ REPLACE:SWE = {
 		STATE_SVEALAND
 	}
 
-	required_num_states = 1
+	required_num_states = 2
 
 	ai_will_do = { always = no }
 }
@@ -177,7 +177,7 @@ REPLACE:FIN = {
 		STATE_UUSIMAA
 	}
 
-	required_num_states = 1
+	required_num_states = 2
 
 	ai_will_do = { always = no }
 }
@@ -185,7 +185,7 @@ REPLACE:FIN = {
 REPLACE:NOR = {
 	use_culture_states = yes
 
-	required_num_states = 1
+	required_num_states = 2
 
 	ai_will_do = { always = no }
 }
@@ -193,7 +193,7 @@ REPLACE:NOR = {
 REPLACE:DEN = {
 	use_culture_states = yes
 
-	required_num_states = 1
+	required_num_states = 2
 
 	ai_will_do = { always = no }
 }
@@ -207,7 +207,7 @@ REPLACE:ICL = {
 REPLACE:CSA = {
 	use_culture_states = yes
 
-	required_num_states = 1
+	required_num_states = 5
 
 	ai_will_do = { always = no }
 
@@ -248,7 +248,7 @@ REPLACE:AGJ = {
 		STATE_PERNAMBUCO
 	}
 
-	required_num_states = 1
+	required_num_states = 2
 
 	ai_will_do = { always = no }
 }
@@ -307,23 +307,23 @@ REPLACE:FRA = {
 	states = {
 		STATE_ILE_DE_FRANCE
 		STATE_PROVENCE
-		STATE_ILE_DE_FRANCE
-		STATE_PROVENCE
+		STATE_NORMANDY
+		STATE_LANGUEDOC
 		STATE_PROVENCE
 		STATE_FLANDERS
+		STATE_NORMANDY
+		STATE_ALSACE_LORRAINE
+		STATE_POITOU
+		STATE_AQUITAINE
+		STATE_LANGUEDOC
+		STATE_BRITTANY
 		STATE_ILE_DE_FRANCE
-		STATE_BADEN
-		STATE_BRITTANY
-		STATE_AQUITAINE
-		STATE_AQUITAINE
-		STATE_BRITTANY
-		STATE_BURGUNDY
-		STATE_BURGUNDY
-		STATE_BURGUNDY
-		STATE_BURGUNDY
+		STATE_CHAMPAGNE
+		STATE_CHAMPAGNE
+		STATE_CHAMPAGNE
 		STATE_AQUITAINE
 		STATE_ILE_DE_FRANCE
-		STATE_BRITTANY
+		STATE_POITOU
 	}
 
 	ai_will_do = { always = no }
@@ -348,7 +348,7 @@ REPLACE:JAN = {
 REPLACE:POL = {
 	states = { STATE_GREATER_POLAND STATE_GREATER_POLAND STATE_WEST_GALICIA STATE_WEST_GALICIA STATE_WEST_PRUSSIA STATE_WEST_PRUSSIA STATE_UPPER_SILESIA }
 
-	required_num_states = 1
+	required_num_states = 3
 
 	ai_will_do = { always = no }
 }
@@ -356,7 +356,7 @@ REPLACE:POL = {
 REPLACE:UKR = {
 	states = { STATE_EAST_GALICIA STATE_KIEV STATE_EAST_GALICIA STATE_KIEV STATE_CRIMEA STATE_KHARKOV STATE_CRIMEA STATE_KHARKOV }
 
-	required_num_states = 1
+	required_num_states = 3
 
 	ai_will_do = { always = no }
 }
@@ -364,7 +364,7 @@ REPLACE:UKR = {
 REPLACE:GAL = {
 	states = { STATE_EAST_GALICIA STATE_WEST_GALICIA STATE_MOLDAVIA }
 
-	required_num_states = 1
+	required_num_states = 2
 
 	ai_will_do = { always = no }
 }
@@ -372,7 +372,7 @@ REPLACE:GAL = {
 REPLACE:HUN = {
 	use_culture_states = yes
 
-	required_num_states = 1
+	required_num_states = 2
 
 	ai_will_do = { always = no }
 }
@@ -380,7 +380,7 @@ REPLACE:HUN = {
 REPLACE:ROM = {
 	use_culture_states = yes
 
-	required_num_states = 1
+	required_num_states = 3
 
 	ai_will_do = { always = no }
 }
@@ -388,7 +388,7 @@ REPLACE:ROM = {
 REPLACE:BOH = {
 	states = { STATE_BOHEMIA STATE_BOHEMIA STATE_UPPER_SILESIA }
 
-	required_num_states = 1
+	required_num_states = 2
 
 	ai_will_do = { always = no }
 }
@@ -399,7 +399,7 @@ REPLACE:CRO = {
 		STATE_CROATIA
 		STATE_CROATIA
 	}
-	required_num_states = 1
+	required_num_states = 2
 
 	ai_will_do = { always = no }
 }
@@ -426,7 +426,7 @@ REPLACE:LOM = {
 REPLACE:BYE = {
 	use_culture_states = yes
 
-	required_num_states = 1
+	required_num_states = 2
 
 	ai_will_do = { always = no }
 }
@@ -468,7 +468,7 @@ REPLACE:WES = {
 		STATE_RHINELAND
 	}
 
-	required_num_states = 1
+	required_num_states = 2
 
 	ai_will_do = { always = no }
 }
@@ -484,7 +484,7 @@ REPLACE:PRU = {
 		STATE_WEST_PRUSSIA
 	}
 
-	required_num_states = 2
+	required_num_states = 3
 
 	ai_will_do = { always = no }
 }
@@ -492,7 +492,7 @@ REPLACE:PRU = {
 REPLACE:JAP = {
 	use_culture_states = yes
 
-	required_num_states = 2
+	required_num_states = 3
 
 	ai_will_do = { always = no }
 }
@@ -500,7 +500,7 @@ REPLACE:JAP = {
 REPLACE:RUS = {
 	use_culture_states = yes
 
-	required_num_states = 3
+	required_num_states = 5
 
 	ai_will_do = { always = no }
 }
@@ -579,7 +579,7 @@ REPLACE:MCH = {
 }
 
 REPLACE:XIN = {
-	states = { STATE_DZUNGARIA STATE_TIANSHAN STATE_SEMIRECHE }
+	states = { STATE_DZUNGARIA STATE_DZUNGARIA STATE_SEMIRECHE }
 
 	ai_will_do = { always = no }
 }
@@ -599,7 +599,7 @@ REPLACE:DOM = {
 REPLACE:ATL = {
 	states = { STATE_WESTERN_CUBA STATE_WESTERN_CUBA STATE_WESTERN_CUBA STATE_WEST_INDIES STATE_HAITI }
 
-	required_num_states = 1
+	required_num_states = 4
 
 	ai_will_do = { always = no }
 }
@@ -610,7 +610,7 @@ REPLACE:WIN = {
 		STATE_WEST_INDIES
 	}
 
-	required_num_states = 1
+	required_num_states = 2
 
 	ai_will_do = { always = no }
 }
@@ -624,7 +624,7 @@ REPLACE:MAY = {
 REPLACE:CAT = {
 	use_culture_states = yes
 
-	required_num_states = 1
+	required_num_states = 2
 
 	ai_will_do = { always = no }
 }
@@ -632,7 +632,7 @@ REPLACE:CAT = {
 REPLACE:SPA = {
 	use_culture_states = yes
 
-	required_num_states = 1
+	required_num_states = 2
 
 	ai_will_do = { always = no }
 }
@@ -731,7 +731,7 @@ REPLACE:PHI = {
 		STATE_LUZON
 		STATE_LUZON
 	}
-	required_num_states = 1
+	required_num_states = 2
 	ai_will_do = { always = no }
 }
 
@@ -779,7 +779,7 @@ REPLACE:CAS = {
 REPLACE:CAN = {
 	use_culture_states = yes
 
-	required_num_states = 1
+	required_num_states = 4
 
 	ai_will_do = { always = no }
 }
@@ -954,7 +954,7 @@ REPLACE:SMI = {
 REPLACE:GBR = {
 	use_culture_states = yes
 
-	required_num_states = 3
+	required_num_states = 6
 
 	ai_will_do = { always = no }
 }
@@ -1249,9 +1249,9 @@ REPLACE:ALD = {
 REPLACE:YUG = {
 	states = {
 		STATE_WESTERN_SERBIA
-		STATE_WESTERN_SERBIA
-		STATE_WESTERN_SERBIA
-		STATE_WESTERN_SERBIA
+		STATE_EASTERN_SERBIA
+		STATE_EASTERN_SERBIA
+		STATE_EASTERN_SERBIA
 		STATE_WESTERN_SERBIA
 		STATE_WESTERN_SERBIA
 		STATE_CROATIA
@@ -1262,7 +1262,7 @@ REPLACE:YUG = {
 		STATE_CROATIA
 	}
 
-	required_num_states = 1
+	required_num_states = 3
 
 	possible = {
 		# Checks if the technology is researched by the war goal holder (if any) or by the releasing country
@@ -1296,7 +1296,7 @@ REPLACE:CLM = {
 		STATE_CAUCA
 	}
 
-	required_num_states = 1
+	required_num_states = 3
 
 	ai_will_do = { always = no }
 }
@@ -1304,7 +1304,7 @@ REPLACE:CLM = {
 REPLACE:TUR = {
 	use_culture_states = yes
 
-	required_num_states = 2
+	required_num_states = 5
 
 	ai_will_do = { always = no }
 }
@@ -1320,7 +1320,7 @@ REPLACE:DZG = {
 REPLACE:EGY = {
 	use_culture_states = yes
 
-	required_num_states = 1
+	required_num_states = 3
 
 	ai_will_do = { always = no }
 }
@@ -1329,7 +1329,7 @@ REPLACE:CZH = {
 
 	ai_will_do = { always = no }
 
-	required_num_states = 1
+	required_num_states = 3
 
 	possible = {
 		# Checks if the technology is researched by the war goal holder (if any) or by the releasing country
@@ -1369,7 +1369,7 @@ REPLACE:SIC = {
 
 REPLACE:UCA = {
 	use_culture_states = yes
-	required_num_states = 1
+	required_num_states = 3
 
 	ai_will_do = { always = no }
 }
@@ -1489,7 +1489,7 @@ REPLACE:SIB = {
 		STATE_URAL
 	}
 
-	required_num_states = 2
+	required_num_states = 4
 
 	ai_will_do = { always = no }
 
@@ -1530,7 +1530,7 @@ REPLACE:CAL = {
 REPLACE:USA = {
 	use_culture_states = yes
 
-	required_num_states = 5
+	required_num_states = 10
 
 	ai_will_do = { always = no }
 }
@@ -1538,7 +1538,7 @@ REPLACE:USA = {
 REPLACE:BEL = {
 	use_culture_states = yes
 
-	required_num_states = 1
+	required_num_states = 2
 
 	ai_will_do = { always = no }
 }
@@ -1653,7 +1653,7 @@ REPLACE:SAR = {
 		STATE_SARDINIA
 		STATE_PROVENCE
 	}
-	required_num_states = 1
+	required_num_states = 2
 
 	ai_will_do = { always = no }
 }
@@ -1681,7 +1681,7 @@ REPLACE:SWI = {
 REPLACE:GRE = {
 	use_culture_states = yes
 
-	required_num_states = 1
+	required_num_states = 2
 
 	ai_will_do = { always = no }
 }
@@ -1708,8 +1708,8 @@ REPLACE:MON = {
 REPLACE:SER = {
 	states = {
 		STATE_WESTERN_SERBIA
-		STATE_WESTERN_SERBIA
-		STATE_WESTERN_SERBIA
+		STATE_EASTERN_SERBIA
+		STATE_EASTERN_SERBIA
 		STATE_WESTERN_SERBIA
 	}
 	ai_will_do = { always = no }
@@ -1729,7 +1729,7 @@ REPLACE:AFG = {
 		STATE_KABUL
 		STATE_HERAT
 	}
-	required_num_states = 1
+	required_num_states = 4
 	ai_will_do = { always = no }
 
 	possible = {
@@ -1792,7 +1792,7 @@ REPLACE:OMA = {
 
 REPLACE:PER = {
 	use_culture_states = yes
-	required_num_states = 2
+	required_num_states = 4
 	ai_will_do = { always = no }
 }
 
@@ -2075,7 +2075,7 @@ REPLACE:CHL = {
 REPLACE:ECU = {
 	states = {
 		STATE_ECUADOR
-		STATE_AMAZONAS
+		STATE_LIMA
 	}
 	ai_will_do = { always = no }
 }
@@ -2087,7 +2087,7 @@ REPLACE:PEU = {
 		STATE_ICA
 		STATE_ICA
 		STATE_ANTOFAGASTA
-		STATE_AMAZONAS
+		STATE_LIMA
 	}
 	ai_will_do = { always = no }
 }
@@ -2494,7 +2494,7 @@ REPLACE:CAU = {
 		STATE_AZERBAIJAN
 	}
 
-	required_num_states = 1
+	required_num_states = 3
 
 	ai_will_do = { always = no }
 
@@ -2520,7 +2520,7 @@ REPLACE:MOR = {
 		STATE_MARRAKECH
 	}
 
-	required_num_states = 1
+	required_num_states = 3
 
 	ai_will_do = { always = no }
 }
@@ -2622,7 +2622,7 @@ REPLACE:RHE = {
 		STATE_RHINELAND
 	}
 
-	required_num_states = 1
+	required_num_states = 2
 
 	ai_will_do = { always = no }
 }
@@ -3079,7 +3079,7 @@ REPLACE:ALK = {
 REPLACE:BNT = {
 	states = {
 		STATE_WESTERN_SERBIA
-		STATE_NORTHERN_TRANSYLVANIA
+		STATE_BEKES
 	}
 
 	ai_will_do = { always = no }
@@ -3127,7 +3127,7 @@ REPLACE:TRH = { # Turkestan
 
 	ai_will_do = { always = no }
 
-	required_num_states = 2
+	required_num_states = 5
 }
 
 REPLACE:FZN = {
@@ -3172,5 +3172,5 @@ REPLACE:LBY = {
 
 	ai_will_do = { always = no }
 
-	required_num_states = 1
+	required_num_states = 3
 }

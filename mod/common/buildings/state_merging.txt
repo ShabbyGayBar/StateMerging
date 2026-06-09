@@ -1657,9 +1657,9 @@ REPLACE:building_railway = {
 					state_region = s:STATE_QUEBEC
 					state_region = s:STATE_BRITISH_COLUMBIA
 					state_region = s:STATE_ONTARIO
-					state_region = s:STATE_ALBERTA
-					state_region = s:STATE_SASKATCHEWAN
-					state_region = s:STATE_MANITOBA
+					state_region = s:STATE_BRITISH_COLUMBIA
+					state_region = s:STATE_BRITISH_COLUMBIA
+					state_region = s:STATE_ONTARIO
 				}
 				NOR = {
 					has_building = building_railway

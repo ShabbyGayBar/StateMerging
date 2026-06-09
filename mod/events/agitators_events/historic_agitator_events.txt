@@ -1890,7 +1890,7 @@ historical_agitators.22 = { #John Frost
 		}
 		country_has_primary_culture = cu:british
 		any_scope_state = {
-			state_region = s:STATE_MIDLANDS
+			state_region = s:STATE_LANCASHIRE
 			turmoil > 0.10
 		}
 		any_scope_character = {

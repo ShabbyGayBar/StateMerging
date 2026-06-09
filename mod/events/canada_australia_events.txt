@@ -359,13 +359,13 @@ can_aus.6 = {
 						state_region = s:STATE_NEW_BRUNSWICK
 						state_region = s:STATE_QUEBEC
 						state_region = s:STATE_NEWFOUNDLAND
-						state_region = s:STATE_ALBERTA
 						state_region = s:STATE_BRITISH_COLUMBIA
-						state_region = s:STATE_SASKATCHEWAN
-						state_region = s:STATE_MANITOBA
-						state_region = s:STATE_YUKON_TERRITORY
+						state_region = s:STATE_BRITISH_COLUMBIA
+						state_region = s:STATE_BRITISH_COLUMBIA
+						state_region = s:STATE_ONTARIO
 						state_region = s:STATE_NORTHWEST_TERRITORIES
-						state_region = s:STATE_NUNAVUT
+						state_region = s:STATE_NORTHWEST_TERRITORIES
+						state_region = s:STATE_NORTHWEST_TERRITORIES
 					}
 					count >= 9
 				}
