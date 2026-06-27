@@ -443,7 +443,7 @@ assign_state_name_region_danubia  = {
                 s:STATE_BEKES ?= this
             }
         }
-        STATE_NORTHERN_TRANSYLVANIA_state_name_assign = yes
+        STATE_BEKES_state_name_assign = yes
     }
     if = {
         limit = {
@@ -505,7 +505,7 @@ assign_state_name_region_italy  = {
         }
         STATE_VENETIA_state_name_assign = yes
     }
-	if = {
+	else_if = {
         limit = {
             state_region = {
                 s:STATE_VENETIA ?= this
@@ -513,7 +513,7 @@ assign_state_name_region_italy  = {
         }
         STATE_VENETIA_state_name_assign = yes
     }
-	if = {
+	else_if = {
         limit = {
             state_region = {
                 s:STATE_CROATIA ?= this
@@ -521,13 +521,21 @@ assign_state_name_region_italy  = {
         }
         STATE_CROATIA_state_name_assign = yes
     }
-    if = {
+    else_if = {
         limit = {
             state_region = {
                 s:STATE_PIEDMONT ?= this
             }
         }
         STATE_PIEDMONT_state_name_assign = yes
+    }
+    else_if = {
+        limit = {
+            state_region = {
+                s:STATE_VENETIA ?= this
+            }
+        }
+        STATE_VENETIA_state_name_assign = yes
     }
 }
 
@@ -591,7 +599,7 @@ assign_state_name_region_rhine  = { # region_rhine
                 s:STATE_ALSACE_LORRAINE ?= this
             }
         }
-        STATE_BADEN_state_name_assign = yes
+        STATE_ALSACE_LORRAINE_state_name_assign = yes
     }
     else_if = {
         limit = {
@@ -777,14 +785,6 @@ assign_state_name_region_south_germany  = { # region_south_germany
             }
         }
         STATE_AUSTRIA_state_name_assign = yes
-    }
-    else_if = {
-        limit = {
-            state_region = {
-                s:STATE_VENETIA ?= this
-            }
-        }
-        STATE_VENETIA_state_name_assign = yes
     }
     else_if = {
         limit = {
@@ -3985,7 +3985,7 @@ STATE_SLOVAKIA_state_name_assign = {
 }
 
 # Partium
-STATE_NORTHERN_TRANSYLVANIA_state_name_assign = {
+STATE_BEKES_state_name_assign = {
     if = { # Hungarian
         limit = {
             owner = {
@@ -3995,26 +3995,26 @@ STATE_NORTHERN_TRANSYLVANIA_state_name_assign = {
             }
         }
 
-        set_state_name = STATE_NORTHERN_TRANSYLVANIA_hungarian
+        set_state_name = STATE_BEKES_hungarian
 
         set_hub_name = {
             type = city
-            name = HUB_NAME_STATE_NORTHERN_TRANSYLVANIA_city_hungarian
+            name = HUB_NAME_STATE_BEKES_city_hungarian
         }
 
         set_hub_name = {
             type = farm
-            name = HUB_NAME_STATE_NORTHERN_TRANSYLVANIA_farm_hungarian
+            name = HUB_NAME_STATE_BEKES_farm_hungarian
         }
 
         set_hub_name = {
             type = wood
-            name = HUB_NAME_STATE_NORTHERN_TRANSYLVANIA_wood_hungarian
+            name = HUB_NAME_STATE_BEKES_wood_hungarian
         }
 
         set_hub_name = {
             type = mine
-            name = HUB_NAME_STATE_NORTHERN_TRANSYLVANIA_mine_hungarian
+            name = HUB_NAME_STATE_BEKES_mine_hungarian
         }
     }
     else_if = { # Romanian
@@ -4026,26 +4026,26 @@ STATE_NORTHERN_TRANSYLVANIA_state_name_assign = {
             }
         }
 
-        set_state_name = STATE_NORTHERN_TRANSYLVANIA_romanian
+        set_state_name = STATE_BEKES_romanian
 
         set_hub_name = {
             type = city
-            name = HUB_NAME_STATE_NORTHERN_TRANSYLVANIA_city_romanian
+            name = HUB_NAME_STATE_BEKES_city_romanian
         }
 
         set_hub_name = {
             type = farm
-            name = HUB_NAME_STATE_NORTHERN_TRANSYLVANIA_farm_romanian
+            name = HUB_NAME_STATE_BEKES_farm_romanian
         }
 
         set_hub_name = {
             type = wood
-            name = HUB_NAME_STATE_NORTHERN_TRANSYLVANIA_wood_romanian
+            name = HUB_NAME_STATE_BEKES_wood_romanian
         }
 
         set_hub_name = {
             type = mine
-            name = HUB_NAME_STATE_NORTHERN_TRANSYLVANIA_mine_romanian
+            name = HUB_NAME_STATE_BEKES_mine_romanian
         }
     }
     else_if = { # German
@@ -4060,26 +4060,26 @@ STATE_NORTHERN_TRANSYLVANIA_state_name_assign = {
             }
         }
 
-        set_state_name = STATE_NORTHERN_TRANSYLVANIA_german
+        set_state_name = STATE_BEKES_german
 
         set_hub_name = {
             type = city
-            name = HUB_NAME_STATE_NORTHERN_TRANSYLVANIA_city_german
+            name = HUB_NAME_STATE_BEKES_city_german
         }
 
         set_hub_name = {
             type = farm
-            name = HUB_NAME_STATE_NORTHERN_TRANSYLVANIA_farm_german
+            name = HUB_NAME_STATE_BEKES_farm_german
         }
 
         set_hub_name = {
             type = wood
-            name = HUB_NAME_STATE_NORTHERN_TRANSYLVANIA_wood_german
+            name = HUB_NAME_STATE_BEKES_wood_german
         }
 
         set_hub_name = {
             type = mine
-            name = HUB_NAME_STATE_NORTHERN_TRANSYLVANIA_mine_german
+            name = HUB_NAME_STATE_BEKES_mine_german
         }
     }
     else = { # By putting an else at the end that resets the names we ensure that the names are switched back to their defaults if anyone else takes the states
@@ -5088,7 +5088,7 @@ STATE_HOLLAND_state_name_assign = {
 	}
 }
 
-STATE_BADEN_state_name_assign = {
+STATE_ALSACE_LORRAINE_state_name_assign = {
 	if = {
 		limit = {
 			owner = {
@@ -5097,7 +5097,7 @@ STATE_BADEN_state_name_assign = {
 			}
 		}
 
-        set_state_name = STATE_BADEN_french
+        set_state_name = STATE_ALSACE_LORRAINE_french
 
 	}
 	else_if = {
@@ -5108,15 +5108,15 @@ STATE_BADEN_state_name_assign = {
 			}
 		}
 
-        set_state_name = STATE_BADEN_german
+        set_state_name = STATE_ALSACE_LORRAINE_german
 
         set_hub_name = {
             type = city
-            name = HUB_NAME_STATE_BADEN_city_german
+            name = HUB_NAME_STATE_ALSACE_LORRAINE_city_german
         }
         set_hub_name = {
             type = mine
-            name = HUB_NAME_STATE_BADEN_mine_german
+            name = HUB_NAME_STATE_ALSACE_LORRAINE_mine_german
         }
 	}
 	else = { # switch back to defaults
@@ -5517,6 +5517,17 @@ STATE_AUSTRIA_state_name_assign = {
         set_hub_names = french
 
 	}
+    if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_germanophone
+                }
+            }
+        }
+
+        set_state_name = STATE_AUSTRIA_german
+    }
 	else = { # switch back to defaults
 		reset_state_name = yes
 		reset_hub_names = yes
@@ -5537,7 +5548,18 @@ STATE_AUSTRIA_state_name_assign = {
         set_state_name = STATE_AUSTRIA_french
         set_hub_names = french
 
+    }
+    else_if = {
+        limit = {
+            owner = {
+                any_primary_culture = {
+                    has_discrimination_trait = language_germanophone
+                }
+            }
         }
+
+        set_state_name = STATE_AUSTRIA_german
+    }
 	else = { # switch back to defaults
 		reset_state_name = yes
 		reset_hub_names = yes
@@ -5556,8 +5578,16 @@ STATE_VENETIA_state_name_assign = {
 
         set_state_name = STATE_VENETIA_german
         set_hub_name = {
-            type = farm
-            name = HUB_NAME_STATE_VENETIA_farm_german
+            type = city
+            name = HUB_NAME_STATE_VENETIA_city_german
+        }
+        set_hub_name = {
+            type = wood
+            name = HUB_NAME_STATE_VENETIA_wood_german
+        }
+        set_hub_name = {
+            type = mine
+            name = HUB_NAME_STATE_VENETIA_mine_german
         }
     }
 	else = { # switch back to defaults
@@ -5602,7 +5632,7 @@ STATE_AUSTRIA_state_name_assign = {
         set_hub_names = french
 
 	}
-    if = {
+    else_if = {
         limit = {
             owner = {
                 any_primary_culture = {
@@ -5610,6 +5640,7 @@ STATE_AUSTRIA_state_name_assign = {
                 }
             }
         }
+        set_state_name = STATE_AUSTRIA_german
         set_hub_name = {
             type = city
             name = HUB_NAME_STATE_AUSTRIA_city_german
@@ -6046,7 +6077,7 @@ STATE_CATALONIA_state_name_assign = {
             }
         }
         set_state_name = STATE_CATALONIA_german
-        set_hub_names = german 
+        set_hub_names = german
     }
     else_if = {
         limit = {
@@ -6153,7 +6184,7 @@ STATE_GALICIA_state_name_assign = {
             }
         }
         set_state_name = STATE_GALICIA_esperanto
-        
+
         set_hub_name = {
             type = city
             name = HUB_NAME_STATE_GALICIA_city_esperanto
@@ -6220,7 +6251,7 @@ STATE_GALICIA_state_name_assign = {
             }
         }
         set_state_name = STATE_GALICIA_german
-        set_hub_names = german  
+        set_hub_names = german
     }
     else_if = {
         limit = {

@@ -26302,6 +26302,19 @@
                     pm_road_carts
                 }
             }
+            create_building = {
+                building = building_port
+                add_ownership = {
+                    country = {
+                        country = c:VNZ
+                        levels = 1
+                    }
+                }
+                reserves = 1
+                activate_production_methods = {
+                    pm_anchorage
+                }
+            }
         }
         region_state:PCO = {
             create_building = {
@@ -30060,6 +30073,19 @@
             }
         }
         region_state:OMA = {
+            create_building = {
+                building = building_port
+                add_ownership = {
+                    country = {
+                        country = c:OMA
+                        levels = 1
+                    }
+                }
+                reserves = 1
+                activate_production_methods = {
+                    pm_anchorage
+                }
+            }
         }
         region_state:BHN = {
         }
@@ -30848,6 +30874,21 @@
                     country = {
                         country = c:OMA
                         levels = 2
+                    }
+                }
+                reserves = 1
+                activate_production_methods = {
+                    pm_anchorage
+                }
+            }
+        }
+        region_state:BHN = {
+            create_building = {
+                building = building_port
+                add_ownership = {
+                    country = {
+                        country = c:BHN
+                        levels = 1
                     }
                 }
                 reserves = 1
@@ -41336,6 +41377,36 @@
                 }
             }
         }
+        region_state:DEN = {
+            create_building = {
+                building = building_port
+                add_ownership = {
+                    country = {
+                        country = c:DEN
+                        levels = 1
+                    }
+                }
+                reserves = 1
+                activate_production_methods = {
+                    pm_anchorage
+                }
+            }
+        }
+        region_state:BIC = {
+            create_building = {
+                building = building_port
+                add_ownership = {
+                    country = {
+                        country = c:BIC
+                        levels = 1
+                    }
+                }
+                reserves = 1
+                activate_production_methods = {
+                    pm_anchorage
+                }
+            }
+        }
     }
     s:STATE_ARAKAN = {
         region_state:BIC = {
@@ -41931,6 +42002,19 @@
                 reserves = 1
                 activate_production_methods = {
                     pm_no_organization
+                }
+            }
+            create_building = {
+                building = building_port
+                add_ownership = {
+                    country = {
+                        country = c:SMB
+                        levels = 1
+                    }
+                }
+                reserves = 1
+                activate_production_methods = {
+                    pm_anchorage
                 }
             }
         }

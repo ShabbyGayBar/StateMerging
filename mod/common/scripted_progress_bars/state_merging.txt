@@ -140,7 +140,7 @@ REPLACE:lands_of_anarchy_tribes_of_marrakech_bar = {
 			if = {
 				limit = {
 					s:STATE_MARRAKECH.region_state:MOR ?= {
-						has_modifier = lands_of_anarchy_tribe_recieved_medicine_mod
+						has_modifier = lands_of_anarchy_tribe_received_medicine_mod
 					}
 				}
 				add = {
@@ -330,7 +330,7 @@ REPLACE:lands_of_anarchy_tribes_of_al_rif_bar = {
 			if = {
 				limit = {
 					s:STATE_FEZ.region_state:MOR ?= {
-						has_modifier = lands_of_anarchy_tribe_recieved_medicine_mod
+						has_modifier = lands_of_anarchy_tribe_received_medicine_mod
 					}
 				}
 				add = {
@@ -510,7 +510,7 @@ REPLACE:lands_of_anarchy_tribes_of_inner_morocco_bar = {
 			if = {
 				limit = {
 					s:STATE_MARRAKECH.region_state:MOR ?= {
-						has_modifier = lands_of_anarchy_tribe_recieved_medicine_mod
+						has_modifier = lands_of_anarchy_tribe_received_medicine_mod
 					}
 				}
 				add = {

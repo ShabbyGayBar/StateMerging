@@ -2074,6 +2074,884 @@ REPLACE:BRK = {
 }
 
 
+# ---- 01_pacific_and_australasia.txt ----
+REPLACE:HAW = {
+	color = { 48  169  96 }
+
+	tier = kingdom
+
+	country_type = unrecognized
+
+	cultures = { hawaiian }
+	religion = protestant
+
+	capital = STATE_HAWAIIAN_ISLANDS
+	is_named_from_capital = yes
+}
+
+REPLACE:NTU = {
+	color = { 62 92 54 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { maori }
+	capital = STATE_NORTH_ISLAND
+}
+
+REPLACE:NTO = {
+	color = { 148 185 190 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { maori }
+	capital = STATE_NORTH_ISLAND
+}
+
+REPLACE:KNK = {
+	color = { 190 173 103 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { melanesian }
+	capital = STATE_SOLOMON_ISLANDS
+}
+
+REPLACE:PPU = {
+	color = { 81 97 170 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { melanesian }
+	capital = STATE_WESTERN_NEW_GUINEA
+}
+
+REPLACE:HLA = { # Halia, for Bougainville
+	color = { 210 184 220 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { melanesian }
+	capital = STATE_SOLOMON_ISLANDS
+}
+
+REPLACE:BLA = { # Bilua
+	color = { 140 166 75 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { melanesian }
+	capital = STATE_SOLOMON_ISLANDS
+}
+
+REPLACE:BLG = { # Bulungan
+	color = { 140 166 75 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { bornean }
+	capital = STATE_WEST_BORNEO
+}
+
+REPLACE:KTI = { # Kutai
+	color = { 137 88 58 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { bornean }
+	capital = STATE_WEST_BORNEO
+}
+
+REPLACE:FJI = { # Fiji
+	color = { 159 173 219 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { melanesian }
+	capital = STATE_FIJI
+}
+
+REPLACE:MCR = { # Micronesia
+	color = { 248 218 99 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { micronesian }
+	capital = STATE_WEST_MICRONESIA
+}
+
+
+REPLACE:VNT = { # Vanuatu
+	color = { 37 214 50 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { melanesian }
+	capital = STATE_SOLOMON_ISLANDS
+}
+
+REPLACE:NRU = { # Nauru
+	color = { 231 131 17 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { melanesian }
+	capital = STATE_WEST_MICRONESIA
+}
+
+REPLACE:PLY = { # Tahiti
+	color = { 176 62 136 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { polynesian }
+	religion = protestant
+	capital = STATE_FIJI
+}
+
+REPLACE:AOT = { # Aotearoa
+	color = { 47 140 191 }
+
+	country_type = unrecognized
+
+	tier = kingdom
+
+	cultures = { maori }
+	capital = STATE_NORTH_ISLAND
+}
+
+REPLACE:ULR = { # Uluru
+	color = { 112 54 16 }
+
+	tier = principality
+
+	country_type = decentralized
+
+	cultures = { aborigine }
+
+	capital = STATE_WESTERN_AUSTRALIA
+}
+
+REPLACE:NSW = { # New South Wales
+	color = { 114 165 203 }
+
+	country_type = colonial
+
+	tier = principality
+
+	capital = STATE_NEW_SOUTH_WALES
+	cultures = { australian }
+}
+
+REPLACE:WAS = { # Western Australia
+	color = { 118 115 97 }
+
+	country_type = colonial
+
+	tier = principality
+
+	capital = STATE_WESTERN_AUSTRALIA
+	cultures = { australian }
+}
+
+REPLACE:SAS = { # South Australia
+	color = { 170 90 128 }
+
+	country_type = colonial
+
+	tier = principality
+
+	capital = STATE_WESTERN_AUSTRALIA
+	cultures = { australian }
+}
+
+REPLACE:UNT = { # United Tribes of New Zealand
+	color = { 170 167 151 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	capital = STATE_NORTH_ISLAND
+	cultures = { maori }
+	religion = protestant
+}
+
+REPLACE:NNG = { # Noongar
+
+	color = { 209 160 107 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_WESTERN_AUSTRALIA
+}
+
+REPLACE:KAU = { # Kaurna
+
+	color = { 245 212 134 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_WESTERN_AUSTRALIA
+}
+
+REPLACE:GML = { # Gamilaraay
+
+	color = { 77 204 68 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_NEW_SOUTH_WALES
+}
+
+REPLACE:AST = {
+	color = { 77  139  106 }
+
+	country_type = colonial
+
+	tier = kingdom
+
+	capital = STATE_NEW_SOUTH_WALES
+	cultures = { australian }
+}
+
+REPLACE:NZL = {
+	color = { 90  250  127 }
+
+	country_type = colonial
+
+	tier = principality
+
+	capital = STATE_NORTH_ISLAND
+	cultures = { australian }
+}
+
+REPLACE:TAS = {
+	color = { 224 194 152 }
+
+	country_type = colonial
+
+	tier = principality
+
+	capital = STATE_NEW_SOUTH_WALES
+	cultures = { australian }
+}
+
+REPLACE:DEI = {
+	color = { 20  80  80 }
+
+	country_type = colonial
+
+	tier = principality
+
+	cultures = { dutch }
+	capital = STATE_WEST_JAVA
+}
+
+# Siak
+REPLACE:SAK = {
+	color = { 21  196  68 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { sumatran }
+	capital = STATE_NORTH_SUMATRA
+}
+
+# Pontianak
+REPLACE:PON = {
+	color = { 255 102 102 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { bornean }
+	capital = STATE_WEST_BORNEO
+}
+
+# Sambas
+REPLACE:SMB = {
+	color = { 102  102  255 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { bornean }
+	capital = STATE_WEST_BORNEO
+}
+
+# Jambi
+REPLACE:JMB = {
+	color = { 223  228  192 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { sumatran }
+	capital = STATE_NORTH_SUMATRA
+}
+
+# Yogyakarta
+REPLACE:YOG = {
+	color = { 201  28  54 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { javan }
+	capital = STATE_WEST_JAVA
+}
+
+# Surakarta
+REPLACE:SRK = {
+	color = { 239 51 64 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { javan }
+	capital = STATE_WEST_JAVA
+}
+
+# Buton
+REPLACE:BTN = {
+	color = { 209  203  31 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { moluccan }
+	capital = STATE_MOLUCCAS
+}
+
+# Selangor
+REPLACE:SEL = {
+	color = { 249 215 61 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { malay }
+	capital = STATE_MALAYA
+}
+
+# Perak
+REPLACE:PRK = {
+	color = { 76  122  117 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { malay }
+	capital = STATE_MALAYA
+}
+
+# Sulu
+REPLACE:SUL = {
+	color = { 89  164  144 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { moro }
+	capital = STATE_LUZON
+}
+
+# Sulawesi
+REPLACE:SLW = {
+	color = { 153 0 0 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { moluccan }
+	capital = STATE_MOLUCCAS
+}
+
+# Tidore
+REPLACE:TID = {
+	color = { 176  232  64 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { moluccan }
+	capital = STATE_MOLUCCAS
+}
+
+# Sintang
+REPLACE:STG = {
+	color = { 255 255 0 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { bornean }
+	capital = STATE_WEST_BORNEO
+}
+
+# Banjar
+REPLACE:BNJ = {
+	color = { 171  175  40 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { bornean }
+	capital = STATE_WEST_BORNEO
+}
+
+# Indonesia
+REPLACE:IDN = {
+	color = { 0  128  128 }
+
+	country_type = recognized
+
+	tier = empire
+
+	cultures = { balinese batak bornean dayak javan malay moluccan sumatran }
+	capital = STATE_WEST_JAVA
+}
+
+# Maguindanao
+REPLACE:MGD = {
+	color = { 119  32  29 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { moro }
+	capital = STATE_LUZON
+}
+
+REPLACE:YUZ = { # Yuanzhumin
+	color = { 97 44 96 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { yuanzhumin }
+	capital = STATE_FORMOSA
+}
+
+REPLACE:PNS = { # Polynesia
+	color = { 244 140 30 }
+
+	country_type = unrecognized
+
+	tier = empire
+
+	cultures = { hawaiian maori melanesian polynesian micronesian yuanzhumin }
+	capital = STATE_HAWAIIAN_ISLANDS
+}
+
+REPLACE:WTI = { # Wati
+	color = { 54 112 16 }
+
+	tier = principality
+
+	country_type = decentralized
+
+	cultures = { aborigine }
+
+	capital = STATE_WESTERN_AUSTRALIA
+}
+
+REPLACE:MRN = { # Mirning
+	color = { 3 113 211 }
+
+	tier = principality
+
+	country_type = decentralized
+
+	cultures = { aborigine }
+
+	capital = STATE_WESTERN_AUSTRALIA
+}
+
+# Mindanao
+REPLACE:MND = {
+	color = { 255 255 204 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { lumad }
+	capital = STATE_LUZON
+}
+
+REPLACE:KLN = { # Kulinic
+	color = { 27 1 230 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_NEW_SOUTH_WALES
+}
+
+REPLACE:KNC = { # Karnic
+	color = { 236 232 85 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_NEW_SOUTH_WALES
+}
+
+REPLACE:WDJ = { # Wiradjuri
+	color = { 140 70 67 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_NEW_SOUTH_WALES
+}
+
+REPLACE:KRI = { # Kurnai
+	color = { 132 202 127 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_NEW_SOUTH_WALES
+}
+
+REPLACE:YUR = { # Yura
+	color = { 218 76 144 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_WESTERN_AUSTRALIA
+}
+
+REPLACE:PAA = { # Paakintyi 
+	color = { 77 68 204 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { aborigine }
+	capital = STATE_NEW_SOUTH_WALES
+}
+
+REPLACE:YYT = { # Yorta Yorta
+	color = { 198 164 98 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_NEW_SOUTH_WALES
+}
+
+REPLACE:KTU = { # Kartu
+	color = { 244 126 55 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_WESTERN_AUSTRALIA
+}
+
+REPLACE:KYN = { # Kanyara–Mantharta
+	color = { 73 229 248 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_WESTERN_AUSTRALIA
+}
+
+REPLACE:NYR = { # Ngayarda
+	color = { 70 16 219 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_WESTERN_AUSTRALIA
+}
+
+REPLACE:NYP = { # Ngumpin-Yapa
+	color = { 18 141 110 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_WESTERN_AUSTRALIA
+}
+
+REPLACE:JRR = { # Jarrak
+	color = { 113 111 2 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_WESTERN_AUSTRALIA
+}
+
+REPLACE:NYL = { # Nyulnyulan
+	color = { 167 238 241 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_WESTERN_AUSTRALIA
+}
+
+REPLACE:WRR = { # Worrorran
+	color = { 206 205 45 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_WESTERN_AUSTRALIA
+}
+
+REPLACE:NGU = { # Ngarru
+	color = { 92 142 220 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_WESTERN_AUSTRALIA
+}
+
+REPLACE:GRW = { # Garawa
+	color = { 190 16 32 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_WESTERN_AUSTRALIA
+}
+
+REPLACE:MDI = { # Mirndi
+	color = { 147 72 6 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_WESTERN_AUSTRALIA
+}
+
+REPLACE:ARH = { # Arnhem
+	color = { 232 48 233 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_WESTERN_AUSTRALIA
+}
+
+REPLACE:YGU = { # Yolngu
+	color = { 78 11 105 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_WESTERN_AUSTRALIA
+}
+
+REPLACE:WRD = { # Wardaman
+	color = { 178 188 126 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_WESTERN_AUSTRALIA
+}
+
+REPLACE:DLY = { # Daly
+	color = { 178 121 123 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_WESTERN_AUSTRALIA
+}
+
+REPLACE:LRR = { # Larrakia, Darwin Region
+	color = { 238 127 130 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_WESTERN_AUSTRALIA
+}
+
+REPLACE:ARR = { # Arrernte
+	color = { 182 165 254 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_WESTERN_AUSTRALIA
+}
+
+REPLACE:MRA = { # Mara
+	color = { 55 24 41 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_NEW_SOUTH_WALES
+}
+
+REPLACE:KKT = { # Kalkatungu
+	color = { 132 219 205 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_NEW_SOUTH_WALES
+}
+
+REPLACE:MYI = { # Mayi
+	color = { 78 146 22 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_NEW_SOUTH_WALES
+}
+
+REPLACE:DYB = { # Dyribal
+	color = { 238 39 2 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_NEW_SOUTH_WALES
+}
+
+REPLACE:WKB = { # Waka-Gabi
+	color = { 252 112 227 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_NEW_SOUTH_WALES
+}
+
+REPLACE:PMA = { # Pama
+	color = { 207 182 66 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_NEW_SOUTH_WALES
+}
+
+
 # ---- 00_countries.txt ----
 # Important note: Only use capital letters and numbers for tags, or else you may get weird bugs in civil wars
 
@@ -2180,6 +3058,7 @@ REPLACE:AUS = {
 	primary_unit_color = { 211 220 240 }
 	secondary_unit_color  = { 94 120 165 }
 	tertiary_unit_color = { 20 20 20 }
+	seal_and_signature_texture = "gfx/interface/diplomatic_treaties/seal_and_signature_cultures/diplomatic_treaties_seal_and_signature_austrian.dds"
 }
 
 REPLACE:USA = {
@@ -7316,7 +8195,7 @@ REPLACE:SKH = { # Sakhalin
 }
 
 REPLACE:ULT = { # Ulta
-	color = { 122 229 256 }
+	color = { 122 229 255 }
 
 	country_type = decentralized
 
@@ -7324,881 +8203,4 @@ REPLACE:ULT = { # Ulta
 
 	cultures = { siberian }
 	capital = STATE_SAKHALIN
-}
-
-# ---- 01_pacific_and_australasia.txt ----
-REPLACE:HAW = {
-	color = { 48  169  96 }
-
-	tier = kingdom
-
-	country_type = unrecognized
-
-	cultures = { hawaiian }
-	religion = protestant
-
-	capital = STATE_HAWAIIAN_ISLANDS
-	is_named_from_capital = yes
-}
-
-REPLACE:NTU = {
-	color = { 62 92 54 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { maori }
-	capital = STATE_NORTH_ISLAND
-}
-
-REPLACE:NTO = {
-	color = { 148 185 190 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { maori }
-	capital = STATE_NORTH_ISLAND
-}
-
-REPLACE:KNK = {
-	color = { 190 173 103 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { melanesian }
-	capital = STATE_SOLOMON_ISLANDS
-}
-
-REPLACE:PPU = {
-	color = { 81 97 170 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { melanesian }
-	capital = STATE_WESTERN_NEW_GUINEA
-}
-
-REPLACE:HLA = { # Halia, for Bougainville
-	color = { 210 184 220 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { melanesian }
-	capital = STATE_SOLOMON_ISLANDS
-}
-
-REPLACE:BLA = { # Bilua
-	color = { 140 166 75 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { melanesian }
-	capital = STATE_SOLOMON_ISLANDS
-}
-
-REPLACE:BLG = { # Bulungan
-	color = { 140 166 75 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { bornean }
-	capital = STATE_WEST_BORNEO
-}
-
-REPLACE:KTI = { # Kutai
-	color = { 137 88 58 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { bornean }
-	capital = STATE_WEST_BORNEO
-}
-
-REPLACE:FJI = { # Fiji
-	color = { 159 173 219 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { melanesian }
-	capital = STATE_FIJI
-}
-
-REPLACE:MCR = { # Micronesia
-	color = { 248 218 99 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { micronesian }
-	capital = STATE_WEST_MICRONESIA
-}
-
-
-REPLACE:VNT = { # Vanuatu
-	color = { 37 214 50 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { melanesian }
-	capital = STATE_SOLOMON_ISLANDS
-}
-
-REPLACE:NRU = { # Nauru
-	color = { 231 131 17 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { melanesian }
-	capital = STATE_WEST_MICRONESIA
-}
-
-REPLACE:PLY = { # Tahiti
-	color = { 176 62 136 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { polynesian }
-	religion = protestant
-	capital = STATE_FIJI
-}
-
-REPLACE:AOT = { # Aotearoa
-	color = { 47 140 191 }
-
-	country_type = unrecognized
-
-	tier = kingdom
-
-	cultures = { maori }
-	capital = STATE_NORTH_ISLAND
-}
-
-REPLACE:ULR = { # Uluru
-	color = { 112 54 16 }
-
-	tier = principality
-
-	country_type = decentralized
-
-	cultures = { aborigine }
-
-	capital = STATE_WESTERN_AUSTRALIA
-}
-
-REPLACE:NSW = { # New South Wales
-	color = { 114 165 203 }
-
-	country_type = colonial
-
-	tier = principality
-
-	capital = STATE_NEW_SOUTH_WALES
-	cultures = { australian }
-}
-
-REPLACE:WAS = { # Western Australia
-	color = { 118 115 97 }
-
-	country_type = colonial
-
-	tier = principality
-
-	capital = STATE_WESTERN_AUSTRALIA
-	cultures = { australian }
-}
-
-REPLACE:SAS = { # South Australia
-	color = { 170 90 128 }
-
-	country_type = colonial
-
-	tier = principality
-
-	capital = STATE_WESTERN_AUSTRALIA
-	cultures = { australian }
-}
-
-REPLACE:UNT = { # United Tribes of New Zealand
-	color = { 170 167 151 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	capital = STATE_NORTH_ISLAND
-	cultures = { maori }
-	religion = protestant
-}
-
-REPLACE:NNG = { # Noongar
-
-	color = { 209 160 107 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_WESTERN_AUSTRALIA
-}
-
-REPLACE:KAU = { # Kaurna
-
-	color = { 245 212 134 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_WESTERN_AUSTRALIA
-}
-
-REPLACE:GML = { # Gamilaraay
-
-	color = { 77 204 68 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_NEW_SOUTH_WALES
-}
-
-REPLACE:AST = {
-	color = { 77  139  106 }
-
-	country_type = colonial
-
-	tier = kingdom
-
-	capital = STATE_NEW_SOUTH_WALES
-	cultures = { australian }
-}
-
-REPLACE:NZL = {
-	color = { 90  250  127 }
-
-	country_type = colonial
-
-	tier = principality
-
-	capital = STATE_NORTH_ISLAND
-	cultures = { australian }
-}
-
-REPLACE:TAS = {
-	color = { 224 194 152 }
-
-	country_type = colonial
-
-	tier = principality
-
-	capital = STATE_NEW_SOUTH_WALES
-	cultures = { australian }
-}
-
-REPLACE:DEI = {
-	color = { 20  80  80 }
-
-	country_type = colonial
-
-	tier = principality
-
-	cultures = { dutch }
-	capital = STATE_WEST_JAVA
-}
-
-# Siak
-REPLACE:SAK = {
-	color = { 21  196  68 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { sumatran }
-	capital = STATE_NORTH_SUMATRA
-}
-
-# Pontianak
-REPLACE:PON = {
-	color = { 255 102 102 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { bornean }
-	capital = STATE_WEST_BORNEO
-}
-
-# Sambas
-REPLACE:SMB = {
-	color = { 102  102  255 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { bornean }
-	capital = STATE_WEST_BORNEO
-}
-
-# Jambi
-REPLACE:JMB = {
-	color = { 223  228  192 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { sumatran }
-	capital = STATE_NORTH_SUMATRA
-}
-
-# Yogyakarta
-REPLACE:YOG = {
-	color = { 201  28  54 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { javan }
-	capital = STATE_WEST_JAVA
-}
-
-# Surakarta
-REPLACE:SRK = {
-	color = { 239 51 64 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { javan }
-	capital = STATE_WEST_JAVA
-}
-
-# Buton
-REPLACE:BTN = {
-	color = { 209  203  31 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { moluccan }
-	capital = STATE_MOLUCCAS
-}
-
-# Selangor
-REPLACE:SEL = {
-	color = { 249 215 61 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { malay }
-	capital = STATE_MALAYA
-}
-
-# Perak
-REPLACE:PRK = {
-	color = { 76  122  117 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { malay }
-	capital = STATE_MALAYA
-}
-
-# Sulu
-REPLACE:SUL = {
-	color = { 89  164  144 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { moro }
-	capital = STATE_LUZON
-}
-
-# Sulawesi
-REPLACE:SLW = {
-	color = { 153 0 0 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { moluccan }
-	capital = STATE_MOLUCCAS
-}
-
-# Tidore
-REPLACE:TID = {
-	color = { 176  232  64 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { moluccan }
-	capital = STATE_MOLUCCAS
-}
-
-# Sintang
-REPLACE:STG = {
-	color = { 255 255 0 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { bornean }
-	capital = STATE_WEST_BORNEO
-}
-
-# Banjar
-REPLACE:BNJ = {
-	color = { 171  175  40 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { bornean }
-	capital = STATE_WEST_BORNEO
-}
-
-# Indonesia
-REPLACE:IDN = {
-	color = { 0  128  128 }
-
-	country_type = recognized
-
-	tier = empire
-
-	cultures = { balinese batak bornean dayak javan malay moluccan sumatran }
-	capital = STATE_WEST_JAVA
-}
-
-# Maguindanao
-REPLACE:MGD = {
-	color = { 119  32  29 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { moro }
-	capital = STATE_LUZON
-}
-
-REPLACE:YUZ = { # Yuanzhumin
-	color = { 97 44 96 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { yuanzhumin }
-	capital = STATE_FORMOSA
-}
-
-REPLACE:PNS = { # Polynesia
-	color = { 244 140 30 }
-
-	country_type = unrecognized
-
-	tier = empire
-
-	cultures = { hawaiian maori melanesian polynesian micronesian yuanzhumin }
-	capital = STATE_HAWAIIAN_ISLANDS
-}
-
-REPLACE:WTI = { # Wati
-	color = { 54 112 16 }
-
-	tier = principality
-
-	country_type = decentralized
-
-	cultures = { aborigine }
-
-	capital = STATE_WESTERN_AUSTRALIA
-}
-
-REPLACE:MRN = { # Mirning
-	color = { 3 113 211 }
-
-	tier = principality
-
-	country_type = decentralized
-
-	cultures = { aborigine }
-
-	capital = STATE_WESTERN_AUSTRALIA
-}
-
-# Mindanao
-REPLACE:MND = {
-	color = { 255 255 204 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { lumad }
-	capital = STATE_LUZON
-}
-
-REPLACE:KLN = { # Kulinic
-	color = { 27 1 230 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_NEW_SOUTH_WALES
-}
-
-REPLACE:KNC = { # Karnic
-	color = { 236 232 85 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_NEW_SOUTH_WALES
-}
-
-REPLACE:WDJ = { # Wiradjuri
-	color = { 140 70 67 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_NEW_SOUTH_WALES
-}
-
-REPLACE:KRI = { # Kurnai
-	color = { 132 202 127 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_NEW_SOUTH_WALES
-}
-
-REPLACE:YUR = { # Yura
-	color = { 218 76 144 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_WESTERN_AUSTRALIA
-}
-
-REPLACE:PAA = { # Paakintyi 
-	color = { 77 68 204 }
-	
-	country_type = decentralized
-	
-	tier = principality
-	
-	cultures = { aborigine }
-	capital = STATE_NEW_SOUTH_WALES
-}
-
-REPLACE:YYT = { # Yorta Yorta
-	color = { 198 164 98 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_NEW_SOUTH_WALES
-}
-
-REPLACE:KTU = { # Kartu
-	color = { 244 126 55 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_WESTERN_AUSTRALIA
-}
-
-REPLACE:KYN = { # Kanyara–Mantharta
-	color = { 73 229 248 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_WESTERN_AUSTRALIA
-}
-
-REPLACE:NYR = { # Ngayarda
-	color = { 70 16 219 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_WESTERN_AUSTRALIA
-}
-
-REPLACE:NYP = { # Ngumpin-Yapa
-	color = { 18 141 110 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_WESTERN_AUSTRALIA
-}
-
-REPLACE:JRR = { # Jarrak
-	color = { 113 111 2 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_WESTERN_AUSTRALIA
-}
-
-REPLACE:NYL = { # Nyulnyulan
-	color = { 167 238 241 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_WESTERN_AUSTRALIA
-}
-
-REPLACE:WRR = { # Worrorran
-	color = { 206 205 45 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_WESTERN_AUSTRALIA
-}
-
-REPLACE:NGU = { # Ngarru
-	color = { 92 142 220 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_WESTERN_AUSTRALIA
-}
-
-REPLACE:GRW = { # Garawa
-	color = { 190 16 32 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_WESTERN_AUSTRALIA
-}
-
-REPLACE:MDI = { # Mirndi
-	color = { 147 72 6 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_WESTERN_AUSTRALIA
-}
-
-REPLACE:ARH = { # Arnhem
-	color = { 232 48 233 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_WESTERN_AUSTRALIA
-}
-
-REPLACE:YGU = { # Yolngu
-	color = { 78 11 105 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_WESTERN_AUSTRALIA
-}
-
-REPLACE:WRD = { # Wardaman
-	color = { 178 188 126 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_WESTERN_AUSTRALIA
-}
-
-REPLACE:DLY = { # Daly
-	color = { 178 121 123 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_WESTERN_AUSTRALIA
-}
-
-REPLACE:LRR = { # Larrakia, Darwin Region
-	color = { 238 127 130 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_WESTERN_AUSTRALIA
-}
-
-REPLACE:ARR = { # Arrernte
-	color = { 182 165 254 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_WESTERN_AUSTRALIA
-}
-
-REPLACE:MRA = { # Mara
-	color = { 55 24 41 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_NEW_SOUTH_WALES
-}
-
-REPLACE:KKT = { # Kalkatungu
-	color = { 132 219 205 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_NEW_SOUTH_WALES
-}
-
-REPLACE:MYI = { # Mayi
-	color = { 78 146 22 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_NEW_SOUTH_WALES
-}
-
-REPLACE:DYB = { # Dyribal
-	color = { 238 39 2 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_NEW_SOUTH_WALES
-}
-
-REPLACE:WKB = { # Waka-Gabi
-	color = { 252 112 227 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_NEW_SOUTH_WALES
-}
-
-REPLACE:PMA = { # Pama
-	color = { 207 182 66 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_NEW_SOUTH_WALES
 }

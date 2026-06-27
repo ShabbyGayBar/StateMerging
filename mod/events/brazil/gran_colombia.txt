@@ -36,7 +36,7 @@ gran_colombia.1 = {
 	option = {
 		name = gran_colombia.1.a
 		default_option = yes
-		random_country = {
+		random_country_in_north_andes = {
 			limit = {
 				NOT = { THIS = ROOT }
 				OR = {
@@ -489,7 +489,7 @@ la_plata.1 = {
 	option = {
 		name = la_plata.1.a
 		default_option = yes
-		random_country = {
+		random_country_in_southern_cone = {
 			limit = {
 				NOT = { THIS = ROOT }
 				OR = {
@@ -506,7 +506,7 @@ la_plata.1 = {
 				}
 			}
 		}
-		every_state_in_la_plata = {
+		every_state_in_southern_cone = {
 			limit = {
 				NOR = {
 					owner = ROOT
@@ -561,7 +561,7 @@ la_plata.1 = {
 
 	option = {
 		name = la_plata.1.b
-		every_country = {
+		every_country_in_southern_cone = {
 			limit = {
 				NOT = { THIS = ROOT }
 				OR = {

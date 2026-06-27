@@ -810,7 +810,6 @@ REPLACE:PLT = {
 	states = {
 		STATE_BUENOS_AIRES
 		STATE_CHACO
-		STATE_PATAGONIA
 		STATE_SANTA_FE
 		STATE_SANTA_FE
 		STATE_BAJO_PARAGUAY
@@ -1109,8 +1108,4 @@ REPLACE:ATL = {
 	possible = {
 		has_technology_researched = pan-nationalism
 	}
-}
-
-INJECT:ITA = {
-    required_states_fraction = 0.5
 }

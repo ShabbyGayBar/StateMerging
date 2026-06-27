@@ -289,7 +289,7 @@ REPLACE:region_great_plains = {
 }
 
 REPLACE:region_atlantic_coast = {
-	capital_province = xE217B5
+	capital_province = x6B3BE8
 	map_color = { 0 0.8 0.4 }
 	states = {  STATE_MICHIGAN    STATE_OHIO  STATE_TENNESSEE STATE_MASSACHUSETTS      STATE_NEW_BRUNSWICK   STATE_NEW_YORK  STATE_MISSISSIPPI  STATE_FLORIDA   STATE_NORTH_CAROLINA  STATE_DISTRICT_OF_COLUMBIA  }
 }
@@ -300,6 +300,433 @@ REPLACE:region_central_america = {
 	map_color = { 1 0.25 0.25 }
 	states = { STATE_BAJA_CALIFORNIA STATE_HONDURAS STATE_NICARAGUA STATE_COSTA_RICA STATE_PANAMA STATE_SAN_SALVADOR STATE_YUCATAN  STATE_GUATEMALA STATE_JALISCO   STATE_MEXICO   STATE_RIO_GRANDE      STATE_WESTERN_CUBA  STATE_HAITI  STATE_WEST_INDIES    }
 }
+
+
+# ---- water_strategic_regions.txt ----
+REPLACE:region_micronesian_sea = {
+	states = { STATE_MICRONESIAN_SEA }
+}
+
+REPLACE:region_horn_of_africa = {
+	states = { STATE_HORN_OF_AFRICA }
+}
+
+REPLACE:region_norwegian_sea = {
+	states = { STATE_NORWEGIAN_SEA }
+}
+
+REPLACE:region_labrador_sea = {
+	states = { STATE_LABRADOR_SEA }
+}
+
+REPLACE:region_north_sea = {
+	states = { STATE_NORTH_SEA }
+}
+
+REPLACE:region_english_channel = {
+	states = { STATE_ENGLISH_CHANNEL }
+}
+
+REPLACE:region_bay_of_biscay = {
+	states = { STATE_BAY_OF_BISCAY }
+}
+
+REPLACE:region_irish_sea = {
+	states = { STATE_IRISH_SEA }
+}
+
+REPLACE:region_eastern_caribbean_sea = {
+	states = { STATE_EASTERN_CARIBBEAN_SEA }
+}
+
+REPLACE:region_western_caribbean_sea = {
+	states = { STATE_WESTERN_CARIBBEAN_SEA }
+}
+
+REPLACE:region_barents_sea = {
+	states = { STATE_BARENTS_SEA }
+}
+
+REPLACE:region_davis_strait = {
+	states = { STATE_DAVIS_STRAIT }
+}
+
+REPLACE:region_galapagos_rise = {
+	states = { STATE_GALAPAGOS_RISE }
+}
+
+REPLACE:region_western_mediterranean_sea = {
+	states = { STATE_WESTERN_MEDITERRANEAN_SEA }
+}
+
+REPLACE:region_central_mediterranean_sea = {
+	states = { STATE_CENTRAL_MEDITERRANEAN_SEA }
+}
+
+REPLACE:region_eastern_mediterranean_sea = {
+	states = { STATE_EASTERN_MEDITERRANEAN_SEA }
+}
+
+REPLACE:region_sea_of_marmara = {
+	states = { STATE_SEA_OF_MARMARA }
+}
+
+REPLACE:region_hudson_bay = {
+	states = { STATE_HUDSON_BAY }
+}
+
+REPLACE:region_gulf_of_saint_lawrence = {
+	states = { STATE_GULF_OF_SAINT_LAWRENCE }
+}
+
+REPLACE:region_persian_gulf = {
+	states = { STATE_PERSIAN_GULF }
+}
+
+REPLACE:region_red_sea = {
+	states = { STATE_RED_SEA }
+}
+
+REPLACE:region_arabian_sea = {
+	states = { STATE_ARABIAN_SEA }
+}
+
+REPLACE:region_laccadive_sea = {
+	states = { STATE_LACCADIVE_SEA }
+}
+
+REPLACE:region_bay_of_bengal = {
+	states = { STATE_BAY_OF_BENGAL }
+}
+
+REPLACE:region_malacca_sea = {
+	states = { STATE_MALACCA_STRAIT }
+}
+
+REPLACE:region_south_china_sea = {
+	states = { STATE_SOUTH_CHINA_SEA }
+}
+
+REPLACE:region_east_china_sea = {
+	states = { STATE_EAST_CHINA_SEA }
+}
+
+REPLACE:region_sea_of_japan = {
+	states = { STATE_SEA_OF_JAPAN }
+}
+
+REPLACE:region_gulf_of_mexico = {
+	states = { STATE_GULF_OF_MEXICO }
+}
+
+REPLACE:region_sargasso_sea = {
+	states = { STATE_SARGASSO_SEA }
+}
+
+REPLACE:region_southern_ocean_02 = {
+	states = { STATE_SOUTHERN_OCEAN_02 }
+}
+
+REPLACE:region_gulf_of_guinea = {
+	states = { STATE_GULF_OF_GUINEA }
+}
+
+REPLACE:region_cape_of_good_hope = {
+	states = { STATE_CAPE_OF_GOOD_HOPE }
+}
+
+REPLACE:region_eastern_polynesia = {
+	states = { STATE_EASTERN_POLYNESIA }
+}
+
+REPLACE:region_mozambique_channel = {
+	states = { STATE_MOZAMBIQUE_CHANNEL }
+}
+
+REPLACE:region_sea_of_okhotsk = {
+	states = { STATE_SEA_OF_OKHOTSK }
+}
+
+REPLACE:region_gulf_of_alaska = {
+	states = { STATE_GULF_OF_ALASKA }
+}
+
+REPLACE:region_great_australian_bight = {
+	states = { STATE_GREAT_AUSTRALIAN_BIGHT }
+}
+
+REPLACE:region_tasman_sea = {
+	states = { STATE_TASMAN_SEA }
+}
+
+REPLACE:region_java_sea = {
+	states = { STATE_JAVA_SEA }
+}
+
+REPLACE:region_molucca_sea = {
+	states = { STATE_MOLUCCA_SEA }
+}
+
+REPLACE:region_centroamerican_sea = {
+	states = { STATE_CENTROAMERICAN_SEA }
+}
+
+REPLACE:region_peruvian_sea = {
+	states = { STATE_PERUVIAN_SEA }
+}
+
+REPLACE:region_northern_baltic_sea = {
+	states = { STATE_NORTHERN_BALTIC_SEA }
+}
+
+REPLACE:region_equatorial_pacific_ocean = {
+	states = { STATE_EQUATORIAL_PACIFIC_OCEAN }
+}
+
+REPLACE:region_north_pacific_ocean = {
+	states = { STATE_NORTH_PACIFIC_OCEAN }
+}
+
+REPLACE:region_greenland_sea = {
+	states = { STATE_GREENLAND_SEA }
+}
+
+REPLACE:region_northeast_atlantic_coast = {
+	states = { STATE_NORTHEAST_ATLANTIC_COAST }
+}
+
+REPLACE:region_baltic_entrances = {
+	states = { STATE_BALTIC_ENTRANCES }
+}
+
+REPLACE:region_bering_sea = {
+	states = { STATE_BERING_SEA }
+}
+
+REPLACE:region_western_black_sea = {
+	states = { STATE_WESTERN_BLACK_SEA }
+}
+
+REPLACE:region_chuckchi_sea = {
+	states = { STATE_CHUCKCHI_SEA }
+}
+
+REPLACE:region_northwest_passage = {
+	states = { STATE_NORTHWEST_PASSAGE }
+}
+
+REPLACE:region_kara_sea = {
+	states = { STATE_KARA_SEA }
+}
+
+REPLACE:region_laptev_sea = {
+	states = { STATE_LAPTEV_SEA }
+}
+
+REPLACE:region_east_siberian_sea = {
+	states = { STATE_EAST_SIBERIAN_SEA }
+}
+
+REPLACE:region_bahama_banks = {
+	states = { STATE_BAHAMA_BANKS }
+}
+
+REPLACE:region_coast_of_guyana = {
+	states = { STATE_COAST_OF_GUYANA }
+}
+
+REPLACE:region_cape_st_roque = {
+	states = { STATE_CAPE_ST_ROQUE }
+}
+
+REPLACE:region_south_brazil_bight = {
+	states = { STATE_SOUTH_BRAZIL_BIGHT }
+}
+
+REPLACE:region_river_plate = {
+	states = { STATE_RIVER_PLATE }
+}
+
+REPLACE:region_patagonian_sea = {
+	states = { STATE_PATAGONIAN_SEA }
+}
+
+REPLACE:region_mid_atlantic_coast = {
+	states = { STATE_MID_ATLANTIC_COAST }
+}
+
+REPLACE:region_equatorial_atlantic_ocean = {
+	states = { STATE_EQUATORIAL_ATLANTIC_OCEAN }
+}
+
+REPLACE:region_northern_north_atlantic_ocean = {
+	states = { STATE_NORTHERN_NORTH_ATLANTIC_OCEAN }
+}
+
+REPLACE:region_grand_banks = {
+	states = { STATE_GRAND_BANKS }
+}
+
+REPLACE:region_malay_sea = {
+	states = { STATE_MALAY_SEA }
+}
+
+REPLACE:region_southern_baltic_sea = {
+	states = { STATE_SOUTHERN_BALTIC_SEA }
+}
+
+REPLACE:region_baffin_bay = {
+	states = { STATE_BAFFIN_BAY }
+}
+
+REPLACE:region_celtic_sea = {
+	states = { STATE_CELTIC_SEA }
+}
+
+REPLACE:region_northeast_pacific_ocean = {
+	states = { STATE_NORTHEAST_PACIFIC_OCEAN }
+}
+
+REPLACE:region_gulf_of_finland = {
+	states = { STATE_GULF_OF_FINLAND }
+}
+
+REPLACE:region_beaufort_sea = {
+	states = { STATE_BEAUFORT_SEA }
+}
+
+REPLACE:region_north_atlantic_ocean = {
+	states = { STATE_NORTH_ATLANTIC_OCEAN }
+}
+
+REPLACE:region_japan_current = {
+	states = { STATE_JAPAN_CURRENT }
+}
+
+REPLACE:region_cape_verde_sea = {
+	states = { STATE_CAPE_VERDE_SEA }
+}
+
+REPLACE:region_lusitanian_sea = {
+	states = { STATE_LUSITANIAN_SEA }
+}
+
+REPLACE:region_main_equatorial_crurrent = {
+	states = { STATE_MAIN_EQUATORIAL_CRURRENT }
+}
+
+REPLACE:region_adriatic_sea = {
+	states = { STATE_ADRIATIC_SEA }
+}
+
+REPLACE:region_eastern_black_sea = {
+	states = { STATE_EASTERN_BLACK_SEA }
+}
+
+REPLACE:region_balearic_sea = {
+	states = { STATE_BALEARIC_SEA }
+}
+
+REPLACE:region_south_atlantic_ocean = {
+	states = { STATE_SOUTH_ATLANTIC_OCEAN }
+}
+
+REPLACE:region_tyrrhenian_sea = {
+	states = { STATE_TYRRHENIAN_SEA }
+}
+
+REPLACE:region_benguela_coast = {
+	states = { STATE_BENGUELA_COAST }
+}
+
+REPLACE:region_southern_bight = {
+	states = { STATE_SOUTHERN_BIGHT }
+}
+
+REPLACE:region_western_indian_ocean = {
+	states = { STATE_WESTERN_INDIAN_OCEAN }
+}
+
+REPLACE:region_eastern_indian_ocean = {
+	states = { STATE_EASTERN_INDIAN_OCEAN }
+}
+
+REPLACE:region_aegean_sea = {
+	states = { STATE_AEGEAN_SEA }
+}
+
+REPLACE:region_north_atlantic_current = {
+	states = { STATE_NORTH_ATLANTIC_CURRENT }
+}
+
+REPLACE:region_northwest_pacific_ocean = {
+	states = { STATE_NORTHWEST_PACIFIC_OCEAN }
+}
+
+REPLACE:region_guinea_current = {
+	states = { STATE_GUINEA_CURRENT }
+}
+
+REPLACE:region_yellow_sea = {
+	states = { STATE_YELLOW_SEA }
+}
+
+REPLACE:region_amazon_delta = {
+	states = { STATE_AMAZON_DELTA }
+}
+
+REPLACE:region_south_pacific_ocean = {
+	states = { STATE_SOUTH_PACIFIC_OCEAN }
+}
+
+REPLACE:region_southern_atlantic_crurrent = {
+	states = { STATE_SOUTHERN_ATLANTIC_CRURRENT }
+}
+
+REPLACE:region_south_atlantic_coast = {
+	states = { STATE_SOUTH_ATLANTIC_COAST }
+}
+
+REPLACE:region_northern_polynesian_sea = {
+	states = { STATE_NORTHERN_POLYNESIAN_SEA }
+}
+
+REPLACE:region_patagonian_channels = {
+	states = { STATE_PATAGONIAN_CHANNELS }
+}
+
+REPLACE:region_pacific_seaboard = {
+	states = { STATE_PACIFIC_SEABOARD }
+}
+
+REPLACE:region_inside_passage = {
+	states = { STATE_INSIDE_PASSAGE }
+}
+
+REPLACE:region_western_polynesian_sea = {
+	states = { STATE_WESTERN_POLYNESIAN_SEA }
+}
+
+REPLACE:region_philippines_sea = {
+	states = { STATE_PHILIPPINES_SEA }
+}
+
+REPLACE:region_southern_ocean_01 = {
+	states = { STATE_SOUTHERN_OCEAN_01 }
+}
+
+REPLACE:region_coral_sea = {
+	states = { STATE_CORAL_SEA }
+}
+
+REPLACE:region_south_indian_ocean = {
+	states = { STATE_SOUTH_INDIAN_OCEAN }
+}
+
+REPLACE:region_zanzibar_coast = {
+	states = { STATE_ZANZIBAR_COAST }
+}
+
 
 
 # ---- west_south_asia_strategic_regions.txt ----

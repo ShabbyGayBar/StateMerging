@@ -1702,6 +1702,7 @@ REPLACE:building_railway = {
 					}
 				}
 			}
+			add = 10000
 		}
 
 		if = { # Manchurian Railway
@@ -1810,7 +1811,7 @@ REPLACE:building_manor_house = {
 				value = 0.0
 			}
 		}
-		bg_manufacturing_score = {
+		bg_trade_score = {
 			group = "bg_trade"
 			score = {
 				value = 0.0
@@ -1967,7 +1968,7 @@ REPLACE:building_financial_district = {
 				}
 			}
 		}
-		bg_manufacturing_score = {
+		bg_trade_score = {
 			group = "bg_trade"
 			score = {
 				value = 1.0
