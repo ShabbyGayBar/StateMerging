@@ -212,7 +212,7 @@ company_gran_azucarera = {
 				is_building_type = building_sugar_plantation
 				level >= 5
 			}
-			count >= 2
+			count >= 1
 		}
 	}
 
@@ -300,7 +300,7 @@ company_rodriguez_arguelles_y_cia = {
 				is_building_type = building_tobacco_plantation
 				level >= 5
 			}
-			count >= 2
+			count >= 1
 		}
 	}
 
@@ -398,7 +398,7 @@ company_ynchausti_y_compania = {
 				}
 				level >= 5
 			}
-			count >= 2
+			count >= 1
 		}
 	}
 
@@ -588,7 +588,7 @@ company_uniao_fabril = {
 				}
 				level >= 5
 			}
-			count >= 2
+			count >= 1
 		}
 	}
 
