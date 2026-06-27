@@ -367,7 +367,7 @@ can_aus.6 = {
 						state_region = s:STATE_NORTHWEST_TERRITORIES
 						state_region = s:STATE_NORTHWEST_TERRITORIES
 					}
-					count >= 9
+					count >= 6
 				}
 			}
 			save_scope_as = canada_country
@@ -469,7 +469,7 @@ can_aus.8 = {
 						state_region = s:STATE_NORTH_ISLAND
 						state_region = s:STATE_NORTH_ISLAND
 					}
-					count >= 7
+					count >= 3
 				}
 			}
 			save_scope_as = canada_country

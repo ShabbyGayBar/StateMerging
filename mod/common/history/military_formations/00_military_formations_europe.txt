@@ -1297,7 +1297,7 @@
 
 		create_military_formation = {
 			type = fleet
-			hq_region = sr:region_atlantic_coast
+			hq_region = sr:region_canada
 			name = North_America_and_West_Indies_Station
 
 			ship = {
