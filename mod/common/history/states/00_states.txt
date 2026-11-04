@@ -4694,6 +4694,10 @@
         add_homeland = cu:japanese
         add_homeland = cu:ainu
         add_claim = c:JAP
+        set_variable = {
+            name = daimyo_chain_id
+            value = 0
+        }
     }
     s:STATE_KANTO = {
         create_state = {
@@ -4702,6 +4706,14 @@
         }
 
         add_homeland = cu:japanese
+        set_variable = {
+            name = daimyo_chain_id
+            value = 0
+        }
+        set_variable = {
+            name = daimyo_chain_id
+            value = 0
+        }
     }
     s:STATE_KANSAI = {
         create_state = {
@@ -4710,6 +4722,18 @@
         }
 
         add_homeland = cu:japanese
+        set_variable = {
+            name = daimyo_chain_id
+            value = 0
+        }
+        set_variable = {
+            name = daimyo_chain_id
+            value = 0
+        }
+        set_variable = {
+            name = daimyo_chain_id
+            value = 0
+        }
     }
     s:STATE_KYOTO = {
         create_state = {
@@ -4718,6 +4742,18 @@
         }
 
         add_homeland = cu:japanese
+        set_variable = {
+            name = daimyo_chain_id
+            value = 0
+        }
+        set_variable = {
+            name = daimyo_chain_id
+            value = 0
+        }
+        set_variable = {
+            name = daimyo_chain_id
+            value = 0
+        }
     }
     s:STATE_KYUSHU = {
         create_state = {
@@ -4733,6 +4769,10 @@
         add_homeland = cu:japanese
         add_homeland = cu:ryukyuan
         add_claim = c:RYU
+        set_variable = {
+            name = daimyo_chain_id
+            value = 0
+        }
     }
     s:STATE_LHASA = {
         create_state = {
