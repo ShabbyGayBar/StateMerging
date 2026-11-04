@@ -1109,7 +1109,3 @@ REPLACE:ATL = {
 		has_technology_researched = pan-nationalism
 	}
 }
-
-INJECT:ITA = {
-    required_states_fraction = 0.5
-}

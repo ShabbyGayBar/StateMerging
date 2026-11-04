@@ -1,2958 +1,4 @@
-﻿# ---- 01_africa.txt ----
-REPLACE:ALD = {
-	color = { 220  202  96 }
-
-	country_type = unrecognized
-
-	tier = kingdom
-
-	cultures = { maghrebi berber }
-
-	capital = STATE_ALGIERS
-}
-
-
-REPLACE:CON = {
-	color = { 228 3 16 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { maghrebi berber }
-
-	capital = STATE_CONSTANTINE
-}
-
-REPLACE:EGY = {
-	color = { 255  205  155 }
-
-	country_type = unrecognized
-
-	tier = kingdom
-
-	cultures = { misri }
-	capital = STATE_LOWER_EGYPT
-}
-
-REPLACE:ETH = {
-	color = { 56  120  191 }
-
-	country_type = unrecognized
-
-	tier = empire
-
-	cultures = { amhara oromo tigray }
-	capital = STATE_GONDER
-}
-
-REPLACE:MAD = {
-	color = { 117  150  120 }
-
-	country_type = unrecognized
-
-	tier = kingdom
-
-	cultures = { malagasy }
-	capital = STATE_NORTH_MADAGASCAR
-}
-
-REPLACE:MAS = {
-	color = { 0 129 48 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { maghrebi berber }
-
-	capital = STATE_ORAN
-}
-
-REPLACE:LIB = {
-	color = { 193  138  83 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { afro_american }
-	capital = STATE_LIBERIA
-	is_named_from_capital = yes
-}
-
-REPLACE:MOR = {
-	color = { 224  146  113 }
-
-	country_type = unrecognized
-
-	tier = kingdom
-
-	cultures = { maghrebi berber }
-	capital = STATE_FEZ
-}
-
-REPLACE:NAL = {
-	color = { 106  178  46 }
-
-	country_type = recognized
-
-	tier = principality
-
-	cultures = { boer }
-	capital = STATE_TRANSVAAL
-}
-
-REPLACE:ORA = {
-	color = { 224 139 47 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { boer }
-	capital = STATE_TRANSVAAL
-	is_named_from_capital = yes
-}
-
-REPLACE:SAF = {
-	color = { 180  158  127 }
-
-	country_type = colonial
-
-	tier = kingdom
-
-	cultures = { british }
-	capital = STATE_CAPE_COLONY
-}
-
-REPLACE:SOK = {
-	color = { 0 135 81 }
-
-	country_type = unrecognized
-
-	tier = kingdom
-
-	cultures = { hausa fulbe }
-	capital = STATE_YORUBA_STATES
-}
-
-REPLACE:TRI = {
-	color = { 180 137 148 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { maghrebi }
-	capital = STATE_LIBYA
-	is_named_from_capital = yes
-}
-
-REPLACE:TRN = {
-	color = { 140  183  154 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { boer }
-	capital = STATE_TRANSVAAL
-	is_named_from_capital = yes
-}
-
-REPLACE:TUN = {
-	color = { 131  101  85 }
-
-	country_type = unrecognized
-
-	tier = kingdom
-
-	cultures = { maghrebi }
-	capital = STATE_TUNISIA
-	is_named_from_capital = yes
-}
-
-REPLACE:ZAN = {
-	color = { 166  189  199 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { swahili }
-	capital = STATE_ZANZIBAR
-	is_named_from_capital = yes
-}
-
-REPLACE:ZUL = {
-	color = { 204  186  201 }
-
-	country_type = unrecognized
-
-	tier = kingdom
-
-	cultures = { zulu }
-	capital = STATE_TRANSVAAL
-	is_named_from_capital = yes
-}
-
-REPLACE:SIL = {
-	color = { 123  206  101 }
-
-	country_type = colonial
-
-	tier = principality
-
-	cultures = { british } # Changed from Afro-Caribbean
-	capital = STATE_SIERRA_LEONE
-	is_named_from_capital = yes
-}
-
-REPLACE:MTB = {
-	color = { 142 80 55 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { nguni shona }
-	capital = STATE_ZAMBEZI
-}
-
-REPLACE:MSH = {
-	color = { 193 189 151 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { shona }
-	capital = STATE_ZAMBEZI
-}
-
-REPLACE:MNC = {
-	color = { 60 147 140 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { shona }
-	capital = STATE_ZAMBEZIA
-}
-
-REPLACE:MSK = {
-	color = { 75 75 148 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { nguni }
-	capital = STATE_ZAMBEZIA
-}
-
-REPLACE:MTP = {
-	color = { 204 121 68 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { shona }
-	capital = STATE_ZAMBEZI
-}
-
-REPLACE:NAM = {
-	color = { 49 119 34 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { khoisan }
-	capital = STATE_NAMAQUALAND
-}
-
-REPLACE:HRO = {
-	color = { 221 140 40 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { herero khoisan }
-	capital = STATE_HEREROLAND
-}
-
-REPLACE:OVB = {
-	color = { 240 40 121 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { kavango_bantu }
-	capital = STATE_HEREROLAND
-}
-
-REPLACE:SAN = {
-	color = { 110 130 37 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { khoisan }
-	capital = STATE_BOTSWANA
-}
-
-REPLACE:LZO = {
-	color = { 176 106 168 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { kavango_bantu }
-	capital = STATE_ZAMBIA
-}
-
-REPLACE:TSW = {
-	color = { 117 170 219 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { tswana }
-	capital = STATE_BOTSWANA
-}
-
-REPLACE:WBL = {
-	color = { 122 105 77 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { griqua }
-	capital = STATE_CAPE_COLONY
-}
-
-REPLACE:PHL = {
-	color = { 176 176 131 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { griqua }
-	capital = STATE_TRANSVAAL
-}
-
-REPLACE:KZM = {
-	color = { 202 217 170 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { lunda }
-	capital = STATE_KAZEMBE
-}
-
-REPLACE:BMB = {
-	color = { 192 90 121 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { lacustrine_bantu }
-	capital = STATE_KAZEMBE
-}
-
-REPLACE:KSN = {
-	color = { 102 105 101 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { lunda ovimbundu }
-	capital = STATE_EAST_ANGOLA
-}
-
-REPLACE:OVM = {
-	color = { 107 94 52 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { ovimbundu }
-	capital = STATE_SOUTH_ANGOLA
-}
-
-REPLACE:CHK = {
-	color = { 99 160 39 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { lunda ovimbundu }
-	capital = STATE_EAST_ANGOLA
-}
-
-REPLACE:LND = {
-	color = { 199 60 39 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { lunda ovimbundu }
-	capital = STATE_EAST_ANGOLA
-}
-
-REPLACE:KBA = {
-	color = { 159 60 189 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { fluvian_bantu }
-	capital = STATE_KASAI
-}
-
-REPLACE:MNB = {
-	color = { 75 129 182 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { fluvian_bantu }
-	capital = STATE_CONGO_ORIENTALE
-}
-
-REPLACE:NYM = {	# Unymanwezi. Nyamwezi is the name of the people, the U- prefix turns it into the name of a land
-	color = { 164 125 26 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { nyamwezi }
-	capital = STATE_TANGANYIKA
-}
-
-REPLACE:HHE = {
-	color = { 126 84 131 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { lacustrine_bantu }
-	capital = STATE_LINDI
-}
-
-REPLACE:FTJ = {
-	color = { 230 125 127 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { fulbe }
-	capital = STATE_GUINEA
-}
-
-REPLACE:BUG = {
-	color = { 21 21 227 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { baganda }
-	capital = STATE_UGANDA
-}
-
-REPLACE:ASH = {
-	color = { 97 98 195 }
-
-	country_type = unrecognized
-
-	tier = kingdom
-
-	cultures = { akan }
-	capital = STATE_GOLD_COAST
-}
-
-REPLACE:YKA = {
-	color = { 99 160 239 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { bakongo lunda }
-	capital = STATE_BAS_CONGO
-}
-
-REPLACE:KON = {
-	color = { 199 160 139 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	religion = catholic
-
-	cultures = { bakongo }
-	capital = STATE_BAS_CONGO
-}
-
-REPLACE:LNG = {
-	color = { 200 202 85 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { bakongo }
-	capital = STATE_CONGO
-}
-
-REPLACE:FNG = {
-	color = { 193 170 57 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { fang }
-	capital = STATE_GABON
-}
-
-REPLACE:BNG = {
-	color = { 41 135 135 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { mongo fluvian_bantu }
-	capital = STATE_EQUATEUR
-}
-
-REPLACE:BST = {
-	color = { 137 106 217 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { sotho }
-	capital = STATE_TRANSVAAL
-}
-
-REPLACE:TKE = {
-	color = { 99 160 139 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { bakongo }
-	capital = STATE_CONGO
-}
-
-REPLACE:BOB = {
-	color = { 211 149 112 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { mongo bakongo }
-	capital = STATE_EQUATEUR
-}
-
-REPLACE:LGA = {
-	color = { 175 103 31 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { fluvian_bantu }
-	capital = STATE_CONGO_ORIENTALE
-}
-
-REPLACE:HMB = {
-	color = { 180 146 150 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { fluvian_bantu }
-	capital = STATE_CONGO_ORIENTALE
-}
-
-REPLACE:LBA = {
-	color = { 42 63 153 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { luba }
-	capital = STATE_KATANGA
-}
-
-REPLACE:BNY = {
-	color = { 174 24 66 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { baganda lacustrine_bantu }
-	capital = STATE_UGANDA
-}
-
-REPLACE:ANK = {
-	color = { 126 162 98 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { baganda lacustrine_bantu }
-	capital = STATE_UGANDA
-}
-
-REPLACE:ACH = {
-	color = { 166 225 217 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { luo lacustrine_bantu }
-	capital = STATE_UGANDA
-}
-
-REPLACE:KRG = {
-	color = { 48 177 169 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { lacustrine_bantu baganda }
-	capital = STATE_TANGANYIKA
-}
-
-REPLACE:RWD = {
-	color = { 213 160 18 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { ruanda }
-	capital = STATE_TANGANYIKA
-}
-
-REPLACE:BRD = {
-	color = { 21 191 16 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { rundi }
-	capital = STATE_TANGANYIKA
-}
-
-REPLACE:MSI = {
-	color = { 190 103 84 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { maasai }
-	capital = STATE_KENYA
-}
-
-REPLACE:TRK = {
-	color = { 103 84 190 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { nilotic maasai }
-	capital = STATE_KENYA
-}
-
-REPLACE:LUO = {
-	color = { 153 153 168 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { luo }
-	capital = STATE_KENYA
-}
-
-REPLACE:GGO = {
-	color = { 244 228 166 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { lacustrine_bantu }
-	capital = STATE_LINDI
-}
-
-REPLACE:SNG = {
-	color = { 203 54 66 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { lacustrine_bantu }
-	capital = STATE_LINDI
-}
-
-REPLACE:KKY = {
-	color = { 169 52 90 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { kikuyu }
-	capital = STATE_KENYA
-}
-
-REPLACE:WSG = {
-	color = { 18 97 128 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { somali }
-	capital = STATE_SOMALILAND
-}
-
-REPLACE:GLD = {
-	color = { 38 160 67 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { somali }
-	capital = STATE_SOMALILAND
-}
-
-REPLACE:MJT = {
-	color = { 220 200 100 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { somali }
-	capital = STATE_SOMALILAND
-}
-
-REPLACE:DFR = {
-	color = { 44 160 70 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { fur bedouin }
-	capital = STATE_EQUATORIA
-}
-
-REPLACE:ISQ = {
-	color = { 224 255 182 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { somali }
-	capital = STATE_SOMALILAND
-}
-
-REPLACE:HOB = {
-	color = { 255 73 7 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { somali }
-	capital = STATE_SOMALILAND
-}
-
-REPLACE:DAK = {
-	color = { 123 134 74 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { fur equatorial_bantu }
-	capital = STATE_UBANGI_SHARI
-}
-
-REPLACE:ZND = {
-	color = { 208 225 57 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { azande }
-	capital = STATE_CONGO_ORIENTALE
-}
-
-REPLACE:DFT = {
-	color = { 167 92 56 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { equatorial_bantu azande }
-	capital = STATE_EQUATORIA
-}
-
-REPLACE:DNK = {
-	color = { 78 99 75 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { dinka }
-	capital = STATE_EQUATORIA
-}
-
-REPLACE:NUE = {
-	color = { 230 227 240 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { nuer }
-	capital = STATE_EQUATORIA
-}
-
-REPLACE:TPS = {
-	color = { 232 101 68 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { nilotic }
-	capital = STATE_EQUATORIA
-}
-
-REPLACE:AWS = {
-	color = { 125 125 100 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { afar }
-	capital = STATE_GONDER
-}
-
-REPLACE:SHW = {
-	color = { 1 200 200 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { amhara oromo }
-	capital = STATE_OROMIA
-}
-
-REPLACE:HAR = {
-	color = { 175 75 15 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { amhara }
-	religion = sunni
-	capital = STATE_OROMIA
-}
-
-REPLACE:BRN = {
-	color = { 236 236 104 }
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { oromo }
-	religion = sunni
-	capital = STATE_AMHARA
-}
-
-REPLACE:KFA = {
-	color = { 150 0 25 }
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { sidama oromo }
-	religion = oriental_orthodox
-	capital = STATE_AMHARA
-}
-
-REPLACE:SDM = {
-	color = { 83 65 167 }
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { sidama }
-	religion = oriental_orthodox
-	capital = STATE_AMHARA
-}
-
-REPLACE:WLG = {
-	color = { 126 208 222 }
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { oromo }
-	capital = STATE_AMHARA
-}
-
-REPLACE:TGR = {
-	color = { 167 218 207 }
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures =  { tigray amhara }
-	capital = STATE_AMHARA
-}
-
-REPLACE:GJM = {
-	color = { 191 147 79 }
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { amhara }
-	capital = STATE_AMHARA
-}
-
-REPLACE:WLO = {
-	color = { 222 199 163 }
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { amhara }
-	capital = STATE_AMHARA
-}
-
-REPLACE:BGM = {
-	color = { 228 243 104 }
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { amhara oromo tigray }
-	capital = STATE_AMHARA
-}
-
-REPLACE:BOR = {
-	color = { 30 131 162 }
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { kanuri }
-	capital = STATE_EAST_HAUSALAND
-}
-
-REPLACE:BGI = {
-	color = { 64 124 157 }
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { baguirmi }
-	capital = STATE_CHAD
-}
-
-REPLACE:WAD = {
-	color = { 194 66 41 }
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { fur }
-	capital = STATE_CHAD
-}
-
-REPLACE:AIR = {
-	color = { 30 31 162 }
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { tuareg }
-	capital = STATE_NIGER
-}
-
-REPLACE:MSN = {
-	color = { 230 231 62 }
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { fulbe }
-	capital = STATE_EASTERN_MALI
-}
-
-REPLACE:OYO = {
-	color = { 211 184 179 }
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { yoruba }
-	capital = STATE_YORUBA_STATES
-}
-
-REPLACE:BEN = {
-	color = { 110 173 129 }
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { edo }
-	capital = STATE_NIGER_DELTA
-}
-
-REPLACE:CAY = {
-	color = { 189 187 166 }
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { wolof }
-	capital = STATE_SENEGAL
-}
-
-REPLACE:JLF = {
-	color = { 215  215  125 }
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { wolof }
-	capital = STATE_SENEGAL
-}
-
-REPLACE:FTR = {
-	color = { 115 204 102 }
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { fulbe wolof }
-	capital = STATE_SENEGAL
-}
-
-REPLACE:KNG = {
-	color = { 137 98 195 }
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { dyula senufo }
-	capital = STATE_IVORY_COAST
-}
-
-REPLACE:DAH = {
-	color = { 11 84 179 }
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { fon }
-	capital = STATE_DAHOMEY
-}
-
-REPLACE:MOS = {
-	color = { 27 128 45 }
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { mossi }
-	capital = STATE_VOLTA
-}
-
-REPLACE:KRT = {
-	color = { 127 28 45 }
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { bambara }
-	capital = STATE_EASTERN_MALI
-}
-
-REPLACE:SGU = {
-	color = { 27 28 145 }
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { bambara }
-	capital = STATE_EASTERN_MALI
-}
-
-REPLACE:TRZ = {
-	color = { 230 123 17 }
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { bidan }
-	capital = STATE_MAURITANIA
-}
-
-REPLACE:KBU = {
-	color = { 101 63 41 }
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { mande }
-
-	religion = animist
-
-	capital = STATE_SENEGAL
-}
-
-REPLACE:BND = {
-	color = { 60 118 54 }
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { fulbe mande }
-	capital = STATE_SENEGAL
-}
-
-REPLACE:SRR = {
-	color = { 57 121 111 }
-	country_type = decentralized
-
-	tier = principality
-
-	religion = animist
-
-	cultures = { fulbe }
-	capital = STATE_SENEGAL
-}
-
-REPLACE:SSU = {
-	color = { 69 109 142 }
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { mande }
-	capital = STATE_GUINEA
-}
-
-REPLACE:MDK = {
-	color = { 191 83 53 }
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { mande }
-	capital = STATE_GUINEA
-}
-
-REPLACE:HAU = {
-	color = { 225 185 85 }
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { hausa }
-	capital = STATE_NIGER
-}
-
-REPLACE:BLE = {
-	color = { 218 104 44 }
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { akan }
-	capital = STATE_IVORY_COAST
-}
-
-REPLACE:KRU = {
-	color = { 94 168 142 }
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { kru }
-	capital = STATE_IVORY_COAST
-}
-
-REPLACE:KBD = {
-	color = { 117 36 54 }
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { mande }
-	capital = STATE_IVORY_COAST
-}
-
-REPLACE:AYI = {
-	color = { 131 210 34 }
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { akan }
-	capital = STATE_IVORY_COAST
-}
-
-REPLACE:EWE = {
-	color = { 210 34 131 }
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { ewe }
-	capital = STATE_DAHOMEY
-}
-
-REPLACE:IBO = {
-	color = { 119 24 85 }
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { ibo }
-	capital = STATE_NIGER_DELTA
-}
-
-REPLACE:DLA = {
-	color = { 22 121 17 }
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { equatorial_bantu }
-	capital = STATE_SOUTH_CAMEROON
-}
-
-REPLACE:TBI = {
-	color = { 220 210 97 }
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { teda }
-	capital = STATE_CHAD
-}
-
-REPLACE:AHG = {
-	color = { 138 168 70 }
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { tuareg }
-	capital = STATE_SAHARA
-}
-
-REPLACE:TUA = {
-	color = { 66 98 114 }
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { berber }
-	capital = STATE_SAHARA
-}
-
-REPLACE:OUA = {
-	color = { 113 95 122 }
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { bidan }
-	capital = STATE_INNER_MAURITANIA
-}
-
-REPLACE:ADG = {
-	color = { 215 132 165 }
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { tuareg }
-	capital = STATE_TIMBUKTU
-}
-
-REPLACE:BSS = { # Bassa
-	color = { 203 48 37 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { bassa }
-	capital = STATE_LIBERIA
-}
-
-REPLACE:TIR = { # Tiris
-	color = { 106 95 79 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { haratin }
-	capital = STATE_MAURITANIA
-}
-
-REPLACE:IBL = { # Ibibioland
-	color = { 142 134 187 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { ibibio }
-	capital = STATE_NIGER_DELTA
-}
-
-REPLACE:KSS = { # Kissi
-	color = { 61 75 109 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { kissi }
-	capital = STATE_GUINEA
-}
-
-REPLACE:GAO = { # Gao
-	color = { 62 175 151 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { songhai }
-	capital = STATE_TIMBUKTU
-}
-
-REPLACE:TIV = { # Tivland
-	color = { 240 213 100 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { tiv }
-	capital = STATE_EAST_HAUSALAND
-}
-
-REPLACE:SRA = { # Sara
-	color = { 179 236 217 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { sara }
-	capital = STATE_UBANGI_SHARI
-}
-
-REPLACE:EQU = { # Equatoria
-	color = { 236 173 104 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { nilotic }
-	capital = STATE_EQUATORIA
-}
-
-REPLACE:BJA = { # Beja
-	color = { 140 65 135 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { beja }
-	capital = STATE_BLUE_NILE
-}
-
-REPLACE:NBA = { # Nuba
-	color = { 138 187 72 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { nuba }
-	capital = STATE_EQUATORIA
-}
-
-REPLACE:SUD = { # Sudanese
-	color = { 189 159 69 }
-
-	country_type = unrecognized
-
-	tier = kingdom
-
-	cultures = { sudanese beja bedouin }
-	capital = STATE_BLUE_NILE
-}
-
-REPLACE:SKM = { # Usukuma. Sukuma is the name of the people, the U- prefix turns it into the name of a land
-	color = { 101 122 158 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { sukuma }
-	capital = STATE_TANGANYIKA
-}
-
-REPLACE:CHW = { # Chewa
-	color = { 116 157 102 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { chewa }
-	capital = STATE_KAZEMBE
-}
-
-REPLACE:LMW = { # Lomwe
-	color = { 201 10 48 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { lomwe }
-	capital = STATE_MOCAMBIQUE
-}
-
-REPLACE:MKU = { # Makua
-	color = { 38 140 40 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { makua }
-	capital = STATE_MOCAMBIQUE
-}
-
-REPLACE:SNA = { # Sena
-	color = { 91 132 128 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { sena }
-	capital = STATE_MOCAMBIQUE
-}
-
-REPLACE:BTG = { # Batonga
-	color = { 200 193 108 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { tonga }
-	capital = STATE_LOURENCO_MARQUES
-}
-
-REPLACE:XHO = { # Xhosa
-	color = { 88 80 163 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { xhosa }
-	capital = STATE_CAPE_COLONY
-}
-
-REPLACE:UYA = { # Uyao
-	color = { 192 204 111 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { yao }
-	capital = STATE_MOCAMBIQUE
-}
-
-REPLACE:ZIM = {
-	color = { 0 173 112 }
-
-	country_type = unrecognized
-
-	tier = kingdom
-
-	cultures = { shona nguni}
-	capital = STATE_ZAMBEZIA
-}
-
-REPLACE:MAL = {
-	color = { 75 179 27}
-	country_type = unrecognized
-	tier = kingdom
-	cultures = { bambara fulbe wolof mande }
-	capital = STATE_EASTERN_MALI
-}
-
-REPLACE:AFS = { #Dynamic African Free State
-	color = {130 23 47}
-	country_type = colonial
-	tier = principality
-	cultures = { bakongo }
-}
-
-REPLACE:SAH = { # Sahrawi
-	color = { 220  202  96 }
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { bidan }
-	capital = STATE_WEST_SAHARA
-}
-
-REPLACE:TUG = {
-	color = { 90 140 190 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { berber }
-	capital = STATE_SAHARA
-}
-
-REPLACE:AIT = {
-	color = { 255 255 153 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { berber }
-	capital = STATE_CONSTANTINE
-}
-
-REPLACE:GZA = {
-	color = { 191 154 108 }
-
-	country_type = unrecognized
-
-	tier = kingdom
-
-	cultures = { nguni }
-	capital = STATE_LOURENCO_MARQUES
-}
-
-REPLACE:MRV = {
-	color = { 220 220 75 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { chewa }
-	capital = STATE_KAZEMBE
-}
-
-REPLACE:BRG = {
-	color = { 218 231 235 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { mande fulbe }
-	capital = STATE_YORUBA_STATES
-}
-
-REPLACE:BMM = {
-	color = { 197 201 163 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { equatorial_bantu }
-	religion = sunni
-	capital = STATE_SOUTH_CAMEROON
-}
-
-REPLACE:MGB = {
-	color = { 209 63 44 }
-
-	country_type = unrecognized
-
-	tier = empire
-
-	cultures = { maghrebi berber bidan }
-	capital = STATE_TUNISIA
-}
-
-REPLACE:WTU = { # Witu/Wituland/Sultanate of Pate in exile
-	color = { 255 164 7 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { swahili }
-	capital = STATE_KENYA
-}
-
-REPLACE:MBS = { # Mombasa
-	color = { 127 177 72 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { swahili }
-	religion = ibadi			# the Mazrui were Ibadis /until/ the Busaidi conquest of Mombasa in 1837
-	capital = STATE_KENYA
-	is_named_from_capital = yes
-}
-
-REPLACE:AJR = { # Ajuran, also spelled Ajuuraan
-	color = { 124 128 93 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { somali }
-	religion = sunni
-	capital = STATE_KENYA
-}
-
-REPLACE:AUL = { # Aulihan, also sometimes spelled Awlihan
-	color = { 196 227 240 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { somali }
-	religion = sunni
-	capital = STATE_KENYA
-}
-
-REPLACE:MJK = { # Mijikenda
-	color = { 144 33 155 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { lacustrine_bantu }
-	capital = STATE_KENYA
-}
-
-REPLACE:ORM = { # Orma
-	color = { 101 95 188 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { oromo }
-	religion = animist
-	capital = STATE_KENYA
-}
-
-REPLACE:SKY = { # Sakuye
-	color = { 122 131 130 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { oromo }
-	religion = animist
-	capital = STATE_KENYA
-}
-
-REPLACE:UTR = { # Utetera
-	color = { 1 140 80 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { swahili }
-	religion = ibadi
-	capital = STATE_CONGO_ORIENTALE # 'Lualaba' in-game
-}
-
-REPLACE:OGD = { # Ogaden
-	color = { 155 188 99 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { somali }
-
-	capital = STATE_OROMIA
-}
-
-REPLACE:QWR = { # Qwara, sometimes spelled 'Quara' in literature, or even 'Quoara' if you're unfortunately French
-	color = { 112 169 199 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { amhara }
-	capital = STATE_GONDER
-}
-
-REPLACE:TGI = { # Tungi
-	color = { 72 92 12 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { swahili }
-	capital = STATE_MOCAMBIQUE
-}
-
-REPLACE:WLT = {
-	color = { 212 230 54 }
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { sidama }
-	religion = oriental_orthodox
-	capital = STATE_AMHARA
-}
-
-REPLACE:HDY = {
-	color = { 34 128 89 }
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { oromo }
-	religion = sunni
-	capital = STATE_AMHARA
-}
-
-REPLACE:ARS = {
-	color = { 255 197 179 }
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { oromo }
-	religion = sunni
-	capital = STATE_OROMIA
-}
-
-REPLACE:ANU = { # Anuak
-	color = { 128 98 89 }
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { luo }
-	religion = animist
-	capital = STATE_AMHARA
-}
-
-REPLACE:OMO = { # Omo
-	color = { 71 121 128 }
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { sidama }
-	religion = animist
-	capital = STATE_AMHARA
-}
-
-# Swaziland/Eswatini
-REPLACE:SWZ = {
-	color = { 255 217 0 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { nguni }
-	capital = STATE_TRANSVAAL
-}
-
-REPLACE:PDI = {
-	color = { 237 107 116 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { sotho }
-	capital = STATE_TRANSVAAL
-}
-
-REPLACE:VND = {
-	color = { 235 122 83 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { sotho }
-	capital = STATE_TRANSVAAL
-}
-
-REPLACE:TMN = { # Temne
-	color = { 71 121 24 }
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { kissi }
-	religion = animist
-	capital = STATE_SIERRA_LEONE
-}
-
-REPLACE:DIO = { # Diola
-	color = { 123 111 111 }
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { fulbe }
-	religion = animist
-	capital = STATE_SIERRA_LEONE
-}
-
-REPLACE:AGC = { # Angoche
-	color = { 255 180 0 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { swahili }
-	capital = STATE_MOCAMBIQUE
-}
-
-REPLACE:ZWY = {
-	color = { 221 133 80 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { bedouin }
-	capital = STATE_LIBYA
-}
-
-REPLACE:AJJ = {
-	color = { 255 105 180 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { tuareg }
-	capital = STATE_LIBYA
-}
-
-REPLACE:FZN = {
-	color = { 231 0 19 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { maghrebi }
-	capital = STATE_LIBYA
-}
-
-REPLACE:CYR = {
-	color = { 30 55 80 } # Plain black looks really bad so we will do with this
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { maghrebi }
-	capital = STATE_LIBYA
-}
-
-REPLACE:LBY = {
-	color = { 82 137 118 }
-
-	country_type = unrecognized
-
-	tier = kingdom
-
-	cultures = { maghrebi }
-	capital = STATE_LIBYA
-}
-
-REPLACE:CMB = {
-	color = { 140 175 130 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { bedouin }
-	capital = STATE_SAHARA
-}
-
-REPLACE:MZB = {
-	color = { 203 105 237 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { berber }
-	religion = ibadi
-	capital = STATE_SAHARA
-}
-
-REPLACE:TEK = {
-	color = { 93 64 156 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { bidan }
-	capital = STATE_MARRAKECH
-}
-
-REPLACE:RGB = { # Hell yeah
-	color = { 231 134 43 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { bidan }
-	capital = STATE_WEST_SAHARA
-}
-
-REPLACE:DLM = {
-	color = { 43 221 159 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { bidan }
-	capital = STATE_WEST_SAHARA
-}
-
-REPLACE:DIN = {
-	color = { 143 55 56 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { tuareg }
-	capital = STATE_NIGER
-}
-
-REPLACE:ATR = {
-	color = { 83 123 40  }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { tuareg }
-	capital = STATE_TIMBUKTU
-}
-
-REPLACE:ADR = {
-	color = { 13 164 56 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { bidan }
-	capital = STATE_INNER_MAURITANIA
-}
-
-REPLACE:BRK = {
-	color = { 33 64 120 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { haratin }
-	capital = STATE_MAURITANIA
-}
-
-
-# ---- 01_pacific_and_australasia.txt ----
-REPLACE:HAW = {
-	color = { 48  169  96 }
-
-	tier = kingdom
-
-	country_type = unrecognized
-
-	cultures = { hawaiian }
-	religion = protestant
-
-	capital = STATE_HAWAIIAN_ISLANDS
-	is_named_from_capital = yes
-}
-
-REPLACE:NTU = {
-	color = { 62 92 54 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { maori }
-	capital = STATE_NORTH_ISLAND
-}
-
-REPLACE:NTO = {
-	color = { 148 185 190 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { maori }
-	capital = STATE_NORTH_ISLAND
-}
-
-REPLACE:KNK = {
-	color = { 190 173 103 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { melanesian }
-	capital = STATE_SOLOMON_ISLANDS
-}
-
-REPLACE:PPU = {
-	color = { 81 97 170 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { melanesian }
-	capital = STATE_WESTERN_NEW_GUINEA
-}
-
-REPLACE:HLA = { # Halia, for Bougainville
-	color = { 210 184 220 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { melanesian }
-	capital = STATE_SOLOMON_ISLANDS
-}
-
-REPLACE:BLA = { # Bilua
-	color = { 140 166 75 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { melanesian }
-	capital = STATE_SOLOMON_ISLANDS
-}
-
-REPLACE:BLG = { # Bulungan
-	color = { 140 166 75 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { bornean }
-	capital = STATE_WEST_BORNEO
-}
-
-REPLACE:KTI = { # Kutai
-	color = { 137 88 58 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { bornean }
-	capital = STATE_WEST_BORNEO
-}
-
-REPLACE:FJI = { # Fiji
-	color = { 159 173 219 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { melanesian }
-	capital = STATE_FIJI
-}
-
-REPLACE:MCR = { # Micronesia
-	color = { 248 218 99 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { micronesian }
-	capital = STATE_WEST_MICRONESIA
-}
-
-
-REPLACE:VNT = { # Vanuatu
-	color = { 37 214 50 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { melanesian }
-	capital = STATE_SOLOMON_ISLANDS
-}
-
-REPLACE:NRU = { # Nauru
-	color = { 231 131 17 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { melanesian }
-	capital = STATE_WEST_MICRONESIA
-}
-
-REPLACE:PLY = { # Tahiti
-	color = { 176 62 136 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { polynesian }
-	religion = protestant
-	capital = STATE_FIJI
-}
-
-REPLACE:AOT = { # Aotearoa
-	color = { 47 140 191 }
-
-	country_type = unrecognized
-
-	tier = kingdom
-
-	cultures = { maori }
-	capital = STATE_NORTH_ISLAND
-}
-
-REPLACE:ULR = { # Uluru
-	color = { 112 54 16 }
-
-	tier = principality
-
-	country_type = decentralized
-
-	cultures = { aborigine }
-
-	capital = STATE_WESTERN_AUSTRALIA
-}
-
-REPLACE:NSW = { # New South Wales
-	color = { 114 165 203 }
-
-	country_type = colonial
-
-	tier = principality
-
-	capital = STATE_NEW_SOUTH_WALES
-	cultures = { australian }
-}
-
-REPLACE:WAS = { # Western Australia
-	color = { 118 115 97 }
-
-	country_type = colonial
-
-	tier = principality
-
-	capital = STATE_WESTERN_AUSTRALIA
-	cultures = { australian }
-}
-
-REPLACE:SAS = { # South Australia
-	color = { 170 90 128 }
-
-	country_type = colonial
-
-	tier = principality
-
-	capital = STATE_WESTERN_AUSTRALIA
-	cultures = { australian }
-}
-
-REPLACE:UNT = { # United Tribes of New Zealand
-	color = { 170 167 151 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	capital = STATE_NORTH_ISLAND
-	cultures = { maori }
-	religion = protestant
-}
-
-REPLACE:NNG = { # Noongar
-
-	color = { 209 160 107 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_WESTERN_AUSTRALIA
-}
-
-REPLACE:KAU = { # Kaurna
-
-	color = { 245 212 134 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_WESTERN_AUSTRALIA
-}
-
-REPLACE:GML = { # Gamilaraay
-
-	color = { 77 204 68 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_NEW_SOUTH_WALES
-}
-
-REPLACE:AST = {
-	color = { 77  139  106 }
-
-	country_type = colonial
-
-	tier = kingdom
-
-	capital = STATE_NEW_SOUTH_WALES
-	cultures = { australian }
-}
-
-REPLACE:NZL = {
-	color = { 90  250  127 }
-
-	country_type = colonial
-
-	tier = principality
-
-	capital = STATE_NORTH_ISLAND
-	cultures = { australian }
-}
-
-REPLACE:TAS = {
-	color = { 224 194 152 }
-
-	country_type = colonial
-
-	tier = principality
-
-	capital = STATE_NEW_SOUTH_WALES
-	cultures = { australian }
-}
-
-REPLACE:DEI = {
-	color = { 20  80  80 }
-
-	country_type = colonial
-
-	tier = principality
-
-	cultures = { dutch }
-	capital = STATE_WEST_JAVA
-}
-
-# Siak
-REPLACE:SAK = {
-	color = { 21  196  68 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { sumatran }
-	capital = STATE_NORTH_SUMATRA
-}
-
-# Pontianak
-REPLACE:PON = {
-	color = { 255 102 102 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { bornean }
-	capital = STATE_WEST_BORNEO
-}
-
-# Sambas
-REPLACE:SMB = {
-	color = { 102  102  255 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { bornean }
-	capital = STATE_WEST_BORNEO
-}
-
-# Jambi
-REPLACE:JMB = {
-	color = { 223  228  192 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { sumatran }
-	capital = STATE_NORTH_SUMATRA
-}
-
-# Yogyakarta
-REPLACE:YOG = {
-	color = { 201  28  54 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { javan }
-	capital = STATE_WEST_JAVA
-}
-
-# Surakarta
-REPLACE:SRK = {
-	color = { 239 51 64 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { javan }
-	capital = STATE_WEST_JAVA
-}
-
-# Buton
-REPLACE:BTN = {
-	color = { 209  203  31 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { moluccan }
-	capital = STATE_MOLUCCAS
-}
-
-# Selangor
-REPLACE:SEL = {
-	color = { 249 215 61 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { malay }
-	capital = STATE_MALAYA
-}
-
-# Perak
-REPLACE:PRK = {
-	color = { 76  122  117 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { malay }
-	capital = STATE_MALAYA
-}
-
-# Sulu
-REPLACE:SUL = {
-	color = { 89  164  144 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { moro }
-	capital = STATE_LUZON
-}
-
-# Sulawesi
-REPLACE:SLW = {
-	color = { 153 0 0 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { moluccan }
-	capital = STATE_MOLUCCAS
-}
-
-# Tidore
-REPLACE:TID = {
-	color = { 176  232  64 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { moluccan }
-	capital = STATE_MOLUCCAS
-}
-
-# Sintang
-REPLACE:STG = {
-	color = { 255 255 0 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { bornean }
-	capital = STATE_WEST_BORNEO
-}
-
-# Banjar
-REPLACE:BNJ = {
-	color = { 171  175  40 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { bornean }
-	capital = STATE_WEST_BORNEO
-}
-
-# Indonesia
-REPLACE:IDN = {
-	color = { 0  128  128 }
-
-	country_type = recognized
-
-	tier = empire
-
-	cultures = { balinese batak bornean dayak javan malay moluccan sumatran }
-	capital = STATE_WEST_JAVA
-}
-
-# Maguindanao
-REPLACE:MGD = {
-	color = { 119  32  29 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { moro }
-	capital = STATE_LUZON
-}
-
-REPLACE:YUZ = { # Yuanzhumin
-	color = { 97 44 96 }
-
-	country_type = unrecognized
-
-	tier = principality
-
-	cultures = { yuanzhumin }
-	capital = STATE_FORMOSA
-}
-
-REPLACE:PNS = { # Polynesia
-	color = { 244 140 30 }
-
-	country_type = unrecognized
-
-	tier = empire
-
-	cultures = { hawaiian maori melanesian polynesian micronesian yuanzhumin }
-	capital = STATE_HAWAIIAN_ISLANDS
-}
-
-REPLACE:WTI = { # Wati
-	color = { 54 112 16 }
-
-	tier = principality
-
-	country_type = decentralized
-
-	cultures = { aborigine }
-
-	capital = STATE_WESTERN_AUSTRALIA
-}
-
-REPLACE:MRN = { # Mirning
-	color = { 3 113 211 }
-
-	tier = principality
-
-	country_type = decentralized
-
-	cultures = { aborigine }
-
-	capital = STATE_WESTERN_AUSTRALIA
-}
-
-# Mindanao
-REPLACE:MND = {
-	color = { 255 255 204 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { lumad }
-	capital = STATE_LUZON
-}
-
-REPLACE:KLN = { # Kulinic
-	color = { 27 1 230 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_NEW_SOUTH_WALES
-}
-
-REPLACE:KNC = { # Karnic
-	color = { 236 232 85 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_NEW_SOUTH_WALES
-}
-
-REPLACE:WDJ = { # Wiradjuri
-	color = { 140 70 67 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_NEW_SOUTH_WALES
-}
-
-REPLACE:KRI = { # Kurnai
-	color = { 132 202 127 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_NEW_SOUTH_WALES
-}
-
-REPLACE:YUR = { # Yura
-	color = { 218 76 144 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_WESTERN_AUSTRALIA
-}
-
-REPLACE:PAA = { # Paakintyi 
-	color = { 77 68 204 }
-	
-	country_type = decentralized
-	
-	tier = principality
-	
-	cultures = { aborigine }
-	capital = STATE_NEW_SOUTH_WALES
-}
-
-REPLACE:YYT = { # Yorta Yorta
-	color = { 198 164 98 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_NEW_SOUTH_WALES
-}
-
-REPLACE:KTU = { # Kartu
-	color = { 244 126 55 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_WESTERN_AUSTRALIA
-}
-
-REPLACE:KYN = { # Kanyara–Mantharta
-	color = { 73 229 248 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_WESTERN_AUSTRALIA
-}
-
-REPLACE:NYR = { # Ngayarda
-	color = { 70 16 219 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_WESTERN_AUSTRALIA
-}
-
-REPLACE:NYP = { # Ngumpin-Yapa
-	color = { 18 141 110 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_WESTERN_AUSTRALIA
-}
-
-REPLACE:JRR = { # Jarrak
-	color = { 113 111 2 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_WESTERN_AUSTRALIA
-}
-
-REPLACE:NYL = { # Nyulnyulan
-	color = { 167 238 241 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_WESTERN_AUSTRALIA
-}
-
-REPLACE:WRR = { # Worrorran
-	color = { 206 205 45 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_WESTERN_AUSTRALIA
-}
-
-REPLACE:NGU = { # Ngarru
-	color = { 92 142 220 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_WESTERN_AUSTRALIA
-}
-
-REPLACE:GRW = { # Garawa
-	color = { 190 16 32 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_WESTERN_AUSTRALIA
-}
-
-REPLACE:MDI = { # Mirndi
-	color = { 147 72 6 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_WESTERN_AUSTRALIA
-}
-
-REPLACE:ARH = { # Arnhem
-	color = { 232 48 233 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_WESTERN_AUSTRALIA
-}
-
-REPLACE:YGU = { # Yolngu
-	color = { 78 11 105 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_WESTERN_AUSTRALIA
-}
-
-REPLACE:WRD = { # Wardaman
-	color = { 178 188 126 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_WESTERN_AUSTRALIA
-}
-
-REPLACE:DLY = { # Daly
-	color = { 178 121 123 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_WESTERN_AUSTRALIA
-}
-
-REPLACE:LRR = { # Larrakia, Darwin Region
-	color = { 238 127 130 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_WESTERN_AUSTRALIA
-}
-
-REPLACE:ARR = { # Arrernte
-	color = { 182 165 254 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_WESTERN_AUSTRALIA
-}
-
-REPLACE:MRA = { # Mara
-	color = { 55 24 41 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_NEW_SOUTH_WALES
-}
-
-REPLACE:KKT = { # Kalkatungu
-	color = { 132 219 205 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_NEW_SOUTH_WALES
-}
-
-REPLACE:MYI = { # Mayi
-	color = { 78 146 22 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_NEW_SOUTH_WALES
-}
-
-REPLACE:DYB = { # Dyribal
-	color = { 238 39 2 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_NEW_SOUTH_WALES
-}
-
-REPLACE:WKB = { # Waka-Gabi
-	color = { 252 112 227 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_NEW_SOUTH_WALES
-}
-
-REPLACE:PMA = { # Pama
-	color = { 207 182 66 }
-
-	country_type = decentralized
-
-	tier = principality
-
-	cultures = { aborigine }
-	capital = STATE_NEW_SOUTH_WALES
-}
-
-
-# ---- 00_countries.txt ----
+﻿# ---- 00_countries.txt ----
 # Important note: Only use capital letters and numbers for tags, or else you may get weird bugs in civil wars
 
 REPLACE:GER = {
@@ -8203,4 +5249,2958 @@ REPLACE:ULT = { # Ulta
 
 	cultures = { siberian }
 	capital = STATE_SAKHALIN
+}
+
+
+# ---- 01_africa.txt ----
+REPLACE:ALD = {
+	color = { 220  202  96 }
+
+	country_type = unrecognized
+
+	tier = kingdom
+
+	cultures = { maghrebi berber }
+
+	capital = STATE_ALGIERS
+}
+
+
+REPLACE:CON = {
+	color = { 228 3 16 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { maghrebi berber }
+
+	capital = STATE_CONSTANTINE
+}
+
+REPLACE:EGY = {
+	color = { 255  205  155 }
+
+	country_type = unrecognized
+
+	tier = kingdom
+
+	cultures = { misri }
+	capital = STATE_LOWER_EGYPT
+}
+
+REPLACE:ETH = {
+	color = { 56  120  191 }
+
+	country_type = unrecognized
+
+	tier = empire
+
+	cultures = { amhara oromo tigray }
+	capital = STATE_GONDER
+}
+
+REPLACE:MAD = {
+	color = { 117  150  120 }
+
+	country_type = unrecognized
+
+	tier = kingdom
+
+	cultures = { malagasy }
+	capital = STATE_NORTH_MADAGASCAR
+}
+
+REPLACE:MAS = {
+	color = { 0 129 48 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { maghrebi berber }
+
+	capital = STATE_ORAN
+}
+
+REPLACE:LIB = {
+	color = { 193  138  83 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { afro_american }
+	capital = STATE_LIBERIA
+	is_named_from_capital = yes
+}
+
+REPLACE:MOR = {
+	color = { 224  146  113 }
+
+	country_type = unrecognized
+
+	tier = kingdom
+
+	cultures = { maghrebi berber }
+	capital = STATE_FEZ
+}
+
+REPLACE:NAL = {
+	color = { 106  178  46 }
+
+	country_type = recognized
+
+	tier = principality
+
+	cultures = { boer }
+	capital = STATE_TRANSVAAL
+}
+
+REPLACE:ORA = {
+	color = { 224 139 47 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { boer }
+	capital = STATE_TRANSVAAL
+	is_named_from_capital = yes
+}
+
+REPLACE:SAF = {
+	color = { 180  158  127 }
+
+	country_type = colonial
+
+	tier = kingdom
+
+	cultures = { british }
+	capital = STATE_CAPE_COLONY
+}
+
+REPLACE:SOK = {
+	color = { 0 135 81 }
+
+	country_type = unrecognized
+
+	tier = kingdom
+
+	cultures = { hausa fulbe }
+	capital = STATE_YORUBA_STATES
+}
+
+REPLACE:TRI = {
+	color = { 180 137 148 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { maghrebi }
+	capital = STATE_LIBYA
+	is_named_from_capital = yes
+}
+
+REPLACE:TRN = {
+	color = { 140  183  154 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { boer }
+	capital = STATE_TRANSVAAL
+	is_named_from_capital = yes
+}
+
+REPLACE:TUN = {
+	color = { 131  101  85 }
+
+	country_type = unrecognized
+
+	tier = kingdom
+
+	cultures = { maghrebi }
+	capital = STATE_TUNISIA
+	is_named_from_capital = yes
+}
+
+REPLACE:ZAN = {
+	color = { 166  189  199 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { swahili }
+	capital = STATE_ZANZIBAR
+	is_named_from_capital = yes
+}
+
+REPLACE:ZUL = {
+	color = { 204  186  201 }
+
+	country_type = unrecognized
+
+	tier = kingdom
+
+	cultures = { zulu }
+	capital = STATE_TRANSVAAL
+	is_named_from_capital = yes
+}
+
+REPLACE:SIL = {
+	color = { 123  206  101 }
+
+	country_type = colonial
+
+	tier = principality
+
+	cultures = { british } # Changed from Afro-Caribbean
+	capital = STATE_SIERRA_LEONE
+	is_named_from_capital = yes
+}
+
+REPLACE:MTB = {
+	color = { 142 80 55 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { nguni shona }
+	capital = STATE_ZAMBEZI
+}
+
+REPLACE:MSH = {
+	color = { 193 189 151 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { shona }
+	capital = STATE_ZAMBEZI
+}
+
+REPLACE:MNC = {
+	color = { 60 147 140 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { shona }
+	capital = STATE_ZAMBEZIA
+}
+
+REPLACE:MSK = {
+	color = { 75 75 148 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { nguni }
+	capital = STATE_ZAMBEZIA
+}
+
+REPLACE:MTP = {
+	color = { 204 121 68 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { shona }
+	capital = STATE_ZAMBEZI
+}
+
+REPLACE:NAM = {
+	color = { 49 119 34 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { khoisan }
+	capital = STATE_NAMAQUALAND
+}
+
+REPLACE:HRO = {
+	color = { 221 140 40 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { herero khoisan }
+	capital = STATE_HEREROLAND
+}
+
+REPLACE:OVB = {
+	color = { 240 40 121 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { kavango_bantu }
+	capital = STATE_HEREROLAND
+}
+
+REPLACE:SAN = {
+	color = { 110 130 37 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { khoisan }
+	capital = STATE_BOTSWANA
+}
+
+REPLACE:LZO = {
+	color = { 176 106 168 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { kavango_bantu }
+	capital = STATE_ZAMBIA
+}
+
+REPLACE:TSW = {
+	color = { 117 170 219 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { tswana }
+	capital = STATE_BOTSWANA
+}
+
+REPLACE:WBL = {
+	color = { 122 105 77 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { griqua }
+	capital = STATE_CAPE_COLONY
+}
+
+REPLACE:PHL = {
+	color = { 176 176 131 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { griqua }
+	capital = STATE_TRANSVAAL
+}
+
+REPLACE:KZM = {
+	color = { 202 217 170 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { lunda }
+	capital = STATE_KAZEMBE
+}
+
+REPLACE:BMB = {
+	color = { 192 90 121 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { lacustrine_bantu }
+	capital = STATE_KAZEMBE
+}
+
+REPLACE:KSN = {
+	color = { 102 105 101 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { lunda ovimbundu }
+	capital = STATE_EAST_ANGOLA
+}
+
+REPLACE:OVM = {
+	color = { 107 94 52 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { ovimbundu }
+	capital = STATE_SOUTH_ANGOLA
+}
+
+REPLACE:CHK = {
+	color = { 99 160 39 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { lunda ovimbundu }
+	capital = STATE_EAST_ANGOLA
+}
+
+REPLACE:LND = {
+	color = { 199 60 39 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { lunda ovimbundu }
+	capital = STATE_EAST_ANGOLA
+}
+
+REPLACE:KBA = {
+	color = { 159 60 189 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { fluvian_bantu }
+	capital = STATE_KASAI
+}
+
+REPLACE:MNB = {
+	color = { 75 129 182 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { fluvian_bantu }
+	capital = STATE_CONGO_ORIENTALE
+}
+
+REPLACE:NYM = {	# Unymanwezi. Nyamwezi is the name of the people, the U- prefix turns it into the name of a land
+	color = { 164 125 26 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { nyamwezi }
+	capital = STATE_TANGANYIKA
+}
+
+REPLACE:HHE = {
+	color = { 126 84 131 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { lacustrine_bantu }
+	capital = STATE_LINDI
+}
+
+REPLACE:FTJ = {
+	color = { 230 125 127 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { fulbe }
+	capital = STATE_GUINEA
+}
+
+REPLACE:BUG = {
+	color = { 21 21 227 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { baganda }
+	capital = STATE_UGANDA
+}
+
+REPLACE:ASH = {
+	color = { 97 98 195 }
+
+	country_type = unrecognized
+
+	tier = kingdom
+
+	cultures = { akan }
+	capital = STATE_GOLD_COAST
+}
+
+REPLACE:YKA = {
+	color = { 99 160 239 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { bakongo lunda }
+	capital = STATE_BAS_CONGO
+}
+
+REPLACE:KON = {
+	color = { 199 160 139 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	religion = catholic
+
+	cultures = { bakongo }
+	capital = STATE_BAS_CONGO
+}
+
+REPLACE:LNG = {
+	color = { 200 202 85 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { bakongo }
+	capital = STATE_CONGO
+}
+
+REPLACE:FNG = {
+	color = { 193 170 57 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { fang }
+	capital = STATE_GABON
+}
+
+REPLACE:BNG = {
+	color = { 41 135 135 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { mongo fluvian_bantu }
+	capital = STATE_EQUATEUR
+}
+
+REPLACE:BST = {
+	color = { 137 106 217 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { sotho }
+	capital = STATE_TRANSVAAL
+}
+
+REPLACE:TKE = {
+	color = { 99 160 139 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { bakongo }
+	capital = STATE_CONGO
+}
+
+REPLACE:BOB = {
+	color = { 211 149 112 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { mongo bakongo }
+	capital = STATE_EQUATEUR
+}
+
+REPLACE:LGA = {
+	color = { 175 103 31 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { fluvian_bantu }
+	capital = STATE_CONGO_ORIENTALE
+}
+
+REPLACE:HMB = {
+	color = { 180 146 150 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { fluvian_bantu }
+	capital = STATE_CONGO_ORIENTALE
+}
+
+REPLACE:LBA = {
+	color = { 42 63 153 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { luba }
+	capital = STATE_KATANGA
+}
+
+REPLACE:BNY = {
+	color = { 174 24 66 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { baganda lacustrine_bantu }
+	capital = STATE_UGANDA
+}
+
+REPLACE:ANK = {
+	color = { 126 162 98 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { baganda lacustrine_bantu }
+	capital = STATE_UGANDA
+}
+
+REPLACE:ACH = {
+	color = { 166 225 217 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { luo lacustrine_bantu }
+	capital = STATE_UGANDA
+}
+
+REPLACE:KRG = {
+	color = { 48 177 169 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { lacustrine_bantu baganda }
+	capital = STATE_TANGANYIKA
+}
+
+REPLACE:RWD = {
+	color = { 213 160 18 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { ruanda }
+	capital = STATE_TANGANYIKA
+}
+
+REPLACE:BRD = {
+	color = { 21 191 16 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { rundi }
+	capital = STATE_TANGANYIKA
+}
+
+REPLACE:MSI = {
+	color = { 190 103 84 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { maasai }
+	capital = STATE_KENYA
+}
+
+REPLACE:TRK = {
+	color = { 103 84 190 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { nilotic maasai }
+	capital = STATE_KENYA
+}
+
+REPLACE:LUO = {
+	color = { 153 153 168 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { luo }
+	capital = STATE_KENYA
+}
+
+REPLACE:GGO = {
+	color = { 244 228 166 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { lacustrine_bantu }
+	capital = STATE_LINDI
+}
+
+REPLACE:SNG = {
+	color = { 203 54 66 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { lacustrine_bantu }
+	capital = STATE_LINDI
+}
+
+REPLACE:KKY = {
+	color = { 169 52 90 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { kikuyu }
+	capital = STATE_KENYA
+}
+
+REPLACE:WSG = {
+	color = { 18 97 128 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { somali }
+	capital = STATE_SOMALILAND
+}
+
+REPLACE:GLD = {
+	color = { 38 160 67 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { somali }
+	capital = STATE_SOMALILAND
+}
+
+REPLACE:MJT = {
+	color = { 220 200 100 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { somali }
+	capital = STATE_SOMALILAND
+}
+
+REPLACE:DFR = {
+	color = { 44 160 70 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { fur bedouin }
+	capital = STATE_EQUATORIA
+}
+
+REPLACE:ISQ = {
+	color = { 224 255 182 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { somali }
+	capital = STATE_SOMALILAND
+}
+
+REPLACE:HOB = {
+	color = { 255 73 7 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { somali }
+	capital = STATE_SOMALILAND
+}
+
+REPLACE:DAK = {
+	color = { 123 134 74 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { fur equatorial_bantu }
+	capital = STATE_UBANGI_SHARI
+}
+
+REPLACE:ZND = {
+	color = { 208 225 57 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { azande }
+	capital = STATE_CONGO_ORIENTALE
+}
+
+REPLACE:DFT = {
+	color = { 167 92 56 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { equatorial_bantu azande }
+	capital = STATE_EQUATORIA
+}
+
+REPLACE:DNK = {
+	color = { 78 99 75 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { dinka }
+	capital = STATE_EQUATORIA
+}
+
+REPLACE:NUE = {
+	color = { 230 227 240 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { nuer }
+	capital = STATE_EQUATORIA
+}
+
+REPLACE:TPS = {
+	color = { 232 101 68 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { nilotic }
+	capital = STATE_EQUATORIA
+}
+
+REPLACE:AWS = {
+	color = { 125 125 100 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { afar }
+	capital = STATE_GONDER
+}
+
+REPLACE:SHW = {
+	color = { 1 200 200 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { amhara oromo }
+	capital = STATE_OROMIA
+}
+
+REPLACE:HAR = {
+	color = { 175 75 15 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { amhara }
+	religion = sunni
+	capital = STATE_OROMIA
+}
+
+REPLACE:BRN = {
+	color = { 236 236 104 }
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { oromo }
+	religion = sunni
+	capital = STATE_AMHARA
+}
+
+REPLACE:KFA = {
+	color = { 150 0 25 }
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { sidama oromo }
+	religion = oriental_orthodox
+	capital = STATE_AMHARA
+}
+
+REPLACE:SDM = {
+	color = { 83 65 167 }
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { sidama }
+	religion = oriental_orthodox
+	capital = STATE_AMHARA
+}
+
+REPLACE:WLG = {
+	color = { 126 208 222 }
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { oromo }
+	capital = STATE_AMHARA
+}
+
+REPLACE:TGR = {
+	color = { 167 218 207 }
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures =  { tigray amhara }
+	capital = STATE_AMHARA
+}
+
+REPLACE:GJM = {
+	color = { 191 147 79 }
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { amhara }
+	capital = STATE_AMHARA
+}
+
+REPLACE:WLO = {
+	color = { 222 199 163 }
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { amhara }
+	capital = STATE_AMHARA
+}
+
+REPLACE:BGM = {
+	color = { 228 243 104 }
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { amhara oromo tigray }
+	capital = STATE_AMHARA
+}
+
+REPLACE:BOR = {
+	color = { 30 131 162 }
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { kanuri }
+	capital = STATE_EAST_HAUSALAND
+}
+
+REPLACE:BGI = {
+	color = { 64 124 157 }
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { baguirmi }
+	capital = STATE_CHAD
+}
+
+REPLACE:WAD = {
+	color = { 194 66 41 }
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { fur }
+	capital = STATE_CHAD
+}
+
+REPLACE:AIR = {
+	color = { 30 31 162 }
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { tuareg }
+	capital = STATE_NIGER
+}
+
+REPLACE:MSN = {
+	color = { 230 231 62 }
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { fulbe }
+	capital = STATE_EASTERN_MALI
+}
+
+REPLACE:OYO = {
+	color = { 211 184 179 }
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { yoruba }
+	capital = STATE_YORUBA_STATES
+}
+
+REPLACE:BEN = {
+	color = { 110 173 129 }
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { edo }
+	capital = STATE_NIGER_DELTA
+}
+
+REPLACE:CAY = {
+	color = { 189 187 166 }
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { wolof }
+	capital = STATE_SENEGAL
+}
+
+REPLACE:JLF = {
+	color = { 215  215  125 }
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { wolof }
+	capital = STATE_SENEGAL
+}
+
+REPLACE:FTR = {
+	color = { 115 204 102 }
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { fulbe wolof }
+	capital = STATE_SENEGAL
+}
+
+REPLACE:KNG = {
+	color = { 137 98 195 }
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { dyula senufo }
+	capital = STATE_IVORY_COAST
+}
+
+REPLACE:DAH = {
+	color = { 11 84 179 }
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { fon }
+	capital = STATE_DAHOMEY
+}
+
+REPLACE:MOS = {
+	color = { 27 128 45 }
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { mossi }
+	capital = STATE_VOLTA
+}
+
+REPLACE:KRT = {
+	color = { 127 28 45 }
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { bambara }
+	capital = STATE_EASTERN_MALI
+}
+
+REPLACE:SGU = {
+	color = { 27 28 145 }
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { bambara }
+	capital = STATE_EASTERN_MALI
+}
+
+REPLACE:TRZ = {
+	color = { 230 123 17 }
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { bidan }
+	capital = STATE_MAURITANIA
+}
+
+REPLACE:KBU = {
+	color = { 101 63 41 }
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { mande }
+
+	religion = animist
+
+	capital = STATE_SENEGAL
+}
+
+REPLACE:BND = {
+	color = { 60 118 54 }
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { fulbe mande }
+	capital = STATE_SENEGAL
+}
+
+REPLACE:SRR = {
+	color = { 57 121 111 }
+	country_type = decentralized
+
+	tier = principality
+
+	religion = animist
+
+	cultures = { fulbe }
+	capital = STATE_SENEGAL
+}
+
+REPLACE:SSU = {
+	color = { 69 109 142 }
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { mande }
+	capital = STATE_GUINEA
+}
+
+REPLACE:MDK = {
+	color = { 191 83 53 }
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { mande }
+	capital = STATE_GUINEA
+}
+
+REPLACE:HAU = {
+	color = { 225 185 85 }
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { hausa }
+	capital = STATE_NIGER
+}
+
+REPLACE:BLE = {
+	color = { 218 104 44 }
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { akan }
+	capital = STATE_IVORY_COAST
+}
+
+REPLACE:KRU = {
+	color = { 94 168 142 }
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { kru }
+	capital = STATE_IVORY_COAST
+}
+
+REPLACE:KBD = {
+	color = { 117 36 54 }
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { mande }
+	capital = STATE_IVORY_COAST
+}
+
+REPLACE:AYI = {
+	color = { 131 210 34 }
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { akan }
+	capital = STATE_IVORY_COAST
+}
+
+REPLACE:EWE = {
+	color = { 210 34 131 }
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { ewe }
+	capital = STATE_DAHOMEY
+}
+
+REPLACE:IBO = {
+	color = { 119 24 85 }
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { ibo }
+	capital = STATE_NIGER_DELTA
+}
+
+REPLACE:DLA = {
+	color = { 22 121 17 }
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { equatorial_bantu }
+	capital = STATE_SOUTH_CAMEROON
+}
+
+REPLACE:TBI = {
+	color = { 220 210 97 }
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { teda }
+	capital = STATE_CHAD
+}
+
+REPLACE:AHG = {
+	color = { 138 168 70 }
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { tuareg }
+	capital = STATE_SAHARA
+}
+
+REPLACE:TUA = {
+	color = { 66 98 114 }
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { berber }
+	capital = STATE_SAHARA
+}
+
+REPLACE:OUA = {
+	color = { 113 95 122 }
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { bidan }
+	capital = STATE_INNER_MAURITANIA
+}
+
+REPLACE:ADG = {
+	color = { 215 132 165 }
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { tuareg }
+	capital = STATE_TIMBUKTU
+}
+
+REPLACE:BSS = { # Bassa
+	color = { 203 48 37 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { bassa }
+	capital = STATE_LIBERIA
+}
+
+REPLACE:TIR = { # Tiris
+	color = { 106 95 79 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { haratin }
+	capital = STATE_MAURITANIA
+}
+
+REPLACE:IBL = { # Ibibioland
+	color = { 142 134 187 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { ibibio }
+	capital = STATE_NIGER_DELTA
+}
+
+REPLACE:KSS = { # Kissi
+	color = { 61 75 109 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { kissi }
+	capital = STATE_GUINEA
+}
+
+REPLACE:GAO = { # Gao
+	color = { 62 175 151 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { songhai }
+	capital = STATE_TIMBUKTU
+}
+
+REPLACE:TIV = { # Tivland
+	color = { 240 213 100 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { tiv }
+	capital = STATE_EAST_HAUSALAND
+}
+
+REPLACE:SRA = { # Sara
+	color = { 179 236 217 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { sara }
+	capital = STATE_UBANGI_SHARI
+}
+
+REPLACE:EQU = { # Equatoria
+	color = { 236 173 104 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { nilotic }
+	capital = STATE_EQUATORIA
+}
+
+REPLACE:BJA = { # Beja
+	color = { 140 65 135 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { beja }
+	capital = STATE_BLUE_NILE
+}
+
+REPLACE:NBA = { # Nuba
+	color = { 138 187 72 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { nuba }
+	capital = STATE_EQUATORIA
+}
+
+REPLACE:SUD = { # Sudanese
+	color = { 189 159 69 }
+
+	country_type = unrecognized
+
+	tier = kingdom
+
+	cultures = { sudanese beja bedouin }
+	capital = STATE_BLUE_NILE
+}
+
+REPLACE:SKM = { # Usukuma. Sukuma is the name of the people, the U- prefix turns it into the name of a land
+	color = { 101 122 158 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { sukuma }
+	capital = STATE_TANGANYIKA
+}
+
+REPLACE:CHW = { # Chewa
+	color = { 116 157 102 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { chewa }
+	capital = STATE_KAZEMBE
+}
+
+REPLACE:LMW = { # Lomwe
+	color = { 201 10 48 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { lomwe }
+	capital = STATE_MOCAMBIQUE
+}
+
+REPLACE:MKU = { # Makua
+	color = { 38 140 40 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { makua }
+	capital = STATE_MOCAMBIQUE
+}
+
+REPLACE:SNA = { # Sena
+	color = { 91 132 128 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { sena }
+	capital = STATE_MOCAMBIQUE
+}
+
+REPLACE:BTG = { # Batonga
+	color = { 200 193 108 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { tonga }
+	capital = STATE_LOURENCO_MARQUES
+}
+
+REPLACE:XHO = { # Xhosa
+	color = { 88 80 163 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { xhosa }
+	capital = STATE_CAPE_COLONY
+}
+
+REPLACE:UYA = { # Uyao
+	color = { 192 204 111 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { yao }
+	capital = STATE_MOCAMBIQUE
+}
+
+REPLACE:ZIM = {
+	color = { 0 173 112 }
+
+	country_type = unrecognized
+
+	tier = kingdom
+
+	cultures = { shona nguni}
+	capital = STATE_ZAMBEZIA
+}
+
+REPLACE:MAL = {
+	color = { 75 179 27}
+	country_type = unrecognized
+	tier = kingdom
+	cultures = { bambara fulbe wolof mande }
+	capital = STATE_EASTERN_MALI
+}
+
+REPLACE:AFS = { #Dynamic African Free State
+	color = {130 23 47}
+	country_type = colonial
+	tier = principality
+	cultures = { bakongo }
+}
+
+REPLACE:SAH = { # Sahrawi
+	color = { 220  202  96 }
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { bidan }
+	capital = STATE_WEST_SAHARA
+}
+
+REPLACE:TUG = {
+	color = { 90 140 190 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { berber }
+	capital = STATE_SAHARA
+}
+
+REPLACE:AIT = {
+	color = { 255 255 153 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { berber }
+	capital = STATE_CONSTANTINE
+}
+
+REPLACE:GZA = {
+	color = { 191 154 108 }
+
+	country_type = unrecognized
+
+	tier = kingdom
+
+	cultures = { nguni }
+	capital = STATE_LOURENCO_MARQUES
+}
+
+REPLACE:MRV = {
+	color = { 220 220 75 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { chewa }
+	capital = STATE_KAZEMBE
+}
+
+REPLACE:BRG = {
+	color = { 218 231 235 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { mande fulbe }
+	capital = STATE_YORUBA_STATES
+}
+
+REPLACE:BMM = {
+	color = { 197 201 163 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { equatorial_bantu }
+	religion = sunni
+	capital = STATE_SOUTH_CAMEROON
+}
+
+REPLACE:MGB = {
+	color = { 209 63 44 }
+
+	country_type = unrecognized
+
+	tier = empire
+
+	cultures = { maghrebi berber bidan }
+	capital = STATE_TUNISIA
+}
+
+REPLACE:WTU = { # Witu/Wituland/Sultanate of Pate in exile
+	color = { 255 164 7 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { swahili }
+	capital = STATE_KENYA
+}
+
+REPLACE:MBS = { # Mombasa
+	color = { 127 177 72 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { swahili }
+	religion = ibadi			# the Mazrui were Ibadis /until/ the Busaidi conquest of Mombasa in 1837
+	capital = STATE_KENYA
+	is_named_from_capital = yes
+}
+
+REPLACE:AJR = { # Ajuran, also spelled Ajuuraan
+	color = { 124 128 93 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { somali }
+	religion = sunni
+	capital = STATE_KENYA
+}
+
+REPLACE:AUL = { # Aulihan, also sometimes spelled Awlihan
+	color = { 196 227 240 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { somali }
+	religion = sunni
+	capital = STATE_KENYA
+}
+
+REPLACE:MJK = { # Mijikenda
+	color = { 144 33 155 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { lacustrine_bantu }
+	capital = STATE_KENYA
+}
+
+REPLACE:ORM = { # Orma
+	color = { 101 95 188 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { oromo }
+	religion = animist
+	capital = STATE_KENYA
+}
+
+REPLACE:SKY = { # Sakuye
+	color = { 122 131 130 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { oromo }
+	religion = animist
+	capital = STATE_KENYA
+}
+
+REPLACE:UTR = { # Utetera
+	color = { 1 140 80 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { swahili }
+	religion = ibadi
+	capital = STATE_CONGO_ORIENTALE # 'Lualaba' in-game
+}
+
+REPLACE:OGD = { # Ogaden
+	color = { 155 188 99 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { somali }
+
+	capital = STATE_OROMIA
+}
+
+REPLACE:QWR = { # Qwara, sometimes spelled 'Quara' in literature, or even 'Quoara' if you're unfortunately French
+	color = { 112 169 199 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { amhara }
+	capital = STATE_GONDER
+}
+
+REPLACE:TGI = { # Tungi
+	color = { 72 92 12 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { swahili }
+	capital = STATE_MOCAMBIQUE
+}
+
+REPLACE:WLT = {
+	color = { 212 230 54 }
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { sidama }
+	religion = oriental_orthodox
+	capital = STATE_AMHARA
+}
+
+REPLACE:HDY = {
+	color = { 34 128 89 }
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { oromo }
+	religion = sunni
+	capital = STATE_AMHARA
+}
+
+REPLACE:ARS = {
+	color = { 255 197 179 }
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { oromo }
+	religion = sunni
+	capital = STATE_OROMIA
+}
+
+REPLACE:ANU = { # Anuak
+	color = { 128 98 89 }
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { luo }
+	religion = animist
+	capital = STATE_AMHARA
+}
+
+REPLACE:OMO = { # Omo
+	color = { 71 121 128 }
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { sidama }
+	religion = animist
+	capital = STATE_AMHARA
+}
+
+# Swaziland/Eswatini
+REPLACE:SWZ = {
+	color = { 255 217 0 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { nguni }
+	capital = STATE_TRANSVAAL
+}
+
+REPLACE:PDI = {
+	color = { 237 107 116 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { sotho }
+	capital = STATE_TRANSVAAL
+}
+
+REPLACE:VND = {
+	color = { 235 122 83 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { sotho }
+	capital = STATE_TRANSVAAL
+}
+
+REPLACE:TMN = { # Temne
+	color = { 71 121 24 }
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { kissi }
+	religion = animist
+	capital = STATE_SIERRA_LEONE
+}
+
+REPLACE:DIO = { # Diola
+	color = { 123 111 111 }
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { fulbe }
+	religion = animist
+	capital = STATE_SIERRA_LEONE
+}
+
+REPLACE:AGC = { # Angoche
+	color = { 255 180 0 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { swahili }
+	capital = STATE_MOCAMBIQUE
+}
+
+REPLACE:ZWY = {
+	color = { 221 133 80 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { bedouin }
+	capital = STATE_LIBYA
+}
+
+REPLACE:AJJ = {
+	color = { 255 105 180 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { tuareg }
+	capital = STATE_LIBYA
+}
+
+REPLACE:FZN = {
+	color = { 231 0 19 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { maghrebi }
+	capital = STATE_LIBYA
+}
+
+REPLACE:CYR = {
+	color = { 30 55 80 } # Plain black looks really bad so we will do with this
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { maghrebi }
+	capital = STATE_LIBYA
+}
+
+REPLACE:LBY = {
+	color = { 82 137 118 }
+
+	country_type = unrecognized
+
+	tier = kingdom
+
+	cultures = { maghrebi }
+	capital = STATE_LIBYA
+}
+
+REPLACE:CMB = {
+	color = { 140 175 130 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { bedouin }
+	capital = STATE_SAHARA
+}
+
+REPLACE:MZB = {
+	color = { 203 105 237 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { berber }
+	religion = ibadi
+	capital = STATE_SAHARA
+}
+
+REPLACE:TEK = {
+	color = { 93 64 156 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { bidan }
+	capital = STATE_MARRAKECH
+}
+
+REPLACE:RGB = { # Hell yeah
+	color = { 231 134 43 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { bidan }
+	capital = STATE_WEST_SAHARA
+}
+
+REPLACE:DLM = {
+	color = { 43 221 159 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { bidan }
+	capital = STATE_WEST_SAHARA
+}
+
+REPLACE:DIN = {
+	color = { 143 55 56 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { tuareg }
+	capital = STATE_NIGER
+}
+
+REPLACE:ATR = {
+	color = { 83 123 40  }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { tuareg }
+	capital = STATE_TIMBUKTU
+}
+
+REPLACE:ADR = {
+	color = { 13 164 56 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { bidan }
+	capital = STATE_INNER_MAURITANIA
+}
+
+REPLACE:BRK = {
+	color = { 33 64 120 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { haratin }
+	capital = STATE_MAURITANIA
+}
+
+
+# ---- 01_pacific_and_australasia.txt ----
+REPLACE:HAW = {
+	color = { 48  169  96 }
+
+	tier = kingdom
+
+	country_type = unrecognized
+
+	cultures = { hawaiian }
+	religion = protestant
+
+	capital = STATE_HAWAIIAN_ISLANDS
+	is_named_from_capital = yes
+}
+
+REPLACE:NTU = {
+	color = { 62 92 54 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { maori }
+	capital = STATE_NORTH_ISLAND
+}
+
+REPLACE:NTO = {
+	color = { 148 185 190 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { maori }
+	capital = STATE_NORTH_ISLAND
+}
+
+REPLACE:KNK = {
+	color = { 190 173 103 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { melanesian }
+	capital = STATE_SOLOMON_ISLANDS
+}
+
+REPLACE:PPU = {
+	color = { 81 97 170 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { melanesian }
+	capital = STATE_WESTERN_NEW_GUINEA
+}
+
+REPLACE:HLA = { # Halia, for Bougainville
+	color = { 210 184 220 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { melanesian }
+	capital = STATE_SOLOMON_ISLANDS
+}
+
+REPLACE:BLA = { # Bilua
+	color = { 140 166 75 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { melanesian }
+	capital = STATE_SOLOMON_ISLANDS
+}
+
+REPLACE:BLG = { # Bulungan
+	color = { 140 166 75 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { bornean }
+	capital = STATE_WEST_BORNEO
+}
+
+REPLACE:KTI = { # Kutai
+	color = { 137 88 58 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { bornean }
+	capital = STATE_WEST_BORNEO
+}
+
+REPLACE:FJI = { # Fiji
+	color = { 159 173 219 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { melanesian }
+	capital = STATE_FIJI
+}
+
+REPLACE:MCR = { # Micronesia
+	color = { 248 218 99 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { micronesian }
+	capital = STATE_WEST_MICRONESIA
+}
+
+
+REPLACE:VNT = { # Vanuatu
+	color = { 37 214 50 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { melanesian }
+	capital = STATE_SOLOMON_ISLANDS
+}
+
+REPLACE:NRU = { # Nauru
+	color = { 231 131 17 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { melanesian }
+	capital = STATE_WEST_MICRONESIA
+}
+
+REPLACE:PLY = { # Tahiti
+	color = { 176 62 136 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { polynesian }
+	religion = protestant
+	capital = STATE_FIJI
+}
+
+REPLACE:AOT = { # Aotearoa
+	color = { 47 140 191 }
+
+	country_type = unrecognized
+
+	tier = kingdom
+
+	cultures = { maori }
+	capital = STATE_NORTH_ISLAND
+}
+
+REPLACE:ULR = { # Uluru
+	color = { 112 54 16 }
+
+	tier = principality
+
+	country_type = decentralized
+
+	cultures = { aborigine }
+
+	capital = STATE_WESTERN_AUSTRALIA
+}
+
+REPLACE:NSW = { # New South Wales
+	color = { 114 165 203 }
+
+	country_type = colonial
+
+	tier = principality
+
+	capital = STATE_NEW_SOUTH_WALES
+	cultures = { australian }
+}
+
+REPLACE:WAS = { # Western Australia
+	color = { 118 115 97 }
+
+	country_type = colonial
+
+	tier = principality
+
+	capital = STATE_WESTERN_AUSTRALIA
+	cultures = { australian }
+}
+
+REPLACE:SAS = { # South Australia
+	color = { 170 90 128 }
+
+	country_type = colonial
+
+	tier = principality
+
+	capital = STATE_WESTERN_AUSTRALIA
+	cultures = { australian }
+}
+
+REPLACE:UNT = { # United Tribes of New Zealand
+	color = { 170 167 151 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	capital = STATE_NORTH_ISLAND
+	cultures = { maori }
+	religion = protestant
+}
+
+REPLACE:NNG = { # Noongar
+
+	color = { 209 160 107 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_WESTERN_AUSTRALIA
+}
+
+REPLACE:KAU = { # Kaurna
+
+	color = { 245 212 134 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_WESTERN_AUSTRALIA
+}
+
+REPLACE:GML = { # Gamilaraay
+
+	color = { 77 204 68 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_NEW_SOUTH_WALES
+}
+
+REPLACE:AST = {
+	color = { 77  139  106 }
+
+	country_type = colonial
+
+	tier = kingdom
+
+	capital = STATE_NEW_SOUTH_WALES
+	cultures = { australian }
+}
+
+REPLACE:NZL = {
+	color = { 90  250  127 }
+
+	country_type = colonial
+
+	tier = principality
+
+	capital = STATE_NORTH_ISLAND
+	cultures = { australian }
+}
+
+REPLACE:TAS = {
+	color = { 224 194 152 }
+
+	country_type = colonial
+
+	tier = principality
+
+	capital = STATE_NEW_SOUTH_WALES
+	cultures = { australian }
+}
+
+REPLACE:DEI = {
+	color = { 20  80  80 }
+
+	country_type = colonial
+
+	tier = principality
+
+	cultures = { dutch }
+	capital = STATE_WEST_JAVA
+}
+
+# Siak
+REPLACE:SAK = {
+	color = { 21  196  68 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { sumatran }
+	capital = STATE_NORTH_SUMATRA
+}
+
+# Pontianak
+REPLACE:PON = {
+	color = { 255 102 102 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { bornean }
+	capital = STATE_WEST_BORNEO
+}
+
+# Sambas
+REPLACE:SMB = {
+	color = { 102  102  255 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { bornean }
+	capital = STATE_WEST_BORNEO
+}
+
+# Jambi
+REPLACE:JMB = {
+	color = { 223  228  192 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { sumatran }
+	capital = STATE_NORTH_SUMATRA
+}
+
+# Yogyakarta
+REPLACE:YOG = {
+	color = { 201  28  54 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { javan }
+	capital = STATE_WEST_JAVA
+}
+
+# Surakarta
+REPLACE:SRK = {
+	color = { 239 51 64 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { javan }
+	capital = STATE_WEST_JAVA
+}
+
+# Buton
+REPLACE:BTN = {
+	color = { 209  203  31 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { moluccan }
+	capital = STATE_MOLUCCAS
+}
+
+# Selangor
+REPLACE:SEL = {
+	color = { 249 215 61 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { malay }
+	capital = STATE_MALAYA
+}
+
+# Perak
+REPLACE:PRK = {
+	color = { 76  122  117 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { malay }
+	capital = STATE_MALAYA
+}
+
+# Sulu
+REPLACE:SUL = {
+	color = { 89  164  144 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { moro }
+	capital = STATE_LUZON
+}
+
+# Sulawesi
+REPLACE:SLW = {
+	color = { 153 0 0 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { moluccan }
+	capital = STATE_MOLUCCAS
+}
+
+# Tidore
+REPLACE:TID = {
+	color = { 176  232  64 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { moluccan }
+	capital = STATE_MOLUCCAS
+}
+
+# Sintang
+REPLACE:STG = {
+	color = { 255 255 0 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { bornean }
+	capital = STATE_WEST_BORNEO
+}
+
+# Banjar
+REPLACE:BNJ = {
+	color = { 171  175  40 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { bornean }
+	capital = STATE_WEST_BORNEO
+}
+
+# Indonesia
+REPLACE:IDN = {
+	color = { 0  128  128 }
+
+	country_type = recognized
+
+	tier = empire
+
+	cultures = { balinese batak bornean dayak javan malay moluccan sumatran }
+	capital = STATE_WEST_JAVA
+}
+
+# Maguindanao
+REPLACE:MGD = {
+	color = { 119  32  29 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { moro }
+	capital = STATE_LUZON
+}
+
+REPLACE:YUZ = { # Yuanzhumin
+	color = { 97 44 96 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { yuanzhumin }
+	capital = STATE_FORMOSA
+}
+
+REPLACE:PNS = { # Polynesia
+	color = { 244 140 30 }
+
+	country_type = unrecognized
+
+	tier = empire
+
+	cultures = { hawaiian maori melanesian polynesian micronesian yuanzhumin }
+	capital = STATE_HAWAIIAN_ISLANDS
+}
+
+REPLACE:WTI = { # Wati
+	color = { 54 112 16 }
+
+	tier = principality
+
+	country_type = decentralized
+
+	cultures = { aborigine }
+
+	capital = STATE_WESTERN_AUSTRALIA
+}
+
+REPLACE:MRN = { # Mirning
+	color = { 3 113 211 }
+
+	tier = principality
+
+	country_type = decentralized
+
+	cultures = { aborigine }
+
+	capital = STATE_WESTERN_AUSTRALIA
+}
+
+# Mindanao
+REPLACE:MND = {
+	color = { 255 255 204 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { lumad }
+	capital = STATE_LUZON
+}
+
+REPLACE:KLN = { # Kulinic
+	color = { 27 1 230 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_NEW_SOUTH_WALES
+}
+
+REPLACE:KNC = { # Karnic
+	color = { 236 232 85 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_NEW_SOUTH_WALES
+}
+
+REPLACE:WDJ = { # Wiradjuri
+	color = { 140 70 67 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_NEW_SOUTH_WALES
+}
+
+REPLACE:KRI = { # Kurnai
+	color = { 132 202 127 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_NEW_SOUTH_WALES
+}
+
+REPLACE:YUR = { # Yura
+	color = { 218 76 144 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_WESTERN_AUSTRALIA
+}
+
+REPLACE:PAA = { # Paakintyi 
+	color = { 77 68 204 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { aborigine }
+	capital = STATE_NEW_SOUTH_WALES
+}
+
+REPLACE:YYT = { # Yorta Yorta
+	color = { 198 164 98 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_NEW_SOUTH_WALES
+}
+
+REPLACE:KTU = { # Kartu
+	color = { 244 126 55 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_WESTERN_AUSTRALIA
+}
+
+REPLACE:KYN = { # Kanyara–Mantharta
+	color = { 73 229 248 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_WESTERN_AUSTRALIA
+}
+
+REPLACE:NYR = { # Ngayarda
+	color = { 70 16 219 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_WESTERN_AUSTRALIA
+}
+
+REPLACE:NYP = { # Ngumpin-Yapa
+	color = { 18 141 110 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_WESTERN_AUSTRALIA
+}
+
+REPLACE:JRR = { # Jarrak
+	color = { 113 111 2 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_WESTERN_AUSTRALIA
+}
+
+REPLACE:NYL = { # Nyulnyulan
+	color = { 167 238 241 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_WESTERN_AUSTRALIA
+}
+
+REPLACE:WRR = { # Worrorran
+	color = { 206 205 45 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_WESTERN_AUSTRALIA
+}
+
+REPLACE:NGU = { # Ngarru
+	color = { 92 142 220 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_WESTERN_AUSTRALIA
+}
+
+REPLACE:GRW = { # Garawa
+	color = { 190 16 32 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_WESTERN_AUSTRALIA
+}
+
+REPLACE:MDI = { # Mirndi
+	color = { 147 72 6 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_WESTERN_AUSTRALIA
+}
+
+REPLACE:ARH = { # Arnhem
+	color = { 232 48 233 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_WESTERN_AUSTRALIA
+}
+
+REPLACE:YGU = { # Yolngu
+	color = { 78 11 105 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_WESTERN_AUSTRALIA
+}
+
+REPLACE:WRD = { # Wardaman
+	color = { 178 188 126 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_WESTERN_AUSTRALIA
+}
+
+REPLACE:DLY = { # Daly
+	color = { 178 121 123 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_WESTERN_AUSTRALIA
+}
+
+REPLACE:LRR = { # Larrakia, Darwin Region
+	color = { 238 127 130 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_WESTERN_AUSTRALIA
+}
+
+REPLACE:ARR = { # Arrernte
+	color = { 182 165 254 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_WESTERN_AUSTRALIA
+}
+
+REPLACE:MRA = { # Mara
+	color = { 55 24 41 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_NEW_SOUTH_WALES
+}
+
+REPLACE:KKT = { # Kalkatungu
+	color = { 132 219 205 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_NEW_SOUTH_WALES
+}
+
+REPLACE:MYI = { # Mayi
+	color = { 78 146 22 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_NEW_SOUTH_WALES
+}
+
+REPLACE:DYB = { # Dyribal
+	color = { 238 39 2 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_NEW_SOUTH_WALES
+}
+
+REPLACE:WKB = { # Waka-Gabi
+	color = { 252 112 227 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_NEW_SOUTH_WALES
+}
+
+REPLACE:PMA = { # Pama
+	color = { 207 182 66 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aborigine }
+	capital = STATE_NEW_SOUTH_WALES
 }

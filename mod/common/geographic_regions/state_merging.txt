@@ -1,4 +1,631 @@
-﻿# ---- 03_geographic_regions_africa.txt ----
+﻿# ---- 01_geographic_regions_europe.txt ----
+REPLACE:geographic_region_europe = {
+	short_key = "europe"
+
+	strategic_regions = {
+		sr:region_western_europe
+		sr:region_southern_europe
+		sr:region_central_europe
+		sr:region_northern_europe
+		sr:region_balkans
+		sr:region_russia
+		sr:region_eastern_europe
+	}
+}
+
+REPLACE:geographic_region_hungary = {
+	short_key = "hungary"
+
+	state_regions = {
+		STATE_BEKES
+		STATE_SLOVAKIA
+		STATE_SLOVAKIA
+		STATE_BEKES
+		STATE_CENTRAL_HUNGARY
+		STATE_CENTRAL_HUNGARY
+		STATE_WESTERN_SERBIA
+		STATE_NORTHERN_TRANSYLVANIA
+		STATE_NORTHERN_TRANSYLVANIA
+	}
+}
+
+REPLACE:geographic_region_german_confederation = {
+	short_key = "german_confederation"
+
+	state_regions = {
+		# former sr:region_north_germany
+		STATE_WESTPHALIA
+		STATE_HANNOVER
+		STATE_WESTPHALIA
+		STATE_HANNOVER
+		STATE_SCHLESWIG_HOLSTEIN
+		STATE_BRANDENBURG
+		STATE_BRANDENBURG
+		STATE_BRANDENBURG
+		STATE_SAXONY
+		STATE_SAXONY
+		STATE_UPPER_SILESIA
+		STATE_UPPER_SILESIA
+
+		# sr:region_south_germany minus STATE_WEST_SWITZERLAND and STATE_WEST_SWITZERLAND
+		STATE_BAVARIA
+		STATE_BOHEMIA
+		STATE_BOHEMIA
+		STATE_BAVARIA
+		STATE_BADEN
+		STATE_AUSTRIA
+		STATE_AUSTRIA
+		STATE_AUSTRIA
+		STATE_BADEN
+
+		STATE_RHINELAND
+		STATE_RHINELAND
+		STATE_RHINELAND
+		STATE_WESTPHALIA
+		STATE_VENETIA
+		STATE_CROATIA
+		STATE_CROATIA
+	}
+}
+
+REPLACE:geographic_region_megali_greece = {
+	short_key = "megali_greece"
+
+	state_regions = {
+		STATE_EASTERN_THRACE
+		STATE_ATTICA
+		STATE_ATTICA
+		STATE_ATTICA
+		STATE_EASTERN_SERBIA
+		STATE_ATTICA
+		STATE_ATTICA
+		STATE_ATTICA
+		STATE_EASTERN_THRACE
+		STATE_EASTERN_THRACE
+		STATE_CYPRUS
+		STATE_TRABZON
+		STATE_CRETE
+		STATE_ATTICA
+		STATE_EASTERN_THRACE
+	}
+}
+
+REPLACE:geographic_region_historic_byzantium = {
+	short_key = "historic_byzantium"
+
+	state_regions = {
+		STATE_EASTERN_THRACE
+		STATE_ATTICA
+		STATE_ATTICA
+		STATE_ATTICA
+		STATE_EASTERN_SERBIA
+		STATE_ATTICA
+		STATE_BULGARIA
+		STATE_EASTERN_THRACE
+		STATE_EASTERN_THRACE
+		STATE_ATTICA
+		STATE_EASTERN_THRACE
+		STATE_ALBANIA
+	}
+}
+
+REPLACE:geographic_region_iceland = {
+	short_key = "iceland"
+
+	state_regions = {
+		STATE_ICELAND
+	}
+}
+
+REPLACE:geographic_region_greater_germany = {
+	short_key = "greater_germany"
+
+	state_regions = {
+		STATE_BRANDENBURG
+		STATE_HANNOVER
+		STATE_WEST_PRUSSIA
+		STATE_WESTPHALIA
+		STATE_SAXONY
+		STATE_WEST_PRUSSIA
+		STATE_EAST_PRUSSIA
+		STATE_RHINELAND
+		STATE_RHINELAND
+		STATE_RHINELAND
+		STATE_UPPER_SILESIA
+		STATE_UPPER_SILESIA
+		STATE_SCHLESWIG_HOLSTEIN
+		STATE_HANNOVER
+		STATE_SAXONY
+		STATE_WESTPHALIA
+		STATE_BRANDENBURG
+		STATE_WESTPHALIA
+		STATE_BRANDENBURG
+		STATE_ALSACE_LORRAINE
+		STATE_BOHEMIA
+		STATE_BOHEMIA
+		STATE_AUSTRIA
+		STATE_AUSTRIA
+		STATE_AUSTRIA
+		STATE_VENETIA
+		STATE_CROATIA
+		STATE_BADEN
+		STATE_BADEN
+		STATE_BAVARIA
+		STATE_BAVARIA
+	}
+}
+
+REPLACE:geographic_region_lesser_germany = {
+	short_key = "lesser_germany"
+
+	state_regions = {
+		STATE_BRANDENBURG
+		STATE_BADEN
+		STATE_BAVARIA
+		STATE_BAVARIA
+		STATE_WESTPHALIA
+		STATE_HANNOVER
+		STATE_WESTPHALIA
+		STATE_SAXONY
+		STATE_RHINELAND
+		STATE_RHINELAND
+		STATE_RHINELAND
+		STATE_SCHLESWIG_HOLSTEIN
+		STATE_HANNOVER
+		STATE_SAXONY
+		STATE_WESTPHALIA
+		STATE_BRANDENBURG
+		STATE_UPPER_SILESIA
+		STATE_UPPER_SILESIA
+		STATE_BRANDENBURG
+		STATE_EAST_PRUSSIA
+		STATE_WEST_PRUSSIA
+		STATE_ALSACE_LORRAINE
+		STATE_BADEN
+	}
+}
+
+REPLACE:geographic_region_scandinavia = {
+	short_key = "scandinavia"
+
+	state_regions = {
+		STATE_ZEALAND
+		STATE_ZEALAND
+		STATE_SCHLESWIG_HOLSTEIN
+		STATE_SVEALAND
+		STATE_SCANIA
+		STATE_SCANIA
+		STATE_SVEALAND
+		STATE_SVEALAND
+		STATE_UUSIMAA
+		STATE_UUSIMAA
+		STATE_UUSIMAA
+		STATE_UUSIMAA
+		STATE_EASTERN_NORWAY
+		STATE_EASTERN_NORWAY
+		STATE_EASTERN_NORWAY
+	}
+}
+
+
+REPLACE:geographic_region_yugoslavia = {
+	short_key = "yugoslavia"
+
+	state_regions = {
+		STATE_WESTERN_SERBIA
+		STATE_EASTERN_SERBIA
+		STATE_EASTERN_SERBIA
+		STATE_EASTERN_SERBIA
+		STATE_WESTERN_SERBIA
+		STATE_WESTERN_SERBIA
+		STATE_CROATIA
+		STATE_CROATIA
+		STATE_CROATIA
+		STATE_CROATIA
+		STATE_CROATIA
+		STATE_CROATIA
+	}
+}
+
+REPLACE:geographic_region_castile = {
+	short_key = "castile"
+
+	state_regions = {
+		STATE_OLD_CASTILE
+		STATE_OLD_CASTILE
+		STATE_OLD_CASTILE
+		STATE_LOWER_ANDALUSIA
+		STATE_LOWER_ANDALUSIA
+		STATE_LOWER_ANDALUSIA
+		STATE_GALICIA
+		STATE_GALICIA
+		STATE_GALICIA
+	}
+}
+
+REPLACE:geographic_region_aragon = {
+	short_key = "aragon"
+
+	state_regions = {
+		STATE_CATALONIA
+		STATE_CATALONIA
+		STATE_CATALONIA
+		STATE_CATALONIA
+	}
+}
+
+REPLACE:geographic_region_greater_romania = {
+	short_key = "greater_romania"
+
+	state_regions = {
+		STATE_WALLACHIA
+		STATE_MOLDAVIA
+		STATE_NORTHERN_TRANSYLVANIA
+		STATE_NORTHERN_TRANSYLVANIA
+		STATE_WALLACHIA
+		STATE_MOLDAVIA
+		STATE_MOLDAVIA
+		STATE_BEKES
+		STATE_BEKES
+	}
+}
+
+REPLACE:geographic_region_france = {
+	short_key = "france"
+
+	state_regions = {
+		STATE_ILE_DE_FRANCE
+		STATE_ILE_DE_FRANCE
+		STATE_POITOU
+		STATE_AQUITAINE
+		STATE_CHAMPAGNE
+		STATE_PROVENCE
+		STATE_NORMANDY
+		STATE_PROVENCE
+		STATE_LANGUEDOC
+		STATE_PROVENCE
+		STATE_FLANDERS
+		STATE_NORMANDY
+		STATE_ALSACE_LORRAINE
+		STATE_POITOU
+		STATE_AQUITAINE
+		STATE_LANGUEDOC
+		STATE_BRITTANY
+		STATE_ILE_DE_FRANCE
+		STATE_CHAMPAGNE
+		STATE_CHAMPAGNE
+	}
+}
+
+REPLACE:geographic_region_greater_croatia = {
+	short_key = "greater_croatia"
+
+	state_regions = {
+		STATE_CROATIA
+		STATE_CROATIA
+		STATE_CROATIA
+		STATE_CROATIA
+		STATE_CROATIA
+	}
+}
+
+REPLACE:geographic_region_french_natural_borders = {
+	short_key = "french_natural_borders"
+
+	state_regions = {
+		STATE_ILE_DE_FRANCE
+		STATE_ILE_DE_FRANCE
+		STATE_POITOU
+		STATE_AQUITAINE
+		STATE_CHAMPAGNE
+		STATE_PROVENCE
+		STATE_NORMANDY
+		STATE_PROVENCE
+		STATE_LANGUEDOC
+		STATE_PROVENCE
+		STATE_FLANDERS
+		STATE_NORMANDY
+		STATE_ALSACE_LORRAINE
+		STATE_POITOU
+		STATE_AQUITAINE
+		STATE_LANGUEDOC
+		STATE_BRITTANY
+		STATE_ILE_DE_FRANCE
+		STATE_CHAMPAGNE
+		STATE_CHAMPAGNE
+		STATE_FLANDERS
+		STATE_FLANDERS
+		STATE_RHINELAND
+		STATE_RHINELAND
+	}
+}
+
+REPLACE:geographic_region_greater_bulgaria = {
+	short_key = "greater_bulgaria"
+
+	state_regions = {
+		STATE_EASTERN_SERBIA
+		STATE_WALLACHIA
+		STATE_ATTICA
+		STATE_BULGARIA
+		STATE_BULGARIA
+		STATE_ATTICA
+		STATE_EASTERN_SERBIA
+		STATE_EASTERN_THRACE
+	}
+}
+
+
+# ---- 02_geographic_regions_america.txt ----
+REPLACE:geographic_region_north_america = {
+	short_key = "north_america"
+
+	strategic_regions = {
+		sr:region_canada
+		sr:region_atlantic_coast
+		sr:region_pacific_coast
+		sr:region_great_plains
+	}
+}
+
+REPLACE:geographic_region_south_america = {
+	short_key = "south_america"
+
+	strategic_regions = {
+		sr:region_brazil
+		sr:region_la_plata
+		sr:region_andes
+		sr:region_gran_colombia
+	}
+}
+
+REPLACE:geographic_region_americas = {
+	short_key = "americas"
+
+	strategic_regions = {
+		sr:region_canada
+		sr:region_atlantic_coast
+		sr:region_pacific_coast
+		sr:region_great_plains
+
+		#geographic_region_central_america
+		sr:region_central_america
+
+		#geographic_region_south_america
+		sr:region_brazil
+		sr:region_la_plata
+		sr:region_andes
+		sr:region_gran_colombia
+	}
+}
+
+REPLACE:geographic_region_peru = {
+	short_key = "peru"
+
+	state_regions = {
+		STATE_LIMA
+		STATE_LIMA
+		STATE_LIMA
+		STATE_ICA
+		STATE_ICA
+		STATE_ANTOFAGASTA
+	}
+}
+
+REPLACE:geographic_region_bolivia = {
+	short_key = "bolivia"
+
+	state_regions = {
+		STATE_LA_PAZ
+		STATE_LA_PAZ
+		STATE_LA_PAZ
+		STATE_CHACO
+		STATE_AMAZONAS
+		STATE_ANTOFAGASTA
+	}
+}
+
+# Spanish New World Georegions
+
+REPLACE:geographic_region_colonial_new_spain = {
+	short_key = "colonial_new_spain"
+
+	strategic_regions = {
+	 	# Mexico
+		sr:region_central_america
+	}
+
+	state_regions = {
+		STATE_BAJA_CALIFORNIA
+		# Central America
+		STATE_YUCATAN
+		STATE_JALISCO
+		STATE_GUATEMALA
+		STATE_NICARAGUA
+		STATE_SAN_SALVADOR
+		STATE_HONDURAS
+		STATE_COSTA_RICA
+		# USA
+		STATE_CALIFORNIA
+		STATE_ARIZONA
+		STATE_UTAH
+		STATE_ARIZONA
+		STATE_TEXAS
+		STATE_UTAH
+		STATE_CALIFORNIA
+	}
+}
+
+REPLACE:geographic_region_colonial_new_grenada = {
+	short_key = "colonial_new_grenada"
+
+	strategic_regions = {
+	 	# Mexico
+		sr:region_gran_colombia
+	}
+
+	state_regions = {
+		# Central America Region
+		STATE_PANAMA
+		# Andes Region
+		STATE_ECUADOR
+		STATE_LIMA
+	}
+}
+
+REPLACE:geographic_region_colonial_peru = {
+	short_key = "colonial_peru"
+
+	state_regions = {
+		# Andes Region
+		STATE_LIMA
+		STATE_LIMA
+		STATE_AMAZONAS
+		STATE_ICA
+		STATE_ICA
+		STATE_ANTOFAGASTA
+		# Chile
+		STATE_SANTIAGO
+		STATE_SANTIAGO
+	}
+}
+
+REPLACE:geographic_region_colonial_la_plata = {
+	short_key = "colonial_la_plata"
+
+	state_regions = {
+		# La Plata Region
+		STATE_BUENOS_AIRES
+		STATE_SANTA_FE
+		STATE_SANTA_FE
+		STATE_CHACO
+		STATE_BAJO_PARAGUAY
+		STATE_BAJO_PARAGUAY
+		STATE_BUENOS_AIRES
+		STATE_RIO_NEGRO
+		STATE_RIO_NEGRO
+		STATE_PATAGONIA
+		STATE_ARAUCANIA
+		STATE_SOUTH_ATLANTIC_ISLANDS
+		# Andes Region
+		STATE_LA_PAZ
+		STATE_CHACO
+		STATE_ANTOFAGASTA
+		STATE_LA_PAZ
+		STATE_LA_PAZ
+		# Brazil Region
+		STATE_SANTA_FE
+		STATE_RIO_GRANDE_DO_SUL
+	}
+}
+
+REPLACE:geographic_region_andean_federation = {
+	short_key = "andean_federation"
+
+	strategic_regions = {
+		sr:region_andes
+		sr:region_gran_colombia
+		sr:region_la_plata
+	}
+}
+
+REPLACE:geographic_region_amazon = {
+	short_key = "amazon"
+
+	state_regions = {
+		STATE_GUAYANA
+		STATE_CAUCA
+		STATE_LIMA
+		STATE_LA_PAZ
+		STATE_PARA
+		STATE_PARA
+		STATE_AMAZONAS
+		STATE_AMAZONAS
+		STATE_MATO_GROSSO
+		STATE_MATO_GROSSO
+	}
+}
+
+REPLACE:geographic_region_northern_mexico = {
+	short_key = "northern_mexico"
+
+	state_regions = {
+		STATE_TEXAS
+		STATE_ARIZONA
+		STATE_ARIZONA
+		STATE_UTAH
+		STATE_UTAH
+		STATE_CALIFORNIA
+		STATE_CALIFORNIA
+	}
+}
+
+REPLACE:geographic_region_latin_america = {
+	short_key = "latin_america"
+
+	strategic_regions = {
+		sr:region_brazil
+		sr:region_la_plata
+		sr:region_andes
+		sr:region_gran_colombia
+		sr:region_central_america
+	}
+}
+
+REPLACE:geographic_region_greater_canada = {
+	short_key = "greater_canada"
+
+	strategic_regions = {
+		sr:region_canada
+	}
+
+	state_regions = {
+		STATE_BRITISH_COLUMBIA
+		STATE_BRITISH_COLUMBIA
+		STATE_BRITISH_COLUMBIA
+		STATE_NORTHWEST_TERRITORIES
+		STATE_NEW_BRUNSWICK
+		STATE_OREGON
+		STATE_OREGON
+		STATE_OREGON
+	}
+}
+
+REPLACE:geographic_region_north_andes = { # North Andean homelands
+	short_key = "north_andes"
+
+	state_regions = {
+		STATE_ECUADOR
+		STATE_MIRANDA
+		STATE_MIRANDA
+		STATE_MIRANDA
+		STATE_CUNDINAMARCA
+		STATE_CAUCA
+		STATE_CUNDINAMARCA
+		STATE_CAUCA
+	}
+}
+
+REPLACE:geographic_region_southern_cone = {
+	short_key = "southern_cone"
+
+	state_regions = {
+		STATE_SANTA_FE
+		STATE_BAJO_PARAGUAY
+		STATE_BAJO_PARAGUAY
+		STATE_BUENOS_AIRES
+		STATE_RIO_NEGRO
+		STATE_BUENOS_AIRES
+		STATE_SANTA_FE
+		STATE_SANTA_FE
+		STATE_RIO_NEGRO
+		STATE_CHACO
+		STATE_CHACO
+	}
+}
+
+
+# ---- 03_geographic_regions_africa.txt ----
 REPLACE:geographic_region_africa = {
 	short_key = "africa"
 
@@ -91,6 +718,411 @@ REPLACE:geographic_region_zambezi_basin = {
 	}
 }
 
+
+# ---- 04_geographic_regions_asia.txt ----
+REPLACE:geographic_region_asia = {
+	short_key = "asia"
+
+	strategic_regions = {
+		# Middle East
+		sr:region_near_east
+		sr:region_arabia
+		sr:region_greater_persia
+
+		# Central Asia
+		sr:region_himalayas
+		sr:region_central_asia
+
+		# India
+		sr:region_north_india
+		sr:region_south_india
+
+		# East Asia and Siberia
+		sr:region_south_china
+		sr:region_north_china
+		sr:region_northeast_asia
+		sr:region_siberia
+
+		# SEA
+		sr:region_indonesia
+		sr:region_indochina
+
+		# OCE
+		sr:region_oceania
+	}
+}
+
+REPLACE:geographic_region_middle_east = {
+	short_key = "middle_east"
+
+	strategic_regions = {
+		sr:region_near_east
+		sr:region_arabia
+		sr:region_greater_persia
+	}
+}
+
+REPLACE:geographic_region_india = {
+	short_key = "india"
+
+	strategic_regions = {
+		sr:region_north_india
+		sr:region_south_india
+	}
+
+	state_regions = {
+		STATE_PASHTUNISTAN
+		STATE_PASHTUNISTAN
+		STATE_KASHMIR
+		STATE_BALUCHISTAN
+	}
+}
+
+REPLACE:geographic_region_east_asia = {
+	short_key = "east_asia"
+
+	strategic_regions = {
+		sr:region_south_china
+		sr:region_north_china
+		sr:region_northeast_asia
+		sr:region_siberia
+	}
+}
+
+REPLACE:geographic_region_south_east_asia = {
+	short_key = "south_east_asia"
+
+	strategic_regions = {
+		sr:region_indonesia
+		sr:region_indochina
+	}
+}
+
+REPLACE:geographic_region_china = {
+	short_key = "china"
+
+	strategic_regions = {
+		sr:region_south_china
+		sr:region_north_china
+		# not counting manchuria here deliberately
+	}
+}
+
+REPLACE:geographic_region_greater_khorasan = {
+	short_key = "greater_khorasan"
+
+	state_regions = {
+		STATE_HERAT
+    	STATE_KABUL
+    	STATE_KABUL
+    	STATE_HERAT
+    	STATE_HERAT
+    	STATE_KHIVA
+    	STATE_KABUL
+	}
+}
+
+REPLACE:geographic_region_chorasmia = {
+	short_key = "chorasmia"
+
+	state_regions = {
+		STATE_KHIVA
+		STATE_KHIVA
+	}
+}
+
+REPLACE:geographic_region_transoxiana = {
+	short_key = "transoxiana"
+
+	state_regions = {
+		STATE_FERGANA
+		STATE_TAJIKISTAN
+		STATE_UZBEKIA
+	}
+}
+
+REPLACE:geographic_region_honshu = {
+	short_key = "honshu"
+
+	state_regions = {
+		STATE_KANTO
+		STATE_KANTO
+		STATE_KYOTO
+		STATE_KYOTO
+		STATE_KANSAI
+		STATE_KYOTO
+		STATE_KANSAI
+	}
+}
+REPLACE:geographic_region_ezochi = { # Used purely for loc
+	short_key = "ezochi"
+
+	state_regions = {
+		STATE_HOKKAIDO
+		STATE_SAKHALIN
+	}
+}
+REPLACE:geographic_region_japan = {
+	short_key = "japan"
+
+	state_regions = { 
+		STATE_HOKKAIDO 
+		STATE_KANTO 
+		STATE_KANTO 
+		STATE_KYOTO 
+		STATE_KANSAI 
+		STATE_KYUSHU 
+		STATE_KANSAI 
+		STATE_KANSAI 
+		STATE_SAKHALIN 
+		STATE_KYUSHU 
+		STATE_KYOTO 
+		STATE_KYOTO 
+	}
+}
+
+REPLACE:geographic_region_philippines = {
+	short_key = "philippines"
+
+	state_regions = {
+		STATE_LUZON
+		STATE_LUZON
+		STATE_LUZON
+	}
+}
+
+REPLACE:geographic_region_home_islands = {
+	short_key = "home_islands"
+
+	state_regions = {
+		STATE_HOKKAIDO
+		STATE_KANTO
+		STATE_KANTO
+		STATE_KYOTO
+		STATE_KANSAI
+		STATE_KYUSHU
+		STATE_KANSAI
+		STATE_KANSAI
+		STATE_KYUSHU
+		STATE_KYOTO
+		STATE_KYOTO
+	}
+}
+
+REPLACE:geographic_region_korea = {
+	short_key = "korea"
+
+	state_regions = {
+		STATE_SEOUL
+		STATE_SEOUL
+		STATE_SEOUL
+		STATE_PYONGYANG
+		STATE_PYONGYANG
+	}
+}
+
+REPLACE:geographic_region_han_homelands = {
+	short_key = "han_homelands"
+
+	state_regions = {
+		STATE_SHANDONG
+		STATE_SUZHOU
+		STATE_SICHUAN
+		STATE_YUNNAN
+		STATE_GUIZHOU
+		STATE_SHAOZHOU
+		STATE_GUANGXI
+		STATE_GUANGDONG
+		STATE_BEIJING
+		STATE_SHENGJING
+		STATE_SHANXI
+		STATE_NINGXIA
+		STATE_GANSU
+		STATE_XIAN
+		STATE_CHONGQING
+		STATE_FUJIAN
+		STATE_ZHEJIANG
+		STATE_NANJING
+		STATE_JIANGSU
+		STATE_HENAN
+		STATE_ZHILI
+		STATE_JIANGXI
+		STATE_SOUTHERN_ANHUI
+		STATE_NORTHERN_ANHUI
+		STATE_WESTERN_HUBEI
+		STATE_EASTERN_HUBEI
+		STATE_HUNAN
+		STATE_FORMOSA
+	}
+}
+
+REPLACE:geographic_region_indian_frontier = {
+	short_key = "indian_frontier"
+
+	state_regions = {
+		STATE_PUNJAB
+		STATE_DELHI
+		STATE_SINDH
+		STATE_PASHTUNISTAN
+		STATE_PASHTUNISTAN
+		STATE_KASHMIR
+		STATE_BALUCHISTAN
+		STATE_MANDALAY
+		STATE_KACHIN
+		STATE_SHAN_STATES
+		STATE_PEGU
+	}
+}
+
+REPLACE:geographic_region_turkestan = {
+	short_key = "turkestan"
+
+	state_regions = {
+		STATE_AKMOLINSK
+		STATE_URALSK
+		STATE_URALSK
+		STATE_SEMIRECHE
+		STATE_FERGANA
+		STATE_UZBEKIA
+		STATE_KHIVA
+		STATE_TAJIKISTAN
+		STATE_KIRGHIZIA
+		STATE_KHIVA
+		STATE_KHIVA
+	}
+}
+
+REPLACE:geographic_region_burma = {
+	short_key = "burma"
+
+	state_regions = {
+		STATE_MANDALAY
+		STATE_PEGU
+		STATE_KACHIN
+		STATE_SHAN_STATES
+	}
+}
+
+REPLACE:geographic_region_afghanistan = {
+	short_key = "afghanistan"
+
+	state_regions = {
+		STATE_KABUL
+		STATE_KABUL
+		STATE_HERAT
+		STATE_KABUL
+		STATE_HERAT
+		STATE_HERAT
+	}
+}
+
+REPLACE:geographic_region_greater_afghanistan = {
+	short_key = "greater_afghanistan"
+
+	state_regions = {
+		STATE_KABUL
+		STATE_KABUL
+		STATE_HERAT
+		STATE_KABUL
+		STATE_HERAT
+		STATE_HERAT
+		STATE_PASHTUNISTAN
+		STATE_PASHTUNISTAN
+		STATE_BALUCHISTAN
+	}
+}
+
+REPLACE:geographic_region_great_game_region = {
+	short_key = "great_game_region"
+
+	strategic_regions = {
+		sr:region_greater_persia
+		sr:region_central_asia
+	}
+}
+
+REPLACE:geographic_region_australia = {
+	short_key = "australia"
+
+	state_regions = {
+		STATE_NEW_SOUTH_WALES
+		STATE_NEW_SOUTH_WALES
+		STATE_NEW_SOUTH_WALES
+		STATE_NEW_SOUTH_WALES
+		STATE_WESTERN_AUSTRALIA
+		STATE_WESTERN_AUSTRALIA
+		STATE_WESTERN_AUSTRALIA
+	}
+}
+
+REPLACE:geographic_region_new_zealand = {
+	short_key = "new_zealand"
+
+	state_regions = {
+		STATE_NORTH_ISLAND
+		STATE_NORTH_ISLAND
+	}
+}
+
+REPLACE:geographic_region_australasia = {
+	short_key = "australasia"
+
+	state_regions = {
+		STATE_NEW_SOUTH_WALES
+		STATE_NEW_SOUTH_WALES
+		STATE_NEW_SOUTH_WALES
+		STATE_NEW_SOUTH_WALES
+		STATE_WESTERN_AUSTRALIA
+		STATE_WESTERN_AUSTRALIA
+		STATE_WESTERN_AUSTRALIA
+		STATE_NORTH_ISLAND
+		STATE_NORTH_ISLAND
+	}
+}
+
+REPLACE:geographic_region_delhi_calcutta_line = {
+	short_key = "delhi_calcutta_line"
+
+	state_regions = {
+		STATE_WEST_BENGAL
+		STATE_BIHAR
+		STATE_AWADH
+		STATE_AGRA
+		STATE_DELHI
+	}
+}
+
+REPLACE:geographic_region_allahabad_bombay_line = {
+	short_key = "allahabad_bombay_line"
+
+	state_regions = {
+		STATE_AGRA
+		STATE_BUNDELKHAND
+		STATE_CENTRAL_PROVINCES
+		STATE_MALWA
+		STATE_BOMBAY
+	}
+}
+
+REPLACE:geographic_region_bombay_madras_line = {
+	short_key = "bombay_madras_line"
+
+	state_regions = {
+		STATE_BOMBAY
+		STATE_HYDERABAD
+		STATE_KURNOOL
+		STATE_MADRAS
+	}
+}
+
+REPLACE:geographic_region_gujarat_bombay_line = {
+	short_key = "gujarat_bombay_line"
+
+	state_regions = {
+		STATE_BOMBAY
+		STATE_GUJARAT
+	}
+}
 
 # ---- 05_geographic_regions_content.txt ----
 REPLACE:geographic_region_wet_process_coffee_region = {
@@ -894,1038 +1926,6 @@ REPLACE:geographic_region_caribbean_old = {
 
 # 	state_regions = { STATE_MIRANDA STATE_GUAYANA STATE_MIRANDA STATE_CUNDINAMARCA STATE_MIRANDA STATE_CAUCA STATE_CAUCA STATE_CUNDINAMARCA }
 # }
-
-
-# ---- 04_geographic_regions_asia.txt ----
-REPLACE:geographic_region_asia = {
-	short_key = "asia"
-
-	strategic_regions = {
-		# Middle East
-		sr:region_near_east
-		sr:region_arabia
-		sr:region_greater_persia
-
-		# Central Asia
-		sr:region_himalayas
-		sr:region_central_asia
-
-		# India
-		sr:region_north_india
-		sr:region_south_india
-
-		# East Asia and Siberia
-		sr:region_south_china
-		sr:region_north_china
-		sr:region_northeast_asia
-		sr:region_siberia
-
-		# SEA
-		sr:region_indonesia
-		sr:region_indochina
-
-		# OCE
-		sr:region_oceania
-	}
-}
-
-REPLACE:geographic_region_middle_east = {
-	short_key = "middle_east"
-
-	strategic_regions = {
-		sr:region_near_east
-		sr:region_arabia
-		sr:region_greater_persia
-	}
-}
-
-REPLACE:geographic_region_india = {
-	short_key = "india"
-
-	strategic_regions = {
-		sr:region_north_india
-		sr:region_south_india
-	}
-
-	state_regions = {
-		STATE_PASHTUNISTAN
-		STATE_PASHTUNISTAN
-		STATE_KASHMIR
-		STATE_BALUCHISTAN
-	}
-}
-
-REPLACE:geographic_region_east_asia = {
-	short_key = "east_asia"
-
-	strategic_regions = {
-		sr:region_south_china
-		sr:region_north_china
-		sr:region_northeast_asia
-		sr:region_siberia
-	}
-}
-
-REPLACE:geographic_region_south_east_asia = {
-	short_key = "south_east_asia"
-
-	strategic_regions = {
-		sr:region_indonesia
-		sr:region_indochina
-	}
-}
-
-REPLACE:geographic_region_china = {
-	short_key = "china"
-
-	strategic_regions = {
-		sr:region_south_china
-		sr:region_north_china
-		# not counting manchuria here deliberately
-	}
-}
-
-REPLACE:geographic_region_greater_khorasan = {
-	short_key = "greater_khorasan"
-
-	state_regions = {
-		STATE_HERAT
-    	STATE_KABUL
-    	STATE_KABUL
-    	STATE_HERAT
-    	STATE_HERAT
-    	STATE_KHIVA
-    	STATE_KABUL
-	}
-}
-
-REPLACE:geographic_region_chorasmia = {
-	short_key = "chorasmia"
-
-	state_regions = {
-		STATE_KHIVA
-		STATE_KHIVA
-	}
-}
-
-REPLACE:geographic_region_transoxiana = {
-	short_key = "transoxiana"
-
-	state_regions = {
-		STATE_FERGANA
-		STATE_TAJIKISTAN
-		STATE_UZBEKIA
-	}
-}
-
-REPLACE:geographic_region_honshu = {
-	short_key = "honshu"
-
-	state_regions = {
-		STATE_KANTO
-		STATE_KANTO
-		STATE_KYOTO
-		STATE_KYOTO
-		STATE_KANSAI
-		STATE_KYOTO
-		STATE_KANSAI
-	}
-}
-REPLACE:geographic_region_ezochi = { # Used purely for loc
-	short_key = "ezochi"
-
-	state_regions = {
-		STATE_HOKKAIDO
-		STATE_SAKHALIN
-	}
-}
-REPLACE:geographic_region_japan = {
-	short_key = "japan"
-
-	state_regions = { 
-		STATE_HOKKAIDO 
-		STATE_KANTO 
-		STATE_KANTO 
-		STATE_KYOTO 
-		STATE_KANSAI 
-		STATE_KYUSHU 
-		STATE_KANSAI 
-		STATE_KANSAI 
-		STATE_SAKHALIN 
-		STATE_KYUSHU 
-		STATE_KYOTO 
-		STATE_KYOTO 
-	}
-}
-
-REPLACE:geographic_region_philippines = {
-	short_key = "philippines"
-
-	state_regions = {
-		STATE_LUZON
-		STATE_LUZON
-		STATE_LUZON
-	}
-}
-
-REPLACE:geographic_region_home_islands = {
-	short_key = "home_islands"
-
-	state_regions = {
-		STATE_HOKKAIDO
-		STATE_KANTO
-		STATE_KANTO
-		STATE_KYOTO
-		STATE_KANSAI
-		STATE_KYUSHU
-		STATE_KANSAI
-		STATE_KANSAI
-		STATE_KYUSHU
-		STATE_KYOTO
-		STATE_KYOTO
-	}
-}
-
-REPLACE:geographic_region_korea = {
-	short_key = "korea"
-
-	state_regions = {
-		STATE_SEOUL
-		STATE_SEOUL
-		STATE_SEOUL
-		STATE_PYONGYANG
-		STATE_PYONGYANG
-	}
-}
-
-REPLACE:geographic_region_han_homelands = {
-	short_key = "han_homelands"
-
-	state_regions = {
-		STATE_SHANDONG
-		STATE_SUZHOU
-		STATE_SICHUAN
-		STATE_YUNNAN
-		STATE_GUIZHOU
-		STATE_SHAOZHOU
-		STATE_GUANGXI
-		STATE_GUANGDONG
-		STATE_BEIJING
-		STATE_SHENGJING
-		STATE_SHANXI
-		STATE_NINGXIA
-		STATE_GANSU
-		STATE_XIAN
-		STATE_CHONGQING
-		STATE_FUJIAN
-		STATE_ZHEJIANG
-		STATE_NANJING
-		STATE_JIANGSU
-		STATE_HENAN
-		STATE_ZHILI
-		STATE_JIANGXI
-		STATE_SOUTHERN_ANHUI
-		STATE_NORTHERN_ANHUI
-		STATE_WESTERN_HUBEI
-		STATE_EASTERN_HUBEI
-		STATE_HUNAN
-		STATE_FORMOSA
-	}
-}
-
-REPLACE:geographic_region_indian_frontier = {
-	short_key = "indian_frontier"
-
-	state_regions = {
-		STATE_PUNJAB
-		STATE_DELHI
-		STATE_SINDH
-		STATE_PASHTUNISTAN
-		STATE_PASHTUNISTAN
-		STATE_KASHMIR
-		STATE_BALUCHISTAN
-		STATE_MANDALAY
-		STATE_KACHIN
-		STATE_SHAN_STATES
-		STATE_PEGU
-	}
-}
-
-REPLACE:geographic_region_turkestan = {
-	short_key = "turkestan"
-
-	state_regions = {
-		STATE_AKMOLINSK
-		STATE_URALSK
-		STATE_URALSK
-		STATE_SEMIRECHE
-		STATE_FERGANA
-		STATE_UZBEKIA
-		STATE_KHIVA
-		STATE_TAJIKISTAN
-		STATE_KIRGHIZIA
-		STATE_KHIVA
-		STATE_KHIVA
-	}
-}
-
-REPLACE:geographic_region_burma = {
-	short_key = "burma"
-
-	state_regions = {
-		STATE_MANDALAY
-		STATE_PEGU
-		STATE_KACHIN
-		STATE_SHAN_STATES
-	}
-}
-
-REPLACE:geographic_region_afghanistan = {
-	short_key = "afghanistan"
-
-	state_regions = {
-		STATE_KABUL
-		STATE_KABUL
-		STATE_HERAT
-		STATE_KABUL
-		STATE_HERAT
-		STATE_HERAT
-	}
-}
-
-REPLACE:geographic_region_greater_afghanistan = {
-	short_key = "greater_afghanistan"
-
-	state_regions = {
-		STATE_KABUL
-		STATE_KABUL
-		STATE_HERAT
-		STATE_KABUL
-		STATE_HERAT
-		STATE_HERAT
-		STATE_PASHTUNISTAN
-		STATE_PASHTUNISTAN
-		STATE_BALUCHISTAN
-	}
-}
-
-REPLACE:geographic_region_great_game_region = {
-	short_key = "great_game_region"
-
-	strategic_regions = {
-		sr:region_greater_persia
-		sr:region_central_asia
-	}
-}
-
-REPLACE:geographic_region_australia = {
-	short_key = "australia"
-
-	state_regions = {
-		STATE_NEW_SOUTH_WALES
-		STATE_NEW_SOUTH_WALES
-		STATE_NEW_SOUTH_WALES
-		STATE_NEW_SOUTH_WALES
-		STATE_WESTERN_AUSTRALIA
-		STATE_WESTERN_AUSTRALIA
-		STATE_WESTERN_AUSTRALIA
-	}
-}
-
-REPLACE:geographic_region_new_zealand = {
-	short_key = "new_zealand"
-
-	state_regions = {
-		STATE_NORTH_ISLAND
-		STATE_NORTH_ISLAND
-	}
-}
-
-REPLACE:geographic_region_australasia = {
-	short_key = "australasia"
-
-	state_regions = {
-		STATE_NEW_SOUTH_WALES
-		STATE_NEW_SOUTH_WALES
-		STATE_NEW_SOUTH_WALES
-		STATE_NEW_SOUTH_WALES
-		STATE_WESTERN_AUSTRALIA
-		STATE_WESTERN_AUSTRALIA
-		STATE_WESTERN_AUSTRALIA
-		STATE_NORTH_ISLAND
-		STATE_NORTH_ISLAND
-	}
-}
-
-REPLACE:geographic_region_delhi_calcutta_line = {
-	short_key = "delhi_calcutta_line"
-
-	state_regions = {
-		STATE_WEST_BENGAL
-		STATE_BIHAR
-		STATE_AWADH
-		STATE_AGRA
-		STATE_DELHI
-	}
-}
-
-REPLACE:geographic_region_allahabad_bombay_line = {
-	short_key = "allahabad_bombay_line"
-
-	state_regions = {
-		STATE_AGRA
-		STATE_BUNDELKHAND
-		STATE_CENTRAL_PROVINCES
-		STATE_MALWA
-		STATE_BOMBAY
-	}
-}
-
-REPLACE:geographic_region_bombay_madras_line = {
-	short_key = "bombay_madras_line"
-
-	state_regions = {
-		STATE_BOMBAY
-		STATE_HYDERABAD
-		STATE_KURNOOL
-		STATE_MADRAS
-	}
-}
-
-REPLACE:geographic_region_gujarat_bombay_line = {
-	short_key = "gujarat_bombay_line"
-
-	state_regions = {
-		STATE_BOMBAY
-		STATE_GUJARAT
-	}
-}
-
-# ---- 01_geographic_regions_europe.txt ----
-REPLACE:geographic_region_europe = {
-	short_key = "europe"
-
-	strategic_regions = {
-		sr:region_western_europe
-		sr:region_southern_europe
-		sr:region_central_europe
-		sr:region_northern_europe
-		sr:region_balkans
-		sr:region_russia
-		sr:region_eastern_europe
-	}
-}
-
-REPLACE:geographic_region_hungary = {
-	short_key = "hungary"
-
-	state_regions = {
-		STATE_BEKES
-		STATE_SLOVAKIA
-		STATE_SLOVAKIA
-		STATE_BEKES
-		STATE_CENTRAL_HUNGARY
-		STATE_CENTRAL_HUNGARY
-		STATE_WESTERN_SERBIA
-		STATE_NORTHERN_TRANSYLVANIA
-		STATE_NORTHERN_TRANSYLVANIA
-	}
-}
-
-REPLACE:geographic_region_german_confederation = {
-	short_key = "german_confederation"
-
-	state_regions = {
-		# former sr:region_north_germany
-		STATE_WESTPHALIA
-		STATE_HANNOVER
-		STATE_WESTPHALIA
-		STATE_HANNOVER
-		STATE_SCHLESWIG_HOLSTEIN
-		STATE_BRANDENBURG
-		STATE_BRANDENBURG
-		STATE_BRANDENBURG
-		STATE_SAXONY
-		STATE_SAXONY
-		STATE_UPPER_SILESIA
-		STATE_UPPER_SILESIA
-
-		# sr:region_south_germany minus STATE_WEST_SWITZERLAND and STATE_WEST_SWITZERLAND
-		STATE_BAVARIA
-		STATE_BOHEMIA
-		STATE_BOHEMIA
-		STATE_BAVARIA
-		STATE_BADEN
-		STATE_AUSTRIA
-		STATE_AUSTRIA
-		STATE_AUSTRIA
-		STATE_BADEN
-
-		STATE_RHINELAND
-		STATE_RHINELAND
-		STATE_RHINELAND
-		STATE_WESTPHALIA
-		STATE_VENETIA
-		STATE_CROATIA
-		STATE_CROATIA
-	}
-}
-
-REPLACE:geographic_region_megali_greece = {
-	short_key = "megali_greece"
-
-	state_regions = {
-		STATE_EASTERN_THRACE
-		STATE_ATTICA
-		STATE_ATTICA
-		STATE_ATTICA
-		STATE_EASTERN_SERBIA
-		STATE_ATTICA
-		STATE_ATTICA
-		STATE_ATTICA
-		STATE_EASTERN_THRACE
-		STATE_EASTERN_THRACE
-		STATE_CYPRUS
-		STATE_TRABZON
-		STATE_CRETE
-		STATE_ATTICA
-		STATE_EASTERN_THRACE
-	}
-}
-
-REPLACE:geographic_region_historic_byzantium = {
-	short_key = "historic_byzantium"
-
-	state_regions = {
-		STATE_EASTERN_THRACE
-		STATE_ATTICA
-		STATE_ATTICA
-		STATE_ATTICA
-		STATE_EASTERN_SERBIA
-		STATE_ATTICA
-		STATE_BULGARIA
-		STATE_EASTERN_THRACE
-		STATE_EASTERN_THRACE
-		STATE_ATTICA
-		STATE_EASTERN_THRACE
-		STATE_ALBANIA
-	}
-}
-
-REPLACE:geographic_region_iceland = {
-	short_key = "iceland"
-
-	state_regions = {
-		STATE_ICELAND
-	}
-}
-
-REPLACE:geographic_region_greater_germany = {
-	short_key = "greater_germany"
-
-	state_regions = {
-		STATE_BRANDENBURG
-		STATE_HANNOVER
-		STATE_WEST_PRUSSIA
-		STATE_WESTPHALIA
-		STATE_SAXONY
-		STATE_WEST_PRUSSIA
-		STATE_EAST_PRUSSIA
-		STATE_RHINELAND
-		STATE_RHINELAND
-		STATE_RHINELAND
-		STATE_UPPER_SILESIA
-		STATE_UPPER_SILESIA
-		STATE_SCHLESWIG_HOLSTEIN
-		STATE_HANNOVER
-		STATE_SAXONY
-		STATE_WESTPHALIA
-		STATE_BRANDENBURG
-		STATE_WESTPHALIA
-		STATE_BRANDENBURG
-		STATE_ALSACE_LORRAINE
-		STATE_BOHEMIA
-		STATE_BOHEMIA
-		STATE_AUSTRIA
-		STATE_AUSTRIA
-		STATE_AUSTRIA
-		STATE_VENETIA
-		STATE_CROATIA
-		STATE_BADEN
-		STATE_BADEN
-		STATE_BAVARIA
-		STATE_BAVARIA
-	}
-}
-
-REPLACE:geographic_region_lesser_germany = {
-	short_key = "lesser_germany"
-
-	state_regions = {
-		STATE_BRANDENBURG
-		STATE_BADEN
-		STATE_BAVARIA
-		STATE_BAVARIA
-		STATE_WESTPHALIA
-		STATE_HANNOVER
-		STATE_WESTPHALIA
-		STATE_SAXONY
-		STATE_RHINELAND
-		STATE_RHINELAND
-		STATE_RHINELAND
-		STATE_SCHLESWIG_HOLSTEIN
-		STATE_HANNOVER
-		STATE_SAXONY
-		STATE_WESTPHALIA
-		STATE_BRANDENBURG
-		STATE_UPPER_SILESIA
-		STATE_UPPER_SILESIA
-		STATE_BRANDENBURG
-		STATE_EAST_PRUSSIA
-		STATE_WEST_PRUSSIA
-		STATE_ALSACE_LORRAINE
-		STATE_BADEN
-	}
-}
-
-REPLACE:geographic_region_scandinavia = {
-	short_key = "scandinavia"
-
-	state_regions = {
-		STATE_ZEALAND
-		STATE_ZEALAND
-		STATE_SCHLESWIG_HOLSTEIN
-		STATE_SVEALAND
-		STATE_SCANIA
-		STATE_SCANIA
-		STATE_SVEALAND
-		STATE_SVEALAND
-		STATE_UUSIMAA
-		STATE_UUSIMAA
-		STATE_UUSIMAA
-		STATE_UUSIMAA
-		STATE_EASTERN_NORWAY
-		STATE_EASTERN_NORWAY
-		STATE_EASTERN_NORWAY
-	}
-}
-
-
-REPLACE:geographic_region_yugoslavia = {
-	short_key = "yugoslavia"
-
-	state_regions = {
-		STATE_WESTERN_SERBIA
-		STATE_EASTERN_SERBIA
-		STATE_EASTERN_SERBIA
-		STATE_EASTERN_SERBIA
-		STATE_WESTERN_SERBIA
-		STATE_WESTERN_SERBIA
-		STATE_CROATIA
-		STATE_CROATIA
-		STATE_CROATIA
-		STATE_CROATIA
-		STATE_CROATIA
-		STATE_CROATIA
-	}
-}
-
-REPLACE:geographic_region_castile = {
-	short_key = "castile"
-
-	state_regions = {
-		STATE_OLD_CASTILE
-		STATE_OLD_CASTILE
-		STATE_OLD_CASTILE
-		STATE_LOWER_ANDALUSIA
-		STATE_LOWER_ANDALUSIA
-		STATE_LOWER_ANDALUSIA
-		STATE_GALICIA
-		STATE_GALICIA
-		STATE_GALICIA
-	}
-}
-
-REPLACE:geographic_region_aragon = {
-	short_key = "aragon"
-
-	state_regions = {
-		STATE_CATALONIA
-		STATE_CATALONIA
-		STATE_CATALONIA
-		STATE_CATALONIA
-	}
-}
-
-REPLACE:geographic_region_greater_romania = {
-	short_key = "greater_romania"
-
-	state_regions = {
-		STATE_WALLACHIA
-		STATE_MOLDAVIA
-		STATE_NORTHERN_TRANSYLVANIA
-		STATE_NORTHERN_TRANSYLVANIA
-		STATE_WALLACHIA
-		STATE_MOLDAVIA
-		STATE_MOLDAVIA
-		STATE_BEKES
-		STATE_BEKES
-	}
-}
-
-REPLACE:geographic_region_france = {
-	short_key = "france"
-
-	state_regions = {
-		STATE_ILE_DE_FRANCE
-		STATE_ILE_DE_FRANCE
-		STATE_POITOU
-		STATE_AQUITAINE
-		STATE_CHAMPAGNE
-		STATE_PROVENCE
-		STATE_NORMANDY
-		STATE_PROVENCE
-		STATE_LANGUEDOC
-		STATE_PROVENCE
-		STATE_FLANDERS
-		STATE_NORMANDY
-		STATE_ALSACE_LORRAINE
-		STATE_POITOU
-		STATE_AQUITAINE
-		STATE_LANGUEDOC
-		STATE_BRITTANY
-		STATE_ILE_DE_FRANCE
-		STATE_CHAMPAGNE
-		STATE_CHAMPAGNE
-	}
-}
-
-REPLACE:geographic_region_greater_croatia = {
-	short_key = "greater_croatia"
-
-	state_regions = {
-		STATE_CROATIA
-		STATE_CROATIA
-		STATE_CROATIA
-		STATE_CROATIA
-		STATE_CROATIA
-	}
-}
-
-REPLACE:geographic_region_french_natural_borders = {
-	short_key = "french_natural_borders"
-
-	state_regions = {
-		STATE_ILE_DE_FRANCE
-		STATE_ILE_DE_FRANCE
-		STATE_POITOU
-		STATE_AQUITAINE
-		STATE_CHAMPAGNE
-		STATE_PROVENCE
-		STATE_NORMANDY
-		STATE_PROVENCE
-		STATE_LANGUEDOC
-		STATE_PROVENCE
-		STATE_FLANDERS
-		STATE_NORMANDY
-		STATE_ALSACE_LORRAINE
-		STATE_POITOU
-		STATE_AQUITAINE
-		STATE_LANGUEDOC
-		STATE_BRITTANY
-		STATE_ILE_DE_FRANCE
-		STATE_CHAMPAGNE
-		STATE_CHAMPAGNE
-		STATE_FLANDERS
-		STATE_FLANDERS
-		STATE_RHINELAND
-		STATE_RHINELAND
-	}
-}
-
-REPLACE:geographic_region_greater_bulgaria = {
-	short_key = "greater_bulgaria"
-
-	state_regions = {
-		STATE_EASTERN_SERBIA
-		STATE_WALLACHIA
-		STATE_ATTICA
-		STATE_BULGARIA
-		STATE_BULGARIA
-		STATE_ATTICA
-		STATE_EASTERN_SERBIA
-		STATE_EASTERN_THRACE
-	}
-}
-
-
-# ---- 02_geographic_regions_america.txt ----
-REPLACE:geographic_region_north_america = {
-	short_key = "north_america"
-
-	strategic_regions = {
-		sr:region_canada
-		sr:region_atlantic_coast
-		sr:region_pacific_coast
-		sr:region_great_plains
-	}
-}
-
-REPLACE:geographic_region_south_america = {
-	short_key = "south_america"
-
-	strategic_regions = {
-		sr:region_brazil
-		sr:region_la_plata
-		sr:region_andes
-		sr:region_gran_colombia
-	}
-}
-
-REPLACE:geographic_region_americas = {
-	short_key = "americas"
-
-	strategic_regions = {
-		sr:region_canada
-		sr:region_atlantic_coast
-		sr:region_pacific_coast
-		sr:region_great_plains
-
-		#geographic_region_central_america
-		sr:region_central_america
-
-		#geographic_region_south_america
-		sr:region_brazil
-		sr:region_la_plata
-		sr:region_andes
-		sr:region_gran_colombia
-	}
-}
-
-REPLACE:geographic_region_peru = {
-	short_key = "peru"
-
-	state_regions = {
-		STATE_LIMA
-		STATE_LIMA
-		STATE_LIMA
-		STATE_ICA
-		STATE_ICA
-		STATE_ANTOFAGASTA
-	}
-}
-
-REPLACE:geographic_region_bolivia = {
-	short_key = "bolivia"
-
-	state_regions = {
-		STATE_LA_PAZ
-		STATE_LA_PAZ
-		STATE_LA_PAZ
-		STATE_CHACO
-		STATE_AMAZONAS
-		STATE_ANTOFAGASTA
-	}
-}
-
-# Spanish New World Georegions
-
-REPLACE:geographic_region_colonial_new_spain = {
-	short_key = "colonial_new_spain"
-
-	strategic_regions = {
-	 	# Mexico
-		sr:region_central_america
-	}
-
-	state_regions = {
-		STATE_BAJA_CALIFORNIA
-		# Central America
-		STATE_YUCATAN
-		STATE_JALISCO
-		STATE_GUATEMALA
-		STATE_NICARAGUA
-		STATE_SAN_SALVADOR
-		STATE_HONDURAS
-		STATE_COSTA_RICA
-		# USA
-		STATE_CALIFORNIA
-		STATE_ARIZONA
-		STATE_UTAH
-		STATE_ARIZONA
-		STATE_TEXAS
-		STATE_UTAH
-		STATE_CALIFORNIA
-	}
-}
-
-REPLACE:geographic_region_colonial_new_grenada = {
-	short_key = "colonial_new_grenada"
-
-	strategic_regions = {
-	 	# Mexico
-		sr:region_gran_colombia
-	}
-
-	state_regions = {
-		# Central America Region
-		STATE_PANAMA
-		# Andes Region
-		STATE_ECUADOR
-		STATE_LIMA
-	}
-}
-
-REPLACE:geographic_region_colonial_peru = {
-	short_key = "colonial_peru"
-
-	state_regions = {
-		# Andes Region
-		STATE_LIMA
-		STATE_LIMA
-		STATE_AMAZONAS
-		STATE_ICA
-		STATE_ICA
-		STATE_ANTOFAGASTA
-		# Chile
-		STATE_SANTIAGO
-		STATE_SANTIAGO
-	}
-}
-
-REPLACE:geographic_region_colonial_la_plata = {
-	short_key = "colonial_la_plata"
-
-	state_regions = {
-		# La Plata Region
-		STATE_BUENOS_AIRES
-		STATE_SANTA_FE
-		STATE_SANTA_FE
-		STATE_CHACO
-		STATE_BAJO_PARAGUAY
-		STATE_BAJO_PARAGUAY
-		STATE_BUENOS_AIRES
-		STATE_RIO_NEGRO
-		STATE_RIO_NEGRO
-		STATE_PATAGONIA
-		STATE_ARAUCANIA
-		STATE_SOUTH_ATLANTIC_ISLANDS
-		# Andes Region
-		STATE_LA_PAZ
-		STATE_CHACO
-		STATE_ANTOFAGASTA
-		STATE_LA_PAZ
-		STATE_LA_PAZ
-		# Brazil Region
-		STATE_SANTA_FE
-		STATE_RIO_GRANDE_DO_SUL
-	}
-}
-
-REPLACE:geographic_region_andean_federation = {
-	short_key = "andean_federation"
-
-	strategic_regions = {
-		sr:region_andes
-		sr:region_gran_colombia
-		sr:region_la_plata
-	}
-}
-
-REPLACE:geographic_region_amazon = {
-	short_key = "amazon"
-
-	state_regions = {
-		STATE_GUAYANA
-		STATE_CAUCA
-		STATE_LIMA
-		STATE_LA_PAZ
-		STATE_PARA
-		STATE_PARA
-		STATE_AMAZONAS
-		STATE_AMAZONAS
-		STATE_MATO_GROSSO
-		STATE_MATO_GROSSO
-	}
-}
-
-REPLACE:geographic_region_northern_mexico = {
-	short_key = "northern_mexico"
-
-	state_regions = {
-		STATE_TEXAS
-		STATE_ARIZONA
-		STATE_ARIZONA
-		STATE_UTAH
-		STATE_UTAH
-		STATE_CALIFORNIA
-		STATE_CALIFORNIA
-	}
-}
-
-REPLACE:geographic_region_latin_america = {
-	short_key = "latin_america"
-
-	strategic_regions = {
-		sr:region_brazil
-		sr:region_la_plata
-		sr:region_andes
-		sr:region_gran_colombia
-		sr:region_central_america
-	}
-}
-
-REPLACE:geographic_region_greater_canada = {
-	short_key = "greater_canada"
-
-	strategic_regions = {
-		sr:region_canada
-	}
-
-	state_regions = {
-		STATE_BRITISH_COLUMBIA
-		STATE_BRITISH_COLUMBIA
-		STATE_BRITISH_COLUMBIA
-		STATE_NORTHWEST_TERRITORIES
-		STATE_NEW_BRUNSWICK
-		STATE_OREGON
-		STATE_OREGON
-		STATE_OREGON
-	}
-}
-
-REPLACE:geographic_region_north_andes = { # North Andean homelands
-	short_key = "north_andes"
-
-	state_regions = {
-		STATE_ECUADOR
-		STATE_MIRANDA
-		STATE_MIRANDA
-		STATE_MIRANDA
-		STATE_CUNDINAMARCA
-		STATE_CAUCA
-		STATE_CUNDINAMARCA
-		STATE_CAUCA
-	}
-}
-
-REPLACE:geographic_region_southern_cone = {
-	short_key = "southern_cone"
-
-	state_regions = {
-		STATE_SANTA_FE
-		STATE_BAJO_PARAGUAY
-		STATE_BAJO_PARAGUAY
-		STATE_BUENOS_AIRES
-		STATE_RIO_NEGRO
-		STATE_BUENOS_AIRES
-		STATE_SANTA_FE
-		STATE_SANTA_FE
-		STATE_RIO_NEGRO
-		STATE_CHACO
-		STATE_CHACO
-	}
-}
 
 
 # ---- 07_geographic_regions_maritime.txt ----

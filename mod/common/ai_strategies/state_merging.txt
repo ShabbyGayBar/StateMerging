@@ -5195,6 +5195,8 @@ REPLACE:ai_strategy_default = {
 		# Certain Great Powers care about Egyptian-Ottoman conflict in the early game
 		if = {
 			limit = {
+				exists = c:TUR
+				exists = c:EGY
 				OR = {
 					has_variable = veiled_protectorate_support_ottomans
 					has_variable = veiled_protectorate_support_egypt
@@ -10013,6 +10015,16 @@ REPLACE:ai_strategy_economic_imperialism = {
 					multiply = 2.0
 				}
 			}
+		}
+
+		# Eager to reclaim a treaty port from a country that recently reneged on the agreement we inherited to them
+		if = {
+			limit = {
+				can_reach_target_state = yes
+				has_variable = wants_treaty_port_revenge_against
+				var:wants_treaty_port_revenge_against ?= scope:target_country
+			}
+			add = 100
 		}
 	}
 
