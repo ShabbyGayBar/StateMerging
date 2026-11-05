@@ -10,7 +10,7 @@ REPLACE:lands_of_anarchy_tribes_of_marrakech_bar = {
 	monthly_progress = {
 		owner = {
 			# Ruler popularity
-			if = {
+			progress_condition = {
 				limit = {
 					OR = {
 					ruler.popularity < 0
@@ -103,7 +103,7 @@ REPLACE:lands_of_anarchy_tribes_of_marrakech_bar = {
 				}
 			}
 			# On Harka
-			if = {
+			progress_condition = {
 				limit = {
 					has_modifier = lands_of_anarchy_harka_mod
 				}
@@ -113,7 +113,7 @@ REPLACE:lands_of_anarchy_tribes_of_marrakech_bar = {
 				}
 			}
 			# lands_of_anarchy.4 - appointed IG tribe leader
-			if = {
+			progress_condition = {
 				limit = {
 					owner = {
 						any_scope_character = {
@@ -127,7 +127,7 @@ REPLACE:lands_of_anarchy_tribes_of_marrakech_bar = {
 				}
 			}
 			# lands_of_anarchy.4 - rejected IG tribe leader
-			if = {
+			progress_condition = {
 				limit = {
 					has_variable = tribal_leader_appointment_rejected
 				}
@@ -137,7 +137,7 @@ REPLACE:lands_of_anarchy_tribes_of_marrakech_bar = {
 				}
 			}
 			# lands_of_anarchy.5 - sent medicine
-			if = {
+			progress_condition = {
 				limit = {
 					s:STATE_MARRAKECH.region_state:MOR ?= {
 						has_modifier = lands_of_anarchy_tribe_received_medicine_mod
@@ -149,7 +149,7 @@ REPLACE:lands_of_anarchy_tribes_of_marrakech_bar = {
 				}
 			}
 			# lands_of_anarchy.5 - refused to send medicine
-			if = {
+			progress_condition = {
 				limit = {
 					s:STATE_MARRAKECH.region_state:MOR ?= {
 						has_modifier = lands_of_anarchy_refused_medicine_mod
@@ -161,14 +161,10 @@ REPLACE:lands_of_anarchy_tribes_of_marrakech_bar = {
 				}
 			}
 			# The state is not ours anymore
-			if = {
+			progress_condition = {
 				limit = {
-					s:STATE_MARRAKECH = {
-						NOT = {
-							any_scope_state = {
-								owner = root.owner
-							}
-						}
+					root = {
+						NOT = { has_or_is_contesting_state_in_state_region = STATE_MARRAKECH }
 					}
 				}
 				subtract = {
@@ -191,7 +187,7 @@ REPLACE:lands_of_anarchy_tribes_of_al_rif_bar = {
 
 	monthly_progress = {
 		owner = {
-			if = {
+			progress_condition = {
 				limit = {
 					OR = {
 					ruler.popularity < 0
@@ -256,7 +252,7 @@ REPLACE:lands_of_anarchy_tribes_of_al_rif_bar = {
 				}
 			}
 			# Negative authority
-			if = {
+			progress_condition = {
 				limit = {
 						authority < 0
 				}
@@ -293,7 +289,7 @@ REPLACE:lands_of_anarchy_tribes_of_al_rif_bar = {
 				}
 			}
 			# On Harka
-			if = {
+			progress_condition = {
 				limit = {
 					has_modifier = lands_of_anarchy_harka_mod
 				}
@@ -303,7 +299,7 @@ REPLACE:lands_of_anarchy_tribes_of_al_rif_bar = {
 				}
 			}
 			# lands_of_anarchy.4 - appointed IG tribe leader
-			if = {
+			progress_condition = {
 				limit = {
 					owner = {
 						any_scope_character = {
@@ -317,7 +313,7 @@ REPLACE:lands_of_anarchy_tribes_of_al_rif_bar = {
 				}
 			}
 			# lands_of_anarchy.4 - rejected IG tribe leader
-			if = {
+			progress_condition = {
 				limit = {
 					has_variable = tribal_leader_appointment_rejected
 				}
@@ -327,7 +323,7 @@ REPLACE:lands_of_anarchy_tribes_of_al_rif_bar = {
 				}
 			}
 			# lands_of_anarchy.5 - sent medicine
-			if = {
+			progress_condition = {
 				limit = {
 					s:STATE_FEZ.region_state:MOR ?= {
 						has_modifier = lands_of_anarchy_tribe_received_medicine_mod
@@ -339,7 +335,7 @@ REPLACE:lands_of_anarchy_tribes_of_al_rif_bar = {
 				}
 			}
 			# lands_of_anarchy.5 - refused to send medicine
-			if = {
+			progress_condition = {
 				limit = {
 					s:STATE_FEZ.region_state:MOR ?= {
 						has_modifier = lands_of_anarchy_refused_medicine_mod
@@ -351,14 +347,10 @@ REPLACE:lands_of_anarchy_tribes_of_al_rif_bar = {
 				}
 			}
 			# The state is not ours anymore
-			if = {
+			progress_condition = {
 				limit = {
-					s:STATE_FEZ = {
-						NOT = {
-							any_scope_state = {
-								owner = root
-							}
-						}
+					root = {
+						NOT = { has_or_is_contesting_state_in_state_region = STATE_FEZ }
 					}
 				}
 				subtract = {
@@ -381,7 +373,7 @@ REPLACE:lands_of_anarchy_tribes_of_inner_morocco_bar = {
 
 	monthly_progress = {
 		owner = {
-			if = {
+			progress_condition = {
 				limit = {
 					OR = {
 					ruler.popularity < 0
@@ -473,7 +465,7 @@ REPLACE:lands_of_anarchy_tribes_of_inner_morocco_bar = {
 				}
 			}
 			# On Harka
-			if = {
+			progress_condition = {
 				limit = {
 					has_modifier = lands_of_anarchy_harka_mod
 				}
@@ -483,7 +475,7 @@ REPLACE:lands_of_anarchy_tribes_of_inner_morocco_bar = {
 				}
 			}
 			# lands_of_anarchy.4 - appointed IG tribe leader
-			if = {
+			progress_condition = {
 				limit = {
 					owner = {
 						any_scope_character = {
@@ -497,7 +489,7 @@ REPLACE:lands_of_anarchy_tribes_of_inner_morocco_bar = {
 				}
 			}
 			# lands_of_anarchy.4 - rejected IG tribe leader
-			if = {
+			progress_condition = {
 				limit = {
 					has_variable = tribal_leader_appointment_rejected
 				}
@@ -507,7 +499,7 @@ REPLACE:lands_of_anarchy_tribes_of_inner_morocco_bar = {
 				}
 			}
 			# lands_of_anarchy.5 - sent medicine
-			if = {
+			progress_condition = {
 				limit = {
 					s:STATE_MARRAKECH.region_state:MOR ?= {
 						has_modifier = lands_of_anarchy_tribe_received_medicine_mod
@@ -519,7 +511,7 @@ REPLACE:lands_of_anarchy_tribes_of_inner_morocco_bar = {
 				}
 			}
 			# lands_of_anarchy.5 - refused to send medicine
-			if = {
+			progress_condition = {
 				limit = {
 					s:STATE_MARRAKECH.region_state:MOR ?= {
 						has_modifier = lands_of_anarchy_refused_medicine_mod
@@ -531,14 +523,10 @@ REPLACE:lands_of_anarchy_tribes_of_inner_morocco_bar = {
 				}
 			}
 			# The state is not ours anymore
-			if = {
+			progress_condition = {
 				limit = {
-					s:STATE_MARRAKECH = {
-						NOT = {
-							any_scope_state = {
-								owner = root
-							}
-						}
+					root = {
+						NOT = { has_or_is_contesting_state_in_state_region = STATE_MARRAKECH }
 					}
 				}
 				subtract = {

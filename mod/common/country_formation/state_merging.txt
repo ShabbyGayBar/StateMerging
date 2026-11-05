@@ -156,6 +156,10 @@ REPLACE:PLC = {
 
 	required_states_fraction = 1
 
+	possible = {
+		is_subject = no
+	}
+
 	ai_will_do = { always = yes }
 }
 
@@ -623,6 +627,10 @@ REPLACE:YEM = {
 	required_states_fraction = 1
 
 	ai_will_do = { always = yes }
+
+	potential = {
+		country_has_primary_culture = cu:yemenite
+	}
 }
 
 REPLACE:CAU = {
@@ -1110,6 +1118,16 @@ REPLACE:ATL = {
 	}
 }
 
-INJECT:ITA = {
-    required_states_fraction = 0.5
+REPLACE:GEO = {
+	states = {
+		STATE_GREATER_CAUCASUS
+	}
+
+	required_states_fraction = 1
+
+	ai_will_do = { always = yes }
+
+	possible = {
+		has_technology_researched = nationalism
+	}
 }

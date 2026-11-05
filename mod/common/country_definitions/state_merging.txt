@@ -13,7 +13,7 @@ REPLACE:GER = {
 }
 
 REPLACE:GBR = {
-	color = hsv{ 0.99  0.7  0.9 }
+	color = hsv{ 0.99  0.7  0.9 } # 356 70 90
 
 	country_type = recognized
 
@@ -21,6 +21,21 @@ REPLACE:GBR = {
 
 	cultures = { british scottish }
 	capital = STATE_HOME_COUNTIES
+
+	regnal_numbers = {
+		Anne = 2
+		Charles = 3
+		Edward = 7 # the six post-Conquest Edwards; Edward the Confessor is not numbered
+		Elizabeth = 2
+		George = 5
+		Henry = 9
+		James = 3 # English numbering, as the British crown uses
+		John = 2
+		Mary = 3 # Mary I and Mary II
+		Richard = 4
+		Stephen = 2
+		William = 4 # William IV reigns at the start and is numbered from here
+	}
 }
 
 REPLACE:SCA = {
@@ -43,6 +58,36 @@ REPLACE:RUS = {
 
 	cultures = { russian }
 	capital = STATE_INGRIA
+
+	regnal_numbers = {
+		Aleksandr = 2
+		Alexei = 2
+		Anna = 2
+		Boris = 2 # Boris Godunov
+		Elizabeta = 2
+		Fyodor = 4
+		Ivan = 7 # up to the infant Ivan VI
+		Mikhail = 2
+		Pavel = 2
+		Pyotr = 4
+		Vasily = 5 # the Muscovite Vasilys, up to Vasily IV
+		Yekaterina = 3
+	}
+
+	primary_unit_color = { 49 67 53 }
+	secondary_unit_color  = { 247 243 230 }
+	tertiary_unit_color = { 40 40 40 }
+}
+
+REPLACE:RSR = { # Russian Civil War Tag
+	color = { 122 62 128 }
+
+	country_type = recognized
+
+	tier = empire
+
+	cultures = { russian }
+	capital = STATE_INGRIA
 }
 
 REPLACE:FRA = {
@@ -54,6 +99,16 @@ REPLACE:FRA = {
 
 	cultures = { french }
 	capital = STATE_ILE_DE_FRANCE
+
+	regnal_numbers = {
+		Charles = 11 # counting Charlemagne as Charles I, through Charles X
+		Francois = 3
+		Henri = 5
+		Jean = 3
+		Louis = 19 # Louis I to XVIII. The 1830 claim of a Louis XIX is not counted, and Louis-Philippe reigned under his own name
+		Napoleon = 3 # Napoleon I and II both came before, so a restoration crowns a Napoleon III
+		Philippe = 7
+	}
 }
 
 REPLACE:PRU = {
@@ -65,6 +120,11 @@ REPLACE:PRU = {
 
 	cultures = { north_german }
 	capital = STATE_BRANDENBURG
+
+	regnal_numbers = {
+		Friedrich = 3 # Friedrich I and Friedrich the Great, as kings in and of Prussia
+		Friedrich_Wilhelm = 3
+	}
 }
 
 REPLACE:WES = {
@@ -105,6 +165,10 @@ REPLACE:AUS = {
 	secondary_unit_color  = { 94 120 165 }
 	tertiary_unit_color = { 20 20 20 }
 	seal_and_signature_texture = "gfx/interface/diplomatic_treaties/seal_and_signature_cultures/diplomatic_treaties_seal_and_signature_austrian.dds"
+
+	regnal_numbers = {
+		Franz = 2 # Franz I, Emperor of Austria, died 1835. Habsburg names carried over from the Holy Roman Empire are deliberately left out, as the Austrian Empire restarted its numbering in 1804
+	}
 }
 
 REPLACE:USA = {
@@ -242,6 +306,13 @@ REPLACE:DEN = {
 
 	cultures = { danish }
 	capital = STATE_ZEALAND
+
+	regnal_numbers = {
+		Christian = 8 # his heir Christian VIII is next
+		Erik = 8 # up to Erik VII of Pomerania
+		Frederik = 6 # Frederik VI reigns at the start
+		Valdemar = 5
+	}
 }
 
 REPLACE:FIN = {
@@ -275,6 +346,18 @@ REPLACE:SWE = {
 
 	cultures = { swedish }
 	capital = STATE_SVEALAND
+
+	regnal_numbers = {
+		# Swedish rulers are named Carl, while one historical template spells the same name Charles.
+		# Both carry the count, which stands at Karl XIV John, the reigning king.
+		Carl = 15
+		Charles = 15
+		Erik = 15 # the traditional count, ending at Erik XIV
+		Fredrik = 2
+		Gustaf = 5
+		Johan = 4
+		Karl_Johan = 14
+	}
 }
 
 REPLACE:SCN = {
@@ -355,6 +438,20 @@ REPLACE:POR = {
 
 	cultures = { portuguese }
 	capital = STATE_ESTREMADURA
+
+	regnal_numbers = {
+		Afonso = 7
+		Duarte = 2
+		Fernando = 2
+		Filipe = 4 # the three Spanish Habsburg kings of Portugal
+		Henrique = 2
+		JoA_o = 7
+		Manuel = 2
+		Maria = 2
+		Pedro = 5
+		Sancho = 3
+		Sebastiao = 2
+	}
 }
 
 REPLACE:SCO = {
@@ -366,6 +463,25 @@ REPLACE:SCO = {
 
 	cultures = { scottish scottish_gaelic }
 	capital = STATE_LOWLANDS
+
+	regnal_numbers = {
+		Alexander = 4
+		Charles = 3
+		David = 3
+		Donald = 4
+		Duncan = 3
+		Edgar = 2
+		Edward = 2
+		James = 9
+		John = 2
+		Kenneth = 4
+		Macbeth = 2
+		Malcolm = 5
+		Margaret = 2
+		Mary = 3
+		Robert = 4
+		William = 3
+	}
 }
 
 REPLACE:ALA = {
@@ -440,6 +556,18 @@ REPLACE:SPA = {
 
 	cultures = { spanish }
 	capital = STATE_OLD_CASTILE
+
+	regnal_numbers = {
+		Alfonso = 12 # the Asturian, Leonese and Castilian Alfonsos, up to Alfonso XI
+		Carlos = 5
+		Enrique = 5
+		Felipe = 6
+		Fernando = 8
+		Isabel = 2 # Isabel II reigns at the start under a regency
+		Juan = 3
+		Luis = 2 # Luis I, who reigned for seven months in 1724
+		Pedro = 2
+	}
 }
 
 REPLACE:WLL = {
@@ -464,6 +592,10 @@ REPLACE:ANH = {
 	cultures = { north_german }
 	capital = STATE_SAXONY
 	is_named_from_capital = yes
+
+	regnal_numbers = {
+		Leopold = 4
+	}
 }
 
 REPLACE:BAD = {
@@ -476,6 +608,10 @@ REPLACE:BAD = {
 	cultures = { south_german }
 	capital = STATE_BADEN
 	is_named_from_capital = yes
+
+	regnal_numbers = {
+		Ludwig = 2
+	}
 }
 
 REPLACE:BAV = {
@@ -488,6 +624,10 @@ REPLACE:BAV = {
 	cultures = { south_german }
 	capital = STATE_BAVARIA
 	is_named_from_capital = yes
+
+	regnal_numbers = {
+		Maximilian = 2 # Maximilian I Joseph, first King of Bavaria
+	}
 }
 
 REPLACE:BRA = {
@@ -556,6 +696,10 @@ REPLACE:HAN = {
 	cultures = { north_german }
 	capital = STATE_HANNOVER
 	is_named_from_capital = yes
+
+	regnal_numbers = {
+		Georg = 5 # Hanover shared Britain's Georges up to George IV
+	}
 }
 
 REPLACE:HES = {
@@ -568,6 +712,10 @@ REPLACE:HES = {
 	cultures = { north_german }
 	capital = STATE_WESTPHALIA
 	is_named_from_capital = yes
+
+	regnal_numbers = {
+		Ludwig = 2
+	}
 }
 
 REPLACE:HOL = {
@@ -636,6 +784,10 @@ REPLACE:OLD = {
 
 	cultures = { north_german }
 	capital = STATE_HANNOVER
+
+	regnal_numbers = {
+		Peter = 2
+	}
 }
 
 REPLACE:SAX = {
@@ -648,6 +800,10 @@ REPLACE:SAX = {
 	cultures = { north_german }
 	capital = STATE_SAXONY
 	is_named_from_capital = yes
+
+	regnal_numbers = {
+		Friedrich_August = 2
+	}
 }
 
 REPLACE:WUR = {
@@ -661,6 +817,10 @@ REPLACE:WUR = {
 	religion = protestant
 	capital = STATE_BADEN
 	is_named_from_capital = yes
+
+	regnal_numbers = {
+		Friedrich = 2 # Friedrich I, first King of Wurttemberg
+	}
 }
 
 REPLACE:LOM = {
@@ -695,6 +855,10 @@ REPLACE:MOD = {
 
 	cultures = { north_italian }
 	capital = STATE_PIEDMONT
+
+	regnal_numbers = {
+		Francesco = 4
+	}
 }
 
 REPLACE:PAP = {
@@ -706,6 +870,10 @@ REPLACE:PAP = {
 
 	cultures = { south_italian north_italian }
 	capital = STATE_LAZIO
+
+	regnal_numbers = {
+		Gregorius = 16
+	}
 }
 
 REPLACE:PAR = {
@@ -741,6 +909,10 @@ REPLACE:SAR = {
 	cultures = { north_italian }
 	capital = STATE_PIEDMONT
 	is_named_from_capital = yes
+
+	regnal_numbers = {
+		Vittorio_Emanuele = 2
+	}
 }
 
 REPLACE:SIC = {
@@ -752,6 +924,11 @@ REPLACE:SIC = {
 
 	cultures = { south_italian }
 	capital = STATE_LAZIO
+
+	regnal_numbers = {
+		Ferdinando = 2
+		Francesco = 2
+	}
 }
 
 REPLACE:TRE = {
@@ -775,6 +952,10 @@ REPLACE:TUS = {
 	capital = STATE_PIEDMONT
 	cultures = { north_italian }
 	is_named_from_capital = yes
+
+	regnal_numbers = {
+		Leopoldo = 2
+	}
 }
 
 REPLACE:VEN = {
@@ -819,7 +1000,7 @@ REPLACE:CRI = {
 
 	tier = principality
 
-	cultures = { tatar }
+	cultures = { crimean_tatar }
 	capital = STATE_CRIMEA
 	is_named_from_capital = yes
 }
@@ -881,6 +1062,10 @@ REPLACE:POL = {
 
 	cultures = { polish }
 	capital = STATE_GREATER_POLAND
+
+	primary_unit_color = { 134 144 145 }
+	secondary_unit_color  = { 134 144 145 }
+	tertiary_unit_color = { 145 58 46 }
 }
 
 REPLACE:GAL = {
@@ -1066,6 +1251,10 @@ REPLACE:MON = {
 	cultures = { serb }
 	capital = STATE_WESTERN_SERBIA
 	is_named_from_capital = yes
+
+	regnal_numbers = {
+		Petar = 2
+	}
 }
 
 REPLACE:ROM = {
@@ -1113,6 +1302,20 @@ REPLACE:TUR = {
 
 	cultures = { turkish }
 	capital = STATE_EASTERN_THRACE
+
+	regnal_numbers = {
+		Abdulhamid = 2
+		Ahmet = 4
+		Bayezid = 3
+		Ibrahim = 2
+		Mahmut = 2 # Mahmud II reigns at the start
+		Mehmet = 5 # the four Mehmeds before 1836; the Ottomans went on to a Mehmed V
+		Murad = 5
+		Mustafa = 5
+		Osman = 4
+		Selim = 4
+		Suleyman = 3
+	}
 }
 
 REPLACE:WAL = {
@@ -1125,6 +1328,10 @@ REPLACE:WAL = {
 	cultures = { romanian }
 	capital = STATE_WALLACHIA
 	is_named_from_capital = yes
+
+	regnal_numbers = {
+		Alexandru = 2
+	}
 }
 
 REPLACE:YUG = {
@@ -1180,7 +1387,7 @@ REPLACE:DAG = {
 
 	tier = kingdom
 
-	cultures = { north_caucasian }
+	cultures = { dagestani }
 	capital = STATE_DAGESTAN
 	is_named_from_capital = yes
 }
@@ -1287,6 +1494,11 @@ REPLACE:MUG = {
 	cultures = { hindustani }
 	religion = sunni
 	capital = STATE_DELHI
+
+	regnal_numbers = {
+		Akbar = 2
+		Bahadur = 2
+	}
 }
 
 REPLACE:NEJ = {
@@ -1380,6 +1592,10 @@ REPLACE:ZAI = {
 	cultures = { yemenite bedouin }
 #   religion = Technically Sunni at game start, but if it re-emerges, it should be Shiite
 	capital = STATE_YEMEN
+
+	regnal_numbers = {
+		Al-Mansur_Ali = 2
+	}
 }
 
 REPLACE:LAH = {
@@ -1452,6 +1668,10 @@ REPLACE:BER = {
 
 	cultures = { gujarati marathi }
 	capital = STATE_GUJARAT
+
+	regnal_numbers = {
+		Sayaji_Rao = 2
+	}
 }
 
 REPLACE:BHO = {
@@ -1499,6 +1719,10 @@ REPLACE:GWA = {
 
 	cultures = { marathi bundeli }
 	capital = STATE_MALWA
+
+	regnal_numbers = {
+		Jankoji_Rao = 2
+	}
 }
 
 REPLACE:HYD = {
@@ -1535,6 +1759,10 @@ REPLACE:IND = {
 
 	cultures = { marathi }
 	capital = STATE_MALWA
+
+	regnal_numbers = {
+		Khande_Rao = 2
+	}
 }
 
 REPLACE:JAI = {
@@ -1582,6 +1810,10 @@ REPLACE:KAL = {
 
 	cultures = { baluchi }
 	capital = STATE_BALUCHISTAN
+
+	regnal_numbers = {
+		Nasir = 2
+	}
 }
 
 REPLACE:KAS = {
@@ -1652,6 +1884,10 @@ REPLACE:MYS = {
 	cultures = { kannada }
 	capital = STATE_MYSORE
 	is_named_from_capital = yes
+
+	regnal_numbers = {
+		Krishnaraja = 3
+	}
 }
 
 REPLACE:NAG = {
@@ -1665,6 +1901,10 @@ REPLACE:NAG = {
 	cultures = { marathi }
 	capital = STATE_CENTRAL_PROVINCES
 	is_named_from_capital = yes
+
+	regnal_numbers = {
+		Raghuji = 3
+	}
 }
 
 REPLACE:NEP = {
@@ -1736,6 +1976,10 @@ REPLACE:TRA = {
 	capital = STATE_TRAVANCORE
 	cultures = { malayalam }
 	is_named_from_capital = yes
+
+	regnal_numbers = {
+		Rama_Varma = 3
+	}
 }
 
 REPLACE:ACE = {
@@ -1759,6 +2003,10 @@ REPLACE:BAL = {
 
 	cultures = { balinese moluccan }
 	capital = STATE_MOLUCCAS
+
+	regnal_numbers = {
+		Putra = 2
+	}
 }
 
 REPLACE:BHU = {
@@ -1792,6 +2040,10 @@ REPLACE:BRU = {
 
 	cultures = { bornean }
 	capital = STATE_WEST_BORNEO
+
+	regnal_numbers = {
+		Omar_Ali = 2
+	}
 }
 
 REPLACE:BUR = {
@@ -2343,6 +2595,10 @@ REPLACE:BRZ = {
 
 	cultures = { brazilian }
 	capital = STATE_RIO_DE_JANEIRO
+
+	regnal_numbers = {
+		Pedro = 2
+	}
 }
 
 REPLACE:CHL = {
@@ -2897,7 +3153,7 @@ REPLACE:SIB = { # Siberia
 	country_type = unrecognized
 
 	tier = kingdom
-	cultures = { yakut siberian inuit buryat }
+	cultures = { yakut evenki inuit buryat }
 	capital = STATE_TOMSK
 }
 
@@ -3491,15 +3747,15 @@ REPLACE:TNS = {
 	color = { 11 115 39 }
 	country_type = unrecognized
 	tier = principality
-	cultures = { siberian }
-	capital = STATE_SURGUT
+	cultures = { evenki }
+	capital = STATE_TOMSK
 }
 
 REPLACE:FER = {
  	color = { 147 25 25 }
 	country_type = unrecognized
 	tier = principality
-	cultures = { siberian inuit }
+	cultures = { evenki inuit }
 	capital = STATE_TRANS_BAIKAL
 }
 
@@ -3508,14 +3764,14 @@ REPLACE:IUS = {
 	country_type = recognized
 	tier = kingdom
 	cultures = { tatar bashkir udmurt mari chuvash mordvin }
-	capital = STATE_KAZAN
+	capital = STATE_SARATOV
 }
 
 REPLACE:NCA = {
 	color = { 97 162 242 }
 	country_type = recognized
 	tier = principality
-	cultures = { north_caucasian }
+	cultures = { ossetian caucasian_turk }
 	capital = STATE_DAGESTAN
 }
 
@@ -3711,6 +3967,10 @@ REPLACE:MEI = {
 
 	cultures = { north_german }
 	capital = STATE_SAXONY
+
+	regnal_numbers = {
+		Bernhard = 2
+	}
 }
 
 # Saxe-Weimar
@@ -3747,6 +4007,10 @@ REPLACE:HEK = {
 
 	cultures = { north_german }
 	capital = STATE_WESTPHALIA
+
+	regnal_numbers = {
+		William = 2
+	}
 }
 
 # Lippe-Detmold
@@ -3759,6 +4023,10 @@ REPLACE:LIP = {
 
 	cultures = { north_german }
 	capital = STATE_WESTPHALIA
+
+	regnal_numbers = {
+		Leopold = 2 # Leopold II reigns at the start
+	}
 }
 
 # Schaumburg-Lippe
@@ -3807,6 +4075,10 @@ REPLACE:WLD = {
 
 	cultures = { north_german }
 	capital = STATE_WESTPHALIA
+
+	regnal_numbers = {
+		George = 2
+	}
 }
 
 # India
@@ -3906,6 +4178,17 @@ REPLACE:KZH = {
 	capital = STATE_URALSK
 }
 
+REPLACE:BKH = {
+	color = { 120 140 110 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { kazak }
+	capital = STATE_URALSK
+}
+
 REPLACE:UZH = {
 	color = { 70 100 80 }
 
@@ -3994,7 +4277,7 @@ REPLACE:TAR = {
 	tier = principality
 
 	cultures = { tatar }
-	capital = STATE_KAZAN
+	capital = STATE_SARATOV
 }
 
 REPLACE:BKR = {
@@ -4026,7 +4309,7 @@ REPLACE:KMC = {
 
 	tier = principality
 
-	cultures = { siberian }
+	cultures = { chukchi }
 	capital = STATE_OKHOTSK
 }
 
@@ -4037,7 +4320,7 @@ REPLACE:CKC = {
 
 	tier = principality
 
-	cultures = { siberian }
+	cultures = { chukchi }
 	capital = STATE_OKHOTSK
 }
 
@@ -4093,7 +4376,7 @@ REPLACE:CHV = {
 	tier = principality
 
 	cultures = { chuvash }
-	capital = STATE_KAZAN
+	capital = STATE_NIZHNY_NOVGOROD
 }
 
 REPLACE:MRD = {
@@ -4115,7 +4398,7 @@ REPLACE:MRI = {
 	tier = principality
 
 	cultures = { mari }
-	capital = STATE_KAZAN
+	capital = STATE_NIZHNY_NOVGOROD
 }
 
 REPLACE:TJI = {
@@ -4493,13 +4776,55 @@ REPLACE:TRM = { # Turkmenia
 REPLACE:ABK = { # Abkhazia
 	color = { 92 188 73 }
 
-	country_type = recognized
+	country_type = unrecognized
 
 	tier = principality
 
-	cultures = { north_caucasian }
+	cultures = { abkhazian }
+
+	religion = orthodox
 
 	capital = STATE_GREATER_CAUCASUS
+}
+
+REPLACE:MNL = { # Mingrelia
+	color = { 184 138 156 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { georgian }
+
+	capital = STATE_GREATER_CAUCASUS
+
+	regnal_numbers = {
+		Levan = 5
+	}
+}
+
+REPLACE:SVN = { # Svaneti
+	color = { 64 158 118 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { georgian }
+
+	capital = STATE_GREATER_CAUCASUS
+}
+
+REPLACE:TKI = { # Tarki
+	color = { 180 150 90 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { caucasian_turk }
+
+	capital = STATE_DAGESTAN
 }
 
 REPLACE:LUR = { # Luristan
@@ -4672,6 +4997,10 @@ REPLACE:JHN = { # Jhansi
 
 	cultures = { bundeli }
 	capital = STATE_BUNDELKHAND
+
+	regnal_numbers = {
+		Raghunath = 2
+	}
 }
 
 REPLACE:PUD = { # Pudukottai
@@ -4694,6 +5023,10 @@ REPLACE:KOT = { # Kotah
 
 	cultures = { rajput }
 	capital = STATE_RAJPUTANA
+
+	regnal_numbers = {
+		Ram_Singh = 2
+	}
 }
 
 REPLACE:IDA = { # Idar
@@ -4716,6 +5049,11 @@ REPLACE:NAW = { # Nawanagar
 
 	cultures = { gujarati }
 	capital = STATE_GUJARAT
+
+	regnal_numbers = {
+		Ranmalji_Sataji = 2
+		Vibhoji_Ranmalji = 2
+	}
 }
 
 REPLACE:DHA = { # Dharmpur
@@ -4726,6 +5064,10 @@ REPLACE:DHA = { # Dharmpur
 
 	cultures = { gujarati }
 	capital = STATE_GUJARAT
+
+	regnal_numbers = {
+		Ramdevji = 3
+	}
 }
 
 REPLACE:JUN = { # Junagadh
@@ -4749,6 +5091,10 @@ REPLACE:BHV = { # Bhavnagar
 
 	cultures = { gujarati }
 	capital = STATE_GUJARAT
+
+	regnal_numbers = {
+		Akherajji_Bhavsimhji = 4
+	}
 }
 
 REPLACE:PLP = { # Palanpur
@@ -4772,6 +5118,10 @@ REPLACE:SAT = { # Satara
 
 	cultures = { marathi }
 	capital = STATE_BOMBAY
+
+	regnal_numbers = {
+		Baji_Rao = 2
+	}
 }
 
 REPLACE:KHP = { # Kolhapur
@@ -4829,6 +5179,11 @@ REPLACE:JEY = { # Jeypore
 
 	cultures = { oriya }
 	capital = STATE_ORISSA
+
+	regnal_numbers = {
+		Ramchandra = 3
+		Vikram = 2
+	}
 }
 
 REPLACE:MYB = { # Mayurbhanj
@@ -4973,6 +5328,10 @@ REPLACE:COC = { # Cochin
 
 	cultures = { malayalam }
 	capital = STATE_TRAVANCORE
+
+	regnal_numbers = {
+		Rama_Varma = 11
+	}
 }
 
 REPLACE:ALK = { # Alaska - Russian-American Company at start
@@ -5008,6 +5367,10 @@ REPLACE:MLD = { # Maldives
 
 	capital = STATE_CEYLON
 	cultures = { sinhala }
+
+	regnal_numbers = {
+		Muhammad_Imaaduddeen = 4
+	}
 }
 
 REPLACE:BIH = {
@@ -5138,6 +5501,10 @@ REPLACE:SPC = {
 
 	cultures = { spanish }
 	capital = STATE_OLD_CASTILE
+
+	regnal_numbers = {
+		Carlos = 5 # the Carlist claimant Carlos V
+	}
 }
 
 REPLACE:ARN = {
@@ -5236,7 +5603,7 @@ REPLACE:SKH = { # Sakhalin
 
 	tier = principality
 
-	cultures = { siberian }
+	cultures = { evenki }
 	capital = STATE_SAKHALIN
 }
 
@@ -5247,7 +5614,7 @@ REPLACE:ULT = { # Ulta
 
 	tier = principality
 
-	cultures = { siberian }
+	cultures = { evenki }
 	capital = STATE_SAKHALIN
 }
 
@@ -5298,6 +5665,10 @@ REPLACE:ETH = {
 
 	cultures = { amhara oromo tigray }
 	capital = STATE_GONDER
+
+	regnal_numbers = {
+		Tewodros = 2
+	}
 }
 
 REPLACE:MAD = {
@@ -5344,6 +5715,10 @@ REPLACE:MOR = {
 
 	cultures = { maghrebi berber }
 	capital = STATE_FEZ
+
+	regnal_numbers = {
+		Muhammad = 4
+	}
 }
 
 REPLACE:NAL = {
@@ -5604,6 +5979,10 @@ REPLACE:PHL = {
 
 	cultures = { griqua }
 	capital = STATE_TRANSVAAL
+
+	regnal_numbers = {
+		Adam = 3
+	}
 }
 
 REPLACE:KZM = {
@@ -5771,6 +6150,10 @@ REPLACE:KON = {
 
 	cultures = { bakongo }
 	capital = STATE_BAS_CONGO
+
+	regnal_numbers = {
+		Andre = 2
+	}
 }
 
 REPLACE:LNG = {
@@ -6168,6 +6551,11 @@ REPLACE:HAR = {
 	cultures = { amhara }
 	religion = sunni
 	capital = STATE_OROMIA
+
+	regnal_numbers = {
+		Abu_Bakr = 2
+		Ahmad = 3
+	}
 }
 
 REPLACE:BRN = {
@@ -6261,6 +6649,10 @@ REPLACE:BOR = {
 
 	cultures = { kanuri }
 	capital = STATE_EAST_HAUSALAND
+
+	regnal_numbers = {
+		Ibrahim = 4
+	}
 }
 
 REPLACE:BGI = {
@@ -6271,6 +6663,10 @@ REPLACE:BGI = {
 
 	cultures = { baguirmi }
 	capital = STATE_CHAD
+
+	regnal_numbers = {
+		_Uthman_Burkomanda = 3
+	}
 }
 
 REPLACE:WAD = {
@@ -7341,6 +7737,10 @@ REPLACE:HAW = {
 
 	capital = STATE_HAWAIIAN_ISLANDS
 	is_named_from_capital = yes
+
+	regnal_numbers = {
+		Kamehameha = 3
+	}
 }
 
 REPLACE:NTU = {
@@ -7486,6 +7886,10 @@ REPLACE:PLY = { # Tahiti
 	cultures = { polynesian }
 	religion = protestant
 	capital = STATE_FIJI
+
+	regnal_numbers = {
+		Pomare = 4
+	}
 }
 
 REPLACE:AOT = { # Aotearoa
@@ -7802,6 +8206,10 @@ REPLACE:BNJ = {
 
 	cultures = { bornean }
 	capital = STATE_WEST_BORNEO
+
+	regnal_numbers = {
+		Tamjidullah_al-Watsiqu_Billah = 2
+	}
 }
 
 # Indonesia

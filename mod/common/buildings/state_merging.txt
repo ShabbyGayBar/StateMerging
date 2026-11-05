@@ -1524,6 +1524,151 @@ REPLACE:building_manila_cathedral_ruins = { # Manila Cathedral Ruins, after an e
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
 }
 
+REPLACE:building_winter_palace = {
+	building_group = bg_monuments_hidden
+	expandable = no
+	buildable = no
+	downsizeable = no
+	unique = yes
+	locator = "winter_palace_locator"
+
+	entity_not_constructed = { }
+	entity_under_construction = { }
+	entity_constructed = { "wonder_winterpalace_entity" }
+
+	city_gfx_interactions = {
+		clear_size_area = yes
+		size = 4
+	}
+
+	potential = {
+		has_dlc_feature = ip5_content
+		state_region = s:STATE_INGRIA
+	}
+
+	production_method_groups = {
+		pmg_dummy
+	}
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
+}
+
+REPLACE:building_saint_isaacs_cathedral = {
+	building_group = bg_monuments_hidden
+	expandable = no
+	buildable = no
+	downsizeable = no
+	unique = yes
+	locator = "saint_isaacs_cathedral_locator"
+
+	entity_not_constructed = { }
+	entity_under_construction = { }
+	entity_constructed = { "wonder_stisaac_entity" }
+
+	city_gfx_interactions = {
+		clear_size_area = yes
+		size = 2
+	}
+
+	potential = {
+		has_dlc_feature = ip5_content
+		state_region = s:STATE_INGRIA
+	}
+
+	production_method_groups = {
+		pmg_dummy
+	}
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
+}
+
+REPLACE:building_grand_kremlin_palace = {
+	building_group = bg_monuments_hidden
+	expandable = no
+	buildable = no
+	downsizeable = no
+	unique = yes
+	locator = "grand_kremlin_palace_locator"
+
+	entity_not_constructed = { }
+	entity_under_construction = { }
+	entity_constructed = { "wonder_grandkremlin_entity" }
+
+	city_gfx_interactions = {
+		clear_size_area = yes
+		size = 2
+	}
+
+	potential = {
+		has_dlc_feature = ip5_content
+		state_region = s:STATE_MOSCOW
+	}
+
+	production_method_groups = {
+		pmg_dummy
+	}
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
+}
+
+REPLACE:building_cathedral_of_christ_the_savior = {
+	building_group = bg_monuments_hidden
+	expandable = no
+	buildable = no
+	downsizeable = no
+	unique = yes
+	locator = "cathedral_of_christ_the_savior_locator"
+
+	entity_not_constructed = { }
+	entity_under_construction = { }
+	entity_constructed = { "wonder_christthesaviour_entity" }
+
+	city_gfx_interactions = {
+		clear_size_area = yes
+		size = 2
+	}
+
+	potential = {
+		has_dlc_feature = ip5_content
+		state_region = s:STATE_MOSCOW
+	}
+
+	production_method_groups = {
+		pmg_dummy
+	}
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
+}
+
+REPLACE:building_kizhi_pogost = {
+	building_group = bg_monuments_hidden
+	expandable = no
+	buildable = no
+	downsizeable = no
+	unique = yes
+	locator = "kizhi_pogost_locator"
+
+	entity_not_constructed = { }
+	entity_under_construction = { }
+	entity_constructed = { "wonder_kizhipogost_entity" }
+
+	city_gfx_interactions = {
+		clear_size_area = yes
+		size = 3
+	}
+
+	potential = {
+		has_dlc_feature = ip5_content
+		state_region = s:STATE_ARKHANGELSK
+	}
+
+	production_method_groups = {
+		pmg_dummy
+	}
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
+}
+
 
 # ---- 11_private_infrastructure.txt ----
 ############ PRIVATE INFRASTRUCTURE
@@ -1548,6 +1693,23 @@ REPLACE:building_port = {
 
 	potential = {
 		is_coastal = yes
+	}
+
+	ai_value = {
+		if = { # Russification
+			limit = {
+				owner ?= {
+					c:RUS ?= this
+					has_journal_entry = je_russification
+				}
+				is_in_geographic_region = geographic_region_baltic_states_old
+				any_scope_building = {
+					is_building_type = building_port
+					level < 5
+				}
+			}
+			add = 2000
+		}
 	}
 
 	ownership_type = self
@@ -1581,20 +1743,7 @@ REPLACE:building_railway = {
 					has_journal_entry = je_trans_siberian_railway
 				}
 				OR = {
-					state_region = s:STATE_MOSCOW
-					state_region = s:STATE_YAROSLAVL
-					state_region = s:STATE_YAROSLAVL
-					state_region = s:STATE_KAZAN
-					state_region = s:STATE_KAZAN
-					state_region = s:STATE_PERM
-					state_region = s:STATE_URAL
-					state_region = s:STATE_URAL
-					state_region = s:STATE_TOMSK
-					state_region = s:STATE_TOMSK
-					state_region = s:STATE_IRKUTSK
-					state_region = s:STATE_IRKUTSK
-					state_region = s:STATE_TRANS_BAIKAL
-					state_region = s:STATE_TRANS_BAIKAL
+					is_in_geographic_region = geographic_region_trans_siberian_line
 					state_region = s:STATE_YAKUTSK
 					state_region = s:STATE_OKHOTSK
 					state_region = s:STATE_OUTER_MANCHURIA
@@ -1707,14 +1856,31 @@ REPLACE:building_railway = {
 
 		if = { # Manchurian Railway
 			limit = {
-				exists = c:RUS
-				c:RUS ?= owner
 				is_in_geographic_region = geographic_region_manchuria_old
-				any_scope_building = {
-					is_building_type = building_railway
-					levels_owned_by_country = {
-						target = c:RUS
-						value  < 1
+				OR = {
+					c:RUS ?= owner
+					owner.top_overlord ?= {
+						has_journal_entry = je_tp_tsar_heir_of_alexander
+						NOT = { has_variable = je_tp_tsar_heir_of_alexander_button_1_complete }
+					}
+				}
+				OR = {
+					NOR = {
+						has_building = building_railway
+						any_scope_building = {
+							is_building_type = building_railway
+							is_under_construction = yes
+						}
+					}
+					AND = {
+						exists = c:RUS
+						any_scope_building = {
+							is_building_type = building_railway
+							levels_owned_by_country = {
+								target = c:RUS
+								value  < 1
+							}
+						}
 					}
 				}
 			}
@@ -1734,6 +1900,83 @@ REPLACE:building_railway = {
 				}
 			}
 			add = 10000
+		}
+
+		if = {
+			limit = {
+				owner ?= {
+					has_journal_entry = je_five_year_plan
+					je:je_five_year_plan ?= {
+						has_variable = five_year_plan_transportation_var
+					}
+					five_year_plan_transportation_goal_met = no
+				}
+			}
+			add = 2500
+		}
+
+		if = { # The Great Program - railways across European Russia
+			limit = {
+				OR = {
+					owner ?= {
+						has_journal_entry = je_tp_tsar_heir_of_alexander
+						NOT = { has_variable = je_tp_tsar_heir_of_alexander_button_3_complete }
+					}
+					owner.top_overlord ?= {
+						has_journal_entry = je_tp_tsar_heir_of_alexander
+						NOT = { has_variable = je_tp_tsar_heir_of_alexander_button_3_complete }
+					}
+				}
+				is_in_geographic_region = geographic_region_eastern_europe
+				NOR = {
+					has_building = building_railway
+					any_scope_building = {
+						is_building_type = building_railway
+						is_under_construction = yes
+					}
+				}
+			}
+			add = 10000
+		}
+
+		if = { # Peace Through Strength - railway expansion
+			limit = {
+				owner ?= {
+					has_journal_entry = je_tp_tsar_unshakable_autocracy
+					NOT = { has_variable = je_tp_tsar_unshakable_autocracy_button_3_complete }
+					NOT = {
+						country_has_building_type_levels = {
+							target = bt:building_railway
+							value > tsarpoints_railway_levels_value
+						}
+					}
+				}
+			}
+			add = 2500
+		}
+
+		if = { # Develop the Capital agenda
+			limit = {
+				owner ?= {
+					has_journal_entry = je_tp_pool_develop_capital
+				}
+				is_capital = yes
+				infrastructure < 100
+			}
+			add = 5000
+		}
+
+		if = { # Favourite's model governorate agenda
+			limit = {
+				save_temporary_scope_as = tp_railway_state_scope
+				owner ?= {
+					has_journal_entry = je_tp_fav_parochial
+					has_variable = tp_fav_home_state
+					var:tp_fav_home_state ?= scope:tp_railway_state_scope
+				}
+				infrastructure < 100
+			}
+			add = 5000
 		}
 	}
 
