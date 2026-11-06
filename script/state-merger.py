@@ -1,6 +1,7 @@
 import json
 import os
 from vic3_state_merger import StateMerger
+from vic3_state_merger.logging_config import configure_logging
 
 THIS_DIR = os.path.dirname(os.path.abspath(__file__))
 merge_file = os.path.join(THIS_DIR, "..", "merge_states.json")
@@ -17,6 +18,7 @@ mod_dir = os.path.join(THIS_DIR, "..", "mod")
 
 
 def main():
+    configure_logging("INFO")
     with open(merge_file, "r", encoding="utf-8") as file:
         merge_dict = json.load(file)
 
