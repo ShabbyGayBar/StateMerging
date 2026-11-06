@@ -27,7 +27,7 @@
 或者
 - 在 [Paradox 官网](https://mods.paradoxplaza.com/mods/120868/Any) 下载本模组。
 或者
-- 下载模组的 zip 文件并解压到维多利亚3的模组文件夹中（通常位于 `Documents\Pardox Interactive\Victoria 3\mod`）。
+- 从[发布页面](https://github.com/ShabbyGayBar/StateMerging/releases)下载模组的 zip 文件，并解压到维多利亚3的模组文件夹中（通常位于 `Documents\Paradox Interactive\Victoria 3\mod`）。
 
 ## 合并标准
 
