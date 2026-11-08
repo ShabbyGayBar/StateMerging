@@ -1,13 +1,13 @@
 {
-  "name" : "States Merging",
-	"id" : "3371693463",
-  "version" : "2.7.1",
-  "supported_game_version" : "1.15.*",
-  "short_description" : "Combines multiple states together while keeping the overall pop & buildings unchanged.",
+  "name": "States Merging",
+  "id": "3371693463",
+  "version": "2.7.1",
+  "supported_game_version": "1.15.*",
+  "short_description": "Combines multiple states together while keeping the overall pop & buildings unchanged.",
   "thumbnail": "thumbnail.png",
-  "tags" : ["Gameplay", "Map"],
-  "relationships" : [],
-  "game_custom_data" : {
-    "multiplayer_synchronized" : true
+  "tags": ["Gameplay", "Map"],
+  "relationships": [],
+  "game_custom_data": {
+    "multiplayer_synchronized": true
   }
 }
