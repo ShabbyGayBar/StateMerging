@@ -17477,6 +17477,86 @@
             }
         }
     }
+    s:STATE_URAL = {
+        region_state:RUS = {
+            create_pop = {
+                culture = russian
+                size = 793367
+            }
+            create_pop = {
+                culture = ugrian
+                size = 25017
+            }
+            create_pop = {
+                culture = bashkir
+                size = 59518
+            }
+            create_pop = {
+                culture = tatar
+                size = 37224
+            }
+            create_pop = {
+                culture = ukrainian
+                size = 12111
+            }
+            create_pop = {
+                culture = mordvin
+                size = 1218
+            }
+        }
+        region_state:KZH = {
+            create_pop = {
+                culture = russian
+                size = 10045
+            }
+            create_pop = {
+                culture = bashkir
+                size = 34132
+            }
+            create_pop = {
+                culture = kazak
+                size = 39601
+            }
+            create_pop = {
+                culture = tatar
+                size = 9149
+            }
+            create_pop = {
+                culture = mordvin
+                size = 4978
+            }
+            create_pop = {
+                culture = ukrainian
+                size = 5785
+            }
+            create_pop = {
+                culture = chuvash
+                size = 1346
+            }
+        }
+        region_state:OZH = {
+            create_pop = {
+                culture = russian
+                size = 22140
+            }
+            create_pop = {
+                culture = kazak
+                size = 34440
+            }
+            create_pop = {
+                culture = ukrainian
+                size = 3780
+            }
+            create_pop = {
+                culture = tatar
+                size = 420
+            }
+            create_pop = {
+                culture = mordvin
+                size = 710
+            }
+        }
+    }
     s:STATE_TUVA = {
         region_state:CHI = {
             create_pop = {
@@ -18275,86 +18355,6 @@
                 culture = ugrian
                 religion = orthodox
                 size = 64328
-            }
-        }
-    }
-    s:STATE_URAL = {
-        region_state:RUS = {
-            create_pop = {
-                culture = russian
-                size = 793367
-            }
-            create_pop = {
-                culture = ugrian
-                size = 25017
-            }
-            create_pop = {
-                culture = bashkir
-                size = 59518
-            }
-            create_pop = {
-                culture = tatar
-                size = 37224
-            }
-            create_pop = {
-                culture = ukrainian
-                size = 12111
-            }
-            create_pop = {
-                culture = mordvin
-                size = 1218
-            }
-        }
-        region_state:KZH = {
-            create_pop = {
-                culture = russian
-                size = 10045
-            }
-            create_pop = {
-                culture = bashkir
-                size = 34132
-            }
-            create_pop = {
-                culture = kazak
-                size = 39601
-            }
-            create_pop = {
-                culture = tatar
-                size = 9149
-            }
-            create_pop = {
-                culture = mordvin
-                size = 4978
-            }
-            create_pop = {
-                culture = ukrainian
-                size = 5785
-            }
-            create_pop = {
-                culture = chuvash
-                size = 1346
-            }
-        }
-        region_state:OZH = {
-            create_pop = {
-                culture = russian
-                size = 22140
-            }
-            create_pop = {
-                culture = kazak
-                size = 34440
-            }
-            create_pop = {
-                culture = ukrainian
-                size = 3780
-            }
-            create_pop = {
-                culture = tatar
-                size = 420
-            }
-            create_pop = {
-                culture = mordvin
-                size = 710
             }
         }
     }

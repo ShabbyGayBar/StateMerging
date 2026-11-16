@@ -1131,7 +1131,3 @@ REPLACE:GEO = {
 		has_technology_researched = nationalism
 	}
 }
-
-INJECT:ITA = {
-    required_states_fraction = 0.5
-}

@@ -818,7 +818,7 @@ REPLACE:je_indian_removal = {
 		trigger = {
 			NOT = { c:SEQ ?= { is_at_war_with_overlord = yes } }
 			OR = {
-				NOT = { owns_entire_or_is_contesting_state_region = STATE_NORTH_CAROLINA }
+				NOT = { owns_entire_or_is_contesting_state_region = STATE_FLORIDA }
 				NOT = {
 					AND = {
 						exists = c:SEQ
@@ -2631,7 +2631,7 @@ REPLACE:je_great_game_control = {
 	icon = "gfx/interface/icons/objectives/great_game.dds"
 
 	group = je_group_great_game
-	dlc = dlc010
+	dlc = { dlc010 dlc019 }
 	context = none # so this JE within je_group_great_game doesn't inherit: context = country
 
 	activation_description = {
@@ -2957,7 +2957,11 @@ REPLACE:je_great_game_control = {
 				custom_tooltip = {
 					text = great_game_complete_tt
 					any_country_in_caucasus_old = {
-						count = all
+						filter = {
+							NOT = {
+								is_country_type = decentralized
+							}
+						}
 						OR = {
 							this.power_bloc ?= {
 								c:GBR ?= this.power_bloc_leader
@@ -2966,9 +2970,14 @@ REPLACE:je_great_game_control = {
 								c:RUS ?= this.power_bloc_leader
 							}
 						}
+						count = all
 					}
 					any_country_in_central_asia = {
-						count = all
+						filter = {
+							NOT = {
+								is_country_type = decentralized
+							}
+						}
 						OR = {
 							this.power_bloc ?= {
 								c:GBR ?= this.power_bloc_leader
@@ -2977,9 +2986,14 @@ REPLACE:je_great_game_control = {
 								c:RUS ?= this.power_bloc_leader
 							}
 						}
+						count = all
 					}
 					any_country_in_greater_persia = {
-						count = all
+						filter = {
+							NOT = {
+								is_country_type = decentralized
+							}
+						}
 						OR = {
 							this.power_bloc ?= {
 								c:GBR ?= this.power_bloc_leader
@@ -2988,6 +3002,7 @@ REPLACE:je_great_game_control = {
 								c:RUS ?= this.power_bloc_leader
 							}
 						}
+						count = all
 					}
 				}
 				c:GBR ?= {
@@ -3301,7 +3316,7 @@ REPLACE:je_chinese_concessions = {
 	icon = "gfx/interface/icons/objectives/great_game.dds"
 
 	group = je_group_great_game
-	dlc = dlc010
+	dlc = { dlc010 dlc019 }
 
 	activation_description = {
 		custom_tooltip = je_chinese_concessions_activation_tt
@@ -3406,7 +3421,7 @@ REPLACE:je_acquire_korean_protectorate = {
 	icon = "gfx/interface/icons/objectives/great_game.dds"
 
 	group = je_group_great_game
-	dlc = dlc010
+	dlc = { dlc010 dlc019 }
 
 	activation_description = {
 		custom_tooltip = je_acquire_korean_protectorate_activation_tt
@@ -3507,7 +3522,7 @@ REPLACE:je_disrupt_russian_caucasus = {
 	icon = "gfx/interface/icons/objectives/great_game.dds"
 
 	group = je_group_great_game
-	dlc = dlc010
+	dlc = { dlc010 dlc019 }
 
 	activation_description = {
 		custom_tooltip = je_disrupt_russian_caucasus_activation_tt
@@ -3591,7 +3606,7 @@ REPLACE:je_counter_russian_pacific_influence = {
 	icon = "gfx/interface/icons/objectives/great_game.dds"
 
 	group = je_group_great_game
-	dlc = dlc010
+	dlc = { dlc010 dlc019 }
 
 	activation_description = {
 		custom_tooltip = je_counter_russian_pacific_influence_activation_tt
@@ -3687,7 +3702,7 @@ REPLACE:je_consolidate_british_india = {
 	icon = "gfx/interface/icons/objectives/great_game.dds"
 
 	group = je_group_great_game
-	dlc = dlc010
+	dlc = { dlc010 dlc019 }
 
 	activation_description = {
 		custom_tooltip = je_consolidate_british_india_activation_tt
@@ -3804,7 +3819,7 @@ REPLACE:je_pamir_expedition_objective = {
 	icon = "gfx/interface/icons/objectives/great_game.dds"
 
 	group = je_group_great_game
-	dlc = dlc010
+	dlc = { dlc010 dlc019 }
 
 	activation_description = {
 		custom_tooltip = je_pamir_expedition_objective_activation_tt
@@ -3940,7 +3955,7 @@ REPLACE:je_maintain_afghan_protectorate = {
 	icon = "gfx/interface/icons/objectives/great_game.dds"
 
 	group = je_group_great_game
-	dlc = dlc010
+	dlc = { dlc010 dlc019 }
 
 	activation_description = {
 		custom_tooltip = je_maintain_afghan_protectorate_activation_tt
@@ -4236,7 +4251,7 @@ REPLACE:je_secure_influence_over_persia = {
 	icon = "gfx/interface/icons/objectives/great_game.dds"
 
 	group = je_group_great_game
-	dlc = dlc010
+	dlc = { dlc010 dlc019 }
 
 	activation_description = {
 		custom_tooltip = je_secure_influence_over_persia_activation_tt
@@ -4473,7 +4488,7 @@ REPLACE:je_consolidate_persia = {
 	icon = "gfx/interface/icons/objectives/great_game.dds"
 
 	group = je_group_great_game
-	dlc = dlc010
+	dlc = { dlc010 dlc019 }
 
 	activation_description = {
 		custom_tooltip = je_consolidate_persia_activation_tt
@@ -4540,7 +4555,7 @@ REPLACE:je_achieve_sovereignty = {
 	icon = "gfx/interface/icons/objectives/great_game.dds"
 
 	group = je_group_great_game
-	dlc = dlc010
+	dlc = { dlc010 dlc019 }
 
 	activation_description = {
 		custom_tooltip = je_achieve_sovereignty_activation_tt
@@ -7676,7 +7691,7 @@ REPLACE:je_consolidate_afghanistan = {
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 
 	group = je_group_great_game
-	dlc = dlc010
+	dlc = { dlc010 dlc019 }
 
 	activation_description = {
 		always = yes
@@ -8916,7 +8931,7 @@ REPLACE:je_eastern_frontier = {
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 
 	group = je_group_great_game
-	dlc = dlc010
+	dlc = { dlc010 dlc019 }
 
 	activation_description = {
 		custom_tooltip = je_eastern_frontier_activation_tt
@@ -9129,7 +9144,7 @@ REPLACE:je_caucasian_war = {
     icon = "gfx/interface/icons/event_icons/event_raiding.dds"
 
     group = je_group_global_international_situations
-    dlc = dlc010
+    dlc = { dlc010 dlc019 }
 
     activation_description = {
         always = yes
@@ -9861,7 +9876,7 @@ REPLACE:je_pacify_the_steppes = {
     icon = "gfx/interface/icons/event_icons/event_military.dds"
 
     group = je_group_russia_expansion
-    dlc = dlc010
+    dlc = { dlc010 dlc019 }
     context = none
 
     activation_description = {
@@ -10162,7 +10177,7 @@ REPLACE:je_the_last_kazakh_khan = {
     icon = "gfx/interface/icons/event_icons/event_military.dds"
 
     group = je_group_russia_expansion
-    dlc = dlc010
+    dlc = { dlc010 dlc019 }
 
     activation_description = {
         always = yes
@@ -10252,7 +10267,7 @@ REPLACE:je_conquest_of_central_asia = {
     icon = "gfx/interface/icons/event_icons/event_military.dds"
 
     group = je_group_russia_expansion
-    dlc = dlc010
+    dlc = { dlc010 dlc019 }
 
     activation_description = {
         always = yes
@@ -11395,7 +11410,7 @@ REPLACE:je_matter_of_hungary = {
 						state_region = {
 							is_homeland = cu:hungarian
 						}
-						count >= 4
+						count >= 8
 						is_incorporated = yes
 						turmoil < 0.05
 					}
@@ -14925,7 +14940,7 @@ REPLACE:je_spa_economic_regeneration_land_reform = {
                         is_homeland = cu:spanish
                     }
                     average_sol > 15
-                    count >= 4
+                    count >= 12
                 }
                 OR = {
                     AND = {
@@ -14962,7 +14977,7 @@ REPLACE:je_spa_economic_regeneration_land_reform = {
                         is_homeland = cu:spanish
                     }
                     average_sol > 10
-                    count >= 4
+                    count >= 12
                 }
                 OR = {
                     AND = {
@@ -15191,7 +15206,7 @@ REPLACE:je_spa_economic_regeneration_railways = {
                         is_building_type = building_railway
                         level >= 3
                     }
-                    count >= 4
+                    count >= 12
                 }
             }
             trigger_else_if = {
@@ -15206,7 +15221,7 @@ REPLACE:je_spa_economic_regeneration_railways = {
                         is_building_type = building_railway
                         level >= 1
                     }
-                    count >= 4
+                    count >= 12
                 }
             }
         }

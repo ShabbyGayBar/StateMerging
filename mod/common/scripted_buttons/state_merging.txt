@@ -5858,7 +5858,7 @@ REPLACE:austrian_neo_absolutism_abolish_crown_land_autonomy_button = {
 					is_homeland = cu:polish
 				}
 			}
-			count >= 8
+			count >= 12
 			is_incorporated = yes
 			turmoil < 0.05
 		}
@@ -7944,7 +7944,7 @@ REPLACE:je_filipino_ethnogenesis_colonization_button = {
 
 
 # ---- 08_tsarpoints_buttons.txt ----
-REPLACE:je_tsarpoints_button_1 = {
+REPLACE:je_tsarpoints_button_1 = { # Exercise Imperial Prerogative
 	name = "je_tsarpoints_button_1_name"
 	desc = "je_tsarpoints_button_1_desc"
 	short_desc = "je_tsarpoints_button_1_short_desc"
@@ -8039,7 +8039,7 @@ REPLACE:je_tsarpoints_button_1 = {
 	}
 }
 
-REPLACE:je_tsarpoints_button_2 = {
+REPLACE:je_tsarpoints_button_2 = { # Suppress Provincial Culture
 	name = "je_tsarpoints_button_2_name"
 	desc = "je_tsarpoints_button_2_desc"
 	short_desc = "je_tsarpoints_button_2_short_desc"
@@ -8104,7 +8104,7 @@ REPLACE:je_tsarpoints_button_2 = {
 	}
 }
 
-REPLACE:je_tsarpoints_button_3 = {
+REPLACE:je_tsarpoints_button_3 = { # Reinforce Suzerainty
 	name = "je_tsarpoints_button_3_name"
 	desc = "je_tsarpoints_button_3_desc"
 	short_desc = "je_tsarpoints_button_3_short_desc"
@@ -8155,7 +8155,7 @@ REPLACE:je_tsarpoints_button_3 = {
 	}
 }
 
-REPLACE:je_tsarpoints_button_4 = {
+REPLACE:je_tsarpoints_button_4 = { # Grant Government Confidence
 	name = "je_tsarpoints_button_4_name"
 	desc = "je_tsarpoints_button_4_desc"
 	short_desc = "je_tsarpoints_button_4_short_desc"
@@ -8211,7 +8211,7 @@ REPLACE:je_tsarpoints_button_4 = {
 	}
 }
 
-REPLACE:je_tsarpoints_button_5 = {
+REPLACE:je_tsarpoints_button_5 = { # Patronize Interest Group
 	name = "je_tsarpoints_button_5_name"
 	desc = "je_tsarpoints_button_5_desc"
 	short_desc = "je_tsarpoints_button_5_short_desc"
@@ -8300,7 +8300,7 @@ REPLACE:je_tsarpoints_button_5 = {
 	}
 }
 
-REPLACE:je_tsarpoints_button_6 = {
+REPLACE:je_tsarpoints_button_6 = { # Empower Lesser Ukase
 	name = "je_tsarpoints_button_6_name"
 	desc = "je_tsarpoints_button_6_desc"
 	short_desc = "je_tsarpoints_button_6_short_desc"
@@ -8398,7 +8398,7 @@ REPLACE:je_tsarpoints_button_6 = {
 	}
 }
 
-REPLACE:je_tsarpoints_button_7 = {
+REPLACE:je_tsarpoints_button_7 = { # Install Favored Ruler
 	name = "je_tsarpoints_button_7_name"
 	desc = "je_tsarpoints_button_7_desc"
 	short_desc = "je_tsarpoints_button_7_short_desc"
@@ -8444,7 +8444,7 @@ REPLACE:je_tsarpoints_button_7 = {
 	}
 }
 
-REPLACE:je_tsarpoints_button_8 = {
+REPLACE:je_tsarpoints_button_8 = { # Convene the Synod of Polotsk
 	name = "je_tsarpoints_button_8_name"
 	desc = "je_tsarpoints_button_8_desc"
 	short_desc = "je_tsarpoints_button_8_short_desc"
@@ -8556,7 +8556,7 @@ REPLACE:je_tsarpoints_button_8 = {
 	}
 }
 
-REPLACE:je_tsarpoints_button_9 = {
+REPLACE:je_tsarpoints_button_9 = { # Bolster Counter-Revolution
 	name = "je_tsarpoints_button_9_name"
 	desc = "je_tsarpoints_button_9_desc"
 	short_desc = "je_tsarpoints_button_9_short_desc"

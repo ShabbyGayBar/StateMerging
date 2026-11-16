@@ -12021,6 +12021,23 @@ REPLACE:UBD = { # United Baltic
 			coa_def_russian_ensign_trigger = yes
 		}
 	}
+	flag_definition = {
+		coa = UBD_communist
+		priority = 1500
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = UBD_communist_EST
+		priority = 1501
+		trigger = {
+			scope:actor ?= {
+				was_formed_from = EST
+			}
+			coa_def_communist_flag_trigger = yes
+		}
+	}
 }
 
 REPLACE:BEI = { # Beiyang Government
