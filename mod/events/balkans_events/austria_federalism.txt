@@ -315,9 +315,6 @@ austria_trialism.3 = { # Forming the Triune Kingdom
 						has_variable = newly_released_country
 					}
 				}
-				NOT = {
-					state_region = s:STATE_CROATIA
-				}
 			}
 			set_state_owner = scope:croatia_scope
 		}
@@ -376,9 +373,6 @@ austria_trialism.3 = { # Forming the Triune Kingdom
 						is_homeland = cu:croat
 						is_homeland = cu:slovene
 					}
-				}
-				NOT = {
-					state_region = s:STATE_CROATIA
 				}
 			}
 			set_state_owner = scope:croatia_scope

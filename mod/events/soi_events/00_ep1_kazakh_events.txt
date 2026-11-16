@@ -142,20 +142,6 @@ kazakhstan_events.1 = {
 				set_state_type = incorporated
 			}
 		}
-		s:STATE_AKMOLINSK ?= {
-			every_scope_state = {
-				limit = {
-					owner = {
-						OR = {
-							c:RUS ?= THIS
-							is_subject_of = c:RUS
-						}
-					}
-				}
-				set_state_owner = c:KAZ
-				set_state_type = incorporated
-			}
-		}
 		if = {
 			limit = {
 				c:OZH ?= {
@@ -343,20 +329,6 @@ kazakhstan_events.1 = {
 		name = kazakhstan_events.1.b
 		add_journal_entry = { type = je_the_last_kazakh_khan }
 		s:STATE_SEMIRECHE ?= {
-			every_scope_state = {
-				limit = {
-					owner = {
-						OR = {
-							c:RUS ?= THIS
-							is_subject_of = c:RUS
-						}
-					}
-				}
-				set_state_owner = c:KAZ
-				set_state_type = incorporated
-			}
-		}
-		s:STATE_AKMOLINSK ?= {
 			every_scope_state = {
 				limit = {
 					owner = {
