@@ -22,7 +22,10 @@
     s:STATE_SICILY={
         region_state:SIC={
             sg:sulfur = {
-                add_exports = 25
+                add_exports = 65
+            }
+            sg:tools = {
+                add_imports = 16
             }
         }
     }
@@ -36,14 +39,14 @@
     s:STATE_LOUISIANA={
         region_state:USA={
             sg:fabric = {
-                add_exports = 50
+                add_exports = 75
             }
         }
     }
     s:STATE_GUANGDONG={
         region_state:CHI={
             sg:silk = {
-                add_exports = 100
+                add_exports = 80
             }
             sg:tea = {
                 add_exports = 85
@@ -71,7 +74,7 @@
     s:STATE_WESTERN_CUBA={
         region_state:CUB={
             sg:sugar = {
-                add_exports = 80
+                add_exports = 55
             }
         }
     }
@@ -93,13 +96,63 @@
     }
     s:STATE_INGRIA={
         region_state:RUS={
-            sg:sugar = {
-                add_imports = 5
-            }
-            sg:tools = {
-                add_imports = 10
-            }
             sg:copper = {
+                add_imports = 1
+            }
+            sg:wood = {
+                add_exports = 5
+            }
+        }
+    }
+    s:STATE_KIEV={
+        region_state:RUS={
+            sg:wood = {
+                add_exports = 5
+            }
+            sg:silk = {
+                add_imports = 6
+            }
+            sg:grain = {
+                add_exports = 5
+            }
+        }
+    }
+    s:STATE_BREST={
+        region_state:RUS={
+            sg:grain = {
+                add_exports = 5
+            }
+        }
+    }
+    s:STATE_SCANIA={
+        region_state:SWE={
+            sg:small_arms = {
+                add_exports = 5
+            }
+            sg:hardwood = {
+                add_exports = 8
+            }
+            sg:artillery = {
+                add_exports = 5
+            }
+        }
+    }
+    s:STATE_KHARKOV={
+        region_state:RUS={
+            sg:tea = {
+                add_imports = 1
+            }
+            sg:tobacco = {
+                add_imports = 3
+            }
+            sg:coffee = {
+                add_imports = 2
+            }
+        }
+    }
+    s:STATE_MOSCOW={
+        region_state:RUS={
+            sg:tea = {
                 add_imports = 2
             }
         }
@@ -111,6 +164,9 @@
             }
             sg:tea = {
                 add_imports = 50
+            }
+            sg:sulfur = {
+                add_imports = 13
             }
             sg:hardwood = {
                 add_imports = 20
@@ -135,8 +191,18 @@
             sg:copper = {
                 add_imports = 2
             }
+            sg:fabric = {
+                add_imports = 10
+            }
             sg:luxury_clothes = {
                 add_exports = 15
+            }
+        }
+    }
+    s:STATE_NORMANDY={
+        region_state:FRA={
+            sg:fabric = {
+                add_imports = 10
             }
         }
     }
@@ -150,10 +216,10 @@
     s:STATE_PIEDMONT={
         region_state:SAR={
             sg:fabric = {
-                add_imports = 8
+                add_imports = 10
             }
-            sg:sugar = {
-                add_imports = 2
+            sg:tools = {
+                add_exports = 5
             }
         }
     }
@@ -163,6 +229,15 @@
                 add_imports = 10
             }
             sg:copper = {
+                add_imports = 1
+            }
+            sg:explosives = {
+                add_exports = 2
+            }
+            sg:ammunition = {
+                add_exports = 4
+            }
+            sg:sulfur = {
                 add_imports = 2
             }
         }
@@ -170,7 +245,7 @@
     s:STATE_EASTERN_THRACE={
         region_state:TUR={
             sg:small_arms = {
-                add_imports = 5
+                add_imports = 4
             }
             sg:coffee = {
                 add_imports = 6
@@ -183,20 +258,10 @@
     s:STATE_CATALONIA={
         region_state:SPA={
             sg:tools = {
-                add_imports = 8
+                add_imports = 12
             }
             sg:iron = {
-                add_imports = 4
-            }
-        }
-    }
-    s:STATE_LOWER_ANDALUSIA={
-        region_state:SPA={
-            sg:small_arms = {
-                add_imports = 5
-            }
-            sg:coal = {
-                add_imports = 4
+                add_imports = 12
             }
         }
     }
@@ -208,33 +273,30 @@
             sg:coal = {
                 add_imports = 5
             }
-            sg:hardwood = {
-                add_imports = 4
-            }
             sg:iron = {
-                add_imports = 3
+                add_imports = 5
             }
         }
     }
     s:STATE_FLANDERS={
         region_state:BEL={
             sg:fabric = {
-                add_imports = 10
+                add_imports = 8
             }
             sg:coffee = {
                 add_imports = 5
             }
         }
         region_state:FRA={
-            sg:fertilizer = {
-                add_imports = 5
+            sg:ammunition = {
+                add_exports = 1
             }
         }
     }
-    s:STATE_SCANIA={
-        region_state:SWE={
-            sg:hardwood = {
-                add_exports = 8
+    s:STATE_ZEALAND={
+        region_state:DEN={
+            sg:tools = {
+                add_exports = 1
             }
         }
     }
@@ -245,20 +307,30 @@
             }
         }
     }
+    s:STATE_YORKSHIRE={
+        region_state:GBR={
+            sg:iron = {
+                add_imports = 9
+            }
+            sg:sulfur = {
+                add_imports = 25
+            }
+        }
+    }
     s:STATE_CHAMPAGNE={
         region_state:FRA={
             sg:luxury_furniture = {
                 add_exports = 5
             }
+            sg:furniture = {
+                add_exports = 6
+            }
         }
     }
-    s:STATE_BRANDENBURG={
-        region_state:PRU={
-            sg:tea = {
-                add_imports = 10
-            }
-            sg:coffee = {
-                add_imports = 8
+    s:STATE_WEST_SWITZERLAND={
+        region_state:SWI={
+            sg:merchant_marine = {
+                add_imports = 1
             }
         }
     }
@@ -266,9 +338,6 @@
         region_state:SIC={
             sg:silk = {
                 add_exports = 6
-            }
-            sg:tools = {
-                add_imports = 6
             }
             sg:coal = {
                 add_imports = 4
@@ -293,28 +362,12 @@
             sg:coffee = {
                 add_imports = 5
             }
-            sg:copper = {
-                add_imports = 2
-            }
         }
     }
     s:STATE_TRANS_BAIKAL={
         region_state:RUS={
-            sg:tea = {
-                add_imports = 35
-            }
-        }
-    }
-    s:STATE_KIEV={
-        region_state:RUS={
-            sg:tobacco = {
-                add_imports = 10
-            }
-            sg:coffee = {
-                add_imports = 8
-            }
-            sg:silk = {
-                add_imports = 6
+            sg:wood = {
+                add_exports = 10
             }
         }
     }
